@@ -17,7 +17,7 @@ public class Stylepage extends DriverFactory{
 	String formattedDate = dateFormat.format(currentDate);
 
 	Utilities utilities = new Utilities();
-	
+	//Login Functionality
 		By SignIn   = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
 		By username = By.xpath("//input[@id='userName']");
 		By password = By.xpath("//input[@id='userpassword']");
