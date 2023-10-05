@@ -329,6 +329,11 @@ package Page;
 				Thread.sleep(5000);
 			}
 
+			public void Navigate_to_PD_Fabric_Pricing_screen() {
+				// TODO Auto-generated method stub
+				
+			}
+
 
 			}
 

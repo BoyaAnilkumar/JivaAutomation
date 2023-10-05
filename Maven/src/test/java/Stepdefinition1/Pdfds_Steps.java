@@ -113,5 +113,9 @@ public class Pdfds_Steps {
 		public void Click_on_Nomination_Checkbox() throws Throwable {
 			page.Click_on_Nomination_Checkbox();
 		}
+		@And ("^Navigate to PD Fabric Pricing screen$")
+		public void Navigate_to_PD_Fabric_Pricing_screen() {
+			page.Navigate_to_PD_Fabric_Pricing_screen();
+		}
 	}
 
