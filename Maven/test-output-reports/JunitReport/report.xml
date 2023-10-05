@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="193.621">
+    <testcase classname="Login the application and Add New Fabric Sheet" name="Add New Fabric to the Style" time="193.439">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//label[text()='Count/Construction ']|//select[@Class='form-control ng-untouched ng-pristine ng-invalid']//option[text()=' 70 x 90 / 104 x 80'])[2]&quot;}&#10;  (Session info: chrome=117.0.5938.132)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55070}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c49b3486d0c2b5086da3674fef12ce9e&#10;*** Element info: {Using=xpath, value=(//label[text()='Count/Construction ']|//select[@Class='form-control ng-untouched ng-pristine ng-invalid']//option[text()=' 70 x 90 / 104 x 80'])[2]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Navigate to the Login Page............................................passed
+When User Enter Valid username and password.................................passed
+And Navigated to Dashboard screen or not....................................passed
+And Click on Wovenknit module...............................................passed
+Then Click on PD module.....................................................passed
+And click on pd fds.........................................................passed
+And Click on Style expansion................................................passed
+And Select the IPO..........................................................passed
+When I mouse hover on tool tip..............................................passed
+And Click on Fabric Quality.................................................passed
+And Select Fabric Quality...................................................passed
+Then Click on Content.......................................................passed
+And Click on Color..........................................................passed
+And Select CountConstruction................................................failed
+Then Enter Finish value.....................................................skipped
+And Enter specific requirements.............................................skipped
+And Enter Fabric Quantity...................................................skipped
+And Enter Full width........................................................skipped
+And Select use..............................................................skipped
+Then Click on Reset button..................................................skipped
+And Click on Fabric Quality.................................................skipped
+And Select Fabric Quality...................................................skipped
+Then Click on Content.......................................................skipped
+And Click on Color..........................................................skipped
+Then Enter Finish value.....................................................skipped
+And Enter specific requirements.............................................skipped
+And Enter Fabric Quantity...................................................skipped
+And Enter Full width........................................................skipped
+And Select use..............................................................skipped
+Then Click on Save button...................................................skipped
+And Verify the Toaster text is displaying or not............................skipped
+Then Click on Add New Fabric button.........................................skipped
+And Click on Nomination checkbox............................................skipped
+And Click on Fabric Quality.................................................skipped
+And Select Fabric Quality...................................................skipped
+Then Click on Content.......................................................skipped
+And Click on Color..........................................................skipped
+Then Enter Finish value.....................................................skipped
+And Enter specific requirements.............................................skipped
+And Enter Fabric Quantity...................................................skipped
+And Enter Full width........................................................skipped
+And Select use..............................................................skipped
+Then Click on Save button...................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//label[text()='Count/Construction ']|//select[@Class='form-control ng-untouched ng-pristine ng-invalid']//option[text()=' 70 x 90 / 104 x 80'])[2]"}
+  (Session info: chrome=117.0.5938.132)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55070}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c49b3486d0c2b5086da3674fef12ce9e
+*** Element info: {Using=xpath, value=(//label[text()='Count/Construction ']|//select[@Class='form-control ng-untouched ng-pristine ng-invalid']//option[text()=' 70 x 90 / 104 x 80'])[2]}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.Pdfds_page.Select_CountConstruction(Pdfds_page.java:266)
+	at Stepdefinition1.Pdfds_Steps.Select_CountConstruction(Pdfds_Steps.java:78)
+	at ✽.Select CountConstruction(file:///E:/New%20folder/JivaAutomation/Maven/Features/Pdfds.feature:20)
+]]></failure>
+    </testcase>
+</testsuite>

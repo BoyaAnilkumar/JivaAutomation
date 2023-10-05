@@ -5,7 +5,7 @@ Feature: Login the application and Add New Fabric Sheet
   Scenario: Add New Fabric to the Style
     Given Navigate to the Login Page
     When User Enter Valid username and password
-    Then Click on SignIn button
+    #Then Click on SignIn button
     And Navigated to Dashboard screen or not
     And Click on Wovenknit module
     Then Click on PD module
@@ -47,4 +47,5 @@ Feature: Login the application and Add New Fabric Sheet
     And Enter Full width
     And Select use
     Then Click on Save button
+    
 

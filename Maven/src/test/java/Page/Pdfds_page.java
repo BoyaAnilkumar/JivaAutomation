@@ -43,7 +43,7 @@ package Page;
 			By Selectcontent = By.xpath("//option[text()=' 100% Ecoliva']|//select[@class='form-control ng-pristine ng-invalid ng-touched'][2]");
 			By ClickonColor = By.xpath("(//div[@Class='ng-input'])[2]");
 			By Selectcolor = By.xpath("//span[text()='Autumn Memories']");	
-			By CountConstruction = By.xpath("//select[@Class='form-control ng-pristine ng-invalid ng-touched']");
+			By CountConstruction = By.xpath("(//label[text()='Count/Construction ']|//select[@Class='form-control ng-untouched ng-pristine ng-invalid']//option[text()=' 70 x 90 / 104 x 80'])[2]");
 			By SelectCountcons = By.xpath("//option[@Value='70 x 90 / 104 x 80']");
 			By EnterFinish = By.xpath("//input[@placeholder='Enter Finish']");
 			By specificrequirements = By.xpath("//input[@placeholder='Enter Specific Requirements']");
@@ -147,7 +147,7 @@ package Page;
 				WebElement dashboardElement =driver.findElement(By.xpath("//div[@Class='page_title_left d-flex align-items-center']//h3[text()='Dashboard']"));
 				String Screen = dashboardElement.getText();
 				if (dashboardElement.isDisplayed()) {
-				   System.out.println("Screen Navigated to:" + Screen);
+				   System.out.println("Screen Navigated to: " + Screen);
 				} else {
 				    System.out.println("Screen should navigate to Dashboard:"+Screen);
 				}
@@ -190,7 +190,7 @@ package Page;
 			
 			
 			
-	// Verifying the Tooltips for Mandatory fields by mousehover on them.---------		
+	// Verifying the Tooltips for Mandatory fields by mousehover on them  .---------		
 			
 				public void I_mouse_hover_on_tool_tip() throws Throwable{
 
@@ -265,8 +265,8 @@ package Page;
 				utilities.webDriverWait(driver, CountConstruction );
 				driver.findElement(CountConstruction).click();
 				utilities.MinimumWait(driver);
-				driver.findElement(SelectCountcons).isSelected();
-				utilities.MinimumWait(driver);
+//				driver.findElement(SelectCountcons).isSelected();
+//				utilities.MinimumWait(driver);
 				
 			}
 			
