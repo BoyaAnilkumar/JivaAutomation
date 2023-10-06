@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: Calibrage11
-Build-Jdk: 20.0.2
+Built-By: Calibrage24
+Build-Jdk: 17.0.7
 Created-By: Maven Integration for Eclipse
 

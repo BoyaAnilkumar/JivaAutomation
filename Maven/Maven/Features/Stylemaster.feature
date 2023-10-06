@@ -22,7 +22,7 @@ Then User enters the username and password
  #And Click on the Filter Apply button
  #And Click on the Filter Reset button
  
- 
+
 
 #Then Click on the Add New style button
 #And Click on the PD Merchant name field
@@ -47,9 +47,17 @@ Then User enters the username and password
 #When The user select the PD Assistants
 #And select PD Assistants
 #And Click on the Save button
+#Given I am on the homepage
+#Then print the displayed header message
+
+
+
 #And Click on the Cancel button
 And Click on the created style
-#And Click on the Back button
+And Click on the Back button
+
+
+
 #When User click on the add revise estimates button
 #And Click on the Generate new order radio button
 #And Select the Order Type
@@ -61,11 +69,11 @@ And Click on the created style
 #And Click on the cancel button
 #And Click on the Generate new order radio button
 
-And Click on the Add new tech pack button
-When The User enter the data in tech pack name field
-And Enter the data in tech pack desc field
-Then User select the Tech Pack Received Date
-And Click on the tech pack details Save button
+#And Click on the Add new tech pack button
+#When The User enter the data in tech pack name field
+#And Enter the data in tech pack desc field
+#Then User select the Tech Pack Received Date
+#And Click on the tech pack details Save button
 #And Click on the tech pack details Cancel button
 #And Click on the Tech pack cancel Icon
 
@@ -80,22 +88,29 @@ And Click on the tech pack details Save button
 #And User Click on the Link to PD FDS button
 #And Click on the Link button
 
-#And Click on the View Icon
+
 #Then Click on the View Cancel Icon
 #And Click on the View Close button
-#And Click on the Manage Images Icon
-#And Click on the Manage images Save button
+And Click on the Manage Images Icon
+And Click on the Manage images Save button
 #And Click on the Manage Close button
 #And Click on the Manage Images cancel Icon
-#And Click on the Edit Icon
+
+
+And Click on the Edit Icon
+#And CLick on the Edit Close icon
+And Click on the Edit Close button
+#And Click on the Update button
+Given the user is on the edit form page
+When the user updates the Buyer style
+And The User Updates the Buyer name
+And the user updates the season
+When The User Updates the Garment Type
+And The User Updates the Garment Process
+And Click on the Update button
 #And CLick on the Edit Close icon
 #And Click on the Edit Close button
-#And Click on the Update button
 
-
-
-#Given the user is on the view page
-#When the user navigates to the specific view
-#Then the user should see the expected content on the page
-
-
+#And Click on the Delete Icon
+#And Click on the Yes button
+#And Click on the No button

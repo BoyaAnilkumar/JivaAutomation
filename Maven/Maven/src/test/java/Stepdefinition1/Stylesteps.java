@@ -166,6 +166,24 @@ public class Stylesteps {
 			   Stylepage.Click_on_the_Save_button();
 
 		   }
+		   @And ("^I am on the homepage$")
+		   public void I_am_on_the_homepage() throws Throwable{
+			   Stylepage.I_am_on_the_homepage();
+
+		   } 
+		   @And ("^print the displayed header message$")
+		   public void print_the_displayed_header_message() throws Throwable{
+			   Stylepage.print_the_displayed_header_message();
+
+		   }
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
 		   @Then ("^User enter the the Tech Pack Name$")
 		   public void User_enter_the_the_Tech_Pack_Name() throws Throwable{
 			   Stylepage.User_enter_the_the_Tech_Pack_Name();
@@ -384,6 +402,30 @@ public class Stylesteps {
 		   public void Click_on_the_Edit_Icon() throws Throwable{
 		   Stylepage.Click_on_the_Edit_Icon();
 		   }
+		   @Given ("^the user is on the edit form page$")
+		   public void the_user_is_on_the_edit_form_page() throws Throwable{
+		   Stylepage.the_user_is_on_the_edit_form_page();
+		   }
+		   @When ("^the user updates the Buyer style$")
+		   public void the_user_updates_the_Buyer_style() throws Throwable{
+		   Stylepage.the_user_updates_the_Buyer_style();
+		   }
+		   @And ("^The User Updates the Buyer name$")
+		   public void The_User_Updates_the_Buyer_name() throws Throwable{
+		   Stylepage.The_User_Updates_the_Buyer_name();
+		   }
+		   @And ("^the user updates the season$")
+		   public void the_user_updates_the_season() throws Throwable{
+		   Stylepage.the_user_updates_the_season();
+		   }
+		   @And ("^The User Updates the Garment Type$")
+		   public void the_user_updates_the_garment_Type() throws Throwable{
+		   Stylepage.The_user_updates_the_Garment_Type();
+		   }
+		   @When ("^The User Updates the Garment Process$")
+		   public void the_user_updates_the_Garment_Process() throws Throwable{
+		   Stylepage.The_user_updates_the_Garment_Process();
+		   }
 		   @And ("^CLick on the Edit Close icon$")
 		   public void CLick_on_the_Edit_Close_icon() throws Throwable{
 		   Stylepage.CLick_on_the_Edit_Close_icon();
@@ -396,18 +438,18 @@ public class Stylesteps {
 		   public void Click_on_the_Update_button() throws Throwable{
 		   Stylepage.Click_on_the_Update_button();
 		   }
-		   @Given ("^the user is on the view page$")
-		   public void the_user_is_on_the_view_page() throws Throwable{
-		   Stylepage.the_user_is_on_the_view_page();
+		   @And ("^Click on the Delete Icon$")
+		   public void Click_on_the_Delete_Icon() throws Throwable{
+		   Stylepage.Click_on_the_Delete_Icon();
 		   }
-		   @When ("^the user navigates to the specific view$")
-		   public void the_user_navigates_to_the_specific_view() throws Throwable{
-		   Stylepage.the_user_navigates_to_the_specific_view();
+		   @And ("^Click on the Yes button$")
+		   public void Click_on_the_Yes_button() throws Throwable{
+		   Stylepage.Click_on_the_Yes_button();
 		   }
-		   @Then("^the user should see the expected content on the page$")
-		   public void the_user_should_see_the_expected_content_on_the_page() throws Throwable{
-		   Stylepage.the_user_should_see_the_expected_content_on_the_page();
+		   @And ("^Click on the No button$")
+		   public void Click_on_the_No_button() throws Throwable{
+		   Stylepage.Click_on_the_No_button();
 		   }
-}
+}         
 		   
 		 
