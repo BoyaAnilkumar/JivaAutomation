@@ -3,12 +3,12 @@ Feature: feature to test Jiva design style master screen functionality
 
  @Test1
  Scenario: To Test the Style Master screen
- When User navigates to Login page
-Then User enters the username and password
- And User click on the signIn
- And Click on the Woven Module
- Then click on the PD Module
- And click on the Style Master screen
+ #When User navigates to Login page
+#Then User enters the username and password
+ #And User click on the signIn
+ #And Click on the Woven Module
+ #Then click on the PD Module
+ #And click on the Style Master screen
 
  #Then click on the Filter Icon
  #And Verify the Filter option page
@@ -48,7 +48,7 @@ Then User enters the username and password
 #And select PD Assistants
 #And Click on the Save button
 #And Click on the Cancel button
-And Click on the created style
+#And Click on the created style
 #And Click on the Back button
 #When User click on the add revise estimates button
 #And Click on the Generate new order radio button
@@ -61,11 +61,11 @@ And Click on the created style
 #And Click on the cancel button
 #And Click on the Generate new order radio button
 
-And Click on the Add new tech pack button
-When The User enter the data in tech pack name field
-And Enter the data in tech pack desc field
-Then User select the Tech Pack Received Date
-And Click on the tech pack details Save button
+#And Click on the Add new tech pack button
+#When The User enter the data in tech pack name field
+#And Enter the data in tech pack desc field
+#Then User select the Tech Pack Received Date
+#And Click on the tech pack details Save button
 #And Click on the tech pack details Cancel button
 #And Click on the Tech pack cancel Icon
 

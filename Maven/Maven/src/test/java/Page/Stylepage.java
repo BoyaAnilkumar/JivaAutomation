@@ -18,6 +18,7 @@ public class Stylepage extends DriverFactory{
 
 	Utilities utilities = new Utilities();
 	
+	
 		By SignIn   = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
 		By username = By.xpath("//input[@id='userName']");
 		By password = By.xpath("//input[@id='userpassword']");

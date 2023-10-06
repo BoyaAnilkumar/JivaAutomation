@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-		          tags =" @SmokeTest")
+		          tags ="@SmokeTest")
                   
 public class TestRunner {
 	
