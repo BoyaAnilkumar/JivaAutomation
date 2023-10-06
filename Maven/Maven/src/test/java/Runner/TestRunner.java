@@ -13,6 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 				  features = "Features",
 				  monochrome = true,
 		          tags ="@SmokeTest")
+
                   
 public class TestRunner {
 	
