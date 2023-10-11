@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchElementException</a>
+							<a href="#" class="item-title _500">java.lang.IllegalMonitorStateException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.NoSuchElementException</h5>
+								<h5 class="mb-4">java.lang.IllegalMonitorStateException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="22" parent-id="1">
+<tr class="s-fail" test-id="200" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Then Click on the Submit1 button <br/><span class="text-muted text-sm">Creating the Costing Version</span></td>
-	<td>0h 0m 0s+256msc</td>
+	<td class="_600">Then Click on the Download As Excel button <br/><span class="text-muted text-sm">Creating the Costing Version</span></td>
+	<td>0h 0m 3s+247msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,33 +137,11 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text()='Mandatory Fields Are Required With Valid Data.']"}
-  (Session info: chrome=117.0.5938.132)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'CALIBRAGE22-PC', ip: '172.27.144.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.132, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:12556}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a9a6c603e803198347f8359bf5b10311
-*** Element info: {Using=xpath, value=//h2[text()='Mandatory Fields Are Required With Valid Data.']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.Costingpages.Click_on_the_Submit1_button(Costingpages.java:809)
-	at Stepdefinition1.CostingSteps.Click_on_the_Submit1_button(CostingSteps.java:59)
-	at ✽.Click on the Submit1 button(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/Costing.feature:16)
+		<textarea disabled class="code-block">java.lang.IllegalMonitorStateException: current thread is not owner
+	at java.base/java.lang.Object.wait(Native Method)
+	at Page.Costingpages.Click_on_the_Download_As_Excel_button(Costingpages.java:798)
+	at Stepdefinition1.CostingSteps.Click_on_the_Download_As_Excel_button(CostingSteps.java:442)
+	at ✽.Click on the Download As Excel button(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/Costing.feature:120)
 </textarea>
 	</td>
 </tr>
@@ -191,7 +169,7 @@ Session ID: a9a6c603e803198347f8359bf5b10311
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Oct 5, 2023 03:19:22 pm</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Oct 9, 2023 10:55:02 am</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>
