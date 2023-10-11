@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="168.137">
-    <testcase classname="Login the application and Add New Fabric Sheet" name="Add New Fabric to the Style" time="167.916">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//ng-dropdown-panel[@class='ng-dropdown-panel ng-star-inserted ng-select-bottom']|//div[@id='a352df7a2d38-0'])[2]&quot;}&#10;  (Session info: chrome=117.0.5938.134)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: be29bda0253f1d5fa1bfaad74763b50d&#10;*** Element info: {Using=xpath, value=(//ng-dropdown-panel[@class='ng-dropdown-panel ng-star-inserted ng-select-bottom']|//div[@id='a352df7a2d38-0'])[2]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Navigate to the Login Page............................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="201.327">
+    <testcase classname="Login the application and Add New Fabric Sheet" name="Add New Fabric to the Style" time="201.106">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name='username']&quot;}&#10;  (Session info: chrome=117.0.5938.152)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e1930f64ffad4a54cd5b7bdba12125aa&#10;*** Element info: {Using=xpath, value=//input[@name='username']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Navigate to the Login Page............................................passed
 When User Enter Valid username and password.................................passed
 Then Click on SignIn button.................................................passed
 And Navigated to Dashboard screen or not....................................passed
@@ -13,26 +13,26 @@ And Select the IPO..........................................................pass
 Then Click on Add New Fabric button.........................................passed
 And Click on Nomination checkbox............................................passed
 And Click on Fabric Quality.................................................passed
-And Select Fabric Quality...................................................failed
-Then Click on Content.......................................................skipped
-And Click on Color..........................................................skipped
-Then Enter Finish value.....................................................skipped
-And Enter specific requirements.............................................skipped
-And Enter Fabric Quantity...................................................skipped
-And Enter Full width........................................................skipped
-And Select use..............................................................skipped
-And Navigate to PD Fabric Pricing screen....................................skipped
+And Select Fabric Quality...................................................passed
+Then Click on Content.......................................................passed
+And Click on Color..........................................................passed
+Then Enter Finish value.....................................................passed
+And Enter specific requirements.............................................passed
+And Enter Fabric Quantity...................................................passed
+And Enter Full width........................................................passed
+And Select use..............................................................passed
+And Navigate to PD Fabric Pricing screen....................................failed
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//ng-dropdown-panel[@class='ng-dropdown-panel ng-star-inserted ng-select-bottom']|//div[@id='a352df7a2d38-0'])[2]"}
-  (Session info: chrome=117.0.5938.134)
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='username']"}
+  (Session info: chrome=117.0.5938.152)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: be29bda0253f1d5fa1bfaad74763b50d
-*** Element info: {Using=xpath, value=(//ng-dropdown-panel[@class='ng-dropdown-panel ng-star-inserted ng-select-bottom']|//div[@id='a352df7a2d38-0'])[2]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1930f64ffad4a54cd5b7bdba12125aa
+*** Element info: {Using=xpath, value=//input[@name='username']}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -46,9 +46,9 @@ Session ID: be29bda0253f1d5fa1bfaad74763b50d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.Pdfds_page.Select_Fabric_Quality(Pdfds_page.java:244)
-	at Stepdefinition1.Pdfds_Steps.Select_Fabric_Quality(Pdfds_Steps.java:66)
-	at ✽.Select Fabric Quality(file:///E:/New%20folder/JivaAutomation/Maven/Features/Pdfds.feature:32)
+	at Page.Pdfds_page.Navigate_to_PD_Fabric_Pricing_screen(Pdfds_page.java:352)
+	at Stepdefinition1.Pdfds_Steps.Navigate_to_PD_Fabric_Pricing_screen(Pdfds_Steps.java:118)
+	at ✽.Navigate to PD Fabric Pricing screen(file:///E:/New%20folder/JivaAutomation/Maven/Features/Pdfds.feature:41)
 ]]></failure>
     </testcase>
 </testsuite>
