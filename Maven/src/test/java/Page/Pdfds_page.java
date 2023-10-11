@@ -3,12 +3,9 @@ package Page;
 
 	import java.awt.Robot;
 	import java.awt.event.KeyEvent;
-	import java.util.List;
-
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.interactions.Actions;
-	import org.openqa.selenium.support.ui.ExpectedConditions;
 	import org.openqa.selenium.support.ui.WebDriverWait;
 
 	import util.DriverFactory;
@@ -341,9 +338,18 @@ package Page;
 			}
 			
 			
+			public void click_on_User_Account() throws Throwable {
+				utilities.webDriverWait(driver, Uaccount);
+				driver.findElement(AddNewFabric).click();
+				utilities.MinimumWait(driver);
+			}
 			
-			
-			
+			public void Click_on_Logout_button() throws Throwable {
+				utilities.webDriverWait(driver, Logout);
+				driver.findElement(Logout).click();
+				utilities.MinimumWait(driver);
+			}
+
 			
 //Adding the Pricing details for style in PD Fabric Pricing screen-------
 			
@@ -369,6 +375,9 @@ package Page;
 				driver.findElement(PDFabricPricing).click();
 				
 			}
+
+			
+			
 
 
 			}
