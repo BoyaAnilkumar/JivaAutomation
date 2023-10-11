@@ -441,7 +441,34 @@ public class CostingSteps {
 	  public void Click_on_the_Download_As_Excel_button() throws Throwable {
 		  cos.Click_on_the_Download_As_Excel_button();
 	  }
-	  
+	  @Then ("^Click on Import button$")
+	  public void Click_on_Import_button() throws Throwable {
+		  cos.Click_on_Import_button();
+	  }
+	  @When ("^Check wether the Import Version Details Version popup window opened or not$")
+	  public void Check_wether_the_Import_Version_Details_Version_popup_window_opened_or_not() throws Throwable {
+		  cos.Check_wether_the_Import_Version_Details_Version_popup_window_opened_or_not();
+	  }
+	  @Then ("^Click Versions dropdown field$")
+	  public void Click_Versions_dropdown_field() throws Throwable {
+		  cos.Click_Versions_dropdown_field();
+	  }
+	  @Then ("^Select a value from the dropdown$")
+	  public void Select_a_value_from_the_dropdown() {
+		  cos.Select_a_value_from_the_dropdown();
+	  }
+	  @Then ("^Click on the Close button$")
+	  public void Click_on_the_Close_button() throws Throwable {
+		  cos.Click_on_the_Close_button();
+	  }
+	  @Then ("^Click on the Import buttton$")
+	  public void Click_on_the_Import_buttton() throws Throwable {
+		  cos.Click_on_the_Import_buttton();
+	  }
+	  @Then ("^Click on Close icon$")
+	  public void Click_on_Close_icon() throws Throwable {
+		  cos.Click_on_Close_icon();
+	  }
 	    
 	    
 
