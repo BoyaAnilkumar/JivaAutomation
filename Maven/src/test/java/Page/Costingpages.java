@@ -419,7 +419,7 @@ public class Costingpages extends DriverFactory {
 		driver.findElement(Cut_Check_OverheadCost).isDisplayed();
 		driver.findElement(Cut_Enter_Overheadcost).clear();
 		driver.findElement(Cut_Enter_Overheadcost).sendKeys("25");
-		
+		System.out.println("This is a test print in over head costing ");
 	}
 
 	public void To_check_whether_the_Garment_Cutting_Cost_is_displaying_a_value_or_not() throws Throwable {
