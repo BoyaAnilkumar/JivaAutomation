@@ -16,10 +16,7 @@ package Page;
 
 	public class Pdfds_page extends DriverFactory {
 
-		private WebDriverWait wait;
-		
-		
-			Utilities utilities=new Utilities();
+		Utilities utilities=new Utilities();
 			
 			
 			By username = By.xpath("//input[@name='username']");
@@ -35,15 +32,18 @@ package Page;
 			By PDFDS = By.xpath("//a[text()=' PD FDS ']");
 			By Stylesexpansion = By.xpath("//a[@id='sidebarCollapse']");
 			By SelecttheIPO= By.xpath("//a[@Class='nav-link lite-yellow']");
+			By ClickonStylesExpansion = By.xpath("//a[@id='sidebarCollapse']");
 			By AddNewFabric = By.xpath("//a[@Class='nav-link add-fabric']");
 			By ClickonFabricQuality = By.xpath("(//div[@Class='ng-value-container']|//ng-select[@formcontrolname='fabricQualityId'])[1]");
-			By SelectFabricQuality = By.xpath("//span[text()='Cotton voile']");
+			By SelectFabricQuality = By.xpath("(//ng-dropdown-panel[@class='ng-dropdown-panel ng-star-inserted ng-select-bottom']|//div[@id='a352df7a2d38-0'])[2] ");
 			By ClickContent = By.xpath("//select[@Class='form-control ng-touched ng-dirty ng-valid']");
 			By ClickonContent = By.xpath("//option[@value='100% Ecoliva']|//select[@class='form-control ng-pristine ng-invalid ng-touched'][1]");
 			By Selectcontent = By.xpath("//option[text()=' 100% Ecoliva']|//select[@class='form-control ng-pristine ng-invalid ng-touched'][2]");
 			By ClickonColor = By.xpath("(//div[@Class='ng-input'])[2]");
 			By Selectcolor = By.xpath("//span[text()='Autumn Memories']");	
-			By CountConstruction = By.xpath("//select[@Class='form-control ng-pristine ng-invalid ng-touched']");
+			
+			By CountConstruction = By.xpath("(//div[@class='col-md-4'])[4]");
+			
 			By SelectCountcons = By.xpath("//option[@Value='70 x 90 / 104 x 80']");
 			By EnterFinish = By.xpath("//input[@placeholder='Enter Finish']");
 			By specificrequirements = By.xpath("//input[@placeholder='Enter Specific Requirements']");
@@ -51,10 +51,10 @@ package Page;
 			By EnterFullwidth = By.xpath("//input[@placeholder='Enter Width']");
 			By ClickonUse = By.xpath("//select[@formcontrolname='use']");
 			By SelectUse = By.xpath("//option[@value='193']");
-			By ClickonResetbutton = By.xpath("//button[@Class='btn btn-md btn-danger  btn-active-light-primary mr-2 ng-star-inserted']");
+			By ClickonResetbutton = By.xpath("//button[@class='btn btn-md btn-danger btn-active-light-primary mr-2 ng-star-inserted']");
 			By ClickonSavebutton = By.xpath("(//i[text()=' SAVE ']|//button[@type='submit'])[2]");
 			By ToasterMessage = By.xpath("//h2[@class='swal2-title']");
-			By Nominationcheckbox = By.xpath("(//label[text()=' Is Nominated? ']|//input[@id='invalidCheck3'])[1]");
+			By Nominationcheckbox = By.xpath("//input[@id='invalidCheck3']");
 			
 	// Mouse hover on Tool tip for validation Text		
 			By ValidationFabricQuality = By.xpath("(//div[@class='invalid-feedback validation-msg ng-star-inserted'])[1]");
@@ -67,46 +67,63 @@ package Page;
 			By VCuttablewidth = By.xpath("(//div[@class='invalid-feedback validation-msg ng-star-inserted'])[7]");
 			By VUse = By.xpath("//div[@class='invalid-feedback count validation-msg ng-star-inserted']");
 			
+	// Navigated to PD Fabric pricing with user: Lokesh[Fabric Manager]
+			By PDFabricPricing = By.xpath("//a[text()='PD Fabric Pricing']");
+			
+			
+			
+			
 			
 			public void Navigate_to_the_Login_Page() throws Throwable {
 				driver.get(prop.getProperty("url"));
-				wait = new WebDriverWait(driver, 10);
+				new WebDriverWait(driver, 10);
 				utilities.MinimumWait(driver);
 			}
 
 			public void user_Enter_invalid_username_and_valid_password() throws Throwable {
-				 String[] usernames = {"Phanindra", "Anil"};
-				 String[] passwords = {"Abcd@123", "Abcd@123"};
-				 
-				 for (int i = 0; i < usernames.length; i++) {
-			            String username = usernames[i];
-			            String password = passwords[i];
-
-			            WebElement usernameInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='username']")));
-			            usernameInput.clear();
-			            usernameInput.sendKeys(username);
-			            utilities.MediumWait(driver);
-			            
-			            WebElement passwordInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='password']")));
-			            passwordInput.clear();
-			            passwordInput.sendKeys(password);
-			            utilities.MediumWait(driver);
-			            
-			            WebElement signInButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Sign In']")));
-			            signInButton.click();
-			            utilities.MediumWait(driver);
-			            
-			            List<WebElement> matchingElements = driver.findElements(Useraccount);
-
-			            if (!matchingElements.isEmpty()) {
-			            	 return;
-			            } else {
-			                System.out.println("Element with XPath '" + Useraccount + "' exists.");
-			               
-			            }
+				
+				utilities.webDriverWait(driver, username);
+				driver.findElement(username).sendKeys("Phanindra");
+				utilities.MinimumWait(driver);
+				
+				utilities.webDriverWait(driver, Password);
+				driver.findElement(Password).sendKeys("Abcd@123");
+				utilities.MinimumWait(driver);
+				
+	}
+			
+//				 String[] usernames = {"Phanindra", "Anil"};
+//				 String[] passwords = {"Abcd@123", "Abcd@123"};
+//				 
+//				 for (int i = 0; i < usernames.length; i++) {
+//			            String username = usernames[i];
+//			            String password = passwords[i];
+//
+//			            WebElement usernameInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='username']")));
+//			            usernameInput.clear();
+//			            usernameInput.sendKeys(username);
+//			            utilities.MediumWait(driver);
+//			            
+//			            WebElement passwordInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='password']")));
+//			            passwordInput.clear();
+//			            passwordInput.sendKeys(password);
+//			            utilities.MediumWait(driver);
+//			            
+//			            WebElement signInButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Sign In']")));
+//			            signInButton.click();
+//			            utilities.MediumWait(driver);
+//			            
+//			            List<WebElement> matchingElements = driver.findElements(Useraccount);
+//
+//			            if (!matchingElements.isEmpty()) {
+//			            	 return;
+//			            } else {
+//			                System.out.println("Element with XPath '" + Useraccount + "' exists.");
+//			               
+//			            }
 			            // You can add additional actions specific to your scenario here
 			            // utilities.MinimumWait(driver);
-			        }
+//			        }
 				 
 //			        for (String username : usernames) {
 //			            WebElement usernameInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='username']")));
@@ -123,19 +140,9 @@ package Page;
 //			          }
 //			  
 			         
-			        }
-				
+			        
 						
-//				utilities.webDriverWait(driver, username);
-//				driver.findElement(username).sendKeys("Phanindra");
-//				utilities.MinimumWait(driver);
-				
-//				utilities.webDriverWait(driver, Password);
-//				driver.findElement(Password).sendKeys("Abcd@123");
-//				utilities.MinimumWait(driver);
-				
-		
-			
+
 
 			public void Click_on_SignIn_button() throws Throwable {
 				utilities.webDriverWait(driver, SignIn);
@@ -144,10 +151,10 @@ package Page;
 			}
 			
 			public void Navigated_to_Dashboard_screen_or_not() {
-				WebElement dashboardElement =driver.findElement(By.xpath("//div[@Class='page_title_left d-flex align-items-center']//h3[text()='Dashboard']"));
+				WebElement dashboardElement =driver.findElement(Dashboard);
 				String Screen = dashboardElement.getText();
 				if (dashboardElement.isDisplayed()) {
-				   System.out.println("Screen Navigated to:" + Screen);
+				   System.out.println("Screen Navigated to: " + Screen);
 				} else {
 				    System.out.println("Screen should navigate to Dashboard:"+Screen);
 				}
@@ -184,13 +191,13 @@ package Page;
 				driver.findElement(SelecttheIPO).click();
 				
 				utilities.MinimumWait(driver);
-				driver.findElement(ClickonSavebutton).click();
+				driver.findElement(ClickonStylesExpansion).click();
 				
 			}
 			
 			
 			
-	// Verifying the Tooltips for Mandatory fields by mousehover on them.---------		
+	// Verifying the Tooltips for Mandatory fields by mousehover on them  .---------		
 			
 				public void I_mouse_hover_on_tool_tip() throws Throwable{
 
@@ -227,8 +234,8 @@ package Page;
 				utilities.webDriverWait(driver, ClickonFabricQuality);
 				driver.findElement(ClickonFabricQuality).click();
 				utilities.MinimumWait(driver);
-				Robot R = new Robot();
-				R.keyPress(KeyEvent.VK_DOWN);
+//				Robot R = new Robot();
+//				R.keyPress(KeyEvent.VK_DOWN);
 				
 			}
 
@@ -264,6 +271,9 @@ package Page;
 			public void Select_CountConstruction() throws Throwable {
 				utilities.webDriverWait(driver, CountConstruction );
 				driver.findElement(CountConstruction).click();
+				Robot R = new Robot();
+				R.keyPress(KeyEvent.VK_DOWN);
+				Thread.sleep(5000);
 				utilities.MinimumWait(driver);
 				driver.findElement(SelectCountcons).isSelected();
 				utilities.MinimumWait(driver);
@@ -291,7 +301,7 @@ package Page;
 
 			public void Enter_Full_width() throws Throwable {
 				utilities.webDriverWait(driver, EnterFullwidth);
-				driver.findElement(EnterFullwidth).sendKeys("30*25");
+				driver.findElement(EnterFullwidth).sendKeys("30");
 				
 			}
 
@@ -308,6 +318,55 @@ package Page;
 				driver.findElement(ClickonResetbutton).click();
 				Thread.sleep(2000);
 				
+				utilities.webDriverWait(driver, ClickonFabricQuality);
+				driver.findElement(ClickonFabricQuality).click();
+				utilities.MinimumWait(driver);
+				Robot R = new Robot();
+				R.keyPress(KeyEvent.VK_DOWN);
+				
+				utilities.webDriverWait(driver, SelectFabricQuality);
+				driver.findElement(SelectFabricQuality).click();
+				
+				boolean ElementPresent = driver.findElements(ClickContent).size()>0;
+				   if(ElementPresent) {
+					utilities.webDriverWait(driver, ClickContent);
+					System.out.println("Content is present");
+					driver.findElement(ClickContent).click();	
+					utilities.MediumWait(driver);	
+				   }
+				   
+				   utilities.webDriverWait(driver, ClickonColor);
+					driver.findElement(ClickonColor).click();
+					Robot R1 = new Robot();
+					R1.keyPress(KeyEvent.VK_DOWN);
+					Thread.sleep(5000);
+					driver.findElement(Selectcolor).click();
+					
+				utilities.webDriverWait(driver, CountConstruction );
+				driver.findElement(CountConstruction).click();
+				Robot R11 = new Robot();
+				R11.keyPress(KeyEvent.VK_DOWN);
+				Thread.sleep(5000);
+				utilities.MinimumWait(driver);
+				driver.findElement(SelectCountcons).isSelected();
+				utilities.MinimumWait(driver);
+				
+				utilities.webDriverWait(driver, EnterFinish);
+				driver.findElement(EnterFinish).sendKeys("200");
+				
+				utilities.webDriverWait(driver, specificrequirements);
+				driver.findElement(specificrequirements).sendKeys("20*16/35*30");
+				
+				utilities.webDriverWait(driver, EnterFabricQuantity);
+				driver.findElement(EnterFabricQuantity).sendKeys("1520");
+				
+				utilities.webDriverWait(driver, EnterFullwidth);
+				driver.findElement(EnterFullwidth).sendKeys("40");
+				
+				utilities.webDriverWait(driver, ClickonUse);
+				driver.findElement(ClickonUse).click();
+				Thread.sleep(4000);
+				driver.findElement(SelectUse).click();
 			}
 
 			public void Click_on_Save_button() throws Throwable {
@@ -325,8 +384,31 @@ package Page;
 			
 			public void Click_on_Nomination_Checkbox() throws Throwable {
 				utilities.webDriverWait(driver, Nominationcheckbox);
-				driver.findElement(Nominationcheckbox).isSelected();
+				driver.findElement(Nominationcheckbox).click();
 				Thread.sleep(5000);
+			}
+
+			public void Navigate_to_PD_Fabric_Pricing_screen() throws Throwable {
+				utilities.webDriverWait(driver, username);
+				driver.findElement(username).sendKeys("lokesh");
+				utilities.MinimumWait(driver);
+				
+				utilities.webDriverWait(driver, Password);
+				driver.findElement(Password).sendKeys("Abcd@123");
+				utilities.MinimumWait(driver);
+				
+				utilities.webDriverWait(driver, WovenKnit);
+				driver.findElement(WovenKnit).click();
+				
+				utilities.webDriverWait(driver, Stylesexpansion);
+				driver.findElement(Stylesexpansion).click();
+				
+				utilities.webDriverWait(driver, SelecttheIPO);
+				driver.findElement(SelecttheIPO).click();
+				
+				utilities.webDriverWait(driver, PDFabricPricing);
+				driver.findElement(PDFabricPricing).click();
+				
 			}
 
 

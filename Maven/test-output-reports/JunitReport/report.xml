@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="258.333">
+    <testcase classname="feature to test Jiva design style master screen functionality" name="To Test the Style Master screen" time="257.829">
+        <failure message="element click intercepted: Element &lt;a _ngcontent-rpl-c186=&quot;&quot; href=&quot;javascript:void();&quot; class=&quot;ng-star-inserted&quot;&gt;...&lt;/a&gt; is not clickable at point (414, 8). Other element would receive the click: &lt;div _ngcontent-rpl-c51=&quot;&quot; class=&quot;header_iner d-flex justify-content-between align-items-center&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=117.0.5938.150)&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62659}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3054cc3920914c88ff7f98299d912d8b" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then click on the PD Module.................................................passed
+And click on the Style Master screen........................................passed
+Then Click on the Add New style button......................................passed
+And Click on the PD Merchant name field.....................................passed
+When User select the PD merchant name.......................................passed
+And Enter the data in BuyerStyle field......................................passed
+And Click on the Buyer field................................................passed
+When User select the Buyer..................................................passed
+And Click on the Season field...............................................passed
+When User select the Season.................................................passed
+And Click on the Garment Type field.........................................passed
+Then Select the Garment type................................................passed
+And Click on the Garment process field......................................passed
+When The user select the Garment Process....................................passed
+Then User enter the the Tech Pack Name......................................passed
+And Enter the data in Teck pack desc field..................................passed
+Then User select the data in Teck received date field.......................passed
+And User click on the sampling type field...................................passed
+When The user select the sampling type in dropdown list.....................passed
+And User select the Expected Submission Date................................passed
+And Enter the data in expected order qty field..............................passed
+Then User select the expected order date field..............................passed
+When The user select the PD Assistants......................................passed
+And select PD Assistants....................................................passed
+And Click on the Save button................................................failed
+And Click on the created style..............................................skipped
+And Click on the Back button................................................skipped
+When User click on the add revise estimates button..........................skipped
+And Click on the Generate new order radio button............................skipped
+And Select the Order Type...................................................skipped
+And Select the Order date...................................................skipped
+And Select the Exfactory date...............................................skipped
+Given User enter the Order qty..............................................skipped
+And Click on the cancel button..............................................skipped
+And Click on the Add new tech pack button...................................skipped
+When The User enter the data in tech pack name field........................skipped
+And Enter the data in tech pack desc field..................................skipped
+Then User select the Tech Pack Received Date................................skipped
+And Click on the Tech pack cancel Icon......................................skipped
+And Click on the Add sampling details button................................skipped
+And Select the sampling status..............................................skipped
+Given User Click the Sampling type..........................................skipped
+And User Select the Sampling type...........................................skipped
+And Select the Submission date..............................................skipped
+And Click on the sampling Save button.......................................skipped
+And Click on the Edit Icon..................................................skipped
+Given the user is on the edit form page.....................................skipped
+When the user updates the Buyer style.......................................skipped
+And The User Updates the Buyer name.........................................skipped
+And the user updates the season.............................................skipped
+When The User Updates the Garment Type......................................skipped
+And The User Updates the Garment Process....................................skipped
+And Click on the Update button..............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-rpl-c186="" href="javascript:void();" class="ng-star-inserted">...</a> is not clickable at point (414, 8). Other element would receive the click: <div _ngcontent-rpl-c51="" class="header_iner d-flex justify-content-between align-items-center">...</div>
+  (Session info: chrome=117.0.5938.150)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.150, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62659}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3054cc3920914c88ff7f98299d912d8b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at Page.Stylepage.Click_on_the_Save_button(Stylepage.java:400)
+	at Stepdefinition1.Stylesteps.Click_on_the_Save_button(Stylesteps.java:162)
+	at ✽.Click on the Save button(file:///D:/02102023/JivaAutomation/Maven/Features/Stylemaster.feature:47)
+=======
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="168.137">
+    <testcase classname="Login the application and Add New Fabric Sheet" name="Add New Fabric to the Style" time="167.916">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//ng-dropdown-panel[@class='ng-dropdown-panel ng-star-inserted ng-select-bottom']|//div[@id='a352df7a2d38-0'])[2]&quot;}&#10;  (Session info: chrome=117.0.5938.134)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: be29bda0253f1d5fa1bfaad74763b50d&#10;*** Element info: {Using=xpath, value=(//ng-dropdown-panel[@class='ng-dropdown-panel ng-star-inserted ng-select-bottom']|//div[@id='a352df7a2d38-0'])[2]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Navigate to the Login Page............................................passed
+When User Enter Valid username and password.................................passed
+Then Click on SignIn button.................................................passed
+And Navigated to Dashboard screen or not....................................passed
+And Click on Wovenknit module...............................................passed
+Then Click on PD module.....................................................passed
+And click on pd fds.........................................................passed
+And Click on Style expansion................................................passed
+And Select the IPO..........................................................passed
+Then Click on Add New Fabric button.........................................passed
+And Click on Nomination checkbox............................................passed
+And Click on Fabric Quality.................................................passed
+And Select Fabric Quality...................................................failed
+Then Click on Content.......................................................skipped
+And Click on Color..........................................................skipped
+Then Enter Finish value.....................................................skipped
+And Enter specific requirements.............................................skipped
+And Enter Fabric Quantity...................................................skipped
+And Enter Full width........................................................skipped
+And Select use..............................................................skipped
+And Navigate to PD Fabric Pricing screen....................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//ng-dropdown-panel[@class='ng-dropdown-panel ng-star-inserted ng-select-bottom']|//div[@id='a352df7a2d38-0'])[2]"}
+  (Session info: chrome=117.0.5938.134)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be29bda0253f1d5fa1bfaad74763b50d
+*** Element info: {Using=xpath, value=(//ng-dropdown-panel[@class='ng-dropdown-panel ng-star-inserted ng-select-bottom']|//div[@id='a352df7a2d38-0'])[2]}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.Pdfds_page.Select_Fabric_Quality(Pdfds_page.java:244)
+	at Stepdefinition1.Pdfds_Steps.Select_Fabric_Quality(Pdfds_Steps.java:66)
+	at ✽.Select Fabric Quality(file:///E:/New%20folder/JivaAutomation/Maven/Features/Pdfds.feature:32)
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+]]></failure>
+    </testcase>
+</testsuite>
