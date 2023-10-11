@@ -502,6 +502,7 @@ public class Stylepage extends DriverFactory{
 					
 				}
 				public void The_User_enter_the_data_in_tech_pack_name_field()  throws Throwable{
+					utilities.webDriverWait(driver, Techpacknamefield );
 					driver.findElement(Techpacknamefield).sendKeys("newtechpack");
 					
 				}
