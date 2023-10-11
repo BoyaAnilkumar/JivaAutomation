@@ -276,11 +276,11 @@ public class Stylesteps {
 			   Stylepage.Select_the_Costing_Version();
 
 		   }
-		   @And ("^click on the Save button$")
-		   public void click_on_the_Save_button() throws Throwable{
-			   Stylepage.click_on_the_Save_button();
+//		   @And ("^click on the Save button$")
+//		   public void click_on_the_Save_button() throws Throwable{
+//			   Stylepage.click_on_the_Save_button();
 
-		   }
+//		   }
 		   @And ("^Click on the cancel button$")
 		   public void Click_on_the_cancel_button() throws Throwable{
 			   Stylepage.Click_on_the_cancel_button();
