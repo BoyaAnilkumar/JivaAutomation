@@ -258,45 +258,45 @@ public class Stylepage extends DriverFactory{
 				
 			}
 			public void Enter_the_data_in_BuyerStyle_field() throws Throwable{
-			utilities.webDriverWait(driver, Buyerstyle );
-			driver.findElement(Buyerstyle_toggle).click();
-			utilities.MediumWait(driver);  
-			driver.findElement(Buyerstyle).sendKeys("Styl-0310");
-			utilities.MediumWait(driver);
+			    utilities.webDriverWait(driver, Buyerstyle );
+			    driver.findElement(Buyerstyle_toggle).click();
+			    utilities.MediumWait(driver);  
+			    driver.findElement(Buyerstyle).sendKeys("Styl-0310");
+			    utilities.MediumWait(driver);
 			}
 			public void Click_on_the_Buyer_field() throws Throwable{
-			utilities.webDriverWait(driver, Buyerfield );
-			driver.findElement(Buyer_toggle).click();	
-			utilities.MediumWait(driver);  
-			driver.findElement(Buyerfield).click();
-			utilities.MediumWait(driver); 
+			    utilities.webDriverWait(driver, Buyerfield );
+			    driver.findElement(Buyer_toggle).click();	
+			    utilities.MediumWait(driver);  
+			    driver.findElement(Buyerfield).click();
+			    utilities.MediumWait(driver); 
 			}
 			public void User_select_the_Buyer() throws Throwable{
-			utilities.webDriverWait(driver, Buyerselect );
-			utilities.MediumWait(driver);
-			driver.findElement(Buyerselect).click();	
+			  utilities.webDriverWait(driver, Buyerselect );
+			  utilities.MediumWait(driver);
+			  driver.findElement(Buyerselect).click();	
 				
 			}
 			public void Click_on_the_Season_field() throws Throwable{
-			utilities.webDriverWait(driver, Season );
-			driver.findElement(Season_toggle).click();
-			utilities.MediumWait(driver);  
-			driver.findElement(Season).click();	
-			utilities.MediumWait(driver);  
+			   utilities.webDriverWait(driver, Season );
+			   driver.findElement(Season_toggle).click();
+			   utilities.MediumWait(driver);  
+			   driver.findElement(Season).click();	
+			   utilities.MediumWait(driver);  
 				
 			}
 			public void User_select_the_Season() throws Throwable{
-			utilities.webDriverWait(driver, Selectseason );
-			driver.findElement(Selectseason).click();	
-			utilities.MediumWait(driver);  
+			   utilities.webDriverWait(driver, Selectseason );
+			   driver.findElement(Selectseason).click();	
+			   utilities.MediumWait(driver);  
 				
 			}
 			public void Click_on_the_Garment_Type_field() throws Throwable{
-			utilities.webDriverWait(driver, GarmentType );
-			driver.findElement(Garment_toggle).click();	
-			utilities.MediumWait(driver);  
-			driver.findElement(GarmentType).click();	
-			utilities.MediumWait(driver);  
+			    utilities.webDriverWait(driver, GarmentType );
+			    driver.findElement(Garment_toggle).click();	
+			    utilities.MediumWait(driver);  
+			    driver.findElement(GarmentType).click();	
+			    utilities.MediumWait(driver);  
 				
 			}
 			public void Select_the_Garment_type() throws Throwable{
@@ -686,7 +686,7 @@ public class Stylepage extends DriverFactory{
 				driver.findElement(No).click();	
 						
 		   }
-				
+
 				
 		
 				
