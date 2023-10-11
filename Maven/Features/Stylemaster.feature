@@ -103,8 +103,8 @@ And The User Updates the Buyer name
 And the user updates the season
 When The User Updates the Garment Type
 And The User Updates the Garment Process
-And Click on the Update button
-#And CLick on the Edit Close icon
+#And Click on the Update button
+And CLick on the Edit Close icon
 #And Click on the Edit Close button
 
 #And Click on the Delete Icon
