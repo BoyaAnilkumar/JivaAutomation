@@ -20,16 +20,16 @@ Then User enters the username and password
  And Select the Active Check box
  And CLick on the Save button
  And Verify the successfull msg
- #And Click on the Cancel button
- #And Click on the Edit Icon
- #Then Update the Country name
- #And Update the Country code
- #And Update the Select Country
- #And Update the Conversion Rate
- #And Click on the Update button
- #And Verify the Update msg
- #And Click on the update form Cancel button 
- #And Click on the Delete Icon
- #And Verify the Delete msg
+ And Click on the Cancel button
+ And Click on the Edit Icon
+ Then Update the Country name
+ And Update the Country code
+ And Update the Select Country
+ And Update the Conversion Rate
+ And Click on the Update button
+ And Verify the Update msg
+ And Click on the update form Cancel button 
+ And Click on the Delete Icon
+ And Verify the Delete msg
  
- #And Search the Country name
+ And Search the Country name
