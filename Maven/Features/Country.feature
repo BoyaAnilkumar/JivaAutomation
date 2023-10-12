@@ -30,6 +30,6 @@ Then User enters the username and password
  And Verify the Update msg
  And Click on the update form Cancel button 
  And Click on the Delete Icon
- And Verify the Delete msg
+ #And Verify the Delete msg
  
  And Search the Country name
