@@ -3,12 +3,9 @@ package Page;
 
 	import java.awt.Robot;
 	import java.awt.event.KeyEvent;
-	import java.util.List;
-
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.interactions.Actions;
-	import org.openqa.selenium.support.ui.ExpectedConditions;
 	import org.openqa.selenium.support.ui.WebDriverWait;
 
 	import util.DriverFactory;
@@ -35,7 +32,9 @@ package Page;
 			By ClickonStylesExpansion = By.xpath("//a[@id='sidebarCollapse']");
 			By AddNewFabric = By.xpath("//a[@Class='nav-link add-fabric']");
 			By ClickonFabricQuality = By.xpath("(//div[@Class='ng-value-container']|//ng-select[@formcontrolname='fabricQualityId'])[1]");
-			By SelectFabricQuality = By.xpath("(//ng-dropdown-panel[@class='ng-dropdown-panel ng-star-inserted ng-select-bottom']|//div[@id='a352df7a2d38-0'])[2] ");
+			
+			By SelectFabricQuality = By.xpath("//span[text()='40s viscose plain']");
+			
 			By ClickContent = By.xpath("//select[@Class='form-control ng-touched ng-dirty ng-valid']");
 			By ClickonContent = By.xpath("//option[@value='100% Ecoliva']|//select[@class='form-control ng-pristine ng-invalid ng-touched'][1]");
 			By Selectcontent = By.xpath("//option[text()=' 100% Ecoliva']|//select[@class='form-control ng-pristine ng-invalid ng-touched'][2]");
@@ -55,6 +54,8 @@ package Page;
 			By ClickonSavebutton = By.xpath("(//i[text()=' SAVE ']|//button[@type='submit'])[2]");
 			By ToasterMessage = By.xpath("//h2[@class='swal2-title']");
 			By Nominationcheckbox = By.xpath("//input[@id='invalidCheck3']");
+			By Uaccount = By.xpath("//div[@class='profile_info dropdown']");
+			By Logout = By.xpath("//a[text()='Log Out ']");
 			
 	// Mouse hover on Tool tip for validation Text		
 			By ValidationFabricQuality = By.xpath("(//div[@class='invalid-feedback validation-msg ng-star-inserted'])[1]");
@@ -91,56 +92,7 @@ package Page;
 				utilities.MinimumWait(driver);
 				
 	}
-			
-//				 String[] usernames = {"Phanindra", "Anil"};
-//				 String[] passwords = {"Abcd@123", "Abcd@123"};
-//				 
-//				 for (int i = 0; i < usernames.length; i++) {
-//			            String username = usernames[i];
-//			            String password = passwords[i];
-//
-//			            WebElement usernameInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='username']")));
-//			            usernameInput.clear();
-//			            usernameInput.sendKeys(username);
-//			            utilities.MediumWait(driver);
-//			            
-//			            WebElement passwordInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='password']")));
-//			            passwordInput.clear();
-//			            passwordInput.sendKeys(password);
-//			            utilities.MediumWait(driver);
-//			            
-//			            WebElement signInButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Sign In']")));
-//			            signInButton.click();
-//			            utilities.MediumWait(driver);
-//			            
-//			            List<WebElement> matchingElements = driver.findElements(Useraccount);
-//
-//			            if (!matchingElements.isEmpty()) {
-//			            	 return;
-//			            } else {
-//			                System.out.println("Element with XPath '" + Useraccount + "' exists.");
-//			               
-//			            }
-			            // You can add additional actions specific to your scenario here
-			            // utilities.MinimumWait(driver);
-//			        }
-				 
-//			        for (String username : usernames) {
-//			            WebElement usernameInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='username']")));
-//			            usernameInput.clear();
-//			            usernameInput.sendKeys(username);
-//			            utilities.MinimumWait(driver);
-//			          for (String password : passwords) {
-//			        	  WebElement passwordInput = wait.until(ExpectedConditions.visibilityOfElementLocated(Password));
-//			        	  passwordInput.clear();
-//			        	  passwordInput.sendKeys(password);
-//			        	  driver.findElement(SignIn);
-//			        	
-//			        	  utilities.MinimumWait(driver);
-//			          }
-//			  
-			         
-			        
+
 						
 
 
@@ -216,10 +168,7 @@ package Page;
 		        actions11.moveToElement(elementToHover11).perform();
 		        utilities.MaximumLongWait(driver);
 		        	        
-//				WebElement ValidationsMsgFabricQuality = driver.findElement(ValidationFabricQuality);
-//				String FabricQuality = ValidationsMsgFabricQuality.getText();
-//				assert FabricQuality.equals(null);
-//				System.out.println("Validation Message:" + FabricQuality);
+
 		        
 				}
 			
@@ -321,11 +270,11 @@ package Page;
 				utilities.webDriverWait(driver, ClickonFabricQuality);
 				driver.findElement(ClickonFabricQuality).click();
 				utilities.MinimumWait(driver);
-				Robot R = new Robot();
-				R.keyPress(KeyEvent.VK_DOWN);
 				
 				utilities.webDriverWait(driver, SelectFabricQuality);
 				driver.findElement(SelectFabricQuality).click();
+				Robot R = new Robot();
+				R.keyPress(KeyEvent.VK_DOWN);
 				
 				boolean ElementPresent = driver.findElements(ClickContent).size()>0;
 				   if(ElementPresent) {
@@ -387,7 +336,23 @@ package Page;
 				driver.findElement(Nominationcheckbox).click();
 				Thread.sleep(5000);
 			}
+			
+			
+			public void click_on_User_Account() throws Throwable {
+				utilities.webDriverWait(driver, Uaccount);
+				driver.findElement(AddNewFabric).click();
+				utilities.MinimumWait(driver);
+			}
+			
+			public void Click_on_Logout_button() throws Throwable {
+				utilities.webDriverWait(driver, Logout);
+				driver.findElement(Logout).click();
+				utilities.MinimumWait(driver);
+			}
 
+			
+//Adding the Pricing details for style in PD Fabric Pricing screen-------
+			
 			public void Navigate_to_PD_Fabric_Pricing_screen() throws Throwable {
 				utilities.webDriverWait(driver, username);
 				driver.findElement(username).sendKeys("lokesh");
@@ -410,6 +375,9 @@ package Page;
 				driver.findElement(PDFabricPricing).click();
 				
 			}
+
+			
+			
 
 
 			}

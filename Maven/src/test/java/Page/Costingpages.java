@@ -136,12 +136,13 @@ public class Costingpages extends DriverFactory {
 	By ViewForPrint = By.xpath("(//button[@class='btn btn-md btn-primary btn-active-light-primary mr-2 ng-star-inserted'])[3]");
 	By DownLoadAsExcel = By.xpath("//button[@class='btn btn-md btn-primary btn-active-light-primary']");
 	By Man_Valid_msg = By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
-//	Mandatory Fields Are Required With  Valid Data.
-//	By Man_Valid_msg = By.xpath("//img[@class='swa12-image']//h2[text()='Mandatory Fields Are Required With Valid Data.']");
-//			("//h2[@class='swa12-title']");
 	By Cancel = By.xpath("//button[@id='closepagebutton']");
-	
-	
+	By Import = By.xpath("//button[@class='btn btn-primary btn-md float-right ng-star-inserted']");
+	By Imp_popup = By.xpath("(//div[@class='modal-content'])[2]");
+	By Imp_ver = By.xpath("//select[@class='form-control ng-pristine ng-invalid ng-touched']");
+	By Imp_closeButton = By.xpath("//button[@class='btn btn-danger']");
+	By Imp_ImportButton = By.xpath("//button[@class='btn btn-primary']");
+	By Imp_Close1 = By.xpath("(//button[@data-dismiss='modal'])[1]");
 	
 	public void Navigates_to_the_Login_page() {
 		driver.get(prop.getProperty("url"));
@@ -418,7 +419,7 @@ public class Costingpages extends DriverFactory {
 		driver.findElement(Cut_Check_OverheadCost).isDisplayed();
 		driver.findElement(Cut_Enter_Overheadcost).clear();
 		driver.findElement(Cut_Enter_Overheadcost).sendKeys("25");
-		
+		System.out.println("This is a test print in over head costing ");
 	}
 
 	public void To_check_whether_the_Garment_Cutting_Cost_is_displaying_a_value_or_not() throws Throwable {
@@ -547,7 +548,7 @@ public class Costingpages extends DriverFactory {
 	}
 
 	public void Select_an_option_in_Booked_field() throws Throwable {
-//		utilities.webDriverWait(driver,Sti_Booked);
+		utilities.webDriverWait(driver,Sti_Booked);
 		driver.findElement(Sti_Booked).click();
 		Robot r = new Robot();
 		r.keyPress(KeyEvent.VK_2);
@@ -823,9 +824,46 @@ public class Costingpages extends DriverFactory {
 		driver.findElement(Cancel).click();
 		
 	}
+
+	public void Click_on_Import_button() throws Throwable {
+		utilities.webDriverWait(driver, Import);
+		driver.findElement(Import).click();
+	}
+
+	public void Check_wether_the_Import_Version_Details_Version_popup_window_opened_or_not() throws Throwable {
+		utilities.webDriverWait(driver, Imp_popup);
+		driver.findElement(Imp_popup).isDisplayed();
+	}
+
+	public void Click_Versions_dropdown_field() throws Throwable {
+		utilities.webDriverWait(driver, Imp_ver);
+		driver.findElement(Imp_ver).click();
+		Robot V = new Robot();
+		V.keyPress(KeyEvent.VK_1);
+	}
+
+	public void Select_a_value_from_the_dropdown() {
+		
+		
+	}
+
+	public void Click_on_the_Close_button() throws Throwable {
+		utilities.webDriverWait(driver, Imp_closeButton);
+		driver.findElement(Imp_closeButton).click();
+	}
+
+	public void Click_on_the_Import_buttton() throws Throwable {
+		utilities.webDriverWait(driver, Imp_ImportButton);
+		driver.findElement(Imp_ImportButton).click();
+	}
+
+	public void Click_on_Close_icon() throws Throwable {
+		utilities.webDriverWait(driver, Imp_closeButton);
+		driver.findElement(Imp_Close1);
+	}
 	
 
-//	Man_Valid_msg
+
 
 	
 

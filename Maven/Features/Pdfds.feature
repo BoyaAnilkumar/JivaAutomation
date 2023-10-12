@@ -38,6 +38,8 @@ Feature: Login the application and Add New Fabric Sheet
     And Enter Full width
     And Select use
     #Then Click on Save button
+    And click on User Account
+    Then Click on Logout button
     And Navigate to PD Fabric Pricing screen
     
 

@@ -12,9 +12,17 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
+<<<<<<< HEAD
 
 		          tags ="@Test2")
 
+=======
+	          tags =" @SmokeTest")
+
+
+
+                  
+>>>>>>> refs/remotes/origin/main
 public class TestRunner {
 	
 }
