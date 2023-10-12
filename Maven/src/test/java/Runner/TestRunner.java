@@ -13,9 +13,17 @@ import io.cucumber.junit.CucumberOptions;
 				  features = "Features",
 				  monochrome = true,
 
+<<<<<<< HEAD
 		          tags ="@Test2")
 
+=======
+	          tags =" @NEWIPO")
+>>>>>>> refs/remotes/origin/main
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
 public class TestRunner {
 	
 }
