@@ -22,18 +22,18 @@ Then User enters the username and password
  #And Click on the Filter Reset button
  
 
-#Then Click on the Add New style button
-#And Click on the PD Merchant name field
-#When User select the PD merchant name
-#And Enter the data in BuyerStyle field
-#And Click on the Buyer field
-#When User select the Buyer
-#And Click on the Season field
-#When User select the Season
-#And Click on the Garment Type field
-#Then Select the Garment type
-#And Click on the Garment process field
-#When The user select the Garment Process
+Then Click on the Add New style button
+And Click on the PD Merchant name field
+When User select the PD merchant name
+And Enter the data in BuyerStyle field
+And Click on the Buyer field
+When User select the Buyer
+And Click on the Season field
+When User select the Season
+And Click on the Garment Type field
+Then Select the Garment type
+And Click on the Garment process field
+When The user select the Garment Process
 #Then User enter the the Tech Pack Name
 #And Enter the data in Teck pack desc field
 #Then User select the data in Teck received date field
@@ -44,24 +44,24 @@ Then User enters the username and password
 #Then User select the expected order date field
 #When The user select the PD Assistants
 #And select PD Assistants
-#And Click on the Save button
+And Click on the Save button
 #Given I am on the homepage
-#Then print the displayed header message
-#
+Then print the displayed header message
+
 
 #And Click on the Cancel button
-And Click on the created style
+#And Click on the created style
 #And Click on the Back button
 
 
-When User click on the add revise estimates button
-And Click on the Generate new order radio button
+#When User click on the add revise estimates button
+#And Click on the Generate new order radio button
 #And Select the Order Type
 #And Select the Order date
 #And Select the Exfactory date
 #Given User enter the Order qty
 #And Select the Costing Version
-And click on the Save button
+#And click on the Save button
 #And Click on the cancel button
 #And Click on the Generate new order radio button
 
@@ -107,7 +107,7 @@ And click on the Save button
 #And CLick on the Edit Close icon
 #And Click on the Edit Close button
 
-#And Click on the Delete Icon
-#And Click on the Yes button
+And Click on the Delete Icon
+And Click on the Yes button
 #And Click on the No button
-#And Verify whether the delete is working or not
+And Verify whether the delete is working or not
