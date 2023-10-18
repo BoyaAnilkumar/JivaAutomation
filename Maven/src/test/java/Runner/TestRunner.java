@@ -13,9 +13,27 @@ import io.cucumber.junit.CucumberOptions;
 				  features = "Features",
 				  monochrome = true,
 
+<<<<<<< HEAD
 		          tags ="@StyleTest1")
+=======
+<<<<<<< HEAD
+		          tags =" @IPOList")
+
+                  
+=======
+<<<<<<< HEAD
+		          tags ="@Test2")
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 public class TestRunner {
 	
 }

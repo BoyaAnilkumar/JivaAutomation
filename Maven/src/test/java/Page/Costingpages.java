@@ -33,7 +33,6 @@ public class Costingpages extends DriverFactory {
 	By FL1 = By.xpath("(//select[@formcontrolname='fabricId'])[1]");
 	By AppCom1 = By.xpath("(//div[@class='ng-placeholder'])[1]");
 	By SecCom1 = By.xpath("//div[@class='ng-option ng-option-marked ng-star-inserted']");
-//	By SecCom1 = By.xpath("//span[@class='ng-option-label ng-star-inserted']");
 	By GarAvg1 = By.xpath("//input[@formcontrolname='garmentAvg']");
 	By Waste1 = By.xpath("(//input[@formcontrolname='wastage'])[1]");
 	By Rate1 = By.xpath("(//input[@formcontrolname='rate'])[1]");
@@ -139,10 +138,35 @@ public class Costingpages extends DriverFactory {
 	By Cancel = By.xpath("//button[@id='closepagebutton']");
 	By Import = By.xpath("//button[@class='btn btn-primary btn-md float-right ng-star-inserted']");
 	By Imp_popup = By.xpath("(//div[@class='modal-content'])[2]");
-	By Imp_ver = By.xpath("//select[@class='form-control ng-pristine ng-invalid ng-touched']");
+	By Imp_ver = By.xpath("//select[@formcontrolname='verstionId']");
+	By Imp_Select_ver1 =By.xpath("//option[text()='Ver 1']");
 	By Imp_closeButton = By.xpath("//button[@class='btn btn-danger']");
 	By Imp_ImportButton = By.xpath("//button[@class='btn btn-primary']");
 	By Imp_Close1 = By.xpath("(//button[@data-dismiss='modal'])[1]");
+	By Vername2 = By.xpath("//input[@formcontrolname='versionName']");
+	By ComQty2 = By.xpath("(//input[@formcontrolname='comboQTY'])[1]");
+	By Submit2 = By.xpath("(//button[@class='btn btn-md btn-primary btn-active-light-primary mr-2 ng-star-inserted'])[2]");
+	By Ver2_Appcom1 = By.xpath("(//div[@class='ng-placeholder'])[1]");
+	
+	By Ver2_FL1 = By.xpath("(//select[@formcontrolname='fabricId'])[1]");
+	By Ver2_AppCom1 = By.xpath("(//div[@class='ng-placeholder'])[1]");
+	By Ver2_SecCom1 = By.xpath("//div[@class='ng-option ng-option-marked ng-star-inserted']");
+	By Ver2_GarAvg1 = By.xpath("(//input[@formcontrolname='garmentAvg'])[1]");
+	By Ver2_Waste1 = By.xpath("(//input[@formcontrolname='wastage'])[1]");
+	By Ver2_Rate1 = By.xpath("(//input[@formcontrolname='rate'])[1]");
+	By Ver2_ConRate1 = By.xpath("(//input[@formcontrolname='conversionRate'])[1]");
+	By Ver2_FL2 = By.xpath("(//select[@formcontrolname='fabricId'])[2]");
+	By Ver2_AppCom2 = By.xpath("(//div[@class='ng-placeholder'])[2]");
+	By Ver2_SecCom2 = By.xpath("//div[@class='ng-option ng-option-marked ng-star-inserted']");
+	By Ver2_GarAvg2 = By.xpath("(//input[@formcontrolname='garmentAvg'])[2]");
+	By Ver2_Waste2 = By.xpath("(//input[@formcontrolname='wastage'])[2]");
+	By Ver2_Rate2 = By.xpath("(//input[@formcontrolname='rate'])[2]");
+	By Ver2_ConRate2 = By.xpath("(//input[@formcontrolname='conversionRate'])[2]");
+//	By Ver2_AddSamCost = By.xpath("//input[@formcontrolname='additionalSamplingCost']");
+//	By Ver2_FrieghtCost = By.xpath("//input[@formcontrolname='freightCost']");
+//	
+	
+	
 	
 	public void Navigates_to_the_Login_page() {
 		driver.get(prop.getProperty("url"));
@@ -161,42 +185,42 @@ public class Costingpages extends DriverFactory {
 
 	public void Click_on_SignIn() {
 		driver.findElement(btnSignIn).click();
-    	utilities.WaitUntilPageIsLoaded(driver);
+//    	utilities.WaitUntilPageIsLoaded(driver);
 		
 	}
 
 	public void Click_on_the_Woven_Modules() throws Throwable {
 		utilities.webDriverWait(driver, Woven);
 		driver.findElement(Woven).click();
-    	utilities.WaitUntilPageIsLoaded(driver);
+//    	utilities.WaitUntilPageIsLoaded(driver);
 		
 	}
 
 	public void Click_on_the_PD_Module() throws Throwable {
 		utilities.webDriverWait(driver, PD);
 		driver.findElement(PD).click();
-    	utilities.WaitUntilPageIsLoaded(driver);
+//    	utilities.WaitUntilPageIsLoaded(driver);
 		
 	}
 
 	public void Click_on_the_Costing_Module() throws Throwable {
 //		utilities.webDriverWait(driver,Costing);
 		driver.findElement(Costing).click();
-    	utilities.WaitUntilPageIsLoaded(driver);
+//    	utilities.WaitUntilPageIsLoaded(driver);
 		
 	}
 
 	public void Click_on_the_Style_button() throws Throwable {
 //		utilities.webDriverWait(driver, Sty1);
 		driver.findElement(Sty1).click();
-		utilities.WaitUntilPageIsLoaded(driver);
+//		utilities.WaitUntilPageIsLoaded(driver);
 		
 	}
 
 	public void Select_an_IPO_in_the_Menu_List() throws Throwable {
 //		utilities.webDriverWait(driver, IPOname);
 		driver.findElement(IPOname).click();
-		utilities.WaitUntilPageIsLoaded(driver);
+//		utilities.WaitUntilPageIsLoaded(driver);
 		
 	}
 	
@@ -204,7 +228,7 @@ public class Costingpages extends DriverFactory {
 	public void Click_on_Style_Button() throws Throwable {
 //		utilities.webDriverWait(driver, Sty2);
 		driver.findElement(Sty2).click();
-		utilities.WaitUntilPageIsLoaded(driver);
+//		utilities.WaitUntilPageIsLoaded(driver);
 		
 	}
 
@@ -399,6 +423,7 @@ public class Costingpages extends DriverFactory {
 		driver.findElement(Acc2_Cost).clear();
 		driver.findElement(Acc2_Cost).sendKeys("56");
 //		WebElement costElement = driver.findElement(Acc2_Cost);
+		
 //		costElement.sendKeys("14");
 //		int cost = Integer.parseInt(costElement.getAttribute("value"));
 //		System.out.println("Entered Accessory2 Cost value" + cost);
@@ -786,6 +811,7 @@ public class Costingpages extends DriverFactory {
 	public void Click_on_the_Submit_button() throws Throwable {
 		utilities.webDriverWait(driver,Submit);
 		driver.findElement(Submit).click();
+		
 	}
 
 	public void Click_on_the_View_For_Print_button() throws Throwable {
@@ -796,7 +822,11 @@ public class Costingpages extends DriverFactory {
 	public void Click_on_the_Download_As_Excel_button() throws Throwable {
 		utilities.webDriverWait(driver,DownLoadAsExcel);
 		driver.findElement(DownLoadAsExcel).click();
-		driver.wait(3000);
+		System.out.println("Downloaded successfully");
+		utilities.MinimumWait(driver);
+		
+		driver.navigate().refresh();
+		System.out.println("Page Refreshed successfully");
 	}
 
 	public void Click_on_the_Submit1_button() throws Throwable {
@@ -838,8 +868,11 @@ public class Costingpages extends DriverFactory {
 	public void Click_Versions_dropdown_field() throws Throwable {
 		utilities.webDriverWait(driver, Imp_ver);
 		driver.findElement(Imp_ver).click();
-		Robot V = new Robot();
-		V.keyPress(KeyEvent.VK_1);
+		System.out.println("Version field is clicked");
+		driver.findElement(Imp_Select_ver1).click();
+//		Robot r = new Robot();
+//		r.keyPress(KeyEvent.VK_1);
+		System.out.println("Version selected ");
 	}
 
 	public void Select_a_value_from_the_dropdown() {
@@ -850,21 +883,122 @@ public class Costingpages extends DriverFactory {
 	public void Click_on_the_Close_button() throws Throwable {
 		utilities.webDriverWait(driver, Imp_closeButton);
 		driver.findElement(Imp_closeButton).click();
+		Thread.sleep(5000);
 	}
 
 	public void Click_on_the_Import_buttton() throws Throwable {
 		utilities.webDriverWait(driver, Imp_ImportButton);
 		driver.findElement(Imp_ImportButton).click();
+		Thread.sleep(20000);
 	}
 
 	public void Click_on_Close_icon() throws Throwable {
 		utilities.webDriverWait(driver, Imp_closeButton);
 		driver.findElement(Imp_Close1);
+		Thread.sleep(5000);
 	}
+
+	public void Click_on_the_Submit_button_after_selecting_version1() throws Throwable {
+		driver.findElement(Submit2).click();
+		driver.findElement(Submit2).click();
+		Thread.sleep(20000);
+	}
+
+	public void Update_the_version2_name() {
+		driver.findElement(Vername2).clear();
+		driver.findElement(Vername2).sendKeys("Ver 2");
+		
+	}
+
+	public void Update_the_combo_Qty() {
+		driver.findElement(ComQty2).clear();
+		driver.findElement(ComQty2).sendKeys("1000");
+		System.out.println("updated the combo value");
+	}
+
+	public void Select_the_same_style() throws Throwable {
+		utilities.webDriverWait(driver, Sty1);
+		driver.findElement(Sty1).click();
+		utilities.MediumWait(driver);
+		driver.findElement(IPOname).click();
+		utilities.MediumWait(driver);
+		driver.findElement(Sty2).click();
+	}
+
+	public void Click_in_the_Ver2_App_Combo1() {
+		driver.findElement(Ver2_AppCom1).click();
+		
+	}
+
+	public void Select_an_Ver2_App_combo1() {
+		driver.findElement(Ver2_SecCom1).click();
+		
+	}
+
+	public void Enter_Ver2_Garment_Average1() {
+		driver.findElement(Ver2_GarAvg1).clear();
+		driver.findElement(Ver2_GarAvg1).sendKeys("22");
+		
+	}
+
+	public void Enter_Ver2_Wastage1() {
+		driver.findElement(Ver2_Waste1).clear();
+		driver.findElement(Ver2_Waste1).sendKeys("11");
+		
+	}
+
+	public void Enter_Ver2_Rate1() {
+		driver.findElement(Ver2_Rate1).clear();
+		driver.findElement(Ver2_Rate1).sendKeys("2");
+		
+	}
+
+	public void Enter_Ver2_Conversion_Rate1() {
+		driver.findElement(Ver2_ConRate1).clear();
+		driver.findElement(Ver2_ConRate1).sendKeys("1");
+		
+	}
+
+	public void Click_in_the_Ver2_App_Combo2() {
+		driver.findElement(Ver2_AppCom2).click();
+		
+	}
+
+	public void Select_an_Ver2_App_combo2() {
+		driver.findElement(Ver2_SecCom2).click();
+		
+	}
+
+	public void Enter_Ver2_Garment_Average2() {
+		driver.findElement(Ver2_GarAvg2).clear();
+		driver.findElement(Ver2_GarAvg2).sendKeys("2");
+		
+	}
+
+	public void Enter_Ver2_Wastage2() {
+		driver.findElement(Ver2_Waste2).clear();
+		driver.findElement(Ver2_Waste2).sendKeys("3");
+		
+	}
+
+	public void Enter_Ver2_Rate2() {
+		driver.findElement(Ver2_Rate2).clear();
+		driver.findElement(Ver2_Rate2).sendKeys("3");
+		
+	}
+
+	public void Enter_Ver2_Conversion_Rate2() {
+		driver.findElement(Ver2_ConRate2).clear();
+		driver.findElement(Ver2_ConRate2).sendKeys("2");
+		
+	}
+
+	public void Enter_Ver2_Additional_Sampling_Cost() {
+		driver.findElement(Ver2_AppCom1).click();
+		
+	}
+
 	
-
-
-
 	
 
 	
