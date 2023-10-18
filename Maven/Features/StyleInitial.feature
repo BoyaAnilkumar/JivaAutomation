@@ -32,7 +32,7 @@ Then User enters the username and password
 And Click on the Add combo button
 Given Enter the data in Combo1
 And Click on the Delete Icon1
-#And Enter the data in Combo2
+And Enter the data in Combo2
 #And Click on the delete Icon2
 And Click on the Add Garment type button
 #And Click on the Delete Garment Icon1
