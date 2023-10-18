@@ -113,6 +113,17 @@ public class Pdfds_Steps {
 		public void Click_on_Nomination_Checkbox() throws Throwable {
 			page.Click_on_Nomination_Checkbox();
 		}
+		
+		@And("^click on User Account$")
+		public void click_on_User_Account() throws Throwable {
+			page.click_on_User_Account();
+		}
+		
+		@Then("^Click on Logout button$")
+		public void Click_on_Logout_button() throws Throwable {
+			page.Click_on_Logout_button();
+		}
+		
 		@And ("^Navigate to PD Fabric Pricing screen$")
 		public void Navigate_to_PD_Fabric_Pricing_screen() throws Throwable {
 			page.Navigate_to_PD_Fabric_Pricing_screen();

@@ -8,8 +8,6 @@ import java.util.Date;
 import org.joda.time.DateTime;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-
 import util.DriverFactory;
 import util.Utilities;
 
@@ -423,14 +421,16 @@ public class Stylepage extends DriverFactory{
 					
 				}
 				public void Click_on_the_created_style()throws Throwable{
-//					utilities.webDriverWait(driver, SelectStyle );
-//					driver.findElement(SelectStyle).click();
+					utilities.MediumWait(driver);
+					utilities.webDriverWait(driver, SelectStyle );
+					driver.findElement(SelectStyle).click();
 //					WebElement S_S = driver.findElement(SelectStyle);
 //					String Select = S_S.getText();
 //					System.out.println(Select);
 //					driver.findElement(SelectStyle).click();
 				}
 				public void User_click_on_the_add_revise_estimates_button() throws Throwable{
+					utilities.MediumWait(driver);
 					utilities.webDriverWait(driver, Addreviseestimates );
 					driver.findElement(Addreviseestimates).click();
 					
@@ -481,8 +481,13 @@ public class Stylepage extends DriverFactory{
 				
 				public void click_on_the_Save_button() throws Throwable{
 					utilities.webDriverWait(driver, Savebutton );
-					driver.findElement(Savebutton).click();
-					
+					WebElement buttonElement = driver.findElement(Savebutton);
+					if (buttonElement.isEnabled()) {
+						System.out.println("Button is enabled.");
+						driver.findElement(Savebutton).click();
+					} else {
+						System.out.println("Button is disabled.");
+					}
 					
 				}
 				public void Click_on_the_cancel_button() throws Throwable{
@@ -490,18 +495,14 @@ public class Stylepage extends DriverFactory{
 					driver.findElement(cancel).click();
 				
 				}
-//				public void Click_on_the_Generate_new_order_radio_button() throws Throwable{
-//				utilities.webDriverWait(driver, Generate );
-//				driver.findElement(Generate).click();
-//				driver.findElement(ReviseEstimates).click();
-//					
-//				}
+
 				public void Click_on_the_Add_new_tech_pack_button()  throws Throwable{
 				driver.findElement(Addnewtechpack).click();
 					
 					
 				}
 				public void The_User_enter_the_data_in_tech_pack_name_field()  throws Throwable{
+					utilities.webDriverWait(driver, Techpacknamefield );
 					driver.findElement(Techpacknamefield).sendKeys("newtechpack");
 					
 				}
