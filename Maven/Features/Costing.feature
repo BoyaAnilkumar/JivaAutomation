@@ -1,18 +1,18 @@
-@tag
-Feature: Title of your features
-  I want to use this template for my feature file
-  
- @Costing1
-  Scenario: Creating the Costing Version
-    Given Navigates to the Login page
-    Then Enter valid Username and password
-    And Click on SignIn 
-    Then Click on the Woven Modules
-    Then Click on the PD Module
-    Then Click on the Costing Module
-    Then Click on the Style button
-    Then Select an IPO in the Menu List
-    Then Click on Style Button
+#@tag
+  #Feature: Adding a version and importing a version 
+  #
+  #
+ #@Costing1
+  #Scenario: Creating the Costing Version
+    #Given Navigates to the Login page
+    #Then Enter valid Username and password
+    #And Click on SignIn 
+    #Then Click on the Woven Modules
+    #Then Click on the PD Module
+    #Then Click on the Costing Module
+    #Then Click on the Style button
+    #Then Select an IPO in the Menu List
+    #Then Click on Style Button
     #Then Click on the Submit1 button
     #Given Enter Version Name
     #Given Enter Remarks
@@ -118,15 +118,33 @@ Feature: Title of your features
     #Then Click on the View For Print button
     #Then Click on the Cancel in the Print form
     #Then Click on the Download As Excel button
+    #And Select the same style 
     #Import
-    Then Click on Import button
-    When Check wether the Import Version Details Version popup window opened or not
-    Then Click Versions dropdown field
-    Then Select a value from the dropdown
-    Then Click on the Close button
-    Then Click on the Import buttton
-    Then Click on Close icon 
-    
-    
-    
+    #Then Click on Import button
+    #When Check wether the Import Version Details Version popup window opened or not
+    #Then Click Versions dropdown field
+    #Then Select a value from the dropdown
+    #Then Click on the Close button
+    #Then Click on the Import buttton
+    #Then Click on Close icon
+    #Entering Version 2 details
+    #Given Update the version2 name
+    #Given Update the combo Qty 
+    #When Click in the Ver2_App_Combo1
+    #When Select an Ver2_App_combo1
+    #When Enter Ver2_Garment Average1
+    #When Enter Ver2_Wastage1
+    #When Enter Ver2_Rate1
+    #When Enter Ver2_Conversion Rate1
+    #When Click in the Ver2_App_Combo2
+    #When Select an Ver2_App_combo2
+    #When Enter Ver2_Garment Average2
+    #When Enter Ver2_Wastage2
+    #When Enter Ver2_Rate2
+    #When Enter Ver2_Conversion Rate2
+    #Given Enter Ver2_Additional Sampling Cost
+    #Then Click on the Submit button after selecting version1
+    #
+    #
+    #
     
