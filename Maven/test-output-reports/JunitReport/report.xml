@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="74.034">
+    <testcase classname="Creating an IPO for a confirmed style" name="Creating an IPO" time="73.704">
+=======
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="123.398">
     <testcase classname="feature to test Jiva design Style Initial Details screen functionality" name="To Test the Style Initial details screen" time="122.965">
 =======
 <<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="50.913">
     <testcase classname="Creating an IPO for a confirmed style" name="Creating an IPO" time="50.673">
+>>>>>>> refs/remotes/origin/main
         <system-out><![CDATA[Given Navigates to the Login page...........................................passed
 Then Enter valid Username and password......................................passed
 And Click on SignIn.........................................................passed
@@ -24,10 +29,14 @@ Then Click in the Merchant field............................................pass
 And Select a Merchant from the dropdown list................................passed
 Then Click in the Assigned Month and year field.............................passed
 And Select a Month or Year from the dropdown list...........................passed
-Then Click in the Search IPO and Enter an IPO...............................passed
+And Enter IPO Name in the Search IPO field..................................passed
 Then Click on the Reset button..............................................passed
 Then Click on the Apply button..............................................passed
+Then Click on Generate Excel Sheet button...................................passed
+When Clicked on Add IPO button..............................................passed
 ]]></system-out>
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 <testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.156">
@@ -152,5 +161,6 @@ Session ID: 45f65c7c18db11ebe93716c014dd686c
 >>>>>>> refs/remotes/origin/main
 >>>>>>> refs/remotes/origin/main
 >>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
     </testcase>
 </testsuite>

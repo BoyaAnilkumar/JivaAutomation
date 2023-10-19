@@ -39,7 +39,7 @@ public class Country_Page extends DriverFactory{
 	By update = By.xpath("//button[@class='btn btn-md btn-primary px-5 ng-star-inserted']");
 	By UMsg = By.xpath("//h2[text()='Country Updated Successfully']");
 	By Ucancel = By.xpath("//button[@class='btn btn-md btn-danger btn-active-light-primary mr-2']");
-	By Delete = By.xpath("(//button[@class='btn btn-sm btn-danger ng-star-inserted'])[7]");
+	By Delete = By.xpath("(//button[@class='btn btn-sm btn-danger ng-star-inserted'])[6]");
 	By Yes = By.xpath("//button[@class='swal2-confirm swal2-styled']");
 	By No = By.xpath("//button[@class='swal2-cancel swal2-styled']");
 	By D_S = By.xpath("//h2[@class='swal2-title']");
@@ -94,7 +94,7 @@ public class Country_Page extends DriverFactory{
 		        driver.findElement(C_A).click();
 		        utilities.MediumWait(driver);		
 		        
-		        driver.findElement(C_Name).sendKeys("CC__1");
+		        driver.findElement(C_Name).sendKeys("C73");
 				  
 			}
 			public void Enter_the_data_in_Country_code_field() throws Throwable {
@@ -169,7 +169,7 @@ public class Country_Page extends DriverFactory{
 			public void Update_the_Country_name() throws Throwable {
 				utilities.webDriverWait(driver, U_Countryname );
 				driver.findElement(U_Countryname).clear();
-				driver.findElement(U_Countryname).sendKeys("CC__2");
+				driver.findElement(U_Countryname).sendKeys("C7367");
 				
 			}
 			public void Update_the_Country_code() throws Throwable {

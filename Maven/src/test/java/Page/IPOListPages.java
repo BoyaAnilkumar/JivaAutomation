@@ -19,7 +19,7 @@ public class IPOListPages extends DriverFactory {
 	Date currentDate = new Date();
 	SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 	String TodayDate = dateFormat.format(currentDate);
-	
+	private String ipon;
 	Utilities utilities = new Utilities();
 	
 //	Filters functionality
@@ -42,8 +42,8 @@ public class IPOListPages extends DriverFactory {
 	By AssMthYear = By.xpath("//div[@class='ng-placeholder']");
 	By Select_AssMthYear = By.xpath("//span[text()='Jun/2023']");
 	By IPOSearch = By.xpath("//input[@formcontrolname='searchText']");
-	By Apply = By.xpath("//button[@class='btn btn-md btn-primary']");
-	By Reset = By.xpath("(//button[@class='btn btn-md btn-danger btn-active-light-primary mr-2'])[1]");
+	By Apply = By.xpath("//button[text()='Apply']");
+	By Reset = By.xpath("//button[@type='reset']");
 	
 	By GenerateExcelSheet = By.xpath("//a[@class='btn btn-primary btn-sm mr-2 mt-sm-1 ng-star-inserted']");
 	By AddIPO = By.xpath("//button[@class='btn btn-primary btn-sm shadow-sm float-right mt-1 ng-star-inserted']");
@@ -170,25 +170,42 @@ public class IPOListPages extends DriverFactory {
 		
 	}
 
-	public void Select_a_Month_or_Year_from_the_dropdown_list() {
+	public void Select_a_Month_or_Year_from_the_dropdown_list() throws Throwable {
+		utilities.webDriverWait(driver, Select_AssMthYear);
 		driver.findElement(Select_AssMthYear).click();
-		
+		WebElement Mthyear = driver.findElement(Select_AssMthYear);
+		String DisMthYear = Mthyear.getText();
+		System.out.println("Displaying the selected month/year value " + DisMthYear);
 	}
 
 	public void Click_in_the_Search_IPO_and_Enter_an_IPO() {
 		driver.findElement(IPOSearch).click();
+		
+	}
+	
+	public void Enter_IPO_Name_in_the_Search_IPO_field() throws Throwable {
+		utilities.webDriverWait(driver, IPOSearch);
 		driver.findElement(IPOSearch).sendKeys("IPO12");
-		
+		Thread.sleep(5000);
+		WebElement IPOname = driver.findElement(IPOSearch);
+		String ipon = IPOname.getAttribute("value");
+		System.out.println("Display the entered IPO Name " + ipon);
 	}
 
-	public void Click_on_the_Reset_button() {
+
+	public void Click_on_the_Reset_button() throws Throwable {
+		utilities.webDriverWait(driver, Reset);
 		driver.findElement(Reset).click();
-		
+		System.out.println("Clicked on Reset button");
 	}
 
-	public void Click_on_the_Apply_button() {
+	public void Click_on_the_Apply_button() throws Throwable {
+		utilities.webDriverWait(driver, IPOSearch);
+		driver.findElement(IPOSearch).sendKeys("IPO12");
+		utilities.webDriverWait(driver, Apply);
 		driver.findElement(Apply).click();
-		
+		System.out.println("Clicked on Apply button");
+		Thread.sleep(5000);
 	}
 
 	public void Click_on_Generate_Excel_Sheet_button() {
@@ -201,6 +218,7 @@ public class IPOListPages extends DriverFactory {
 		
 	}
 
+	
 		
 
 }

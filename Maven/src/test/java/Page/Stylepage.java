@@ -144,8 +144,7 @@ public class Stylepage extends DriverFactory{
 		By Garment_toggle = By.xpath("(//div[@data-validate='Garment Type is required'])[1]");
 		By garmentprocess_toggle = By.xpath("(//div[@data-validate='Garment Process is required'])[1]");
 		
-		By Saved =By.xpath("//div[@class='swal2-icon swal2-success swal2-icon-show']/..//h2[text()='Style Master Added Successfully']");
-		By Successfull =By.xpath("//h2[text()='Style Master Deleted Successfully']");
+		By Successfull =By.xpath("//h2[@class='swal2-title']");
 		By BySave = By.xpath("//h2[@id='swal2-title']");
 		By Deletesucess = By.xpath("//div[@aria-describedby='swa12-html-container']");
 		
@@ -266,7 +265,7 @@ public class Stylepage extends DriverFactory{
 			    utilities.webDriverWait(driver, Buyerstyle );
 			    driver.findElement(Buyerstyle_toggle).click();
 			    utilities.MediumWait(driver);  
-			    driver.findElement(Buyerstyle).sendKeys("Style1310");
+			    driver.findElement(Buyerstyle).sendKeys("Style1020");
 			    utilities.MediumWait(driver);
 			}
 			public void Click_on_the_Buyer_field() throws Throwable{
@@ -395,26 +394,24 @@ public class Stylepage extends DriverFactory{
 					utilities.webDriverWait(driver, save );
 					driver.findElement(save).click();	
 					utilities.MediumWait(driver);  
-//					Thread.sleep(2000);
-//					driver.findElement(SelectStyle).click();
+					Thread.sleep(2000);
+					driver.findElement(SelectStyle).click();
 				}
 				public void I_am_on_the_homepage() {
 					driver.get("Style Master Added Successfully");	
 				}
-				public void print_the_displayed_header_message() throws Throwable {
-//					Thread.sleep(2000);
-//					utilities.webDriverWait(driver, Saved );
-					WebElement AlertMsg = driver.findElement(Saved);
-					String ASM = AlertMsg.getText();
+				public void print_the_displayed_header_message() {
+
+					WebElement AlertMsg = driver.findElement(Successfull);
+					String actualMessage = AlertMsg.getText();
 
 					String expectedMessage = "Style Master Added Successfully";
 
-					if (expectedMessage.equals(ASM)) {
-						System.out.println("Alert message is correct." + ASM);
+					if (expectedMessage.equals(actualMessage)) {
+						System.out.println("Alert message is correct." + actualMessage);
 					} else {
-						System.out.println("Alert message is incorrect."+ ASM);
+						System.out.println("Alert message is incorrect."+ actualMessage);
 					}
-					Thread.sleep(5000);
 					
 				}
 				
@@ -690,8 +687,7 @@ public class Stylepage extends DriverFactory{
 		   }
 			public void Click_on_the_Yes_button() throws Throwable{
 				utilities.MediumWait(driver);
-				driver.findElement(Yes).click();
-				utilities.MediumWait(driver);
+				driver.findElement(Yes).click();	
 						
 		   }
 			public void Click_on_the_No_button() throws Throwable{
@@ -701,15 +697,14 @@ public class Stylepage extends DriverFactory{
 		   }
 			public void Verify_whether_the_delete_is_working_or_not() {
 				WebElement AlertMsg = driver.findElement(Successfull);
-				
-				String ACTmsg = AlertMsg.getText();
+				String actualMessage = AlertMsg.getText();
 
 				String expectedMessage = "Style Master Deleted Successfully";
 
-				if (expectedMessage.equals(ACTmsg)) {
-					System.out.println("Alert message is correct." + ACTmsg);
+				if (expectedMessage.equals(actualMessage)) {
+					System.out.println("Alert message is correct." + actualMessage);
 				} else {
-					System.out.println("Alert message is incorrect."+ ACTmsg);
+					System.out.println("Alert message is incorrect."+ actualMessage);
 				}
 			}
 				
