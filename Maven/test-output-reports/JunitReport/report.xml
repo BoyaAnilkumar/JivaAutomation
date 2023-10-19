@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="40.338">
+    <testcase classname="Create the New IPO from Pending IPO list" name="Create New IPO in Pending IPO List" time="40.112">
+        <system-out><![CDATA[Given Login with Audit Manager credentials in Login page....................passed
+=======
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="74.034">
     <testcase classname="Creating an IPO for a confirmed style" name="Creating an IPO" time="73.704">
 =======
@@ -42,6 +47,7 @@ When Clicked on Add IPO button..............................................pass
 <testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.156">
     <testcase classname="Create the New IPO from Pending IPO list" name="Create New IPO in Pending IPO List" time="31.914">
         <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()='IPO']/..//input[@class='form-control ng-pristine ng-invalid ng-touched']&quot;}&#10;  (Session info: chrome=117.0.5938.152)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 45f65c7c18db11ebe93716c014dd686c&#10;*** Element info: {Using=xpath, value=//label[text()='IPO']/..//input[@class='form-control ng-pristine ng-invalid ng-touched']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Login with Audit Manager credentials in Login page....................passed
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 Then Click on WovenKnit Module..............................................passed
 And Click on Audit Module...................................................passed
 Then Click on Pending IPO list in menu......................................passed
@@ -50,31 +56,13 @@ And Verify whether the data is displaying in grid or not....................pass
 And Click on Generate IPO button............................................passed
 And Verify whether Generate IPO screen is displaying or not.................passed
 And Verify whether the current date is displaying for IPO date field or not.passed
-And Verify whether the IPO field is prepopulated with data or not...........failed
-And Enter IPO number in IPO field...........................................skipped
-=======
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="34.205">
-    <testcase classname="feature to test Jiva design Country screen functionality" name="To Test the Country screen" time="33.808">
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-        <system-out><![CDATA[When User navigates to Login page...........................................passed
-Then User enters the username and password..................................passed
-And User click on the signIn................................................passed
-And Click on the Woven Module...............................................passed
-<<<<<<< HEAD
-Then click on the Merchandising Module......................................passed
-And click on the Style Initail Details screen...............................passed
-When Click on the Styles Expansion..........................................passed
-And Select IPO/Style........................................................passed
-And Click on the Add combo button...........................................passed
-Given Enter the data in Combo1..............................................passed
-And Click on the Delete Icon1...............................................passed
-And Click on the Add Garment type button....................................passed
-And Click on the Garment type field.........................................passed
-And Select the Garment type.................................................passed
-And Click on the Submit Order details button................................passed
-And Verify the Alert msg....................................................passed
+And verify whether the Buyer Style is prepopulated or not...................passed
+And Verify whether the IPO field is prepopulated with data or not...........passed
+And Enter IPO number in IPO field...........................................passed
+And Verify Buyer is prepopulated or not.....................................passed
 ]]></system-out>
+<<<<<<< HEAD
+=======
 =======
 Then click on the PD Module.................................................passed
 And click on the Style Master screen........................................passed
@@ -162,5 +150,6 @@ Session ID: 45f65c7c18db11ebe93716c014dd686c
 >>>>>>> refs/remotes/origin/main
 >>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 >>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
     </testcase>
 </testsuite>

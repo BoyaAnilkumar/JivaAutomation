@@ -25,6 +25,14 @@ Then User enters the username and password
  Then Update the Country name
  And Update the Country code
  And Update the Select Country
+
+ #And Update the Conversion Rate
+ #And Click on the Update button
+ #And Verify the Update msg
+ #And Click on the update form Cancel button 
+ #And Click on the Delete Icon
+ #And Verify the Delete msg
+
  And Update the Conversion Rate
  And Click on the Update button
  And Verify the Update msg

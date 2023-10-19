@@ -13,10 +13,50 @@ import io.cucumber.junit.CucumberOptions;
 				  features = "Features",
 				  monochrome = true,
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	          tags =" @NEWIPO")
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 		          tags ="@StyleTest1")
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+                  
+=======
+<<<<<<< HEAD
+		          tags ="@Test2")
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 public class TestRunner {
 	
 }

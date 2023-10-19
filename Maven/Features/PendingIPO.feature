@@ -12,6 +12,7 @@ And Verify whether the data is displaying in grid or not
 And Click on Generate IPO button
 And Verify whether Generate IPO screen is displaying or not
 And Verify whether the current date is displaying for IPO date field or not 
-#And verify whether the Buyer Style is prepopulated or not 
+And verify whether the Buyer Style is prepopulated or not 
 And Verify whether the IPO field is prepopulated with data or not 
 And Enter IPO number in IPO field 
+And Verify Buyer is prepopulated or not 
