@@ -78,19 +78,23 @@ public class IPOListSteps {
 		IPOl.Click_in_the_Assigned_Month_and_year_field();
 	}
 	@And ("^Select a Month or Year from the dropdown list$")
-	public void Select_a_Month_or_Year_from_the_dropdown_list() {
+	public void Select_a_Month_or_Year_from_the_dropdown_list() throws Throwable {
 		IPOl.Select_a_Month_or_Year_from_the_dropdown_list();
 	}
 	@Then ("^Click in the Search IPO and Enter an IPO$")
 	public void Click_in_the_Search_IPO_and_Enter_an_IPO() {
 		IPOl.Click_in_the_Search_IPO_and_Enter_an_IPO();
 	}
+	@And ("^Enter IPO Name in the Search IPO field$")
+	public void Enter_IPO_Name_in_the_Search_IPO_field() throws Throwable {
+		IPOl.Enter_IPO_Name_in_the_Search_IPO_field();
+	}
 	@Then ("^Click on the Reset button$")
-	public void Click_on_the_Reset_button() {
+	public void Click_on_the_Reset_button() throws Throwable {
 		IPOl.Click_on_the_Reset_button();
 	}
 	@Then ("^Click on the Apply button$")
-	public void Click_on_the_Apply_button() {
+	public void Click_on_the_Apply_button() throws Throwable {
 		IPOl.Click_on_the_Apply_button();
 	}
 	@Then ("^Click on Generate Excel Sheet button$")

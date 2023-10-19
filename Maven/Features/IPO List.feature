@@ -24,7 +24,8 @@
   And Select a Merchant from the dropdown list
   Then Click in the Assigned Month and year field
   And Select a Month or Year from the dropdown list
-  Then Click in the Search IPO and Enter an IPO
+  #Then Click in the Search IPO and Enter an IPO
+  And Enter IPO Name in the Search IPO field
   Then Click on the Reset button
   Then Click on the Apply button
   
