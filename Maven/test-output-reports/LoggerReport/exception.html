@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.SessionNotCreatedException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchElementException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.SessionNotCreatedException</h5>
+								<h5 class="mb-4">org.openqa.selenium.NoSuchElementException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="3" parent-id="1">
+<tr class="s-fail" test-id="13" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Stepdefinition1.Hooks.setUp(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Create New IPO in Pending IPO List</span></td>
-	<td>0h 0m 1s+666msc</td>
+	<td class="_600">And verify whether the Buyer Style is prepopulated or not <br/><span class="text-muted text-sm">Create New IPO in Pending IPO List</span></td>
+	<td>0h 0m 0s+28msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,60 +137,31 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 118.0.5993.71 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+		<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='Buyer Style #']/..//input[@class='form-control ng-pristine ng-valid ng-touched']"}
+  (Session info: chrome=118.0.5993.71)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
-	(No symbol) [0x00007FF69B04EA92]
-	(No symbol) [0x00007FF69AF1E3AB]
-	(No symbol) [0x00007FF69AF49FF5]
-	(No symbol) [0x00007FF69AF45237]
-	(No symbol) [0x00007FF69AF42FE1]
-	(No symbol) [0x00007FF69AF7EA4F]
-	(No symbol) [0x00007FF69AF7E5B0]
-	(No symbol) [0x00007FF69AF76DB3]
-	(No symbol) [0x00007FF69AF4D2B1]
-	(No symbol) [0x00007FF69AF4E494]
-	GetHandleVerifier [0x00007FF69B37EF82+2849794]
-	GetHandleVerifier [0x00007FF69B3D1D24+3189156]
-	GetHandleVerifier [0x00007FF69B3CACAF+3160367]
-	GetHandleVerifier [0x00007FF69B166D06+653702]
-	(No symbol) [0x00007FF69B05A208]
-	(No symbol) [0x00007FF69B0562C4]
-	(No symbol) [0x00007FF69B0563F6]
-	(No symbol) [0x00007FF69B0467A3]
-	BaseThreadInitThunk [0x00007FFE30B67344+20]
-	RtlUserThreadStart [0x00007FFE328E26B1+33]
-
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53044}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e9d5468a8af847760727c30bbe75a27
+*** Element info: {Using=xpath, value=//label[text()='Buyer Style #']/..//input[@class='form-control ng-pristine ng-valid ng-touched']}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at util.DriverFactory.initialization(DriverFactory.java:34)
-	at Stepdefinition1.Hooks.setUp(Hooks.java:21)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.PendingIPO_page.verify_whether_the_Buyer_Style_is_prepopulated_or_not(PendingIPO_page.java:137)
+	at Stepdefinition1.PendingIPO_Steps.verify_whether_the_Buyer_Style_is_prepopulated_or_not(PendingIPO_Steps.java:59)
+	at ✽.verify whether the Buyer Style is prepopulated or not(file:///E:/New%20folder/JivaAutomation/Maven/Features/PendingIPO.feature:15)
 </textarea>
 	</td>
 </tr>
@@ -201,12 +172,12 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 					</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">java.lang.NullPointerException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchSessionException</a>
 							<div class="item-except text-sm text-muted h-1x">
-								2 tests
+								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">java.lang.NullPointerException</h5>
+								<h5 class="mb-4">org.openqa.selenium.NoSuchSessionException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -218,10 +189,10 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="15" parent-id="1">
+<tr class="s-fail" test-id="17" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
 	<td class="_600">Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Create New IPO in Pending IPO List</span></td>
-	<td>0h 0m 0s+2msc</td>
+	<td>0h 0m 0s+3msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -230,26 +201,16 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "Stepdefinition1.Hooks.driver" is null
+		<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
 	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:27)
-</textarea>
-	</td>
-</tr>
-	
-<tr class="s-fail" test-id="16" parent-id="1">
-	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Stepdefinition1.Hooks.CloseBrowser() <br/><span class="text-muted text-sm">Create New IPO in Pending IPO List</span></td>
-	<td>0h 0m 1s+12msc</td>
-	<td></td>
-	<td>
-	</td>
-	<td class="static"><i class="static fa fa-external-link"></i></td>
-</tr>
-<tr class="details">
-	<td colspan="5">
-		
-		<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "Stepdefinition1.Hooks.driver" is null
-	at Stepdefinition1.Hooks.CloseBrowser(Hooks.java:39)
 </textarea>
 	</td>
 </tr>
@@ -277,7 +238,7 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Oct 19, 2023 11:39:20 am</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Oct 19, 2023 03:37:06 pm</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

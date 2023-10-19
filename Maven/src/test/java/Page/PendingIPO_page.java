@@ -5,6 +5,7 @@ import java.util.Date;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import util.DriverFactory;
@@ -31,10 +32,10 @@ public class PendingIPO_page extends DriverFactory {
 	By verifyPendingipolistscreen = By.xpath("//h3[text()='Pending IPO List']");
 	By griddata = By.xpath("//tbody[@class='p-element p-datatable-tbody']");
 	By GenerateIPO = By.xpath("//a[@class='btn btn-sm btn-info mr-1 ng-star-inserted']");
-	By GENIPOTXT = By.xpath("//h3[text()='Generate IPO ']");
+	By GENIPOTXT = By.xpath("//div[@class='card ng-star-inserted']//h3[text()='Generate IPO ']");
 	By IPOdate = By.xpath("//label[text()='IPO Date']/..//input[@id='date']");
-	By BuyerStyle = By.xpath("//label[text()='Buyer Style #']/..//input[@class='form-control ng-pristine ng-valid ng-touched']");
-	By IPONo = By.xpath("//label[text()='IPO']/..//input[@class='form-control ng-pristine ng-invalid ng-touched']");
+	By BuyerStyle = By.xpath("//input[@formcontrolname='buyerStyleName']");
+	By IPONo = By.xpath("//input[@formcontrolname='ipoNumber']");
 	By Buyer = By.xpath("//label[text()='Buyer']/..//input[@class='form-control ng-untouched ng-pristine ng-valid']");
 	
 	
@@ -46,7 +47,7 @@ public class PendingIPO_page extends DriverFactory {
 	public void Login_with_Audit_Manager_credentials_in_Login_page() throws Throwable {
 		driver.get(prop.getProperty("url"));
 		new WebDriverWait(driver, 10);
-		utilities.MinimumWait(driver);
+		utilities.MediumWait(driver);
 
 		driver.findElement(username).sendKeys("Anilkumar05");
 		utilities.MinimumWait(driver);
@@ -78,7 +79,7 @@ public class PendingIPO_page extends DriverFactory {
 
 	}
 
-	public void Verify_whether_user_navigated_to_Pending_IPO_list_or_not() {
+	public void Verify_whether_user_navigated_to_Pending_IPO_list_or_not() throws Throwable {
 
 		WebElement verifyPendingipolist = driver.findElement(verifyPendingipolistscreen);
 		String Screen = verifyPendingipolist.getText();
@@ -87,10 +88,11 @@ public class PendingIPO_page extends DriverFactory {
 		} else {
 			System.out.println("Screen should navigate to Pending IPO List:" + Screen);
 		}
+		utilities.MediumWait(driver);
 
 	}
 
-	public void Verify_whether_the_data_is_displaying_in_grid_or_not() {
+	public void Verify_whether_the_data_is_displaying_in_grid_or_not() throws Throwable {
 
 		WebElement GridData = driver.findElement(griddata);
 		String Screen = GridData.getText();
@@ -99,13 +101,14 @@ public class PendingIPO_page extends DriverFactory {
 		} else {
 			System.out.println("Data is not Available in Grid: " + Screen);
 		}
+		utilities.MediumWait(driver);
 	}
 
 	public void Click_on_Generate_IPO_button() throws Throwable {
 
 		utilities.webDriverWait(driver, GenerateIPO);
 		driver.findElement(GenerateIPO).click();
-		utilities.MinimumWait(driver);
+		utilities.MediumWait(driver);
 
 	}
 
@@ -141,8 +144,10 @@ public class PendingIPO_page extends DriverFactory {
 		}
 	}
 
-	public void Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not() {
+	public void Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not() throws Throwable {
 		
+		
+		 
 		WebElement IPOno = driver.findElement(IPONo);
 		String Screen = IPOno.getText();
 		if(IPOno.isDisplayed()) {
@@ -153,8 +158,35 @@ public class PendingIPO_page extends DriverFactory {
 		
 	}
 
-	public void Enter_IPO_number_in_IPO_field() {
-
+	public void Enter_IPO_number_in_IPO_field() throws Throwable {
+		utilities.webDriverWait(driver, IPONo);
+		 driver.findElement(IPONo).sendKeys("AutoIPOs");
+		 utilities.MinimumWait(driver);
+		 
 	}
 
-}
+
+	public void Verify_Buyer_is_prepopulated_or_not() {
+//		WebElement Buyer1 = driver.findElement(Buyer);
+//		String Screen = Buyer1.getText();
+//		if(Buyer1.isDisplayed()) {
+//			System.out.println("Buyer name is displayed: "  +  Screen);
+//		}else {
+//			System.out.println("Buyer Name is not displayed: "  +  Screen);
+//		}
+		
+		WebDriverWait wait = new WebDriverWait(driver, 10); // Adjust the timeout as needed
+
+	    WebElement buyerElement = wait.until(ExpectedConditions.visibilityOfElementLocated(Buyer));
+
+	    String buyerName = buyerElement.getText();
+
+	    if (!buyerName.isEmpty()) {
+	        System.out.println("Buyer name is displayed: " + buyerName);
+	    } else {
+	        System.out.println("Buyer Name is not displayed");
+	    }
+	}
+		
+	}
+

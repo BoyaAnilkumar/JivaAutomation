@@ -51,14 +51,6 @@
 							</a>
 						</li>
 						<li>
-							<a href="exception.html">
-							<span class="nav-icon">
-							<i class="fa fa-warning"></i>
-							</span>
-							<span class="nav-text">Exceptions</span>
-							</a>
-						</li>
-						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -102,12 +94,12 @@
 									</span>
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-										
-										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
 										
 										
-										<a class="dropdown-item" href="#"><span class="tf" status="skip"><i class="fa fa-dot-circle-o text-blue"></i>Skip</span></a>
+										
+										
+										
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 									</div>
@@ -138,12 +130,12 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="fail">
-											<div class="st fail test l0" 
+											<div class="tsc" status="pass">
+											<div class="st pass test l0" 
 												tags="@FeatureGroup_Requirement"
 												devices="">
-												<span class="tt">10.19.2023 11:39:20</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">[Create the New IPO from Pending IPO list] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup_Requirement</span>
@@ -154,11 +146,11 @@
 												</span>
 												
 											</div>
-											<div class="st fail test l1" 
+											<div class="st pass test l1" 
 												tags="@FeatureGroup_Requirement @NEWIPO"
 												devices="">
-												<span class="tt">10.19.2023 11:39:20</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">|---[Create New IPO in Pending IPO List] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup_Requirement</span>
@@ -170,272 +162,199 @@
 												</span>
 												
 											</div>
-											<div class="st fail test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:20</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.setUp(io.cucumber.java.Scenario)] started</span>
-												
-												<div class="st fail">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.setUp(io.cucumber.java.Scenario)]</span>
-													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 118.0.5993.71 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
-	(No symbol) [0x00007FF69B04EA92]
-	(No symbol) [0x00007FF69AF1E3AB]
-	(No symbol) [0x00007FF69AF49FF5]
-	(No symbol) [0x00007FF69AF45237]
-	(No symbol) [0x00007FF69AF42FE1]
-	(No symbol) [0x00007FF69AF7EA4F]
-	(No symbol) [0x00007FF69AF7E5B0]
-	(No symbol) [0x00007FF69AF76DB3]
-	(No symbol) [0x00007FF69AF4D2B1]
-	(No symbol) [0x00007FF69AF4E494]
-	GetHandleVerifier [0x00007FF69B37EF82+2849794]
-	GetHandleVerifier [0x00007FF69B3D1D24+3189156]
-	GetHandleVerifier [0x00007FF69B3CACAF+3160367]
-	GetHandleVerifier [0x00007FF69B166D06+653702]
-	(No symbol) [0x00007FF69B05A208]
-	(No symbol) [0x00007FF69B0562C4]
-	(No symbol) [0x00007FF69B0563F6]
-	(No symbol) [0x00007FF69B0467A3]
-	BaseThreadInitThunk [0x00007FFE30B67344+20]
-	RtlUserThreadStart [0x00007FFE328E26B1+33]
-
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at util.DriverFactory.initialization(DriverFactory.java:34)
-	at Stepdefinition1.Hooks.setUp(Hooks.java:21)
-</textarea></span>
-												</div>
-											</div>
-											<div class="st skip test l2" 
-												tags=""
-												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:02</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Login with Audit Manager credentials in Login page] started</span>
 												
-												<div class="st skip">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:10</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Login with Audit Manager credentials in Login page]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:10</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on WovenKnit Module] started</span>
 												
-												<div class="st skip">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:16</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on WovenKnit Module]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:16</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Audit Module] started</span>
 												
-												<div class="st skip">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:20</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Audit Module]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:20</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Pending IPO list in menu] started</span>
 												
-												<div class="st skip">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:24</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Pending IPO list in menu]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:24</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether user navigated to Pending IPO list or not] started</span>
 												
-												<div class="st skip">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:26</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether user navigated to Pending IPO list or not]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:26</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the data is displaying in grid or not] started</span>
 												
-												<div class="st skip">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:28</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the data is displaying in grid or not]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:28</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Generate IPO button] started</span>
 												
-												<div class="st skip">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:34</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Generate IPO button]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether Generate IPO screen is displaying or not] started</span>
 												
-												<div class="st skip">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:34</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether Generate IPO screen is displaying or not]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the current date is displaying for IPO date field or not] started</span>
 												
-												<div class="st skip">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:34</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the current date is displaying for IPO date field or not]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And verify whether the Buyer Style is prepopulated or not] started</span>
+												
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:34</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And verify whether the Buyer Style is prepopulated or not]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">10.19.2023 15:57:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the IPO field is prepopulated with data or not] started</span>
 												
-												<div class="st skip">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:34</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the IPO field is prepopulated with data or not]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st skip test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tt">10.19.2023 15:57:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Enter IPO number in IPO field] started</span>
 												
-												<div class="st skip">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">skip</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:38</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Enter IPO number in IPO field]</span>
 													
-													<span class="td">Step skipped</span>
+													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st fail test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												<span class="tt">10.19.2023 15:57:38</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify Buyer is prepopulated or not] started</span>
 												
-												<div class="st fail">
-													<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+												<div class="st pass">
+													<span class="tt">10.19.2023 15:57:38</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify Buyer is prepopulated or not]</span>
 													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "Stepdefinition1.Hooks.driver" is null
-	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:27)
-</textarea></span>
-												</div>
-											</div>
-											<div class="st fail test l2" 
-												tags=""
-												devices="">
-												<span class="tt">10.19.2023 11:39:22</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.CloseBrowser()] started</span>
-												
-												<div class="st fail">
-													<span class="tt">10.19.2023 11:39:23</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.CloseBrowser()]</span>
-													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "Stepdefinition1.Hooks.driver" is null
-	at Stepdefinition1.Hooks.CloseBrowser(Hooks.java:39)
-</textarea></span>
+													<span class="td"></span>
 												</div>
 											</div>
 											</div>

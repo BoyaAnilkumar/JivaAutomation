@@ -44,7 +44,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -54,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Oct 19, 2023 11:39:20 am</span>
+			<span class='label blue darken-3 suite-start-time'>Oct 19, 2023 03:56:59 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -69,8 +68,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -124,10 +122,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -138,10 +136,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -154,12 +152,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>13</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='21.429%'>3</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='78.571%'>11</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='78.571%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -177,11 +175,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Create the New IPO from Pending IPO list</span>
-						<span class='test-time'>Oct 19, 2023 11:39:20 am</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Oct 19, 2023 03:57:02 pm</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -190,129 +188,67 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label'>@FeatureGroup_Requirement</span>
 		<span class='category label'>@NEWIPO</span>
 	</div>
-	<span class='duration right label'>0h 0m 2s+737ms</span>
+	<span class='duration right label'>0h 0m 35s+607ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Create New IPO in Pending IPO List</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Create New IPO in Pending IPO List</div>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node * fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Stepdefinition1.Hooks.setUp(io.cucumber.java.Scenario)</div>
-			<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 118.0.5993.71 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
-	(No symbol) [0x00007FF69B04EA92]
-	(No symbol) [0x00007FF69AF1E3AB]
-	(No symbol) [0x00007FF69AF49FF5]
-	(No symbol) [0x00007FF69AF45237]
-	(No symbol) [0x00007FF69AF42FE1]
-	(No symbol) [0x00007FF69AF7EA4F]
-	(No symbol) [0x00007FF69AF7E5B0]
-	(No symbol) [0x00007FF69AF76DB3]
-	(No symbol) [0x00007FF69AF4D2B1]
-	(No symbol) [0x00007FF69AF4E494]
-	GetHandleVerifier [0x00007FF69B37EF82+2849794]
-	GetHandleVerifier [0x00007FF69B3D1D24+3189156]
-	GetHandleVerifier [0x00007FF69B3CACAF+3160367]
-	GetHandleVerifier [0x00007FF69B166D06+653702]
-	(No symbol) [0x00007FF69B05A208]
-	(No symbol) [0x00007FF69B0562C4]
-	(No symbol) [0x00007FF69B0563F6]
-	(No symbol) [0x00007FF69B0467A3]
-	BaseThreadInitThunk [0x00007FFE30B67344+20]
-	RtlUserThreadStart [0x00007FFE328E26B1+33]
-
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at util.DriverFactory.initialization(DriverFactory.java:34)
-	at Stepdefinition1.Hooks.setUp(Hooks.java:21)
-</textarea>
+		<li test-id='4' class='node given pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Login_with_Audit_Manager_credentials_in_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Login with Audit Manager credentials in Login page</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='4' class='node given skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Login_with_Audit_Manager_credentials_in_Login_page()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given Login with Audit Manager credentials in Login page</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='5' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Click_on_WovenKnit_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on WovenKnit Module</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='5' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Click_on_WovenKnit_Module()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Click on WovenKnit Module</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='6' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Click_on_Audit_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Audit Module</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='6' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Click_on_Audit_Module()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Click on Audit Module</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='7' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Click_on_Pending_IPO_list_in_menu()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Pending IPO list in menu</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='7' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Click_on_Pending_IPO_list_in_menu()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Click on Pending IPO list in menu</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='8' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Verify_whether_user_navigated_to_Pending_IPO_list_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Verify whether user navigated to Pending IPO list or not</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='8' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Verify_whether_user_navigated_to_Pending_IPO_list_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Verify whether user navigated to Pending IPO list or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='9' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Verify_whether_the_data_is_displaying_in_grid_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Verify whether the data is displaying in grid or not</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='9' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Verify_whether_the_data_is_displaying_in_grid_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Verify whether the data is displaying in grid or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='10' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Click_on_Generate_IPO_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Generate IPO button</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='10' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Click_on_Generate_IPO_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Click on Generate IPO button</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='11' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Verify_whether_Generate_IPO_screen_is_displaying_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Verify whether Generate IPO screen is displaying or not</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='11' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Verify_whether_Generate_IPO_screen_is_displaying_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Verify whether Generate IPO screen is displaying or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='12' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Verify_whether_the_current_date_is_displaying_for_IPO_date_field_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Verify whether the current date is displaying for IPO date field or not</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='12' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Verify_whether_the_current_date_is_displaying_for_IPO_date_field_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Verify whether the current date is displaying for IPO date field or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='13' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.verify_whether_the_Buyer_Style_is_prepopulated_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify whether the Buyer Style is prepopulated or not</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='13' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Verify whether the IPO field is prepopulated with data or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='14' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Verify whether the IPO field is prepopulated with data or not</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='14' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Enter_IPO_number_in_IPO_field()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Enter IPO number in IPO field</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='15' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Enter_IPO_number_in_IPO_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter IPO number in IPO field</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='15' class='node * fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "Stepdefinition1.Hooks.driver" is null
-	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:27)
-</textarea>
-		</li>
-		<li test-id='16' class='node * fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Stepdefinition1.Hooks.CloseBrowser()</div>
-			<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "Stepdefinition1.Hooks.driver" is null
-	at Stepdefinition1.Hooks.CloseBrowser(Hooks.java:39)
-</textarea>
+		<li test-id='16' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PendingIPO_Steps.Verify_Buyer_is_prepopulated_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Verify Buyer is prepopulated or not</div>
+			<div class="node-step"></div>
 		</li>
 	</ul>
 </div>
@@ -360,13 +296,13 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 					<div class='category-heading'>
 						<span class='category-name'>@FeatureGroup_Requirement</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -380,14 +316,14 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 19, 2023 11:39:20 am</td>
+										<td>Oct 19, 2023 03:57:02 pm</td>
 										<td class='linked' test-id='1'>Create the New IPO from Pending IPO list</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 19, 2023 11:39:20 am</td>
+										<td>Oct 19, 2023 03:57:02 pm</td>
 										<td class='linked' test-id='2'>Create New IPO in Pending IPO List</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -398,13 +334,13 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 					<div class='category-heading'>
 						<span class='category-name'>@NEWIPO</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -418,9 +354,9 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 19, 2023 11:39:20 am</td>
+										<td>Oct 19, 2023 03:57:02 pm</td>
 										<td class='linked' test-id='2'>Create New IPO in Pending IPO List</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -436,155 +372,7 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.SessionNotCreatedException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 19, 2023 11:39:20 am</td>
-										<td class='linked' test-id='3'>Stepdefinition1.Hooks.setUp(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 116
-Current browser version is 118.0.5993.71 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
-	(No symbol) [0x00007FF69B04EA92]
-	(No symbol) [0x00007FF69AF1E3AB]
-	(No symbol) [0x00007FF69AF49FF5]
-	(No symbol) [0x00007FF69AF45237]
-	(No symbol) [0x00007FF69AF42FE1]
-	(No symbol) [0x00007FF69AF7EA4F]
-	(No symbol) [0x00007FF69AF7E5B0]
-	(No symbol) [0x00007FF69AF76DB3]
-	(No symbol) [0x00007FF69AF4D2B1]
-	(No symbol) [0x00007FF69AF4E494]
-	GetHandleVerifier [0x00007FF69B37EF82+2849794]
-	GetHandleVerifier [0x00007FF69B3D1D24+3189156]
-	GetHandleVerifier [0x00007FF69B3CACAF+3160367]
-	GetHandleVerifier [0x00007FF69B166D06+653702]
-	(No symbol) [0x00007FF69B05A208]
-	(No symbol) [0x00007FF69B0562C4]
-	(No symbol) [0x00007FF69B0563F6]
-	(No symbol) [0x00007FF69B0467A3]
-	BaseThreadInitThunk [0x00007FFE30B67344+20]
-	RtlUserThreadStart [0x00007FFE328E26B1+33]
-
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1016)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-	at util.DriverFactory.initialization(DriverFactory.java:34)
-	at Stepdefinition1.Hooks.setUp(Hooks.java:21)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.NullPointerException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 19, 2023 11:39:22 am</td>
-										<td class='linked' test-id='15'>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "Stepdefinition1.Hooks.driver" is null
-	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:27)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Oct 19, 2023 11:39:22 am</td>
-										<td class='linked' test-id='16'>Stepdefinition1.Hooks.CloseBrowser()</td>
-										<td>
-											<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "Stepdefinition1.Hooks.driver" is null
-	at Stepdefinition1.Hooks.CloseBrowser(Hooks.java:39)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -604,25 +392,25 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>14</div>
+					<div class='panel-lead'>13</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 19, 2023 11:39:20 am</div>
+					<div class='panel-lead'>Oct 19, 2023 03:56:59 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 19, 2023 11:39:23 am</div>
+			 		<div class='panel-lead'>Oct 19, 2023 03:57:40 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 3s+398ms</div>
+					<div class='panel-lead'>0h 0m 40s+699ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -639,20 +427,20 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 						</tr>
 						<tr>
 							<td>@FeatureGroup_Requirement</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									50%
 							</td>
 						</tr>
 						<tr>
 							<td>@NEWIPO</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -667,38 +455,38 @@ remote stacktrace: 	GetHandleVerifier [0x00007FF69B0D52A2+57122]
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
-				grandChildCount: 14,
-				passGrandChild: 0,
-				failGrandChild: 3,
+				exceptionsChild: 0,
+				grandChildCount: 13,
+				passGrandChild: 13,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 11,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 14,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Create the New IPO from Pending IPO list":2.737
+			        "Create the New IPO from Pending IPO list":35.607
 			};
 		</script>
 	
