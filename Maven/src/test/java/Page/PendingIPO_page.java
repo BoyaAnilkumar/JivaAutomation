@@ -167,13 +167,13 @@ public class PendingIPO_page extends DriverFactory {
 
 
 	public void Verify_Buyer_is_prepopulated_or_not() {
-//		WebElement Buyer1 = driver.findElement(Buyer);
-//		String Screen = Buyer1.getText();
-//		if(Buyer1.isDisplayed()) {
-//			System.out.println("Buyer name is displayed: "  +  Screen);
-//		}else {
-//			System.out.println("Buyer Name is not displayed: "  +  Screen);
-//		}
+		WebElement Buyer1 = driver.findElement(Buyer);
+		String Screen = Buyer1.getText();
+		if(Buyer1.isDisplayed()) {
+			System.out.println("Buyer name is displayed: "  +  Screen);
+		}else {
+			System.out.println("Buyer Name is not displayed: "  +  Screen);
+		}
 		
 		WebDriverWait wait = new WebDriverWait(driver, 10); // Adjust the timeout as needed
 
