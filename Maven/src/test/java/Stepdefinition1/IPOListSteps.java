@@ -98,13 +98,90 @@ public class IPOListSteps {
 		IPOl.Click_on_the_Apply_button();
 	}
 	@Then ("^Click on Generate Excel Sheet button$")
-	public void Click_on_Generate_Excel_Sheet_button() {
+	public void Click_on_Generate_Excel_Sheet_button() throws Throwable {
 		IPOl.Click_on_Generate_Excel_Sheet_button();
 	}
 	@When ("^Clicked on Add IPO button$")
-	public void Clicked_on_Add_IPO_button() {
+	public void Clicked_on_Add_IPO_button() throws Throwable {
 		IPOl.Clicked_on_Add_IPO_button();
 	}
+	@And ("^Verify whether the page is navigating to the Add IPO screen or not$")
+	public void Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not() {
+		IPOl.Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not();
+	}
+	@When ("^Click on the save button$")
+	public void Click_on_the_save_button() throws Throwable {
+		IPOl.Click_on_the_save_button();
+	}
+	@Then ("^Select an IPO Date$")
+	public void Select_an_IPO_Date() throws Throwable {
+		IPOl.Select_an_IPO_Date();
+	}
+	@And ("^Verify whether current date is displayed or not bydefault$")
+	public void Verify_whether_current_date_is_displayed_or_not_bydefault() throws Throwable {
+		IPOl.Verify_whether_current_date_is_displayed_or_not_bydefault();
+	}
+	@Given ("^Enter first two letters of a Buyer Style$")
+	public void Enter_first_two_letters_of_a_Buyer_Style() throws Throwable {
+		IPOl.Enter_first_two_letters_of_a_Buyer_Style();
+	}
+	@And ("^Select a Buyer Style from the dropdown$")
+	public void Select_a_Buyer_Style_from_the_dropdown() throws Throwable {
+		IPOl.Select_a_Buyer_Style_from_the_dropdown();
+	}
+	@Given ("^Enter the IPO name$")
+	public void Enter_the_IPO_name() throws Throwable {
+		IPOl.Enter_the_IPO_name();
+	}
+	@Given ("^Enter first two letters of Production Merchant$")
+	public void Enter_first_two_letters_of_Production_Merchant() throws Throwable {
+		IPOl.Enter_first_two_letters_of_Production_Merchant();
+	}
+	@Then ("^Select a Production Merchant fron the dropdown$")
+	public void Select_a_Production_Merchant_fron_the_dropdown() throws Throwable {
+		IPOl.Select_a_Production_Merchant_fron_the_dropdown();
+	}
+	@Given ("^Enter the PO Qty$")
+	public void Enter_the_PO_Qty() throws Throwable {
+		IPOl.Enter_the_PO_Qty();
+	}
+	@Given ("^Enter IPO percentage$")
+	public void Enter_IPO_percentage() throws Throwable {
+		IPOl.Enter_IPO_percentage();
+	}
+	@Then ("^Click in the Assigned Month and Year field$")
+	public void Click_in_the_Assigned_Month_and_Year_field() {
+		IPOl.Click_in_the_Assigned_Month_and_year_field();
+	}
+	@Then ("^Select the Month from the month picker$")
+	public void Select_the_Month_from_the_month_picker() throws Throwable {
+		IPOl.Select_the_Month_from_the_month_picker();
+	}
+	@Then ("^Select Exfactory Date$")
+	public void Select_Exfactory_Date() throws Throwable {
+		IPOl.Select_Exfactory_Date();
+	}
+	@And ("^Check the Active field status$")
+	public void Check_the_Active_field_status() throws Throwable {
+		IPOl.Check_the_Active_field_status();
+	}
+	@Then ("^Click on the Save button$")
+	public void Click_on_the_Save_button() throws Throwable {
+		IPOl.Click_on_the_Save_button();
+	}
+	@And ("^Verify whether the page is navigated to IPO List page or not$")
+	public void Verify_whether_the_page_is_navigated_to_IPO_List_page_or_not() {
+		IPOl.Verify_whether_the_page_is_navigated_to_IPO_List_page_or_not();
+	}
+	@Then ("^Click on Cancel button in the Add IPO$")
+	public void Click_on_Cancel_button_in_the_Add_IPO() {
+		IPOl.Click_on_Cancel_button_in_the_Add_IPO();
+	}
+	@And ("^Verify the information tags data on mouse hover$")
+	public void Verify_the_information_tags_data_on_mouse_hover() throws Throwable {
+		IPOl.Verify_the_information_tags_data_on_mouse_hover();
+	}
+
 	  
 
 }
