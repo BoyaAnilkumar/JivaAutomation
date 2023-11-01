@@ -105,9 +105,7 @@ public class IPOListSteps {
 	public void Clicked_on_Add_IPO_button() throws Throwable {
 		IPOl.Clicked_on_Add_IPO_button();
 	}
-<<<<<<< HEAD
 
-=======
 	@And ("^Verify whether the page is navigating to the Add IPO screen or not$")
 	public void Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not() {
 		IPOl.Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not();
@@ -186,6 +184,5 @@ public class IPOListSteps {
 	}
 
 	  
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 }

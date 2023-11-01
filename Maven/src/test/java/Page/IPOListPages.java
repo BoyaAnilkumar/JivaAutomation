@@ -48,10 +48,10 @@ public class IPOListPages extends DriverFactory {
 
 	By GenerateExcelSheet = By.xpath("//a[@class='btn btn-primary btn-sm mr-2 mt-sm-1 ng-star-inserted']");
 	By AddIPO = By.xpath("//button[@class='btn btn-primary btn-sm shadow-sm float-right mt-1 ng-star-inserted']");
-<<<<<<< HEAD
 
 
-=======
+
+
 	By navAddIPOscr = By.xpath("//h3[text()='Add IPO ']");
 	
 	By IPODate = By.xpath("//input[@formcontrolname='ipoDate']");
@@ -76,7 +76,6 @@ public class IPOListPages extends DriverFactory {
 	By IGAssignedMthYear = By.xpath("//div[@data-validate='Assigned Month is required']");
 	By IGExfactoryDate = By.xpath("//div[@data-validate='Exfactory Date is required']");
 	
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 	public void Navigates_to_the_Login_page() {
 		driver.get(prop.getProperty("url"));
@@ -236,11 +235,10 @@ public class IPOListPages extends DriverFactory {
 		Thread.sleep(5000);
 	}
 
-<<<<<<< HEAD
-	public void Click_on_Generate_Excel_Sheet_button() {
-		// TODO Auto-generated method stub
 
-=======
+
+
+
 	public void Click_on_Generate_Excel_Sheet_button() throws Throwable {
 		utilities.webDriverWait(driver, GenerateExcelSheet);
 		driver.findElement(GenerateExcelSheet).click();		
@@ -260,14 +258,10 @@ public class IPOListPages extends DriverFactory {
 			System.out.println("The screen is not navigated to " + IPOscreen);
 		}
 		
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	}
 
-<<<<<<< HEAD
-	public void Clicked_on_Add_IPO_button() {
-		// TODO Auto-generated method stub
 
-=======
+
 	public void Click_on_the_save_button() throws Throwable {
 		driver.findElement(Save).click();
         utilities.MaximumLongWait(driver);
@@ -278,7 +272,6 @@ public class IPOListPages extends DriverFactory {
 		utilities.webDriverWait(driver, IPODate);
 		driver.findElement(IPODate).click();
 		
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	}
 	
 	public void Verify_whether_current_date_is_displayed_or_not_bydefault() throws Throwable {
@@ -413,12 +406,6 @@ public class IPOListPages extends DriverFactory {
 //        utilities.MaximumLongWait(driver);
 	}
 
-<<<<<<< HEAD
-
-
-=======
-	
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 
 	
