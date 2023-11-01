@@ -7,25 +7,25 @@
 //import io.cucumber.java.en.When;
 //
 //public class Stylesteps {
-//	Stylepage Stylepage = new Stylepage(); 
-//		
-//		
+//	Stylepage Stylepage = new Stylepage();
+//
+//
 //		@When("^User navigates to Login page$")
 //	    	public void User_navigates_to_Login_page() throws Throwable {
 //			Stylepage.User_navigates_to_Login_page();
-//	    		
+//
 //	      }
 //
 //		@Then("^User enters the username and password$")
 //		public void User_enters_the_username_and_password() throws Throwable {
 //			Stylepage.User_enters_the_username_and_password();
-//		
+//
 //	    }
-//		
+//
 //		@And("^User click on the signIn$")
 //		public void User_click_on_the_signIn() throws Throwable {
 //			Stylepage.User_click_on_the_signIn();
-//			
+//
 //	   }
 //		 @And ("^Click on the Woven Module$")
 //		   public void Click_on_the_Woven_Module() throws Throwable{
@@ -45,71 +45,71 @@
 //		   public void click_on_the_Filter_Icon() throws Throwable{
 //			   Stylepage.click_on_the_Filter_Icon();
 //		   }
-//		  
+//
 //		   @And ("^Click on the Buyer filed$")
 //		   public void Click_on_the_Buyer_filed() throws Throwable{
 //			   Stylepage.Click_on_the_Buyer_filed();
-//		   
-//		   } 
+//
+//		   }
 //		   @When ("^User select the Buyer in buyer dropdown field")
 //		   public void User_select_the_Buyer_in_buyer_dropdown_field() throws Throwable{
 //			   Stylepage.User_select_the_Buyer_in_buyer_dropdown_field();
-//		   
-//		   } 
+//
+//		   }
 //		   @And ("^Click on the season field$")
 //		   public void Click_on_the_season_field() throws Throwable{
 //			   Stylepage.Click_on_the_season_field();
-//		   
-//		   } 
+//
+//		   }
 //		   @When ("^User Select the Season in season dropdown field")
 //		   public void User_select_the_Season_in_buyer_dropdown_field() throws Throwable{
 //			   Stylepage.User_select_the_Season_in_buyer_dropdown_field();
-//		   
-//		   } 
+//
+//		   }
 //		   @And ("^Click on the Status field$")
 //		   public void Click_on_the_Status_field() throws Throwable{
 //			   Stylepage.Click_on_the_Status_field();
-//		   
-//		   } 
+//
+//		   }
 //		   @When ("^User select the Status")
 //		   public void User_select_the_Status() throws Throwable{
 //			   Stylepage.User_select_the_Status();
-//		   
-//		   } 
+//
+//		   }
 //		   @And ("^Enter the data in Search By Style field$")
 //		   public void Enter_the_data_in_Search_By_Style_field() throws Throwable{
 //			   Stylepage.Enter_the_data_in_Search_By_Style_field();
-//		   
-//		   } 
+//
+//		   }
 //		   @And ("^Click on the Filter Apply button$")
 //		   public void Click_on_the_Filter_Apply_button() throws Throwable{
 //			   Stylepage.Click_on_the_Filter_Apply_button();
-//		   
-//		   } 
+//
+//		   }
 //		   @And ("^Click on the Filter Reset button$")
 //		   public void Click_on_the_Filter_Reset_button() throws Throwable{
 //			   Stylepage.Click_on_the_Filter_Reset_button();
-//		   
-//		   } 
-//		   
-//		   
-//		   
+//
+//		   }
+//
+//
+//
 //		   @Then ("^Click on the Add New style button$")
 //		   public void Click_on_the_Add_New_style_button() throws Throwable{
 //			   Stylepage.Click_on_the_Add_New_style_button();
 //
 //	     }
-//   
+//
 //		   @And ("^Click on the PD Merchant name field$")
 //		   public void Click_on_the_PD_Merchant_name_field() throws Throwable{
 //		 Stylepage.Click_on_the_PD_Merchant_name_field();
-//		   
-//		   }   
+//
+//		   }
 //		   @When ("^User select the PD merchant name$")
 //		   public void User_select_the_PD_merchant_name() throws Throwable{
 //		 Stylepage.User_select_the_PD_merchant_name();
-//		   
-//		   
+//
+//
 //         }
 //		   @And ("^Enter the data in BuyerStyle field$")
 //		   public void Enter_the_data_in_BuyerStyle_field() throws Throwable{
@@ -126,7 +126,7 @@
 //		   public void User_select_the_Buyer() throws Throwable{
 //			   Stylepage.User_select_the_Buyer();
 //
-//		   }	
+//		   }
 //		   @And ("^Click on the Season field$")
 //		   public void Click_on_the_Season_field() throws Throwable{
 //			   Stylepage.Click_on_the_Season_field();
@@ -136,7 +136,7 @@
 //		   public void User_select_the_Season() throws Throwable{
 //			   Stylepage.User_select_the_Season();
 //
-//		   }	
+//		   }
 //		   @And ("^Click on the Garment Type field$")
 //		   public void Click_on_the_Garment_Type_field() throws Throwable{
 //			   Stylepage.Click_on_the_Garment_Type_field();
@@ -156,7 +156,7 @@
 //		   public void The_user_select_the_Garment_Process() throws Throwable{
 //			   Stylepage.The_user_select_the_Garment_Process();
 //
-//		   }	
+//		   }
 //		   @And ("^Click on the Save button$")
 //		   public void Click_on_the_Save_button() throws Throwable{
 //			   Stylepage.Click_on_the_Save_button();
@@ -166,20 +166,20 @@
 //		   public void I_am_on_the_homepage() throws Throwable{
 //			   Stylepage.I_am_on_the_homepage();
 //
-//		   } 
+//		   }
 //		   @And ("^print the displayed header message$")
 //		   public void print_the_displayed_header_message() throws Throwable{
 //			   Stylepage.print_the_displayed_header_message();
 //
 //		   }
-//		   
-//		   
-//		   
-//		   
-//		   
-//		   
-//		   
-//		   
+//
+//
+//
+//
+//
+//
+//
+//
 //		   @Then ("^User enter the the Tech Pack Name$")
 //		   public void User_enter_the_the_Tech_Pack_Name() throws Throwable{
 //			   Stylepage.User_enter_the_the_Tech_Pack_Name();
@@ -228,7 +228,7 @@
 //		   @And("^select PD Assistants$")
 //		   public void select_PD_Assistants() throws Throwable {
 //			   Stylepage.select_PD_Assistants();
-//			   
+//
 //		   }
 //		   @And ("^Click on the Cancel button$")
 //		   public void Click_on_the_Cancel_button() throws Throwable{
@@ -245,7 +245,7 @@
 //			   Stylepage.Click_on_the_Back_button();
 //
 //		   }
-//		   
+//
 //		   @When ("^User click on the add revise estimates button$")
 //		   public void User_click_on_the_add_revise_estimates_button() throws Throwable{
 //			   Stylepage.User_click_on_the_add_revise_estimates_button();
@@ -326,7 +326,7 @@
 //			   Stylepage.Click_on_the_Tech_pack_cancel_Icon();
 //
 //		   }
-//		   
+//
 //		   @And ("^Click on the Add sampling details button$")
 //		   public void Click_on_the_Add_sampling_details_button() throws Throwable{
 //		   Stylepage.Click_on_the_Add_sampling_details_button();
@@ -347,12 +347,12 @@
 //		   public void Select_the_Submission_date() throws Throwable{
 //		   Stylepage.Select_the_Submission_date();
 //		   }
-//		   
+//
 //		   @And("^Click on the sampling Save button$")
 //		   public void Click_on_the_sampling_Save_button() throws Throwable{
 //		   Stylepage.Click_on_the_sampling_Save_button();
-//		   
-//           } 
+//
+//           }
 //		   @And ("^Click on the Cancel Icon$")
 //		   public void Click_on_the_Cancel_Icon() throws Throwable{
 //		   Stylepage.Click_on_the_Cancel_Icon();
@@ -393,7 +393,7 @@
 //		   public void Click_on_the_Manage_Images_cancel_Icon() throws Throwable{
 //		   Stylepage.Click_on_the_Manage_Images_cancel_Icon();
 //		   }
-//		   
+//
 //		   @And ("^Click on the Edit Icon$")
 //		   public void Click_on_the_Edit_Icon() throws Throwable{
 //		   Stylepage.Click_on_the_Edit_Icon();
@@ -446,9 +446,9 @@
 //		   public void Click_on_the_No_button() throws Throwable{
 //		   Stylepage.Click_on_the_No_button();
 //		   }
-//      
+//
 //		   @And ("^Verify whether the delete is working or not$")
 //		   public void Verify_whether_the_delete_is_working_or_not () throws Throwable {
-//			   Stylepage.Verify_whether_the_delete_is_working_or_not();   
+//			   Stylepage.Verify_whether_the_delete_is_working_or_not();
 //		   }
 //		   }

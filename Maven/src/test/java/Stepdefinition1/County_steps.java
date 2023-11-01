@@ -1,7 +1,6 @@
 package Stepdefinition1;
 
 import Page.Country_Page;
-import Page.Stylepage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -9,33 +8,33 @@ import io.cucumber.java.en.When;
 
 public class County_steps {
 
-	
-          Country_Page Country_Page = new Country_Page(); 
-		
-		
+
+          Country_Page Country_Page = new Country_Page();
+
+
 		@When("^User navigates to Login page$")
 	    	public void User_navigates_to_Login_page() throws Throwable {
 		     Country_Page.User_navigates_to_Login_page();
-	    		
+
 	      }
 
 		@Then("^User enters the username and password$")
 		public void User_enters_the_username_and_password() throws Throwable {
 			Country_Page.User_enters_the_username_and_password();
-		
+
 	    }
-		
+
 		@And("^User click on the signIn$")
 		public void User_click_on_the_signIn() throws Throwable {
 			Country_Page.User_click_on_the_signIn();
-			
+
 	   }
 		 @And ("^Click on the Master Module$")
 		   public void Click_on_the_Master_Module() throws Throwable{
 			 Country_Page.Click_on_the_Master_Module();
 
 		}
-		  
+
 		   @And ("^click on the Country screen$")
 		   public void click_on_the_Country_screen() throws Throwable{
 			   Country_Page.click_on_the_Country_screen();

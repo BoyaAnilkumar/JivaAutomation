@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 
 public class IPOListSteps {
 	IPOListPages IPOl = new IPOListPages();
-	
+
 	@Given ("^Navigates to the Login page$")
 	public void Navigates_to_the_Login_page() {
 		IPOl.Navigates_to_the_Login_page();
@@ -105,6 +105,6 @@ public class IPOListSteps {
 	public void Clicked_on_Add_IPO_button() {
 		IPOl.Clicked_on_Add_IPO_button();
 	}
-	  
+
 
 }
