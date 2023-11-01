@@ -1,7 +1,5 @@
 package Page;
 
-import static org.junit.Assert.assertEquals;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -10,13 +8,13 @@ import util.Utilities;
 
 public class Country_Page extends DriverFactory{
 	Utilities utilities = new Utilities();
-	
+
 	By SignIn   = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
 	By username = By.xpath("//input[@id='userName']");
 	By password = By.xpath("//input[@id='userpassword']");
 	By Master = By. xpath ("//span[text()='Masters ']");
 	By Country = By.xpath("//a[text()='Country']");
-	
+
 	By C_Add = By.xpath("//button[@class='btn btn-primary btn-sm shadow-sm float-right ng-star-inserted']");
 	By C_Name = By.xpath("//input[@placeholder='Enter Country Name']");
 	By C_Code = By.xpath("//input[@placeholder='Enter Country Code']");
@@ -42,19 +40,19 @@ public class Country_Page extends DriverFactory{
 	By Yes = By.xpath("//button[@class='swal2-confirm swal2-styled']");
 	By No = By.xpath("//button[@class='swal2-cancel swal2-styled']");
 	By D_S = By.xpath("//h2[@class='swal2-title']");
-	
+
 	By C_A = By.xpath("//div[@data-validate='Country Name is required']");
 	By C_B = By.xpath("//div[@data-validate='Country Code is required']");
 	By C_C = By.xpath("//div[@data-validate='Currency Type is required']");
 	By C_D = By.xpath("//div[@data-validate='Conversion Rate is required']");
-	
+
 	By Search = By.xpath("//input[@placeholder='Search keyword']");
 	By Edit_1 =By.xpath("//i[@class='ti-pencil-alt']");
 	By Delete_1 = By.xpath("//i[@class='ti-trash']");
-	
+
 	 public void User_navigates_to_Login_page() throws Throwable {
 			driver.get(prop.getProperty("url"));
-			
+
 			}
 			public void User_enters_the_username_and_password() throws Throwable {
 			utilities.webDriverWait(driver, username);
@@ -62,20 +60,20 @@ public class Country_Page extends DriverFactory{
 			driver.findElement(password).sendKeys("Abcd@123");
 
 			}
-				
+
 			public void User_click_on_the_signIn() throws Throwable {
-//			utilities.webDriverWait(driver, password);		
+//			utilities.webDriverWait(driver, password);
 			driver.findElement(SignIn).click();
-					
+
 			}
 			public void Click_on_the_Master_Module() throws Throwable{
 			utilities.webDriverWait(driver, Master );
-			driver.findElement(Master).click();	
+			driver.findElement(Master).click();
 		  	}
-			
+
 			public void click_on_the_Country_screen() throws Throwable{
 			   utilities.webDriverWait(driver, Country );
-			   driver.findElement(Country).click();	
+			   driver.findElement(Country).click();
 
 
           }
@@ -86,58 +84,54 @@ public class Country_Page extends DriverFactory{
 				   driver.findElement(Save).click();
 				   utilities.MediumWait(driver);
 
-	
+
 			}
 			public void Enter_the_data_in_Country_name_field() throws Throwable {
 				utilities.webDriverWait(driver, C_Name);
 		        driver.findElement(C_A).click();
-<<<<<<< HEAD
-		        utilities.MediumWait(driver);		       
+
+		        utilities.MediumWait(driver);
 		        driver.findElement(C_Name).sendKeys("C73");
-			}		  
-			
-=======
-		        utilities.MediumWait(driver);		
-		        
-		        driver.findElement(C_Name).sendKeys("C73");
-				  
 			}
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
+
+
+
 			public void Enter_the_data_in_Country_code_field() throws Throwable {
 				utilities.webDriverWait(driver, C_Code );
 				 driver.findElement(C_B).click();
 				 utilities.MediumWait(driver);
-				 driver.findElement(C_Code).sendKeys("SD@46");	
+				 driver.findElement(C_Code).sendKeys("SD@46");
 			}
 			public void CLick_on_the_Currency_type_field() throws Throwable {
 				utilities.webDriverWait(driver, Currency_Type );
 				 driver.findElement(C_C).click();
 				 utilities.MediumWait(driver);
-				   driver.findElement(Currency_Type).click();	
+				   driver.findElement(Currency_Type).click();
 			}
 			public void Select_the_Currency_type() throws Throwable {
 				utilities.webDriverWait(driver, Select_Currency );
-				   driver.findElement(Select_Currency).click();	
-				
+				   driver.findElement(Select_Currency).click();
+
 			}
 			public void Enter_the_data_in_Conversion_Rate_field() throws Throwable {
 				utilities.webDriverWait(driver, Coversion_Rate );
 				 driver.findElement(C_D).click();
 				 utilities.MediumWait(driver);
-				 driver.findElement(Coversion_Rate).sendKeys("50");	
-				
+				 driver.findElement(Coversion_Rate).sendKeys("50");
+
 			}
 			public void Select_the_Active_Check_box() throws Throwable {
 				utilities.webDriverWait(driver, Active );
-				driver.findElement(Active).click();	
+				driver.findElement(Active).click();
 			}
 			public void CLick_on_the_Save_button() throws Throwable {
 				utilities.webDriverWait(driver, Save );
 				driver.findElement(Save).click();
-				
+
 			}
 			public void Verify_the_successfull_msg() {
-				
+
 				WebElement AlertMsg = driver.findElement(OnSave);
 				String actualMessage = AlertMsg.getText();
 
@@ -148,14 +142,14 @@ public class Country_Page extends DriverFactory{
 				} else {
 					System.out.println("Alert message is incorrect."+ actualMessage);
 				}
-				
+
 			}
 			public void Click_on_the_Cancel_button() throws Throwable {
 				utilities.webDriverWait(driver, Cancel );
 				driver.findElement(Cancel).click();
 			}
 			public void Verify_the_Alert_msg() {
-				
+
 				   WebElement AlertMsg = driver.findElement(Alert);
 					String actualMessage = AlertMsg.getText();
 
@@ -170,44 +164,44 @@ public class Country_Page extends DriverFactory{
 			public void Click_on_the_Edit_Icon() throws Throwable {
 				utilities.webDriverWait(driver, Edit );
 				driver.findElement(Edit).click();
-				
+
 			}
 			public void Update_the_Country_name() throws Throwable {
 				utilities.webDriverWait(driver, U_Countryname );
 				driver.findElement(U_Countryname).clear();
 				driver.findElement(U_Countryname).sendKeys("C7367");
-				
+
 			}
 			public void Update_the_Country_code() throws Throwable {
      			utilities.webDriverWait(driver, U_countrycode );
 				driver.findElement(U_countrycode).clear();
 				driver.findElement(U_countrycode).sendKeys("AHSGE");
-				
+
 			}
 			public void Update_the_Select_Country() throws Throwable {
 				utilities.webDriverWait(driver, ClickCurrency );
 				driver.findElement(ClickCurrency).click();
 				utilities.MaximumWait(driver);
 				driver.findElement(Ucurrency).click();
-				
-				
+
+
 			}
 			public void Update_the_Conversion_Rate() throws Throwable {
 				utilities.webDriverWait(driver, Uconversionrate );
 				driver.findElement(Uconversionrate).clear();
 				driver.findElement(Uconversionrate).sendKeys("60");
-				
+
 			}
 			public void Click_on_the_Update_button() throws Throwable {
 				utilities.webDriverWait(driver, update );
 				driver.findElement(update).click();
-				
-				
+
+
 			}
 			public void Verify_the_Update_msg() throws Throwable {
 				utilities.MediumWait(driver);
 				 WebElement AlertMsg = driver.findElement(UMsg);
-				 
+
 					String actualMessage = AlertMsg.getText();
 
 					String expectedMessage = "Country Updated Successfully";
@@ -217,12 +211,12 @@ public class Country_Page extends DriverFactory{
 					} else {
 						System.out.println("Alert message is incorrect."+ actualMessage);
 					}
-				
+
 			}
 			public void Click_on_the_update_form_Cancel_button() throws Throwable {
 				utilities.webDriverWait(driver, Ucancel );
 				driver.findElement(Ucancel).click();
-				
+
 			}
 			public void Click_on_the_Delete_Icon() throws Throwable {
 				//utilities.webDriverWait(driver, Delete );
@@ -233,7 +227,7 @@ public class Country_Page extends DriverFactory{
 					utilities.MediumWait(driver);
 					driver.findElement(Yes).click();
 			//		driver.findElement(No).click();
-				
+
 				} else {
 					driver.findElement(Edit).click();
 					utilities.MinimumWait(driver);
@@ -241,7 +235,7 @@ public class Country_Page extends DriverFactory{
 					System.out.println("Button is disabled.");
 					driver.findElement(update).click();
 				}
-				
+
 			}
 			public void Verify_the_Delete_msg() {
 				WebElement AlertMsg = driver.findElement(D_S);
@@ -254,8 +248,8 @@ public class Country_Page extends DriverFactory{
 				} else {
 					System.out.println("Alert message is incorrect."+ actualMessage);
 				}
-				
-				
+
+
 			}
 			public void Search_the_Country_name() throws Throwable {
 			utilities.webDriverWait(driver, Search );
@@ -264,11 +258,11 @@ public class Country_Page extends DriverFactory{
 			driver.findElement(Edit_1).click();
 //			utilities.MaximumWait(driver);
 //			driver.findElement(Delete_1).click();
-			
-				
+
+
 			}
-			
-				
-			
-			
-}	
+
+
+
+
+}

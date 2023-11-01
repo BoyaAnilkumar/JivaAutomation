@@ -12,10 +12,10 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class DriverFactory {
-	
+
 	public static WebDriver driver;
 	public static Properties prop;
-	
+
 	public DriverFactory() {
 		try {
 			prop = new Properties();
@@ -25,14 +25,14 @@ public class DriverFactory {
 			System.out.println("Driver Factory " + e);
 		}
 	}
-	
+
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
 
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 			driver = new ChromeDriver();
-			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+			HashMap<String, Object> chromePrefs = new HashMap<>();
 			chromePrefs.put("profile.default_content_settings.popups", 0);
 			chromePrefs.put("profile.default_content_setting_values.automatic_downloads", 1);
 			chromePrefs.put("download.prompt_for_download", false);
@@ -46,7 +46,7 @@ public class DriverFactory {
 			System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 	}

@@ -12,8 +12,8 @@ import util.Utilities;
 
 public class Costingpages extends DriverFactory {
 	Utilities utilities = new Utilities();
-	
-	
+
+
 //	r.selectByVisibleText("Option 2");
 	By txtUN = By.xpath("//input[@id='userName']");
 	By txtPwd = By.xpath("//input[@id='userpassword']");
@@ -38,7 +38,7 @@ public class Costingpages extends DriverFactory {
 	By Waste1 = By.xpath("(//input[@formcontrolname='wastage'])[1]");
 	By Rate1 = By.xpath("(//input[@formcontrolname='rate'])[1]");
 	By ConRate1 = By.xpath("(//input[@formcontrolname='conversionRate'])[1]");
-	
+
 	By FL2 = By.xpath("(//select[@formcontrolname='fabricId'])[2]");
 	By AppCom2 = By.xpath("(//div[@class='ng-placeholder'])[2]");
 	By SecCom2 = By.xpath("//div[@class='ng-option ng-option-marked ng-star-inserted']");
@@ -116,7 +116,7 @@ public class Costingpages extends DriverFactory {
 	By TI_Cost_AddlTest = By.xpath("//input[@formcontrolname='additionalTestCost']");
 	By TI_TotCost_InspCharges = By.xpath("//input[@formcontrolname='inspectionPcCost']");
 	By TI_Cost_InspCharges = By.xpath("//input[@formcontrolname='inspectionCost']");
-	
+
 	By FC_NoSeas = By.xpath("//input[@formcontrolname='numberofPOsbySea']");
 	By FC_NoAir = By.xpath("//input[@formcontrolname='numberofPOsbyAir']");
 	By FC__TotCost_CustClearence = By.xpath("//input[@formcontrolname='customClearencePcCost']");
@@ -124,7 +124,7 @@ public class Costingpages extends DriverFactory {
 	By FC_TotCost_Cartage = By.xpath("//input[@formcontrolname='cartagePcCost']");
 	By FC_Cost_Cartage = By.xpath("//input[@formcontrolname='cartageCost']");
 	By FC_AdditionalBuffer = By.xpath("//input[@formcontrolname='additionalBuffer']");
-	
+
 	By TDE_Rejection = By.xpath("//input[@formcontrolname='rejectionPrecentage']");
 	By TDE_Overhead = By.xpath("//input[@formcontrolname='overHeadPercentage']");
 	By TDE_Profit_Markup = By.xpath("//input[@formcontrolname='profitMarkUpPercentage']");
@@ -143,7 +143,7 @@ public class Costingpages extends DriverFactory {
 	By Imp_closeButton = By.xpath("//button[@class='btn btn-danger']");
 	By Imp_ImportButton = By.xpath("//button[@class='btn btn-primary']");
 	By Imp_Close1 = By.xpath("(//button[@data-dismiss='modal'])[1]");
-	
+
 	public void Navigates_to_the_Login_page() {
 		driver.get(prop.getProperty("url"));
 	}
@@ -156,70 +156,70 @@ public class Costingpages extends DriverFactory {
 		driver.findElement(txtPwd).clear();
 		driver.findElement(txtPwd).sendKeys(prop.getProperty("password"));
 //		Thread.sleep(1000);
-		
+
 	}
 
 	public void Click_on_SignIn() {
 		driver.findElement(btnSignIn).click();
     	utilities.WaitUntilPageIsLoaded(driver);
-		
+
 	}
 
 	public void Click_on_the_Woven_Modules() throws Throwable {
 		utilities.webDriverWait(driver, Woven);
 		driver.findElement(Woven).click();
     	utilities.WaitUntilPageIsLoaded(driver);
-		
+
 	}
 
 	public void Click_on_the_PD_Module() throws Throwable {
 		utilities.webDriverWait(driver, PD);
 		driver.findElement(PD).click();
     	utilities.WaitUntilPageIsLoaded(driver);
-		
+
 	}
 
 	public void Click_on_the_Costing_Module() throws Throwable {
 //		utilities.webDriverWait(driver,Costing);
 		driver.findElement(Costing).click();
     	utilities.WaitUntilPageIsLoaded(driver);
-		
+
 	}
 
 	public void Click_on_the_Style_button() throws Throwable {
 //		utilities.webDriverWait(driver, Sty1);
 		driver.findElement(Sty1).click();
 		utilities.WaitUntilPageIsLoaded(driver);
-		
+
 	}
 
 	public void Select_an_IPO_in_the_Menu_List() throws Throwable {
 //		utilities.webDriverWait(driver, IPOname);
 		driver.findElement(IPOname).click();
 		utilities.WaitUntilPageIsLoaded(driver);
-		
+
 	}
-	
+
 
 	public void Click_on_Style_Button() throws Throwable {
 //		utilities.webDriverWait(driver, Sty2);
 		driver.findElement(Sty2).click();
 		utilities.WaitUntilPageIsLoaded(driver);
-		
+
 	}
 
 	public void Enter_Version_Name() throws Throwable {
 //		utilities.webDriverWait(driver,VerName);
 		driver.findElement(VerName).clear();
 		driver.findElement(VerName).sendKeys("Ver 1");
-		
+
 	}
 
 	public void Enter_Remarks() throws Throwable {
 //		utilities.webDriverWait(driver,Remarks);
 		driver.findElement(Remarks).clear();
 		driver.findElement(Remarks).sendKeys("Entering Remarks for Testing");
-		
+
 	}
 
 	public void Click_on_Add_Combo_button() throws Throwable {
@@ -242,8 +242,8 @@ public class Costingpages extends DriverFactory {
 	public void Click_in_the_App_Combo1() throws Throwable {
 //		utilities.webDriverWait(driver,AppCom1);
 		driver.findElement(AppCom1).click();
-		
-		
+
+
 	}
 	public void Select_an_App_combo1() throws Throwable {
 //		utilities.webDriverWait(driver,SecCom1);
@@ -257,7 +257,7 @@ public class Costingpages extends DriverFactory {
 
 	public void Enter_Wastage1() throws Throwable {
 //		utilities.webDriverWait(driver,Waste1);
-		driver.findElement(Waste1).sendKeys("1");	
+		driver.findElement(Waste1).sendKeys("1");
 	}
 
 	public void Enter_Rate1() throws Throwable {
@@ -269,7 +269,7 @@ public class Costingpages extends DriverFactory {
 //		utilities.webDriverWait(driver,ConRate1);
 		driver.findElement(ConRate1).clear();
 		driver.findElement(ConRate1).sendKeys("2");
-		
+
 	}
 
 	public void Click_in_the_App_Combo2() throws Throwable {
@@ -280,32 +280,32 @@ public class Costingpages extends DriverFactory {
 	public void Select_an_App_combo2() throws Throwable {
 //		utilities.webDriverWait(driver,SecCom2);
 		driver.findElement(SecCom2).click();
-		
+
 	}
 
 	public void Enter_Garment_Average2() throws Throwable {
 //		utilities.webDriverWait(driver,GarAvg2);
 		driver.findElement(GarAvg2).sendKeys("3");
-		
+
 	}
 
 	public void Enter_Wastage2() throws Throwable {
 //		utilities.webDriverWait(driver,Waste2);
-		driver.findElement(Waste2).sendKeys("3");	
-		
+		driver.findElement(Waste2).sendKeys("3");
+
 	}
 
 	public void Enter_Rate2() throws Throwable {
 //		utilities.webDriverWait(driver,Rate2);
 		driver.findElement(Rate2).sendKeys("4");
-		
+
 	}
 
 	public void Conversion_Rate2() throws Throwable {
 //		utilities.webDriverWait(driver,ConRate2);
 		driver.findElement(ConRate2).clear();
 		driver.findElement(ConRate2).sendKeys("5");
-		
+
 	}
 
 	public void Enter_Additional_Sampling_Cost() throws Throwable {
@@ -323,7 +323,7 @@ public class Costingpages extends DriverFactory {
 	public void Click_on_Add_Trims_button() throws Throwable {
 //		utilities.webDriverWait(driver,AddTrims);
 		driver.findElement(AddTrims).click();
-		
+
 	}
 
 	public void Click_on_the_Category1_dropdown_field() throws Throwable {
@@ -349,21 +349,21 @@ public class Costingpages extends DriverFactory {
 	public void Enter_Avg_of_an_Item1_value() throws Throwable {
 //		utilities.webDriverWait(driver, Acc1_Avg1);
 		driver.findElement(Acc1_Avg1).sendKeys("2");
-		
+
 	}
 
 	public void Enter_Wastage_of_the_selected_Trim_Accessories1() throws Throwable {
 //		utilities.webDriverWait(driver, Acc1_Wastage1);
 		driver.findElement(Acc1_Wastage1).sendKeys("3");
 		System.out.println("Entered Accessory1 wastage value");
-		
-		
+
+
 	}
 
 	public void Enter_Rate_of_the_selected_Trim_Accessories1() throws Throwable {
 //		utilities.webDriverWait(driver, Acc1_Rate1);
 		driver.findElement(Acc1_Rate1).sendKeys("4");
-		
+
 	}
 
 	public void Click_on_the_Add_Accessories_button() throws Throwable {
@@ -383,7 +383,7 @@ public class Costingpages extends DriverFactory {
 	public void Click_on_the_Item_dropdown_field_under_the_TrimAccessoriesII_grid() throws Throwable {
 //		utilities.webDriverWait(driver, Acc2_Item2);
 		driver.findElement(Acc2_Item2).click();
-		
+
 	}
 
 	public void Select_a_Item_from_the_dropdown_under_the_TrimAccessoriesII_grid() throws Throwable {
@@ -393,7 +393,7 @@ public class Costingpages extends DriverFactory {
 
 	public void Enter_the_Cost() throws Throwable {
 //		utilities.webDriverWait(driver, Acc2_Cost);
-		
+
 //		Object data = getPrepopulatedData(); // Replace with your data retrieval method
 //		System.out.println(data);
 		driver.findElement(Acc2_Cost).clear();
@@ -407,7 +407,7 @@ public class Costingpages extends DriverFactory {
 	public void To_check_whether_the_Overhead_Cost_is_displaying_a_value_or_not() throws Throwable {
 //		utilities.webDriverWait(driver, Cut_Check_OverheadCost);
 		driver.findElement(Cut_Check_OverheadCost).isDisplayed();
-		
+
 	}
 
 	public void Enter_Overhead_Cost_value() throws Throwable {
@@ -437,14 +437,14 @@ public class Costingpages extends DriverFactory {
 	public void Enter_No_of_Stiches() throws Throwable {
 //		utilities.webDriverWait(driver,ComEmb_NoOfStiched );
 		driver.findElement(ComEmb_NoOfStiched).sendKeys("4");
-		
+
 	}
 
 	public void Enter_Rate() throws Throwable {
 //		utilities.webDriverWait(driver,ComEmb_Rate );
 		driver.findElement(ComEmb_Rate).clear();
 		driver.findElement(ComEmb_Rate).sendKeys("4");
-		
+
 	}
 
 	public void Enter_Overhead() throws Throwable {
@@ -458,13 +458,13 @@ public class Costingpages extends DriverFactory {
 //		utilities.webDriverWait(driver,ComEmb_AddlCharges);
 		driver.findElement(ComEmb_AddlCharges).clear();
 		driver.findElement(ComEmb_AddlCharges).sendKeys("4");
-		
+
 	}
 
 	public void Enter_Adda_Hours() throws Throwable {
 //		utilities.webDriverWait(driver,Adda_Hours);
 		driver.findElement(Adda_Hours).sendKeys("4");
-		
+
 	}
 
 	public void Enter_Adda_Rate() throws Throwable {
@@ -479,7 +479,7 @@ public class Costingpages extends DriverFactory {
 		driver.findElement(Adda_Overhead).isDisplayed();
 		driver.findElement(Adda_Overhead).clear();
 		driver.findElement(Adda_Overhead).sendKeys("4");
-		
+
 	}
 
 	public void Enter_Manual_Hours() throws Throwable {
@@ -492,7 +492,7 @@ public class Costingpages extends DriverFactory {
 		driver.findElement(ManEmb_Rate).isDisplayed();
 		driver.findElement(ManEmb_Rate).clear();
 		driver.findElement(ManEmb_Rate).sendKeys("4");
-		
+
 	}
 
 	public void Enter_Manual_Overhead() throws Throwable {
@@ -500,9 +500,9 @@ public class Costingpages extends DriverFactory {
 		driver.findElement(ManEmb_Overhead).isDisplayed();
 		driver.findElement(ManEmb_Overhead).clear();
 		driver.findElement(ManEmb_Overhead).sendKeys("4");
-		
+
 	}
-	
+
 	public void To_verify_on_clicking_the_Add_Process_button_under_Stitching() throws Throwable {
 //		utilities.webDriverWait(driver,Sti_AddProcess);
 		driver.findElement(Sti_AddProcess).click();
@@ -523,28 +523,28 @@ public class Costingpages extends DriverFactory {
 //		utilities.webDriverWait(driver,Sti_OB3);
 		driver.findElement(Sti_OB3).clear();
 		driver.findElement(Sti_OB3).sendKeys("3");
-		
+
 	}
 
 	public void Enter_a_value_in_Cost1() throws Throwable {
 //		utilities.webDriverWait(driver,Sti_cost1);
 		driver.findElement(Sti_cost1).clear();
 		driver.findElement(Sti_cost1).sendKeys("13");
-		
+
 	}
 
 	public void Enter_a_value_in_Cost2() throws Throwable {
 //		utilities.webDriverWait(driver,Sti_cost2);
 		driver.findElement(Sti_cost2).clear();
 		driver.findElement(Sti_cost2).sendKeys("14");
-		
+
 	}
 
 	public void Enter_a_value_in_Cost3() throws Throwable {
 //		utilities.webDriverWait(driver,Sti_cost3);
 		driver.findElement(Sti_cost3).clear();
 		driver.findElement(Sti_cost3).sendKeys("15");
-		
+
 	}
 
 	public void Select_an_option_in_Booked_field() throws Throwable {
@@ -552,21 +552,21 @@ public class Costingpages extends DriverFactory {
 		driver.findElement(Sti_Booked).click();
 		Robot r = new Robot();
 		r.keyPress(KeyEvent.VK_2);
-		
+
 	}
 
 	public void Enter_a_value_in_Smocking() throws Throwable {
 //		utilities.webDriverWait(driver,Sti_smocking);
 		driver.findElement(Sti_smocking).clear();
 		driver.findElement(Sti_smocking).sendKeys("55");
-		
+
 	}
 
 	public void Enter_a_value_in_Rate() throws Throwable {
 //		utilities.webDriverWait(driver,Sti_Rate);
 		driver.findElement(Sti_Rate).clear();
 		driver.findElement(Sti_Rate).sendKeys("10");
-		
+
 	}
 	public void To_verify_whether_the_user_is_able_to_click_the_Description_dropdown_field_or_not() throws Throwable {
 //		utilities.webDriverWait(driver,Sti_Describe1);
@@ -583,7 +583,7 @@ public class Costingpages extends DriverFactory {
 
 	public void Click_on_the_Add_Process_button_under_Finising_and_Packing_grid() throws Throwable {
 		utilities.webDriverWait(driver,FP_AddProcess);
-		
+
 //		driver.findElement(FP_AddProcess).click();
 //		System.out.println("Button is Clicked");
 		WebElement buttonElement = driver.findElement(FP_AddProcess);
@@ -593,7 +593,7 @@ public class Costingpages extends DriverFactory {
 		} else {
 			System.out.println("Button is disabled.");
 		}
-		
+
 	}
 
 	public void Select_a_Finishing_and_Packing_process1() throws Throwable {
@@ -607,7 +607,7 @@ public class Costingpages extends DriverFactory {
 //		System.out.println("cleqaring the value in the dropdown");
 //		a.keyPress(KeyEvent.VK_2);
 //		System.out.println("Select the first option in the dropdown");
-		
+
 	}
 
 	public void Enter_the_Finishing_and_Packing_cost1() throws Throwable {
@@ -624,25 +624,25 @@ public class Costingpages extends DriverFactory {
 //
 //        // Assert that the initial state is false
 //        assertFalse("The toggle button should be initially false", initialState);
-		
+
 	}
 
 	public void Click_on_the_Add_Process_button_when_the_toggle_button_is_in_enabled_state() throws Throwable {
 		utilities.webDriverWait(driver,Wash_AddProcessBut);
 		driver.findElement(Wash_AddProcessBut).click();
-		
+
 	}
 
 	public void Select_a_Washing_Process1() throws Throwable {
 		utilities.webDriverWait(driver,Wash_AddProcess1dp);
-		
+
 		driver.findElement(Wash_AddProcess1dp).click();
-		
+
 //		Robot r = new Robot();
 //		r.keyPress(KeyEvent.VK_2);
 		utilities.webDriverWait(driver,Wash_SelProcess);
 		driver.findElement(Wash_SelProcess).click();
-		
+
 	}
 
 	public void Enter_the_Washing_Cost1() throws Throwable {
@@ -668,7 +668,7 @@ public class Costingpages extends DriverFactory {
 		utilities.webDriverWait(driver,TI_Cost_FTPGTP);
 //		driver.findElement(TI_Cost_FTPGTP).clear();
 		driver.findElement(TI_Cost_FTPGTP).sendKeys("2");
-		
+
 	}
 
 	public void Enter_the_value_in_the_Addl_Tests_Total_Cost_field() throws Throwable {
@@ -693,7 +693,7 @@ public class Costingpages extends DriverFactory {
 		utilities.webDriverWait(driver,TI_Cost_InspCharges);
 //		driver.findElement(TI_Cost_InspCharges).clear();
 		driver.findElement(TI_Cost_InspCharges).sendKeys("6");
-		
+
 	}
 
 	public void Enter_the_value_in_the_NO_of_PO_by_Sea_field() throws Throwable {
@@ -730,7 +730,7 @@ public class Costingpages extends DriverFactory {
 		utilities.webDriverWait(driver,FC_Cost_Cartage);
 		driver.findElement(FC_Cost_Cartage).clear();
 		driver.findElement(FC_Cost_Cartage).sendKeys("67");
-		
+
 	}
 
 	public void Enter_the_value_in_the_Additional_Buffer_field() throws Throwable {
@@ -748,21 +748,21 @@ public class Costingpages extends DriverFactory {
 		utilities.webDriverWait(driver,TDE_Overhead);
 		driver.findElement(TDE_Overhead).clear();
 		driver.findElement(TDE_Overhead).sendKeys("33");
-		
+
 	}
 
 	public void Enter_the_value_in_the_Profit_MarkUp_field() throws Throwable {
 		utilities.webDriverWait(driver,TDE_Profit_Markup);
 		driver.findElement(TDE_Profit_Markup).clear();
 		driver.findElement(TDE_Profit_Markup).sendKeys("4");
-		
+
 	}
 
 	public void Enter_the_value_in_the_Commission_field() throws Throwable {
 		utilities.webDriverWait(driver,TDE_Commission);
 		driver.findElement(TDE_Commission).clear();
 		driver.findElement(TDE_Commission).sendKeys("3");
-		
+
 	}
 
 	public void Enter_the_value_in_the_Currency_field() throws Throwable {
@@ -822,7 +822,7 @@ public class Costingpages extends DriverFactory {
 	public void Click_on_the_Cancel_in_the_Print_form() throws Throwable {
 		utilities.webDriverWait(driver,Cancel);
 		driver.findElement(Cancel).click();
-		
+
 	}
 
 	public void Click_on_Import_button() throws Throwable {
@@ -843,8 +843,8 @@ public class Costingpages extends DriverFactory {
 	}
 
 	public void Select_a_value_from_the_dropdown() {
-		
-		
+
+
 	}
 
 	public void Click_on_the_Close_button() throws Throwable {
@@ -861,17 +861,17 @@ public class Costingpages extends DriverFactory {
 		utilities.webDriverWait(driver, Imp_closeButton);
 		driver.findElement(Imp_Close1);
 	}
-	
 
 
 
-	
 
-	
 
-	
-	
-	
+
+
+
+
+
+
 
 
 }

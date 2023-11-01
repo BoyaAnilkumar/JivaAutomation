@@ -7,14 +7,14 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Pdfds_Steps {
-		
+
 		Pdfds_page page = new Pdfds_page();
-		
+
 		@Given("^Navigate to the Login Page$")
 		public void Navigate_to_the_Login_Page() throws Throwable {
 			page.Navigate_to_the_Login_Page();
 		}
-		
+
 		@When("^User Enter Valid username and password$")
 		public void user_Enter_invalid_username_and_valid_password() throws Throwable {
 			page.user_Enter_invalid_username_and_valid_password();
@@ -34,7 +34,7 @@ public class Pdfds_Steps {
 		@Then("^Click on PD module$")
 		public void Click_on_PD_module() throws Throwable {
 			page.Click_on_PD_module();
-			
+
 		}
 		@And("^click on pd fds$")
 		public void click_on_pd_fds() throws Throwable {
@@ -59,7 +59,7 @@ public class Pdfds_Steps {
 		@And ("^Click on Fabric Quality$")
 		public void Click_on_Fabric_Quality() throws Throwable {
 			page.Click_on_Fabric_Quality();
-			
+
 		}
 		@And("^Select Fabric Quality$")
 		public void Select_Fabric_Quality() throws Throwable {
@@ -72,7 +72,7 @@ public class Pdfds_Steps {
 		@And("^Click on Color$")
 		public void Click_on_Color() throws Throwable {
 			page.Click_on_Color();
-		}  
+		}
 		@And("^Select CountConstruction$")
 		public void Select_CountConstruction() throws Throwable {
 			page.Select_CountConstruction();
@@ -113,17 +113,17 @@ public class Pdfds_Steps {
 		public void Click_on_Nomination_Checkbox() throws Throwable {
 			page.Click_on_Nomination_Checkbox();
 		}
-		
+
 		@And("^click on User Account$")
 		public void click_on_User_Account() throws Throwable {
 			page.click_on_User_Account();
 		}
-		
+
 		@Then("^Click on Logout button$")
 		public void Click_on_Logout_button() throws Throwable {
 			page.Click_on_Logout_button();
 		}
-		
+
 		@And ("^Navigate to PD Fabric Pricing screen$")
 		public void Navigate_to_PD_Fabric_Pricing_screen() throws Throwable {
 			page.Navigate_to_PD_Fabric_Pricing_screen();

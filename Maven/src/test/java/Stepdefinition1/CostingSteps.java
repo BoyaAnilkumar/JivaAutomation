@@ -8,48 +8,48 @@ import io.cucumber.java.en.When;
 
 public class CostingSteps {
 	Costingpages cos = new Costingpages();
-	
+
 	@Given("^Navigates to the Login page$")
 	public void Navigate_to_the_Login_page() {
 		cos.Navigates_to_the_Login_page();
 	}
-	
+
 	 @Then("^Enter valid Username and password$")
 	 public void Enter_valid_Username_and_password() throws Throwable {
 		 cos.Enter_valid_Username_and_password();
 	 }
-	 
+
 	  @And("^Click on SignIn$")
 	  public void Click_on_SignIn() throws Throwable{
 		  cos. Click_on_SignIn();
 	  }
-	  
-	  @Then ("^Click on the Woven Modules$") 
+
+	  @Then ("^Click on the Woven Modules$")
 	  public void Click_on_the_Woven_Modules() throws Throwable {
 		  cos.Click_on_the_Woven_Modules();
 	  }
-	  
+
 	  @Then("^Click on the PD Module$")
 	  public void Click_on_the_PD_Module() throws Throwable {
 		  cos.Click_on_the_PD_Module();
 	  }
-	  
+
 	  @Then ("^Click on the Costing Module$")
 	  public void Click_on_the_Costing_Module() throws Throwable {
 		  cos.Click_on_the_Costing_Module();
 	  }
-	  
+
 	  @Then ("^Click on the Style button$")
 	  public void Click_on_the_Style_button() throws Throwable {
 		  cos.Click_on_the_Style_button();
-		  
+
 	  }
-	  
+
 	  @Then ("^Select an IPO in the Menu List$")
 	  public void Select_an_IPO_in_the_Menu_List() throws Throwable {
 		  cos.Select_an_IPO_in_the_Menu_List();
 	  }
-	  
+
 	  @Then ("^Click on Style Button$")
 	  public void Click_on_Style_Button() throws Throwable {
 		  cos.Click_on_Style_Button();
@@ -58,22 +58,22 @@ public class CostingSteps {
 	  public void Click_on_the_Submit1_button() throws Throwable {
 		  cos.Click_on_the_Submit1_button();
 	  }
-	  
+
 	  @Given ("^Enter Version Name$")
 	  public void Enter_Version_Name() throws Throwable {
 		  cos.Enter_Version_Name();
 	  }
-	  
+
 	  @Given ("^Enter Remarks$")
 	  public void Enter_Remarks() throws Throwable {
 		  cos.Enter_Remarks();
 	  }
-//	  
+//
 	  @Then ("^Click on Add Combo button$")
 	  public void Click_on_Add_Combo_button() throws Throwable {
 		  cos.Click_on_Add_Combo_button();
 	  }
-	  
+
 	  @Given ("^Enter Combo Name$")
 	  public void Enter_Combo_Name() throws Throwable {
 		  cos.Enter_Combo_Name();
@@ -106,8 +106,8 @@ public class CostingSteps {
 	  public void Conversion_Rate1() throws Throwable {
 		  cos.Conversion_Rate1();
 	  }
-	  
-	  
+
+
 	  @When ("^Click in the App_Combo2$")
 	  public void Click_in_the_App_Combo2() throws Throwable {
 		  cos.Click_in_the_App_Combo2();
@@ -132,7 +132,7 @@ public class CostingSteps {
 	  public void Conversion_Rate2() throws Throwable {
 		  cos.Conversion_Rate2();
 	  }
-	  
+
 	  @Given ("^Enter Additional Sampling Cost$")
 	  public void Enter_Additional_Sampling_Cost() throws Throwable {
 		  cos.Enter_Additional_Sampling_Cost();
@@ -141,7 +141,7 @@ public class CostingSteps {
 	  public void Enter_Per_pc_Freight_Cost() throws Throwable {
 		  cos.Enter_Per_pc_Freight_Cost();
 	  }
-	  
+
 	  @And ("^Click on Add Trims button$")
 	  public void Click_on_Add_Trims_button()  throws Throwable {
 		  cos.Click_on_Add_Trims_button();
@@ -174,7 +174,7 @@ public class CostingSteps {
 	  public void Enter_Rate_of_the_selected_Trim_Accessories1() throws Throwable {
 		  cos.Enter_Rate_of_the_selected_Trim_Accessories1();
 	  }
-	  
+
 	  @And ("^Click on the Add Accessories button$")
 	  public void Click_on_the_Add_Accessories_button() throws Throwable {
 			  cos.Click_on_the_Add_Accessories_button();
@@ -199,7 +199,7 @@ public class CostingSteps {
 	  public void Enter_the_Cost() throws Throwable {
 		  cos.Enter_the_Cost();
 	  }
-	  
+
 	  @Given ("^To check whether the Overhead Cost is displaying a value or not$")
 	  public void To_check_whether_the_Overhead_Cost_is_displaying_a_value_or_not() throws Throwable {
 		  cos.To_check_whether_the_Overhead_Cost_is_displaying_a_value_or_not();
@@ -216,7 +216,7 @@ public class CostingSteps {
 	  public void Enter_Garment_Cutting_Cost_value() throws Throwable {
 		  cos.Enter_Garment_Cutting_Cost_value();
 	  }
-	  
+
 //	  Computer Embriodiery
 	  @Given ("^Enter No of Stiches$")
 	  public void Enter_No_of_Stiches() throws Throwable {
@@ -293,7 +293,7 @@ public class CostingSteps {
 	  @Then ("^Select an option in Booked field$")
 	  public void Select_an_option_in_Booked_field() throws Throwable {
 		  cos.Select_an_option_in_Booked_field();
-		  
+
 	  }
 	  @Given ("^Enter a value in Smocking$")
 	  public void Enter_a_value_in_Smocking() throws Throwable {
@@ -315,7 +315,7 @@ public class CostingSteps {
 	  public void Enter_the_Stitching_Cost_value() throws Throwable {
 		  cos.Enter_the_Stitching_Cost_value();
 	  }
-	    
+
 	  @Then ("^Click on the Add Process button under Finising and Packing grid$")
 	  public void Click_on_the_Add_Process_button_under_Finising_and_Packing_grid() throws Throwable {
 		  cos.Click_on_the_Add_Process_button_under_Finising_and_Packing_grid();
@@ -469,9 +469,9 @@ public class CostingSteps {
 	  public void Click_on_Close_icon() throws Throwable {
 		  cos.Click_on_Close_icon();
 	  }
-	    
-	    
 
-	
+
+
+
 
 }

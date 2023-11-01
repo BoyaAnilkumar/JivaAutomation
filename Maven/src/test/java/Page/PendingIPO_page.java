@@ -16,7 +16,7 @@ public class PendingIPO_page extends DriverFactory {
 	Date currentDate = new Date();
 	SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 	String formattedDate = dateFormat.format(currentDate);
-	
+
 	Utilities utilities = new Utilities();
 
 //Login credentials of Audit Manager
@@ -24,7 +24,7 @@ public class PendingIPO_page extends DriverFactory {
 	By Password = By.xpath("//input[@name='password']");
 	By SignIn = By.xpath("//button[text()='Sign In']");
 
-//Navigate to Pending IPO list screen 
+//Navigate to Pending IPO list screen
 	By Woven = By.xpath("//span[text()='Woven / knit']");
 	By AuditModule = By.xpath("(//span[text()='Audit '])[1]");
 	By PendingIPOlist = By.xpath("(//a[text()='Pending IPO List'])[1]");
@@ -37,13 +37,13 @@ public class PendingIPO_page extends DriverFactory {
 	By BuyerStyle = By.xpath("//input[@formcontrolname='buyerStyleName']");
 	By IPONo = By.xpath("//input[@formcontrolname='ipoNumber']");
 	By Buyer = By.xpath("//label[text()='Buyer']/..//input[@class='form-control ng-untouched ng-pristine ng-valid']");
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	public void Login_with_Audit_Manager_credentials_in_Login_page() throws Throwable {
 		driver.get(prop.getProperty("url"));
 		new WebDriverWait(driver, 10);
@@ -124,7 +124,7 @@ public class PendingIPO_page extends DriverFactory {
 	}
 
 	public void Verify_whether_the_current_date_is_displaying_for_IPO_date_field_or_not() {
-		
+
 		WebElement ipodate = driver.findElement(IPOdate);
 		String currentDate = ipodate.getAttribute(formattedDate);
 		if(ipodate.isDisplayed()) {
@@ -145,9 +145,9 @@ public class PendingIPO_page extends DriverFactory {
 	}
 
 	public void Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not() throws Throwable {
-		
-		
-		 
+
+
+
 		WebElement IPOno = driver.findElement(IPONo);
 		String Screen = IPOno.getText();
 		if(IPOno.isDisplayed()) {
@@ -155,14 +155,14 @@ public class PendingIPO_page extends DriverFactory {
 		}else {
 			driver.findElement(IPONo).sendKeys("AutoIPO");
 		}
-		
+
 	}
 
 	public void Enter_IPO_number_in_IPO_field() throws Throwable {
 		utilities.webDriverWait(driver, IPONo);
 		 driver.findElement(IPONo).sendKeys("AutoIPOs");
 		 utilities.MinimumWait(driver);
-		 
+
 	}
 
 
@@ -174,7 +174,7 @@ public class PendingIPO_page extends DriverFactory {
 		}else {
 			System.out.println("Buyer Name is not displayed: "  +  Screen);
 		}
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, 10); // Adjust the timeout as needed
 
 	    WebElement buyerElement = wait.until(ExpectedConditions.visibilityOfElementLocated(Buyer));
@@ -187,6 +187,6 @@ public class PendingIPO_page extends DriverFactory {
 	        System.out.println("Buyer Name is not displayed");
 	    }
 	}
-		
+
 	}
 
