@@ -51,6 +51,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -94,12 +102,12 @@
 									</span>
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
+										
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
-										
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="skip"><i class="fa fa-dot-circle-o text-blue"></i>Skip</span></a>
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 									</div>
@@ -130,12 +138,12 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
 												tags="@FeatureGroup"
 												devices="">
-												<span class="tt">11.01.2023 15:39:46</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">[feature to test Jiva design style initial details screen functionality] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup</span>
@@ -146,11 +154,11 @@
 												</span>
 												
 											</div>
-											<div class="st pass test l1" 
+											<div class="st fail test l1" 
 												tags="@FeatureGroup @Style123"
 												devices="">
-												<span class="tt">11.01.2023 15:39:46</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">|---[To Test the Style initial details screen] started</span>
 												<span class="category-list">
 													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup</span>
@@ -162,409 +170,506 @@
 												</span>
 												
 											</div>
-											<div class="st pass test l2" 
+											<div class="st fail test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:39:46</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User navigates to Login page] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:39:48</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st fail">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When User navigates to Login page]</span>
 													
-													<span class="td"></span>
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 87ecd791cae511446b7e6a7ad2283bf3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at Page.StyleInitial_Page.User_navigates_to_Login_page(StyleInitial_Page.java:82)
+	at Stepdefinition1.StyleInitial_Steps.User_navigates_to_Login_page(StyleInitial_Steps.java:17)
+	at ✽.User navigates to Login page(file:///D:/02102023/JivaAutomation/Maven/Features/StyleInitialdetails.feature:6)
+</textarea></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:39:48</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User enters the username and password] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:39:51</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User enters the username and password]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:39:51</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on the signIn] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:39:51</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on the signIn]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:39:51</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Woven Module] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:39:57</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Woven Module]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:39:57</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then click on the Merchandising Module] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:00</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then click on the Merchandising Module]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:00</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on the Style Initail Details screen] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:03</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on the Style Initail Details screen]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:03</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Styles Expansion] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:08</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Styles Expansion]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:08</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Filter Icon] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:11</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Filter Icon]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:11</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Buyer Field] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:17</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Buyer Field]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:17</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Select the Buyer] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:20</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Select the Buyer]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:20</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Cancel Icon] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:23</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Cancel Icon]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:23</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Season Field] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:27</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Season Field]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:27</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Select the Season] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:30</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Select the Season]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:30</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the Status Field] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:33</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the Status Field]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:33</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Select the status] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:36</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Select the status]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:36</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Search the IPO] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:44</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Search the IPO]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:44</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Apply button] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:48</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Apply button]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:48</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Select IPO] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:51</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Select IPO]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:51</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify IPO data] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:51</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify IPO data]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:51</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify Style] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:51</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify Style]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:51</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify Buyer] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:51</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify Buyer]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:51</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify Season] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:51</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify Season]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:51</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Select File handover date] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:56</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Select File handover date]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:56</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Combo field is prepopulated with data or not] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:58</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Combo field is prepopulated with data or not]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:58</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Garment Size type field data is displayed or not] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:40:58</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Garment Size type field data is displayed or not]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:40:58</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User enter the data in PO Qty field] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:41:10</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User enter the data in PO Qty field]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.01.2023 15:41:10</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the submit button] started</span>
 												
-												<div class="st pass">
-													<span class="tt">11.01.2023 15:41:16</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
+												<div class="st skip">
+													<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the submit button]</span>
 													
-													<span class="td"></span>
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.01.2023 16:00:19</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.CloseBrowser()] started</span>
+												
+												<div class="st fail">
+													<span class="tt">11.01.2023 16:00:20</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.CloseBrowser()]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=118.0.5993.118)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 87ecd791cae511446b7e6a7ad2283bf3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+	at Stepdefinition1.Hooks.CloseBrowser(Hooks.java:36)
+</textarea></span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.01.2023 16:00:20</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st fail">
+													<span class="tt">11.01.2023 16:00:20</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 87ecd791cae511446b7e6a7ad2283bf3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:24)
+</textarea></span>
 												</div>
 											</div>
 											</div>

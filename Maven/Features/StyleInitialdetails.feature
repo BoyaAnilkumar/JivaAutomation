@@ -45,7 +45,7 @@ Then User enters the username and password
  And Verify whether the Garment Size type field data is displayed or not 
 Given User enter the data in PO Qty field 
 And Click on the submit button
-#And Verify the validation msg is displaying or not
+And Verify the validation msg is displaying or not
  
  
  

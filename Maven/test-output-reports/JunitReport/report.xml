@@ -1,33 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="95.154">
-    <testcase classname="feature to test Jiva design style initial details screen functionality" name="To Test the Style initial details screen" time="94.629">
-        <system-out><![CDATA[When User navigates to Login page...........................................passed
-Then User enters the username and password..................................passed
-And User click on the signIn................................................passed
-And Click on the Woven Module...............................................passed
-Then click on the Merchandising Module......................................passed
-And click on the Style Initail Details screen...............................passed
-And Click on the Styles Expansion...........................................passed
-And Click on the Filter Icon................................................passed
-And Click on the Buyer Field................................................passed
-Then Select the Buyer.......................................................passed
-And Click on the Cancel Icon................................................passed
-And Click on the Season Field...............................................passed
-And Select the Season.......................................................passed
-Then Click on the Status Field..............................................passed
-And Select the status.......................................................passed
-When Search the IPO.........................................................passed
-And Click on the Apply button...............................................passed
-And Select IPO..............................................................passed
-And Verify IPO data.........................................................passed
-And Verify Style............................................................passed
-And Verify Buyer............................................................passed
-And Verify Season...........................................................passed
-And Select File handover date...............................................passed
-And Verify whether the Combo field is prepopulated with data or not.........passed
-And Verify whether the Garment Size type field data is displayed or not.....passed
-Given User enter the data in PO Qty field...................................passed
-And Click on the submit button..............................................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="5.151">
+    <testcase classname="feature to test Jiva design style initial details screen functionality" name="To Test the Style initial details screen" time="4.669">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=118.0.5993.118)&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 87ecd791cae511446b7e6a7ad2283bf3" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[When User navigates to Login page...........................................failed
+Then User enters the username and password..................................skipped
+And User click on the signIn................................................skipped
+And Click on the Woven Module...............................................skipped
+Then click on the Merchandising Module......................................skipped
+And click on the Style Initail Details screen...............................skipped
+And Click on the Styles Expansion...........................................skipped
+And Click on the Filter Icon................................................skipped
+And Click on the Buyer Field................................................skipped
+Then Select the Buyer.......................................................skipped
+And Click on the Cancel Icon................................................skipped
+And Click on the Season Field...............................................skipped
+And Select the Season.......................................................skipped
+Then Click on the Status Field..............................................skipped
+And Select the status.......................................................skipped
+When Search the IPO.........................................................skipped
+And Click on the Apply button...............................................skipped
+And Select IPO..............................................................skipped
+And Verify IPO data.........................................................skipped
+And Verify Style............................................................skipped
+And Verify Buyer............................................................skipped
+And Verify Season...........................................................skipped
+And Select File handover date...............................................skipped
+And Verify whether the Combo field is prepopulated with data or not.........skipped
+And Verify whether the Garment Size type field data is displayed or not.....skipped
+Given User enter the data in PO Qty field...................................skipped
+And Click on the submit button..............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 87ecd791cae511446b7e6a7ad2283bf3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at Page.StyleInitial_Page.User_navigates_to_Login_page(StyleInitial_Page.java:82)
+	at Stepdefinition1.StyleInitial_Steps.User_navigates_to_Login_page(StyleInitial_Steps.java:17)
+	at ✽.User navigates to Login page(file:///D:/02102023/JivaAutomation/Maven/Features/StyleInitialdetails.feature:6)
+]]></failure>
     </testcase>
 </testsuite>

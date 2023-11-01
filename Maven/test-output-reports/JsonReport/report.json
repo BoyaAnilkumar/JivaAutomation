@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-11-01T10:09:42.969Z",
+        "start_timestamp": "2023-11-01T10:30:16.186Z",
         "before": [
           {
             "result": {
-              "duration": 3706087400,
+              "duration": 3373252000,
               "status": "passed"
             },
             "match": {
@@ -22,8 +22,9 @@
         "after": [
           {
             "result": {
-              "duration": 1401157500,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools\n  (failed to check if window was closed: disconnected: not connected to DevTools)\n  (Session info: chrome\u003d118.0.5993.118)\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027DESKTOP-H2GTC4A\u0027, ip: \u0027192.168.1.166\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\\Users\\CALIBR~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 87ecd791cae511446b7e6a7ad2283bf3\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)\r\n\tat Stepdefinition1.Hooks.CloseBrowser(Hooks.java:36)\r\n",
+              "duration": 1025009100,
+              "status": "failed"
             },
             "match": {
               "location": "Stepdefinition1.Hooks.CloseBrowser()"
@@ -31,8 +32,9 @@
           },
           {
             "result": {
-              "duration": 999100,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d118.0.5993.118)\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027DESKTOP-H2GTC4A\u0027, ip: \u0027192.168.1.166\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\\Users\\CALIBR~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 87ecd791cae511446b7e6a7ad2283bf3\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)\r\n\tat Stepdefinition1.Hooks.captureScreenshot(Hooks.java:24)\r\n",
+              "duration": 13958700,
+              "status": "failed"
             },
             "match": {
               "location": "Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)"
@@ -44,8 +46,9 @@
         "steps": [
           {
             "result": {
-              "duration": 1498991900,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d118.0.5993.118)\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027DESKTOP-H2GTC4A\u0027, ip: \u0027192.168.1.166\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\\Users\\CALIBR~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 87ecd791cae511446b7e6a7ad2283bf3\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)\r\n\tat Page.StyleInitial_Page.User_navigates_to_Login_page(StyleInitial_Page.java:82)\r\n\tat Stepdefinition1.StyleInitial_Steps.User_navigates_to_Login_page(StyleInitial_Steps.java:17)\r\n\tat ✽.User navigates to Login page(file:///D:/02102023/JivaAutomation/Maven/Features/StyleInitialdetails.feature:6)\r\n",
+              "duration": 76796200,
+              "status": "failed"
             },
             "line": 6,
             "name": "User navigates to Login page",
@@ -56,8 +59,8 @@
           },
           {
             "result": {
-              "duration": 3396739300,
-              "status": "passed"
+              "duration": 997200,
+              "status": "skipped"
             },
             "line": 7,
             "name": "User enters the username and password",
@@ -68,8 +71,8 @@
           },
           {
             "result": {
-              "duration": 62832200,
-              "status": "passed"
+              "duration": 997600,
+              "status": "skipped"
             },
             "line": 8,
             "name": "User click on the signIn",
@@ -80,8 +83,7 @@
           },
           {
             "result": {
-              "duration": 5329697900,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "Click on the Woven Module",
@@ -92,8 +94,8 @@
           },
           {
             "result": {
-              "duration": 3175381800,
-              "status": "passed"
+              "duration": 996700,
+              "status": "skipped"
             },
             "line": 10,
             "name": "click on the Merchandising Module",
@@ -104,8 +106,8 @@
           },
           {
             "result": {
-              "duration": 3261168000,
-              "status": "passed"
+              "duration": 1002600,
+              "status": "skipped"
             },
             "line": 11,
             "name": "click on the Style Initail Details screen",
@@ -116,8 +118,8 @@
           },
           {
             "result": {
-              "duration": 5260859400,
-              "status": "passed"
+              "duration": 991500,
+              "status": "skipped"
             },
             "line": 13,
             "name": "Click on the Styles Expansion",
@@ -128,8 +130,8 @@
           },
           {
             "result": {
-              "duration": 3237812100,
-              "status": "passed"
+              "duration": 1000700,
+              "status": "skipped"
             },
             "line": 14,
             "name": "Click on the Filter Icon",
@@ -140,8 +142,8 @@
           },
           {
             "result": {
-              "duration": 5368534600,
-              "status": "passed"
+              "duration": 997300,
+              "status": "skipped"
             },
             "line": 15,
             "name": "Click on the Buyer Field",
@@ -152,8 +154,8 @@
           },
           {
             "result": {
-              "duration": 3223228900,
-              "status": "passed"
+              "duration": 1995600,
+              "status": "skipped"
             },
             "line": 16,
             "name": "Select the Buyer",
@@ -164,8 +166,8 @@
           },
           {
             "result": {
-              "duration": 3220400800,
-              "status": "passed"
+              "duration": 1992000,
+              "status": "skipped"
             },
             "line": 17,
             "name": "Click on the Cancel Icon",
@@ -176,8 +178,8 @@
           },
           {
             "result": {
-              "duration": 3194757300,
-              "status": "passed"
+              "duration": 996700,
+              "status": "skipped"
             },
             "line": 18,
             "name": "Click on the Season Field",
@@ -188,8 +190,8 @@
           },
           {
             "result": {
-              "duration": 3207226500,
-              "status": "passed"
+              "duration": 2992600,
+              "status": "skipped"
             },
             "line": 19,
             "name": "Select the Season",
@@ -200,8 +202,8 @@
           },
           {
             "result": {
-              "duration": 3226661200,
-              "status": "passed"
+              "duration": 998000,
+              "status": "skipped"
             },
             "line": 20,
             "name": "Click on the Status Field",
@@ -212,8 +214,8 @@
           },
           {
             "result": {
-              "duration": 3189672500,
-              "status": "passed"
+              "duration": 996900,
+              "status": "skipped"
             },
             "line": 21,
             "name": "Select the status",
@@ -224,8 +226,8 @@
           },
           {
             "result": {
-              "duration": 8309245400,
-              "status": "passed"
+              "duration": 997300,
+              "status": "skipped"
             },
             "line": 22,
             "name": "Search the IPO",
@@ -236,8 +238,8 @@
           },
           {
             "result": {
-              "duration": 3235030500,
-              "status": "passed"
+              "duration": 998000,
+              "status": "skipped"
             },
             "line": 23,
             "name": "Click on the Apply button",
@@ -248,8 +250,7 @@
           },
           {
             "result": {
-              "duration": 3203869700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 25,
             "name": "Select IPO",
@@ -260,8 +261,7 @@
           },
           {
             "result": {
-              "duration": 110703700,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 26,
             "name": "Verify IPO data",
@@ -272,8 +272,7 @@
           },
           {
             "result": {
-              "duration": 22936600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 27,
             "name": "Verify Style",
@@ -284,8 +283,8 @@
           },
           {
             "result": {
-              "duration": 22938600,
-              "status": "passed"
+              "duration": 2992000,
+              "status": "skipped"
             },
             "line": 28,
             "name": "Verify Buyer",
@@ -296,8 +295,8 @@
           },
           {
             "result": {
-              "duration": 22939100,
-              "status": "passed"
+              "duration": 997800,
+              "status": "skipped"
             },
             "line": 29,
             "name": "Verify Season",
@@ -308,8 +307,8 @@
           },
           {
             "result": {
-              "duration": 5274487600,
-              "status": "passed"
+              "duration": 1994700,
+              "status": "skipped"
             },
             "line": 30,
             "name": "Select File handover date",
@@ -320,8 +319,7 @@
           },
           {
             "result": {
-              "duration": 2068817000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 44,
             "name": "Verify whether the Combo field is prepopulated with data or not",
@@ -332,8 +330,7 @@
           },
           {
             "result": {
-              "duration": 30197400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 45,
             "name": "Verify whether the Garment Size type field data is displayed or not",
@@ -344,8 +341,8 @@
           },
           {
             "result": {
-              "duration": 11999859300,
-              "status": "passed"
+              "duration": 996800,
+              "status": "skipped"
             },
             "line": 46,
             "name": "User enter the data in PO Qty field",
@@ -356,8 +353,7 @@
           },
           {
             "result": {
-              "duration": 5256796200,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 47,
             "name": "Click on the submit button",
