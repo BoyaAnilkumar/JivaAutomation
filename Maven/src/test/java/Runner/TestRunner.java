@@ -12,6 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
+
 		          tags =" @IPOList")
 
 public class TestRunner {
