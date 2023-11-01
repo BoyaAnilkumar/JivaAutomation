@@ -1,13 +1,79 @@
+<<<<<<< HEAD
+=======
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
+<<<<<<< HEAD
         "start_timestamp": "2023-11-01T10:30:16.186Z",
+=======
+<<<<<<< HEAD
+        "start_timestamp": "2023-11-01T09:21:47.702Z",
+=======
+<<<<<<< HEAD
+        "start_timestamp": "2023-10-19T10:26:59.840Z",
+=======
+<<<<<<< HEAD
+        "start_timestamp": "2023-10-18T07:30:11.313Z",
+=======
+<<<<<<< HEAD
+        "start_timestamp": "2023-10-17T06:08:04.777Z",
+=======
+<<<<<<< HEAD
+        "start_timestamp": "2023-10-18T05:22:10.170Z",
+=======
+<<<<<<< HEAD
+        "start_timestamp": "2023-10-12T12:53:41.327Z",
+=======
+<<<<<<< HEAD
+        "start_timestamp": "2023-10-12T06:43:34.267Z",
+=======
+<<<<<<< HEAD
+        "start_timestamp": "2023-10-11T05:40:07.319Z",
+=======
+<<<<<<< HEAD
+        "start_timestamp": "2023-10-11T05:12:06.779Z",
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
         "before": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 3373252000,
+=======
+<<<<<<< HEAD
+              "duration": 5954311500,
+=======
+<<<<<<< HEAD
+              "duration": 3017266600,
+=======
+<<<<<<< HEAD
+              "duration": 5744197300,
+=======
+<<<<<<< HEAD
+              "duration": 3439639700,
+=======
+<<<<<<< HEAD
+              "duration": 7839291600,
+=======
+<<<<<<< HEAD
+              "duration": 3427737000,
+=======
+              "duration": 3382662700,
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
               "status": "passed"
             },
             "match": {
@@ -15,16 +81,132 @@
             }
           }
         ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+        "line": 7,
+        "name": "Creating an IPO",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
         "line": 5,
+<<<<<<< HEAD
         "name": "To Test the Style initial details screen",
+=======
+        "name": "Create New IPO in Pending IPO List",
+<<<<<<< HEAD
+=======
+=======
+        "line": 6,
+        "name": "To Test the Country screen",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
         "description": "",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
         "id": "feature-to-test-jiva-design-style-initial-details-screen-functionality;to-test-the-style-initial-details-screen",
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+        "id": "creating-an-ipo-for-a-confirmed-style;creating-an-ipo",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+        "id": "create-the-new-ipo-from-pending-ipo-list;create-new-ipo-in-pending-ipo-list",
+<<<<<<< HEAD
+=======
+=======
+        "id": "feature-to-test-jiva-design-country-screen-functionality;to-test-the-country-screen",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "error_message": "org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools\n  (failed to check if window was closed: disconnected: not connected to DevTools)\n  (Session info: chrome\u003d118.0.5993.118)\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027DESKTOP-H2GTC4A\u0027, ip: \u0027192.168.1.166\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\\Users\\CALIBR~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 87ecd791cae511446b7e6a7ad2283bf3\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)\r\n\tat Stepdefinition1.Hooks.CloseBrowser(Hooks.java:36)\r\n",
               "duration": 1025009100,
               "status": "failed"
+=======
+<<<<<<< HEAD
+              "duration": 3002100,
+=======
+<<<<<<< HEAD
+              "duration": 1381302900,
+=======
+<<<<<<< HEAD
+              "duration": 1603754400,
+=======
+<<<<<<< HEAD
+              "duration": 1379374900,
+=======
+<<<<<<< HEAD
+              "duration": 1001100,
+=======
+<<<<<<< HEAD
+              "duration": 2789853800,
+=======
+<<<<<<< HEAD
+              "duration": 1237443300,
+=======
+              "duration": 1426832000,
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+            "match": {
+<<<<<<< HEAD
+              "location": "Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2225907800,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
             },
             "match": {
               "location": "Stepdefinition1.Hooks.CloseBrowser()"
@@ -32,13 +214,58 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d118.0.5993.118)\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027DESKTOP-H2GTC4A\u0027, ip: \u0027192.168.1.166\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\\Users\\CALIBR~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 87ecd791cae511446b7e6a7ad2283bf3\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)\r\n\tat Stepdefinition1.Hooks.captureScreenshot(Hooks.java:24)\r\n",
               "duration": 13958700,
               "status": "failed"
+=======
+<<<<<<< HEAD
+              "duration": 1004600,
+=======
+<<<<<<< HEAD
+              "duration": 2999400,
+=======
+              "duration": 1994700,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
             },
             "match": {
               "location": "Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)"
             }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+          },
+          {
+            "result": {
+              "duration": 1596529500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stepdefinition1.Hooks.CloseBrowser()"
+            }
+<<<<<<< HEAD
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
           }
         ],
         "type": "scenario",
@@ -46,19 +273,1089 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d118.0.5993.118)\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027DESKTOP-H2GTC4A\u0027, ip: \u0027192.168.1.166\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\\Users\\CALIBR~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 87ecd791cae511446b7e6a7ad2283bf3\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)\r\n\tat Page.StyleInitial_Page.User_navigates_to_Login_page(StyleInitial_Page.java:82)\r\n\tat Stepdefinition1.StyleInitial_Steps.User_navigates_to_Login_page(StyleInitial_Steps.java:17)\r\n\tat ✽.User navigates to Login page(file:///D:/02102023/JivaAutomation/Maven/Features/StyleInitialdetails.feature:6)\r\n",
               "duration": 76796200,
+=======
+<<<<<<< HEAD
+              "duration": 3330865400,
+=======
+<<<<<<< HEAD
+              "duration": 7098168400,
+=======
+<<<<<<< HEAD
+              "duration": 2796094400,
+=======
+<<<<<<< HEAD
+              "duration": 2203650100,
+=======
+<<<<<<< HEAD
+              "duration": 2390497100,
+=======
+<<<<<<< HEAD
+              "duration": 6216554700,
+=======
+<<<<<<< HEAD
+              "duration": 1884565800,
+=======
+              "duration": 2594117300,
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+<<<<<<< HEAD
+=======
+            "line": 8,
+            "name": "Navigates to the Login page",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "line": 6,
+            "name": "Login with Audit Manager credentials in Login page",
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.User_navigates_to_Login_page()"
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "location": "Stepdefinition1.IPOListSteps.Navigates_to_the_Login_page()"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "location": "Stepdefinition1.PendingIPO_Steps.Login_with_Audit_Manager_credentials_in_Login_page()"
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 1366034400,
+=======
+<<<<<<< HEAD
+              "duration": 6220138500,
+=======
+<<<<<<< HEAD
+              "duration": 1399539900,
+=======
+<<<<<<< HEAD
+              "duration": 3429243900,
+=======
+<<<<<<< HEAD
+              "duration": 1383609800,
+=======
+<<<<<<< HEAD
+              "duration": 4235943000,
+=======
+              "duration": 8430169900,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on WovenKnit Module",
+            "match": {
+              "location": "Stepdefinition1.PendingIPO_Steps.Click_on_WovenKnit_Module()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4183613900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on Audit Module",
+            "match": {
+              "location": "Stepdefinition1.PendingIPO_Steps.Click_on_Audit_Module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 4346427000,
+=======
+<<<<<<< HEAD
+              "duration": 5312216500,
+=======
+<<<<<<< HEAD
+              "duration": 6473418700,
+=======
+<<<<<<< HEAD
+              "duration": 63916500,
+=======
+              "duration": 70463100,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+            "line": 9,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "name": "Click on the Woven Module",
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "name": "Enter valid Username and password",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "name": "Click on Pending IPO list in menu",
+<<<<<<< HEAD
+=======
+=======
+            "name": "User click on the signIn",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.Click_on_the_Woven_Module()"
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "location": "Stepdefinition1.IPOListSteps.Enter_valid_Username_and_password()"
+<<<<<<< HEAD
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 63003300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on SignIn",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Click_on_SignIn()"
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "location": "Stepdefinition1.PendingIPO_Steps.Click_on_Pending_IPO_list_in_menu()"
+<<<<<<< HEAD
+=======
+=======
+              "location": "Stepdefinition1.County_steps.User_click_on_the_signIn()"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 5960088600,
+=======
+<<<<<<< HEAD
+              "duration": 2060206700,
+=======
+<<<<<<< HEAD
+              "duration": 83997600,
+=======
+<<<<<<< HEAD
+              "duration": 3220966600,
+=======
+<<<<<<< HEAD
+              "duration": 68000500,
+=======
+<<<<<<< HEAD
+              "duration": 64826500,
+=======
+<<<<<<< HEAD
+              "duration": 7654077100,
+=======
+              "duration": 3182066600,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+            "line": 10,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "name": "click on the Merchandising Module",
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+            "name": "Click on SignIn",
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "name": "Verify whether user navigated to Pending IPO list or not",
+<<<<<<< HEAD
+=======
+=======
+            "name": "Click on the Master Module",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.click_on_the_Merchandising_Module()"
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+              "location": "Stepdefinition1.IPOListSteps.Click_on_SignIn()"
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "location": "Stepdefinition1.PendingIPO_Steps.Verify_whether_user_navigated_to_Pending_IPO_list_or_not()"
+<<<<<<< HEAD
+=======
+=======
+              "location": "Stepdefinition1.County_steps.Click_on_the_Master_Module()"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 2085324300,
+=======
+<<<<<<< HEAD
+              "duration": 5276229100,
+=======
+<<<<<<< HEAD
+              "duration": 3290781700,
+=======
+<<<<<<< HEAD
+              "duration": 5357586900,
+=======
+<<<<<<< HEAD
+              "duration": 61833700,
+=======
+<<<<<<< HEAD
+              "duration": 3268765800,
+=======
+              "duration": 3147508200,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+            "line": 11,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "name": "click on the Style Initail Details screen",
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "name": "Click on the Woven Modules",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "name": "Verify whether the data is displaying in grid or not",
+<<<<<<< HEAD
+=======
+=======
+            "name": "click on the Country screen",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.click_on_the_Style_Initail_Details_screen()"
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "location": "Stepdefinition1.IPOListSteps.Click_on_the_Woven_Modules()"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "location": "Stepdefinition1.PendingIPO_Steps.Verify_whether_the_data_is_displaying_in_grid_or_not()"
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.County_steps.click_on_the_Country_screen()"
+=======
+              "location": "Stepdefinition1.Pdfds_Steps.Click_on_PD_module()"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 3250661200,
+=======
+<<<<<<< HEAD
+              "duration": 5195758600,
+=======
+<<<<<<< HEAD
+              "duration": 3226910500,
+=======
+<<<<<<< HEAD
+              "duration": 3192671000,
+=======
+<<<<<<< HEAD
+              "duration": 3225595200,
+=======
+              "duration": 4181022600,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+            "line": 12,
+<<<<<<< HEAD
+            "name": "Click on Generate IPO button",
+=======
+            "name": "Click on Audit module",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+<<<<<<< HEAD
+              "location": "Stepdefinition1.PendingIPO_Steps.Click_on_Generate_IPO_button()"
+=======
+              "location": "Stepdefinition1.IPOListSteps.Click_on_Audit_module()"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 3324513900,
+=======
+<<<<<<< HEAD
+              "duration": 55043500,
+=======
+<<<<<<< HEAD
+              "duration": 3321410600,
+=======
+<<<<<<< HEAD
+              "duration": 3340544100,
+=======
+<<<<<<< HEAD
+              "duration": 54506500,
+=======
+<<<<<<< HEAD
+              "duration": 7393700300,
+=======
+              "duration": 3159880800,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+            "line": 13,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "name": "Click on the Styles Expansion",
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "name": "Click on IPO List module",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "name": "Verify whether Generate IPO screen is displaying or not",
+<<<<<<< HEAD
+=======
+=======
+            "name": "Click on the Country Add button",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.Click_on_the_Styles_Expansion()"
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "location": "Stepdefinition1.IPOListSteps.Click_on_IPO_List_module()"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "location": "Stepdefinition1.PendingIPO_Steps.Verify_whether_Generate_IPO_screen_is_displaying_or_not()"
+<<<<<<< HEAD
+=======
+=======
+              "location": "Stepdefinition1.County_steps.Click_on_the_Country_Add_button()"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 61709600,
+=======
+<<<<<<< HEAD
+              "duration": 367001900,
+=======
+<<<<<<< HEAD
+              "duration": 3248968700,
+=======
+<<<<<<< HEAD
+              "duration": 350998500,
+=======
+<<<<<<< HEAD
+              "duration": 63635300,
+=======
+<<<<<<< HEAD
+              "duration": 62307300,
+=======
+              "duration": 4216929300,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+<<<<<<< HEAD
+            "line": 15,
+=======
+            "line": 14,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "name": "Select IPO/Style",
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+            "name": "Click on the Filter button",
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "name": "Verify whether the current date is displaying for IPO date field or not",
+<<<<<<< HEAD
+=======
+=======
+            "name": "Verify the Alert msg",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.Select_IPO()"
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+              "location": "Stepdefinition1.IPOListSteps.Click_on_the_Filter_button()"
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "location": "Stepdefinition1.PendingIPO_Steps.Verify_whether_the_current_date_is_displaying_for_IPO_date_field_or_not()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45978800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "verify whether the Buyer Style is prepopulated or not",
+            "match": {
+              "location": "Stepdefinition1.PendingIPO_Steps.verify_whether_the_Buyer_Style_is_prepopulated_or_not()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45006800,
+              "status": "passed"
+            },
+<<<<<<< HEAD
+=======
+            "line": 31,
+            "name": "Click on Fabric Quality",
+            "match": {
+              "location": "Stepdefinition1.Pdfds_Steps.Click_on_Fabric_Quality()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3199069900,
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Click on the Add combo button",
+            "match": {
+              "location": "Stepdefinition1.StyleInitial.Click_on_the_Add_combo_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3282372700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Enter the data in Combo1",
+            "match": {
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.Enter_the_data_in_Combo1()"
+=======
+              "location": "Stepdefinition1.Pdfds_Steps.Click_on_Content()"
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 5426637500,
+=======
+<<<<<<< HEAD
+              "duration": 3233402700,
+=======
+<<<<<<< HEAD
+              "duration": 5377436500,
+=======
+              "duration": 8690494800,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+              "status": "passed"
+            },
+<<<<<<< HEAD
+            "line": 34,
+            "name": "Click on the Delete Icon1",
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "line": 16,
+<<<<<<< HEAD
+            "name": "Verify whether the IPO field is prepopulated with data or not",
+=======
+<<<<<<< HEAD
+            "name": "Click in the IPO From Date field",
+=======
+            "name": "Click in the IPO To Date field",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+<<<<<<< HEAD
+              "location": "Stepdefinition1.PendingIPO_Steps.Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not()"
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.IPOListSteps.Click_in_the_IPO_From_Date_field()"
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.Click_on_the_Delete_Icon1()"
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.IPOListSteps.Click_in_the_IPO_To_Date_field()"
+=======
+              "location": "Stepdefinition1.Pdfds_Steps.Click_on_Color()"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 4174712900,
+=======
+<<<<<<< HEAD
+              "duration": 3247406600,
+=======
+              "duration": 3193011700,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Enter Finish value",
+            "match": {
+              "location": "Stepdefinition1.Pdfds_Steps.Enter_Finish_value()"
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 3260027300,
+=======
+              "duration": 5403020000,
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+            "line": 17,
+<<<<<<< HEAD
+            "name": "Enter IPO number in IPO field",
+=======
+            "name": "Click in the IPO To Date field",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Click_in_the_IPO_To_Date_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 151035000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click in the Buyer field",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+              "location": "Stepdefinition1.PendingIPO_Steps.Enter_IPO_number_in_IPO_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 64216600,
+=======
+              "duration": 5295797000,
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+<<<<<<< HEAD
+            "line": 18,
+            "name": "Verify Buyer is prepopulated or not",
+=======
+            "line": 19,
+            "name": "Select a Buyer from the dropdown list",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+              "location": "Stepdefinition1.PendingIPO_Steps.Verify_Buyer_is_prepopulated_or_not()"
+            },
+            "keyword": "And "
+<<<<<<< HEAD
+=======
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 132624900,
+=======
+<<<<<<< HEAD
+              "duration": 87003400,
+=======
+              "duration": 3215804900,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+              "status": "passed"
+            },
+<<<<<<< HEAD
+            "line": 20,
+=======
+<<<<<<< HEAD
+            "line": 37,
+            "name": "Click on the Add Garment type button",
+=======
+            "line": 19,
+>>>>>>> refs/remotes/origin/main
+            "name": "Click in the PD Merchant field",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.Click_on_the_Add_Garment_type_button()"
+=======
+              "location": "Stepdefinition1.IPOListSteps.Click_in_the_PD_Merchant_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 145094400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Enter a first two letters of a PD Merchant name",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Enter_a_first_two_letters_of_a_PD_Merchant_name()"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 3260047400,
+=======
+<<<<<<< HEAD
+              "duration": 68342218800,
+=======
+<<<<<<< HEAD
+              "duration": 3285611500,
+=======
+              "duration": 3190921600,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+              "status": "passed"
+            },
+<<<<<<< HEAD
+            "line": 22,
+=======
+<<<<<<< HEAD
+            "line": 40,
+            "name": "Click on the Garment type field",
+=======
+            "line": 21,
+>>>>>>> refs/remotes/origin/main
+            "name": "Select the PD Merchant from the dropdown",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.Click_on_the_Garment_type_field()"
+=======
+              "location": "Stepdefinition1.IPOListSteps.Select_the_PD_Merchant_from_the_dropdown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3251797500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Click in the Merchant field",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Click_in_the_Merchant_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 165986100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Select a Merchant from the dropdown list",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Select_a_Merchant_from_the_dropdown_list()"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 154999000,
+=======
+<<<<<<< HEAD
+              "duration": 7321759500,
+=======
+<<<<<<< HEAD
+              "duration": 100999300,
+=======
+              "duration": 7271129400,
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+              "status": "passed"
+            },
+<<<<<<< HEAD
+            "line": 25,
+=======
+<<<<<<< HEAD
+            "line": 41,
+            "name": "Select the Garment type",
+=======
+            "line": 24,
+>>>>>>> refs/remotes/origin/main
+            "name": "Click in the Assigned Month and year field",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "match": {
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.Select_the_Garment_type()"
+=======
+              "location": "Stepdefinition1.IPOListSteps.Click_in_the_Assigned_Month_and_year_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3269504200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Select a Month or Year from the dropdown list",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Select_a_Month_or_Year_from_the_dropdown_list()"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 8298694800,
+=======
+<<<<<<< HEAD
+              "duration": 5329852700,
+              "status": "passed"
+=======
+<<<<<<< HEAD
+              "duration": 241000300,
+>>>>>>> refs/remotes/origin/main
+              "status": "passed"
+<<<<<<< HEAD
+=======
+=======
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@name\u003d\u0027username\u0027]\"}\n  (Session info: chrome\u003d117.0.5938.152)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027DESKTOP-58Q0BN1\u0027, ip: \u0027192.168.1.179\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002720.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\\Users\\CALIBR~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e1930f64ffad4a54cd5b7bdba12125aa\n*** Element info: {Using\u003dxpath, value\u003d//input[@name\u003d\u0027username\u0027]}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat Page.Pdfds_page.Navigate_to_PD_Fabric_Pricing_screen(Pdfds_page.java:352)\r\n\tat Stepdefinition1.Pdfds_Steps.Navigate_to_PD_Fabric_Pricing_screen(Pdfds_Steps.java:118)\r\n\tat ✽.Navigate to PD Fabric Pricing screen(file:///E:/New%20folder/JivaAutomation/Maven/Features/Pdfds.feature:41)\r\n",
+              "duration": 101630667600,
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
               "status": "failed"
             },
             "line": 6,
             "name": "User navigates to Login page",
             "match": {
+<<<<<<< HEAD
               "location": "Stepdefinition1.StyleInitial_Steps.User_navigates_to_Login_page()"
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.IPOListSteps.Enter_IPO_Name_in_the_Search_IPO_field()"
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.StyleInitial.Click_on_the_Submit_Order_details_button()"
+=======
+<<<<<<< HEAD
+              "location": "Stepdefinition1.IPOListSteps.Click_in_the_Search_IPO_and_Enter_an_IPO()"
+=======
+              "location": "Stepdefinition1.PendingIPO_Steps.Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not()"
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3227033900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Click on the Reset button",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Click_on_the_Reset_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11542082200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Click on the Apply button",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Click_on_the_Apply_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
+              "duration": 996400,
+=======
+              "duration": 51054000,
+>>>>>>> refs/remotes/origin/main
+              "status": "passed"
+            },
+<<<<<<< HEAD
+            "line": 32,
+            "name": "Click on Generate Excel Sheet button",
+=======
+            "line": 43,
+            "name": "Verify the Alert msg",
+>>>>>>> refs/remotes/origin/main
+            "match": {
+<<<<<<< HEAD
+              "location": "Stepdefinition1.IPOListSteps.Click_on_Generate_Excel_Sheet_button()"
+=======
+              "location": "Stepdefinition1.StyleInitial.Verify_the_Alert_msg()"
+>>>>>>> refs/remotes/origin/main
+            },
+<<<<<<< HEAD
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2997600,
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Clicked on Add IPO button",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Clicked_on_Add_IPO_button()"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
             },
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 997200,
               "status": "skipped"
             },
@@ -78,8 +1375,18 @@
             "name": "User click on the signIn",
             "match": {
               "location": "Stepdefinition1.StyleInitial_Steps.User_click_on_the_signIn()"
+=======
+              "duration": 95996700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Verify whether the page is navigating to the Add IPO screen or not",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not()"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
             },
             "keyword": "And "
+<<<<<<< HEAD
           },
           {
             "result": {
@@ -361,6 +1668,210 @@
               "location": "Stepdefinition1.StyleInitial_Steps.Click_on_the_submit_button()"
             },
             "keyword": "And "
+=======
+<<<<<<< HEAD
+          },
+          {
+            "result": {
+              "duration": 15107611500,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Click on the save button",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Click_on_the_save_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1054944800,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Verify the information tags data on mouse hover",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Verify_the_information_tags_data_on_mouse_hover()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3193861300,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Verify whether current date is displayed or not bydefault",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Verify_whether_current_date_is_displayed_or_not_bydefault()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3272825200,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Enter first two letters of a Buyer Style",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Enter_first_two_letters_of_a_Buyer_Style()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3331283200,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Select a Buyer Style from the dropdown",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Select_a_Buyer_Style_from_the_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3306612400,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Enter the IPO name",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Enter_the_IPO_name()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3242583300,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Enter first two letters of Production Merchant",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Enter_first_two_letters_of_Production_Merchant()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3168014100,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Select a Production Merchant fron the dropdown",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Select_a_Production_Merchant_fron_the_dropdown()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3299120900,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Enter the PO Qty",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Enter_the_PO_Qty()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3239198600,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Enter IPO percentage",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Enter_IPO_percentage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180999900,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Click in the Assigned Month and Year field",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Click_in_the_Assigned_Month_and_Year_field()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3329197100,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Select the Month from the month picker",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Select_the_Month_from_the_month_picker()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3201140100,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Select Exfactory Date",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Select_Exfactory_Date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3298738600,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Check the Active field status",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Check_the_Active_field_status()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3286147000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Click on the Save button",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Click_on_the_Save_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 204999000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Verify whether the page is navigated to IPO List page or not",
+            "match": {
+              "location": "Stepdefinition1.IPOListSteps.Verify_whether_the_page_is_navigated_to_IPO_List_page_or_not()"
+            },
+            "keyword": "And "
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
           }
         ],
         "tags": [
@@ -368,25 +1879,191 @@
             "name": "@FeatureGroup"
           },
           {
+<<<<<<< HEAD
             "name": "@Style123"
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+            "name": "@StyleTest1"
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "name": "@IPOList"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+            "name": "@NEWIPO"
+<<<<<<< HEAD
+=======
+=======
+            "name": "@Test2"
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "feature to test Jiva design style initial details screen functionality",
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "name": "feature to test Jiva design Style Initial Details screen functionality",
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+    "name": "Creating an IPO for a confirmed style",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+    "name": "Create the New IPO from Pending IPO list",
+<<<<<<< HEAD
+=======
+=======
+    "name": "feature to test Jiva design Country screen functionality",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
     "description": "",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
     "id": "feature-to-test-jiva-design-style-initial-details-screen-functionality",
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+    "id": "creating-an-ipo-for-a-confirmed-style",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+    "id": "create-the-new-ipo-from-pending-ipo-list",
+<<<<<<< HEAD
+=======
+=======
+    "id": "feature-to-test-jiva-design-country-screen-functionality",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
     "keyword": "Feature",
+<<<<<<< HEAD
     "uri": "file:Features/StyleInitialdetails.feature",
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    "uri": "file:Features/StyleInitial.feature",
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+    "uri": "file:Features/IPO%20List.feature",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+    "uri": "file:Features/PendingIPO.feature",
+<<<<<<< HEAD
+=======
+=======
+    "uri": "file:Features/Country.feature",
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
     "tags": [
       {
         "name": "@FeatureGroup",
         "type": "Tag",
         "location": {
+<<<<<<< HEAD
+=======
           "line": 1,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+          "line": 2,
+          "column": 3
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
           "column": 1
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
         }
       }
     ]
   }
 ]
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git

@@ -73,4 +73,44 @@ public class PendingIPO_Steps {
 	public void Verify_Buyer_is_prepopulated_or_not() {
 		PendingIPOpage.Verify_Buyer_is_prepopulated_or_not();
 	}
+
+	@And("^Insert and select Production Merchant$")
+	public void Insert_and_select_Production_Merchant() throws Throwable {
+		PendingIPOpage.Insert_and_select_Production_Merchant();
+	}
+	
+	@And("^Verify the PO qty is prepopulated or not$")
+	public void Verify_the_PO_qty_is_prepopulated_or_not() throws Throwable {
+		PendingIPOpage.Verify_the_PO_qty_is_prepopulated_or_not();
+	}
+	
+	@And("^Enter IPO qty in text field$")
+	public void Enter_IPO_qty_in_text_field() throws Throwable {
+		PendingIPOpage.Enter_IPO_qty_in_text_field();
+	}
+	
+	@Then("^Select Assigned Month Year$")
+	public void Select_Assigned_Month_Year() throws Throwable{
+		PendingIPOpage.Select_Assigned_Month_Year();
+	}
+	
+	@And("^verify whether the exfactory is prepopulated or not$")
+	public void verify_whether_the_exfactory_is_prepopulated_or_not() {
+		PendingIPOpage.verify_whether_the_exfactory_is_prepopulated_or_not();
+	}
+	
+	@Then("^Disable the Active checkbox$")
+	public void Disable_the_Active_checkbox() throws Throwable {
+		PendingIPOpage.Disable_the_Active_checkbox();
+	}
+	
+	@And("^Click on cancel button$")
+	public void Click_on_cancel_button() throws Throwable {
+		PendingIPOpage.Click_on_cancel_button();
+	}
+	
+	@And("^Click the Save button$")
+	public void Click_the_Save_button() throws Throwable {
+		PendingIPOpage.Click_the_Save_button();
+	}
 }

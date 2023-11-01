@@ -92,11 +92,22 @@ public class Country_Page extends DriverFactory{
 
 		        utilities.MediumWait(driver);
 		        driver.findElement(C_Name).sendKeys("C73");
+<<<<<<< HEAD
+=======
+
+		        utilities.MediumWait(driver);
+
+		        driver.findElement(C_Name).sendKeys("C73");
+
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 			}
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 			public void Enter_the_data_in_Country_code_field() throws Throwable {
 				utilities.webDriverWait(driver, C_Code );
 				 driver.findElement(C_B).click();
