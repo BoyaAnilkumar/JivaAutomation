@@ -5,7 +5,9 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -71,8 +73,17 @@ public class IPOListPages extends DriverFactory {
 	By IGIPOprcentage = By.xpath("//div[@data-validate='IPO % is required']");
 	By IGAssignedMthYear = By.xpath("//div[@data-validate='Assigned Month is required']");
 	By IGExfactoryDate = By.xpath("//div[@data-validate='Exfactory Date is required']");
+	By IPOtable = By.xpath("//table[@class='p-datatable-table ng-star-inserted']");
+	By IPOGridHeader = By.xpath("//thead[@class='p-datatable-thead']");
+	By buttExpansion = By.xpath("(//span[@class='p-button-icon pi pi-chevron-right'])[1]");
+	By buttEdit = By.xpath("(//a[@class=\"btn btn-sm btn-info mr-1 ng-star-inserted\"])[1]");
+	By navUpdateIPO = By.xpath("//h3[text()='Add IPO ']");
+	By buttUpdate = By.xpath("//i[@class='ti-pencil-alt']");
+	By MandatoryValdMSg = By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
+	By UpdateIPOname = By.xpath("//input[@formcontrolname='ipoNumber']");
+	By UpdateCancel = By.partialLinkText("//button[text()=' Cancel']");
 	
-
+	
 	public void Navigates_to_the_Login_page() {
 		driver.get(prop.getProperty("url"));
 		
@@ -396,9 +407,115 @@ public class IPOListPages extends DriverFactory {
 //        utilities.MaximumLongWait(driver);
 	}
 
+	public void Verifying_the_IPO_List_grid_headers_and_Sorting() throws Throwable {
+
+        WebElement grid = driver.findElement(IPOtable);
+        WebElement tableHeaderRow = grid.findElement(By.tagName("thead"));
+        List<WebElement> tableHeaders = tableHeaderRow.findElements(By.tagName("th"));
+        // Define expected header values
+        String[] expectedHeaders = {"", "IPO Details", "Buyer Details", "Merchant "};
+        // Verify table headers
+        for (int i = 0; i < expectedHeaders.length;) {
+          for (WebElement columnHeader : tableHeaders) {
+        	String columnName = columnHeader.getText(); 
+            Assert.assertEquals(tableHeaders.get(i).getText(), expectedHeaders[i]);
+            System.out.println(columnName);
+          // Click on the header twice
+			columnHeader.click();
+			utilities.MaximumWait(driver);
+			columnHeader.click();
+			utilities.MinimumWait(driver);
+          }
+        
+          break;
+        }
+		
+	}
+
+	public void Verify_whether_the_Expansion_button_is_clickable_or_not_for_an_IPO() throws Throwable {
+		utilities.webDriverWait(driver, buttExpansion);
+		driver.findElement(buttExpansion).click();
+	}
+
+	public void Verify_whether_the_Edit_button_is_clickable() throws Throwable {
+		utilities.webDriverWait(driver, buttEdit);
+		driver.findElement(buttEdit).click();
+		
+	}
+
+	public void Verify_whether_page_is_navigating_to_Update_IPO_screen() {
+		WebElement UpdateIPOscreen = driver.findElement(navUpdateIPO);
+		String UIPOscreen = UpdateIPOscreen.getText();
+		if(UpdateIPOscreen.isDisplayed()){
+			System.out.println("The screen is navigated to " + UIPOscreen + " screen");
+		} else {
+			System.out.println("The screen is not navigated to " + UIPOscreen);
+		}
+		
+	}
+
+	public void Verify_whether_the_previously_added_data_is_displayed_correctly_in_all_the_fields() {
+		// Need to verify how to compare the field values through test scripts
+		
+	}
+
+	public void Clear_all_the_data_in_any_one_of_the_field() throws Throwable {
+		utilities.webDriverWait(driver, BuyerStyle);
+		driver.findElement(BuyerStyle).clear();
+		WebElement BuySty = driver.findElement(BuyerStyle);
+		String Buystyname = BuySty.getText();
+		System.out.println("Buyer Style name " + Buystyname );
+		driver.findElement(UpdateIPOname).clear();
+		WebElement IPOn = driver.findElement(UpdateIPOname);
+		String IPOname = IPOn.getText();
+		System.out.println("IPO Name" + IPOname );
+		driver.findElement(UpdateIPOname).sendKeys("UpdateIPO");
+	}
+
+	public void Click_on_the_update_button_in_UpdateIPO_form() throws Throwable {
+		utilities.webDriverWait(driver, buttUpdate);
+		driver.findElement(buttUpdate).click();
+		WebElement buttupdate = driver.findElement(buttUpdate);
+		String updatename = buttupdate.getText();
+		System.out.println("Click on " + updatename );
+		System.out.println("Clicked on Update button");
+		
+		 WebElement AlertMsg = driver.findElement(MandatoryValdMSg);
+         String actualMessage = AlertMsg.getText();
+         System.out.println("checking for the validation msg");
+
+         String expectedMessage = "Mandatory Fields Are Required With Valid Data.";
+
+      if (expectedMessage.equals(actualMessage)) {
+	          System.out.println("Alert message is correct." + actualMessage);
+     } else {
+	         System.out.println("Alert message is incorrect."+ actualMessage);
+            }
+      utilities.MinimumWait(driver);
+	}
+
+	public void Check_whether_the_mandatory_validation_msg_is_displayed_or_not() throws Throwable {
+		
+		 WebElement AlertMsg = driver.findElement(MandatoryValdMSg);
+         String actualMessage = AlertMsg.getText();
+         System.out.println("checking for the validation msg");
+
+         String expectedMessage = "Mandatory Fields Are Required With Valid Data.";
+
+      if (expectedMessage.equals(actualMessage)) {
+	          System.out.println("Alert message is correct." + actualMessage);
+     } else {
+	         System.out.println("Alert message is incorrect."+ actualMessage);
+            }
+      utilities.MinimumWait(driver);
+	}
 	
+	
+	
+
+}	
 
 
 	
 	
-}
+

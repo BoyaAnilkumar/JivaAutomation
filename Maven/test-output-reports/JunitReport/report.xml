@@ -1,145 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="84.509">
-    <testcase classname="Creating an IPO for a confirmed style" name="Creating an IPO" time="84.064">
-=======
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="40.338">
-    <testcase classname="Create the New IPO from Pending IPO list" name="Create New IPO in Pending IPO List" time="40.112">
-        <system-out><![CDATA[Given Login with Audit Manager credentials in Login page....................passed
-=======
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="74.034">
-    <testcase classname="Creating an IPO for a confirmed style" name="Creating an IPO" time="73.704">
-=======
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="123.398">
-    <testcase classname="feature to test Jiva design Style Initial Details screen functionality" name="To Test the Style Initial details screen" time="122.965">
-=======
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="50.913">
-    <testcase classname="Creating an IPO for a confirmed style" name="Creating an IPO" time="50.673">
->>>>>>> refs/remotes/origin/main
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-        <system-out><![CDATA[Given Navigates to the Login page...........................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="37.954">
+    <testcase classname="Creating an IPO for a confirmed style" name="Creating an IPO" time="37.456">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()='Mandatory Fields Are Required With  Valid Data.']&quot;}&#10;  (Session info: chrome=119.0.6045.106)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9656ad7bb178b55d6d87a2c54be01d15&#10;*** Element info: {Using=xpath, value=//h2[text()='Mandatory Fields Are Required With  Valid Data.']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Navigates to the Login page...........................................passed
 Then Enter valid Username and password......................................passed
 And Click on SignIn.........................................................passed
 Then Click on the Woven Modules.............................................passed
 Then Click on Audit module..................................................passed
 Then Click on IPO List module...............................................passed
-When Clicked on Add IPO button..............................................passed
-And Verify whether the page is navigating to the Add IPO screen or not......passed
-When Click on the save button...............................................passed
-And Verify the information tags data on mouse hover.........................passed
-And Verify whether current date is displayed or not bydefault...............passed
-Given Enter first two letters of a Buyer Style..............................passed
-And Select a Buyer Style from the dropdown..................................passed
-Given Enter the IPO name....................................................passed
-Given Enter first two letters of Production Merchant........................passed
-Then Select a Production Merchant fron the dropdown.........................passed
-Given Enter the PO Qty......................................................passed
-Given Enter IPO percentage..................................................passed
-Then Click in the Assigned Month and Year field.............................passed
-Then Select the Month from the month picker.................................passed
-Then Select Exfactory Date..................................................passed
-And Check the Active field status...........................................passed
-Then Click on the Save button...............................................passed
 And Verify whether the page is navigated to IPO List page or not............passed
-]]></system-out>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.156">
-    <testcase classname="Create the New IPO from Pending IPO list" name="Create New IPO in Pending IPO List" time="31.914">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()='IPO']/..//input[@class='form-control ng-pristine ng-invalid ng-touched']&quot;}&#10;  (Session info: chrome=117.0.5938.152)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 45f65c7c18db11ebe93716c014dd686c&#10;*** Element info: {Using=xpath, value=//label[text()='IPO']/..//input[@class='form-control ng-pristine ng-invalid ng-touched']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Login with Audit Manager credentials in Login page....................passed
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-Then Click on WovenKnit Module..............................................passed
-And Click on Audit Module...................................................passed
-Then Click on Pending IPO list in menu......................................passed
-And Verify whether user navigated to Pending IPO list or not................passed
-And Verify whether the data is displaying in grid or not....................passed
-And Click on Generate IPO button............................................passed
-And Verify whether Generate IPO screen is displaying or not.................passed
-And Verify whether the current date is displaying for IPO date field or not.passed
-And verify whether the Buyer Style is prepopulated or not...................passed
-And Verify whether the IPO field is prepopulated with data or not...........passed
-And Enter IPO number in IPO field...........................................passed
-And Verify Buyer is prepopulated or not.....................................passed
-]]></system-out>
-<<<<<<< HEAD
-=======
-=======
-Then click on the PD Module.................................................passed
-And click on the Style Master screen........................................passed
-Then Click on the Add New style button......................................passed
-And Click on the PD Merchant name field.....................................passed
-When User select the PD merchant name.......................................passed
-And Enter the data in BuyerStyle field......................................passed
-And Click on the Buyer field................................................passed
-When User select the Buyer..................................................passed
-And Click on the Season field...............................................passed
-When User select the Season.................................................passed
-And Click on the Garment Type field.........................................passed
-Then Select the Garment type................................................passed
-And Click on the Garment process field......................................passed
-When The user select the Garment Process....................................passed
-Then User enter the the Tech Pack Name......................................passed
-And Enter the data in Teck pack desc field..................................passed
-Then User select the data in Teck received date field.......................passed
-And User click on the sampling type field...................................passed
-When The user select the sampling type in dropdown list.....................passed
-And User select the Expected Submission Date................................passed
-And Enter the data in expected order qty field..............................passed
-Then User select the expected order date field..............................passed
-When The user select the PD Assistants......................................passed
-And select PD Assistants....................................................passed
-And Click on the Save button................................................failed
-And Click on the created style..............................................skipped
-And Click on the Back button................................................skipped
-When User click on the add revise estimates button..........................skipped
-And Click on the Generate new order radio button............................skipped
-And Select the Order Type...................................................skipped
-And Select the Order date...................................................skipped
-And Select the Exfactory date...............................................skipped
-Given User enter the Order qty..............................................skipped
-And Click on the cancel button..............................................skipped
-And Click on the Add new tech pack button...................................skipped
-When The User enter the data in tech pack name field........................skipped
-And Enter the data in tech pack desc field..................................skipped
-Then User select the Tech Pack Received Date................................skipped
-And Click on the Tech pack cancel Icon......................................skipped
-And Click on the Add sampling details button................................skipped
-And Select the sampling status..............................................skipped
-Given User Click the Sampling type..........................................skipped
-And User Select the Sampling type...........................................skipped
-And Select the Submission date..............................................skipped
-And Click on the sampling Save button.......................................skipped
-And Click on the Edit Icon..................................................skipped
-Given the user is on the edit form page.....................................skipped
-When the user updates the Buyer style.......................................skipped
-And The User Updates the Buyer name.........................................skipped
-And the user updates the season.............................................skipped
-When The User Updates the Garment Type......................................skipped
-And The User Updates the Garment Process....................................skipped
-And Click on the Update button..............................................skipped
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+And Verify whether the Edit button is clickable.............................passed
+And Verify whether page is navigating to Update IPO screen..................passed
+Then Verify whether the previously added data is displayed correctly in all the fields.passed
+When Clear all the data in any one of the field.............................passed
+Then click on the update button in UpdateIPO form...........................failed
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[text()='IPO']/..//input[@class='form-control ng-pristine ng-invalid ng-touched']"}
-  (Session info: chrome=117.0.5938.152)
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text()='Mandatory Fields Are Required With  Valid Data.']"}
+  (Session info: chrome=119.0.6045.106)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.152, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49464}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 45f65c7c18db11ebe93716c014dd686c
-*** Element info: {Using=xpath, value=//label[text()='IPO']/..//input[@class='form-control ng-pristine ng-invalid ng-touched']}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9656ad7bb178b55d6d87a2c54be01d15
+*** Element info: {Using=xpath, value=//h2[text()='Mandatory Fields Are Required With  Valid Data.']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -150,15 +39,9 @@ Session ID: 45f65c7c18db11ebe93716c014dd686c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.PendingIPO_page.Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not(PendingIPO_page.java:146)
-	at Stepdefinition1.PendingIPO_Steps.Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not(PendingIPO_Steps.java:64)
-	at ✽.Verify whether the IPO field is prepopulated with data or not(file:///E:/New%20folder/JivaAutomation/Maven/Features/PendingIPO.feature:16)
+	at Page.IPOListPages.Click_on_the_update_button_in_UpdateIPO_form(IPOListPages.java:483)
+	at Stepdefinition1.IPOListSteps.click_on_the_update_button_in_UpdateIPO_form(IPOListSteps.java:210)
+	at ✽.click on the update button in UpdateIPO form(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/IPO%20List.feature:60)
 ]]></failure>
->>>>>>> refs/remotes/origin/main
->>>>>>> refs/remotes/origin/main
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> refs/remotes/origin/main
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
     </testcase>
 </testsuite>

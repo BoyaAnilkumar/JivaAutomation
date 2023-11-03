@@ -144,33 +144,33 @@ public class Costingpages extends DriverFactory {
 	By Imp_ImportButton = By.xpath("//button[@class='btn btn-primary']");
 	By Imp_Close1 = By.xpath("(//button[@data-dismiss='modal'])[1]");
 	
-	public void Navigates_to_the_Login_page() {
-		driver.get(prop.getProperty("url"));
-	}
+//	public void Navigates_to_the_Login_page() {
+//		driver.get(prop.getProperty("url"));
+//	}
 
-	public void Enter_valid_Username_and_password() throws Throwable {
-//		utilities.webDriverWait(driver, txtUN);
-		driver.findElement(txtUN).clear();
-		driver.findElement(txtUN).sendKeys("Phanindra");
-		utilities.MinimumWait(driver);
-		driver.findElement(txtPwd).clear();
-		driver.findElement(txtPwd).sendKeys(prop.getProperty("password"));
-//		Thread.sleep(1000);
-		
-	}
+//	public void Enter_valid_Username_and_password() throws Throwable {
+////		utilities.webDriverWait(driver, txtUN);
+//		driver.findElement(txtUN).clear();
+//		driver.findElement(txtUN).sendKeys("Phanindra");
+//		utilities.MinimumWait(driver);
+//		driver.findElement(txtPwd).clear();
+//		driver.findElement(txtPwd).sendKeys(prop.getProperty("password"));
+////		Thread.sleep(1000);
+//		
+//	}
+//
+//	public void Click_on_SignIn() {
+//		driver.findElement(btnSignIn).click();
+//    	utilities.WaitUntilPageIsLoaded(driver);
+//		
+//	}
 
-	public void Click_on_SignIn() {
-		driver.findElement(btnSignIn).click();
-    	utilities.WaitUntilPageIsLoaded(driver);
-		
-	}
-
-	public void Click_on_the_Woven_Modules() throws Throwable {
-		utilities.webDriverWait(driver, Woven);
-		driver.findElement(Woven).click();
-    	utilities.WaitUntilPageIsLoaded(driver);
-		
-	}
+//	public void Click_on_the_Woven_Modules() throws Throwable {
+//		utilities.webDriverWait(driver, Woven);
+//		driver.findElement(Woven).click();
+//    	utilities.WaitUntilPageIsLoaded(driver);
+//		
+//	}
 
 	public void Click_on_the_PD_Module() throws Throwable {
 		utilities.webDriverWait(driver, PD);
@@ -860,6 +860,21 @@ public class Costingpages extends DriverFactory {
 	public void Click_on_Close_icon() throws Throwable {
 		utilities.webDriverWait(driver, Imp_closeButton);
 		driver.findElement(Imp_Close1);
+	}
+
+	public void Enter_valid_Username_and_password() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Click_on_SignIn() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Click_on_the_Woven_Modules() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 

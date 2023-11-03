@@ -181,6 +181,38 @@ public class IPOListSteps {
 	public void Verify_the_information_tags_data_on_mouse_hover() throws Throwable {
 		IPOl.Verify_the_information_tags_data_on_mouse_hover();
 	}
+	@Given ("^Verifying the IPO List grid headers and Sorting$")
+	public void Verifying_the_IPO_List_grid_headers_and_Sorting() throws Throwable {
+		IPOl.Verifying_the_IPO_List_grid_headers_and_Sorting();
+	}
+	@And ("^Verify whether the Expansion button is clickable or not for an IPO$")
+	public void Verify_whether_the_Expansion_button_is_clickable_or_not_for_an_IPO() throws Throwable {
+		IPOl.Verify_whether_the_Expansion_button_is_clickable_or_not_for_an_IPO();
+	}
+	@And ("^Verify whether the Edit button is clickable$")
+	public void Verify_whether_the_Edit_button_is_clickable() throws Throwable {
+		IPOl.Verify_whether_the_Edit_button_is_clickable();
+	}
+	@And ("^Verify whether page is navigating to Update IPO screen$")
+	public void Verify_whether_page_is_navigating_to_Update_IPO_screen() {
+		IPOl.Verify_whether_page_is_navigating_to_Update_IPO_screen();
+	}
+	@Then ("^Verify whether the previously added data is displayed correctly in all the fields$")
+	public void Verify_whether_the_previously_added_data_is_displayed_correctly_in_all_the_fields() {
+		IPOl.Verify_whether_the_previously_added_data_is_displayed_correctly_in_all_the_fields();
+	}
+	@When ("^Clear all the data in any one of the field$")
+	public void Clear_all_the_data_in_any_one_of_the_field() throws Throwable {
+		IPOl.Clear_all_the_data_in_any_one_of_the_field();
+	}
+	@Then ("^click on the update button in UpdateIPO form$")
+	public void click_on_the_update_button_in_UpdateIPO_form() throws Throwable {
+		IPOl.Click_on_the_update_button_in_UpdateIPO_form();
+	}
+	@And ("^Check whether the mandatory validation msg is displayed or not$")
+	public void Check_whether_the_mandatory_validation_msg_is_displayed_or_not() throws Throwable {
+		IPOl.Check_whether_the_mandatory_validation_msg_is_displayed_or_not();
+	}
 
 	  
 
