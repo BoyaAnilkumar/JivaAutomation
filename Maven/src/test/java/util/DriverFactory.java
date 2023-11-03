@@ -30,7 +30,7 @@ public class DriverFactory {
 		String browserName = prop.getProperty("browser");
 
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
 			driver = new ChromeDriver();
 			HashMap<String, Object> chromePrefs = new HashMap<>();
 			chromePrefs.put("profile.default_content_settings.popups", 0);
