@@ -37,13 +37,13 @@ public class PendingIPO_page extends DriverFactory {
 	By BuyerStyle = By.xpath("//input[@formcontrolname='buyerStyleName']");
 	By IPONo = By.xpath("//input[@formcontrolname='ipoNumber']");
 	By Buyer = By.xpath("//label[text()='Buyer']/..//input[@class='form-control ng-untouched ng-pristine ng-valid']");
-<<<<<<< HEAD
 
 
 
 
 
-=======
+
+
 	
 	By ProdMerchant = By.xpath("//input[@placeholder='Search Name']");
 	By SelectProdMerchant = By.xpath("//span[text()='Lavanya K']");
@@ -55,7 +55,6 @@ public class PendingIPO_page extends DriverFactory {
 	By Checkbox = By.xpath("//input[@id='flexCheckDefault']");
 	By Cancelbutton = By.xpath("//button[@class='btn btn-md btn-danger mr-2']");
 	By Savebutton = By.xpath("//button[@class='btn btn-md btn-primary px-5 ng-star-inserted']");
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 
 	public void Login_with_Audit_Manager_credentials_in_Login_page() throws Throwable {
@@ -181,7 +180,7 @@ public class PendingIPO_page extends DriverFactory {
 
 
 	public void Verify_Buyer_is_prepopulated_or_not() {
-<<<<<<< HEAD
+
 		WebElement Buyer1 = driver.findElement(Buyer);
 		String Screen = Buyer1.getText();
 		if(Buyer1.isDisplayed()) {
@@ -191,11 +190,6 @@ public class PendingIPO_page extends DriverFactory {
 		}
 
 		WebDriverWait wait = new WebDriverWait(driver, 10); // Adjust the timeout as needed
-=======
-
-		WebDriverWait wait = new WebDriverWait(driver, 10); 
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-
 	    WebElement buyerElement = wait.until(ExpectedConditions.visibilityOfElementLocated(Buyer));
 
 	    if (buyerElement.isDisplayed()) {
@@ -204,9 +198,6 @@ public class PendingIPO_page extends DriverFactory {
 	        System.out.println("Buyer Name is not displayed");
 	    }
 	}
-
-<<<<<<< HEAD
-=======
 
 
 	public void Insert_and_select_Production_Merchant() throws Throwable {
@@ -290,8 +281,5 @@ public class PendingIPO_page extends DriverFactory {
 		
 	}
 	
-	
-
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	}
 

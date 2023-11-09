@@ -50,16 +50,7 @@ public class IPOListPages extends DriverFactory {
 	By AddIPO = By.xpath("//button[@class='btn btn-primary btn-sm shadow-sm float-right mt-1 ng-star-inserted']");
 
 
-<<<<<<< HEAD
 
-
-=======
-=======
-<<<<<<< HEAD
-
-
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	By navAddIPOscr = By.xpath("//h3[text()='Add IPO ']");
 	
 	By IPODate = By.xpath("//input[@formcontrolname='ipoDate']");
@@ -84,11 +75,7 @@ public class IPOListPages extends DriverFactory {
 	By IGAssignedMthYear = By.xpath("//div[@data-validate='Assigned Month is required']");
 	By IGExfactoryDate = By.xpath("//div[@data-validate='Exfactory Date is required']");
 	
-<<<<<<< HEAD
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 
 	public void Navigates_to_the_Login_page() {
 		driver.get(prop.getProperty("url"));
@@ -249,19 +236,10 @@ public class IPOListPages extends DriverFactory {
 	}
 
 
-<<<<<<< HEAD
 
-
-
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	public void Click_on_Generate_Excel_Sheet_button() throws Throwable {
 		utilities.webDriverWait(driver, GenerateExcelSheet);
 		driver.findElement(GenerateExcelSheet).click();		
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	}
 
 	public void Clicked_on_Add_IPO_button() throws Throwable {
@@ -280,14 +258,6 @@ public class IPOListPages extends DriverFactory {
 		
 	}
 
-
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	public void Click_on_the_save_button() throws Throwable {
 		driver.findElement(Save).click();
         utilities.MaximumLongWait(driver);
@@ -314,21 +284,15 @@ public class IPOListPages extends DriverFactory {
 	public void Enter_first_two_letters_of_a_Buyer_Style() throws Throwable {
 		utilities.webDriverWait(driver, BuyerStyle);
 		driver.findElement(BuyerStyle).sendKeys("bo");
-		
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	}
+		
 
-<<<<<<< HEAD
-
-
-=======
 	public void Select_a_Buyer_Style_from_the_dropdown() throws Throwable {
 		utilities.webDriverWait(driver, SelectBuyerStyle);
 		driver.findElement(SelectBuyerStyle).click();
 		Robot r = new Robot();
 		r.keyPress(KeyEvent.VK_2);
 	}
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 	public void Enter_the_IPO_name() throws Throwable {
 		utilities.webDriverWait(driver, IPOName);

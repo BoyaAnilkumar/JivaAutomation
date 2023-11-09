@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package Stepdefinition1;
 
 import Page.Costingpages;
@@ -20,10 +19,10 @@ public class CostingSteps {
 		 cos.Enter_valid_Username_and_password();
 	 }
 
-	  @And("^Click on SignIn$")
-	  public void Click_on_SignIn() throws Throwable{
-		  cos. Click_on_SignIn();
-	  }
+//	  @And("^Click on SignIn$")
+//	  public void Click_on_SignIn() throws Throwable{
+//		  cos. Click_on_SignIn();
+//	  }
 
 	  @Then ("^Click on the Woven Modules$")
 	  public void Click_on_the_Woven_Modules() throws Throwable {
@@ -472,11 +471,8 @@ public class CostingSteps {
 	  }
 
 
-
-
-
 }
-=======
+
 //package Stepdefinition1;
 //
 //import Page.Costingpages;
@@ -954,4 +950,3 @@ public class CostingSteps {
 //
 //
 //}
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
