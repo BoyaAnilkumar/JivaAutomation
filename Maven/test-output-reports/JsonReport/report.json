@@ -1,13 +1,13 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-11-03T10:14:51.431Z",
+        "start_timestamp": "2023-11-09T12:47:11.184Z",
         "before": [
           {
             "result": {
-              "duration": 6276411200,
+              "duration": 5628298300,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 7,
-        "name": "Creating an IPO",
+        "line": 6,
+        "name": "Checking the details of the fabric sheet",
         "description": "",
-        "id": "creating-an-ipo-for-a-confirmed-style;creating-an-ipo",
+        "id": "creating-an-ipo-for-a-confirmed-style;checking-the-details-of-the-fabric-sheet",
         "after": [
           {
             "result": {
-              "duration": 4205025700,
+              "duration": 1675653900,
               "status": "passed"
             },
             "match": {
@@ -31,9 +31,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027CALIBRAGE22-PC\u0027, ip: \u0027192.168.1.222\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.7\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)\r\n\tat Stepdefinition1.Hooks.captureScreenshot(Hooks.java:27)\r\n",
-              "duration": 6039900,
-              "status": "failed"
+              "duration": 995900,
+              "status": "passed"
             },
             "match": {
               "location": "Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)"
@@ -45,146 +44,265 @@
         "steps": [
           {
             "result": {
-              "duration": 3235001200,
+              "duration": 3925374500,
               "status": "passed"
             },
-            "line": 8,
-            "name": "Navigates to the Login page",
+            "line": 7,
+            "name": "Navigate to the Login page",
             "match": {
-              "location": "Stepdefinition1.IPOListSteps.Navigates_to_the_Login_page()"
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Navigate_to_the_Login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1364899900,
+              "duration": 350959900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter valid Username and Password",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Enter_valid_Username_and_Password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 64000400,
               "status": "passed"
             },
             "line": 9,
-            "name": "Enter valid Username and password",
+            "name": "Click on SignIn in the login page",
             "match": {
-              "location": "Stepdefinition1.IPOListSteps.Enter_valid_Username_and_password()"
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_SignIn_in_the_login_page()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 77000500,
+              "duration": 5358803300,
               "status": "passed"
             },
             "line": 10,
-            "name": "Click on SignIn",
+            "name": "Click on Woven Module",
             "match": {
-              "location": "Stepdefinition1.IPOListSteps.Click_on_SignIn()"
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_Woven_Module()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5325265700,
+              "duration": 3258127400,
               "status": "passed"
             },
             "line": 11,
-            "name": "Click on the Woven Modules",
+            "name": "Click on Merchandising module",
             "match": {
-              "location": "Stepdefinition1.IPOListSteps.Click_on_the_Woven_Modules()"
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_Merchandising_module()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3247061300,
+              "duration": 3274107600,
               "status": "passed"
             },
             "line": 12,
-            "name": "Click on Audit module",
+            "name": "Click on View Fabric Sheet module",
             "match": {
-              "location": "Stepdefinition1.IPOListSteps.Click_on_Audit_module()"
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_View_Fabric_Sheet_module()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3303121400,
+              "duration": 3246038800,
               "status": "passed"
             },
             "line": 13,
-            "name": "Click on IPO List module",
+            "name": "Click on Style show/hide button",
             "match": {
-              "location": "Stepdefinition1.IPOListSteps.Click_on_IPO_List_module()"
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_Style_showhide_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 140000200,
+              "duration": 3170629400,
               "status": "passed"
             },
-            "line": 53,
-            "name": "Verify whether the page is navigated to IPO List page or not",
+            "line": 19,
+            "name": "Check whether the respective IPO is displayed or not in the Menu List",
             "match": {
-              "location": "Stepdefinition1.IPOListSteps.Verify_whether_the_page_is_navigated_to_IPO_List_page_or_not()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3273971200,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "Verify whether the Edit button is clickable",
-            "match": {
-              "location": "Stepdefinition1.IPOListSteps.Verify_whether_the_Edit_button_is_clickable()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 94998100,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "Verify whether page is navigating to Update IPO screen",
-            "match": {
-              "location": "Stepdefinition1.IPOListSteps.Verify_whether_page_is_navigating_to_Update_IPO_screen()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2021600,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "Verify whether the previously added data is displayed correctly in all the fields",
-            "match": {
-              "location": "Stepdefinition1.IPOListSteps.Verify_whether_the_previously_added_data_is_displayed_correctly_in_all_the_fields()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3444356700,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "Clear all the data in any one of the field",
-            "match": {
-              "location": "Stepdefinition1.IPOListSteps.Clear_all_the_data_in_any_one_of_the_field()"
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_the_respective_IPO_is_displayed_or_not_in_the_Menu_List()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h2[text()\u003d\u0027Mandatory Fields Are Required With  Valid Data.\u0027]\"}\n  (Session info: chrome\u003d119.0.6045.106)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.13.0\u0027, revision: \u00272f0d292\u0027, time: \u00272018-06-25T15:24:21.231Z\u0027\nSystem info: host: \u0027CALIBRAGE22-PC\u0027, ip: \u0027192.168.1.222\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\\Users\\Admin\\AppData\\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 9656ad7bb178b55d6d87a2c54be01d15\n*** Element info: {Using\u003dxpath, value\u003d//h2[text()\u003d\u0027Mandatory Fields Are Required With  Valid Data.\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat Page.IPOListPages.Click_on_the_update_button_in_UpdateIPO_form(IPOListPages.java:483)\r\n\tat Stepdefinition1.IPOListSteps.click_on_the_update_button_in_UpdateIPO_form(IPOListSteps.java:210)\r\n\tat ✽.click on the update button in UpdateIPO form(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/IPO%20List.feature:60)\r\n",
-              "duration": 3324986600,
-              "status": "failed"
+              "duration": 7426435900,
+              "status": "passed"
             },
-            "line": 60,
-            "name": "click on the update button in UpdateIPO form",
+            "line": 20,
+            "name": "Select the IPO in the Menu List",
             "match": {
-              "location": "Stepdefinition1.IPOListSteps.click_on_the_update_button_in_UpdateIPO_form()"
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Select_the_IPO_in_the_Menu_List()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3178444300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Check whether the page is navigated to the View Fabric Sheet",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_the_page_is_navigated_to_the_View_Fabric_Sheet()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3249101700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click on the History button",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_the_History_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3234742400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Check whether page is navigated to the History page or not",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_page_is_navigated_to_the_History_page_or_not()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3299723300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Verify whether the history records are there or not",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_history_records_are_there_or_not()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4089818300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Verify whether the page is navigated to the PDF form or not",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_page_is_navigated_to_the_PDF_form_or_not()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3252848500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Verify whether the Back button is clickable",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_Back_button_is_clickable()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3241514100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Check whether page is navigated to the View Fabric Sheet or not",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_page_is_navigated_to_the_View_Fabric_Sheet_or_not()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75259600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Verify whether the added fabrics are displayed or not on clicking the Fabric Details link",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_are_displayed_or_not_on_clicking_the_Fabric_Details_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3199642100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Verify whether the added fabrics Garment Average records are displayed or not on clicking the Garment Average link",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_Garment_Average_records_are_displayedornot_on_clicking_the_Garment_Average_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3236385600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Verify whether the added fabrics Quantity Requirment records are displayed or not on clicking the Quantity Requirment link",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_Quantity_Requirment_records_are_displayed_or_not_on_clicking_the_Quantity_Requirment_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3299622000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Quality button",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_page_is_navigating_to_the_Print_form_on_clicking_the_View_For_Print_By_Fabric_Quality_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3350195400,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_page_is_navigating_to_the_View_Fabric_Sheet_on_OnClick_the_Cancel_button_in_the_Print_Form()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5254677700,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Verify whether the Print button is clickable",
+            "match": {
+              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_Print_button_is_clickable()"
             },
             "keyword": "Then "
           }
@@ -194,7 +312,7 @@
             "name": "@IPOadding"
           },
           {
-            "name": "@IPOList"
+            "name": "@ViewFabricSheet"
           }
         ]
       }
@@ -203,14 +321,14 @@
     "description": "",
     "id": "creating-an-ipo-for-a-confirmed-style",
     "keyword": "Feature",
-    "uri": "file:Features/IPO%20List.feature",
+    "uri": "file:Features/ViewFabricSheet.feature",
     "tags": [
       {
         "name": "@IPOadding",
         "type": "Tag",
         "location": {
-          "line": 2,
-          "column": 3
+          "line": 1,
+          "column": 1
         }
       }
     ]

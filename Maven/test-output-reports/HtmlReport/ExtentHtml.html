@@ -44,7 +44,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -54,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 3, 2023 03:44:50 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 9, 2023 06:17:10 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -70,7 +69,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -83,7 +81,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@IPOadding</a></li>
-					<li><a href='#'>@IPOList</a></li>
+					<li><a href='#'>@ViewFabricSheet</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -124,10 +122,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -138,10 +136,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -154,10 +152,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='84.615%'><span class='strong'>11</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>22</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='15.385%'>2</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -177,11 +175,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Creating an IPO for a confirmed style</span>
-						<span class='test-time'>Nov 3, 2023 03:44:57 pm</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 9, 2023 06:17:16 pm</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -190,104 +188,103 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label'>@IPOadding</span>
-		<span class='category label'>@IPOList</span>
+		<span class='category label'>@ViewFabricSheet</span>
 	</div>
-	<span class='duration right label'>0h 0m 31s+24ms</span>
+	<span class='duration right label'>0h 1m 12s+5ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Creating an IPO</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Checking the details of the fabric sheet</div>
 	</div>
 	<ul class='steps'>
 		<li test-id='4' class='node given pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.Navigates_to_the_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Navigates to the Login page</div>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Navigate_to_the_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Navigate to the Login page</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='5' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.Enter_valid_Username_and_password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Enter valid Username and password</div>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Enter_valid_Username_and_Password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Enter valid Username and Password</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='6' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.Click_on_SignIn()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on SignIn</div>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_SignIn_in_the_login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on SignIn in the login page</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='7' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.Click_on_the_Woven_Modules()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on the Woven Modules</div>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_Woven_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Woven Module</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='8' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.Click_on_Audit_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Audit module</div>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_Merchandising_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Merchandising module</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='9' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.Click_on_IPO_List_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on IPO List module</div>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_View_Fabric_Sheet_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on View Fabric Sheet module</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='10' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.Verify_whether_the_page_is_navigated_to_IPO_List_page_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Verify whether the page is navigated to IPO List page or not</div>
+		<li test-id='10' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_Style_showhide_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Style show/hide button</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='11' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.Verify_whether_the_Edit_button_is_clickable()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Verify whether the Edit button is clickable</div>
+		<li test-id='11' class='node when pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Check_whether_the_respective_IPO_is_displayed_or_not_in_the_Menu_List()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Check whether the respective IPO is displayed or not in the Menu List</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='12' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.Verify_whether_page_is_navigating_to_Update_IPO_screen()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Verify whether page is navigating to Update IPO screen</div>
+		<li test-id='12' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Select_the_IPO_in_the_Menu_List()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Select the IPO in the Menu List</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='13' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.Verify_whether_the_previously_added_data_is_displayed_correctly_in_all_the_fields()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the previously added data is displayed correctly in all the fields</div>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Check_whether_the_page_is_navigated_to_the_View_Fabric_Sheet()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Check whether the page is navigated to the View Fabric Sheet</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='14' class='node when pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.Clear_all_the_data_in_any_one_of_the_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Clear all the data in any one of the field</div>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_the_History_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click on the History button</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='15' class='node then fail' status='fail'>
-			<div class="step-name" title="Stepdefinition1.IPOListSteps.click_on_the_update_button_in_UpdateIPO_form()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Then click on the update button in UpdateIPO form</div>
-			<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text()='Mandatory Fields Are Required With  Valid Data.']"}
-  (Session info: chrome=119.0.6045.106)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9656ad7bb178b55d6d87a2c54be01d15
-*** Element info: {Using=xpath, value=//h2[text()='Mandatory Fields Are Required With  Valid Data.']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.IPOListPages.Click_on_the_update_button_in_UpdateIPO_form(IPOListPages.java:483)
-	at Stepdefinition1.IPOListSteps.click_on_the_update_button_in_UpdateIPO_form(IPOListSteps.java:210)
-	at ✽.click on the update button in UpdateIPO form(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/IPO%20List.feature:60)
-</textarea>
+		<li test-id='15' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Check_whether_page_is_navigated_to_the_History_page_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Check whether page is navigated to the History page or not</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='17' class='node * fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:27)
-</textarea>
+		<li test-id='16' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_history_records_are_there_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the history records are there or not</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='17' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_page_is_navigated_to_the_PDF_form_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the page is navigated to the PDF form or not</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='18' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_Back_button_is_clickable()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the Back button is clickable</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='19' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Check_whether_page_is_navigated_to_the_View_Fabric_Sheet_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Check whether page is navigated to the View Fabric Sheet or not</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='20' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_are_displayed_or_not_on_clicking_the_Fabric_Details_link()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the added fabrics are displayed or not on clicking the Fabric Details link</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='21' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_Garment_Average_records_are_displayedornot_on_clicking_the_Garment_Average_link()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the added fabrics Garment Average records are displayed or not on clicking the Garment Average link</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='22' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_Quantity_Requirment_records_are_displayed_or_not_on_clicking_the_Quantity_Requirment_link()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the added fabrics Quantity Requirment records are displayed or not on clicking the Quantity Requirment link</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='23' class='node when pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_page_is_navigating_to_the_Print_form_on_clicking_the_View_For_Print_By_Fabric_Quality_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Quality button</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='24' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_page_is_navigating_to_the_View_Fabric_Sheet_on_OnClick_the_Cancel_button_in_the_Print_Form()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='25' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_Print_button_is_clickable()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the Print button is clickable</div>
+			<div class="node-step"></div>
 		</li>
 	</ul>
 </div>
@@ -335,13 +332,13 @@ Driver info: driver.version: RemoteWebDriver
 					<div class='category-heading'>
 						<span class='category-name'>@IPOadding</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -355,14 +352,14 @@ Driver info: driver.version: RemoteWebDriver
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 3, 2023 03:44:57 pm</td>
+										<td>Nov 9, 2023 06:17:16 pm</td>
 										<td class='linked' test-id='1'>Creating an IPO for a confirmed style</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 3, 2023 03:44:57 pm</td>
-										<td class='linked' test-id='2'>Creating an IPO</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Nov 9, 2023 06:17:16 pm</td>
+										<td class='linked' test-id='2'>Checking the details of the fabric sheet</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -371,15 +368,15 @@ Driver info: driver.version: RemoteWebDriver
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@IPOList</span>
+						<span class='category-name'>@ViewFabricSheet</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -393,9 +390,9 @@ Driver info: driver.version: RemoteWebDriver
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 3, 2023 03:44:57 pm</td>
-										<td class='linked' test-id='2'>Creating an IPO</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>Nov 9, 2023 06:17:16 pm</td>
+										<td class='linked' test-id='2'>Checking the details of the fabric sheet</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -411,127 +408,7 @@ Driver info: driver.version: RemoteWebDriver
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 3, 2023 03:45:21 pm</td>
-										<td class='linked' test-id='15'>Then click on the update button in UpdateIPO form</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text()='Mandatory Fields Are Required With  Valid Data.']"}
-  (Session info: chrome=119.0.6045.106)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.106, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9656ad7bb178b55d6d87a2c54be01d15
-*** Element info: {Using=xpath, value=//h2[text()='Mandatory Fields Are Required With  Valid Data.']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.IPOListPages.Click_on_the_update_button_in_UpdateIPO_form(IPOListPages.java:483)
-	at Stepdefinition1.IPOListSteps.click_on_the_update_button_in_UpdateIPO_form(IPOListSteps.java:210)
-	at ✽.click on the update button in UpdateIPO form(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/IPO%20List.feature:60)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.NoSuchSessionException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 3, 2023 03:45:28 pm</td>
-										<td class='linked' test-id='17'>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.222', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:27)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -551,25 +428,25 @@ Driver info: driver.version: RemoteWebDriver
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>13</div>
+					<div class='panel-lead'>22</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 3, 2023 03:44:50 pm</div>
+					<div class='panel-lead'>Nov 9, 2023 06:17:10 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 3, 2023 03:45:28 pm</div>
+			 		<div class='panel-lead'>Nov 9, 2023 06:18:30 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 38s+525ms</div>
+					<div class='panel-lead'>0h 1m 20s+509ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -586,20 +463,20 @@ Driver info: driver.version: RemoteWebDriver
 						</tr>
 						<tr>
 							<td>@IPOadding</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									50%
 							</td>
 						</tr>
 						<tr>
-							<td>@IPOList</td>
-							<td>0</td>
+							<td>@ViewFabricSheet</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -614,38 +491,38 @@ Driver info: driver.version: RemoteWebDriver
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
-				grandChildCount: 13,
-				passGrandChild: 11,
-				failGrandChild: 2,
+				exceptionsChild: 0,
+				grandChildCount: 22,
+				passGrandChild: 22,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 2,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Creating an IPO for a confirmed style":31.024
+			        "Creating an IPO for a confirmed style":72.005
 			};
 		</script>
 	

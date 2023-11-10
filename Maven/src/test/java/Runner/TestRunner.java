@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 				  features = "Features",
 				  monochrome = true,
 
-		          tags ="@IPOList")
+		          tags ="@ViewFabricSheet")
 
 public class TestRunner {
 	

@@ -151,7 +151,7 @@ public class IPOListSteps {
 	}
 	@Then ("^Click in the Assigned Month and Year field$")
 	public void Click_in_the_Assigned_Month_and_Year_field() {
-		IPOl.Click_in_the_Assigned_Month_and_year_field();
+		IPOl.Click_in_the_Assigned_Month_and_Year_field();
 	}
 	@Then ("^Select the Month from the month picker$")
 	public void Select_the_Month_from_the_month_picker() throws Throwable {
@@ -212,6 +212,22 @@ public class IPOListSteps {
 	@And ("^Check whether the mandatory validation msg is displayed or not$")
 	public void Check_whether_the_mandatory_validation_msg_is_displayed_or_not() throws Throwable {
 		IPOl.Check_whether_the_mandatory_validation_msg_is_displayed_or_not();
+	}
+	@And ("^To verify whether the Delete button is clickable or not$")
+	public void To_verify_whether_the_Delete_button_is_clickable_or_not() throws Throwable {
+		IPOl.To_verify_whether_the_Delete_button_is_clickable_or_not();
+	}
+	@Then ("^Verifying the Delete toaster msg$")
+	public void Verifying_the_Delete_toaster_msg() throws Throwable {
+		IPOl.Verifying_the_Delete_toaster_msg();
+	}
+	@When ("^Clicked on No button in the toaster msg$")
+	public void Clicked_on_No_button_in_the_toaster_msg() throws Throwable {
+		IPOl.Clicked_on_No_button_in_the_toaster_msg();
+	}
+	@When ("^Clicked on Yes button in the toaster msg$")
+	public void Clicked_on_Yes_button_in_the_toaster_msg() throws Throwable {
+		IPOl.Clicked_on_Yes_button_in_the_toaster_msg();
 	}
 
 	  
