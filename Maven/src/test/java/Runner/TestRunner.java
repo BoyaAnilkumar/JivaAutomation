@@ -15,7 +15,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 
-		          tags ="@NEWIPO")
+		          tags ="@RFS")
 
 
 public class TestRunner {
