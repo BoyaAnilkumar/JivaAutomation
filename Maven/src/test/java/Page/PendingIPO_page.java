@@ -16,7 +16,7 @@ public class PendingIPO_page extends DriverFactory {
 	Date currentDate = new Date();
 	SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 	String formattedDate = dateFormat.format(currentDate);
-
+	
 	Utilities utilities = new Utilities();
 
 //Login credentials of Audit Manager
@@ -24,7 +24,7 @@ public class PendingIPO_page extends DriverFactory {
 	By Password = By.xpath("//input[@name='password']");
 	By SignIn = By.xpath("//button[text()='Sign In']");
 
-//Navigate to Pending IPO list screen
+//Navigate to Pending IPO list screen 
 	By Woven = By.xpath("//span[text()='Woven / knit']");
 	By AuditModule = By.xpath("(//span[text()='Audit '])[1]");
 	By PendingIPOlist = By.xpath("(//a[text()='Pending IPO List'])[1]");
@@ -37,26 +37,13 @@ public class PendingIPO_page extends DriverFactory {
 	By BuyerStyle = By.xpath("//input[@formcontrolname='buyerStyleName']");
 	By IPONo = By.xpath("//input[@formcontrolname='ipoNumber']");
 	By Buyer = By.xpath("//label[text()='Buyer']/..//input[@class='form-control ng-untouched ng-pristine ng-valid']");
-
-
-
-
-
-
-
 	
-	By ProdMerchant = By.xpath("//input[@placeholder='Search Name']");
-	By SelectProdMerchant = By.xpath("//span[text()='Lavanya K']");
-	By POqty = By.xpath("//label[text()='PO Qty']/..//input[@class='form-control ng-untouched ng-pristine ng-valid']");
-	By IPOPer = By.xpath("//div[@class='form-group col-md-3']/..//input[@placeholder='Enter %']");
-	By Assignedmonth = By.xpath("//input[@placeholder='Select Month']");
-	By Selectmonth = By.xpath("//span[text()=' Nov ']");
-	By Exfactory = By.xpath("//label[text()='Exfactory Date']/..//input[@id='date']");
-	By Checkbox = By.xpath("//input[@id='flexCheckDefault']");
-	By Cancelbutton = By.xpath("//button[@class='btn btn-md btn-danger mr-2']");
-	By Savebutton = By.xpath("//button[@class='btn btn-md btn-primary px-5 ng-star-inserted']");
-
-
+	
+	
+	
+	
+	
+	
 	public void Login_with_Audit_Manager_credentials_in_Login_page() throws Throwable {
 		driver.get(prop.getProperty("url"));
 		new WebDriverWait(driver, 10);
@@ -137,7 +124,7 @@ public class PendingIPO_page extends DriverFactory {
 	}
 
 	public void Verify_whether_the_current_date_is_displaying_for_IPO_date_field_or_not() {
-
+		
 		WebElement ipodate = driver.findElement(IPOdate);
 		String currentDate = ipodate.getAttribute(formattedDate);
 		if(ipodate.isDisplayed()) {
@@ -158,9 +145,9 @@ public class PendingIPO_page extends DriverFactory {
 	}
 
 	public void Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not() throws Throwable {
-
-
-
+		
+		
+		 
 		WebElement IPOno = driver.findElement(IPONo);
 		String Screen = IPOno.getText();
 		if(IPOno.isDisplayed()) {
@@ -168,19 +155,18 @@ public class PendingIPO_page extends DriverFactory {
 		}else {
 			driver.findElement(IPONo).sendKeys("AutoIPO");
 		}
-
+		
 	}
 
 	public void Enter_IPO_number_in_IPO_field() throws Throwable {
 		utilities.webDriverWait(driver, IPONo);
 		 driver.findElement(IPONo).sendKeys("AutoIPOs");
 		 utilities.MinimumWait(driver);
-
+		 
 	}
 
 
 	public void Verify_Buyer_is_prepopulated_or_not() {
-
 		WebElement Buyer1 = driver.findElement(Buyer);
 		String Screen = Buyer1.getText();
 		if(Buyer1.isDisplayed()) {
@@ -188,98 +174,19 @@ public class PendingIPO_page extends DriverFactory {
 		}else {
 			System.out.println("Buyer Name is not displayed: "  +  Screen);
 		}
-
+		
 		WebDriverWait wait = new WebDriverWait(driver, 10); // Adjust the timeout as needed
+
 	    WebElement buyerElement = wait.until(ExpectedConditions.visibilityOfElementLocated(Buyer));
 
-	    if (buyerElement.isDisplayed()) {
-	        System.out.println("Buyer name is displayed: " + buyerElement);
+	    String buyerName = buyerElement.getText();
+
+	    if (!buyerName.isEmpty()) {
+	        System.out.println("Buyer name is displayed: " + buyerName);
 	    } else {
 	        System.out.println("Buyer Name is not displayed");
 	    }
 	}
-
-
-	public void Insert_and_select_Production_Merchant() throws Throwable {
-		utilities.webDriverWait(driver, ProdMerchant);
-		driver.findElement(ProdMerchant).sendKeys("Lavanya");
-		utilities.MinimumWait(driver);
-//		Robot r = new Robot();
-//		r.keyPress(KeyEvent.VK_DOWN);
-//		Thread.sleep(2000);
 		
-		driver.findElement(SelectProdMerchant).click();
-		utilities.MinimumWait(driver);
-		
-		
-
-	}
-
-	public void Verify_the_PO_qty_is_prepopulated_or_not() throws Throwable {
-	
-		WebElement POQty = driver.findElement(POqty);
-		boolean Int = POQty.isDisplayed();
-		if(POQty.isDisplayed()) {
-			System.out.println("Displaying PO qty : " + Int);
-		}else {
-			driver.findElement(POqty).sendKeys("160");
-		}
-
-		
-	}
-	
-	public void Enter_IPO_qty_in_text_field() throws Throwable {
-		utilities.webDriverWait(driver, IPOPer);
-		driver.findElement(IPOPer).sendKeys("10");
-		utilities.MinimumWait(driver);
-		
-	}
-
-
-	public void Select_Assigned_Month_Year() throws Throwable {
-		utilities.webDriverWait(driver, Assignedmonth);
-		driver.findElement(Assignedmonth).click();
-		utilities.MinimumWait(driver);
-		
-		driver.findElement(Selectmonth).click();
-		
-	}
-
-	public void verify_whether_the_exfactory_is_prepopulated_or_not() {
-		WebElement Exfac = driver.findElement(Exfactory);
-		boolean date = Exfac.isDisplayed();
-		if(Exfac.isDisplayed()) {
-			System.out.println("Exfactory is prepopulated: " + date);
-		}else {
-			System.out.println("Exfactory is not prepopulated");
-		}
-		
-	}
-
-	public void Disable_the_Active_checkbox() throws Throwable {
-		utilities.webDriverWait(driver, Checkbox);
-		driver.findElement(Checkbox).click();
-		utilities.MinimumWait(driver);
-		//Enable the checkbox
-		driver.findElement(Checkbox).click();
-		utilities.MediumWait(driver);
-	}
-
-	public void Click_on_cancel_button() throws Throwable {
-		utilities.webDriverWait(driver, Cancelbutton);
-		driver.findElement(Cancelbutton).click();
-		utilities.MinimumWait(driver);
-		
-	}
-
-	public void Click_the_Save_button() throws Throwable {
-		
-		utilities.webDriverWait(driver, Savebutton);
-		driver.findElement(Savebutton).click();
-		utilities.MinimumWait(driver);
-		
-		
-	}
-	
 	}
 

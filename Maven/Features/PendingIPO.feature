@@ -15,12 +15,4 @@ And Verify whether the current date is displaying for IPO date field or not
 And verify whether the Buyer Style is prepopulated or not 
 And Verify whether the IPO field is prepopulated with data or not 
 And Enter IPO number in IPO field 
-#And Verify Buyer is prepopulated or not 
-And Insert and select Production Merchant
-And Verify the PO qty is prepopulated or not
-And Enter IPO qty in text field
-Then Select Assigned Month Year
-And verify whether the exfactory is prepopulated or not
-Then Disable the Active checkbox
-And Click on cancel button
-And Click the Save button
+And Verify Buyer is prepopulated or not 

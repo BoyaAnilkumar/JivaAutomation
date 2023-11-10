@@ -1,4 +1,3 @@
-
 package Stepdefinition1;
 
 import Page.IPOListPages;
@@ -9,7 +8,7 @@ import io.cucumber.java.en.When;
 
 public class IPOListSteps {
 	IPOListPages IPOl = new IPOListPages();
-
+	
 	@Given ("^Navigates to the Login page$")
 	public void Navigates_to_the_Login_page() {
 		IPOl.Navigates_to_the_Login_page();
@@ -18,10 +17,10 @@ public class IPOListSteps {
 	public void Enter_valid_Username_and_password() throws Throwable {
 		IPOl.Enter_valid_Username_and_password();
 	}
-//	@And ("^Click on SignIn$")
-//	public void Click_on_SignIn() {
-//		IPOl.Click_on_SignIn();
-//	}
+	@And ("^Click on SignIn$")
+	public void Click_on_SignIn() {
+		IPOl.Click_on_SignIn();
+	}
 	@Then ("^Click on the Woven Modules$")
 	public void Click_on_the_Woven_Modules() throws Throwable {
 		IPOl.Click_on_the_Woven_Modules();
@@ -106,7 +105,6 @@ public class IPOListSteps {
 	public void Clicked_on_Add_IPO_button() throws Throwable {
 		IPOl.Clicked_on_Add_IPO_button();
 	}
-
 	@And ("^Verify whether the page is navigating to the Add IPO screen or not$")
 	public void Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not() {
 		IPOl.Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not();
@@ -153,7 +151,7 @@ public class IPOListSteps {
 	}
 	@Then ("^Click in the Assigned Month and Year field$")
 	public void Click_in_the_Assigned_Month_and_Year_field() {
-		IPOl.Click_in_the_Assigned_Month_and_year_field();
+		IPOl.Click_in_the_Assigned_Month_and_Year_field();
 	}
 	@Then ("^Select the Month from the month picker$")
 	public void Select_the_Month_from_the_month_picker() throws Throwable {
@@ -183,6 +181,55 @@ public class IPOListSteps {
 	public void Verify_the_information_tags_data_on_mouse_hover() throws Throwable {
 		IPOl.Verify_the_information_tags_data_on_mouse_hover();
 	}
+	@Given ("^Verifying the IPO List grid headers and Sorting$")
+	public void Verifying_the_IPO_List_grid_headers_and_Sorting() throws Throwable {
+		IPOl.Verifying_the_IPO_List_grid_headers_and_Sorting();
+	}
+	@And ("^Verify whether the Expansion button is clickable or not for an IPO$")
+	public void Verify_whether_the_Expansion_button_is_clickable_or_not_for_an_IPO() throws Throwable {
+		IPOl.Verify_whether_the_Expansion_button_is_clickable_or_not_for_an_IPO();
+	}
+	@And ("^Verify whether the Edit button is clickable$")
+	public void Verify_whether_the_Edit_button_is_clickable() throws Throwable {
+		IPOl.Verify_whether_the_Edit_button_is_clickable();
+	}
+	@And ("^Verify whether page is navigating to Update IPO screen$")
+	public void Verify_whether_page_is_navigating_to_Update_IPO_screen() {
+		IPOl.Verify_whether_page_is_navigating_to_Update_IPO_screen();
+	}
+	@Then ("^Verify whether the previously added data is displayed correctly in all the fields$")
+	public void Verify_whether_the_previously_added_data_is_displayed_correctly_in_all_the_fields() {
+		IPOl.Verify_whether_the_previously_added_data_is_displayed_correctly_in_all_the_fields();
+	}
+	@When ("^Clear all the data in any one of the field$")
+	public void Clear_all_the_data_in_any_one_of_the_field() throws Throwable {
+		IPOl.Clear_all_the_data_in_any_one_of_the_field();
+	}
+	@Then ("^click on the update button in UpdateIPO form$")
+	public void click_on_the_update_button_in_UpdateIPO_form() throws Throwable {
+		IPOl.Click_on_the_update_button_in_UpdateIPO_form();
+	}
+	@And ("^Check whether the mandatory validation msg is displayed or not$")
+	public void Check_whether_the_mandatory_validation_msg_is_displayed_or_not() throws Throwable {
+		IPOl.Check_whether_the_mandatory_validation_msg_is_displayed_or_not();
+	}
+	@And ("^To verify whether the Delete button is clickable or not$")
+	public void To_verify_whether_the_Delete_button_is_clickable_or_not() throws Throwable {
+		IPOl.To_verify_whether_the_Delete_button_is_clickable_or_not();
+	}
+	@Then ("^Verifying the Delete toaster msg$")
+	public void Verifying_the_Delete_toaster_msg() throws Throwable {
+		IPOl.Verifying_the_Delete_toaster_msg();
+	}
+	@When ("^Clicked on No button in the toaster msg$")
+	public void Clicked_on_No_button_in_the_toaster_msg() throws Throwable {
+		IPOl.Clicked_on_No_button_in_the_toaster_msg();
+	}
+	@When ("^Clicked on Yes button in the toaster msg$")
+	public void Clicked_on_Yes_button_in_the_toaster_msg() throws Throwable {
+		IPOl.Clicked_on_Yes_button_in_the_toaster_msg();
+	}
+
+	  
 
 }
-
