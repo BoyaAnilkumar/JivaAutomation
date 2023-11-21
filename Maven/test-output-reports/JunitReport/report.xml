@@ -1,32 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.198"/>
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="79.914">
-    <testcase classname="Creating an IPO for a confirmed style" name="Checking the details of the fabric sheet" time="79.47">
-        <system-out><![CDATA[Given Navigate to the Login page............................................passed
-Then Enter valid Username and Password......................................passed
-And Click on SignIn in the login page.......................................passed
-Then Click on Woven Module..................................................passed
-Then Click on Merchandising module..........................................passed
-Then Click on View Fabric Sheet module......................................passed
-Then Click on Style show/hide button........................................passed
-When Check whether the respective IPO is displayed or not in the Menu List..passed
-Then Select the IPO in the Menu List........................................passed
-Then Check whether the page is navigated to the View Fabric Sheet...........passed
-When Click on the History button............................................passed
-Then Check whether page is navigated to the History page or not.............passed
-Then Verify whether the history records are there or not....................passed
-Then Verify whether the page is navigated to the PDF form or not............passed
-Then Verify whether the Back button is clickable............................passed
-And Check whether page is navigated to the View Fabric Sheet or not.........passed
-Then Verify whether the added fabrics are displayed or not on clicking the Fabric Details link.passed
-Then Verify whether the added fabrics Garment Average records are displayed or not on clicking the Garment Average link.passed
-Then Verify whether the added fabrics Quantity Requirment records are displayed or not on clicking the Quantity Requirment link.passed
-When Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Quality button.passed
-Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form.passed
-Then Verify whether the Print button is clickable...........................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="47.577">
+    <testcase classname="Creating the expected PD Orders" name="Create Expected New PD order" time="47.34">
+        <system-out><![CDATA[Given Login with Senior PD merchant credentials in Login page...............passed
+Then Click on Woven.........................................................passed
+And Click on PD Module to view the menu in PD Module........................passed
+Then Select the PD Orders from the menu of PD Module........................passed
+And Click on Add button.....................................................passed
+And Select Month and Year from calendar.....................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
->>>>>>> refs/remotes/origin/main

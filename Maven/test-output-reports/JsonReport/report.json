@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-11-09T12:47:11.184Z",
+        "start_timestamp": "2023-11-21T12:30:02.945Z",
         "before": [
           {
             "result": {
-              "duration": 5628298300,
+              "duration": 5118432500,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Checking the details of the fabric sheet",
+        "line": 5,
+        "name": "Create Expected New PD order",
         "description": "",
-        "id": "creating-an-ipo-for-a-confirmed-style;checking-the-details-of-the-fabric-sheet",
+        "id": "creating-the-expected-pd-orders;create-expected-new-pd-order",
         "after": [
           {
             "result": {
-              "duration": 1675653900,
+              "duration": 1358118500,
               "status": "passed"
             },
             "match": {
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 995900,
+              "duration": 997700,
               "status": "passed"
             },
             "match": {
@@ -44,287 +44,95 @@
         "steps": [
           {
             "result": {
-              "duration": 3925374500,
+              "duration": 7615540400,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Navigate to the Login page",
+            "line": 6,
+            "name": "Login with Senior PD merchant credentials in Login page",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Navigate_to_the_Login_page()"
+              "location": "Stepdefinition1.PDOrders_Steps.Login_with_Senior_PD_merchant_credentials_in_Login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 350959900,
+              "duration": 3163801500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on Woven",
+            "match": {
+              "location": "Stepdefinition1.PDOrders_Steps.Click_on_woven()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3151348300,
               "status": "passed"
             },
             "line": 8,
-            "name": "Enter valid Username and Password",
+            "name": "Click on PD Module to view the menu in PD Module",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Enter_valid_Username_and_Password()"
+              "location": "Stepdefinition1.PDOrders_Steps.Click_on_PD_Module_to_view_the_menu_in_PD_Module()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 64000400,
+              "duration": 3371570700,
               "status": "passed"
             },
             "line": 9,
-            "name": "Click on SignIn in the login page",
+            "name": "Select the PD Orders from the menu of PD Module",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_SignIn_in_the_login_page()"
+              "location": "Stepdefinition1.PDOrders_Steps.Select_the_PD_Orders_from_the_menu_of_PD_Module()"
             },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5358803300,
+              "duration": 3188172600,
               "status": "passed"
             },
             "line": 10,
-            "name": "Click on Woven Module",
+            "name": "Click on Add button",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_Woven_Module()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3258127400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Click on Merchandising module",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_Merchandising_module()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3274107600,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Click on View Fabric Sheet module",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_View_Fabric_Sheet_module()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3246038800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Click on Style show/hide button",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_Style_showhide_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3170629400,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "Check whether the respective IPO is displayed or not in the Menu List",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_the_respective_IPO_is_displayed_or_not_in_the_Menu_List()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7426435900,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Select the IPO in the Menu List",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Select_the_IPO_in_the_Menu_List()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3178444300,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Check whether the page is navigated to the View Fabric Sheet",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_the_page_is_navigated_to_the_View_Fabric_Sheet()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3249101700,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Click on the History button",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_the_History_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3234742400,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Check whether page is navigated to the History page or not",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_page_is_navigated_to_the_History_page_or_not()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3299723300,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Verify whether the history records are there or not",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_history_records_are_there_or_not()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4089818300,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "Verify whether the page is navigated to the PDF form or not",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_page_is_navigated_to_the_PDF_form_or_not()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3252848500,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "Verify whether the Back button is clickable",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_Back_button_is_clickable()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3241514100,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Check whether page is navigated to the View Fabric Sheet or not",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_page_is_navigated_to_the_View_Fabric_Sheet_or_not()"
+              "location": "Stepdefinition1.PDOrders_Steps.Click_on_Add_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 75259600,
+              "duration": 20296100600,
               "status": "passed"
             },
-            "line": 29,
-            "name": "Verify whether the added fabrics are displayed or not on clicking the Fabric Details link",
+            "line": 13,
+            "name": "Select Month and Year from calendar",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_are_displayed_or_not_on_clicking_the_Fabric_Details_link()"
+              "location": "Stepdefinition1.PDOrders_Steps.Select_Month_and_Year_from_calendar()"
             },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3199642100,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Verify whether the added fabrics Garment Average records are displayed or not on clicking the Garment Average link",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_Garment_Average_records_are_displayedornot_on_clicking_the_Garment_Average_link()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3236385600,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "Verify whether the added fabrics Quantity Requirment records are displayed or not on clicking the Quantity Requirment link",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_Quantity_Requirment_records_are_displayed_or_not_on_clicking_the_Quantity_Requirment_link()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3299622000,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Quality button",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_page_is_navigating_to_the_Print_form_on_clicking_the_View_For_Print_By_Fabric_Quality_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3350195400,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_page_is_navigating_to_the_View_Fabric_Sheet_on_OnClick_the_Cancel_button_in_the_Print_Form()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5254677700,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "Verify whether the Print button is clickable",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_Print_button_is_clickable()"
-            },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@IPOadding"
+            "name": "@FeatureGroup_Requirement"
           },
           {
-            "name": "@ViewFabricSheet"
+            "name": "@CreatePDorders"
           }
         ]
       }
     ],
-    "name": "Creating an IPO for a confirmed style",
+    "name": "Creating the expected PD Orders",
     "description": "",
-    "id": "creating-an-ipo-for-a-confirmed-style",
+    "id": "creating-the-expected-pd-orders",
     "keyword": "Feature",
-    "uri": "file:Features/ViewFabricSheet.feature",
+    "uri": "file:Features/PDOrders.feature",
     "tags": [
       {
-        "name": "@IPOadding",
+        "name": "@FeatureGroup_Requirement",
         "type": "Tag",
         "location": {
           "line": 1,

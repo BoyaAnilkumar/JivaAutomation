@@ -53,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 9, 2023 06:17:10 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 21, 2023 06:00:02 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -80,8 +80,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@IPOadding</a></li>
-					<li><a href='#'>@ViewFabricSheet</a></li>
+					<li><a href='#'>@FeatureGroup_Requirement</a></li>
+					<li><a href='#'>@CreatePDorders</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -152,7 +152,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>22</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -177,8 +177,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Creating an IPO for a confirmed style</span>
-						<span class='test-time'>Nov 9, 2023 06:17:16 pm</span>
+						<span class='test-name'>Creating the expected PD Orders</span>
+						<span class='test-time'>Nov 21, 2023 06:00:08 pm</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -190,100 +190,36 @@
 </div>
 <div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label'>@IPOadding</span>
-		<span class='category label'>@ViewFabricSheet</span>
+		<span class='category label'>@FeatureGroup_Requirement</span>
+		<span class='category label'>@CreatePDorders</span>
 	</div>
-	<span class='duration right label'>0h 1m 12s+5ms</span>
+	<span class='duration right label'>0h 0m 40s+756ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Checking the details of the fabric sheet</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Create Expected New PD order</div>
 	</div>
 	<ul class='steps'>
 		<li test-id='4' class='node given pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Navigate_to_the_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Navigate to the Login page</div>
+			<div class="step-name" title="Stepdefinition1.PDOrders_Steps.Login_with_Senior_PD_merchant_credentials_in_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Login with Senior PD merchant credentials in Login page</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='5' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Enter_valid_Username_and_Password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Enter valid Username and Password</div>
+			<div class="step-name" title="Stepdefinition1.PDOrders_Steps.Click_on_woven()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Woven</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='6' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_SignIn_in_the_login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on SignIn in the login page</div>
+			<div class="step-name" title="Stepdefinition1.PDOrders_Steps.Click_on_PD_Module_to_view_the_menu_in_PD_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on PD Module to view the menu in PD Module</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='7' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_Woven_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Woven Module</div>
+			<div class="step-name" title="Stepdefinition1.PDOrders_Steps.Select_the_PD_Orders_from_the_menu_of_PD_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Select the PD Orders from the menu of PD Module</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='8' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_Merchandising_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Merchandising module</div>
+		<li test-id='8' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PDOrders_Steps.Click_on_Add_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Add button</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='9' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_View_Fabric_Sheet_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on View Fabric Sheet module</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='10' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_Style_showhide_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Style show/hide button</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='11' class='node when pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Check_whether_the_respective_IPO_is_displayed_or_not_in_the_Menu_List()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Check whether the respective IPO is displayed or not in the Menu List</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='12' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Select_the_IPO_in_the_Menu_List()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Select the IPO in the Menu List</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='13' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Check_whether_the_page_is_navigated_to_the_View_Fabric_Sheet()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Check whether the page is navigated to the View Fabric Sheet</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='14' class='node when pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Click_on_the_History_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Click on the History button</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='15' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Check_whether_page_is_navigated_to_the_History_page_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Check whether page is navigated to the History page or not</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='16' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_history_records_are_there_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the history records are there or not</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='17' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_page_is_navigated_to_the_PDF_form_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the page is navigated to the PDF form or not</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='18' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_Back_button_is_clickable()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the Back button is clickable</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='19' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Check_whether_page_is_navigated_to_the_View_Fabric_Sheet_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Check whether page is navigated to the View Fabric Sheet or not</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='20' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_are_displayed_or_not_on_clicking_the_Fabric_Details_link()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the added fabrics are displayed or not on clicking the Fabric Details link</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='21' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_Garment_Average_records_are_displayedornot_on_clicking_the_Garment_Average_link()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the added fabrics Garment Average records are displayed or not on clicking the Garment Average link</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='22' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_Quantity_Requirment_records_are_displayed_or_not_on_clicking_the_Quantity_Requirment_link()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the added fabrics Quantity Requirment records are displayed or not on clicking the Quantity Requirment link</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='23' class='node when pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_page_is_navigating_to_the_Print_form_on_clicking_the_View_For_Print_By_Fabric_Quality_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Quality button</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='24' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_page_is_navigating_to_the_View_Fabric_Sheet_on_OnClick_the_Cancel_button_in_the_Print_Form()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='25' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_Print_button_is_clickable()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Verify whether the Print button is clickable</div>
+		<li test-id='9' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.PDOrders_Steps.Select_Month_and_Year_from_calendar()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select Month and Year from calendar</div>
 			<div class="node-step"></div>
 		</li>
 	</ul>
@@ -330,7 +266,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@IPOadding</span>
+						<span class='category-name'>@FeatureGroup_Requirement</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -352,13 +288,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 9, 2023 06:17:16 pm</td>
-										<td class='linked' test-id='1'>Creating an IPO for a confirmed style</td>
+										<td>Nov 21, 2023 06:00:08 pm</td>
+										<td class='linked' test-id='1'>Creating the expected PD Orders</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 9, 2023 06:17:16 pm</td>
-										<td class='linked' test-id='2'>Checking the details of the fabric sheet</td>
+										<td>Nov 21, 2023 06:00:08 pm</td>
+										<td class='linked' test-id='2'>Create Expected New PD order</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -368,7 +304,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@ViewFabricSheet</span>
+						<span class='category-name'>@CreatePDorders</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -390,8 +326,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 9, 2023 06:17:16 pm</td>
-										<td class='linked' test-id='2'>Checking the details of the fabric sheet</td>
+										<td>Nov 21, 2023 06:00:08 pm</td>
+										<td class='linked' test-id='2'>Create Expected New PD order</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -428,25 +364,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>22</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 9, 2023 06:17:10 pm</div>
+					<div class='panel-lead'>Nov 21, 2023 06:00:02 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 9, 2023 06:18:30 pm</div>
+			 		<div class='panel-lead'>Nov 21, 2023 06:00:50 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 20s+509ms</div>
+					<div class='panel-lead'>0h 0m 47s+928ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -462,7 +398,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@IPOadding</td>
+							<td>@FeatureGroup_Requirement</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -471,7 +407,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@ViewFabricSheet</td>
+							<td>@CreatePDorders</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -508,8 +444,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 22,
-				passGrandChild: 22,
+				grandChildCount: 6,
+				passGrandChild: 6,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -522,7 +458,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Creating an IPO for a confirmed style":72.005
+			        "Creating the expected PD Orders":40.756
 			};
 		</script>
 	
