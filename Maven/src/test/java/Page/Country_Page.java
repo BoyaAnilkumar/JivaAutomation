@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package Page;
 
 import org.openqa.selenium.By;
@@ -266,12 +266,16 @@ public class Country_Page extends DriverFactory{
 
 
 			}
+			
+
 			public void Search_the_Country_name() throws Throwable {
 			utilities.webDriverWait(driver, Search );
 			driver.findElement(Search).sendKeys("C7367");
 			utilities.MaximumWait(driver);
 			driver.findElement(Edit_1).click();
-=======
+			}
+}
+
 //package Page;
 //
 //import static org.junit.Assert.assertEquals;
@@ -534,7 +538,7 @@ public class Country_Page extends DriverFactory{
 //			public void Search_the_Country_name() throws Throwable {
 //			utilities.webDriverWait(driver, Search );
 //			driver.findElement(Search).sendKeys("C7367");
->>>>>>> refs/remotes/origin/main
+
 //			utilities.MaximumWait(driver);
 //			driver.findElement(Edit_1).click();
 ////			utilities.MaximumWait(driver);
