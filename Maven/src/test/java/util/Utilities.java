@@ -25,57 +25,57 @@ public class Utilities {
 	    {
 	        try {
 	                Thread.sleep(2000);
-	                boolean isPresent = driver.findElements(locator).size()>0;
-	                if (isPresent)
+	                Boolean isPresent = driver.findElements(locator).size()>0;
+	                if (isPresent) 
 	                {
 	                	if (driver.findElement(locator).isDisplayed() && driver.findElement(locator).isEnabled()) {
 	                		Thread.sleep(1000);
 	                        break;
 	                	}
 	                }
-	        	}
+	        	} 
 	        catch(Exception e) {
 	        }
 	        attempts++;
 	    }
     }
-
+	
 	public void MinimumWait(WebDriver driver) throws Throwable  {
         Thread.sleep(1000);
     }
-
+   
     public void MediumWait(WebDriver driver) throws Throwable  {
         Thread.sleep(2000);
     }
-
+    
     public void BatchProcessWait(WebDriver driver) throws Throwable  {
 		Thread.sleep(60*1000);
 	}
-
+	
 	public void WaitUntilRecordsMovedFromSimsToVault(WebDriver driver) throws Throwable  {
 		Thread.sleep(600*1000);
 	}
-
+	
 	public void MaximumWait(WebDriver driver) throws Throwable  {
 		Thread.sleep(3000);
 	}
-
+	
 	public void MaximumLongWait(WebDriver driver) throws Throwable  {
 		Thread.sleep(15000);
 	}
-
+	
 	public void PerformClickUsingJavaScriptExecutor(WebDriver driver,By locator) throws Throwable  {
 		WebElement ele = driver.findElement(locator);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("arguments[0].click()", ele);
 	}
-
+	
 	public static byte[] getByteScreenshot(WebDriver driver) throws IOException {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		byte[] fileContent = FileUtils.readFileToByteArray(src);
 		return fileContent;
 	}
-
+	
 	public void SelectByValueFromDropdown(WebDriver driver, By locator, String Value) throws Throwable {
 		WebElement dropdown = driver.findElement(locator);
     	Select s = new Select(dropdown);
@@ -83,7 +83,7 @@ public class Utilities {
     	l.size();
     	s.selectByValue(Value);
 	}
-
+	
 	public void WaitUntilPageIsLoaded(WebDriver driver) {
 		JavascriptExecutor j = (JavascriptExecutor)driver;
 	    if (j.executeScript("return document.readyState").toString().equals("complete")){

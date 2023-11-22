@@ -3,11 +3,19 @@
     "line": 2,
     "elements": [
       {
+<<<<<<< HEAD
         "start_timestamp": "2023-11-22T05:08:10.081Z",
+=======
+        "start_timestamp": "2023-11-21T12:30:02.945Z",
+>>>>>>> refs/remotes/origin/main
         "before": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 4311180200,
+=======
+              "duration": 5118432500,
+>>>>>>> refs/remotes/origin/main
               "status": "passed"
             },
             "match": {
@@ -16,12 +24,21 @@
           }
         ],
         "line": 5,
+<<<<<<< HEAD
         "name": "To Test the New Fabric Sheet screen",
+=======
+        "name": "Create Expected New PD order",
+>>>>>>> refs/remotes/origin/main
         "description": "",
+<<<<<<< HEAD
         "id": "feature-to-test-jiva-design-new-fabric-sheet-screen-functionality;to-test-the-new-fabric-sheet-screen",
+=======
+        "id": "creating-the-expected-pd-orders;create-expected-new-pd-order",
+>>>>>>> refs/remotes/origin/main
         "after": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 4958900,
               "status": "passed"
             },
@@ -32,11 +49,26 @@
           {
             "result": {
               "duration": 1257793700,
+=======
+              "duration": 1358118500,
+>>>>>>> refs/remotes/origin/main
               "status": "passed"
             },
             "match": {
               "location": "Stepdefinition1.Hooks.CloseBrowser()"
             }
+<<<<<<< HEAD
+=======
+          },
+          {
+            "result": {
+              "duration": 997700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)"
+            }
+>>>>>>> refs/remotes/origin/main
           }
         ],
         "type": "scenario",
@@ -44,10 +76,15 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 2234188900,
+=======
+              "duration": 7615540400,
+>>>>>>> refs/remotes/origin/main
               "status": "passed"
             },
             "line": 6,
+<<<<<<< HEAD
             "name": "User navigates to Login page",
             "match": {
               "location": "Stepdefinition1.Newfabricsheet_Steps.User_navigates_to_Login_page()"
@@ -614,28 +651,109 @@
             "name": "Click on the Submit button",
             "match": {
               "location": "Stepdefinition1.Newfabricsheet_Steps.Click_on_the_Submit_button()"
+=======
+            "name": "Login with Senior PD merchant credentials in Login page",
+            "match": {
+              "location": "Stepdefinition1.PDOrders_Steps.Login_with_Senior_PD_merchant_credentials_in_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3163801500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on Woven",
+            "match": {
+              "location": "Stepdefinition1.PDOrders_Steps.Click_on_woven()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3151348300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on PD Module to view the menu in PD Module",
+            "match": {
+              "location": "Stepdefinition1.PDOrders_Steps.Click_on_PD_Module_to_view_the_menu_in_PD_Module()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3371570700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Select the PD Orders from the menu of PD Module",
+            "match": {
+              "location": "Stepdefinition1.PDOrders_Steps.Select_the_PD_Orders_from_the_menu_of_PD_Module()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3188172600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on Add button",
+            "match": {
+              "location": "Stepdefinition1.PDOrders_Steps.Click_on_Add_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20296100600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Select Month and Year from calendar",
+            "match": {
+              "location": "Stepdefinition1.PDOrders_Steps.Select_Month_and_Year_from_calendar()"
+>>>>>>> refs/remotes/origin/main
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@FeatureGroup"
+            "name": "@FeatureGroup_Requirement"
           },
           {
+<<<<<<< HEAD
             "name": "@NewFabricSheet"
+=======
+            "name": "@CreatePDorders"
+>>>>>>> refs/remotes/origin/main
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "feature to test Jiva design New Fabric Sheet screen functionality",
+=======
+    "name": "Creating the expected PD Orders",
+>>>>>>> refs/remotes/origin/main
     "description": "",
+<<<<<<< HEAD
     "id": "feature-to-test-jiva-design-new-fabric-sheet-screen-functionality",
+=======
+    "id": "creating-the-expected-pd-orders",
+>>>>>>> refs/remotes/origin/main
     "keyword": "Feature",
+<<<<<<< HEAD
     "uri": "file:Features/NewFabricSheet.feature",
+=======
+    "uri": "file:Features/PDOrders.feature",
+>>>>>>> refs/remotes/origin/main
     "tags": [
       {
-        "name": "@FeatureGroup",
+        "name": "@FeatureGroup_Requirement",
         "type": "Tag",
         "location": {
           "line": 1,

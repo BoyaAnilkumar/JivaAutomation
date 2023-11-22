@@ -8,13 +8,26 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"pretty", "html:target/cucumber-html-report.html", "json:test-output-reports/JsonReport/report.json","junit:test-output-reports/JunitReport/report.xml"
-				               ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+				               ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
+<<<<<<< HEAD
 		          tags ="@NewFabricSheet")
+=======
+				  tags ="@CreatePDorders")
+
+
+>>>>>>> refs/remotes/origin/main
 
 public class TestRunner {
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> refs/remotes/origin/main
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/main

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="321.019">
     <testcase classname="feature to test Jiva design New Fabric Sheet screen functionality" name="To Test the New Fabric Sheet screen" time="320.541">
         <system-out><![CDATA[When User navigates to Login page...........................................passed
@@ -49,6 +50,16 @@ And Update the Applicable Combos............................................pass
 And Update the Garment Average Details......................................passed
 And Update the Quantity Requirment details..................................passed
 And Click on the Submit button..............................................passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="47.577">
+    <testcase classname="Creating the expected PD Orders" name="Create Expected New PD order" time="47.34">
+        <system-out><![CDATA[Given Login with Senior PD merchant credentials in Login page...............passed
+Then Click on Woven.........................................................passed
+And Click on PD Module to view the menu in PD Module........................passed
+Then Select the PD Orders from the menu of PD Module........................passed
+And Click on Add button.....................................................passed
+And Select Month and Year from calendar.....................................passed
+>>>>>>> refs/remotes/origin/main
 ]]></system-out>
     </testcase>
 </testsuite>
