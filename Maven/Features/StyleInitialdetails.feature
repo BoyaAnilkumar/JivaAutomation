@@ -28,22 +28,23 @@ Then User enters the username and password
  And Verify Buyer
  And Verify Season
  And Select File handover date
- #And Click on the Add combo button
- #Given Enter the data in Combo1
+ And Click on the Add combo button
+ Given Enter the data in Combo1
  #And Click on the Delete Icon1
- #And Enter the data in Combo2
+ And Enter the data in Combo2
  #And Click on the delete Icon2
- #And Click on the Add Garment type button
+ And Click on the Add Garment type button
  #And Click on the Delete Garment Icon1
  #And Click on the Delete garment Icon2
- #And Click on the Garment type field
- #And Select the Garment type
- #And Click on the Submit Order details button
+ And Click on the Garment type field
+ And Select the Garment type
+ And Click on the Submit Order details button
  #And Verify the Alert msg
- #And Verify the Saved msg
- And Verify whether the Combo field is prepopulated with data or not
- And Verify whether the Garment Size type field data is displayed or not 
+ And Verify the Saved msg
+ #And Verify whether the Combo field is prepopulated with data or not
+ #And Verify whether the Garment Size type field data is displayed or not 
 Given User enter the data in PO Qty field 
+And Enter the data in IPO% field
 And Click on the submit button
 And Verify the validation msg is displaying or not
  

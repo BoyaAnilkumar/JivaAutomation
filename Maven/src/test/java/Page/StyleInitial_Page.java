@@ -1,6 +1,6 @@
 package Page;
 
-	import java.text.SimpleDateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.openqa.selenium.By;
@@ -43,8 +43,8 @@ import util.Utilities;
 		    By Reset = By.xpath("//button[@class='btn btn-md btn-light btn-active-light-primary mr-2']");
 
 
-			By SelectIPO = By.xpath("//a[text()='IPO16/10 / Retro style']");
-			By IPO = By.xpath("//b[text()='IPO16/10']");
+			By SelectIPO = By.xpath("//div[@class='nav flex-column nav-pills ng-star-inserted']");
+			By IPO = By.xpath("//b[text()='New0987']");
 			By Style =By.xpath("//b[text()='Retro style']");
 			By Buyer = By.xpath("//b[text()='Spin ']");
 			By Season = By.xpath("//b[text()='Holiday 2022']");
@@ -58,7 +58,7 @@ import util.Utilities;
 			By DeleteG1 = By.xpath("(//span[@class='input-group-text bg-danger ng-star-inserted pointer'])[2]");
 			By DeleteC2 = By.xpath("(//span[@class='input-group-text bg-danger pointer ng-star-inserted'])[1]");
 			By DeleteG2 = By.xpath("(//span[@class='input-group-text bg-danger pointer ng-star-inserted'])[1]");
-			By SubmitOrderdetails = By.xpath("//button[@class='btn btn-md btn-primary btn-active-light-primary ng-star-inserted']");
+			By SubmitOrderdetails = By.xpath("(//button[@class='btn btn-md btn-primary btn-active-light-primary ng-star-inserted'])[1]");
 
 			By Garmenttypefield2 = By.xpath("(//select[@formcontrolname='garmentSizeTypeId'])[2]");
 			By SelectGarment2 = By.xpath("(//option[@value='73'])[2]");
@@ -72,7 +72,12 @@ import util.Utilities;
             By POQty2 = By.xpath("(//input[@placeholder='Enter PO Qty'])[2]");
             By POQty3 = By.xpath("(//input[@placeholder='Enter PO Qty'])[3]");
             By POQty4 = By.xpath("(//input[@placeholder='Enter PO Qty'])[4]");
-            By Submit = By.xpath("(//button[@class='btn btn-md btn-primary btn-active-light-primary ng-star-inserted'])[1]");
+            By IPO1 = By.xpath("(//input[@formcontrolname='ipoPercentage'])[1]");
+            By IPO2 = By.xpath("(//input[@formcontrolname='ipoPercentage'])[2]");
+            By IPO3 = By.xpath("(//input[@formcontrolname='ipoPercentage'])[3]");
+            By IPO4 = By.xpath("(//input[@formcontrolname='ipoPercentage'])[4]");
+            
+            By Submit = By.xpath("(//button[@class='btn btn-md btn-primary btn-active-light-primary ng-star-inserted'])[2]");
             By Yes_button = By.xpath("//button[@class='swal2-confirm swal2-styled']");
             By No_button = By.xpath("//button[@class='swal2-cancel swal2-styled']");
             By A_S = By.xpath("//h2[text()='IPO Order Quantity Details Saved Successfully']");	
@@ -155,12 +160,12 @@ import util.Utilities;
 				}
 				public void Select_the_status() throws Throwable {
 					utilities.webDriverWait(driver, SelectStatus_Com);
-					driver.findElement(SelectStatus_Com).click();
-					//driver.findElement(SelectStatus_NotCom).click();
+					//driver.findElement(SelectStatus_Com).click();
+					driver.findElement(SelectStatus_NotCom).click();
 				}
 				public void Search_the_IPO() throws Throwable {
 					utilities.webDriverWait(driver, SearchIPO);
-					driver.findElement(SearchIPO).sendKeys("IPO16/10");
+					driver.findElement(SearchIPO).sendKeys("New0987");
 					Thread.sleep(5000);
 					WebElement IPOname = driver.findElement(SearchIPO);
 					String ipon = IPOname.getAttribute("value");
@@ -182,13 +187,13 @@ import util.Utilities;
 				public void Select_IPO() throws Throwable {
 					utilities.webDriverWait(driver, SelectIPO );
 				    driver.findElement(SelectIPO).click();
-//				    driver.findElement(SubmitOrderdetails).click();
+				    driver.findElement(SubmitOrderdetails).click();
 
 				}
 				public void Verify_IPO_data() {
 	                WebElement AlertMsg = driver.findElement(IPO);
 					String IPO = AlertMsg.getText();
-					String expectedMessage = "IPO16";
+					String expectedMessage = "SWe212y3";
 					if (expectedMessage.equals(IPO)) {
 						System.out.println("Alert message is correct." + IPO);
 					} else {
@@ -244,8 +249,7 @@ import util.Utilities;
 					WebElement IPOname = driver.findElement(Combo1);
 					String ipon = IPOname.getAttribute("value");
 					System.out.println("Display the entered combo Name " + ipon);
-					
-					
+				
 				}
 				public void Click_on_the_Delete_Icon1() throws Throwable {
 				utilities.webDriverWait(driver, Deletec1);
@@ -253,7 +257,7 @@ import util.Utilities;
 				}
 				public void Enter_the_data_in_Combo2() throws Throwable {
 				utilities.webDriverWait(driver, Combo2);
-				driver.findElement(Combo2).sendKeys("CM2");
+				driver.findElement(Combo2).sendKeys("CM3");
 				Thread.sleep(5000);
 				WebElement IPOname = driver.findElement(Combo2);
 				String ipon = IPOname.getAttribute("value");
@@ -293,8 +297,8 @@ import util.Utilities;
 					utilities.webDriverWait(driver, SubmitOrderdetails);
 					driver.findElement(SubmitOrderdetails).click();
 					utilities.MediumWait(driver);
-					driver.findElement(Yes).click();
-					utilities.MediumWait(driver);
+//					driver.findElement(Yes).click();
+//					utilities.MediumWait(driver);
 				}
 				public void Verify_the_Alert_msg() throws Throwable {
                    
@@ -356,11 +360,11 @@ import util.Utilities;
 					utilities.MediumWait(driver);
 					
 					driver.findElement(POQty3).clear();
-				    driver.findElement(POQty3).sendKeys("4000");
+				    driver.findElement(POQty3).sendKeys("6000");
 				    utilities.MediumWait(driver);
 				    
 				    driver.findElement(POQty4).clear();
-				    driver.findElement(POQty4).sendKeys("3000");
+				    driver.findElement(POQty4).sendKeys("4000");
 				    utilities.MediumWait(driver);	
 				    
 				    WebElement DisplayValue = driver.findElement(Expected);
@@ -375,13 +379,31 @@ import util.Utilities;
 					
 				}
 
-	
+				public void Enter_the_data_in_IPO_field() throws Throwable {
+					utilities.webDriverWait(driver, POQty1);
+					driver.findElement(IPO1).clear();
+					driver.findElement(IPO1).sendKeys("4");
+					utilities.MediumWait(driver);
+					
+					driver.findElement(IPO2).clear();
+					driver.findElement(IPO2).sendKeys("5");
+					utilities.MediumWait(driver);
+					
+					driver.findElement(IPO3).clear();
+				    driver.findElement(IPO3).sendKeys("6");
+				    utilities.MediumWait(driver);
+				    
+				    driver.findElement(IPO4).clear();
+				    driver.findElement(IPO4).sendKeys("2");
+				    utilities.MediumWait(driver);	
+					
+				}
 				public void Click_on_the_submit_button() throws Throwable {
 					utilities.webDriverWait(driver, Submit);
 					driver.findElement(Submit).click();
 					utilities.MediumWait(driver);
-//					driver.findElement(Yes_button).click();
-//					utilities.MediumWait(driver);
+					driver.findElement(Yes_button).click();
+					utilities.MediumWait(driver);
 //					driver.findElement(No_button).click();
 //					 WebElement DisplayValue = driver.findElement(Expected);
 //					 String AF = DisplayValue.getText();
@@ -403,8 +425,8 @@ import util.Utilities;
 					}
 					
 				}
-
-
+				
+				
 
 	}
 

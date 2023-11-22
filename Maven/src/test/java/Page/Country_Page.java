@@ -92,22 +92,18 @@ public class Country_Page extends DriverFactory{
 
 		        utilities.MediumWait(driver);
 		        driver.findElement(C_Name).sendKeys("C73");
-<<<<<<< HEAD
-=======
+
 
 		        utilities.MediumWait(driver);
 
 		        driver.findElement(C_Name).sendKeys("C73");
 
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
+
+
+
 			}
-<<<<<<< HEAD
 
-
-
-
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 			public void Enter_the_data_in_Country_code_field() throws Throwable {
 				utilities.webDriverWait(driver, C_Code );
 				 driver.findElement(C_B).click();
@@ -180,27 +176,34 @@ public class Country_Page extends DriverFactory{
 			public void Update_the_Country_name() throws Throwable {
 				utilities.webDriverWait(driver, U_Countryname );
 				driver.findElement(U_Countryname).clear();
-				driver.findElement(U_Countryname).sendKeys("C7367");
+				utilities.MediumWait(driver);
+//				driver.findElement(update).click();
+
+	//			driver.findElement(U_Countryname).sendKeys("C7367");
 
 			}
 			public void Update_the_Country_code() throws Throwable {
      			utilities.webDriverWait(driver, U_countrycode );
 				driver.findElement(U_countrycode).clear();
-				driver.findElement(U_countrycode).sendKeys("AHSGE");
+				utilities.MediumWait(driver);
+//				driver.findElement(update).click();
+				//driver.findElement(U_countrycode).sendKeys("AHSGE");
 
 			}
 			public void Update_the_Select_Country() throws Throwable {
 				utilities.webDriverWait(driver, ClickCurrency );
 				driver.findElement(ClickCurrency).click();
-				utilities.MaximumWait(driver);
-				driver.findElement(Ucurrency).click();
+			
+			//	driver.findElement(Ucurrency).click();
 
 
 			}
 			public void Update_the_Conversion_Rate() throws Throwable {
 				utilities.webDriverWait(driver, Uconversionrate );
 				driver.findElement(Uconversionrate).clear();
-				driver.findElement(Uconversionrate).sendKeys("60");
+				utilities.MediumWait(driver);
+//				driver.findElement(update).click();
+//				driver.findElement(Uconversionrate).sendKeys("60");
 
 			}
 			public void Click_on_the_Update_button() throws Throwable {
