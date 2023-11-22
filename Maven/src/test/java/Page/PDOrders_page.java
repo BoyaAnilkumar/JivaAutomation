@@ -7,6 +7,7 @@ import java.util.Date;
 
 import org.joda.time.DateTime;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import util.DriverFactory;
 import util.Utilities;
@@ -21,27 +22,36 @@ public class PDOrders_page extends DriverFactory {
 	Utilities utilities = new Utilities();
 	
 	//Login Details and Select PD Orders
-		By username = By.xpath("//input[@id='userName']");
-		By password = By.xpath("//input[@id='userpassword']");
-		By SignIn   = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
-		By Woven = By. xpath ("//div[@class='nav_title']//span[text()='Woven / knit']");
-		By PD = By.xpath("//ul[@class='mm-collapse mm-show']/..//span[text()='PD ']");
-		By PDOrders =By.xpath("(//a[text()='PD Orders '])[1]");
+		By username 		= By.xpath("//input[@id='userName']");
+		By password 		= By.xpath("//input[@id='userpassword']");
+		By SignIn   		= By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
+		By Woven 			= By. xpath ("//div[@class='nav_title']//span[text()='Woven / knit']");
+		By PD 				= By.xpath("//ul[@class='mm-collapse mm-show']/..//span[text()='PD ']");
+		By PDOrders 		= By.xpath("(//a[text()='PD Orders '])[1]");
 		
 	//Create New PD order
-		By AddButton = By.xpath("//button[@class='btn btn-primary btn-sm shadow-sm float-right ng-star-inserted']");
-		By SrPDmerchant = By.xpath("//input[@placeholder='Search By Name/Email/Ph.no']");
-		By Buyer = By.xpath("//select[@class='form-control ng-untouched ng-pristine ng-invalid']");
+		By AddButton 		= By.xpath("//button[@class='btn btn-primary btn-sm shadow-sm float-right ng-star-inserted']");
+		By SrPDmerchant 	= By.xpath("//input[@placeholder='Search By Name/Email/Ph.no']");
+		By Buyer 			= By.xpath("//select[@class='form-control ng-untouched ng-pristine ng-invalid']");
 	
 	//Calendar
-		By MonthAndYear = By.xpath("//p-calendar[@placeholder='Select Month']");
-		By Previousicon = By.xpath("//span[@class='p-datepicker-prev-icon pi pi-chevron-left ng-tns-c81-33']");
-		By Nexticon = By.xpath("(//button[@type='button'])[3]");
-		By SelectMonth = By.xpath("//span[text()=' Jan ']");
-		By Expectedorderqty = By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-touched']");
+		By MonthAndYear 	= By.xpath("//p-calendar[@placeholder='Select Month']");
+		By Previousicon 	= By.xpath("//span[@class='p-datepicker-prev-icon pi pi-chevron-left ng-tns-c81-33']");
+		By Nexticon 		= By.xpath("(//button[@type='button'])[3]");
+		By SelectMonth 		= By.xpath("//span[text()=' Jan ']");
+		
+		
+		By Expectedorderqty = By.xpath("//input[@placeholder='Enter Expected Order Qty']");
+		By ApprPerPc 		= By.xpath("//input[@placeholder='Enter Appr. Per Pcs Cost']");
+		By Exchangerate 	= By.xpath("//input[@placeholder='Enter Exchange Rate']");
+		By costinINR		= By.xpath("(//input[@class='form-control ng-untouched ng-pristine ng-valid'])[1]");
+		By costincurrency	= By.xpath("(//input[@class='form-control ng-untouched ng-pristine ng-valid'])[2]");
+		By Activecheckbox 	= By.xpath("//input[@class='form-check-input ng-untouched ng-pristine ng-valid']");
+		By Savebutton		= By.xpath("//button[@class='btn btn-md btn-primary px-5 ng-star-inserted']");
+		By Cancelbutton		= By.xpath("(//button[@class='btn btn-md btn-danger btn-active-light-primary mr-2'])[1]");
 		
 			
-		
+	
 	public void Login_with_Senior_PD_merchant_credentials_in_Login_page() throws Throwable {
 		
 		driver.get(prop.getProperty("url"));
@@ -72,7 +82,7 @@ public class PDOrders_page extends DriverFactory {
 		driver.findElement(PDOrders).click();
 		
 	}
-
+//Adding New PD Order
 	public void Click_on_Add_button() throws Throwable {
 	
 		utilities.webDriverWait(driver, AddButton);
@@ -113,11 +123,50 @@ public class PDOrders_page extends DriverFactory {
 		
 	}
 
-	public void Enter_Expected_Order_Qty() {
+	public void Enter_Expected_Order_Qty() throws Throwable {
 		
-		utilities.webDriverWait(driver, AddButton);
+		utilities.webDriverWait(driver, Expectedorderqty);
+		driver.findElement(Expectedorderqty).sendKeys("5000");
+		utilities.MinimumWait(driver);
 		
 	}
+
+	public void Enter_Appr_Per_Pcs_cost() throws Throwable {
+		
+		utilities.webDriverWait(driver, ApprPerPc);
+		driver.findElement(ApprPerPc).sendKeys("20");
+		utilities.MinimumWait(driver);
+		
+	}
+
+	public void Enter_Exchange_Rate() throws Throwable {
+		
+		utilities.webDriverWait(driver, Exchangerate);
+		driver.findElement(Exchangerate).sendKeys("82");
+		utilities.MinimumWait(driver);
+		
+	}
+
+	public void verify_the_Total_Cost_in_INR() throws Throwable {
+		
+		utilities.webDriverWait(driver, costinINR);
+		WebElement TotalcostinINR = driver.findElement(costinINR);
+		String costinINR = TotalcostinINR.getAttribute("value");
+		System.out.println("Displaying the value: " + costinINR);
+		utilities.MinimumWait(driver);
+		
+	}
+
+	public void verify_the_Total_cost_in_Currency() throws Throwable {
+		
+		utilities.webDriverWait(driver, costincurrency);
+		WebElement TotalcostinCurrency = driver.findElement(costincurrency);
+		String costinCurrency = TotalcostinCurrency.getAttribute("value");
+		System.out.println("Displaying the value: " + costinCurrency);
+		utilities.MinimumWait(driver);
+		
+	}
+	
 	
 
 }

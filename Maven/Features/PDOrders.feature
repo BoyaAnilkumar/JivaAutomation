@@ -13,7 +13,12 @@ And Select Buyer from the dropdown list
 And Select Month and Year from calendar
 And Enter Expected Order Qty
 And Enter Appr Per Pcs cost
+#Then I should see the maxlength of the textfield is {int}
 And Enter Exchange Rate
 And verify the Total Cost in INR
 And verify the Total cost in Currency
+Then click on save button to save the expected pd order
 
+@updatePDOrders
+Scenario: Update the expected order which is displaying in the grid
+Given Click on Edit icon 
