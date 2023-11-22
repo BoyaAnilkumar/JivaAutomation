@@ -1,7 +1,10 @@
+<<<<<<< HEAD
+//
+=======
+>>>>>>> refs/remotes/origin/main
 //package Stepdefinition1;
 //
 //import Page.Country_Page;
-//import Page.Stylepage;
 //import io.cucumber.java.en.And;
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -15,8 +18,13 @@
 //		
 //		@When("^User navigates to Login page$")
 //	    	public void User_navigates_to_Login_page() throws Throwable {
+<<<<<<< HEAD
+//			Country_Page.User_navigates_to_Login_page();
+//
+=======
 //		     Country_Page.User_navigates_to_Login_page();
 //	    		
+>>>>>>> refs/remotes/origin/main
 //	      }
 //
 //		@Then("^User enters the username and password$")
@@ -150,4 +158,9 @@
 //		   public void Search_the_Country_name() throws Throwable{
 //			   Country_Page.Search_the_Country_name();
 //}
+<<<<<<< HEAD
 //}
+//
+=======
+//}
+>>>>>>> refs/remotes/origin/main
