@@ -96,10 +96,89 @@ public class PDOrders_Steps {
 		
 	}
 	
+	@Then("^click on save button to save the expected pd order$")
+	public void click_on_save_button_to_save_the_expected_pd_order() throws Throwable {
+		PDOrderspage.click_on_save_button_to_save_the_expected_pd_order();
+		
+	}
 	
+	//updatePDOrders
 	
+	@Given("^Click on Edit icon$")
+	public void Click_on_Edit_icon() throws Throwable {
+		PDOrderspage.Click_on_Edit_icon();
+		
+	}
 	
+	@And("^Verify whether the page is navigating to the update PD orders or not$")
+	public void Verify_whether_the_page_is_navigating_to_the_update_PD_orders_or_not() {
+		PDOrderspage.Verify_whether_the_page_is_navigating_to_the_update_PD_orders_or_not();
+		
+	}
 	
+	@Then("^Change the Buyer by clicking on buyer dropdown field$")
+	public void Change_the_Buyer_by_clicking_on_buyer_dropdown_field() throws Throwable {
+		PDOrderspage.Change_the_Buyer_by_clicking_on_buyer_dropdown_field();
+		
+	}
 	
+	@And("^Change Month and Year from calendar$")
+	public void Change_Month_and_Year_from_calendar() throws Throwable {
+		PDOrderspage.Change_Month_and_Year_from_calendar();
+		
+	}
+	
+	@And("^Change expected order qty$")
+	public void Change_expected_order_qty() throws Throwable {
+		PDOrderspage.Change_expected_order_qty();
+		
+	}
+	
+	@And("^Change Appr Per pcs cost$")
+	public void Change_Appr_Per_pcs_cost() throws Throwable {
+		PDOrderspage.Change_Appr_Per_pcs_cost();
+		
+	}
+	
+	@And("^Change exchange rate$")
+	public void Change_exchange_rate() throws Throwable {
+		PDOrderspage.Change_exchange_rate();
+		
+	}
+	
+	@And("^Click on Checkbox to inactive the PD order$")
+	public void Click_on_Checkbox_to_inactive_the_PD_order() throws Throwable {
+		PDOrderspage.Click_on_Checkbox_to_inactive_the_PD_order();
+		
+	}
+	
+	@Then("^click on save button$")
+	public void click_on_save_button() throws Throwable {
+		PDOrderspage.click_on_save_button();
+		
+	}
+	
+	@And("^Enter Keywords to search in Search filter$")
+	public void Enter_Keywords_to_search_in_Search_filter() throws Throwable {
+		PDOrderspage.Enter_Keywords_to_search_in_Search_filter();
+		
+	}
+	
+	@And("^Click on Sort icon to verify that sorting is working as per the requirement$")
+	public void Click_on_Sort_icon_to_verify_that_sorting_is_working_as_per_the_requirement() throws Throwable {
+		PDOrderspage.Click_on_Sort_icon_to_verify_that_sorting_is_working_as_per_the_requirement();
+		
+	}
+	
+	@And("^Click on next page in the table grid$")
+	public void Click_on_next_page_in_the_table_grid() throws Throwable {
+		PDOrderspage.Click_on_next_page_in_the_table_grid();
+		
+	}
+	
+	@And("^Delete the PD Order in table grid$")
+	public void Delete_the_PD_Order_in_table_grid() throws Throwable {
+		PDOrderspage.Delete_the_PD_Order_in_table_grid();
+	}
 	
 }
