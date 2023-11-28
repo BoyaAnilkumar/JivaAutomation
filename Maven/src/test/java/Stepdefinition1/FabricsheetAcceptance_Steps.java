@@ -65,7 +65,7 @@ public class FabricsheetAcceptance_Steps {
 	}
 	
 	@And("^Accepting the fabric sheet by clicking Accept Fabric Sheet button$")
-	public void Accepting_the_fabric_sheet_by_clicking_Accept_Fabric_Sheet_button() {
+	public void Accepting_the_fabric_sheet_by_clicking_Accept_Fabric_Sheet_button() throws Throwable {
 		Fabricsheetacceptancepage.Accepting_the_fabric_sheet_by_clicking_Accept_Fabric_Sheet_button();
 		
 	}

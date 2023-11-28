@@ -45,7 +45,7 @@ Utilities utilities = new Utilities();
 	 //Verify the ipo data and action button
 	    By Select_IPO 		= By.xpath("//a[@id='v-pills-tabIPO16/10']");
 	    By Bulkfabric		= By.xpath("//input[@placeholder='Enter Bulk Fabric Deadline']");
-	    By Acptfbsheet		= By.xpath("//button[text()=' Accept Fabric Sheet']");
+	    By Acptfbsheet		= By.xpath("//div[@class='btn btn-md btn-danger btn-active-light-primary mr-2 ng-star-inserted']|//button[text()=' Accept Fabric Sheet']");
 	    By Reason			= By.xpath("//textarea[@class='form-control ng-untouched ng-pristine ng-valid']");
 	    By Acceptpopup		= By.xpath("//button[text()='Submit']");
 	    By Rejectfbsheet	= By.xpath("//button[text()=' Reject Fabric Sheet']");
@@ -214,38 +214,27 @@ Utilities utilities = new Utilities();
 		
 	}
 
-	public void Accepting_the_fabric_sheet_by_clicking_Accept_Fabric_Sheet_button() {
+	public void Accepting_the_fabric_sheet_by_clicking_Accept_Fabric_Sheet_button() throws Throwable {
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    
 	
-		driver.findElement(Acptfbsheet);
+		utilities.webDriverWait(driver, Acptfbsheet);
 		WebElement FabSheet = driver.findElement(Acptfbsheet);
-		
-		
+		System.out.println(FabSheet);
 		if(FabSheet.isDisplayed()){
+			System.out.println("Accept button displayed");
 			FabSheet.click();
-			
 		} else {
 			driver.findElement(ViewforPrint).click();
 			
 			System.out.println("No Need To Accept the IPO and It is already accepted");
 		}
 		
-		try {
-            Robot robot = new Robot();
 		
-            robot.delay(2000);
-		
-            int scrollAmount = 25;
-            for (int i = 0; i < scrollAmount; i++) {
-                robot.keyPress(KeyEvent.VK_DOWN);
-                robot.keyRelease(KeyEvent.VK_DOWN);
-                robot.delay(1000);
-            }
-
-        } catch (AWTException e) {
-            e.printStackTrace();
-        }
 	}
-
+	
 	public void Enter_Reason_for_accepting_the_IPO_by_clicking_on_submit_button() throws Throwable {
 		
 		utilities.webDriverWait(driver, Reason);
@@ -263,9 +252,11 @@ Utilities utilities = new Utilities();
 				gotop.click();
 			}
 			else {
-				driver.findElement(History).click();
+				driver.findElement(ViewforPrint).click();
 				utilities.MinimumWait(driver);
-				driver.findElement(Back).click();
+				
+				driver.findElement(Cancelprint).click();
+				utilities.MinimumWait(driver);
 			}
 		}
 		
