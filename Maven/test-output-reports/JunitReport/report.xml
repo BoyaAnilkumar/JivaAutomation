@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="735.188">
     <testcase classname="feature to test Jiva design New Fabric Sheet screen functionality" name="To Test the New Fabric Sheet screen" time="41.361">
+=======
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="309.719">
+    <testcase classname="Creating the expected PD Orders" name="Create Expected New PD order" time="309.476">
+=======
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="321.019">
+    <testcase classname="feature to test Jiva design New Fabric Sheet screen functionality" name="To Test the New Fabric Sheet screen" time="320.541">
+>>>>>>> refs/remotes/origin/main
         <system-out><![CDATA[When User navigates to Login page...........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
@@ -115,6 +125,30 @@ And Update the Applicable Combos............................................pass
 And Update the Garment Average Details......................................passed
 And Update the Quantity Requirment details..................................passed
 And Click on the Submit button..............................................passed
+<<<<<<< HEAD
+=======
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="47.577">
+    <testcase classname="Creating the expected PD Orders" name="Create Expected New PD order" time="47.34">
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+        <system-out><![CDATA[Given Login with Senior PD merchant credentials in Login page...............passed
+Then Click on Woven.........................................................passed
+And Click on PD Module to view the menu in PD Module........................passed
+Then Select the PD Orders from the menu of PD Module........................passed
+And Click on Add button.....................................................passed
+And Enter Sr PD Merchant....................................................passed
+And Select Buyer from the dropdown list.....................................passed
+And Select Month and Year from calendar.....................................passed
+<<<<<<< HEAD
+And Enter Expected Order Qty................................................passed
+And Enter Appr Per Pcs cost.................................................passed
+And Enter Exchange Rate.....................................................passed
+And verify the Total Cost in INR............................................passed
+And verify the Total cost in Currency.......................................passed
+=======
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
 ]]></system-out>
     </testcase>
 </testsuite>
