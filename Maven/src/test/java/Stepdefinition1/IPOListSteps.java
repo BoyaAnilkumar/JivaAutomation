@@ -89,14 +89,14 @@ public class IPOListSteps {
 	public void Enter_IPO_Name_in_the_Search_IPO_field() throws Throwable {
 		IPOl.Enter_IPO_Name_in_the_Search_IPO_field();
 	}
-	@Then ("^Click on the Reset button$")
-	public void Click_on_the_Reset_button() throws Throwable {
-		IPOl.Click_on_the_Reset_button();
-	}
-	@Then ("^Click on the Apply button$")
-	public void Click_on_the_Apply_button() throws Throwable {
-		IPOl.Click_on_the_Apply_button();
-	}
+//	@Then ("^Click on the Reset button$")
+//	public void Click_on_the_Reset_button() throws Throwable {
+//		IPOl.Click_on_the_Reset_button();
+//	}
+//	@Then ("^Click on the Apply button$")
+//	public void Click_on_the_Apply_button() throws Throwable {
+//		IPOl.Click_on_the_Apply_button();
+//	}
 	@Then ("^Click on Generate Excel Sheet button$")
 	public void Click_on_Generate_Excel_Sheet_button() throws Throwable {
 		IPOl.Click_on_Generate_Excel_Sheet_button();
@@ -109,10 +109,10 @@ public class IPOListSteps {
 	public void Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not() {
 		IPOl.Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not();
 	}
-	@When ("^Click on the save button$")
-	public void Click_on_the_save_button() throws Throwable {
-		IPOl.Click_on_the_save_button();
-	}
+//	@When ("^Click on the save button$")
+//	public void Click_on_the_save_button() throws Throwable {
+//		IPOl.Click_on_the_save_button();
+//	}
 	@Then ("^Select an IPO Date$")
 	public void Select_an_IPO_Date() throws Throwable {
 		IPOl.Select_an_IPO_Date();
@@ -165,10 +165,10 @@ public class IPOListSteps {
 	public void Check_the_Active_field_status() throws Throwable {
 		IPOl.Check_the_Active_field_status();
 	}
-	@Then ("^Click on the Save button$")
-	public void Click_on_the_Save_button() throws Throwable {
-		IPOl.Click_on_the_Save_button();
-	}
+//	@Then ("^Click on the Save button$")
+//	public void Click_on_the_Save_button() throws Throwable {
+//		IPOl.Click_on_the_Save_button();
+//	}
 	@And ("^Verify whether the page is navigated to IPO List page or not$")
 	public void Verify_whether_the_page_is_navigated_to_IPO_List_page_or_not() {
 		IPOl.Verify_whether_the_page_is_navigated_to_IPO_List_page_or_not();
