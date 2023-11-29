@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-11-09T12:47:11.184Z",
+        "start_timestamp": "2023-11-29T07:04:45.712Z",
         "before": [
           {
             "result": {
-              "duration": 5628298300,
+              "duration": 5542630800,
               "status": "passed"
             },
             "match": {
@@ -15,27 +15,27 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Checking the details of the fabric sheet",
+        "line": 5,
+        "name": "Submit the fabric sheet details in Revised fabric sheet",
         "description": "",
-        "id": "creating-an-ipo-for-a-confirmed-style;checking-the-details-of-the-fabric-sheet",
+        "id": "submit-the-fabric-sheet-details;submit-the-fabric-sheet-details-in-revised-fabric-sheet",
         "after": [
           {
             "result": {
-              "duration": 1675653900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Stepdefinition1.Hooks.CloseBrowser()"
-            }
-          },
-          {
-            "result": {
-              "duration": 995900,
+              "duration": 3002900,
               "status": "passed"
             },
             "match": {
               "location": "Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1342140600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Stepdefinition1.Hooks.CloseBrowser()"
             }
           }
         ],
@@ -44,287 +44,620 @@
         "steps": [
           {
             "result": {
-              "duration": 3925374500,
+              "duration": 3233387300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to Login page",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.user_navigates_to_Login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 346384900,
               "status": "passed"
             },
             "line": 7,
-            "name": "Navigate to the Login page",
+            "name": "Login with Production Manager",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Navigate_to_the_Login_page()"
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Login_with_Production_Manager()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 350959900,
+              "duration": 66003200,
               "status": "passed"
             },
             "line": 8,
-            "name": "Enter valid Username and Password",
+            "name": "Click on the SignIn button",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Enter_valid_Username_and_Password()"
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Click_on_the_SignIn_button()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 64000400,
+              "duration": 14937451100,
               "status": "passed"
             },
             "line": 9,
-            "name": "Click on SignIn in the login page",
+            "name": "user navigates to Revised Fabric Sheet",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_SignIn_in_the_login_page()"
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.user_navigates_to_Revised_Fabric_Sheet()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 5358803300,
+              "duration": 3159424400,
               "status": "passed"
             },
             "line": 10,
-            "name": "Click on Woven Module",
+            "name": "click on Styles expansion",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_Woven_Module()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3258127400,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Click on Merchandising module",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_Merchandising_module()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3274107600,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Click on View Fabric Sheet module",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_View_Fabric_Sheet_module()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3246038800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "Click on Style show/hide button",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_Style_showhide_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3170629400,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "Check whether the respective IPO is displayed or not in the Menu List",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_the_respective_IPO_is_displayed_or_not_in_the_Menu_List()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7426435900,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Select the IPO in the Menu List",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Select_the_IPO_in_the_Menu_List()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3178444300,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "Check whether the page is navigated to the View Fabric Sheet",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_the_page_is_navigated_to_the_View_Fabric_Sheet()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3249101700,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "Click on the History button",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Click_on_the_History_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3234742400,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Check whether page is navigated to the History page or not",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_page_is_navigated_to_the_History_page_or_not()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3299723300,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Verify whether the history records are there or not",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_history_records_are_there_or_not()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4089818300,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "Verify whether the page is navigated to the PDF form or not",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_page_is_navigated_to_the_PDF_form_or_not()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3252848500,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "Verify whether the Back button is clickable",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_Back_button_is_clickable()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3241514100,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "Check whether page is navigated to the View Fabric Sheet or not",
-            "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Check_whether_page_is_navigated_to_the_View_Fabric_Sheet_or_not()"
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.click_on_Styles_expansion()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 75259600,
+              "duration": 3202271500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on clear filter icon",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.click_on_clear_filter_icon()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8375529300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Verify whether the user is able to Select an IPO from the Menu list",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_user_is_able_to_Select_an_IPO_from_the_Menu_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3301884400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Click on the Style ShowHide button for closing the menu list",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Click_on_the_Style_ShowHide_button_for_closing_the_menu_list()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3187454200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Verify the count of the Fabric records under the Fabric Details grid",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_the_count_of_the_Fabric_records_under_the_Fabric_Details_grid()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3396812200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "click on Add data button",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.click_on_Add_data_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30934671300,
               "status": "passed"
             },
             "line": 29,
-            "name": "Verify whether the added fabrics are displayed or not on clicking the Fabric Details link",
+            "name": "Click on Cancel button",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_are_displayed_or_not_on_clicking_the_Fabric_Details_link()"
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Click_on_Cancel_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3199642100,
+              "duration": 5373559100,
               "status": "passed"
             },
-            "line": 30,
-            "name": "Verify whether the added fabrics Garment Average records are displayed or not on clicking the Garment Average link",
+            "line": 34,
+            "name": "Verify whether the user is able to select the Fabric Quality from the dropdown list in the Fabric Quality field",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_Garment_Average_records_are_displayedornot_on_clicking_the_Garment_Average_link()"
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_user_is_able_to_select_the_Fabric_Quality_from_the_dropdown_list_in_the_Fabric_Quality_field()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3236385600,
+              "duration": 5378797000,
               "status": "passed"
             },
-            "line": 31,
-            "name": "Verify whether the added fabrics Quantity Requirment records are displayed or not on clicking the Quantity Requirment link",
+            "line": 39,
+            "name": "Verify whether the Use value is selected or not for the selected fabric",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_added_fabrics_Quantity_Requirment_records_are_displayed_or_not_on_clicking_the_Quantity_Requirment_link()"
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_Use_value_is_selected_or_not_for_the_selected_fabric()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3342132400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Enter the data in the Finish Special Requirements textbox field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Enter_the_data_in_the_Finish_Special_Requirements_textbox_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5458085600,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Verify whether the Color is selected or not for the selected fabric",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_Color_is_selected_or_not_for_the_selected_fabric()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5334439500,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Verify whether the Applicable Combo is selected or not for the selected fabric",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_Applicable_Combo_is_selected_or_not_for_the_selected_fabric()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3364493000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Enter the data in the Additional Information textbox field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Enter_the_data_in_the_Additional_Information_textbox_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3358406600,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Enter the data in the Additional percentage textbox field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Enter_the_data_in_the_Additional_percentage_textbox_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3282610100,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Enter the data in the Missy Garment Avg textbox field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Enter_the_data_in_the_Missy_Garment_Avg_textbox_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3160911000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Verifying the Garment Average UOM dropdown field default value",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verifying_the_Garment_Average_UOM_dropdown_field_default_value()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3155286400,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Verifying the Required UOM dropdown field default value",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verifying_the_Required_UOM_dropdown_field_default_value()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3174220400,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Verifying the Cutting Wastage textbox field default value",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verifying_the_Cutting_Wastage_textbox_field_default_value()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3156968700,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Verifying the Fabric Required For Cutting value",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verifying_the_Fabric_Required_For_Cutting_value()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3341929000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Enter the value in the Fabric Required For Sampling textbox field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Enter_the_value_in_the_Fabric_Required_For_Sampling_textbox_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3174183800,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Verifying the Fabric Total Fabric Required value",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verifying_the_Fabric_Total_Fabric_Required_value()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3407680500,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "Click on Submit button",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Click_on_Submit_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3299622000,
+              "duration": 3205703500,
               "status": "passed"
             },
-            "line": 38,
-            "name": "Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Quality button",
+            "line": 55,
+            "name": "Verify whether the page is navigated to the Revised Fabric Sheet",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_page_is_navigating_to_the_Print_form_on_clicking_the_View_For_Print_By_Fabric_Quality_button()"
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_page_is_navigated_to_the_Revised_Fabric_Sheet()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 64231805000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Click on the Submit to Fabric Team",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Click_on_the_Submit_to_Fabric_Team()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3219841200,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Verify whether the Upcharge Amount popup window is opened or not",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_Upcharge_Amount_popup_window_is_opened_or_not()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2206283500,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "Verify whether the validation msg is displayed when click on Submit with Null values",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_validation_msg_is_displayed_when_click_on_Submit_with_Null_values()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3305715500,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "Enter the value in the Amount field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Enter_the_value_in_the_Amount_field()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3410068200,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Enter the Remarks",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Enter_the_Remarks()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3309691100,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "Click on the Submit button in the Upcharge window",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Click_on_the_Submit_button_in_the_Upcharge_window()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4540767500,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "Click on the Delete button for a Quality",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Click_on_the_Delete_button_for_a_Quality()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3171754500,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "Verify whether the Delete prompt msg is displayed or not",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_Delete_prompt_msg_is_displayed_or_not()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3250875600,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "Click on the No option in the delete prompt",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Click_on_the_No_option_in_the_delete_prompt()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3434872200,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "Verify whether the respective added Fabric record is deleted or not on clicking the Yes option",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_respective_added_Fabric_record_is_deleted_or_not_on_clicking_the_Yes_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 111231616400,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "Verify whether the page is navigating to the Updated page or not on clicking the Edit button",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_page_is_navigating_to_the_Updated_page_or_not_on_clicking_the_Edit_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3350195400,
+              "duration": 3231962500,
               "status": "passed"
             },
-            "line": 39,
-            "name": "Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form",
+            "line": 71,
+            "name": "Verify and Update the Field values displayed in the fields",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_page_is_navigating_to_the_View_Fabric_Sheet_on_OnClick_the_Cancel_button_in_the_Print_Form()"
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_and_Update_the_Field_values_displayed_in_the_fields()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 5254677700,
+              "duration": 3211991800,
               "status": "passed"
             },
-            "line": 40,
-            "name": "Verify whether the Print button is clickable",
+            "line": 72,
+            "name": "Verify and Update the field value displayed in the Content field",
             "match": {
-              "location": "Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_Print_button_is_clickable()"
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_and_Update_the_field_value_displayed_in_the_Content_field()"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3215961700,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "Verify and Update the field value displayed in the Count field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_and_Update_the_field_value_displayed_in_the_Count_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3180195500,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "Verify and Update the field value displayed in the GSM field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_and_Update_the_field_value_displayed_in_the_GSM_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3249069200,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "Verify and Update the field value displayed in the Cuttable Width field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_and_Update_the_field_value_displayed_in_the_Cuttable_Width_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3269066300,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "Verify and Update the field value displayed in the Use field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_and_Update_the_field_value_displayed_in_the_Use_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3378873200,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "Verify and Update the field value displayed in the Color field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_and_Update_the_field_value_displayed_in_the_Color_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3227788900,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "Verify and Update the field value displayed in the Combo field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_and_Update_the_field_value_displayed_in_the_Combo_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3300195300,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "Verify and Update the field value displayed in the Additional field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_and_Update_the_field_value_displayed_in_the_Additional_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3331674800,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "Verify and Update the field value displayed in the Garment Avg field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_and_Update_the_field_value_displayed_in_the_Garment_Avg_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3318688900,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "Verify and Update the field value displayed in the Fabric Required For Sampling field",
+            "match": {
+              "location": "Stepdefinition1.RevisedFabricSheetSteps.Verify_and_Update_the_field_value_displayed_in_the_Fabric_Required_For_Sampling_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 82,
+            "name": "Click on the Update button in the Update Fabric Sheet form",
+            "match": {},
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@IPOadding"
+            "name": "@FeatureGroup_Requirement"
           },
           {
-            "name": "@ViewFabricSheet"
+            "name": "@RevisedFabricSheeet"
           }
         ]
       }
     ],
-    "name": "Creating an IPO for a confirmed style",
+    "name": "Submit the fabric sheet details",
     "description": "",
-    "id": "creating-an-ipo-for-a-confirmed-style",
+    "id": "submit-the-fabric-sheet-details",
     "keyword": "Feature",
-    "uri": "file:Features/ViewFabricSheet.feature",
+    "uri": "file:Features/RevisedFabricSheet.feature",
     "tags": [
       {
-        "name": "@IPOadding",
+        "name": "@FeatureGroup_Requirement",
         "type": "Tag",
         "location": {
           "line": 1,

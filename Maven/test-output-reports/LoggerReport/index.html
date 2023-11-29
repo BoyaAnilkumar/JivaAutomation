@@ -95,7 +95,7 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
@@ -112,8 +112,8 @@
 								        </span>
 							        </a>
 							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-						    	        <a class="dropdown-item" href="#"><span class="cf">@IPOadding</span></a>
-						    	        <a class="dropdown-item" href="#"><span class="cf">@ViewFabricSheet</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@FeatureGroup_Requirement</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@RevisedFabricSheeet</span></a>
 						    	        <div class="dropdown-divider"></div>
 						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 						    	      </div>
@@ -130,15 +130,15 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
-												tags="@IPOadding"
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
+												tags="@FeatureGroup_Requirement"
 												devices="">
-												<span class="tt">11.09.2023 18:17:16</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">[Creating an IPO for a confirmed style] started</span>
+												<span class="tt">11.29.2023 12:34:51</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">[Submit the fabric sheet details] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @IPOadding</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup_Requirement</span>
 												</span>
 												<span class="author-list">
 												</span>
@@ -146,15 +146,15 @@
 												</span>
 												
 											</div>
-											<div class="st pass test l1" 
-												tags="@IPOadding @ViewFabricSheet"
+											<div class="st fail test l1" 
+												tags="@FeatureGroup_Requirement @RevisedFabricSheeet"
 												devices="">
-												<span class="tt">11.09.2023 18:17:16</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Checking the details of the fabric sheet] started</span>
+												<span class="tt">11.29.2023 12:34:51</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[Submit the fabric sheet details in Revised fabric sheet] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @IPOadding</span>
-													<span class="category badge"><i class="fa fa-tag"></i> @ViewFabricSheet</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @FeatureGroup_Requirement</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @RevisedFabricSheeet</span>
 												</span>
 												<span class="author-list">
 												</span>
@@ -165,14 +165,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:16</span>&nbsp;
+												<span class="tt">11.29.2023 12:34:51</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Navigate to the Login page] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Login page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:20</span>&nbsp;
+													<span class="tt">11.29.2023 12:34:54</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Navigate to the Login page]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Login page]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -180,14 +180,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:20</span>&nbsp;
+												<span class="tt">11.29.2023 12:34:54</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Enter valid Username and Password] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Login with Production Manager] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:21</span>&nbsp;
+													<span class="tt">11.29.2023 12:34:54</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Enter valid Username and Password]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Login with Production Manager]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -195,14 +195,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:21</span>&nbsp;
+												<span class="tt">11.29.2023 12:34:54</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on SignIn in the login page] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the SignIn button] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:21</span>&nbsp;
+													<span class="tt">11.29.2023 12:34:55</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on SignIn in the login page]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the SignIn button]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -210,14 +210,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:21</span>&nbsp;
+												<span class="tt">11.29.2023 12:34:55</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Woven Module] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Revised Fabric Sheet] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:26</span>&nbsp;
+													<span class="tt">11.29.2023 12:35:09</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Woven Module]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user navigates to Revised Fabric Sheet]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -225,14 +225,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:26</span>&nbsp;
+												<span class="tt">11.29.2023 12:35:09</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Merchandising module] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on Styles expansion] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:29</span>&nbsp;
+													<span class="tt">11.29.2023 12:35:13</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Merchandising module]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on Styles expansion]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -240,14 +240,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:29</span>&nbsp;
+												<span class="tt">11.29.2023 12:35:13</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on View Fabric Sheet module] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on clear filter icon] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:33</span>&nbsp;
+													<span class="tt">11.29.2023 12:35:16</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on View Fabric Sheet module]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on clear filter icon]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -255,14 +255,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:33</span>&nbsp;
+												<span class="tt">11.29.2023 12:35:16</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Style show/hide button] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the user is able to Select an IPO from the Menu list] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:36</span>&nbsp;
+													<span class="tt">11.29.2023 12:35:24</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Style show/hide button]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the user is able to Select an IPO from the Menu list]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -270,14 +270,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:36</span>&nbsp;
+												<span class="tt">11.29.2023 12:35:24</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Check whether the respective IPO is displayed or not in the Menu List] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the Style ShowHide button for closing the menu list] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:39</span>&nbsp;
+													<span class="tt">11.29.2023 12:35:28</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Check whether the respective IPO is displayed or not in the Menu List]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the Style ShowHide button for closing the menu list]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -285,14 +285,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:39</span>&nbsp;
+												<span class="tt">11.29.2023 12:35:28</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Select the IPO in the Menu List] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify the count of the Fabric records under the Fabric Details grid] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:47</span>&nbsp;
+													<span class="tt">11.29.2023 12:35:31</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Select the IPO in the Menu List]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify the count of the Fabric records under the Fabric Details grid]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -300,14 +300,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:47</span>&nbsp;
+												<span class="tt">11.29.2023 12:35:31</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Check whether the page is navigated to the View Fabric Sheet] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on Add data button] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:50</span>&nbsp;
+													<span class="tt">11.29.2023 12:35:34</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Check whether the page is navigated to the View Fabric Sheet]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on Add data button]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -315,14 +315,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:50</span>&nbsp;
+												<span class="tt">11.29.2023 12:35:34</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Click on the History button] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Cancel button] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:53</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:05</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Click on the History button]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Cancel button]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -330,14 +330,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:53</span>&nbsp;
+												<span class="tt">11.29.2023 12:36:05</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Check whether page is navigated to the History page or not] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the user is able to select the Fabric Quality from the dropdown list in the Fabric Quality field] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:56</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:10</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Check whether page is navigated to the History page or not]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the user is able to select the Fabric Quality from the dropdown list in the Fabric Quality field]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -345,14 +345,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:56</span>&nbsp;
+												<span class="tt">11.29.2023 12:36:10</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the history records are there or not] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Use value is selected or not for the selected fabric] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:17:59</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:16</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the history records are there or not]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Use value is selected or not for the selected fabric]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -360,14 +360,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:17:59</span>&nbsp;
+												<span class="tt">11.29.2023 12:36:16</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the page is navigated to the PDF form or not] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the data in the Finish Special Requirements textbox field] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:18:04</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:19</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the page is navigated to the PDF form or not]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the data in the Finish Special Requirements textbox field]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -375,14 +375,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:18:04</span>&nbsp;
+												<span class="tt">11.29.2023 12:36:19</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the Back button is clickable] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Color is selected or not for the selected fabric] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:18:07</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:25</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the Back button is clickable]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Color is selected or not for the selected fabric]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -390,14 +390,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:18:07</span>&nbsp;
+												<span class="tt">11.29.2023 12:36:25</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Check whether page is navigated to the View Fabric Sheet or not] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Applicable Combo is selected or not for the selected fabric] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:18:10</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:30</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Check whether page is navigated to the View Fabric Sheet or not]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Applicable Combo is selected or not for the selected fabric]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -405,14 +405,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:18:10</span>&nbsp;
+												<span class="tt">11.29.2023 12:36:30</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the added fabrics are displayed or not on clicking the Fabric Details link] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the data in the Additional Information textbox field] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:18:10</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:33</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the added fabrics are displayed or not on clicking the Fabric Details link]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the data in the Additional Information textbox field]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -420,14 +420,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:18:10</span>&nbsp;
+												<span class="tt">11.29.2023 12:36:33</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the added fabrics Garment Average records are displayed or not on clicking the Garment Average link] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the data in the Additional percentage textbox field] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:18:13</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:37</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the added fabrics Garment Average records are displayed or not on clicking the Garment Average link]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the data in the Additional percentage textbox field]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -435,14 +435,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:18:13</span>&nbsp;
+												<span class="tt">11.29.2023 12:36:37</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the added fabrics Quantity Requirment records are displayed or not on clicking the Quantity Requirment link] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the data in the Missy Garment Avg textbox field] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:18:17</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:40</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the added fabrics Quantity Requirment records are displayed or not on clicking the Quantity Requirment link]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the data in the Missy Garment Avg textbox field]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -450,14 +450,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:18:17</span>&nbsp;
+												<span class="tt">11.29.2023 12:36:40</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Quality button] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verifying the Garment Average UOM dropdown field default value] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:18:20</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:43</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Quality button]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verifying the Garment Average UOM dropdown field default value]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -465,14 +465,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:18:20</span>&nbsp;
+												<span class="tt">11.29.2023 12:36:43</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verifying the Required UOM dropdown field default value] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:18:23</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:46</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verifying the Required UOM dropdown field default value]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -480,16 +480,436 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.09.2023 18:18:23</span>&nbsp;
+												<span class="tt">11.29.2023 12:36:46</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the Print button is clickable] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verifying the Cutting Wastage textbox field default value] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.09.2023 18:18:28</span>&nbsp;
+													<span class="tt">11.29.2023 12:36:49</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the Print button is clickable]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verifying the Cutting Wastage textbox field default value]</span>
 													
 													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:36:49</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verifying the Fabric Required For Cutting value] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:36:53</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verifying the Fabric Required For Cutting value]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:36:53</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the value in the Fabric Required For Sampling textbox field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:36:56</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the value in the Fabric Required For Sampling textbox field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:36:56</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verifying the Fabric Total Fabric Required value] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:36:59</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verifying the Fabric Total Fabric Required value]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:36:59</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Submit button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:37:03</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Submit button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:37:03</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the page is navigated to the Revised Fabric Sheet] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:37:06</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the page is navigated to the Revised Fabric Sheet]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:37:06</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the Submit to Fabric Team] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:38:10</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the Submit to Fabric Team]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:38:10</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Upcharge Amount popup window is opened or not] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:38:13</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify whether the Upcharge Amount popup window is opened or not]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:38:13</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the validation msg is displayed when click on Submit with Null values] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:38:15</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the validation msg is displayed when click on Submit with Null values]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:38:15</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the value in the Amount field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:38:19</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the value in the Amount field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:38:19</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the Remarks] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:38:22</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Enter the Remarks]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:38:22</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Submit button in the Upcharge window] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:38:25</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Submit button in the Upcharge window]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:38:25</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the Delete button for a Quality] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:38:30</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the Delete button for a Quality]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:38:30</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the Delete prompt msg is displayed or not] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:38:33</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the Delete prompt msg is displayed or not]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:38:33</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the No option in the delete prompt] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:38:36</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the No option in the delete prompt]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:38:36</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the respective added Fabric record is deleted or not on clicking the Yes option] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:38:40</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Verify whether the respective added Fabric record is deleted or not on clicking the Yes option]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:38:40</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Verify whether the page is navigating to the Updated page or not on clicking the Edit button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:40:31</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When Verify whether the page is navigating to the Updated page or not on clicking the Edit button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:40:31</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the Field values displayed in the fields] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:40:34</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the Field values displayed in the fields]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:40:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Content field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:40:38</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Content field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:40:38</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Count field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:40:41</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Count field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:40:41</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the GSM field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:40:44</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the GSM field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:40:44</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Cuttable Width field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:40:47</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Cuttable Width field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:40:47</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Use field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:40:50</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Use field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:40:50</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Color field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:40:54</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Color field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:40:54</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Combo field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:40:57</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Combo field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:40:57</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Additional field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:41:00</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Additional field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:41:00</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Garment Avg field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:41:04</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Garment Avg field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:41:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Fabric Required For Sampling field] started</span>
+												
+												<div class="st pass">
+													<span class="tt">11.29.2023 12:41:07</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Verify and Update the field value displayed in the Fabric Required For Sampling field]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">11.29.2023 12:41:07</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the Update button in the Update Fabric Sheet form] started</span>
+												
+												<div class="st fail">
+													<span class="tt">11.29.2023 12:41:07</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on the Update button in the Update Fabric Sheet form]</span>
+													
+													<span class="td">Step undefined</span>
 												</div>
 											</div>
 											</div>

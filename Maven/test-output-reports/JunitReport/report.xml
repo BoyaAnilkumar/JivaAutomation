@@ -1,32 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.198"/>
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="79.914">
-    <testcase classname="Creating an IPO for a confirmed style" name="Checking the details of the fabric sheet" time="79.47">
-        <system-out><![CDATA[Given Navigate to the Login page............................................passed
-Then Enter valid Username and Password......................................passed
-And Click on SignIn in the login page.......................................passed
-Then Click on Woven Module..................................................passed
-Then Click on Merchandising module..........................................passed
-Then Click on View Fabric Sheet module......................................passed
-Then Click on Style show/hide button........................................passed
-When Check whether the respective IPO is displayed or not in the Menu List..passed
-Then Select the IPO in the Menu List........................................passed
-Then Check whether the page is navigated to the View Fabric Sheet...........passed
-When Click on the History button............................................passed
-Then Check whether page is navigated to the History page or not.............passed
-Then Verify whether the history records are there or not....................passed
-Then Verify whether the page is navigated to the PDF form or not............passed
-Then Verify whether the Back button is clickable............................passed
-And Check whether page is navigated to the View Fabric Sheet or not.........passed
-Then Verify whether the added fabrics are displayed or not on clicking the Fabric Details link.passed
-Then Verify whether the added fabrics Garment Average records are displayed or not on clicking the Garment Average link.passed
-Then Verify whether the added fabrics Quantity Requirment records are displayed or not on clicking the Quantity Requirment link.passed
-When Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Quality button.passed
-Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form.passed
-Then Verify whether the Print button is clickable...........................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="383.708">
+    <testcase classname="Submit the fabric sheet details" name="Submit the fabric sheet details in Revised fabric sheet" time="383.12">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When user navigates to Login page...........................................passed
+Given Login with Production Manager.........................................passed
+And Click on the SignIn button..............................................passed
+When user navigates to Revised Fabric Sheet.................................passed
+And click on Styles expansion...............................................passed
+And click on clear filter icon..............................................passed
+And Verify whether the user is able to Select an IPO from the Menu list.....passed
+Then Click on the Style ShowHide button for closing the menu list...........passed
+Then Verify the count of the Fabric records under the Fabric Details grid...passed
+And click on Add data button................................................passed
+Then Click on Cancel button.................................................passed
+Then Verify whether the user is able to select the Fabric Quality from the dropdown list in the Fabric Quality field.passed
+And Verify whether the Use value is selected or not for the selected fabric.passed
+Given Enter the data in the Finish Special Requirements textbox field.......passed
+And Verify whether the Color is selected or not for the selected fabric.....passed
+And Verify whether the Applicable Combo is selected or not for the selected fabric.passed
+Given Enter the data in the Additional Information textbox field............passed
+Given Enter the data in the Additional percentage textbox field.............passed
+Given Enter the data in the Missy Garment Avg textbox field.................passed
+And Verifying the Garment Average UOM dropdown field default value..........passed
+And Verifying the Required UOM dropdown field default value.................passed
+And Verifying the Cutting Wastage textbox field default value...............passed
+And Verifying the Fabric Required For Cutting value.........................passed
+Given Enter the value in the Fabric Required For Sampling textbox field.....passed
+And Verifying the Fabric Total Fabric Required value........................passed
+Then Click on Submit button.................................................passed
+Then Verify whether the page is navigated to the Revised Fabric Sheet.......passed
+Then Click on the Submit to Fabric Team.....................................passed
+And Verify whether the Upcharge Amount popup window is opened or not........passed
+Then Verify whether the validation msg is displayed when click on Submit with Null values.passed
+Given Enter the value in the Amount field...................................passed
+Given Enter the Remarks.....................................................passed
+And Click on the Submit button in the Upcharge window.......................passed
+Then Click on the Delete button for a Quality...............................passed
+Then Verify whether the Delete prompt msg is displayed or not...............passed
+Then Click on the No option in the delete prompt............................passed
+Then Verify whether the respective added Fabric record is deleted or not on clicking the Yes option.passed
+When Verify whether the page is navigating to the Updated page or not on clicking the Edit button.passed
+And Verify and Update the Field values displayed in the fields..............passed
+And Verify and Update the field value displayed in the Content field........passed
+And Verify and Update the field value displayed in the Count field..........passed
+And Verify and Update the field value displayed in the GSM field............passed
+And Verify and Update the field value displayed in the Cuttable Width field.passed
+And Verify and Update the field value displayed in the Use field............passed
+And Verify and Update the field value displayed in the Color field..........passed
+And Verify and Update the field value displayed in the Combo field..........passed
+And Verify and Update the field value displayed in the Additional field.....passed
+And Verify and Update the field value displayed in the Garment Avg field....passed
+And Verify and Update the field value displayed in the Fabric Required For Sampling field.passed
+Then Click on the Update button in the Update Fabric Sheet form.............undefined
+]]></failure>
     </testcase>
 </testsuite>
->>>>>>> refs/remotes/origin/main
