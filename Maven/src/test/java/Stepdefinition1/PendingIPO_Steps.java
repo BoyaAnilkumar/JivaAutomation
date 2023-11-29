@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> refs/remotes/origin/main
 package Stepdefinition1;
 
 import Page.PendingIPO_page;
@@ -74,3 +78,4 @@ public class PendingIPO_Steps {
 		PendingIPOpage.Verify_Buyer_is_prepopulated_or_not();
 	}
 }
+

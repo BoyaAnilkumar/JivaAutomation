@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="383.708">
     <testcase classname="Submit the fabric sheet details" name="Submit the fabric sheet details in Revised fabric sheet" time="383.12">
         <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When user navigates to Login page...........................................passed
@@ -52,5 +53,158 @@ And Verify and Update the field value displayed in the Garment Avg field....pass
 And Verify and Update the field value displayed in the Fabric Required For Sampling field.passed
 Then Click on the Update button in the Update Fabric Sheet form.............undefined
 ]]></failure>
+=======
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="735.188">
+    <testcase classname="feature to test Jiva design New Fabric Sheet screen functionality" name="To Test the New Fabric Sheet screen" time="41.361">
+=======
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="309.719">
+    <testcase classname="Creating the expected PD Orders" name="Create Expected New PD order" time="309.476">
+=======
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="321.019">
+    <testcase classname="feature to test Jiva design New Fabric Sheet screen functionality" name="To Test the New Fabric Sheet screen" time="320.541">
+>>>>>>> refs/remotes/origin/main
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then click on the Merchandising Module......................................passed
+And Click on the Generate Fabric Sheet Module...............................passed
+And Click on the New Fabric Sheet Screen....................................passed
+And Click on the Styles Expansion...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Jiva design New Fabric Sheet screen functionality" name="To Test the Filter Functionality" time="75.4">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then click on the Merchandising Module......................................passed
+And Click on the Generate Fabric Sheet Module...............................passed
+And Click on the New Fabric Sheet Screen....................................passed
+And Click on the Styles Expansion...........................................passed
+And Click on the Filter Icon................................................passed
+And Click on the Buyer Field................................................passed
+And Click on the Season Field...............................................passed
+And Select the Season.......................................................passed
+When Search the IPO.........................................................passed
+And Click on the Apply button...............................................passed
+And Select the IPO and Style................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Jiva design New Fabric Sheet screen functionality" name="To Test the Add new fabric functionality" time="154.449">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then click on the Merchandising Module......................................passed
+And Click on the Generate Fabric Sheet Module...............................passed
+And Click on the New Fabric Sheet Screen....................................passed
+And Click on the Styles Expansion...........................................passed
+And Click on the Filter Icon................................................passed
+When Search the IPO.........................................................passed
+And Click on the Apply button...............................................passed
+And Select the IPO and Style................................................passed
+And Click on the Add New Fabric button......................................passed
+And Select the Is Nominated Check box.......................................passed
+When User select the Supplier name..........................................passed
+And Click on the Fabric Quality field.......................................passed
+And Select the Fabric Quality...............................................passed
+Then Click on the Content...................................................passed
+Then Click on the Count Construction........................................passed
+And Click on the Required GSM...............................................passed
+And Click on the Cuttable Width.............................................passed
+And Select the Fabric Use...................................................passed
+When Select the Colour......................................................passed
+And Select the Applicable Combos............................................passed
+And Enter the data in Addl Information field................................passed
+And Enter the data in Additional field......................................passed
+Given Enter the data in garment average field...............................passed
+And Select the Garment Average UOM..........................................passed
+And Select the Required UOM.................................................passed
+Given Enter the data in Cutting wastage field...............................passed
+And Check the Fabric Required For Cutting field value is calculated or not..passed
+And Enter the data in Fabric Required For Sampling..........................passed
+And Check the Total Fabric Required field value is calculated or not........passed
+And Click on the Save button................................................passed
+And After click on the Save button the validation msg is displaying or not..passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Jiva design New Fabric Sheet screen functionality" name="To Test the Import functionality" time="119.932">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then click on the Merchandising Module......................................passed
+And Click on the Generate Fabric Sheet Module...............................passed
+And Click on the New Fabric Sheet Screen....................................passed
+And Click on the Styles Expansion...........................................passed
+And Click on the Filter Icon................................................passed
+When Search the IPO.........................................................passed
+And Click on the Apply button...............................................passed
+And Select the IPO and Style................................................passed
+And Click on the Add New Fabric button......................................passed
+When Click on the Import Fabric details button..............................passed
+And Select the Other Radio button...........................................passed
+And Select the Fabric name..................................................passed
+And Select the IPO name.....................................................passed
+And Click on the Import button..............................................passed
+When Enter the data after import the fabric details.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Jiva design New Fabric Sheet screen functionality" name="To Test the Update Fabric details functionality" time="343.467">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then click on the Merchandising Module......................................passed
+And Click on the Generate Fabric Sheet Module...............................passed
+And Click on the New Fabric Sheet Screen....................................passed
+And Click on the Styles Expansion...........................................passed
+And Click on the Filter Icon................................................passed
+When Search the IPO.........................................................passed
+And Click on the Apply button...............................................passed
+And Select the IPO and Style................................................passed
+Then Click on the Edit Icon.................................................passed
+And Update the Supplier Information.........................................passed
+And Update the Fabric Quality...............................................passed
+And Update the Content......................................................passed
+And Update the Count construction...........................................passed
+And Update the Required GSM.................................................passed
+And Update the Cuttable Width...............................................passed
+And Update the Fabric Use...................................................passed
+And Update the Colour.......................................................passed
+And Update the Applicable Combos............................................passed
+And Update the Garment Average Details......................................passed
+And Update the Quantity Requirment details..................................passed
+And Click on the Submit button..............................................passed
+<<<<<<< HEAD
+=======
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="47.577">
+    <testcase classname="Creating the expected PD Orders" name="Create Expected New PD order" time="47.34">
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+        <system-out><![CDATA[Given Login with Senior PD merchant credentials in Login page...............passed
+Then Click on Woven.........................................................passed
+And Click on PD Module to view the menu in PD Module........................passed
+Then Select the PD Orders from the menu of PD Module........................passed
+And Click on Add button.....................................................passed
+And Enter Sr PD Merchant....................................................passed
+And Select Buyer from the dropdown list.....................................passed
+And Select Month and Year from calendar.....................................passed
+<<<<<<< HEAD
+And Enter Expected Order Qty................................................passed
+And Enter Appr Per Pcs cost.................................................passed
+And Enter Exchange Rate.....................................................passed
+And verify the Total Cost in INR............................................passed
+And verify the Total cost in Currency.......................................passed
+=======
+>>>>>>> refs/remotes/origin/main
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> refs/remotes/origin/main
+]]></system-out>
+>>>>>>> refs/remotes/origin/main
     </testcase>
 </testsuite>
