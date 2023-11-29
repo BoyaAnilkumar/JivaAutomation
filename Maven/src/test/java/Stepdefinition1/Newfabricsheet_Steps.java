@@ -11,23 +11,6 @@ public class Newfabricsheet_Steps {
 
 	Newfabricsheet_Pages Newfabricsheet_Pages = new Newfabricsheet_Pages();
 
-	
-	         @When("^User navigates to Login page$")
-		     public void User_navigates_to_Login_page() throws Throwable {
-			 Newfabricsheet_Pages.User_navigates_to_Login_page();
-			}
-			
-			@Then("^User enters the username and password$")
-			public void User_enters_the_username_and_password() throws Throwable {
-				Newfabricsheet_Pages.User_enters_the_username_and_password();
-
-		    }
-
-			@And("^User click on the signIn$")
-			public void User_click_on_the_signIn() throws Throwable {
-				Newfabricsheet_Pages.User_click_on_the_signIn();
-
-		   }
 			 @And ("^Click on the Woven Module$")
 			   public void Click_on_the_Woven_Module() throws Throwable{
 				 Newfabricsheet_Pages.Click_on_the_Woven_Module();
@@ -49,50 +32,7 @@ public class Newfabricsheet_Steps {
 			   public void Verify_whether_the_New_fabric_sheet_screen_is_displaying_or_not() throws Throwable{
 				   Newfabricsheet_Pages.Verify_whether_the_New_fabric_sheet_screen_is_displaying_or_not();
 			   }
-			   @And ("^Click on the Styles Expansion$")
-			   public void Click_on_the_Styles_Expansion() throws Throwable{
-				   Newfabricsheet_Pages.Click_on_the_Styles_Expansion();
-			   }
-			   
-			   @And ("^Click on the Filter Icon$")
-			   public void Click_on_the_Filter_Icon() throws Throwable{
-				   Newfabricsheet_Pages.Click_on_the_Filter_Icon();
-			   }
-
-			   @And ("^Click on the Buyer Field$")
-			   public void Click_on_the_Buyer_Field() throws Throwable{
-				   Newfabricsheet_Pages.Click_on_the_Buyer_Field();
-			   }
-
-			   @Then ("^Select the Buyer$")
-			   public void Select_the_Buyer() throws Throwable{
-				   Newfabricsheet_Pages.Select_the_Buyer();
-			   }
-	
-			   @And ("^Click on the Season Field$")
-			   public void Click_on_the_Season_Field() throws Throwable{
-				   Newfabricsheet_Pages.Click_on_the_Season_Field();
-			   }
-
-			   @And ("^Select the Season$")
-			   public void Select_the_Season() throws Throwable{
-				   Newfabricsheet_Pages.Select_the_Season();
-			   }
-
-			   @When ("^Search the IPO$")
-			   public void Search_the_IPO() throws Throwable{
-				   Newfabricsheet_Pages.Search_the_IPO();
-			   }
-
-			   @And ("^Click on the Apply button$")
-			   public void Click_on_the_Apply_button() throws Throwable{
-				   Newfabricsheet_Pages.Click_on_the_Apply_button();
-			   }
-
-			   @And ("^Click on the Reset button$")
-			   public void Click_on_the_Reset_button() throws Throwable{
-				   Newfabricsheet_Pages.Click_on_the_Reset_button();
-			   }
+			  
 			   @And ("^Select the IPO and Style$")
 			   public void Select_the_IPO_and_Style() throws Throwable{
 				   Newfabricsheet_Pages.Select_the_IPO_and_Style();

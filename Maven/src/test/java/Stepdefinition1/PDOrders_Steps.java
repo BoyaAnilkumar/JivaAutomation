@@ -50,7 +50,7 @@ public class PDOrders_Steps {
 	}
 	
 	@And("^Enter Expected Order Qty$")
-	public void Enter_Expected_Order_Qty() {
+	public void Enter_Expected_Order_Qty() throws Throwable {
 		PDOrderspage.Enter_Expected_Order_Qty();
 	}
 	

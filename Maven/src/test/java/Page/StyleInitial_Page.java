@@ -17,10 +17,7 @@ import util.Utilities;
 
 			Utilities utilities = new Utilities();
 
-			By SignIn   = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
-			By username = By.xpath("//input[@id='userName']");
-			By password = By.xpath("//input[@id='userpassword']");
-			By Woven = By. xpath ("//span[text()='Woven / knit']");
+			
 			By Merchandising = By.xpath("(//span[text()='Merchandising '])[1]");
 			By Style_Initial = By.xpath("(//a[text()='Style Initial Details'])[1]");
 
@@ -29,12 +26,13 @@ import util.Utilities;
 			By Filterslash = By.xpath("//i[@class='pi pi-filter-slash']");
 		    By FilterIcon = By.xpath("//button[@class='btn btn-primary btn-sm mb-2 float-right']");
 		    By BuyerField = By.xpath("//div[text()='Select Buyer']");
-		    By EnterButer = By.xpath("//input[@role='textbox']");
+		    By BuyerField1 = By.xpath("//p-multiselect[@filterby='buyerName']");
+		    By EnterBuyer = By.xpath("//input[@role='textbox']");
 		    By SelectBuyer = By.xpath("//div[@class='p-checkbox-box']");
 		    By CL = By.xpath("//span[@class='p-multiselect-close-icon pi pi-times ng-tns-c92-10']");
 
 		    By SeasonField = By.xpath("//select[@formcontrolname='seasonId']");
-		    By Select_Season = By.xpath("//option[@value='116']");
+		    By Select_Season = By.xpath("//option[text()=' Holiday 2022']");
 		    By Status = By.xpath("//select[@formcontrolname='staticStatusId']");
 		    By SelectStatus_Com = By.xpath("//option[text()=' Completed']");
 		    By SelectStatus_NotCom = By.xpath("//option[text()=' Not Submitted']");
@@ -83,31 +81,9 @@ import util.Utilities;
             By A_S = By.xpath("//h2[text()='IPO Order Quantity Details Saved Successfully']");	
             By Expected = By.xpath("//p[@class='text-center']");
 
-			public void User_navigates_to_Login_page() throws Throwable {
-				driver.get(prop.getProperty("url"));
-
-				}
-				public void User_enters_the_username_and_password() throws Throwable {
-				utilities.webDriverWait(driver, username);
-				driver.findElement(username).sendKeys("Admin");
-				driver.findElement(password).sendKeys("Abcd@123");
-
-				}
-
-				public void User_click_on_the_signIn() throws Throwable {
-//				utilities.webDriverWait(driver, password);
-				driver.findElement(SignIn).click();
-
-				}
-				public void Click_on_the_Woven_Module() throws Throwable{
-				utilities.webDriverWait(driver, Woven );
-				driver.findElement(Woven).click();
-			  	}
-				public void click_on_the_Merchandising_Module() throws Throwable{
-				utilities.webDriverWait(driver, Merchandising );
-				driver.findElement(Merchandising).click();
-
-				}
+			
+				
+				
 				public void click_on_the_Style_Initail_Details_screen() throws Throwable{
 				   utilities.webDriverWait(driver, Style_Initial );
 				   driver.findElement(Style_Initial).click();
@@ -117,7 +93,7 @@ import util.Utilities;
 					utilities.webDriverWait(driver, Style_Ex );
 					driver.findElement(Style_Ex).click();
 					utilities.MediumWait(driver);
-					driver.findElement(Filterslash).click();
+
 
 				}
 	             public void Click_on_the_Filter_Icon() throws Throwable {
@@ -125,19 +101,31 @@ import util.Utilities;
 				driver.findElement(FilterIcon).click();
 				}
 				public void Click_on_the_Buyer_Field() throws Throwable {
-				utilities.webDriverWait(driver, BuyerField);
-				driver.findElement(BuyerField).click();
-				utilities.MediumWait(driver);
-     			driver.findElement(EnterButer).sendKeys("Spin");
+//				utilities.webDriverWait(driver, BuyerField);
+//				driver.findElement(BuyerField).click();
+//				utilities.MediumWait(driver);
+//     			driver.findElement(EnterButer).sendKeys("Spin");
+					
+						utilities.webDriverWait(driver, BuyerField1);
+						driver.findElement(BuyerField1).click();
+						System.out.println("Buyer field clicked");
+						utilities.MediumWait(driver);
+						driver.findElement(EnterBuyer).sendKeys("Spin");
+						utilities.MediumWait(driver);
+						driver.findElement(SelectBuyer).click();
+						utilities.MediumWait(driver);
+						driver.findElement(BuyerField1).click();
 
 
 				}
-				public void Select_the_Buyer() throws Throwable {
-					utilities.webDriverWait(driver, SelectBuyer);
-					driver.findElement(SelectBuyer).click();
-					
-					
-				}
+//				public void Select_the_Buyer() throws Throwable {
+//					utilities.webDriverWait(driver, SelectBuyer);
+//					driver.findElement(SelectBuyer).click();
+//					utilities.MediumWait(driver);
+//					driver.findElement(CL).click();
+//					
+//					
+//				}
 				public void Click_on_the_Cancel_Icon() throws Throwable  {
 					 utilities.webDriverWait(driver, CL);
 						driver.findElement(CL).click();
@@ -165,7 +153,7 @@ import util.Utilities;
 				}
 				public void Search_the_IPO() throws Throwable {
 					utilities.webDriverWait(driver, SearchIPO);
-					driver.findElement(SearchIPO).sendKeys("New0987");
+					driver.findElement(SearchIPO).sendKeys("New1234");
 					Thread.sleep(5000);
 					WebElement IPOname = driver.findElement(SearchIPO);
 					String ipon = IPOname.getAttribute("value");
@@ -191,10 +179,10 @@ import util.Utilities;
 
 				}
 				public void Verify_IPO_data() {
-	                WebElement AlertMsg = driver.findElement(IPO);
-					String IPO = AlertMsg.getText();
-					String expectedMessage = "SWe212y3";
-					if (expectedMessage.equals(IPO)) {
+	                WebElement Data = driver.findElement(IPO);
+					String IPO = Data.getText();
+					String expectedData = "SWe212y3";
+					if (expectedData.equals(IPO)) {
 						System.out.println("Alert message is correct." + IPO);
 					} else {
 						System.out.println("Alert message is incorrect."+ IPO);
@@ -202,30 +190,30 @@ import util.Utilities;
 
 				}
 				public void Verify_Style() {
-	             WebElement AlertMsg = driver.findElement(Style);
-					String IPO = AlertMsg.getText();
-					String expectedMessage = "IPO16";
-					if (expectedMessage.equals(IPO)) {
+	             WebElement Data = driver.findElement(Style);
+					String IPO = Data.getText();
+					String expectedData = "IPO16";
+					if (expectedData.equals(IPO)) {
 						System.out.println("Alert message is correct." + IPO);
 					} else {
 						System.out.println("Alert message is incorrect."+ IPO);
 					}
 				}
 				public void Verify_Buyer() {
-	              WebElement AlertMsg = driver.findElement(Buyer);
-					String IPO = AlertMsg.getText();
-					String expectedMessage = "Spin";
-					if (expectedMessage.equals(IPO)) {
+	              WebElement Data = driver.findElement(Buyer);
+					String IPO = Data.getText();
+					String expectedData = "Spin";
+					if (expectedData.equals(IPO)) {
 						System.out.println("Alert message is correct." + IPO);
 					} else {
 						System.out.println("Alert message is incorrect."+ IPO);
 					}
 				}
 				public void Verify_Season() {
-	                WebElement AlertMsg = driver.findElement(Season);
-					String IPO = AlertMsg.getText();
-					String expectedMessage = "Holiday 2022";
-					if (expectedMessage.equals(IPO)) {
+	                WebElement Data = driver.findElement(Season);
+					String IPO = Data.getText();
+					String expectedData = "Holiday 2022";
+					if (expectedData.equals(IPO)) {
 						System.out.println("Alert message is correct." + IPO);
 					} else {
 						System.out.println("Alert message is incorrect."+ IPO);

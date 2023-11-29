@@ -12,22 +12,11 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-<<<<<<< HEAD
-		          tags ="@NewFabricSheet")
-=======
-				  tags ="@CreatePDorders")
 
+		          tags ="@StylePODetails")
 
->>>>>>> refs/remotes/origin/main
 
 public class TestRunner {
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> refs/remotes/origin/main
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/main

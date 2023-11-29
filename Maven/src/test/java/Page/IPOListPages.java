@@ -50,7 +50,7 @@ public class IPOListPages extends DriverFactory {
 	
 	By GenerateExcelSheet = By.xpath("//a[@class='btn btn-primary btn-sm mr-2 mt-sm-1 ng-star-inserted']");
 	By AddIPO = By.xpath("//button[@class='btn btn-primary btn-sm shadow-sm float-right mt-1 ng-star-inserted']");
-<<<<<<< HEAD
+
 
 
 
@@ -59,9 +59,9 @@ public class IPOListPages extends DriverFactory {
 
 	By navAddIPOscr = By.xpath("//h3[text()='Add IPO ']");
 	
-=======
-	By navAddIPOscr = By.xpath("//h3[text()='Create IPO ']");
->>>>>>> refs/remotes/origin/main
+
+	//By navAddIPOscr = By.xpath("//h3[text()='Create IPO ']");
+
 	By IPODate = By.xpath("//input[@formcontrolname='ipoDate']");
 	By BuyerStyle = By.xpath("//input[@placeholder='Enter Buyer Style #']");
 //	By SelectBuyerStyle = By.xpath("//span[text()='TestStyle (555) version-1']");
@@ -98,11 +98,8 @@ public class IPOListPages extends DriverFactory {
 	By buttNo = By.xpath("(//button[text()='No'])[2]");
 	By buttYes = By.xpath("//button[text()='Yes']");
 	
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> refs/remotes/origin/main
+
 	public void Navigates_to_the_Login_page() {
 		driver.get(prop.getProperty("url"));
 		
@@ -261,17 +258,13 @@ public class IPOListPages extends DriverFactory {
 		Thread.sleep(5000);
 	}
 
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/main
+
+
 	public void Click_on_Generate_Excel_Sheet_button() throws Throwable {
 		utilities.webDriverWait(driver, GenerateExcelSheet);
 		driver.findElement(GenerateExcelSheet).click();		
-<<<<<<< HEAD
-=======
-	}
->>>>>>> refs/remotes/origin/main
+
 
 	}
 	public void Clicked_on_Add_IPO_button() throws Throwable {
@@ -289,14 +282,12 @@ public class IPOListPages extends DriverFactory {
 		}
 		
 	}
-<<<<<<< HEAD
+
 	//public void Clicked_on_Add_IPO_button() {
 		// TODO Auto-generated method stub
 
 	
-=======
 
->>>>>>> refs/remotes/origin/main
 	public void Click_on_the_save_button() throws Throwable {
 		driver.findElement(Save).click();
         utilities.MaximumLongWait(driver);
@@ -307,10 +298,7 @@ public class IPOListPages extends DriverFactory {
 		utilities.webDriverWait(driver, IPODate);
 		driver.findElement(IPODate).click();
 		
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/main
 	}
 	
 	public void Verify_whether_current_date_is_displayed_or_not_bydefault() throws Throwable {
@@ -328,16 +316,12 @@ public class IPOListPages extends DriverFactory {
 		utilities.webDriverWait(driver, BuyerStyle);
 		driver.findElement(BuyerStyle).sendKeys("Te");
 		
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/main
 	}
 
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/main
+
+
 	public void Select_a_Buyer_Style_from_the_dropdown() throws Throwable {
 		utilities.webDriverWait(driver, SelectBuyerStyle);
 		driver.findElement(SelectBuyerStyle).click();
@@ -345,10 +329,7 @@ public class IPOListPages extends DriverFactory {
 		r.keyPress(KeyEvent.VK_1);
 		Thread.sleep(1000);
 	}
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/main
 
 	public void Enter_the_IPO_name() throws Throwable {
 		utilities.webDriverWait(driver, IPOName);
@@ -465,10 +446,9 @@ public class IPOListPages extends DriverFactory {
 //        utilities.MaximumLongWait(driver);
 	}
 
-<<<<<<< HEAD
-=======
+
 	public void Verifying_the_IPO_List_grid_headers_and_Sorting() throws Throwable {
->>>>>>> refs/remotes/origin/main
+
 
         WebElement grid = driver.findElement(IPOtable);
         WebElement tableHeaderRow = grid.findElement(By.tagName("thead"));
@@ -479,7 +459,7 @@ public class IPOListPages extends DriverFactory {
         for (int i = 0; i < expectedHeaders.length;) {
           for (WebElement columnHeader : tableHeaders) {
         	String columnName = columnHeader.getText(); 
-            Assert.assertEquals(tableHeaders.get(i).getText(), expectedHeaders[i]);
+        	Assert.assertEquals(columnHeader.getAttribute("value"), expectedHeaders[i]);
             System.out.println(columnName);
           // Click on the header twice
 			columnHeader.click();
@@ -493,8 +473,7 @@ public class IPOListPages extends DriverFactory {
 		
 	}
 
-<<<<<<< HEAD
-=======
+
 	public void Verify_whether_the_Expansion_button_is_clickable_or_not_for_an_IPO() throws Throwable {
 		utilities.webDriverWait(driver, buttExpansion);
 		driver.findElement(buttExpansion).click();
@@ -612,7 +591,7 @@ public class IPOListPages extends DriverFactory {
 
 }	
 
->>>>>>> refs/remotes/origin/main
+
 
 	
 	

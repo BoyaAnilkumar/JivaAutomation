@@ -113,7 +113,7 @@ public class PDOrders_page extends DriverFactory {
 		
 	}
 
-	public void Enter_Expected_Order_Qty() {
+	public void Enter_Expected_Order_Qty() throws Throwable {
 		
 		utilities.webDriverWait(driver, AddButton);
 		

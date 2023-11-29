@@ -32,7 +32,7 @@ public class Hooks extends DriverFactory{
 //	public void as(Scenario scenario) throws IOException {
 //		scenario.attach(Utilities.getByteScreenshot(driver), "image/png", "");
 //	}
-//	
+	
 	@After
 	public void CloseBrowser() throws Throwable {
 		Thread.sleep(1000);

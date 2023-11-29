@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package Page;
 
 import org.openqa.selenium.By;
@@ -10,9 +10,7 @@ import util.Utilities;
 public class Country_Page extends DriverFactory{
 	Utilities utilities = new Utilities();
 
-	By SignIn   = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
-	By username = By.xpath("//input[@id='userName']");
-	By password = By.xpath("//input[@id='userpassword']");
+	
 	By Master = By. xpath ("//span[text()='Masters ']");
 	By Country = By.xpath("//a[text()='Country']");
 
@@ -51,23 +49,7 @@ public class Country_Page extends DriverFactory{
 	By Edit_1 =By.xpath("//i[@class='ti-pencil-alt']");
 	By Delete_1 = By.xpath("//i[@class='ti-trash']");
 
-	 public void User_navigates_to_Login_page() throws Throwable {
-			driver.get(prop.getProperty("url"));
-
-			}
-			public void User_enters_the_username_and_password() throws Throwable {
-			utilities.webDriverWait(driver, username);
-			driver.findElement(username).sendKeys("Admin");
-			driver.findElement(password).sendKeys("Abcd@123");
-
-			}
-
-			public void User_click_on_the_signIn() throws Throwable {
-//			utilities.webDriverWait(driver, password);
-			driver.findElement(SignIn).click();
-
-			}
-			public void Click_on_the_Master_Module() throws Throwable{
+	 	   public void Click_on_the_Master_Module() throws Throwable{
 			utilities.webDriverWait(driver, Master );
 			driver.findElement(Master).click();
 		  	}
@@ -271,7 +253,8 @@ public class Country_Page extends DriverFactory{
 			driver.findElement(Search).sendKeys("C7367");
 			utilities.MaximumWait(driver);
 			driver.findElement(Edit_1).click();
-=======
+			}	
+}
 //package Page;
 //
 //import static org.junit.Assert.assertEquals;
@@ -365,18 +348,18 @@ public class Country_Page extends DriverFactory{
 //			public void Enter_the_data_in_Country_name_field() throws Throwable {
 //				utilities.webDriverWait(driver, C_Name);
 //		        driver.findElement(C_A).click();
-//<<<<<<< HEAD
+
 //		        utilities.MediumWait(driver);		       
 //		        driver.findElement(C_Name).sendKeys("C73");
 //			}		  
 //			
-//=======
+
 //		        utilities.MediumWait(driver);		
 //		        
 //		        driver.findElement(C_Name).sendKeys("C73");
 //				  
 //			}
-//>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 //			public void Enter_the_data_in_Country_code_field() throws Throwable {
 //				utilities.webDriverWait(driver, C_Code );
 //				 driver.findElement(C_B).click();
@@ -534,7 +517,7 @@ public class Country_Page extends DriverFactory{
 //			public void Search_the_Country_name() throws Throwable {
 //			utilities.webDriverWait(driver, Search );
 //			driver.findElement(Search).sendKeys("C7367");
->>>>>>> refs/remotes/origin/main
+
 //			utilities.MaximumWait(driver);
 //			driver.findElement(Edit_1).click();
 ////			utilities.MaximumWait(driver);

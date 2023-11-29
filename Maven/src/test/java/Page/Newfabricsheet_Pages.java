@@ -16,28 +16,27 @@ public class Newfabricsheet_Pages extends DriverFactory{
 
 
 	Utilities utilities = new Utilities();
-
-	By SignIn   = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
-	By username = By.xpath("//input[@id='userName']");
-	By password = By.xpath("//input[@id='userpassword']");
+	
 	By Woven = By. xpath ("//span[text()='Woven / knit']");
 	By Merchandising = By.xpath("(//span[text()='Merchandising '])[1]");
 	By Generate_Fabric = By.xpath("//span[text()='Generate Fabric Sheet']");
 	By New_FabricSheet = By.xpath("//a[text()='New Fabric Sheet ']");
 	By NewFabricSheet_Screen = By.xpath("//h3[@class='f_s_25 f_w_700 dark_text mr_30']");
-	By Styles = By.xpath("//a[@id='sidebarCollapse']");
-	
-	By FilterIcon = By.xpath("//button[@id='navbarDropdown3']");
-    By BuyerField1 = By.xpath("//p-multiselect[@filterby='buyerName']");
-    By EnterBuyer = By.xpath("//input[@role='textbox']");
-    By SelectBuyer = By.xpath("//div[@class='p-checkbox-box']");
-    By SeasonField = By.xpath("//select[@formcontrolname='seasonId']");
-    By Select_Season = By.xpath("//option[text()=' Holiday 2022']");
-    By SearchIPO = By.xpath("//input[@placeholder='Enter Buyer style # or IPO #']");
-    By Apply = By.xpath("//button[@class='btn btn-md btn-primary']");
-    By Reset = By.xpath("//button[@class='btn btn-md btn-light btn-active-light-primary mr-2']");
+	By Styles = By.xpath("//a[@class='btn btn-collapse-style btn-sm']");
+
+//Verifiying the filter functionality
+//	By FilterIcon = By.xpath("//button[@id='navbarDropdown3']");
+//    By BuyerField1 = By.xpath("//p-multiselect[@filterby='buyerName']");
+//    By EnterBuyer = By.xpath("//input[@role='textbox']");
+//    By SelectBuyer = By.xpath("//div[@class='p-checkbox-box']");
+//    By SeasonField = By.xpath("//select[@formcontrolname='seasonId']");
+//    By Select_Season = By.xpath("//option[text()=' Holiday 2022']");
+//    By SearchIPO = By.xpath("//input[@placeholder='Enter Buyer style # or IPO #']");
+//    By Apply = By.xpath("//button[@class='btn btn-md btn-primary']");
+//    By Reset = By.xpath("//button[@class='btn btn-md btn-light btn-active-light-primary mr-2']");
     By Select_IPO = By.xpath("//div[@class='nav flex-column nav-pills ng-star-inserted']");
 
+//Add New Fabric Sheet
 	By Bulk_Fabric = By.xpath("//input[@formcontrolname='bulkFabricDeadline']");
 	By Fabric_Manager = By.xpath("//select[@formcontrolname='fabricManagerId']");
 	By Select_Manager = By.xpath("//option[@value='3f62f42c-88db-4e3a-8296-a0dd2b5e38ee']");
@@ -82,7 +81,11 @@ public class Newfabricsheet_Pages extends DriverFactory{
 	By Yes = By.xpath("//button[@class='swal2-confirm swal2-styled']");
 	By No = By.xpath("//button[@class='swal2-cancel swal2-styled']");
 	By Submit_FabricTeam = By.xpath("//button[text()=' Submit to Fabric Team']");
+	By Submit_FabricTeam_Yes = By.xpath("//button[@class='swal2-confirm swal2-styled']");
+	By Submit_FabricTeam_No = By.xpath("//button[@class='swal2-cancel swal2-styled']");
+	By Submit_Validationmsg = By.xpath("//h2[text()='New Fabric Sheet Submitted Successfully']");
 	
+//Verifying the import functionality
 	By Import = By.xpath("//button[@class='btn btn-primary btn-sm']");
 	By Import_Fabric = By.xpath("//input[@autocomplete='ad1fbdb45256']");
 	By OtherIPO = By.xpath("//input[@id='isotherIPO']");
@@ -94,7 +97,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 	By Import_PDFDS_Fabric = By.xpath("//input[@autocomplete='af62afbea4fc']");
 	By Import_Close = By.xpath("//button[@class='btn btn-danger']");
 	By Import_button = By.xpath("//button[@class='btn btn-primary']");
-	
+
 	By WithIn_IPO = By.xpath("//input[@name='withinIPO']");
 	By WithIn_Fabric = By.xpath("(//ng-select[@bindvalue='fabricId'])[1]");
 	By PD_FDS = By.xpath("//input[@name='PdFds']");
@@ -103,6 +106,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 	By Val_Save = By.xpath("//h2[text()='New Fabric Sheet Partially Updated Successfully']");
 	By Toaster_msg = By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
 	
+//update the new fabric sheet by clicking on edit icon 
 	By Edit = By.xpath("(//button[@class='btn btn-sm btn-info mr-1 ng-star-inserted'])[1]");
 	By Update_Is_Nominated = By.xpath("//input[@formcontrolname='isNominated']");
 	By Update_Supplier_Name = By.xpath("//select[@formcontrolname='supplierId']");
@@ -120,8 +124,8 @@ public class Newfabricsheet_Pages extends DriverFactory{
 	By Update_Select_Use = By.xpath("//option[@value='192']");
 	By Update_Colour = By.xpath("//ng-select[@formcontrolname='colorId']");
 	By Update_Select_Colour = By.xpath("(//span[@class='ng-option-label ng-star-inserted'])[1]");
-	By Update_Applicable_Combos = By.xpath("(//select[@formcontrolname='comboId']//option[@class='ng-star-inserted'])[2]");
-	By Update_Select_Combos = By.xpath("//option[@value='99']");
+	By Update_Applicable_Combos = By.xpath("//select[@formcontrolname='comboId']");
+	By Update_Select_Combos = By.xpath("(//select[@formcontrolname='comboId']//option[@class='ng-star-inserted'])[2]");
 	By Update_Addl_Inf = By.xpath("//textarea[@placeholder='Enter Addl Information']");
 	By Update_Additional_per = By.xpath("//input[@placeholder='Enter Addl. Rejection']");
 	By Update_Gar_Avg1 = By.xpath("(//input[@placeholder='Enter Garment Avg.'])[1]");
@@ -140,29 +144,6 @@ public class Newfabricsheet_Pages extends DriverFactory{
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	public void User_navigates_to_Login_page() {
-		driver.get(prop.getProperty("url"));
-		
-	}
-
-	public void User_enters_the_username_and_password() throws Throwable {
-		utilities.webDriverWait(driver, username);
-		driver.findElement(username).sendKeys("Admin");
-		driver.findElement(password).sendKeys("Abcd@123");
-		
-	}
-
-	public void User_click_on_the_signIn() {
-		driver.findElement(SignIn).click();
-		
-	}
 
 	public void Click_on_the_Woven_Module() throws Throwable {
 		utilities.webDriverWait(driver, Woven );
@@ -204,69 +185,36 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		
 }
 
-	public void Click_on_the_Styles_Expansion() throws Throwable {
-		 driver.findElement(Styles).click();
-	     utilities.MediumWait(driver);
+	
 		
-	}
-	public void Click_on_the_Filter_Icon() throws Throwable {
-		utilities.webDriverWait(driver, FilterIcon);
-		driver.findElement(FilterIcon).click();
-		}
-		public void Click_on_the_Buyer_Field() throws Throwable {
-		utilities.webDriverWait(driver, BuyerField1);
-		driver.findElement(BuyerField1).click();
-		System.out.println("Buyer field clicked");
-		utilities.MediumWait(driver);
-		driver.findElement(EnterBuyer).sendKeys("Spin");
-		utilities.MediumWait(driver);
-		driver.findElement(SelectBuyer).click();
-		utilities.MediumWait(driver);
-		driver.findElement(BuyerField1).click();
-
-
-		}
-		public void Select_the_Buyer() throws Throwable {
-			utilities.webDriverWait(driver, SelectBuyer);
-			driver.findElement(SelectBuyer).click();
-			utilities.MediumWait(driver);
-			driver.findElement(BuyerField1).click();
-			
-		}
-		
-		public void Click_on_the_Season_Field() throws Throwable {
-		   utilities.webDriverWait(driver, SeasonField);
-			driver.findElement(SeasonField).click();
-		}
-		public void Select_the_Season() throws Throwable {
-			utilities.webDriverWait(driver, Select_Season);
-			driver.findElement(Select_Season).click();
-
-		}
-		public void Search_the_IPO() throws Throwable {
-			utilities.webDriverWait(driver, SearchIPO);
-			driver.findElement(SearchIPO).sendKeys("IPO16/10");
-			Thread.sleep(5000);
-			WebElement IPOname = driver.findElement(SearchIPO);
-			String ipon = IPOname.getAttribute("value");
-			System.out.println("Display the entered IPO Name " + ipon);
-			
-
-		}
-		public void Click_on_the_Apply_button() throws Throwable {
-			utilities.webDriverWait(driver, Apply);
-			driver.findElement(Apply).click();
-
-		}
-		public void Click_on_the_Reset_button() throws Throwable {
-			utilities.webDriverWait(driver, Reset);
-			driver.findElement(Reset).click();
-
-		}
+//		public void Click_on_the_Season_Field() throws Throwable {
+//		   utilities.webDriverWait(driver, SeasonField);
+//			driver.findElement(SeasonField).click();
+//		}
+//
+//		public void Search_the_IPO() throws Throwable {
+//			utilities.webDriverWait(driver, SearchIPO);
+//			driver.findElement(SearchIPO).sendKeys("New1234");
+//			Thread.sleep(5000);
+//			WebElement IPOname = driver.findElement(SearchIPO);
+//			String ipon = IPOname.getAttribute("value");
+//			System.out.println("Display the entered IPO Name " + ipon);
+//			
+//
+//		}
+//		public void Click_on_the_Apply_button() throws Throwable {
+//			utilities.webDriverWait(driver, Apply);
+//			driver.findElement(Apply).click();
+//
+//		}
+//		public void Click_on_the_Reset_button() throws Throwable {
+//			utilities.webDriverWait(driver, Reset);
+//			driver.findElement(Reset).click();
+//
+//		}
 		public void Select_the_IPO_and_Style() throws Throwable {
 			utilities.webDriverWait(driver, Select_IPO);
 			driver.findElement(Select_IPO).click();
-
 			
 		}
 
@@ -492,7 +440,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			driver.findElement(A_Submit).click();
 			utilities.MediumWait(driver);
 			driver.findElement(P_Save).click();
-			utilities.MediumWait(driver);
+			
 			
 		}
 
@@ -609,10 +557,25 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		public void Click_on_the_Submit_to_Fabric_Team_button() throws Throwable {
 			utilities.webDriverWait(driver, Submit_FabricTeam);
 			driver.findElement(Submit_FabricTeam).click();
-			
+			utilities.MediumWait(driver);
+			driver.findElement(Submit_FabricTeam_Yes).click();
+//			utilities.MediumWait(driver);
+//			driver.findElement(Submit_FabricTeam_No).click();
+			utilities.MediumWait(driver);
+			WebElement AlertMsg = driver.findElement(Submit_Validationmsg);
+			String Val = AlertMsg.getText();
+			String expectedMessage = "New Fabric Sheet Submitted Successfully";
+			if (expectedMessage.equals(Val)) {
+				System.out.println("Alert message is correct." + Val);
+			} else {
+				System.out.println("Alert message is incorrect."+ Val);
+			}
 		}
 
-		public void After_click_on_the_Save_button_the_validation_msg_is_displaying_or_not() {
+		public void After_click_on_the_Save_button_the_validation_msg_is_displaying_or_not() throws Throwable {
+//			driver.findElement(P_Save).click();
+//			utilities.MediumWait(driver);
+			utilities.MediumWait(driver);
 			WebElement AlertMsg = driver.findElement(Val_Save);
 			String SVM = AlertMsg.getText();
 			String expectedMessage = "New Fabric Sheet Partially Updated Successfully";
@@ -625,8 +588,8 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			
 		}
 		public void Click_on_the_Edit_Icon() throws Throwable {
-			utilities.MediumWait(driver);
-			driver.findElement(GoToTop).click();
+//			utilities.MediumWait(driver);
+//			driver.findElement(GoToTop).click();
 			
 			utilities.webDriverWait(driver, Edit);
 			driver.findElement(Edit).click();
@@ -770,7 +733,9 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		}
 
 		public void Click_on_the_Cancel_button() throws Throwable {
-			
+			utilities.webDriverWait(driver, Update_A_Cancel);
+			driver.findElement(Update_A_Cancel).click();
+		
 		}
 
 		public void Click_on_the_Submit_button() throws Throwable {
