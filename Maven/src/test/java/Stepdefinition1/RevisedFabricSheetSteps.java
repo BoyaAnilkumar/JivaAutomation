@@ -312,6 +312,70 @@ public class RevisedFabricSheetSteps {
 	public void Verify_and_Update_the_field_value_displayed_in_the_Fabric_Required_For_Sampling_field() throws Throwable {
 		RFSP.Verify_and_Update_the_field_value_displayed_in_the_Fabric_Required_For_Sampling_field();
 	}
+	@Then ("^Click on the Update button in the Update Fabric Sheet form$")
+	public void Click_on_the_Update_button_in_the_Update_Fabric_Sheet_form() throws Throwable {
+		RFSP.Click_on_the_Update_button_in_the_Update_Fabric_Sheet_form();
+	}
+	@Then ("^Verify whether the Import popup window is opened when clicked on the Import Fabric Details button$")
+	public void Verify_whether_the_Import_popup_window_is_opened_when_clicked_on_the_Import_Fabric_Details_button() throws Throwable {
+		RFSP.Verify_whether_the_Import_popup_window_is_opened_when_clicked_on_the_Import_Fabric_Details_button();
+	}
+	@And ("^Click on Close button in the Import popup window$")
+	public void Click_on_Close_button_in_the_Import_popup_window() throws Throwable {
+		RFSP.Click_on_Close_button_in_the_Import_popup_window();
+	}
+
+	@Then ("^Select the WithInIPO option in the Import window$")
+	public void Select_the_WithInIPO_option_in_the_Import_window() throws Throwable {
+		RFSP.Select_the_WithInIPO_option_in_the_Import_window();
+	}
+	@And ("^Verify whether Mandatory validation msg is displayed or not on Onclick the Import button without selecting any values$")
+	public void Verify_whether_Mandatory_validation_msg_is_displayed_or_not_on_Onclick_the_Import_button_without_selecting_any_values() throws Throwable {
+		RFSP.Verify_whether_Mandatory_validation_msg_is_displayed_or_not_on_Onclick_the_Import_button_without_selecting_any_values();
+	}
+	@Then ("^Verify whether the user is able to add the selected fabric on Importing$")
+	public void Verify_whether_the_user_is_able_to_add_the_selected_fabric_on_Importing() throws Throwable {
+		RFSP.Verify_whether_the_user_is_able_to_add_the_selected_fabric_on_Importing();
+	}
+
+	@Then ("^Select the OtherIPO option in the Import window$")
+	public void Select_the_OtherIPO_option_in_the_Import_window() throws Throwable {
+		RFSP.Select_the_OtherIPO_option_in_the_Import_window();
+	}
+	@And ("^Verify whether Mandatory validation msg is displayed or not on Onclick the Import button without selecting any value$")
+	public void Verify_whether_Mandatory_validation_msg_is_displayed_or_not_on_Onclick_the_Import_button_without_selecting_any_value() throws Throwable {
+		RFSP.Verify_whether_Mandatory_validation_msg_is_displayed_or_not_on_Onclick_the_Import_button_without_selecting_any_value();
+	}
+	@Then ("^Verify whether the user is able to select an IPO in the dropdown or not$")
+	public void Verify_whether_the_user_is_able_to_select_an_IPO_in_the_dropdown_or_not() throws Throwable {
+		RFSP.Verify_whether_the_user_is_able_to_select_an_IPO_in_the_dropdown_or_not();
+	}
+	@Then ("^Verify whether the Select Fabric field is displayed or not$")
+	public void Verify_whether_the_Select_Fabric_field_is_displayed_or_not() throws Throwable {
+		RFSP.Verify_whether_the_Select_Fabric_field_is_displayed_or_not();
+	}
+	@Then ("^Verify whether the user is able to add the selected fabric on Importing or not$")
+	public void Verify_whether_the_user_is_able_to_add_the_selected_fabric_on_Importing_or_not() throws Throwable {
+		RFSP.Verify_whether_the_user_is_able_to_add_the_selected_fabric_on_Importing_or_not();
+	}
+
+	@Then ("^Select the PDFDS option in the Import window$")
+	public void Select_the_PDFDS_option_in_the_Import_window() throws Throwable {
+		RFSP.Select_the_PDFDS_option_in_the_Import_window();
+	}
+	@And ("^Verify whether mandatory validation msg is displayed or not on Onclick the Import button without selecting any values$")
+	public void Verify_whether_mandatory_validation_msg_is_displayed_or_not_on_Onclick_the_Import_button_without_selecting_any_values() throws Throwable {
+		RFSP.Verify_whether_mandatory_validation_msg_is_displayed_or_not_on_Onclick_the_Import_button_without_selecting_any_values();
+	}
+	@Then ("^Verify whether the user is able to add the Selected Fabric on Importing$")
+	public void Verify_whether_the_user_is_able_to_add_the_Selected_Fabric_on_Importing() throws Throwable {
+		RFSP.Verify_whether_the_user_is_able_to_add_the_Selected_Fabric_on_Importing();
+	}
+	@Then ("^Verify whether the imported fabric is able to Submit to the Fabric Team or not$")
+	public void Verify_whether_the_imported_fabric_is_able_to_Submit_to_the_Fabric_Team_or_not() throws Throwable {
+		RFSP.Verify_whether_the_imported_fabric_is_able_to_Submit_to_the_Fabric_Team_or_not();
+	}
+
 
 
 

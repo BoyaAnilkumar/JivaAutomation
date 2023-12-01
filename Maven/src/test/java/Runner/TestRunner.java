@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 				  features = "Features",
 				  monochrome = true,
 
-		          tags ="@RevisedFabricSheeet")
+		          tags ="@RevisedFabricSheeet1")
 
 
 
