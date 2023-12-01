@@ -426,10 +426,10 @@ public class CostingSteps {
 	  public void Click_on_the_PSave_button() throws Throwable {
 		  cos.Click_on_the_PSave_button();
 	  }
-	  @Then ("^Click on the Submit button$")
-	  public void Click_on_the_Submit_button() throws Throwable {
-		  cos.Click_on_the_Submit_button();
-	  }
+//	  @Then ("^Click on the Submit button$")
+//	  public void Click_on_the_Submit_button() throws Throwable {
+//		  cos.Click_on_the_Submit_button();
+//	  }
 	  @Then ("^Click on the View For Print button$")
 	  public void Click_on_the_View_For_Print_button() throws Throwable {
 		  cos.Click_on_the_View_For_Print_button();
@@ -458,10 +458,10 @@ public class CostingSteps {
 	  public void Select_a_value_from_the_dropdown() {
 		  cos.Select_a_value_from_the_dropdown();
 	  }
-	  @Then ("^Click on the Close button$")
-	  public void Click_on_the_Close_button() throws Throwable {
-		  cos.Click_on_the_Close_button();
-	  }
+//	  @Then ("^Click on the Close button$")
+//	  public void Click_on_the_Close_button() throws Throwable {
+//		  cos.Click_on_the_Close_button();
+//	  }
 	  @Then ("^Click on the Import buttton$")
 	  public void Click_on_the_Import_buttton() throws Throwable {
 		  cos.Click_on_the_Import_buttton();
@@ -476,4 +476,7 @@ public class CostingSteps {
 	
 
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> refs/remotes/origin/main

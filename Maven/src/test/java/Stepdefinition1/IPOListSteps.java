@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> refs/remotes/origin/main
 package Stepdefinition1;
 
 import Page.IPOListPages;
@@ -230,4 +234,11 @@ public class IPOListSteps {
 		IPOl.Clicked_on_Yes_button_in_the_toaster_msg();
 	}
 
+<<<<<<< HEAD
+	  
+
+}
+
+=======
 	  }
+>>>>>>> refs/remotes/origin/main
