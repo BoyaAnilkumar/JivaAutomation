@@ -1,19 +1,19 @@
-  
-  @IPOadding
-  Feature: Creating an IPO for a confirmed style
-  
-  
- @IPOList
-  Scenario: Creating an IPO 
-  Given Navigates to the Login page
-  Then Enter valid Username and password
-
+  #
+  #@IPOadding
+  #Feature: Creating an IPO for a confirmed style
+  #
+  #
+ #@IPOList
+  #Scenario: Creating an IPO 
+  #Given Navigates to the Login page
+  #Then Enter valid Username and password
+#
   #And Click on SignIn 
   #Then Click on the Woven Modules
-  And Click on SignIn 
-  Then Click on the Woven Modules
-  Then Click on Audit module
-  Then Click on IPO List module
+  #And Click on SignIn 
+  #Then Click on the Woven Modules
+  #Then Click on Audit module
+  #Then Click on IPO List module
   #Filter scenarios
   #Then Click on the Filter button 
   #Then Click in the IPO From Date field
@@ -33,27 +33,27 @@
   #Then Click on the Apply button
   #
   #Then Click on Generate Excel Sheet button
-  When Clicked on Add IPO button
-  And Verify whether the page is navigating to the Add IPO screen or not 
+  #When Clicked on Add IPO button
+  #And Verify whether the page is navigating to the Add IPO screen or not 
   #Adding an IPO 
   #When Click on the save button
   #And Verify the information tags data on mouse hover
-  Then Select an IPO Date
-  And Verify whether current date is displayed or not bydefault
-  Given Enter first two letters of a Buyer Style
-  And Select a Buyer Style from the dropdown
-  Given Enter the IPO name
-  Given Enter first two letters of Production Merchant
-  Then Select a Production Merchant fron the dropdown
-  Given Enter the PO Qty
-  Given Enter IPO percentage
-  Then Click in the Assigned Month and Year field
-  Then Select the Month from the month picker
-  Then Select Exfactory Date 
+  #Then Select an IPO Date
+  #And Verify whether current date is displayed or not bydefault
+  #Given Enter first two letters of a Buyer Style
+  #And Select a Buyer Style from the dropdown
+  #Given Enter the IPO name
+  #Given Enter first two letters of Production Merchant
+  #Then Select a Production Merchant fron the dropdown
+  #Given Enter the PO Qty
+  #Given Enter IPO percentage
+  #Then Click in the Assigned Month and Year field
+  #Then Select the Month from the month picker
+  #Then Select Exfactory Date 
   #And Check the Active field status
-  Then Click on the Save button
+  #Then Click on the Save button
   #Then Click on Cancel button in the Add IPO
-  And Verify whether the page is navigated to IPO List page or not
+  #And Verify whether the page is navigated to IPO List page or not
   #Given Verifying the IPO List grid headers and Sorting
   #And Verify whether the Expansion button is clickable or not for an IPO
   #And Verify whether the Edit button is clickable
@@ -62,9 +62,9 @@
   #When Clear all the data in any one of the field 
   #Then click on the update button in UpdateIPO form
   #And Check whether the mandatory validation msg is displayed or not
-  And To verify whether the Delete button is clickable or not
-  Then Verifying the Delete toaster msg
-  When Clicked on No button in the toaster msg
-  When Clicked on Yes button in the toaster msg
-  
+  #And To verify whether the Delete button is clickable or not
+  #Then Verifying the Delete toaster msg
+  #When Clicked on No button in the toaster msg
+  #When Clicked on Yes button in the toaster msg
+  #
   

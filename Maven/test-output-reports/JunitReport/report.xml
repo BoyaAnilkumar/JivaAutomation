@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="169.675">
     <testcase classname="Submit the fabric sheet details" name="Importing functionality" time="168.865">
@@ -28,3 +30,4 @@ Then Verify whether the imported fabric is able to Submit to the Fabric Team or 
 ]]></system-out>
     </testcase>
 </testsuite>
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git

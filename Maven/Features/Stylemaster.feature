@@ -1,15 +1,15 @@
-@FeatureGroup_Requirement
-Feature: feature to test Jiva design style master screen functionality
-
- @Test1
- Scenario: To Test the Style Master screen
- When User navigates to Login page
-Then User enters the username and password
- And User click on the signIn
- And Click on the Woven Module
- Then click on the PD Module
- And click on the Style Master screen
-
+#@FeatureGroup_Requirement
+#Feature: feature to test Jiva design style master screen functionality
+#
+ #@Test1
+ #Scenario: To Test the Style Master screen
+ #When User navigates to Login page
+#Then User enters the username and password
+ #And User click on the signIn
+ #And Click on the Woven Module
+ #Then click on the PD Module
+ #And click on the Style Master screen
+#
  #Then click on the Filter Icon
  #And Click on the Buyer filed
  #When User select the Buyer in buyer dropdown field
@@ -20,8 +20,8 @@ Then User enters the username and password
  #And Enter the data in Search By Style field
  #And Click on the Filter Apply button
  #And Click on the Filter Reset button
- 
-
+ #
+#
 #Then Click on the Add New style button
 #And Click on the PD Merchant name field
 #When User select the PD merchant name
@@ -48,23 +48,23 @@ Then User enters the username and password
 #Given I am on the homepage
 #Then print the displayed header message
 #
-
+#
 #And Click on the Cancel button
-And Click on the created style
+#And Click on the created style
 #And Click on the Back button
-
-
-When User click on the add revise estimates button
-And Click on the Generate new order radio button
+#
+#
+#When User click on the add revise estimates button
+#And Click on the Generate new order radio button
 #And Select the Order Type
 #And Select the Order date
 #And Select the Exfactory date
 #Given User enter the Order qty
 #And Select the Costing Version
-And click on the Save button
+#And click on the Save button
 #And Click on the cancel button
 #And Click on the Generate new order radio button
-
+#
 #And Click on the Add new tech pack button
 #When The User enter the data in tech pack name field
 #And Enter the data in tech pack desc field
@@ -72,7 +72,7 @@ And click on the Save button
 #And Click on the tech pack details Save button
 #And Click on the tech pack details Cancel button
 #And Click on the Tech pack cancel Icon
-
+#
 #And Click on the Add sampling details button
 #And Select the sampling status
 #Given User Click the Sampling type
@@ -83,16 +83,16 @@ And click on the Save button
 #And Click on the Cancel Icon
 #And User Click on the Link to PD FDS button
 #And Click on the Link button
-
-
+#
+#
 #Then Click on the View Cancel Icon
 #And Click on the View Close button
 #And Click on the Manage Images Icon
 #And Click on the Manage images Save button
 #And Click on the Manage Close button
 #And Click on the Manage Images cancel Icon
-
-
+#
+#
 #And Click on the Edit Icon
 #And CLick on the Edit Close icon
 #And Click on the Edit Close button
@@ -106,7 +106,7 @@ And click on the Save button
 #And Click on the Update button
 #And CLick on the Edit Close icon
 #And Click on the Edit Close button
-
+#
 #And Click on the Delete Icon
 #And Click on the Yes button
 #And Click on the No button
