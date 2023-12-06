@@ -13,7 +13,6 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  And Verify whether the New fabric sheet screen is displaying or not
  And Click on the Styles Expansion
  
- 
  @NewFabricSheet123 
  Scenario: To Test the Filter Functionality
  When User navigates to Login page
@@ -33,7 +32,6 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  And Click on the Apply button
  #And Click on the Reset button
  And Select the IPO and Style
- 
  
  @NewFabricSheet123 
  Scenario: To Test the Add new fabric functionality
@@ -79,8 +77,7 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  #And Click on the Submit to Fabric Team button
  #And Click on the Delete Icon
  
- 
-@NewFabricSheet123 
+ @NewFabricSheet123 
  Scenario: To Test the Import functionality
  When User navigates to Login page
  Then User enters the username and password
@@ -105,7 +102,6 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  #And Click on the Close button
  And Click on the Import button
  When Enter the data after import the fabric details
- 
  
  @NewFabricSheet123
  Scenario: To Test the Update Fabric details functionality
@@ -136,16 +132,5 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  #And Click on the Cancel button
  And Click on the Submit button
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
  
  

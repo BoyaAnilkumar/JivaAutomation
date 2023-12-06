@@ -3,7 +3,6 @@ import java.io.IOException;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
@@ -28,17 +27,12 @@ public class Hooks extends DriverFactory{
             scenario.attach(screenshot, "image/png", "screenshot");
         }
 	}
-<<<<<<< HEAD
-//	@AfterStep
-//	public void as(Scenario scenario) throws IOException {
-//		scenario.attach(Utilities.getByteScreenshot(driver), "image/png", "");
-//	}
-=======
+
 	@AfterStep
 	public void as(Scenario scenario) throws IOException {
 		scenario.attach(Utilities.getByteScreenshot(driver), "image/png", "");
 	}
->>>>>>> refs/remotes/origin/main
+
 	
 	@After
 	public void CloseBrowser() throws Throwable {

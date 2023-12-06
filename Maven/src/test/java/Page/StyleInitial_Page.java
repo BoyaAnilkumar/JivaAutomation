@@ -153,7 +153,7 @@ import util.Utilities;
 				}
 				public void Search_the_IPO() throws Throwable {
 					utilities.webDriverWait(driver, SearchIPO);
-					driver.findElement(SearchIPO).sendKeys("New1234");
+					driver.findElement(SearchIPO).sendKeys("IPO16/10");
 					Thread.sleep(5000);
 					WebElement IPOname = driver.findElement(SearchIPO);
 					String ipon = IPOname.getAttribute("value");
