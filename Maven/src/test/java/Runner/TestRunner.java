@@ -12,9 +12,11 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-                  tags ="@FabricSheetAudit")
 
+                  tags ="@MerchandisingTAndA1")
 
+		         
 public class TestRunner {
 
 }
+

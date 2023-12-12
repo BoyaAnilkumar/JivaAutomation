@@ -28,6 +28,10 @@ public class Hooks extends DriverFactory{
         }
 	}
 
+
+
+
+
 	@AfterStep
 	public void as(Scenario scenario) throws IOException {
 		scenario.attach(Utilities.getByteScreenshot(driver), "image/png", "");

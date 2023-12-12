@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="86.481">
+    <testcase classname="Feature to test Jiva design Merchandising T and A Data Entry screen functionality" name="To Test the Filter Functionality" time="85.904">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then click on the Merchandising Module......................................passed
+And Click on the T and A Module.............................................passed
+And Click on the Merchandising T&A Data Entry Screen........................passed
+And Click on the Styles Expansion...........................................passed
+And Click on the Filter Icon................................................passed
+And Click on the Buyer Field................................................passed
+And Click on the Season Field...............................................passed
+And Select the Season.......................................................passed
+And Select the Month........................................................passed
+And Search The IPO and Style................................................passed
+And Click on the Apply button...............................................passed
+And Select the IPO and Style................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

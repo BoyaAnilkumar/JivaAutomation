@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
 import util.DriverFactory;
@@ -96,10 +97,13 @@ import util.Utilities;
 
 
 				}
-	             public void Click_on_the_Filter_Icon() throws Throwable {
+	            public void Click_on_the_Filter_Icon() throws Throwable {
+//	            utilities.webDriverWait(driver, Filterslash);
+//				driver.findElement(Filterslash).click();
 				utilities.webDriverWait(driver, FilterIcon);
 				driver.findElement(FilterIcon).click();
 				}
+	 
 				public void Click_on_the_Buyer_Field() throws Throwable {
 //				utilities.webDriverWait(driver, BuyerField);
 //				driver.findElement(BuyerField).click();

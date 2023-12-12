@@ -10,22 +10,8 @@ import io.cucumber.java.en.When;
 public class IPOListSteps {
 	IPOListPages IPOl = new IPOListPages();
 	
-	@Given ("^Navigates to the Login page$")
-	public void Navigates_to_the_Login_page() {
-		IPOl.Navigates_to_the_Login_page();
-	}
-	@Then ("^Enter valid Username and password$")
-	public void Enter_valid_Username_and_password() throws Throwable {
-		IPOl.Enter_valid_Username_and_password();
-	}
-	@And ("^Click on SignIn$")
-	public void Click_on_SignIn() {
-		IPOl.Click_on_SignIn();
-	}
-	@Then ("^Click on the Woven Modules$")
-	public void Click_on_the_Woven_Modules() throws Throwable {
-		IPOl.Click_on_the_Woven_Modules();
-	}
+	
+	
 	@Then ("^Click on Audit module$")
 	public void Click_on_Audit_module() throws Throwable {
 		IPOl.Click_on_Audit_module();
@@ -110,10 +96,10 @@ public class IPOListSteps {
 	public void Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not() {
 		IPOl.Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not();
 	}
-	@When ("^Click on the save button$")
-	public void Click_on_the_save_button() throws Throwable {
-		IPOl.Click_on_the_save_button();
-	}
+//	@When ("^Click on the save button$")
+//	public void Click_on_the_save_button() throws Throwable {
+//		IPOl.Click_on_the_save_button();
+//	}
 	@Then ("^Select an IPO Date$")
 	public void Select_an_IPO_Date() throws Throwable {
 		IPOl.Select_an_IPO_Date();
