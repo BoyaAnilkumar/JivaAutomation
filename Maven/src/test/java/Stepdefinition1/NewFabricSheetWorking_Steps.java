@@ -220,7 +220,7 @@ public class NewFabricSheetWorking_Steps {
 	}
 	
 	@And("^Select the Fabric Manager from the dropdown list of Fabric Manager field for printing process$")
-	public void Select_the_Fabric_Manager_from_the_dropdown_list_of_Fabric_Manager_field_for_printing_process() {
+	public void Select_the_Fabric_Manager_from_the_dropdown_list_of_Fabric_Manager_field_for_printing_process() throws Throwable {
 		NewFabricSheetWorkingpage.Select_the_Fabric_Manager_from_the_dropdown_list_of_Fabric_Manager_field_for_printing_process();
 	}
 	
@@ -230,7 +230,7 @@ public class NewFabricSheetWorking_Steps {
 	}
 	
 	@And("^Select Fabric Executive from the dropdown list for printing process$")
-	public void Select_Fabric_Executive_from_the_dropdown_list_for_printing_process() {
+	public void Select_Fabric_Executive_from_the_dropdown_list_for_printing_process() throws Throwable {
 		NewFabricSheetWorkingpage.Select_Fabric_Executive_from_the_dropdown_list_for_printing_process();
 	}
 	
@@ -260,7 +260,7 @@ public class NewFabricSheetWorking_Steps {
 	}
 	
 	@And("^Click on submit button to save the mu working$")
-	public void Click_on_submit_button_to_save_the_mu_working() {
+	public void Click_on_submit_button_to_save_the_mu_working() throws Throwable {
 		NewFabricSheetWorkingpage.Click_on_submit_button_to_save_the_mu_working();
 	}
 	

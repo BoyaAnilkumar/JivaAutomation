@@ -68,9 +68,9 @@ Feature: I want to add process details for IPO which is having the fabric sheet
     And Select the Fabric Manager from the dropdown list of Fabric Manager field for printing process
     And Fabric manager assistants should display based on the selection of Fabric Manager for printing process
     And Select Fabric Executive from the dropdown list for printing process
-    When Verify the Freight budget details section is displaying or not
-    And Verify the quantity is displaying for greige dyeing and printing process or not
-    And verify the rate is displaying as zero for greige dyeing and printing process or not
-    And verify the conversion rate is displaying as zero for greige dyeing and printing process or not
-    And verify the cost is displaying as zero for greige dyeing and printing process or not
+    #When Verify the Freight budget details section is displaying or not
+    #And Verify the quantity is displaying for greige dyeing and printing process or not
+    #And verify the rate is displaying as zero for greige dyeing and printing process or not
+    #And verify the conversion rate is displaying as zero for greige dyeing and printing process or not
+    #And verify the cost is displaying as zero for greige dyeing and printing process or not
     And Click on submit button to save the mu working

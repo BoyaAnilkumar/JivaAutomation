@@ -1,5 +1,10 @@
 package Page;
 
+import static org.junit.Assert.assertTrue;
+
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -49,7 +54,7 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By GFabricManager				= By.xpath("//select[@formcontrolname='greigeBaseFabricManagerId']");
 	By SelectGFmanager				= By.xpath("(//option[text()=' Lokesh P'])[2]");
 	By GFabricManagerAsst			= By.xpath("(//div[@class='ng-select-container'])[2]");
-	By SelectGFMAsst				= By.xpath("//div[@id='a96155b3ece0-0']");
+	By SelectGFMAsst				= By.xpath("(//span[@class='ng-option-label ng-star-inserted'])[1]");
 	By GExecutive					= By.xpath("//select[@formcontrolname='greigeBaseFabricExecutiveId']");
 	By SelectGFExecutive			= By.xpath("(//option[text()=' Nikhil'])[2]");
 	By Dyeingqty					= By.xpath("(//input[@formcontrolname='dyingQty'])[2]");
@@ -67,8 +72,10 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By PrintingConversionrate		= By.xpath("(//input[@formcontrolname='printingConversionRate'])[1]");
 	By Printingcost					= By.xpath("(//input[@formcontrolname='printingCostInINR'])[1]");
 	By PrintingFabricManager		= By.xpath("//select[@formcontrolname='printingFabricManagerId']");
+	By SelectPFM					= By.xpath("//select[@formcontrolname='printingFabricManagerId']/..//option[text()=' Jiten Gupta']");
 	By PrintingFabricManagerAsst	= By.xpath("//ng-select[@formcontrolname='printingFabricAssistantsId']");
 	By PrintingFabricExecutive		= By.xpath("//select[@formcontrolname='printingFabricExecutiveId']");
+	By SelectPFE					= By.xpath("//select[@formcontrolname='printingFabricExecutiveId']/..//option[text()=' Anil Kumar']");
 	By Cancelbutton					= By.xpath("//a[@class='btn btn-md btn-danger mr-2']");
 	By submitbutton					= By.xpath("//button[@class='btn btn-primary btn-md']");
 
@@ -257,7 +264,7 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		WebElement GreigeQty = driver.findElement(Greigeqty);
 		String qty = GreigeQty.getAttribute("value");
 		if(GreigeQty.isDisplayed()) {
-			System.out.println("Greige Qty is Displayed:" + qty);
+			System.out.println("Greige Qty is Displayed: " + qty);
 		}else {
 			System.out.println("Greige Qty is not displaying");
 		}
@@ -282,9 +289,9 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		utilities.webDriverWait(driver, Process1Qty);
 		driver.findElement(Process1Qty);
 		WebElement Dqty = driver.findElement(Process1Qty);
-		String qty = Dqty.getText();
+		String Process1qty = Dqty.getAttribute("value");
 		if(Dqty.isDisplayed()) {
-			System.out.println("Displaying Dyeing process qty" + qty);
+			System.out.println("Displaying Dyeing process qty " + Process1qty);
 		}else {
 			System.out.println("Dyeing process qty is not displaying");
 		}
@@ -315,9 +322,9 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		 
 		utilities.webDriverWait(driver, Process2Qty);
 		WebElement Qty = driver.findElement(Process2Qty);
-		Qty.getText();
+		String Quantity = Qty.getAttribute("value");
 		if(Qty.isDisplayed()) {
-			System.out.print("Qty is displaying for Print" + Qty);
+			System.out.print("Qty is displaying for Print " + Quantity);
 		}else {
 			System.out.println("Qty is not displaying");
 		}
@@ -329,40 +336,52 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		 
 		utilities.webDriverWait(driver, FBGreige);
 		WebElement GreigeSec = driver.findElement(FBGreige);
-		GreigeSec.getText();
+		String Greigequantity = GreigeSec.getAttribute("value");
 		if(GreigeSec.isDisplayed()) {
-			System.out.println("Greige Budget section is displaying");
+			System.out.println("Greige Budget section is displaying " + Greigequantity);
 		}else {
 			System.out.println("Greige Budget section is not displaying");
 		}
 		
+		
+		WebElement GreigeQty = driver.findElement(Greigeqty);
+		String qty = GreigeQty.getAttribute("value");
+		if(qty.equals(Greigequantity)) {
+			 System.out.println("Values of GreigeQty and GreigeSec are the same: " + GreigeQty);
+		}else {
+            System.out.println("Values of GreigeQty and GreigeSec are different.");
+            
+        }
+		
+		
+		
 		utilities.webDriverWait(driver, FBDyeing);
 		WebElement DyeingSec = driver.findElement(FBDyeing);
-		DyeingSec.getText();
+		DyeingSec.getAttribute("value");
 		if(DyeingSec.isDisplayed()) {
-			System.out.println("Dyeing Budget section is displaying");
+			System.out.println("Dyeing Budget section is displaying ");
 		}else {
 			System.out.println("Dyeing Budget section is not displaying");
 		}
 		
 		utilities.webDriverWait(driver, FBPrinting);
 		WebElement PrintingSec = driver.findElement(FBPrinting);
-		PrintingSec.getText();
+		PrintingSec.getAttribute("value");
 		if(PrintingSec.isDisplayed()) {
-			System.out.println("Printing Budget section is displaying");
+			System.out.println("Printing Budget section is displaying ");
 		}else {
 			System.out.println("Printing Budget section is not displaying");
 		}
-		
+	
 	}
 
 	public void Verify_the_quantity_is_displaying_for_Greige_Base_Knitting_qty_field() throws Throwable {
 		 
 		utilities.webDriverWait(driver, GFqty);
 		WebElement GFQty = driver.findElement(GFqty);
-		GFQty.getAttribute("value");
+		String GreigeFabric = GFQty.getAttribute("value");
 		if(GFQty.isDisplayed()) {
-			System.out.print("Qty is displaying for Print" + GFQty);
+			System.out.print("Qty is displaying for Print " + GreigeFabric);
 		}else {
 			System.out.println("Qty is not displaying");
 		}
@@ -446,9 +465,9 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		 
 		utilities.webDriverWait(driver, Dyeingqty);
 		WebElement DQty = driver.findElement(Dyeingqty);
-		DQty.getAttribute("value");
+		String DyeingQuantity = DQty.getAttribute("value");
 		if(DQty.isDisplayed()) {
-			System.out.print("Qty is displaying for Print" + Dyeingqty);
+			System.out.print("Qty is displaying for Print " + DyeingQuantity);
 		}else {
 			System.out.println("Qty is not displaying");
 		}
@@ -483,9 +502,9 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		 
 		utilities.webDriverWait(driver, Dyeingcost);
 		WebElement cost = driver.findElement(Dyeingcost);
-		cost.getAttribute("value");
+		String Dyeingcost = cost.getAttribute("value");
 		if(cost.isDisplayed()) {
-			System.out.println("Dyeing cost is displaying" + cost);
+			System.out.println("Dyeing cost is displaying " + Dyeingcost);
 		}else {
 			System.out.println("Dyeing cost is not displaying");
 		}
@@ -506,12 +525,11 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		
 		utilities.webDriverWait(driver, DyeingFabricManagerAsst);
 		driver.findElement(DyeingFabricManagerAsst).click();
+		Robot r = new Robot();
+		r.keyPress(KeyEvent.VK_1);
 		utilities.MinimumWait(driver);
 		
-		utilities.webDriverWait(driver, SelectDFMAsst);
-		driver.findElement(SelectDFMAsst).click();
-		utilities.MinimumWait(driver);
-		
+	
 	}
 
 	public void Select_Fabric_Executive_from_the_dropdown_list_for_Dyeing_process() throws Throwable {
@@ -530,9 +548,9 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		 
 		utilities.webDriverWait(driver, Printingqty);
 		WebElement print = driver.findElement(Printingqty);
-		String qty = print.getAttribute("value");
+		String Printquantity = 	print.getAttribute("value");
 		if(print.isDisplayed()) {
-			System.out.println("Printing Qty is displaying" + print);
+			System.out.println("Printing Qty is displaying " + Printquantity);
 		}else {
 			System.out.println("Printing Qty is not displaying");
 		}
@@ -564,17 +582,26 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		 
 		utilities.webDriverWait(driver, Printingcost);
 		WebElement cost = driver.findElement(Printingcost);
-		cost.getAttribute("value");
+		
+		String Printcost = cost.getAttribute("value");
 		if(cost.isDisplayed()) {
-			System.out.println("Printing cost is displaying" + cost);
+			System.out.println("Printing cost is displaying " + Printcost);
 		}else {
 			System.out.println("Printing cost is not displaying");
 		}
 		
+		
+		
 	}
 
-	public void Select_the_Fabric_Manager_from_the_dropdown_list_of_Fabric_Manager_field_for_printing_process() {
+	public void Select_the_Fabric_Manager_from_the_dropdown_list_of_Fabric_Manager_field_for_printing_process() throws Throwable {
 		 
+		utilities.webDriverWait(driver, PrintingFabricManager);
+		driver.findElement(PrintingFabricManager).click();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(SelectPFM).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
@@ -583,8 +610,14 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		
 	}
 
-	public void Select_Fabric_Executive_from_the_dropdown_list_for_printing_process() {
+	public void Select_Fabric_Executive_from_the_dropdown_list_for_printing_process() throws Throwable {
 		 
+		utilities.webDriverWait(driver, PrintingFabricExecutive);
+		driver.findElement(PrintingFabricExecutive).click();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(SelectPFE).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
@@ -613,8 +646,13 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		
 	}
 
-	public void Click_on_submit_button_to_save_the_mu_working() {
+	public void Click_on_submit_button_to_save_the_mu_working() throws Throwable {
 		 
+		utilities.webDriverWait(driver, submitbutton);
+		driver.findElement(submitbutton).click();
+		utilities.MinimumWait(driver);
+		
+		
 		
 	}
 
