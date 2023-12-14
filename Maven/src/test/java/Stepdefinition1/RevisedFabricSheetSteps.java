@@ -45,11 +45,6 @@ public class RevisedFabricSheetSteps {
 		RFSP.click_on_clear_filter_icon();
 	}
 
-	@Then("^click on filter icon$")
-	public void click_on_filter_icon() throws Throwable {
-		RFSP.click_on_filter_icon();
-	}
-
 	@And("^Click on buyer1 dropdown$")
 	public void Click_on_buyer1_dropdown() throws Throwable {
 		RFSP.Click_on_buyer1_dropdown();

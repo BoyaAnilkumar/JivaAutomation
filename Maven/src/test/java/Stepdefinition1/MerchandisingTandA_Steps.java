@@ -47,4 +47,44 @@ public class MerchandisingTandA_Steps {
 		 public void Enter_the_data_in_Fit_submittion_field() throws Throwable{
 	     MerchandisingTandA_Pages.Enter_the_data_in_Fit_submittion_field();
 }
+		 @Given ("^Enter the data in Fit submittion and Approval fields$")
+		 public void Enter_the_data_in_Fit_submittion_and_Approval_fields() throws Throwable{
+		     MerchandisingTandA_Pages.Enter_the_data_in_Fit_submittion_and_Approval_fields();
+	}
+		 @And ("^Enter the data in Fit Remarks Field$")
+		 public void Enter_the_data_in_Fit_Remarks_Field() throws Throwable{
+		     MerchandisingTandA_Pages.Enter_the_data_in_Fit_Remarks_Field();
+		 }
+		 @And ("^Verify whether the Fabric Initial In House date is prepopulated in the field or not$")
+		 public void Verify_whether_the_Fabric_Initial_In_House_date_is_prepopulated_in_the_field_or_not() throws Throwable{
+		     MerchandisingTandA_Pages.Verify_whether_the_Fabric_Initial_In_House_date_is_prepopulated_in_the_field_or_not();
+		 }
+		 @And ("^Click on the Fabric Initial In House Date View button$")
+		 public void Click_on_the_Fabric_Initial_In_House_Date_View_button() throws Throwable{
+		     MerchandisingTandA_Pages.Click_on_the_Fabric_Initial_In_House_Date_View_button();
+		 }
+		 @And ("^Click on the Fabric Initial In House Date View Close button$")
+		 public void Click_on_the_Fabric_Initial_In_House_Date_View_Close_button() throws Throwable{
+		     MerchandisingTandA_Pages.Click_on_the_Fabric_Initial_In_House_Date_View_Close_button();
+		 }
+		 @And ("^Click on the PP Add button$")
+		 public void Click_on_the_PP_Add_button() throws Throwable{
+		     MerchandisingTandA_Pages.Click_on_the_PP_Add_button();
+		 }
+		 
+		 @And ("^Enter the data in PP Submission and Approval$")
+		 public void Enter_the_data_in_PP_Submission_and_Approval() throws Throwable{
+		     MerchandisingTandA_Pages.Enter_the_data_in_PP_Submission_and_Approval();
+		 }
+		
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
 }

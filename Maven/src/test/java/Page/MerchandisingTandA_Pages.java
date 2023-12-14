@@ -25,8 +25,13 @@ public class MerchandisingTandA_Pages extends DriverFactory{
 	By Buying_House = By.xpath("(//p[@class='mb-0 text-primary font-weight-bold'])[3]");
 	By IPO_Qty = By.xpath("(//p[@class='mb-0 text-primary font-weight-bold'])[5]");
     By Add_Button = By.xpath("(//button[@class='btn btn-primary btn-sm float-right'])[1]");
-    By Proto_commends = By.xpath("//p-inputmask[@formcontrolname='protoCommentsReceived']");
-    By Fit_Submission1 = By.xpath("(//p-inputmask[@formcontrolname='submissionDate'])[1]");
+ //   By Proto_comments = By.xpath("//p-inputmask[@formcontrolname='protoCommentsReceived']//input[@class='p-inputtext p-component p-element p-inputmask']");
+    By Proto_comments = By.xpath("(//input[@class='p-inputtext p-component p-element p-inputmask'])[1]");
+   
+    By Fit_Submission1 = By.xpath("(//p-inputmask[@formcontrolname='submissionDate']//input[@class='p-inputtext p-component p-element p-inputmask'])[1]");
+    By Fit_Approval1 = By.xpath("(//p-inputmask[@formcontrolname='approvalDate']//input[@class='p-inputtext p-component p-element p-inputmask'])[1]");
+    By Fit_Submission2 = By.xpath("(//p-inputmask[@formcontrolname='submissionDate']//input[@class='p-inputtext p-component p-element p-inputmask'])[2]");
+    By Fit_Approval2 = By.xpath("(//p-inputmask[@formcontrolname='approvalDate']//input[@class='p-inputtext p-component p-element p-inputmask'])[2]");
     
 
 	public void Click_on_the_T_and_A_Module() throws Throwable {
@@ -70,28 +75,68 @@ public class MerchandisingTandA_Pages extends DriverFactory{
 		driver.findElement(Add_Button).click();
 	}
 	public void Enter_the_data_in_proto_commends_received_field() throws Throwable {
-		utilities.webDriverWait(driver, Proto_commends);
-		LocalDate currentDate = LocalDate.now();
-		DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd-MM");
-		String formattedDate = currentDate.format(dateFormat);
-		driver.findElement(Proto_commends).sendKeys(formattedDate);
-
-		utilities.MediumWait(driver);
-		System.out.println("Future date: " + formattedDate );
-	
-
-	
-     
-      
-     
+		utilities.webDriverWait(driver, Proto_comments);
+		driver.findElement(Proto_comments).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(Proto_comments).sendKeys("1206");
     }
 
-    
+   
+
+	
 	public void Enter_the_data_in_Fit_submittion_field() throws Throwable {
       utilities.webDriverWait(driver, Fit_Submission1);
-		
-		
+      driver.findElement(Fit_Submission1).click();
+	  utilities.MinimumWait(driver);
+	  driver.findElement(Fit_Submission1).sendKeys("1206");
+	  utilities.MediumWait(driver);
+	  utilities.webDriverWait(driver, Fit_Approval1);
+      driver.findElement(Fit_Approval1).click();
+	  utilities.MinimumWait(driver);
+	  driver.findElement(Fit_Approval1).sendKeys("1312");
+	  utilities.MediumWait(driver);
+
+	  utilities.webDriverWait(driver, Fit_Submission2);
+      driver.findElement(Fit_Submission2).click();
+	  utilities.MinimumWait(driver);
+	  driver.findElement(Fit_Submission2).sendKeys("1412");
+	  utilities.MediumWait(driver);
+
+	  utilities.webDriverWait(driver, Fit_Approval2);
+      driver.findElement(Fit_Approval2).click();
+	  utilities.MinimumWait(driver);
+	  driver.findElement(Fit_Approval2).sendKeys("1512");
+	  utilities.MediumWait(driver);
+
     	
+		
+	}
+	public void Enter_the_data_in_Fit_submittion_and_Approval_fields() {
+		
+		
+	}
+	public void Enter_the_data_in_Fit_Remarks_Field() {
+
+		
+	}
+	public void Verify_whether_the_Fabric_Initial_In_House_date_is_prepopulated_in_the_field_or_not() {
+
+		
+	}
+	public void Click_on_the_Fabric_Initial_In_House_Date_View_button() {
+
+		
+	}
+	public void Click_on_the_Fabric_Initial_In_House_Date_View_Close_button() {
+
+		
+	}
+	public void Click_on_the_PP_Add_button() {
+
+		
+	}
+	public void Enter_the_data_in_PP_Submission_and_Approval() {
+
 		
 	}
 	
