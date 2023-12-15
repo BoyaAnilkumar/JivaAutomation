@@ -98,6 +98,14 @@ public class IPOListPages extends DriverFactory {
 	By buttNo = By.xpath("(//button[text()='No'])[2]");
 	By buttYes = By.xpath("//button[text()='Yes']");
 
+<<<<<<< HEAD
+=======
+
+
+	
+
+
+>>>>>>> refs/remotes/origin/main
 	public void Navigates_to_the_Login_page() {
 		driver.get(prop.getProperty("url"));
 		
@@ -258,15 +266,21 @@ public class IPOListPages extends DriverFactory {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/main
 	public void Click_on_Generate_Excel_Sheet_button() throws Throwable {
 		utilities.webDriverWait(driver, GenerateExcelSheet);
 		driver.findElement(GenerateExcelSheet).click();		
 
 	}
+<<<<<<< HEAD
 
 
 	
+=======
+>>>>>>> refs/remotes/origin/main
 	public void Clicked_on_Add_IPO_button() throws Throwable {
 		utilities.webDriverWait(driver, AddIPO);
 		driver.findElement(AddIPO).click();		
@@ -315,7 +329,19 @@ public class IPOListPages extends DriverFactory {
 	public void Enter_first_two_letters_of_a_Buyer_Style() throws Throwable {
 		utilities.webDriverWait(driver, BuyerStyle);
 		driver.findElement(BuyerStyle).sendKeys("Te");
+<<<<<<< HEAD
+=======
+		
+
+
+>>>>>>> refs/remotes/origin/main
 	}
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> refs/remotes/origin/main
 	public void Select_a_Buyer_Style_from_the_dropdown() throws Throwable {
 		utilities.webDriverWait(driver, SelectBuyerStyle);
 		driver.findElement(SelectBuyerStyle).click();
@@ -585,6 +611,10 @@ public class IPOListPages extends DriverFactory {
 
 }	
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
 	
 	
 

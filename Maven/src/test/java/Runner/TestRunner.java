@@ -15,11 +15,15 @@ import io.cucumber.junit.CucumberOptions;
 				  monochrome = true,
 				  tags ="@tag1")
 
+<<<<<<< HEAD
 
 
 
+=======
+                  tags ="@MerchandisingTAndA1")
+
+		         
+>>>>>>> refs/remotes/origin/main
 public class TestRunner {
-	
+
 }
-
-

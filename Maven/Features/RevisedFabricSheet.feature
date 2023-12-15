@@ -24,7 +24,10 @@ And click on clear filter icon
 And Verify whether the user is able to Select an IPO from the Menu list
 Then Click on the Style ShowHide button for closing the menu list
 Then Verify the count of the Fabric records under the Fabric Details grid
-#Adding a Fabric Quality record
+
+
+@RevisedFabricSheeet
+Scenario: Adding a Fabric to the grid 
 And click on Add data button
 Then Click on Cancel button
 #Then Click on the Is Nominated textbox field
@@ -60,13 +63,24 @@ Given Enter the value in the Amount field
 Given Enter the Remarks 
 And Click on the Submit button in the Upcharge window
 
-#Delete scenario
+@RevisedFabricSheeet
+Scenario: Deleting a fabric
 Then Click on the Delete button for a Quality 
 Then Verify whether the Delete prompt msg is displayed or not
 Then Click on the No option in the delete prompt
 Then Verify whether the respective added Fabric record is deleted or not on clicking the Yes option 
 
-#Edit the added Fabric
+@RevisedFabricSheeet
+Scenario: Editing an added fabric 
+When user navigates to Login page
+Given Login with Production Manager
+And Click on the SignIn button
+When user navigates to Revised Fabric Sheet
+And click on Styles expansion
+And click on clear filter icon
+And Verify whether the user is able to Select an IPO from the Menu list
+Then Click on the Style ShowHide button for closing the menu list
+#Then Verify the count of the Fabric records under the Fabric Details grid
 When Verify whether the page is navigating to the Updated page or not on clicking the Edit button
 And Verify and Update the Field values displayed in the fields
 And Verify and Update the field value displayed in the Content field
@@ -82,3 +96,36 @@ And Verify and Update the field value displayed in the Fabric Required For Sampl
 Then Click on the Update button in the Update Fabric Sheet form
 
 
+@RevisedFabricSheeet1
+Scenario: Importing functionality 
+When user navigates to Login page
+Given Login with Production Manager
+And Click on the SignIn button
+When user navigates to Revised Fabric Sheet
+And click on Styles expansion
+And click on clear filter icon
+And Verify whether the user is able to Select an IPO from the Menu list
+Then Click on the Style ShowHide button for closing the menu list
+Then Verify the count of the Fabric records under the Fabric Details grid
+And click on Add data button
+Then Verify whether the Import popup window is opened when clicked on the Import Fabric Details button
+And Click on Close button in the Import popup window
+
+Then Select the WithInIPO option in the Import window
+And Verify whether Mandatory validation msg is displayed or not on Onclick the Import button without selecting any values
+Then Verify whether the user is able to add the selected fabric on Importing
+
+Then Select the OtherIPO option in the Import window
+And Verify whether Mandatory validation msg is displayed or not on Onclick the Import button without selecting any value
+Then Verify whether the user is able to select an IPO in the dropdown or not
+Then Verify whether the Select Fabric field is displayed or not 
+Then Verify whether the user is able to add the selected fabric on Importing or not
+
+Then Select the PDFDS option in the Import window
+And Verify whether mandatory validation msg is displayed or not on Onclick the Import button without selecting any values
+Then Verify whether the user is able to add the Selected Fabric on Importing 
+Then Verify whether the imported fabric is able to Submit to the Fabric Team or not
+
+
+
+   

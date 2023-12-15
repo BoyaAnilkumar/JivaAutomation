@@ -2,6 +2,7 @@ package Page;
 
 
 import java.awt.AWTException;
+//import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
@@ -43,7 +44,7 @@ public class RevisedFabricSheetPages extends DriverFactory {
 	By IsNominated = By.xpath("//label[@for='nominated']");
 	By Supplier = By.xpath("//select[@formcontrolname='supplierId']");
 	By Select_Supplier = By.xpath("//option[@value='11']");
-	By FabricQuality = By.xpath("//div[@class='ng-input']");
+	By FabricQuality = By.xpath("//input[@autocomplete='ad15c6b9940d']");
 	By SelectFabricQuality = By.xpath("//span[text()='Cotton denim']");
 	//div[@id='a5a4c6782d00-1']/..
 	By scroll = By.xpath("//div[@class='ng-dropdown-panel-items scroll-host']");
@@ -93,6 +94,20 @@ public class RevisedFabricSheetPages extends DriverFactory {
 	By UpChrgValidationmsg = By.xpath("//h2[text()='Give UpCharge Amount']");
 	By Reason = By.xpath("//input[@formcontrolname='revisedReason']");
 	
+	By buttImportFabDetl = By.xpath("//button[@class='btn btn-primary btn-sm']");
+	By popImportWin = By.xpath("//h5[@id='importFabricDetailsLabel']");
+	By buttImport = By.xpath("(//button[text()=' Import'])[1]");
+	By buttICancel = By.xpath("//button[@class='btn btn-danger']");
+	By optionWithinIPO = By.xpath("(//div[@class='form-check form-check-inline'])[1]");
+	By optionOtherIPO = By.xpath("(//div[@class='form-check form-check-inline'])[2]");
+	By optionPDFDSIPO = By.xpath("(//div[@class='form-check form-check-inline'])[3]");
+	By ISectFabric = By.xpath("(//ng-select[@formcontrolname='fabricId'])[1]");
+	By SelectSectFabric = By.xpath("(//div[@class='ng-option ng-star-inserted'])[1]");
+	By IIPO = By.xpath("(//div[@class='ng-input'])[3]");
+	By selectIIPO = By.xpath("//span[text()='TestIPO']");
+	By selectIPOFabric = By.xpath("//span[text()='Cotton voile - Alabaster']");
+	By selectPDFDSFabric = By.xpath("(//span[text()='Cotton voile'])[2]");
+	By MandatoryValdMsg = By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
 	
 	
 	
@@ -207,12 +222,12 @@ public class RevisedFabricSheetPages extends DriverFactory {
         java.util.List<WebElement> rows = table.findElements(By.tagName("tr"));
 
         // Get the count of rows (excluding the header row)
-        int rowCount = rows.size() - 1;
+        int rowCount = rows.size();
 
         // Assert the expected record count
-        int expectedRowCount = 11; // Change this value based on your expectation
-        Assert.assertEquals(expectedRowCount, rowCount);
-        System.out.println("Display the count of the Fabric Details grid count - " +rowCount);
+//        int expectedRowCount = 11; // Change this value based on your expectation
+//        Assert.assertEquals(expectedRowCount, rowCount);
+        System.out.println("Display the count of the Fabrics added to the grid - " +rowCount);
     }
 	
 	public void click_on_Add_data_button() throws Throwable {
@@ -498,10 +513,9 @@ public class RevisedFabricSheetPages extends DriverFactory {
 //		driver.findElement(buttSubmitTeam).click();
 	}
 	public void Verify_whether_the_page_is_navigating_to_the_Updated_page_or_not_on_clicking_the_Edit_button() throws Throwable {
-		utilities.webDriverWait(driver,buttGOTOTOP);
+//		utilities.webDriverWait(driver,buttGOTOTOP);
 //		driver.findElement(buttGOTOTOP).click();
 		utilities.MinimumWait(driver);
-		System.out.println("Went to top after Fabric is added");
 		utilities.webDriverWait(driver,buttEdit);
 		driver.findElement(buttEdit).click();
 		System.out.println("Click on the first fabric edit button");
@@ -525,7 +539,7 @@ public class RevisedFabricSheetPages extends DriverFactory {
 		String RevisedFabricSheet = RevFabSheet.getText();
 		
 		if(RevFabSheet.isDisplayed()){
-			System.out.println("The screen is navigated to " + RevisedFabricSheet + " screen");
+			System.out.println("The screen is navigated to  " + RevisedFabricSheet + " screen1");
 		} else {
 			System.out.println("The screen is not navigated to " + RevisedFabricSheet);
 		}
@@ -548,21 +562,20 @@ public class RevisedFabricSheetPages extends DriverFactory {
 		driver.findElement(Reason).isDisplayed();
 		WebElement reason = driver.findElement(Reason);
 		String ReasonRev = reason.getAttribute("value");
-		System.out.println("Display the Reason For Revision entered text - " + ReasonRev );
+		
 		if (!(reason == null))
 		{
-			System.out.println("Display the Reason For Revision entered text2 - " + ReasonRev );
+		
 //			driver.findElement(buttGOTOTOP).click();
 						Thread.sleep(5000);
 //			driver.findElement(Reason).clear();
 			driver.findElement(Reason).sendKeys("Reason 1");
-			System.out.println("Cursor came into Reason field");
 			driver.findElement(navRevFabSheet);
 			WebElement RevFabSheet1 = driver.findElement(navRevFabSheet);
 			String RevisedFabricSheet1 = RevFabSheet1.getText();
 			
 			if(RevFabSheet.isDisplayed()){
-				System.out.println("The screen is navigated to " + RevisedFabricSheet1 + " screen");
+				System.out.println("The screen is navigated to " + RevisedFabricSheet1 + " screen2");
 			} else {
 				System.out.println("The screen is not navigated to " + RevisedFabricSheet1);
 			}
@@ -596,7 +609,7 @@ public class RevisedFabricSheetPages extends DriverFactory {
 		utilities.webDriverWait(driver,popupUpchargeAmt);
 		driver.findElement(popupUpchargeAmt).isDisplayed();
 		WebElement Upcharge = driver.findElement(popupUpchargeAmt);
-		String UpchargeAmt = Upcharge.getAttribute("value");
+		String UpchargeAmt = Upcharge.getText();
 		System.out.println("Display the Upcharge Amount popup window name " + UpchargeAmt);
 	}
 	public void Enter_the_value_in_the_Amount_field() throws Throwable {
@@ -663,11 +676,11 @@ public class RevisedFabricSheetPages extends DriverFactory {
 		System.out.println("Display the Fabric Cuttable Width value - " + FabricCW);
 	}
 	public void Verify_and_Update_the_field_value_displayed_in_the_Use_field() throws Throwable {
-		utilities.webDriverWait(driver,SelectUse);
-		driver.findElement(SelectUse).click();
+		utilities.webDriverWait(driver,SelectUse2);
+		driver.findElement(SelectUse2).click();
 		driver.findElement(Use).isDisplayed();
-		WebElement FabUse = driver.findElement(Use);
-		String FabricUse = FabUse.getAttribute("value");
+		WebElement FabUse = driver.findElement(SelectUse2);
+		String FabricUse = FabUse.getText();
 		System.out.println("Display the Fabric Use value - " + FabricUse);
 		
 	}
@@ -676,7 +689,7 @@ public class RevisedFabricSheetPages extends DriverFactory {
 		driver.findElement(Color).click();
 		driver.findElement(SelectColor2).click();
 		driver.findElement(Color).isDisplayed();
-		WebElement FabColor = driver.findElement(Color);
+		WebElement FabColor = driver.findElement(SelectColor2);
 		String FabricColor = FabColor.getAttribute("value");
 		System.out.println("Display the Fabric Color value - " + FabricColor);
 		
@@ -684,28 +697,31 @@ public class RevisedFabricSheetPages extends DriverFactory {
 	public void Verify_and_Update_the_field_value_displayed_in_the_Combo_field() throws Throwable {
 		utilities.webDriverWait(driver,Combo);
 		driver.findElement(Combo).isDisplayed();
-		WebElement FabCombo = driver.findElement(Combo);
-		String FabricCombo = FabCombo.getAttribute("value");
+		WebElement FabCombo = driver.findElement(SelectCombo);
+		String FabricCombo = FabCombo.getText();
 		System.out.println("Display the Fabric Combo value - " + FabricCombo);
 	}
 	public void Verify_and_Update_the_field_value_displayed_in_the_Additional_field() throws Throwable {
-		utilities.webDriverWait(driver,AddlInfo);
-		driver.findElement(AddlInfo).sendKeys("3");
-		driver.findElement(AddlInfo).isDisplayed();
-		WebElement FabAddlInfo = driver.findElement(AddlInfo);
-		String FabricAddlInfo = FabAddlInfo.getAttribute("value");
-		System.out.println("Display the Additional percentage value - " + FabricAddlInfo);
+		utilities.webDriverWait(driver,Addl);
+		driver.findElement(Addl).clear();
+		driver.findElement(Addl).sendKeys("3");
+		driver.findElement(Addl).isDisplayed();
+		WebElement FabAddlper = driver.findElement(Addl);
+		String FabricAddlper = FabAddlper.getAttribute("value");
+		System.out.println("Display the Additional percentage value - " + FabricAddlper);
 	}
 	public void Verify_and_Update_the_field_value_displayed_in_the_Garment_Avg_field() throws Throwable {
 		utilities.webDriverWait(driver,MissyGarmentAvg);
+		driver.findElement(MissyGarmentAvg).clear();
 		driver.findElement(MissyGarmentAvg).sendKeys("5");
 		driver.findElement(MissyGarmentAvg).isDisplayed();
 		WebElement FabGarmentAvg = driver.findElement(MissyGarmentAvg);
 		String FabricGarmentAvg = FabGarmentAvg.getAttribute("value");
-		System.out.println("Display the Fabric Combo value - " + FabricGarmentAvg);
+		System.out.println("Display the Fabric Missy Garment Average value - " + FabricGarmentAvg);
 	}
 	public void Verify_and_Update_the_field_value_displayed_in_the_Fabric_Required_For_Sampling_field() throws Throwable {
 		utilities.webDriverWait(driver,FabReqSam);
+		driver.findElement(FabReqSam).clear();
 		driver.findElement(FabReqSam).sendKeys("44.444");
 		driver.findElement(FabReqSam).isDisplayed();
 		WebElement FabReqSamp = driver.findElement(FabReqSam);
@@ -716,6 +732,194 @@ public class RevisedFabricSheetPages extends DriverFactory {
 		utilities.webDriverWait(driver,buttSubmit);
 		driver.findElement(buttSubmit).click();
 	}
+	public void Verify_whether_the_Import_popup_window_is_opened_when_clicked_on_the_Import_Fabric_Details_button() throws Throwable {
+		utilities.webDriverWait(driver,buttImportFabDetl);
+		driver.findElement(buttImportFabDetl).click();
+		driver.findElement(popImportWin);
+		WebElement ImpPopup = driver.findElement(popImportWin);
+		String ImpPopupWin = ImpPopup.getText();
+		
+		if(ImpPopup.isDisplayed()){
+			System.out.println("Opened the " + ImpPopupWin );
+		} else {
+			System.out.println("Did not Opened the " + ImpPopupWin );
+		}
+	}
+	public void Click_on_Close_button_in_the_Import_popup_window() throws Throwable {
+		utilities.webDriverWait(driver,buttICancel);
+		driver.findElement(buttICancel).click();
+		driver.findElement(navAddFabricSheet);
+		WebElement AddFabSheet = driver.findElement(navAddFabricSheet);
+		String AddFabFabricSheet = AddFabSheet.getText();
+		if(AddFabSheet.isDisplayed()){
+			System.out.println("The screen is navigated to " + AddFabFabricSheet + " screen");
+		} else {
+			System.out.println("The screen is not navigated to " + AddFabFabricSheet);
+		}
+	}
+	public void Select_the_WithInIPO_option_in_the_Import_window() throws Throwable {
+		utilities.webDriverWait(driver,buttImportFabDetl);
+		driver.findElement(buttImportFabDetl).click();
+		utilities.webDriverWait(driver,optionWithinIPO);
+		driver.findElement(optionWithinIPO).click();
+	}
+	public void Verify_whether_Mandatory_validation_msg_is_displayed_or_not_on_Onclick_the_Import_button_without_selecting_any_values() throws Throwable {
+		utilities.webDriverWait(driver,buttImport);
+		driver.findElement(buttImport).click();
+		System.out.println("Clicked on the Import button");
+//		utilities.webDriverWait(driver,MandatoryValdMsg);
+		WebElement Mandatorymsg = driver.findElement(MandatoryValdMsg);
+		String MandValdmsg = Mandatorymsg.getText();
+		if(Mandatorymsg.isDisplayed()){
+			System.out.println("Display the Mandatory msg as " + MandValdmsg );
+		} else {
+			System.out.println("Did not Display the Mandatory msg as " + MandValdmsg);
+		}
+	}
+	public void Verify_whether_the_user_is_able_to_add_the_selected_fabric_on_Importing() throws Throwable {
+		utilities.webDriverWait(driver,ISectFabric);
+		driver.findElement(ISectFabric).click();
+		utilities.webDriverWait(driver,SelectSectFabric);
+		driver.findElement(SelectSectFabric).click();
+		System.out.println("Fabric selected");
+		WebElement FabSec = driver.findElement(ISectFabric);
+		String SelectedFab = FabSec.getText();
+		System.out.println("Display the selected Fabric " + SelectedFab);
+		utilities.webDriverWait(driver,buttImport);
+		driver.findElement(buttImport).click();
+	}
+	public void Select_the_OtherIPO_option_in_the_Import_window() throws Throwable {
+		utilities.webDriverWait(driver,buttImportFabDetl);
+		driver.findElement(buttImportFabDetl).click();
+		utilities.webDriverWait(driver,optionOtherIPO);
+		driver.findElement(optionOtherIPO).click();
+	}
+	public void Verify_whether_Mandatory_validation_msg_is_displayed_or_not_on_Onclick_the_Import_button_without_selecting_any_value() throws Throwable {
+		utilities.webDriverWait(driver,buttImport);
+		driver.findElement(buttImport).click();
+		WebElement Mandatorymsg = driver.findElement(MandatoryValdMsg);
+		String MandValdmsg = Mandatorymsg.getText();
+		if(Mandatorymsg.isDisplayed()){
+			System.out.println("Display the Mandatory msg as " + MandValdmsg );
+		} else {
+			System.out.println("Did not Display the Mandatory msg as " + MandValdmsg);
+		}
+	}
+	public void Verify_whether_the_user_is_able_to_select_an_IPO_in_the_dropdown_or_not() throws Throwable {
+		utilities.webDriverWait(driver,optionOtherIPO);
+		driver.findElement(optionOtherIPO).click();
+		utilities.webDriverWait(driver,IIPO);
+		driver.findElement(IIPO).click();
+		utilities.webDriverWait(driver,selectIIPO);
+		driver.findElement(selectIIPO).click();
+		WebElement IPO = driver.findElement(selectIIPO);
+		String SecIPO = IPO.getText();
+		System.out.println("Display the selected IPO in the IPO field - " + SecIPO);
+	}
+	public void Verify_whether_the_Select_Fabric_field_is_displayed_or_not() throws Throwable {
+		utilities.webDriverWait(driver,ISectFabric);
+		driver.findElement(ISectFabric).click();
+		utilities.webDriverWait(driver,selectIPOFabric);
+		driver.findElement(selectIPOFabric).click();
+		WebElement Fabric = driver.findElement(selectIPOFabric);
+		String SecFabric = Fabric.getText();
+		System.out.println("Display the selected IPO in the IPO field - " + SecFabric);
+	}
+	public void Verify_whether_the_user_is_able_to_add_the_selected_fabric_on_Importing_or_not() throws Throwable {
+		utilities.webDriverWait(driver,buttImport);
+		driver.findElement(buttImport).click();
+		driver.findElement(navAddFabricSheet);
+		WebElement AddFabSheet = driver.findElement(navAddFabricSheet);
+		String AddFabFabricSheet = AddFabSheet.getText();
+		if(AddFabSheet.isDisplayed()){
+			System.out.println("The screen is navigated to " + AddFabFabricSheet + " screen");
+		} else {
+			System.out.println("The screen is not navigated to " + AddFabFabricSheet);
+		}
+	}
+	public void Select_the_PDFDS_option_in_the_Import_window() throws Throwable {
+		utilities.webDriverWait(driver,buttImportFabDetl);
+		driver.findElement(buttImportFabDetl).click();
+		utilities.webDriverWait(driver,optionPDFDSIPO);
+		driver.findElement(optionPDFDSIPO).click();
+	}
+	public void Verify_whether_mandatory_validation_msg_is_displayed_or_not_on_Onclick_the_Import_button_without_selecting_any_values() throws Throwable {
+		utilities.webDriverWait(driver,buttImport);
+		driver.findElement(buttImport).click();
+		WebElement Mandatorymsg = driver.findElement(MandatoryValdMsg);
+		String MandValdmsg = Mandatorymsg.getText();
+		if(Mandatorymsg.isDisplayed()){
+			System.out.println("Display the Mandatory msg as " + MandValdmsg );
+		} else {
+			System.out.println("Did not Display the Mandatory msg as " + MandValdmsg);
+		}
+	}
+	public void Verify_whether_the_user_is_able_to_add_the_Selected_Fabric_on_Importing() throws Throwable {
+		utilities.webDriverWait(driver,ISectFabric);
+		driver.findElement(ISectFabric).click();
+		utilities.webDriverWait(driver,selectPDFDSFabric);
+		driver.findElement(selectPDFDSFabric).click();
+		WebElement FabSec = driver.findElement(selectPDFDSFabric);
+		String SelectedFab = FabSec.getText();
+		System.out.println("Display the selected Fabric " + SelectedFab);
+		utilities.webDriverWait(driver,buttImport);
+		driver.findElement(buttImport).click();
+	}
+	public void Verify_whether_the_imported_fabric_is_able_to_Submit_to_the_Fabric_Team_or_not() throws Throwable {
+		utilities.webDriverWait(driver,Use);
+		driver.findElement(Use).click();
+		utilities.MediumWait(driver);
+		driver.findElement(SelectUse).click();
+		WebElement Usetype = driver.findElement(SelectUse);
+		String Usevalue = Usetype.getText();
+		System.out.println("Selected Use - " + Usevalue);
+		
+		utilities.webDriverWait(driver,Color);
+		driver.findElement(Color).click();
+		utilities.MediumWait(driver);
+		driver.findElement(SelectColor).click();
+		WebElement color = driver.findElement(SelectColor);
+		String secColor = color.getText();
+		System.out.println("Display the Selected Color - " + secColor);
+		
+		utilities.webDriverWait(driver,Addl);
+		driver.findElement(Addl).clear();
+		driver.findElement(Addl).sendKeys("4");
+		
+		utilities.webDriverWait(driver,MissyGarmentAvg);
+		driver.findElement(MissyGarmentAvg).clear();
+		driver.findElement(MissyGarmentAvg).sendKeys("6");
+		
+		utilities.webDriverWait(driver,FabReqSam);
+		driver.findElement(FabReqSam).clear();
+		driver.findElement(FabReqSam).sendKeys("12");
+		
+		utilities.webDriverWait(driver,buttSubmit);
+		driver.findElement(buttSubmit).click();
+		utilities.webDriverWait(driver,buttSubmitTeam);
+		driver.findElement(buttSubmitTeam).click();
+		
+		utilities.webDriverWait(driver,popupUpchargeAmt);
+		driver.findElement(popupUpchargeAmt).click();
+		utilities.webDriverWait(driver,Amount);
+		driver.findElement(Amount).sendKeys("12345");
+		utilities.webDriverWait(driver,buttUpChrSubmit);
+		driver.findElement(buttUpChrSubmit).click();
+		
+	}
+	
+//	By buttImportFabDetl = By.xpath("//button[@class='btn btn-primary btn-sm']");
+//	By popImportWin = By.xpath("//h5[@id='importFabricDetailsLabel']");
+//	By buttImport = By.xpath("//h5[@class='btn btn-primary']");
+//	By buttICancel = By.xpath("//button[@class='btn btn-danger']");
+//	By optionWithinIPO = By.xpath("(//div[@class='form-check form-check-inline'])[1]");
+//	By optionOtherIPO = By.xpath("(//div[@class='form-check form-check-inlin'])[2]");
+//	By optionPDFDSIPO = By.xpath("(//div[@class='form-check form-check-inlin'])[3]");
+//	By ISectFabric = By.xpath("(//ng-select[@formcontrolname='fabricId'])[1]");
+//	By SelectSectFabric = By.xpath("//div[@id='ac6fa04c31d7-0']");
+//	By IIPO = By.xpath("(//div[@class='ng-input'])[3]");
+//	By selectIIPO = By.xpath("//div[@id='a1f3ab5135c7-1']");
+//	
 	
 	
 

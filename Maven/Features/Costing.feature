@@ -49,6 +49,7 @@ Feature: Title of your features
     Then Select a Category from the dropdown under the TrimAccessoriesII grid
     Then Click on the Item dropdown field under the TrimAccessoriesII grid
     Then Select a Item from the dropdown under the TrimAccessoriesII grid
+<<<<<<< HEAD
     Then Enter the Cost Cutting grid
     Given To check whether the Overhead Cost is displaying a value or not
     Given Enter Overhead Cost value
@@ -109,6 +110,9 @@ Feature: Title of your features
     Then Click on the Cancel in the Print form
     Then Click on the Download As Excel button Import
 
+=======
+    Then Enter the Cost 
+>>>>>>> refs/remotes/origin/main
     #Cutting grid
     Given To check whether the Overhead Cost is displaying a value or not
     Given Enter Overhead Cost value

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="228.556">
     <testcase classname="I want to add process details for IPO which is having the fabric sheet" name="Verification of submitting the MU working for Dyeing and Printing process" time="228.205">
         <system-out><![CDATA[Given Navigates to the Login page...........................................passed
@@ -42,6 +43,31 @@ And Select the Fabric Manager from the dropdown list of Fabric Manager field for
 And Fabric manager assistants should display based on the selection of Fabric Manager for printing process.passed
 And Select Fabric Executive from the dropdown list for printing process.....passed
 And Click on submit button to save the mu working...........................passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="75.245">
+    <testcase classname="Feature to test Jiva design Merchandising T and A Data Entry screen functionality" name="To Test the Filter Functionality" time="74.582">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then click on the Merchandising Module......................................passed
+And Click on the T and A Module.............................................passed
+And Click on the Merchandising T&A Data Entry Screen........................passed
+And Click on the Styles Expansion...........................................passed
+And Click on the Filter Icon................................................passed
+And Search The IPO and Style................................................passed
+And Click on the Apply button...............................................passed
+And Select the IPO and Style................................................passed
+And Click on the Add button.................................................passed
+Given Enter the data in proto commends received field.......................passed
+Given Enter the data in Fit submittion and Approval fields..................passed
+And Enter the data in Fit Remarks Field.....................................passed
+And Verify whether the Fabric Initial In House date is prepopulated in the field or not.passed
+And Click on the Fabric Initial In House Date View button...................passed
+And Click on the Fabric Initial In House Date View Close button.............passed
+And Click on the PP Add button..............................................passed
+And Enter the data in PP Submission and Approval............................passed
+>>>>>>> refs/remotes/origin/main
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
 package Stepdefinition1;
 
 import Page.IPOListPages;
@@ -9,22 +13,8 @@ import io.cucumber.java.en.When;
 public class IPOListSteps {
 	IPOListPages IPOl = new IPOListPages();
 	
-	@Given ("^Navigates to the Login page$")
-	public void Navigates_to_the_Login_page() {
-		IPOl.Navigates_to_the_Login_page();
-	}
-	@Then ("^Enter valid Username and password$")
-	public void Enter_valid_Username_and_password() throws Throwable {
-		IPOl.Enter_valid_Username_and_password();
-	}
-	@And ("^Click on SignIn$")
-	public void Click_on_SignIn() {
-		IPOl.Click_on_SignIn();
-	}
-	@Then ("^Click on the Woven Modules$")
-	public void Click_on_the_Woven_Modules() throws Throwable {
-		IPOl.Click_on_the_Woven_Modules();
-	}
+	
+	
 	@Then ("^Click on Audit module$")
 	public void Click_on_Audit_module() throws Throwable {
 		IPOl.Click_on_Audit_module();
@@ -230,5 +220,14 @@ public class IPOListSteps {
 		IPOl.Clicked_on_Yes_button_in_the_toaster_msg();
 	}
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> refs/remotes/origin/main
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
