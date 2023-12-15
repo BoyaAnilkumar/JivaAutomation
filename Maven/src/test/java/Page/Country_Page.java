@@ -255,14 +255,12 @@ public class Country_Page extends DriverFactory{
 			driver.findElement(Search).sendKeys("C7367");
 			utilities.MaximumWait(driver);
 			driver.findElement(Edit_1).click();
-<<<<<<< HEAD
-			}	
-}
-=======
 			}
 }
+	
 
->>>>>>> refs/remotes/origin/main
+
+
 //package Page;
 //
 //import static org.junit.Assert.assertEquals;

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #@FeatureGroup 
 #Feature: feature to test Jiva design New Fabric Sheet screen functionality
 #
@@ -16,7 +16,6 @@
  #
  #And Click on the Filter Icon
  #And Click on the Buyer Field
-=======
 @FeatureGroup 
 Feature: feature to test Jiva design New Fabric Sheet screen functionality
 
@@ -45,24 +44,18 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  And Click on the Styles Expansion
  And Click on the Filter Icon
  And Click on the Buyer Field
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  #Then Select the Buyer
-<<<<<<< HEAD
  #And Click on the Season Field
  #And Select the Season
  #When Search the IPO
  #And Click on the Apply button
-=======
  And Click on the Season Field
  And Select the Season
  When Search the IPO
  And Click on the Apply button
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  #And Click on the Reset button
-<<<<<<< HEAD
  #And Select the IPO and Style
  #
-=======
  And Select the IPO and Style
  
  
@@ -80,11 +73,9 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  When Search the IPO
  And Click on the Apply button
  And Select the IPO and Style
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  #Given Enter the data in Bulk Fabric Deadline field
  #And Click on the Fabric Manager Field
  #And Select the Fabric Manager Assistants
-<<<<<<< HEAD
  #And Click on the Add New Fabric button
  #And Select the Is Nominated Check box
  #When User select the Supplier name
@@ -107,7 +98,6 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  #And Enter the data in Fabric Required For Sampling
  #And Check the Total Fabric Required field value is calculated or not
  #
-=======
  And Click on the Add New Fabric button
  And Select the Is Nominated Check box
  When User select the Supplier name
@@ -129,16 +119,13 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  And Check the Fabric Required For Cutting field value is calculated or not
  And Enter the data in Fabric Required For Sampling
  And Check the Total Fabric Required field value is calculated or not
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  #And Click on the cancel button
  #And Click on the Save button
  #And After click on the Save button the validation msg is displaying or not
  #And Click on the Submit to Fabric Team button
  #And Click on the Delete Icon
-<<<<<<< HEAD
 #
  #When Click on the Import Fabric details button
-=======
  
  
 @NewFabricSheet123 
@@ -157,7 +144,6 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  And Select the IPO and Style
  And Click on the Add New Fabric button
  When Click on the Import Fabric details button
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  #And Select the WithIn IPO Radio button
  And Select the Other Radio button
  #And Select the PD FDS Radio button
@@ -165,7 +151,6 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  And Select the IPO name
  #And Click on the Close Icon in Import Fabric details page
  #And Click on the Close button
-<<<<<<< HEAD
  #And Click on the Import button
  #When Enter the data after import the fabric details
  #
@@ -181,7 +166,6 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  #And Update the Applicable Combos
  #And Update the Garment Average Details
  #And Update the Quantity Requirment details
-=======
  And Click on the Import button
  When Enter the data after import the fabric details
  
@@ -212,6 +196,5 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
  And Update the Applicable Combos
  And Update the Garment Average Details
  And Update the Quantity Requirment details
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  #And Click on the Cancel button
  #And Click on the Submit button

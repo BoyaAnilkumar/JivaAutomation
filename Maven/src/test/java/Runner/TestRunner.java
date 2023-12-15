@@ -13,16 +13,8 @@ import io.cucumber.junit.CucumberOptions;
 				  features = "Features",
 				  monochrome = true,
 
-<<<<<<< HEAD
 		          tags ="@RevisedFabricSheeet1")
-=======
-<<<<<<< HEAD
-				  tags ="@AcceptFabricsheet")
-=======
-		          tags ="@RevisedFabricSheeet")
->>>>>>> refs/remotes/origin/main
 
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 
 
