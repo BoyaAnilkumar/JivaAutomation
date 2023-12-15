@@ -134,10 +134,7 @@ public class RevisedFabricSheetPages extends DriverFactory {
 		utilities.webDriverWait(driver, buttNoFilter);
 		driver.findElement(buttNoFilter).click();
 	}
-	public void click_on_filter_icon() throws Throwable {
-		utilities.webDriverWait(driver, buttonFilter);
-		driver.findElement(buttonFilter).click();
-	}
+
 	public void Click_on_buyer_dropdown() throws Throwable {
 		utilities.webDriverWait(driver, F_Buyer);
 		driver.findElement(F_Buyer).click();

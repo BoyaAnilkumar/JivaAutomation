@@ -3,29 +3,28 @@ Feature: I want to add process details for IPO which is having the fabric sheet
 
   #@tag1
   #Scenario: Click on IPO in Styles expansion
-    #When User navigates to Login page
-    #Then User enters the username and password
-    #And User click on the signIn
-    #And navigate to New Fabric Sheet working screen
-    #And Click on styles expansion
-    #And click on IPO in the styles expansion
-    #Then Close the styles expansion
-#
+  #When User navigates to Login page
+  #Then User enters the username and password
+  #And User click on the signIn
+  #And navigate to New Fabric Sheet working screen
+  #And Click on styles expansion
+  #And click on IPO in the styles expansion
+  #Then Close the styles expansion
+  #
   #@tag1
   #Scenario: Verification of Filter functionality
-    #Given Navigates to the Login page
-    #Then Enter valid Username and password
-    #And Click on SignIn
-    #And navigate to New Fabric Sheet working screen
-    #And Click on styles expansion
-    #And click on filter icon
-    #And click on buyer dropdown
-    #And Enter the buyer and select buyer
-    #And Click on Season dropdown and select form dropdown list
-    #And Click on Status dropdown and select the status from dropdown list
-    #And Enter the IPO no in search By IPO entry field
-    #And click on Apply button and Reset button
-
+  #Given Navigates to the Login page
+  #Then Enter valid Username and password
+  #And Click on SignIn
+  #And navigate to New Fabric Sheet working screen
+  #And Click on styles expansion
+  #And click on filter icon
+  #And click on buyer dropdown
+  #And Enter the buyer and select buyer
+  #And Click on Season dropdown and select form dropdown list
+  #And Click on Status dropdown and select the status from dropdown list
+  #And Enter the IPO no in search By IPO entry field
+  #And click on Apply button and Reset button
   @tag1
   Scenario: Verification of submitting the MU working for Dyeing and Printing process
     Given Navigates to the Login page
@@ -74,3 +73,42 @@ Feature: I want to add process details for IPO which is having the fabric sheet
     #And verify the conversion rate is displaying as zero for greige dyeing and printing process or not
     #And verify the cost is displaying as zero for greige dyeing and printing process or not
     And Click on submit button to save the mu working
+
+  @tag1
+  Scenario: Verification of submitting the MU working for Shiffly process
+Given Navigates to the Login page
+    Then Enter valid Username and password
+    And Click on SignIn
+    And navigate to New Fabric Sheet working screen
+    And Click on styles expansion
+    And click on IPO in the styles expansion
+    And Verify that data is displaying in grids after selecting the IPO
+    And Click on Edit icon in MU Working grid
+    And Verify the Fabric Required is displaying the value or not
+    And Enter the value in Residual shrinkage
+    And select the process1 as Shiffly process
+    Then select the process2 as NA
+    Then verify the qty in greige field whether value is displaying or not
+    And Enter the data in Shiffly process section fields
+    Then Enter Fabric Budget details for greige process
+    And Enter Fabric Budget details for Shiffly process
+    And Click on submit button to save the mu working
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

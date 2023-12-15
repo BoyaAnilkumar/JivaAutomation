@@ -225,7 +225,7 @@ public class NewFabricSheetWorking_Steps {
 	}
 	
 	@And("^Fabric manager assistants should display based on the selection of Fabric Manager for printing process$")
-	public void Fabric_manager_assistants_should_display_based_on_the_selection_of_Fabric_Manager_for_printing_process() {
+	public void Fabric_manager_assistants_should_display_based_on_the_selection_of_Fabric_Manager_for_printing_process() throws Throwable {
 		NewFabricSheetWorkingpage.Fabric_manager_assistants_should_display_based_on_the_selection_of_Fabric_Manager_for_printing_process();
 	}
 	
@@ -265,7 +265,30 @@ public class NewFabricSheetWorking_Steps {
 	}
 	
 	
+	@And("^Enter the data in Shiffly process section fields$")
+	public void Enter_the_data_in_Shiffly_process_section_fields() throws Throwable {
+		NewFabricSheetWorkingpage.Enter_the_data_in_Shiffly_process_section_fields();
+	}
 	
+	@And("^select the process1 as Shiffly process$")
+	public void select_the_process1_as_Shiffly_process() {
+		NewFabricSheetWorkingpage.select_the_process1_as_Shiffly_process();
+	}
+	
+	@And("^select the process2 as NA$")
+	public void select_the_process2_as_NA(){
+		NewFabricSheetWorkingpage.select_the_process2_as_NA();
+	}
+	
+	@Then("^Enter Fabric Budget details for greige process$")
+	public void Enter_Fabric_Budget_details_for_greige_process() {
+		NewFabricSheetWorkingpage.Enter_Fabric_Budget_details_for_greige_process();
+	}
+
+	@And("^Enter Fabric Budget details for Shiffly process$")
+	public void Enter_Fabric_Budget_details_for_Shiffly_process() {
+		NewFabricSheetWorkingpage.Enter_Fabric_Budget_details_for_Shiffly_process();
+	}
 	
 	}
 

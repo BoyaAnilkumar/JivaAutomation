@@ -9,26 +9,7 @@ import io.cucumber.java.en.When;
 
 public class CostingSteps {
 	Costingpages cos = new Costingpages();
-	
-	@Given("^Navigates to the Login page$")
-	public void Navigate_to_the_Login_page() {
-		cos.Navigates_to_the_Login_page();
-	}
-	
-	 @Then("^Enter valid Username and password$")
-	 public void Enter_valid_Username_and_password() throws Throwable {
-		 cos.Enter_valid_Username_and_password();
-	 }
-	 
-	  @And("^Click on SignIn$")
-	  public void Click_on_SignIn() throws Throwable{
-		  cos. Click_on_SignIn();
-	  }
-	  
-	  @Then ("^Click on the Woven Modules$") 
-	  public void Click_on_the_Woven_Modules() throws Throwable {
-		  cos.Click_on_the_Woven_Modules();
-	  }
+
 	  
 	  @Then("^Click on the PD Module$")
 	  public void Click_on_the_PD_Module() throws Throwable {
@@ -476,7 +457,4 @@ public class CostingSteps {
 	
 
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> refs/remotes/origin/main

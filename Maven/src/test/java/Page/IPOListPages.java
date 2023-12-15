@@ -97,15 +97,7 @@ public class IPOListPages extends DriverFactory {
 	By DeleteValiMsg = By.xpath("//h2[text()='Are you sure you want to Deactivate?']");
 	By buttNo = By.xpath("(//button[text()='No'])[2]");
 	By buttYes = By.xpath("//button[text()='Yes']");
-	
 
-
-<<<<<<< HEAD
-=======
-
-	
-
->>>>>>> refs/remotes/origin/main
 	public void Navigates_to_the_Login_page() {
 		driver.get(prop.getProperty("url"));
 		
@@ -114,10 +106,10 @@ public class IPOListPages extends DriverFactory {
 	public void Enter_valid_Username_and_password() throws Throwable {
 //		utilities.webDriverWait(driver, txtUN);
 		driver.findElement(txtUN).clear();
-		driver.findElement(txtUN).sendKeys(prop.getProperty("username"));
+		driver.findElement(txtUN).sendKeys("lokesh");
 		utilities.MinimumWait(driver);
 		driver.findElement(txtPwd).clear();
-		driver.findElement(txtPwd).sendKeys(prop.getProperty("password"));
+		driver.findElement(txtPwd).sendKeys("Abcd@123");
 	}
 
 	public void Click_on_SignIn() {
@@ -266,18 +258,13 @@ public class IPOListPages extends DriverFactory {
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/main
 	public void Click_on_Generate_Excel_Sheet_button() throws Throwable {
 		utilities.webDriverWait(driver, GenerateExcelSheet);
 		driver.findElement(GenerateExcelSheet).click();		
-<<<<<<< HEAD
 
-=======
 	}
->>>>>>> refs/remotes/origin/main
+
 
 	
 	public void Clicked_on_Add_IPO_button() throws Throwable {
@@ -295,18 +282,12 @@ public class IPOListPages extends DriverFactory {
 		}
 		
 	}
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/main
 	//public void Clicked_on_Add_IPO_button() {
 		// TODO Auto-generated method stub
 
 	
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/main
 	public void Click_on_the_save_button() throws Throwable {
 		driver.findElement(Save).click();
         utilities.MaximumLongWait(driver);
@@ -334,20 +315,7 @@ public class IPOListPages extends DriverFactory {
 	public void Enter_first_two_letters_of_a_Buyer_Style() throws Throwable {
 		utilities.webDriverWait(driver, BuyerStyle);
 		driver.findElement(BuyerStyle).sendKeys("Te");
-		
-
-<<<<<<< HEAD
-=======
-
->>>>>>> refs/remotes/origin/main
 	}
-
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> refs/remotes/origin/main
 	public void Select_a_Buyer_Style_from_the_dropdown() throws Throwable {
 		utilities.webDriverWait(driver, SelectBuyerStyle);
 		driver.findElement(SelectBuyerStyle).click();
@@ -472,10 +440,7 @@ public class IPOListPages extends DriverFactory {
 //        utilities.MaximumLongWait(driver);
 	}
 
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/main
 	public void Verifying_the_IPO_List_grid_headers_and_Sorting() throws Throwable {
 
 
@@ -620,11 +585,6 @@ public class IPOListPages extends DriverFactory {
 
 }	
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> refs/remotes/origin/main
 	
 	
 

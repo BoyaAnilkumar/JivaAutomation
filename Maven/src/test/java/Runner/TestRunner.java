@@ -11,14 +11,10 @@ import io.cucumber.junit.CucumberOptions;
 				               ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
 				  glue="Stepdefinition1",
 				  features = "Features",
+	
 				  monochrome = true,
+				  tags ="@tag1")
 
-<<<<<<< HEAD
-				  tags ="@AcceptFabricsheet")
-=======
-		          tags ="@RevisedFabricSheeet")
-
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 
 

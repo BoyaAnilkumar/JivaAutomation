@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/main
 package Stepdefinition1;
 
 import Page.PendingIPO_page;

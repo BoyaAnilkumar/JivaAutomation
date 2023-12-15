@@ -1,7 +1,5 @@
 package Page;
 
-import static org.junit.Assert.assertTrue;
-
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
@@ -53,20 +51,20 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By GFCost						= By.xpath("(//input[@placeholder='Enter Cost'])[2]");
 	By GFabricManager				= By.xpath("//select[@formcontrolname='greigeBaseFabricManagerId']");
 	By SelectGFmanager				= By.xpath("(//option[text()=' Lokesh P'])[2]");
-	By GFabricManagerAsst			= By.xpath("(//div[@class='ng-select-container'])[2]");
+	By GFabricManagerAsst			= By.xpath("//ng-select[@formcontrolname='greigeBaseFabricAssistantsId']");
 	By SelectGFMAsst				= By.xpath("(//span[@class='ng-option-label ng-star-inserted'])[1]");
 	By GExecutive					= By.xpath("//select[@formcontrolname='greigeBaseFabricExecutiveId']");
-	By SelectGFExecutive			= By.xpath("(//option[text()=' Nikhil'])[2]");
+	By SelectGFExecutive			= By.xpath("(//option[text()=' Anil Kumar'])[2]");
 	By Dyeingqty					= By.xpath("(//input[@formcontrolname='dyingQty'])[2]");
 	By DyeingRate					= By.xpath("(//input[@placeholder='Enter Rate'])[3]");
 	By DyeingConversionrate			= By.xpath("(//input[@placeholder='Enter Conversion Rate'])[3]");
 	By Dyeingcost					= By.xpath("(//input[@placeholder='Enter Cost'])[3]");
 	By DyeingFabricManager			= By.xpath("//select[@formcontrolname='dyingFabricManagerId']");
 	By SelectDFM					= By.xpath("(//option[text()=' Anil Singh'])[3]");
-	By DyeingFabricManagerAsst		= By.xpath("(//div[@class='ng-select-container'])[3]");
+	By DyeingFabricManagerAsst		= By.xpath("//ng-select[@formcontrolname='dyingFabricAssistantsId']");
 	By SelectDFMAsst				= By.xpath("//div[@id='a359b4891108-0']");
 	By DyeingFabExecutive			= By.xpath("//select[@formcontrolname='dyingFabricExecutiveId']");
-	By SelectDFE					= By.xpath("(//option[text()=' Ramya'])[3]");
+	By SelectDFE					= By.xpath("(//option[text()=' Anil Kumar'])[3]");
 	By Printingqty					= By.xpath("(//input[@formcontrolname='printingQty'])[2]");
 	By PrintingRate					= By.xpath("//input[@formcontrolname='printingRate']");
 	By PrintingConversionrate		= By.xpath("(//input[@formcontrolname='printingConversionRate'])[1]");
@@ -75,11 +73,34 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By SelectPFM					= By.xpath("//select[@formcontrolname='printingFabricManagerId']/..//option[text()=' Jiten Gupta']");
 	By PrintingFabricManagerAsst	= By.xpath("//ng-select[@formcontrolname='printingFabricAssistantsId']");
 	By PrintingFabricExecutive		= By.xpath("//select[@formcontrolname='printingFabricExecutiveId']");
-	By SelectPFE					= By.xpath("//select[@formcontrolname='printingFabricExecutiveId']/..//option[text()=' Anil Kumar']");
+	By SelectPFE					= By.xpath("//select[@formcontrolname='printingFabricExecutiveId']/..//option[text()=' Ramya']");
 	By Cancelbutton					= By.xpath("//a[@class='btn btn-md btn-danger mr-2']");
 	By submitbutton					= By.xpath("//button[@class='btn btn-primary btn-md']");
 
-
+	By EndToEndgreige							= By.xpath("//label[text()=' End To End [Greige Fabric] Thaan Length']/..//input[@formcontrolname='endToEndProcessedThaanLength']");
+	By ShifflytoShifflygreige					= By.xpath("//label[text()=' Schiffly To Schiffly [Greige Fabric] Thaan Length']/..//input[@formcontrolname='schifflyToSchifflyProcessedThaanLength']");
+	By Numberofpcspermaker						= By.xpath("(//input[@formcontrolname='numberOfPcsPerMarker'])[3]");
+	By layerlengthinmarker						= By.xpath("(//input[@formcontrolname='layerLengthInMarker'])[3]");
+	By Layerlengthactual						= By.xpath("(//input[@formcontrolname='layerLengthActual'])[3]");
+	By NoofPcsinOneThaan						= By.xpath("(//input[@formcontrolname='numberOfPcsInOneThaan'])[3]");
+	By FabricUserPerThaan						= By.xpath("(//input[@formcontrolname='fabricUsedPerThaan'])[3]");
+	By BalanceFabricPerThaan					= By.xpath("(//input[@formcontrolname='balanceFabricPerThaan'])[3]");
+	By NoOfPcsinBalanceFabric					= By.xpath("(//input[@formcontrolname='numberOfPcsToBeMadeInBalanceFabric'])[3]");
+	By TotalPcsinOneThaan						= By.xpath("(//input[@formcontrolname='totalNumberOfPcsInOneThaan'])[3]");
+	By ThaansRequiredForSchiffly				= By.xpath("(//input[@formcontrolname='numberOfThaansRequiredForSchiffly'])[3]");
+	By ThaansRequiredForSchifflyRounded 		= By.xpath("(//input[@formcontrolname='numberOfThaansRequiredForSchifflyRounded'])[3]");
+	By numberOfExtraThaans						= By.xpath("(//input[@formcontrolname='numberOfExtraThaans'])[3]");
+	By numberOfPcsInExtraThaans					= By.xpath("(//input[@formcontrolname='numberOfPcsInExtraThaans'])[3]");
+	By schifflytoschifflyfabricrequired			= By.xpath("(//input[@formcontrolname='schifflytoschifflyfabricrequired'])[3]");
+	By greigefabricqtyrequired					= By.xpath("(//input[@formcontrolname='processedfabricqtyrequired'])[3]");
+	By addlProcessedtobeorderedduetoendpalla	= By.xpath("(//input[@formcontrolname='addlProcessedtobeorderedduetoendpalla'])[2]");
+	By finalprocessedfabricqtyrequired			= By.xpath("(//input[@formcontrolname='finalprocessedfabricqtyrequired'])[2]");
+	By Shifflyqty								= By.xpath("(//input[@formcontrolname='schifflyQTY'])[1]");
+	By ShifflyRate								= By.xpath("(//input[@formcontrolname='schifflyRate'])[1]");
+	By Shifflyconversionrate					= By.xpath("(//input[@formcontrolname='schifflyConversionRate'])[1]");
+	By Shifflycost								= By.xpath("(//input[@formcontrolname='schifflyCostInINR'])[1]");
+	
+	
 
 	
 	
@@ -605,8 +626,14 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		
 	}
 
-	public void Fabric_manager_assistants_should_display_based_on_the_selection_of_Fabric_Manager_for_printing_process() {
+	public void Fabric_manager_assistants_should_display_based_on_the_selection_of_Fabric_Manager_for_printing_process() throws Throwable {
 		 
+		utilities.webDriverWait(driver, PrintingFabricManagerAsst);
+		driver.findElement(PrintingFabricManagerAsst).click();
+		utilities.MinimumWait(driver);
+		Robot r = new Robot();
+		r.keyPress(KeyEvent.VK_1);
+		utilities.MinimumWait(driver);
 		
 	}
 
@@ -653,6 +680,37 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		utilities.MinimumWait(driver);
 		
 		
+		
+	}
+
+	public void Enter_the_data_in_Shiffly_process_section_fields() throws Throwable {
+		
+		utilities.webDriverWait(driver, EndToEndgreige);
+		driver.findElement(EndToEndgreige).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, EndToEndgreige);
+		driver.findElement(EndToEndgreige).sendKeys("68");
+		
+	}
+
+	public void select_the_process1_as_Shiffly_process() {
+		
+		
+	}
+
+	public void select_the_process2_as_NA() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Enter_Fabric_Budget_details_for_greige_process() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Enter_Fabric_Budget_details_for_Shiffly_process() {
+		// TODO Auto-generated method stub
 		
 	}
 
