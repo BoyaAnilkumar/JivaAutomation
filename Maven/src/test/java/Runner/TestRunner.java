@@ -11,6 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 				               ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
 				  glue="Stepdefinition1",
 				  features = "Features",
+<<<<<<< HEAD
 				  monochrome = true,
 
 		          tags ="@RevisedFabricSheeet1")
@@ -19,7 +20,21 @@ import io.cucumber.junit.CucumberOptions;
 
 
 public class TestRunner {
+=======
+>>>>>>> refs/remotes/origin/main
 	
+				  monochrome = true,
+				  tags ="@tag1")
+
+<<<<<<< HEAD
+
+
+
+=======
+                  tags ="@MerchandisingTAndA1")
+
+		         
+>>>>>>> refs/remotes/origin/main
+public class TestRunner {
+
 }
-
-

@@ -11,6 +11,7 @@ public class Newfabricsheet_Steps {
 
 	Newfabricsheet_Pages Newfabricsheet_Pages = new Newfabricsheet_Pages();
 
+<<<<<<< HEAD
 
 	
 	         @When("^User navigates to Login page$")
@@ -30,6 +31,14 @@ public class Newfabricsheet_Steps {
 
 		   }
 
+=======
+<<<<<<< HEAD
+=======
+
+	
+	       
+>>>>>>> refs/remotes/origin/main
+>>>>>>> refs/remotes/origin/main
 			 @And ("^Click on the Woven Module$")
 			   public void Click_on_the_Woven_Module() throws Throwable{
 				 Newfabricsheet_Pages.Click_on_the_Woven_Module();
@@ -264,10 +273,10 @@ public class Newfabricsheet_Steps {
 			   public void Click_on_the_Cancel_button() throws Throwable{
 				  Newfabricsheet_Pages.Click_on_the_Cancel_button();
 			   }
-//			   @And ("^Click on the Submit button$")
-//			   public void Click_on_the_Submit_button() throws Throwable{
-//				  Newfabricsheet_Pages.Click_on_the_Submit_button();
-//			   }
+			   @And ("^Click on the Submit button$")
+			   public void Click_on_the_Submit_button() throws Throwable{
+				  Newfabricsheet_Pages.Click_on_the_Submit_button();
+			   }
 
 			   
 			   

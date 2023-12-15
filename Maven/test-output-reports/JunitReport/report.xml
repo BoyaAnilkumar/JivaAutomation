@@ -1,33 +1,73 @@
-<<<<<<< HEAD
-=======
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="169.675">
-    <testcase classname="Submit the fabric sheet details" name="Importing functionality" time="168.865">
-        <system-out><![CDATA[When user navigates to Login page...........................................passed
-Given Login with Production Manager.........................................passed
-And Click on the SignIn button..............................................passed
-When user navigates to Revised Fabric Sheet.................................passed
-And click on Styles expansion...............................................passed
-And click on clear filter icon..............................................passed
-And Verify whether the user is able to Select an IPO from the Menu list.....passed
-Then Click on the Style ShowHide button for closing the menu list...........passed
-Then Verify the count of the Fabric records under the Fabric Details grid...passed
-And click on Add data button................................................passed
-Then Verify whether the Import popup window is opened when clicked on the Import Fabric Details button.passed
-And Click on Close button in the Import popup window........................passed
-Then Select the WithInIPO option in the Import window.......................passed
-And Verify whether Mandatory validation msg is displayed or not on Onclick the Import button without selecting any values.passed
-Then Verify whether the user is able to add the selected fabric on Importing.passed
-Then Select the OtherIPO option in the Import window........................passed
-And Verify whether Mandatory validation msg is displayed or not on Onclick the Import button without selecting any value.passed
-Then Verify whether the user is able to select an IPO in the dropdown or not.passed
-Then Verify whether the Select Fabric field is displayed or not.............passed
-Then Verify whether the user is able to add the selected fabric on Importing or not.passed
-Then Select the PDFDS option in the Import window...........................passed
-And Verify whether mandatory validation msg is displayed or not on Onclick the Import button without selecting any values.passed
-Then Verify whether the user is able to add the Selected Fabric on Importing.passed
-Then Verify whether the imported fabric is able to Submit to the Fabric Team or not.passed
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="228.556">
+    <testcase classname="I want to add process details for IPO which is having the fabric sheet" name="Verification of submitting the MU working for Dyeing and Printing process" time="228.205">
+        <system-out><![CDATA[Given Navigates to the Login page...........................................passed
+Then Enter valid Username and password......................................passed
+And Click on SignIn.........................................................passed
+And navigate to New Fabric Sheet working screen.............................passed
+And Click on styles expansion...............................................passed
+And click on IPO in the styles expansion....................................passed
+And Verify that data is displaying in grids after selecting the IPO.........passed
+And Click on Edit icon in MU Working grid...................................passed
+And Verify the Fabric Required is displaying the value or not...............passed
+And Enter the value in Residual shrinkage...................................passed
+Then select the process1 by clicking on process1 dropdown list..............passed
+Then select the process2 by clicking on process2 dropdown list..............passed
+Then verify the qty in greige field whether value is displaying or not......passed
+And Enter value in MU for Process1 entry field..............................passed
+Then Verify the process1 value in qty field.................................passed
+And Enter the text in Print Type entry field................................passed
+And Enter value in MU for process2 entry field..............................passed
+Then verify the process2 value in qty field.................................passed
+And Verify the Fabric Budget section is displaying the budget details of Greige Dyeing and Printing processes or not.passed
+And Verify the quantity is displaying for Greige Base Knitting qty field....passed
+And Enter the Rate for griege process.......................................passed
+And verify the conversion rate is autopopulate and allows to change the value or not for griege process.passed
+And Verify the cost is displaying or not for griege process.................passed
+And Select the Fabric Manager from the dropdown list of Fabric Manager field for griege process.passed
+And Fabric manager assistants should display based on the selection of Fabric Manager for griege process.passed
+And Select Fabric Executive from the dropdown list for griege process.......passed
+Then Verify the quantity is displaying for Dyeing qty.......................passed
+And Enter the Rate for Dyeing process.......................................passed
+And verify the conversion rate is autopopulate and allows to change the value or not for Dyeing process.passed
+And Verify the cost is displaying or not for Dyeing process.................passed
+And Select the Fabric Manager from the dropdown list of Fabric Manager field for Dyeing process.passed
+And Fabric manager assistants should display based on the selection of Fabric Manager for Dyeing process.passed
+And Select Fabric Executive from the dropdown list for Dyeing process.......passed
+Then Verify the quantity is displaying for printing qty.....................passed
+And Enter the Rate for printing process.....................................passed
+And verify the conversion rate is autopopulate and allows to change the value or not for printing process.passed
+And Verify the cost is displaying or not for printing process...............passed
+And Select the Fabric Manager from the dropdown list of Fabric Manager field for printing process.passed
+And Fabric manager assistants should display based on the selection of Fabric Manager for printing process.passed
+And Select Fabric Executive from the dropdown list for printing process.....passed
+And Click on submit button to save the mu working...........................passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="75.245">
+    <testcase classname="Feature to test Jiva design Merchandising T and A Data Entry screen functionality" name="To Test the Filter Functionality" time="74.582">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then click on the Merchandising Module......................................passed
+And Click on the T and A Module.............................................passed
+And Click on the Merchandising T&A Data Entry Screen........................passed
+And Click on the Styles Expansion...........................................passed
+And Click on the Filter Icon................................................passed
+And Search The IPO and Style................................................passed
+And Click on the Apply button...............................................passed
+And Select the IPO and Style................................................passed
+And Click on the Add button.................................................passed
+Given Enter the data in proto commends received field.......................passed
+Given Enter the data in Fit submittion and Approval fields..................passed
+And Enter the data in Fit Remarks Field.....................................passed
+And Verify whether the Fabric Initial In House date is prepopulated in the field or not.passed
+And Click on the Fabric Initial In House Date View button...................passed
+And Click on the Fabric Initial In House Date View Close button.............passed
+And Click on the PP Add button..............................................passed
+And Enter the data in PP Submission and Approval............................passed
+>>>>>>> refs/remotes/origin/main
 ]]></system-out>
     </testcase>
 </testsuite>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git

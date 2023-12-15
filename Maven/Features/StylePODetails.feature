@@ -12,6 +12,7 @@ Feature: feature to test Style Po Details screen functionality
  And Click on the Style Po Details Screen
  And Verify whether the Style Po details screen is displaying or not
  And Click on the Styles Expansion
+ 
 @StylePODetails 
  Scenario: To Test the Filter Functionality
  When User navigates to Login page
@@ -30,6 +31,7 @@ Feature: feature to test Style Po Details screen functionality
  And Click on the Apply button
  #And Click on the Reset button
  And Select the IPO and Style
+ 
  @StylePODetails 
  Scenario: To check the displaying IPO data 
  When User navigates to Login page
@@ -50,6 +52,7 @@ Feature: feature to test Style Po Details screen functionality
  And Verify the PO Qty Value is displaying or not
  And Verify the Combination names are displaying or not
  And Verify the Garment Size Type names are displaying or not
+ 
  @StylePODetails 
  Scenario: To Test the Add New PO Functionality
  When User navigates to Login page
@@ -83,6 +86,7 @@ Feature: feature to test Style Po Details screen functionality
  #And Click on the Cancel Button
  And Click on the Submit Button
  And Verify whether the Validation msg is displaying or not
+ 
  @StylePODetails 
  Scenario: To Test the Update PO details
  When User navigates to Login page
@@ -111,6 +115,7 @@ Feature: feature to test Style Po Details screen functionality
  And Click on the View Comments Icon
  And Verify the Entered Comments are displaying or not
  And Click on the Comments Close button
+ 
  @StylePODetails
  Scenario: To Test the Grid names are displaying correct or not
  When User navigates to Login page
