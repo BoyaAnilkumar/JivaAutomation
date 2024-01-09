@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 #@FeatureGroup 
 #Feature: feature to test Jiva design New Fabric Sheet screen functionality
@@ -17,12 +17,7 @@
  #
  #And Click on the Filter Icon
  #And Click on the Buyer Field
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> refs/remotes/origin/main
->>>>>>> refs/remotes/origin/main
 @FeatureGroup 
 Feature: feature to test Jiva design New Fabric Sheet screen functionality
 
@@ -36,18 +31,14 @@ Then User enters the username and password
  And Click on the Generate Fabric Sheet Module
  And Click on the New Fabric Sheet Screen
  And Verify whether the New fabric sheet screen is displaying or not
-<<<<<<< HEAD
  And Click on the Styles Expansion 
  And Click on the Filter Icon
  And Click on the Buyer Field
-=======
  And Click on the Styles Expansion
- 
  And Click on the Filter Icon
  And Click on the Buyer Field
 
 
->>>>>>> refs/remotes/origin/main
 
  @NewFabricSheet123
  Scenario: To Test the New Fabric Sheet screen
@@ -73,34 +64,29 @@ Then User enters the username and password
  And Click on the Styles Expansion
  And Click on the Filter Icon
  And Click on the Buyer Field
-<<<<<<< HEAD
+
  #Then Select the Buyer
  #And Click on the Season Field
  #And Select the Season
  #When Search the IPO
  #And Click on the Apply button
-=======
-<<<<<<< HEAD
- Then Select the Buyer
-=======
-And Click on the Season Field
- And Select the Season
- When Search the IPO
- And Click on the Apply button
->>>>>>> refs/remotes/origin/main
 
->>>>>>> refs/remotes/origin/main
+ Then Select the Buyer
  And Click on the Season Field
  And Select the Season
  When Search the IPO
  And Click on the Apply button
-<<<<<<< HEAD
+ And Click on the Season Field
+ And Select the Season
+ When Search the IPO
+ And Click on the Apply button
+
  #And Click on the Reset button
  #And Select the IPO and Style
  #
-=======
 
-<<<<<<< HEAD
+
+
  And Click on the Season Field
  And Select the Season
  When Search the IPO
@@ -108,11 +94,9 @@ And Click on the Season Field
  And Click on the Reset button
 
  And Select the IPO and Style
-=======
- And Click on the Reset button
->>>>>>> refs/remotes/origin/main
 
->>>>>>> refs/remotes/origin/main
+ And Click on the Reset button
+
  And Select the IPO and Style
  
 
@@ -132,7 +116,7 @@ And Click on the Season Field
  When Search the IPO
  And Click on the Apply button
  And Select the IPO and Style
-<<<<<<< HEAD
+
  #Given Enter the data in Bulk Fabric Deadline field
  #And Click on the Fabric Manager Field
  #And Select the Fabric Manager Assistants
@@ -157,14 +141,13 @@ And Click on the Season Field
  #And Check the Fabric Required For Cutting field value is calculated or not
  #And Enter the data in Fabric Required For Sampling
  #And Check the Total Fabric Required field value is calculated or not
- #
-=======
+ 
 
  Given Enter the data in Bulk Fabric Deadline field
  And Click on the Fabric Manager Field
  And Select the Fabric Manager Assistants
 
->>>>>>> refs/remotes/origin/main
+
  And Click on the Add New Fabric button
  And Select the Is Nominated Check box
  When User select the Supplier name
@@ -186,16 +169,15 @@ And Click on the Season Field
  And Check the Fabric Required For Cutting field value is calculated or not
  And Enter the data in Fabric Required For Sampling
  And Check the Total Fabric Required field value is calculated or not
-<<<<<<< HEAD
+
  #And Click on the cancel button
  #And Click on the Save button
  #And After click on the Save button the validation msg is displaying or not
  #And Click on the Submit to Fabric Team button
  #And Click on the Delete Icon
-#
  #When Click on the Import Fabric details button
-=======
-<<<<<<< HEAD
+
+
 
  And Click on the Add New Fabric button
  And Select the Is Nominated Check box
@@ -226,12 +208,6 @@ And Click on the Season Field
 
 
  When Click on the Import Fabric details button
-
-=======
->>>>>>> refs/remotes/origin/main
->>>>>>> refs/remotes/origin/main
- 
-
  And Click on the Add New Fabric button
  And Select the Is Nominated Check box
  When User select the Supplier name
@@ -280,20 +256,14 @@ And Click on the Season Field
  And Select the IPO and Style
  And Click on the Add New Fabric button
  When Click on the Import Fabric details button
-<<<<<<< HEAD
- #And Select the WithIn IPO Radio button
-=======
-<<<<<<< HEAD
-=======
 
->>>>>>> refs/remotes/origin/main
+ #And Select the WithIn IPO Radio button
+
  And Select the WithIn IPO Radio button
->>>>>>> refs/remotes/origin/main
  And Select the Other Radio button
  And Select the PD FDS Radio button
  And Select the Fabric name
  And Select the IPO name
-<<<<<<< HEAD
  #And Click on the Close Icon in Import Fabric details page
  #And Click on the Close button
  #And Click on the Import button
@@ -311,14 +281,11 @@ And Click on the Season Field
  #And Update the Applicable Combos
  #And Update the Garment Average Details
  #And Update the Quantity Requirment details
-=======
+
  And Click on the Close Icon in Import Fabric details page
  And Click on the Close button
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/main
  And Click on the Import button
  When Enter the data after import the fabric details
- 
  Then Click on the Edit Icon
  And Update the Supplier Information
  And Update the Fabric Quality
@@ -331,9 +298,6 @@ And Click on the Season Field
  And Update the Applicable Combos
  And Update the Garment Average Details
  And Update the Quantity Requirment details
-=======
-
->>>>>>> refs/remotes/origin/main
  And Click on the Import button
  When Enter the data after import the fabric details
  
@@ -378,15 +342,12 @@ And Click on the Season Field
  And Update the Colour
  And Update the Applicable Combos
  And Update the Garment Average Details
-<<<<<<< HEAD
  And Update the Quantity Requirment details
-=======
-<<<<<<< HEAD
+
  #And Update the Quantity Requirment details
->>>>>>> refs/remotes/origin/main
  #And Click on the Cancel button
  #And Click on the Submit button
-=======
+
  And Update the Quantity Requirment details
 
  And Click on the Cancel button
@@ -396,4 +357,4 @@ And Click on the Season Field
  
  
  
->>>>>>> refs/remotes/origin/main
+
