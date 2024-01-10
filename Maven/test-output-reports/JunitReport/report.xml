@@ -1,73 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="228.556">
-    <testcase classname="I want to add process details for IPO which is having the fabric sheet" name="Verification of submitting the MU working for Dyeing and Printing process" time="228.205">
-        <system-out><![CDATA[Given Navigates to the Login page...........................................passed
-Then Enter valid Username and password......................................passed
-And Click on SignIn.........................................................passed
-And navigate to New Fabric Sheet working screen.............................passed
-And Click on styles expansion...............................................passed
-And click on IPO in the styles expansion....................................passed
-And Verify that data is displaying in grids after selecting the IPO.........passed
-And Click on Edit icon in MU Working grid...................................passed
-And Verify the Fabric Required is displaying the value or not...............passed
-And Enter the value in Residual shrinkage...................................passed
-Then select the process1 by clicking on process1 dropdown list..............passed
-Then select the process2 by clicking on process2 dropdown list..............passed
-Then verify the qty in greige field whether value is displaying or not......passed
-And Enter value in MU for Process1 entry field..............................passed
-Then Verify the process1 value in qty field.................................passed
-And Enter the text in Print Type entry field................................passed
-And Enter value in MU for process2 entry field..............................passed
-Then verify the process2 value in qty field.................................passed
-And Verify the Fabric Budget section is displaying the budget details of Greige Dyeing and Printing processes or not.passed
-And Verify the quantity is displaying for Greige Base Knitting qty field....passed
-And Enter the Rate for griege process.......................................passed
-And verify the conversion rate is autopopulate and allows to change the value or not for griege process.passed
-And Verify the cost is displaying or not for griege process.................passed
-And Select the Fabric Manager from the dropdown list of Fabric Manager field for griege process.passed
-And Fabric manager assistants should display based on the selection of Fabric Manager for griege process.passed
-And Select Fabric Executive from the dropdown list for griege process.......passed
-Then Verify the quantity is displaying for Dyeing qty.......................passed
-And Enter the Rate for Dyeing process.......................................passed
-And verify the conversion rate is autopopulate and allows to change the value or not for Dyeing process.passed
-And Verify the cost is displaying or not for Dyeing process.................passed
-And Select the Fabric Manager from the dropdown list of Fabric Manager field for Dyeing process.passed
-And Fabric manager assistants should display based on the selection of Fabric Manager for Dyeing process.passed
-And Select Fabric Executive from the dropdown list for Dyeing process.......passed
-Then Verify the quantity is displaying for printing qty.....................passed
-And Enter the Rate for printing process.....................................passed
-And verify the conversion rate is autopopulate and allows to change the value or not for printing process.passed
-And Verify the cost is displaying or not for printing process...............passed
-And Select the Fabric Manager from the dropdown list of Fabric Manager field for printing process.passed
-And Fabric manager assistants should display based on the selection of Fabric Manager for printing process.passed
-And Select Fabric Executive from the dropdown list for printing process.....passed
-And Click on submit button to save the mu working...........................passed
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="75.245">
-    <testcase classname="Feature to test Jiva design Merchandising T and A Data Entry screen functionality" name="To Test the Filter Functionality" time="74.582">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="81.4">
+    <testcase classname="Title of your features" name="Login the Application" time="81.043">
         <system-out><![CDATA[When User navigates to Login page...........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
-And Click on the Woven Module...............................................passed
-Then click on the Merchandising Module......................................passed
-And Click on the T and A Module.............................................passed
-And Click on the Merchandising T&A Data Entry Screen........................passed
-And Click on the Styles Expansion...........................................passed
-And Click on the Filter Icon................................................passed
-And Search The IPO and Style................................................passed
-And Click on the Apply button...............................................passed
-And Select the IPO and Style................................................passed
-And Click on the Add button.................................................passed
-Given Enter the data in proto commends received field.......................passed
-Given Enter the data in Fit submittion and Approval fields..................passed
-And Enter the data in Fit Remarks Field.....................................passed
-And Verify whether the Fabric Initial In House date is prepopulated in the field or not.passed
-And Click on the Fabric Initial In House Date View button...................passed
-And Click on the Fabric Initial In House Date View Close button.............passed
-And Click on the PP Add button..............................................passed
-And Enter the data in PP Submission and Approval............................passed
->>>>>>> refs/remotes/origin/main
+And Click on the Master Module..............................................passed
+Then Click on the State screen..............................................passed
+And To verify whether Search is holding the placeholder or not..............passed
+And To verify whether Search is displaying the records or not when the user enters Invalid data.passed
+And To verify whether it is displaying the records or not by entering with the State name Search criteria.passed
+When To verify whether the State Code Country IGST SGST CGST Active and Action columns are to be displayed or not.passed
+And To verify whether the user able to view the add button or not...........passed
+And To verify whether the add button is clickable or not....................passed
+Then To verify when the user click on the add button the create State form is displaying or not.passed
+And To verify whether the State name State code Country code IGST SGST CGST active checkbox cancel and Save buttons.passed
+Then To verify whether the user able to view the State name field or not....passed
+And To verify whether the entered data is properly displayed or not.........passed
+And To verify whether the user able to view the State Code field or not.....passed
+And To verify whether the user able to enter the data in state code text field or not.passed
+Then To verify whether the user able to view the Country name field or not..passed
+And To verify whether the Country names are retrieved from the Country name screen or not.passed
+Then To verify whether the user able to view the IGST field or not..........passed
+And To verify whether the IGST field is enable state or not.................passed
+And To verify whether the IGST field is text box field or not...............passed
+And To verify whether the entered data is properly displayed in IGST or not.passed
+Then To verify whether the user able to view the SGST field or not..........passed
+And To verify whether the SGST field is enable state or not.................passed
+And To verify whether the SGST field is text box field or not...............passed
+And To verify whether the entered data is properly displayed in SGST or not.passed
+Then To verify whether the user able to view the CGST field or not..........passed
+And To verify whether the CGST field is enable state or not.................passed
+And To verify whether the CGST field is text box field or not...............passed
+And To verify whether the CGST field is mandatory field or not..............passed
+And To verify whether the entered data is properly displayed in CGST or not.passed
+Then To verify whether the user able to view the save button or not.........passed
+And To verify whether the save button is enable state or not................passed
+And To verify when the user click on the save button the State saved successfully msg is displaying or not.passed
+And Verify that user able to view the Save Record in grid...................passed
 ]]></system-out>
     </testcase>
 </testsuite>

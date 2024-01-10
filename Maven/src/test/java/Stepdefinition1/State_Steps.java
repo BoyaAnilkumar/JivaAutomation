@@ -19,57 +19,52 @@ public class State_Steps {
 	}
 	
 	@And("^To verify whether Search is displaying the records or not when the user enters Invalid data$")
-	public void To_verify_whether_Search_is_displaying_the_records_or_not_when_the_user_enters_Invalid_data() {
+	public void To_verify_whether_Search_is_displaying_the_records_or_not_when_the_user_enters_Invalid_data() throws Throwable {
 		State.To_verify_whether_Search_is_displaying_the_records_or_not_when_the_user_enters_Invalid_data();
 	}
 	
 	@And("^To verify whether it is displaying the records or not by entering with the State name Search criteria$")
-	public void To_verify_whether_it_is_displaying_the_records_or_not_by_entering_with_the_State_name_Search_criteria() {
+	public void To_verify_whether_it_is_displaying_the_records_or_not_by_entering_with_the_State_name_Search_criteria() throws Throwable {
 		State.To_verify_whether_it_is_displaying_the_records_or_not_by_entering_with_the_State_name_Search_criteria();
 	}
 	
-	@And("^To verify whether it is displaying the records or not by entering with the State Search criteria$")
-	public void To_verify_whether_it_is_displaying_the_records_or_not_by_entering_with_the_State_Search_criteria() {
-		State.To_verify_whether_it_is_displaying_the_records_or_not_by_entering_with_the_State_Search_criteria();
-	}
-	
 	@Then("^To verify whether the State Code Country IGST SGST CGST Active and Action columns are to be displayed or not$")
-	public void To_verify_whether_the_State_Code_Country_IGST_SGST_CGST_Active_and_Action_columns_are_to_be_displayed_or_not() {
+	public void To_verify_whether_the_State_Code_Country_IGST_SGST_CGST_Active_and_Action_columns_are_to_be_displayed_or_not() throws Throwable {
 		State.To_verify_whether_the_State_Code_Country_IGST_SGST_CGST_Active_and_Action_columns_are_to_be_displayed_or_not();
 	}
 	
 	@Then("^To verify whether the user able to view the add button or not$")
-	public void To_verify_whether_the_user_able_to_view_the_add_button_or_not() {
+	public void To_verify_whether_the_user_able_to_view_the_add_button_or_not() throws Throwable {
 		State.To_verify_whether_the_user_able_to_view_the_add_button_or_not();
 	}
 	
 	@And("^To verify whether the add button is enable state or not$")
-	public void To_verify_whether_the_add_button_is_enable_state_or_not() {
+	public void To_verify_whether_the_add_button_is_enable_state_or_not() throws Throwable {
 		State.To_verify_whether_the_add_button_is_enable_state_or_not();
 	}
 	
 	@And("^To verify whether the add button is clickable or not$")
-	public void To_verify_whether_the_add_button_is_clickable_or_not() {
+	public void To_verify_whether_the_add_button_is_clickable_or_not() throws Throwable {
 		State.To_verify_whether_the_add_button_is_clickable_or_not();
 	}
 	
 	@Then("^To verify when the user click on the add button the create State form is displaying or not$")
-	public void To_verify_when_the_user_click_on_the_add_button_the_create_State_form_is_displaying_or_not() {
+	public void To_verify_when_the_user_click_on_the_add_button_the_create_State_form_is_displaying_or_not() throws Throwable {
 		State.To_verify_when_the_user_click_on_the_add_button_the_create_State_form_is_displaying_or_not();
 	}
 	
 	@And("^To verify whether the State name State code Country code IGST SGST CGST active checkbox cancel and Save buttons$")
-	public void To_verify_whether_the_State_name_State_code_Country_code_IGST_SGST_CGST_active_checkbox_cancel_and_Save_buttons() {
+	public void To_verify_whether_the_State_name_State_code_Country_code_IGST_SGST_CGST_active_checkbox_cancel_and_Save_buttons() throws Throwable {
 		State.To_verify_whether_the_State_name_State_code_Country_code_IGST_SGST_CGST_active_checkbox_cancel_and_Save_buttons();
 	}
 	
 	@Then("^To verify whether the user able to view the State name field or not$")
-	public void To_verify_whether_the_user_able_to_view_the_State_name_field_or_not() {
+	public void To_verify_whether_the_user_able_to_view_the_State_name_field_or_not() throws Throwable {
 		State.To_verify_whether_the_user_able_to_view_the_State_name_field_or_not();
 	}
 	
 	@And("^To verify whether the entered data is properly displayed or not$")
-	public void To_verify_whether_the_entered_data_is_properly_displayed_or_not() {
+	public void To_verify_whether_the_entered_data_is_properly_displayed_or_not() throws Throwable {
 		State.To_verify_whether_the_entered_data_is_properly_displayed_or_not();
 	}
 	
@@ -79,8 +74,8 @@ public class State_Steps {
 	}
 	
 	@And("^To verify whether the user able to enter the data in state code text field or not$")
-	public void To_verify_whether_the_user_able_to_enter_the_data_in_state_code_text_field_or_not() {
-		State.To_verify_whether_the_user_able_to_view_the_add_button_or_not();
+	public void To_verify_whether_the_user_able_to_enter_the_data_in_state_code_text_field_or_not() throws Throwable {
+		State.To_verify_whether_the_user_able_to_enter_the_data_in_state_code_text_field_or_not();
 	}
 	
 	@Then("^To verify whether the user able to view the Country name field or not$")
