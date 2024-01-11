@@ -69,7 +69,7 @@ public class State_Steps {
 	}
 	
 	@And("^To verify whether the user able to view the State Code field or not$")
-	public void To_verify_whether_the_user_able_to_view_the_State_Code_field_or_not() {
+	public void To_verify_whether_the_user_able_to_view_the_State_Code_field_or_not() throws Throwable {
 		State.To_verify_whether_the_user_able_to_view_the_State_Code_field_or_not();
 	}
 	
@@ -79,93 +79,93 @@ public class State_Steps {
 	}
 	
 	@Then("^To verify whether the user able to view the Country name field or not$")
-	public void To_verify_whether_the_user_able_to_view_the_Country_name_field_or_not() {
+	public void To_verify_whether_the_user_able_to_view_the_Country_name_field_or_not() throws Throwable {
 		State.To_verify_whether_the_user_able_to_view_the_Country_name_field_or_not();
 	}
 	
 	@And("^To verify whether the Country names are retrieved from the Country name screen or not$")
-	public void To_verify_whether_the_Country_names_are_retrieved_from_the_Country_name_screen_or_not() {
+	public void To_verify_whether_the_Country_names_are_retrieved_from_the_Country_name_screen_or_not() throws Throwable {
 		State.To_verify_whether_the_Country_names_are_retrieved_from_the_Country_name_screen_or_not();
 	}
 	
 	@Then("^To verify whether the user able to view the IGST field or not$")
-	public void To_verify_whether_the_user_able_to_view_the_IGST_field_or_not() {
+	public void To_verify_whether_the_user_able_to_view_the_IGST_field_or_not() throws Throwable {
 		State.To_verify_whether_the_user_able_to_view_the_IGST_field_or_not();
 	}
 	
 	@And("^To verify whether the IGST field is enable state or not$")
-	public void To_verify_whether_the_IGST_field_is_enable_state_or_not() {
+	public void To_verify_whether_the_IGST_field_is_enable_state_or_not() throws Throwable {
 		State.To_verify_whether_the_IGST_field_is_enable_state_or_not();
 	}
 	
 	@And("^To verify whether the IGST field is text box field or not$")
-	public void To_verify_whether_the_IGST_field_is_text_box_field_or_not() {
+	public void To_verify_whether_the_IGST_field_is_text_box_field_or_not() throws Throwable{
 		State.To_verify_whether_the_IGST_field_is_text_box_field_or_not();
 	}
 	
 	@And("^To verify whether the entered data is properly displayed in IGST or not$")
-	public void To_verify_whether_the_entered_data_is_properly_displayed_in_IGST_or_not() {
+	public void To_verify_whether_the_entered_data_is_properly_displayed_in_IGST_or_not() throws Throwable{
 		State.To_verify_whether_the_entered_data_is_properly_displayed_in_IGST_or_not();
 	}
 	
 	@Then("^To verify whether the user able to view the SGST field or not$")
-	public void To_verify_whether_the_user_able_to_view_the_SGST_field_or_not() {
+	public void To_verify_whether_the_user_able_to_view_the_SGST_field_or_not() throws Throwable{
 		State.To_verify_whether_the_user_able_to_view_the_SGST_field_or_not();
 	}
 	
 	@And("^To verify whether the SGST field is enable state or not$")
-	public void To_verify_whether_the_SGST_field_is_enable_state_or_not() {
+	public void To_verify_whether_the_SGST_field_is_enable_state_or_not() throws Throwable{
 		State.To_verify_whether_the_SGST_field_is_enable_state_or_not();
 	}
 	
 	@And("^To verify whether the SGST field is text box field or not$")
-	public void To_verify_whether_the_SGST_field_is_text_box_field_or_not() {
+	public void To_verify_whether_the_SGST_field_is_text_box_field_or_not() throws Throwable{
 		State.To_verify_whether_the_SGST_field_is_text_box_field_or_not();
 	}
 	
 	@And("^To verify whether the entered data is properly displayed in SGST or not$")
-	public void To_verify_whether_the_entered_data_is_properly_displayed_in_SGST_or_not() {
+	public void To_verify_whether_the_entered_data_is_properly_displayed_in_SGST_or_not() throws Throwable{
 		State.To_verify_whether_the_entered_data_is_properly_displayed_in_SGST_or_not();
 	}
 	
 	@Then("^To verify whether the user able to view the CGST field or not$")
-	public void To_verify_whether_the_user_able_to_view_the_CGST_field_or_not() {
+	public void To_verify_whether_the_user_able_to_view_the_CGST_field_or_not() throws Throwable{
 		State.To_verify_whether_the_user_able_to_view_the_CGST_field_or_not();
 	}
 	
 	@And("^To verify whether the CGST field is enable state or not$")
-	public void To_verify_whether_the_CGST_field_is_enable_state_or_not() {
+	public void To_verify_whether_the_CGST_field_is_enable_state_or_not() throws Throwable{
 		State.To_verify_whether_the_CGST_field_is_enable_state_or_not();
 	}
 	
 	@And("^To verify whether the CGST field is text box field or not$")
-	public void To_verify_whether_the_CGST_field_is_text_box_field_or_not() {
+	public void To_verify_whether_the_CGST_field_is_text_box_field_or_not()throws Throwable {
 		State.To_verify_whether_the_CGST_field_is_text_box_field_or_not();
 	}
 	
 	@And("^To verify whether the CGST field is mandatory field or not$")
-	public void To_verify_whether_the_CGST_field_is_mandatory_field_or_not() {
+	public void To_verify_whether_the_CGST_field_is_mandatory_field_or_not()throws Throwable {
 		State.To_verify_whether_the_CGST_field_is_mandatory_field_or_not();
 	}
 	
 	@And("^To verify whether the entered data is properly displayed in CGST or not$")
-	public void To_verify_whether_the_entered_data_is_properly_displayed_in_CGST_or_not() {
+	public void To_verify_whether_the_entered_data_is_properly_displayed_in_CGST_or_not()throws Throwable {
 		State.To_verify_whether_the_entered_data_is_properly_displayed_in_CGST_or_not();
 	}
 	
 	
 	@Then("^To verify whether the user able to view the save button or not$")
-	public void To_verify_whether_the_user_able_to_view_the_save_button_or_not() {
+	public void To_verify_whether_the_user_able_to_view_the_save_button_or_not() throws Throwable{
 		State.To_verify_whether_the_user_able_to_view_the_save_button_or_not();
 	}
 	
 	@And("^To verify whether the save button is enable state or not$")
-	public void To_verify_whether_the_save_button_is_enable_state_or_not() {
+	public void To_verify_whether_the_save_button_is_enable_state_or_not() throws Throwable{
 		State.To_verify_whether_the_save_button_is_enable_state_or_not();
 	}
 	
 	@And("^To verify when the user click on the save button the State saved successfully msg is displaying or not$")
-	public void To_verify_when_the_user_click_on_the_save_button_the_State_saved_successfully_msg_is_displaying_or_not() {
+	public void To_verify_when_the_user_click_on_the_save_button_the_State_saved_successfully_msg_is_displaying_or_not() throws Throwable {
 		State.To_verify_when_the_user_click_on_the_save_button_the_State_saved_successfully_msg_is_displaying_or_not();
 	}
 	

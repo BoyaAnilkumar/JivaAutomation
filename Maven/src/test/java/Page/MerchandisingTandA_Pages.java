@@ -81,8 +81,6 @@ public class MerchandisingTandA_Pages extends DriverFactory{
 		driver.findElement(Proto_comments).sendKeys("1206");
     }
 
-   
-
 	
 	public void Enter_the_data_in_Fit_submittion_field() throws Throwable {
       utilities.webDriverWait(driver, Fit_Submission1);

@@ -1,42 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="81.4">
-    <testcase classname="Title of your features" name="Login the Application" time="81.043">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="189.827">
+    <testcase classname="Feature to test Jiva design Merchandising T and A Data Entry screen functionality" name="To Test the PD Fabric Pricing screen" time="40.457">
         <system-out><![CDATA[When User navigates to Login page...........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
-And Click on the Master Module..............................................passed
-Then Click on the State screen..............................................passed
-And To verify whether Search is holding the placeholder or not..............passed
-And To verify whether Search is displaying the records or not when the user enters Invalid data.passed
-And To verify whether it is displaying the records or not by entering with the State name Search criteria.passed
-When To verify whether the State Code Country IGST SGST CGST Active and Action columns are to be displayed or not.passed
-And To verify whether the user able to view the add button or not...........passed
-And To verify whether the add button is clickable or not....................passed
-Then To verify when the user click on the add button the create State form is displaying or not.passed
-And To verify whether the State name State code Country code IGST SGST CGST active checkbox cancel and Save buttons.passed
-Then To verify whether the user able to view the State name field or not....passed
-And To verify whether the entered data is properly displayed or not.........passed
-And To verify whether the user able to view the State Code field or not.....passed
-And To verify whether the user able to enter the data in state code text field or not.passed
-Then To verify whether the user able to view the Country name field or not..passed
-And To verify whether the Country names are retrieved from the Country name screen or not.passed
-Then To verify whether the user able to view the IGST field or not..........passed
-And To verify whether the IGST field is enable state or not.................passed
-And To verify whether the IGST field is text box field or not...............passed
-And To verify whether the entered data is properly displayed in IGST or not.passed
-Then To verify whether the user able to view the SGST field or not..........passed
-And To verify whether the SGST field is enable state or not.................passed
-And To verify whether the SGST field is text box field or not...............passed
-And To verify whether the entered data is properly displayed in SGST or not.passed
-Then To verify whether the user able to view the CGST field or not..........passed
-And To verify whether the CGST field is enable state or not.................passed
-And To verify whether the CGST field is text box field or not...............passed
-And To verify whether the CGST field is mandatory field or not..............passed
-And To verify whether the entered data is properly displayed in CGST or not.passed
-Then To verify whether the user able to view the save button or not.........passed
-And To verify whether the save button is enable state or not................passed
-And To verify when the user click on the save button the State saved successfully msg is displaying or not.passed
-And Verify that user able to view the Save Record in grid...................passed
+And Click on the Woven Module...............................................passed
+Then click on the Merchandising Module......................................passed
+And Click on the T and A Module.............................................passed
+And Click on the Merchandising T&A Data Entry Screen........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Feature to test Jiva design Merchandising T and A Data Entry screen functionality" name="To Test the Filter Functionality" time="85.926">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then click on the Merchandising Module......................................passed
+And Click on the T and A Module.............................................passed
+And Click on the Merchandising T&A Data Entry Screen........................passed
+And Click on the Styles Expansion...........................................passed
+And Click on the Filter Icon................................................passed
+And Click on the Buyer Field................................................passed
+And Click on the Season Field...............................................passed
+And Select the Season.......................................................passed
+And Select the Month........................................................passed
+And Search The IPO and Style................................................passed
+And Click on the Apply button...............................................passed
+And Select the IPO and Style................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Feature to test Jiva design Merchandising T and A Data Entry screen functionality" name="To Test the Filter Functionality 2" time="63.07">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then click on the Merchandising Module......................................passed
+And Click on the T and A Module.............................................passed
+And Click on the Merchandising T&A Data Entry Screen........................passed
+And Click on the Styles Expansion...........................................passed
+And Click on the Filter Icon................................................passed
+And Search The IPO and Style................................................passed
+And Click on the Apply button...............................................passed
+And Select the IPO and Style................................................passed
+And Verify the IPO name is displaying or not................................passed
+And Verify the Style name is displaying or not..............................passed
+And Verify the Buying house name is displaying or not.......................passed
+And Verify the PO Qty Value is displaying or not............................passed
+And Verify the IPO Qty Value is displaying or not...........................passed
 ]]></system-out>
     </testcase>
 </testsuite>

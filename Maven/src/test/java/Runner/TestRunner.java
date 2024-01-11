@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 
 				  monochrome = true,
 
-		          tags ="@Smoke")
+		          tags ="@MerchandisingTAndA")
 
 
 public class TestRunner {

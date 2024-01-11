@@ -81,21 +81,21 @@ And Click on the PP Add button
  And Enter the data in GPT1 Remarks Field
  And Click on the Testing GPT1 Delete Icon
  
- #And Click on the Testing FPT1 Add button
- #Given Enter the data in Testing FPT1 submission and Approval
- #And Enter the data in FPT1 Remarks Field
- #And Click on the Testing FPT1 Delete Icon
- #
- #And Click on the Testing Photoshoot1 Add button
- #Given Enter the data in Testing Photoshoot1 submission and Approval
- #And Enter the data in Photoshoot1 Remarks Field
- #And Click on the Testing Photoshoot1 Delete Icon
- #
- #And Click on the TOP Sample1 Add button
- #Given Enter the data in TOP Sample1 submission and Approval
- #And Enter the data in TOP Sample1 Remarks Field
- #And Click on the TOP Sample1 Delete Icon
- #
+ And Click on the Testing FPT1 Add button
+ Given Enter the data in Testing FPT1 submission and Approval
+ And Enter the data in FPT1 Remarks Field
+ And Click on the Testing FPT1 Delete Icon
+ 
+ And Click on the Testing Photoshoot1 Add button
+ Given Enter the data in Testing Photoshoot1 submission and Approval
+ And Enter the data in Photoshoot1 Remarks Field
+ And Click on the Testing Photoshoot1 Delete Icon
+ 
+ And Click on the TOP Sample1 Add button
+ Given Enter the data in TOP Sample1 submission and Approval
+ And Enter the data in TOP Sample1 Remarks Field
+ And Click on the TOP Sample1 Delete Icon
+ 
  
  
  
