@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchElementException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.InvalidSelectorException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.NoSuchElementException</h5>
+								<h5 class="mb-4">org.openqa.selenium.InvalidSelectorException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="72" parent-id="1">
+<tr class="s-fail" test-id="34" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">And To verify when the user click on the save button the State saved successfully msg is displaying or not <br/><span class="text-muted text-sm">Login the Application</span></td>
-	<td>0h 1m 41s+651msc</td>
+	<td class="_600">And Enter Fabric Budget details for Shiffly process <br/><span class="text-muted text-sm">Verification of submitting the MU working for Shiffly process</span></td>
+	<td>0h 2m 7s+746msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,15 +137,16 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='swal2-popup swal2-toast colored-toast swal2-icon-success swal2-show']"}
-  (Session info: chrome=120.0.6099.200)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+		<textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //select[@formcontrolname='schifflyFabricExecutiveId because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//select[@formcontrolname='schifflyFabricExecutiveId' is not a valid XPath expression.
+  (Session info: chrome=120.0.6099.217)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fa48b53bd5f180e68724870989d36481
-*** Element info: {Using=xpath, value=//div[@class='swal2-popup swal2-toast colored-toast swal2-icon-success swal2-show']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.217, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59232}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 43d205d2c9367a9d9627b257091255a5
+*** Element info: {Using=xpath, value=//select[@formcontrolname='schifflyFabricExecutiveId}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -159,58 +160,9 @@ Session ID: fa48b53bd5f180e68724870989d36481
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.Statepage.To_verify_when_the_user_click_on_the_save_button_the_State_saved_successfully_msg_is_displaying_or_not(Statepage.java:441)
-	at Stepdefinition1.State_Steps.To_verify_when_the_user_click_on_the_save_button_the_State_saved_successfully_msg_is_displaying_or_not(State_Steps.java:169)
-	at ✽.To verify when the user click on the save button the State saved successfully msg is displaying or not(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/State.feature:57)
-</textarea>
-	</td>
-</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-					<div class="list-item attr">
-						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchSessionException</a>
-							<div class="item-except text-sm text-muted h-1x">
-								1 tests
-							</div>
-							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.NoSuchSessionException</h5>
-								<table class="table">
-									<thead><tr>
-										<th id="status-col"></th>
-										<th>Test</th>
-										<th>Duration</th>
-										<th>Attributes</th>
-										<th>Media</th>
-										<th>Source</th>
-									</tr></thead>
-									<tbody>
-	
-<tr class="s-fail" test-id="77" parent-id="1">
-	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Login the Application</span></td>
-	<td>0h 0m 0s+1msc</td>
-	<td></td>
-	<td>
-	</td>
-	<td class="static"><i class="static fa fa-external-link"></i></td>
-</tr>
-<tr class="details">
-	<td colspan="5">
-		
-		<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:26)
+	at Page.NewFabricSheetWorking_page.Enter_Fabric_Budget_details_for_Shiffly_process(NewFabricSheetWorking_page.java:925)
+	at Stepdefinition1.NewFabricSheetWorking_Steps.Enter_Fabric_Budget_details_for_Shiffly_process(NewFabricSheetWorking_Steps.java:290)
+	at ✽.Enter Fabric Budget details for Shiffly process(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/NewFabricSheetWorking.feature:94)
 </textarea>
 	</td>
 </tr>
@@ -238,7 +190,7 @@ Driver info: driver.version: RemoteWebDriver
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Jan 11, 2024 04:24:57 pm</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Jan 12, 2024 03:01:52 pm</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

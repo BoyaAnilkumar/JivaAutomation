@@ -27,9 +27,9 @@ Feature: I want to add process details for IPO which is having the fabric sheet
   #And click on Apply button and Reset button
   @tag1
   Scenario: Verification of submitting the MU working for Dyeing and Printing process
-    Given Navigates to the Login page
-    Then Enter valid Username and password
-    And Click on SignIn
+    When User navigates to Login page
+    Then User enters the username and password
+    And User click on the signIn
     And navigate to New Fabric Sheet working screen
     And Click on styles expansion
     And click on IPO in the styles expansion
@@ -74,11 +74,11 @@ Feature: I want to add process details for IPO which is having the fabric sheet
     #And verify the cost is displaying as zero for greige dyeing and printing process or not
     And Click on submit button to save the mu working
 
-  @tag1
+  @tag2
   Scenario: Verification of submitting the MU working for Shiffly process
-Given Navigates to the Login page
-    Then Enter valid Username and password
-    And Click on SignIn
+    When User navigates to Login page
+    Then User enters the username and password
+    And User click on the signIn
     And navigate to New Fabric Sheet working screen
     And Click on styles expansion
     And click on IPO in the styles expansion
@@ -93,22 +93,56 @@ Given Navigates to the Login page
     Then Enter Fabric Budget details for greige process
     And Enter Fabric Budget details for Shiffly process
     And Click on submit button to save the mu working
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+  @tag3
+  Scenario: Verification of submitting the Yarn working
+  	When User navigates to Login page
+    Then User enters the username and password
+    And User click on the signIn
+    And navigate to New Fabric Sheet working screen
+    And Click on styles expansion
+    And click on IPO in the styles expansion
+    And Verify that data is displaying in grids after selecting the IPO
+    And Click on Edit icon in MU Working grid
+    And Verify the Fabric Required is displaying the value or not
+    And Enter the value in Residual shrinkage
+    And click on yarn working checkbox
+  	Then Select Yarn Type
+  	And Enter value in knitting and Spinning MU
+  	Then select the process1 as Other Process
+  	Then select the process2 as NA
+  	And verify the qty in greige field whether value is displaying or not
+  	And verify the text in Other Process name text field
+  	And Enter the value in MU percentage field
+  	And Enter Fabric Budget details for Yarn process
+  	And Enter Fabric Budget details for knitting and spinning process
+  	And Enter Fabric Budget details for Other process
+  	And Click on submit button to save the mu working
+  	
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

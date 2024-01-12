@@ -1,52 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="189.827">
-    <testcase classname="Feature to test Jiva design Merchandising T and A Data Entry screen functionality" name="To Test the PD Fabric Pricing screen" time="40.457">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="226.006">
+    <testcase classname="I want to add process details for IPO which is having the fabric sheet" name="Verification of submitting the MU working for Shiffly process" time="225.661">
         <system-out><![CDATA[When User navigates to Login page...........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
-And Click on the Woven Module...............................................passed
-Then click on the Merchandising Module......................................passed
-And Click on the T and A Module.............................................passed
-And Click on the Merchandising T&A Data Entry Screen........................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Feature to test Jiva design Merchandising T and A Data Entry screen functionality" name="To Test the Filter Functionality" time="85.926">
-        <system-out><![CDATA[When User navigates to Login page...........................................passed
-Then User enters the username and password..................................passed
-And User click on the signIn................................................passed
-And Click on the Woven Module...............................................passed
-Then click on the Merchandising Module......................................passed
-And Click on the T and A Module.............................................passed
-And Click on the Merchandising T&A Data Entry Screen........................passed
-And Click on the Styles Expansion...........................................passed
-And Click on the Filter Icon................................................passed
-And Click on the Buyer Field................................................passed
-And Click on the Season Field...............................................passed
-And Select the Season.......................................................passed
-And Select the Month........................................................passed
-And Search The IPO and Style................................................passed
-And Click on the Apply button...............................................passed
-And Select the IPO and Style................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Feature to test Jiva design Merchandising T and A Data Entry screen functionality" name="To Test the Filter Functionality 2" time="63.07">
-        <system-out><![CDATA[When User navigates to Login page...........................................passed
-Then User enters the username and password..................................passed
-And User click on the signIn................................................passed
-And Click on the Woven Module...............................................passed
-Then click on the Merchandising Module......................................passed
-And Click on the T and A Module.............................................passed
-And Click on the Merchandising T&A Data Entry Screen........................passed
-And Click on the Styles Expansion...........................................passed
-And Click on the Filter Icon................................................passed
-And Search The IPO and Style................................................passed
-And Click on the Apply button...............................................passed
-And Select the IPO and Style................................................passed
-And Verify the IPO name is displaying or not................................passed
-And Verify the Style name is displaying or not..............................passed
-And Verify the Buying house name is displaying or not.......................passed
-And Verify the PO Qty Value is displaying or not............................passed
-And Verify the IPO Qty Value is displaying or not...........................passed
+And navigate to New Fabric Sheet working screen.............................passed
+And Click on styles expansion...............................................passed
+And click on IPO in the styles expansion....................................passed
+And Verify that data is displaying in grids after selecting the IPO.........passed
+And Click on Edit icon in MU Working grid...................................passed
+And Verify the Fabric Required is displaying the value or not...............passed
+And Enter the value in Residual shrinkage...................................passed
+And select the process1 as Shiffly process..................................passed
+Then select the process2 as NA..............................................passed
+Then verify the qty in greige field whether value is displaying or not......passed
+And Enter the data in Shiffly process section fields........................passed
+Then Enter Fabric Budget details for greige process.........................passed
+And Enter Fabric Budget details for Shiffly process.........................passed
+And Click on submit button to save the mu working...........................passed
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 
 				  monochrome = true,
 
-		          tags ="@MerchandisingTAndA")
+		          tags ="@tag2")
 
 
 public class TestRunner {

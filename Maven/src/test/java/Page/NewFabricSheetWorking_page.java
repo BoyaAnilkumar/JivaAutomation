@@ -4,6 +4,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import util.DriverFactory;
@@ -76,7 +77,9 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By SelectPFE					= By.xpath("//select[@formcontrolname='printingFabricExecutiveId']/..//option[text()=' Ramya']");
 	By Cancelbutton					= By.xpath("//a[@class='btn btn-md btn-danger mr-2']");
 	By submitbutton					= By.xpath("//button[@class='btn btn-primary btn-md']");
-
+	
+	By SelectShifflyprocess						= By.xpath("//select[@formcontrolname='process1TypeId']/..//option[text()=' Schiffly']");
+	By selectNA									= By.xpath("//select[@formcontrolname='process2TypeId']/..//option[text()=' N/A']");
 	By EndToEndgreige							= By.xpath("//label[text()=' End To End [Greige Fabric] Thaan Length']/..//input[@formcontrolname='endToEndProcessedThaanLength']");
 	By ShifflytoShifflygreige					= By.xpath("//label[text()=' Schiffly To Schiffly [Greige Fabric] Thaan Length']/..//input[@formcontrolname='schifflyToSchifflyProcessedThaanLength']");
 	By Numberofpcspermaker						= By.xpath("(//input[@formcontrolname='numberOfPcsPerMarker'])[3]");
@@ -99,11 +102,19 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By ShifflyRate								= By.xpath("(//input[@formcontrolname='schifflyRate'])[1]");
 	By Shifflyconversionrate					= By.xpath("(//input[@formcontrolname='schifflyConversionRate'])[1]");
 	By Shifflycost								= By.xpath("(//input[@formcontrolname='schifflyCostInINR'])[1]");
+	By ShifflyManager							= By.xpath("//select[@formcontrolname='schifflyFabricManagerId']/..//option[text()=' Lokesh P']");
+	By ShifflyAsstManager						= By.xpath("//ng-select[@formcontrolname='schifflyFabricAssistantsId']");
+	By Shifflyexecutive							= By.xpath("//select[@formcontrolname='schifflyFabricExecutiveId']");
 	
-	
-
-	
-	
+	By Isyarn   =  By.xpath("//input[@formcontrolname='isYarn']");
+	By Isknitting  = By.xpath("//input[@formcontrolname='isKnitting']");
+	By Yarntype		= By.xpath("//select[@formcontrolname='yarnTypeId']");
+	By selectyarntype = By.xpath("//option[text()=' Dyed Yarn']");
+	By knitSpinMU		= By.xpath("//input[@formcontrolname='knittingMUPercentage']");
+	By Yarnqty			= By.xpath("//input[@formcontrolname='yarnQty']");
+	By yarncolor		= By.xpath("//select[@formcontrolname='yarnColorId']");
+	By selectyarncolor	= By.xpath("//select[@formcontrolname='yarnColorId']/..//option[text()=' Lilac']");
+	By selectotherprocess = By.xpath("//select[@formcontrolname='process1TypeId']/..//option[text()=' Other']");
 	
 	
 	
@@ -682,34 +693,288 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		
 		
 	}
+	
+	public void select_the_process1_as_Shiffly_process() throws Throwable {
+		utilities.webDriverWait(driver, Process1);
+		driver.findElement(Process1).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(SelectShifflyprocess).click();
+		utilities.MinimumWait(driver);
+	}	
+	public void select_the_process2_as_NA() throws Throwable {
+		utilities.webDriverWait(driver, Process2);
+		driver.findElement(Process2).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(selectNA).click();
+		utilities.MinimumWait(driver);
+		}
+		
+	
 
 	public void Enter_the_data_in_Shiffly_process_section_fields() throws Throwable {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0, 500);");
 		
-		utilities.webDriverWait(driver, EndToEndgreige);
+        utilities.webDriverWait(driver, EndToEndgreige);
 		driver.findElement(EndToEndgreige).click();
+		driver.findElement(EndToEndgreige).clear();
+		driver.findElement(EndToEndgreige).sendKeys("68");
 		utilities.MinimumWait(driver);
 		
-		utilities.webDriverWait(driver, EndToEndgreige);
-		driver.findElement(EndToEndgreige).sendKeys("68");
+		utilities.webDriverWait(driver, ShifflytoShifflygreige);
+		driver.findElement(ShifflytoShifflygreige).click();
+		driver.findElement(ShifflytoShifflygreige).clear();
+		driver.findElement(ShifflytoShifflygreige).sendKeys("59");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Numberofpcspermaker);
+		driver.findElement(Numberofpcspermaker).click();
+		driver.findElement(Numberofpcspermaker).clear();
+		driver.findElement(Numberofpcspermaker).sendKeys("55");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, layerlengthinmarker);
+		driver.findElement(layerlengthinmarker).click();
+		driver.findElement(layerlengthinmarker).clear();
+		driver.findElement(layerlengthinmarker).sendKeys("50");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Layerlengthactual);
+		driver.findElement(Layerlengthactual).click();
+		WebElement LLA = driver.findElement(Layerlengthactual);
+		String layerlength = LLA.getAttribute("value");
+		System.out.println("Displaying Layerlength actual " + layerlength);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, NoofPcsinOneThaan);
+		driver.findElement(NoofPcsinOneThaan).click();
+		WebElement PinOneThaan = driver.findElement(NoofPcsinOneThaan);
+		String onethaan = PinOneThaan.getAttribute("value");
+		System.out.println("Displaying Pieces in one thaan " + onethaan);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, FabricUserPerThaan);
+		driver.findElement(FabricUserPerThaan).click();
+		WebElement Fabricperthaan = driver.findElement(FabricUserPerThaan);
+		String fabricthaan = Fabricperthaan.getAttribute("value");
+		System.out.println("Displaying Fabric Per Thaan " + fabricthaan);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, BalanceFabricPerThaan);
+		driver.findElement(BalanceFabricPerThaan).click();
+		WebElement Balancefabricthaan = driver.findElement(BalanceFabricPerThaan);
+		String balancethaan = Balancefabricthaan.getAttribute("value");
+		System.out.println("Displaying Balance Fabric Per Thaan " + balancethaan);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, NoOfPcsinBalanceFabric);
+		driver.findElement(NoOfPcsinBalanceFabric).click();
+		driver.findElement(NoOfPcsinBalanceFabric).clear();
+		driver.findElement(NoOfPcsinBalanceFabric).sendKeys("45");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, TotalPcsinOneThaan);
+		driver.findElement(TotalPcsinOneThaan).click();
+		WebElement Totalpcsinthaan = driver.findElement(TotalPcsinOneThaan);
+		String ThaanTotal = Totalpcsinthaan.getAttribute("value");
+		System.out.println("Displaying Total pcs in one thaan " + ThaanTotal);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, ThaansRequiredForSchiffly);
+		driver.findElement(ThaansRequiredForSchiffly).click();
+		WebElement RequiredforShiffly = driver.findElement(ThaansRequiredForSchiffly);
+		String Schiffly = RequiredforShiffly.getAttribute("value");
+		System.out.println("Displaying Thaans Required for shiffly " + Schiffly);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, ThaansRequiredForSchifflyRounded);
+		driver.findElement(ThaansRequiredForSchifflyRounded).click();
+		WebElement RequiredforShifflyrounded = driver.findElement(ThaansRequiredForSchifflyRounded);
+		String Schifflyrounded = RequiredforShifflyrounded.getAttribute("value");
+		System.out.println("Displaying Thaans Required for Shiffly Rounded " + Schifflyrounded);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, numberOfExtraThaans);
+		driver.findElement(numberOfExtraThaans).click();
+		driver.findElement(numberOfExtraThaans).clear();
+		driver.findElement(numberOfExtraThaans).sendKeys("35");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, numberOfPcsInExtraThaans);
+		driver.findElement(numberOfPcsInExtraThaans).click();
+		WebElement NoOfPcsinextrathaans = driver.findElement(numberOfPcsInExtraThaans);
+		String extrathaans = NoOfPcsinextrathaans.getAttribute("value");
+		System.out.println("Displaying no of pcs in extra thaans " + extrathaans);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, schifflytoschifflyfabricrequired);
+		driver.findElement(schifflytoschifflyfabricrequired).click();
+		WebElement StoSfabricreq = driver.findElement(schifflytoschifflyfabricrequired);
+		String StoSfabric = StoSfabricreq.getAttribute("value");
+		System.out.println("Displaying shiffly to shiffly fabric required " + StoSfabric);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver,greigefabricqtyrequired );
+		driver.findElement(greigefabricqtyrequired).click();
+		WebElement GreigeFabric = driver.findElement(greigefabricqtyrequired);
+		String GFabReq = GreigeFabric.getAttribute("value");
+		System.out.println("Displaying Griege Fabric Qty Required " + GFabReq);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, addlProcessedtobeorderedduetoendpalla);
+		driver.findElement(addlProcessedtobeorderedduetoendpalla).click();
+		driver.findElement(addlProcessedtobeorderedduetoendpalla).sendKeys("5");
+		utilities.MinimumWait(driver);
+		driver.findElement(addlProcessedtobeorderedduetoendpalla).click();
+		WebElement orderdue = driver.findElement(addlProcessedtobeorderedduetoendpalla);
+		String orderduetoendpalla = orderdue.getAttribute("value");
+		System.out.println("Displaying Addl Processed to be ordered due to end palla " + orderduetoendpalla);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, finalprocessedfabricqtyrequired);
+		driver.findElement(finalprocessedfabricqtyrequired).click();
+		WebElement finalqty = driver.findElement(finalprocessedfabricqtyrequired);
+		String finalfabricqty = finalqty.getAttribute("value");
+		System.out.println("Displaying Final Processes Fabric Qty Requried " + finalfabricqty);
+		utilities.MinimumWait(driver);
+	}
+
+	
+
+
+
+	public void Enter_Fabric_Budget_details_for_greige_process() throws Throwable {
+		
+		utilities.webDriverWait(driver, GFqty);
+		driver.findElement(GFqty).click();
+		WebElement greigefabricqty = driver.findElement(GFqty);
+		String GfabricQ = greigefabricqty.getAttribute("value");
+		System.out.println("Displaying Greige Fabric Quantity " + GfabricQ);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, GFRate);
+		driver.findElement(GFRate).click();
+		driver.findElement(GFRate).clear();
+		driver.findElement(GFRate).click();
+		driver.findElement(GFRate).sendKeys("10");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, GFConversionrate);
+		driver.findElement(GFConversionrate).click();
+		driver.findElement(GFConversionrate).clear();
+		driver.findElement(GFConversionrate).click();
+		driver.findElement(GFConversionrate).sendKeys("2.5");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, GFCost);
+		driver.findElement(GFCost).click();
+		WebElement greigecost = driver.findElement(GFCost);
+		String greigefabriccost = greigecost.getAttribute("value");
+		System.out.println("Displaying Greige Fabric Cost " + greigefabriccost);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, GFabricManager);
+		driver.findElement(GFabricManager).click();
+		driver.findElement(SelectGFmanager).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, GFabricManagerAsst);
+		driver.findElement(GFabricManagerAsst).click();
+		driver.findElement(SelectGFMAsst).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, GExecutive);
+		driver.findElement(GExecutive).click();
+		driver.findElement(SelectGFExecutive).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void select_the_process1_as_Shiffly_process() {
+	public void Enter_Fabric_Budget_details_for_Shiffly_process() throws Throwable {
+		utilities.webDriverWait(driver, Shifflyqty);
+		driver.findElement(Shifflyqty).click();
+		WebElement shifflyfabricqty = driver.findElement(Shifflyqty);
+		String SfabricQ = shifflyfabricqty.getAttribute("value");
+		System.out.println("Displaying Shiffly Fabric Quantity " + SfabricQ);
+		utilities.MinimumWait(driver);
 		
+		utilities.webDriverWait(driver, ShifflyRate);
+		driver.findElement(ShifflyRate).click();
+		driver.findElement(ShifflyRate).clear();
+		driver.findElement(ShifflyRate).click();
+		driver.findElement(ShifflyRate).sendKeys("10");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Shifflyconversionrate);
+		driver.findElement(Shifflyconversionrate).click();
+		driver.findElement(Shifflyconversionrate).clear();
+		driver.findElement(Shifflyconversionrate).click();
+		driver.findElement(Shifflyconversionrate).sendKeys("2.5");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Shifflycost);
+		driver.findElement(Shifflycost).click();
+		WebElement shifflycost = driver.findElement(Shifflycost);
+		String shifflyfabriccost = shifflycost.getAttribute("value");
+		System.out.println("Displaying Greige Fabric Cost " + shifflyfabriccost);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, ShifflyManager);
+		driver.findElement(ShifflyManager).click();
+		Robot r = new Robot();
+		r.keyPress(KeyEvent.VK_DOWN);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, ShifflyAsstManager);
+		driver.findElement(ShifflyAsstManager).click();
+		Robot r1 = new Robot();
+		r.keyPress(KeyEvent.VK_DOWN);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Shifflyexecutive);
+		driver.findElement(Shifflyexecutive).click();
+		Robot r2 = new Robot();
+		r.keyPress(KeyEvent.VK_DOWN);
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void select_the_process2_as_NA() {
+	public void click_on_yarn_working_checkbox() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void Enter_Fabric_Budget_details_for_greige_process() {
+	public void Select_Yarn_Type() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void Enter_Fabric_Budget_details_for_Shiffly_process() {
+	public void Enter_value_in_knitting_and_Spinning_MU() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void verify_the_text_in_Other_Process_name_text_field() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Enter_the_value_in_MU_percentage_field() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Enter_Fabric_Budget_details_for_Yarn_process() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Enter_Fabric_Budget_details_for_knitting_and_spinning_process() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Enter_Fabric_Budget_details_for_Other_process() {
 		// TODO Auto-generated method stub
 		
 	}

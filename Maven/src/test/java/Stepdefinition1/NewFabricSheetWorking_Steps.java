@@ -271,27 +271,86 @@ public class NewFabricSheetWorking_Steps {
 	}
 	
 	@And("^select the process1 as Shiffly process$")
-	public void select_the_process1_as_Shiffly_process() {
+	public void select_the_process1_as_Shiffly_process() throws Throwable {
 		NewFabricSheetWorkingpage.select_the_process1_as_Shiffly_process();
 	}
 	
 	@And("^select the process2 as NA$")
-	public void select_the_process2_as_NA(){
+	public void select_the_process2_as_NA() throws Throwable{
 		NewFabricSheetWorkingpage.select_the_process2_as_NA();
 	}
 	
 	@Then("^Enter Fabric Budget details for greige process$")
-	public void Enter_Fabric_Budget_details_for_greige_process() {
+	public void Enter_Fabric_Budget_details_for_greige_process() throws Throwable {
 		NewFabricSheetWorkingpage.Enter_Fabric_Budget_details_for_greige_process();
 	}
 
 	@And("^Enter Fabric Budget details for Shiffly process$")
-	public void Enter_Fabric_Budget_details_for_Shiffly_process() {
+	public void Enter_Fabric_Budget_details_for_Shiffly_process() throws Throwable {
 		NewFabricSheetWorkingpage.Enter_Fabric_Budget_details_for_Shiffly_process();
 	}
 	
+	@And("^click on yarn working checkbox$")
+	public void click_on_yarn_working_checkbox() {
+		NewFabricSheetWorkingpage.click_on_yarn_working_checkbox();
 	}
-
+	
+	@Then("^Select Yarn Type$")
+	public void Select_Yarn_Type() {
+		NewFabricSheetWorkingpage.Select_Yarn_Type();
+	}
+	
+	@And("^Enter value in knitting and Spinning MU$")
+	public void Enter_value_in_knitting_and_Spinning_MU() {
+		NewFabricSheetWorkingpage.Enter_value_in_knitting_and_Spinning_MU();
+	}
+	
+	@And("^select the process1 as Other Process$")
+	public void select_the_process1_as_Other_Process() throws Throwable {
+		NewFabricSheetWorkingpage.select_the_process1_as_Shiffly_process();
+	}
+	
+	@And("^verify the text in Other Process name text field$")
+	public void verify_the_text_in_Other_Process_name_text_field() {
+		NewFabricSheetWorkingpage.verify_the_text_in_Other_Process_name_text_field();
+	}
+	
+	@And("^Enter the value in MU percentage field$")
+	public void Enter_the_value_in_MU_percentage_field() {
+		NewFabricSheetWorkingpage.Enter_the_value_in_MU_percentage_field();
+	}
+	
+	@And("^Enter Fabric Budget details for Yarn process$")
+	public void Enter_Fabric_Budget_details_for_Yarn_process() {
+		NewFabricSheetWorkingpage.Enter_Fabric_Budget_details_for_Yarn_process();
+	}
+	
+	@And("^Enter Fabric Budget details for knitting and spinning process$")
+	public void Enter_Fabric_Budget_details_for_knitting_and_spinning_process() {
+		NewFabricSheetWorkingpage.Enter_Fabric_Budget_details_for_knitting_and_spinning_process();
+	}
+	
+	@And("^Enter Fabric Budget details for Other process$")
+	public void Enter_Fabric_Budget_details_for_Other_process() {
+		NewFabricSheetWorkingpage.Enter_Fabric_Budget_details_for_Other_process();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+	
 
 
 
