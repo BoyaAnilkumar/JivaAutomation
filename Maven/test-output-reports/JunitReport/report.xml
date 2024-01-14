@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="110.891">
     <testcase classname="Title of your features" name="Creating the Costing Version" time="110.619">
         <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class='btn btn-primary btn-md float-right ng-star-inserted']&quot;}&#10;  (Session info: chrome=120.0.6099.110)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'ANIL', ip: '192.168.1.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\banil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2bc3eae99318c10cf845cf4790e1cfc8&#10;*** Element info: {Using=xpath, value=//button[@class='btn btn-primary btn-md float-right ng-star-inserted']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Navigates to the Login pages..........................................passed
@@ -39,5 +40,27 @@ Session ID: 2bc3eae99318c10cf845cf4790e1cfc8
 	at Stepdefinition1.CostingSteps.Click_on_Import_button(CostingSteps.java:446)
 	at ✽.Click on Import button(file:///C:/Users/banil/git/JivaAutomation/Maven/Features/Costing.feature:122)
 ]]></failure>
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="226.006">
+    <testcase classname="I want to add process details for IPO which is having the fabric sheet" name="Verification of submitting the MU working for Shiffly process" time="225.661">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And navigate to New Fabric Sheet working screen.............................passed
+And Click on styles expansion...............................................passed
+And click on IPO in the styles expansion....................................passed
+And Verify that data is displaying in grids after selecting the IPO.........passed
+And Click on Edit icon in MU Working grid...................................passed
+And Verify the Fabric Required is displaying the value or not...............passed
+And Enter the value in Residual shrinkage...................................passed
+And select the process1 as Shiffly process..................................passed
+Then select the process2 as NA..............................................passed
+Then verify the qty in greige field whether value is displaying or not......passed
+And Enter the data in Shiffly process section fields........................passed
+Then Enter Fabric Budget details for greige process.........................passed
+And Enter Fabric Budget details for Shiffly process.........................passed
+And Click on submit button to save the mu working...........................passed
+]]></system-out>
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
     </testcase>
 </testsuite>

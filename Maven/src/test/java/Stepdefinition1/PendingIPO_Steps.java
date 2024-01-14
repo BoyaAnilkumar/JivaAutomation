@@ -1,3 +1,4 @@
+
 package Stepdefinition1;
 
 import Page.PendingIPO_page;
@@ -30,18 +31,18 @@ public class PendingIPO_Steps {
 	}
 	
 	@And("^Verify whether user navigated to Pending IPO list or not$")
-	public void Verify_whether_user_navigated_to_Pending_IPO_list_or_not() {
+	public void Verify_whether_user_navigated_to_Pending_IPO_list_or_not() throws Throwable {
 		PendingIPOpage.Verify_whether_user_navigated_to_Pending_IPO_list_or_not();
 	}
 	
 	@And("^Verify whether the data is displaying in grid or not$")
-	public void Verify_whether_the_data_is_displaying_in_grid_or_not() {
+	public void Verify_whether_the_data_is_displaying_in_grid_or_not() throws Throwable {
 		PendingIPOpage.Verify_whether_the_data_is_displaying_in_grid_or_not();
 	}
 	
 	@And("^Click on Generate IPO button$")
 	public void Click_on_Generate_IPO_button() throws Throwable{
-		PendingIPOpage.Click_on_Generate_IPO_button();		
+		PendingIPOpage.Click_on_Generate_IPO_button();
 	}
 	
 	@And("^Verify whether Generate IPO screen is displaying or not$")
@@ -60,12 +61,18 @@ public class PendingIPO_Steps {
 	}
 	
 	@And("^Verify whether the IPO field is prepopulated with data or not$")
-	public void Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not() {
+	public void Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not() throws Throwable {
 		PendingIPOpage.Verify_whether_the_IPO_field_is_prepopulated_with_data_or_not();
 	}
 	
 	@And("^Enter IPO number in IPO field$")
-	public void Enter_IPO_number_in_IPO_field() {
+	public void Enter_IPO_number_in_IPO_field() throws Throwable {
 		PendingIPOpage.Enter_IPO_number_in_IPO_field();
 	}
+	
+	@And("^Verify Buyer is prepopulated or not$")
+	public void Verify_Buyer_is_prepopulated_or_not() {
+		PendingIPOpage.Verify_Buyer_is_prepopulated_or_not();
+	}
 }
+

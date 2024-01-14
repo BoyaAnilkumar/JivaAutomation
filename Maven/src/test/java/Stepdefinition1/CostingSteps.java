@@ -1,3 +1,4 @@
+
 package Stepdefinition1;
 
 import Page.Costingpages;
@@ -8,6 +9,7 @@ import io.cucumber.java.en.When;
 
 public class CostingSteps {
 	Costingpages cos = new Costingpages();
+<<<<<<< HEAD
 	
 	@Given("^Navigates to the Login pages$")
 	public void Navigate_to_the_Login_pages() {
@@ -28,6 +30,9 @@ public class CostingSteps {
 	  public void Click_on_the_Woven_Modules() throws Throwable {
 		  cos.Click_on_the_Woven_Modules();
 	  }
+=======
+
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	  
 	  @Then("^Click on the PD Module$")
 	  public void Click_on_the_PD_Module() throws Throwable {
@@ -425,10 +430,10 @@ public class CostingSteps {
 	  public void Click_on_the_PSave_button() throws Throwable {
 		  cos.Click_on_the_PSave_button();
 	  }
-	  @Then ("^Click on the Submit button$")
-	  public void Click_on_the_Submit_button() throws Throwable {
-		  cos.Click_on_the_Submit_button();
-	  }
+//	  @Then ("^Click on the Submit button$")
+//	  public void Click_on_the_Submit_button() throws Throwable {
+//		  cos.Click_on_the_Submit_button();
+//	  }
 	  @Then ("^Click on the View For Print button$")
 	  public void Click_on_the_View_For_Print_button() throws Throwable {
 		  cos.Click_on_the_View_For_Print_button();
@@ -457,21 +462,22 @@ public class CostingSteps {
 	  public void Select_a_value_from_the_dropdown() {
 		  cos.Select_a_value_from_the_dropdown();
 	  }
-	  @Then ("^Click on the Close button$")
-	  public void Click_on_the_Close_button() throws Throwable {
-		  cos.Click_on_the_Close_button();
-	  }
+//	  @Then ("^Click on the Close button$")
+//	  public void Click_on_the_Close_button() throws Throwable {
+//		  cos.Click_on_the_Close_button();
+//	  }
 	  @Then ("^Click on the Import buttton$")
 	  public void Click_on_the_Import_buttton() throws Throwable {
 		  cos.Click_on_the_Import_buttton();
 	  }
-	  @Then ("^Click on Close icon$")
-	  public void Click_on_Close_icon() throws Throwable {
-		  cos.Click_on_Close_icon();
-	  }
-	    
+//	  @Then ("^Click on Close icon$")
+//	  public void Click_on_Close_icon() throws Throwable {
+//		  cos.Click_on_Close_icon();
+//	  }
+//	    
 	    
 
 	
 
 }
+
