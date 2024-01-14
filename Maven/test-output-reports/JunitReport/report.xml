@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="226.006">
-    <testcase classname="I want to add process details for IPO which is having the fabric sheet" name="Verification of submitting the MU working for Shiffly process" time="225.661">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="110.114">
+    <testcase classname="I want to add process details for IPO which is having the fabric sheet" name="Verification of submitting the Yarn working" time="109.68">
         <system-out><![CDATA[When User navigates to Login page...........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
@@ -11,12 +11,17 @@ And Verify that data is displaying in grids after selecting the IPO.........pass
 And Click on Edit icon in MU Working grid...................................passed
 And Verify the Fabric Required is displaying the value or not...............passed
 And Enter the value in Residual shrinkage...................................passed
-And select the process1 as Shiffly process..................................passed
+And click on yarn working checkbox..........................................passed
+Then Select Yarn Type.......................................................passed
+And Enter value in knitting and Spinning MU.................................passed
+Then select the process1 as Other Process...................................passed
 Then select the process2 as NA..............................................passed
-Then verify the qty in greige field whether value is displaying or not......passed
-And Enter the data in Shiffly process section fields........................passed
-Then Enter Fabric Budget details for greige process.........................passed
-And Enter Fabric Budget details for Shiffly process.........................passed
+And verify the qty in greige field whether value is displaying or not.......passed
+And verify the text in Other Process name text field........................passed
+And Enter the value in MU percentage field..................................passed
+And Enter Fabric Budget details for Yarn process............................passed
+And Enter Fabric Budget details for knitting and spinning process...........passed
+And Enter Fabric Budget details for Other process...........................passed
 And Click on submit button to save the mu working...........................passed
 ]]></system-out>
     </testcase>

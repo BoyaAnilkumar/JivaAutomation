@@ -115,8 +115,9 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By yarncolor		= By.xpath("//select[@formcontrolname='yarnColorId']");
 	By selectyarncolor	= By.xpath("//select[@formcontrolname='yarnColorId']/..//option[text()=' Lilac']");
 	By selectotherprocess = By.xpath("//select[@formcontrolname='process1TypeId']/..//option[text()=' Other']");
-	
-	
+	By EnterOtherProcessName = By.xpath("//input[@formcontrolname='otherProcessName']");
+	By OtherMuperc			= By.xpath("//input[@formcontrolname='otherMUPercentage']");
+	By OtherQty				= By.xpath("//input[@formcontrolname='otherQty']");
 	
 	
 	
@@ -939,33 +940,98 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		
 	}
 
-	public void click_on_yarn_working_checkbox() {
-		// TODO Auto-generated method stub
+	public void click_on_yarn_working_checkbox() throws Throwable {
+		utilities.webDriverWait(driver, Isyarn);
+		driver.findElement(Isyarn).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Isknitting);
+		driver.findElement(Isknitting).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void Select_Yarn_Type() {
-		// TODO Auto-generated method stub
+	public void Select_Yarn_Type() throws Throwable {
+		utilities.webDriverWait(driver,Yarntype );
+		driver.findElement(selectyarntype).click();
+		utilities.MinimumWait(driver);
+		
 		
 	}
 
-	public void Enter_value_in_knitting_and_Spinning_MU() {
-		// TODO Auto-generated method stub
+	public void Enter_value_in_knitting_and_Spinning_MU() throws Throwable {
+		utilities.webDriverWait(driver, knitSpinMU );
+		driver.findElement(knitSpinMU).sendKeys("5.23");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver,Yarnqty );
+		driver.findElement(Yarnqty).click();
+		WebElement YarnQty = driver.findElement(Yarnqty);
+		String Yarnworkingqty = YarnQty.getAttribute("value");
+		System.out.println("Displaying Yarn Qty :" + Yarnworkingqty);
+		
+		utilities.webDriverWait(driver,yarncolor);
+		driver.findElement(yarncolor).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, selectyarncolor);
+		driver.findElement(selectyarncolor).click();
+		utilities.MinimumWait(driver);
+		
+		
 		
 	}
 
-	public void verify_the_text_in_Other_Process_name_text_field() {
-		// TODO Auto-generated method stub
+	public void verify_the_text_in_Other_Process_name_text_field() throws Throwable {
+		
+		utilities.webDriverWait(driver,Process1);
+		driver.findElement(Process1).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver,selectotherprocess);
+		driver.findElement(selectotherprocess).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Process2);
+		driver.findElement(Process2).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Selectprocess2);
+		driver.findElement(Selectprocess2).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Greigeqty);
+		driver.findElement(Greigeqty).click();
+		WebElement GRQty = driver.findElement(Greigeqty);
+		String Greigequantity = GRQty.getAttribute("value");
+		System.out.println("Displaying greige qty :" + Greigequantity);
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void Enter_the_value_in_MU_percentage_field() {
-		// TODO Auto-generated method stub
+	public void Enter_the_value_in_MU_percentage_field() throws Throwable {
 		
+		utilities.webDriverWait(driver, EnterOtherProcessName);
+		driver.findElement(EnterOtherProcessName).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(EnterOtherProcessName).sendKeys("Special Design");
+		
+		utilities.webDriverWait(driver, OtherMuperc);
+		driver.findElement(OtherMuperc).click();
+		driver.findElement(OtherMuperc).clear();
+		driver.findElement(OtherMuperc).sendKeys("6.32");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, OtherQty);
+		driver.findElement(OtherQty).click();
+		WebElement OtherQuantity = driver.findElement(OtherQty);
+		String OtherQuantityP	= OtherQuantity.getAttribute("value");
+		System.out.println("Displaying Other Process Qty :" + OtherQuantityP);
 	}
 
 	public void Enter_Fabric_Budget_details_for_Yarn_process() {
-		// TODO Auto-generated method stub
+		
+		
 		
 	}
 
