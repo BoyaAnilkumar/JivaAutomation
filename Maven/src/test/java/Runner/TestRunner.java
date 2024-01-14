@@ -12,18 +12,8 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
+		          tags ="@Costing1")
 
-<<<<<<< HEAD
-		          tags ="@Test2")
-
-=======
-	          tags =" @NEWIPO")
->>>>>>> refs/remotes/origin/main
-
-<<<<<<< HEAD
-=======
-
->>>>>>> refs/remotes/origin/main
 public class TestRunner {
 	
 }

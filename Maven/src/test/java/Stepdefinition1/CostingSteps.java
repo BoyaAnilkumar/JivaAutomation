@@ -9,9 +9,9 @@ import io.cucumber.java.en.When;
 public class CostingSteps {
 	Costingpages cos = new Costingpages();
 	
-	@Given("^Navigates to the Login page$")
-	public void Navigate_to_the_Login_page() {
-		cos.Navigates_to_the_Login_page();
+	@Given("^Navigates to the Login pages$")
+	public void Navigate_to_the_Login_pages() {
+		cos.Navigates_to_the_Login_pages();
 	}
 	
 	 @Then("^Enter valid Username and password$")

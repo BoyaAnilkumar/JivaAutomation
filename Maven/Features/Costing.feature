@@ -4,15 +4,15 @@ Feature: Title of your features
   
  @Costing1
   Scenario: Creating the Costing Version
-    Given Navigates to the Login page
+    Given Navigates to the Login pages
     Then Enter valid Username and password
     And Click on SignIn 
-    Then Click on the Woven Modules
-    Then Click on the PD Module
-    Then Click on the Costing Module
-    Then Click on the Style button
-    Then Select an IPO in the Menu List
-    Then Click on Style Button
+    #Then Click on the Woven Modules
+    #Then Click on the PD Module
+    #Then Click on the Costing Module
+    #Then Click on the Style button
+    #Then Select an IPO in the Menu List
+    #Then Click on Style Button
     #Then Click on the Submit1 button
     #Given Enter Version Name
     #Given Enter Remarks

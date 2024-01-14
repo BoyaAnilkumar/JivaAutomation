@@ -144,7 +144,7 @@ public class Costingpages extends DriverFactory {
 	By Imp_ImportButton = By.xpath("//button[@class='btn btn-primary']");
 	By Imp_Close1 = By.xpath("(//button[@data-dismiss='modal'])[1]");
 	
-	public void Navigates_to_the_Login_page() {
+	public void Navigates_to_the_Login_pages() {
 		driver.get(prop.getProperty("url"));
 	}
 
