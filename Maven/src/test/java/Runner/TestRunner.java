@@ -12,15 +12,9 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 
-				  monochrome = true,
-		          tags ="@Costing1")
-
-<<<<<<< HEAD
-=======
 		          tags ="@tag2")
 
 
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 public class TestRunner {
 
 }

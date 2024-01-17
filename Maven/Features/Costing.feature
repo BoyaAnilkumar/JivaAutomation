@@ -1,14 +1,13 @@
 @tag
 Feature: Title of your features
   I want to use this template for my feature file
-  
- @Costing1
+
+  @Costing1
   Scenario: Creating the Costing Version
-<<<<<<< HEAD
-    Given Navigates to the Login pages
-    Then Enter valid Username and password
-    And Click on SignIn 
-    #Then Click on the Woven Modules
+    When User navigates to Login page
+    Then User enters the username and password
+    And User click on the signIn
+    Then Click on the Woven Modules
     #Then Click on the PD Module
     #Then Click on the Costing Module
     #Then Click on the Style button
@@ -17,7 +16,7 @@ Feature: Title of your features
     #Then Click on the Submit1 button
     #Given Enter Version Name
     #Given Enter Remarks
-    #Then Click on Add Combo button 
+    #Then Click on Add Combo button
     #Given Enter Combo Name
     #Given Enter Combo Qty
     #When Click in the App_Combo1
@@ -49,9 +48,7 @@ Feature: Title of your features
     #Then Select a Category from the dropdown under the TrimAccessoriesII grid
     #Then Click on the Item dropdown field under the TrimAccessoriesII grid
     #Then Select a Item from the dropdown under the TrimAccessoriesII grid
-    #Then Enter the Cost 
-=======
-
+    #Then Enter the Cost
     When User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
@@ -64,7 +61,7 @@ Feature: Title of your features
     Then Click on the Submit1 button
     Given Enter Version Name
     Given Enter Remarks
-    Then Click on Add Combo button 
+    Then Click on Add Combo button
     Given Enter Combo Name
     Given Enter Combo Qty
     When Click in the App_Combo1
@@ -81,7 +78,6 @@ Feature: Title of your features
     When Enter Conversion Rate2
     Given Enter Additional Sampling Cost
     Given Enter Per pc Freight Cost
-    
     And Click on Add Trims button
     Then Click on the Category1 dropdown field
     Then Select a Category1 from the dropdown
@@ -90,7 +86,6 @@ Feature: Title of your features
     And Enter Avg of an Item1 value
     And Enter Wastage of the selected Trim Accessories1
     And Enter Rate of the selected Trim Accessories1
-    
     And Click on the Add Accessories button
     Then Click on the Category dropdown field under the TrimAccessoriesII grid
     Then Select a Category from the dropdown under the TrimAccessoriesII grid
@@ -111,7 +106,7 @@ Feature: Title of your features
     Given Enter Manual Hours
     Given Enter Manual Rate
     Given Enter Manual Overhead Stitching
-    When To verify on clicking the Add Process button under Stitching 
+    When To verify on clicking the Add Process button under Stitching
     Given Enter a value in OB1
     Given Enter a value in OB2
     Given Enter a value in OB3
@@ -125,7 +120,7 @@ Feature: Title of your features
     Then Select a value from the dropdown field
     Given Enter the Stitching Cost value Finishing and PAcking
     Then Click on the Add Process button under Finising and Packing grid
-    Then Select a Finishing and Packing process1 
+    Then Select a Finishing and Packing process1
     Given Enter the Finishing and Packing cost1 Washing / GArment process
     Then Check the Yes or No toggle button status
     Then Click on the Add Process button when the toggle button is in enabled state
@@ -155,9 +150,7 @@ Feature: Title of your features
     Then Click on the View For Print button
     Then Click on the Cancel in the Print form
     Then Click on the Download As Excel button Import
-    Then Enter the Cost 
-
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+    Then Enter the Cost
     #Cutting grid
     Given To check whether the Overhead Cost is displaying a value or not
     Given Enter Overhead Cost value
@@ -173,12 +166,11 @@ Feature: Title of your features
     Given Enter Adda Rate
     Given Enter Adda Overhead
     #Manual Embriodiery
-
     Given Enter Manual Hours
     Given Enter Manual Rate
     Given Enter Manual Overhead
     #Stitching
-    When To verify on clicking the Add Process button under Stitching 
+    When To verify on clicking the Add Process button under Stitching
     Given Enter a value in OB1
     Given Enter a value in OB2
     Given Enter a value in OB3
@@ -190,10 +182,10 @@ Feature: Title of your features
     Given Enter a value in Rate
     When To verify whether the user is able to click the Description dropdown field or not
     Then Select a value from the dropdown field
-    Given Enter the Stitching Cost value 
+    Given Enter the Stitching Cost value
     #Finishing and PAcking
     Then Click on the Add Process button under Finising and Packing grid
-    Then Select a Finishing and Packing process1 
+    Then Select a Finishing and Packing process1
     Given Enter the Finishing and Packing cost1
     #Washing / GArment process
     Then Check the Yes or No toggle button status
@@ -235,8 +227,4 @@ Feature: Title of your features
     Then Select a value from the dropdown
     Then Click on the Close button
     Then Click on the Import buttton
-    Then Click on Close icon 
-    
-    
-    
-    
+    Then Click on Close icon

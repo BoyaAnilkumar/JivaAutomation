@@ -9,30 +9,13 @@ import io.cucumber.java.en.When;
 
 public class CostingSteps {
 	Costingpages cos = new Costingpages();
-<<<<<<< HEAD
-	
-	@Given("^Navigates to the Login pages$")
-	public void Navigate_to_the_Login_pages() {
-		cos.Navigates_to_the_Login_pages();
-	}
-	
-	 @Then("^Enter valid Username and password$")
-	 public void Enter_valid_Username_and_password() throws Throwable {
-		 cos.Enter_valid_Username_and_password();
-	 }
-	 
-	  @And("^Click on SignIn$")
-	  public void Click_on_SignIn() throws Throwable{
-		  cos. Click_on_SignIn();
-	  }
+
 	  
 	  @Then ("^Click on the Woven Modules$") 
 	  public void Click_on_the_Woven_Modules() throws Throwable {
 		  cos.Click_on_the_Woven_Modules();
 	  }
-=======
 
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	  
 	  @Then("^Click on the PD Module$")
 	  public void Click_on_the_PD_Module() throws Throwable {

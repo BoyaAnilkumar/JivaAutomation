@@ -291,17 +291,17 @@ public class NewFabricSheetWorking_Steps {
 	}
 	
 	@And("^click on yarn working checkbox$")
-	public void click_on_yarn_working_checkbox() {
+	public void click_on_yarn_working_checkbox() throws Throwable {
 		NewFabricSheetWorkingpage.click_on_yarn_working_checkbox();
 	}
 	
 	@Then("^Select Yarn Type$")
-	public void Select_Yarn_Type() {
+	public void Select_Yarn_Type() throws Throwable {
 		NewFabricSheetWorkingpage.Select_Yarn_Type();
 	}
 	
 	@And("^Enter value in knitting and Spinning MU$")
-	public void Enter_value_in_knitting_and_Spinning_MU() {
+	public void Enter_value_in_knitting_and_Spinning_MU() throws Throwable {
 		NewFabricSheetWorkingpage.Enter_value_in_knitting_and_Spinning_MU();
 	}
 	
@@ -311,7 +311,7 @@ public class NewFabricSheetWorking_Steps {
 	}
 	
 	@And("^verify the text in Other Process name text field$")
-	public void verify_the_text_in_Other_Process_name_text_field() {
+	public void verify_the_text_in_Other_Process_name_text_field() throws Throwable {
 		NewFabricSheetWorkingpage.verify_the_text_in_Other_Process_name_text_field();
 	}
 	
