@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="92.547">
+    <testcase classname="Verification of GRN Data after submitting the Daily In Input" name="Navigate to GRN Data and Verify the data is displaying for IPO or not" time="92.185">
+=======
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="155.748">
     <testcase classname="Adding the processed for a fabric" name="Adding the Dyeing and Printing processes" time="155.357">
         <system-out><![CDATA[When user navigates to Login page...........................................passed
@@ -77,9 +81,26 @@ Session ID: 2bc3eae99318c10cf845cf4790e1cfc8
 =======
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="226.006">
     <testcase classname="I want to add process details for IPO which is having the fabric sheet" name="Verification of submitting the MU working for Shiffly process" time="225.661">
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
         <system-out><![CDATA[When User navigates to Login page...........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
+<<<<<<< HEAD
+And Click on the Woven Module...............................................passed
+Then Click on the Audit module..............................................passed
+Then Click on GRN data screen...............................................passed
+And Click on the Styles Expansion...........................................passed
+And Click on the Filter Icon................................................passed
+Then Select the Merchant and Supplier.......................................passed
+And click on Apply button and Reset button..................................passed
+And Select the IPO in Style expansion.......................................passed
+When user selects the Ipo verify the Ipo details which are displayed on the screen or not.passed
+Then verify the grid is displaying or not...................................passed
+And Verify the expansion icon is displaying or not..........................passed
+And Click on expansion icon.................................................passed
+Then verify the data is displaying in the expansion grid or not.............passed
+And validate the expansion grid data........................................passed
+=======
 And navigate to New Fabric Sheet working screen.............................passed
 And Click on styles expansion...............................................passed
 And click on IPO in the styles expansion....................................passed
@@ -95,7 +116,7 @@ Then Enter Fabric Budget details for greige process.........................pass
 And Enter Fabric Budget details for Shiffly process.........................passed
 And Click on submit button to save the mu working...........................passed
 >>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-]]></system-out>
 >>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+]]></system-out>
     </testcase>
 </testsuite>

@@ -14,11 +14,23 @@ import io.cucumber.junit.CucumberOptions;
 
 				  monochrome = true,
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+		          tags ="@Smoketest")
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 		          tags ="@RevisedMUWorking1")
 
 
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 
 public class TestRunner {
