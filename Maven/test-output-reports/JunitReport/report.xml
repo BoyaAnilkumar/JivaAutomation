@@ -1,73 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="228.556">
-    <testcase classname="I want to add process details for IPO which is having the fabric sheet" name="Verification of submitting the MU working for Dyeing and Printing process" time="228.205">
-        <system-out><![CDATA[Given Navigates to the Login page...........................................passed
-Then Enter valid Username and password......................................passed
-And Click on SignIn.........................................................passed
-And navigate to New Fabric Sheet working screen.............................passed
-And Click on styles expansion...............................................passed
-And click on IPO in the styles expansion....................................passed
-And Verify that data is displaying in grids after selecting the IPO.........passed
-And Click on Edit icon in MU Working grid...................................passed
-And Verify the Fabric Required is displaying the value or not...............passed
-And Enter the value in Residual shrinkage...................................passed
-Then select the process1 by clicking on process1 dropdown list..............passed
-Then select the process2 by clicking on process2 dropdown list..............passed
-Then verify the qty in greige field whether value is displaying or not......passed
-And Enter value in MU for Process1 entry field..............................passed
-Then Verify the process1 value in qty field.................................passed
-And Enter the text in Print Type entry field................................passed
-And Enter value in MU for process2 entry field..............................passed
-Then verify the process2 value in qty field.................................passed
-And Verify the Fabric Budget section is displaying the budget details of Greige Dyeing and Printing processes or not.passed
-And Verify the quantity is displaying for Greige Base Knitting qty field....passed
-And Enter the Rate for griege process.......................................passed
-And verify the conversion rate is autopopulate and allows to change the value or not for griege process.passed
-And Verify the cost is displaying or not for griege process.................passed
-And Select the Fabric Manager from the dropdown list of Fabric Manager field for griege process.passed
-And Fabric manager assistants should display based on the selection of Fabric Manager for griege process.passed
-And Select Fabric Executive from the dropdown list for griege process.......passed
-Then Verify the quantity is displaying for Dyeing qty.......................passed
-And Enter the Rate for Dyeing process.......................................passed
-And verify the conversion rate is autopopulate and allows to change the value or not for Dyeing process.passed
-And Verify the cost is displaying or not for Dyeing process.................passed
-And Select the Fabric Manager from the dropdown list of Fabric Manager field for Dyeing process.passed
-And Fabric manager assistants should display based on the selection of Fabric Manager for Dyeing process.passed
-And Select Fabric Executive from the dropdown list for Dyeing process.......passed
-Then Verify the quantity is displaying for printing qty.....................passed
-And Enter the Rate for printing process.....................................passed
-And verify the conversion rate is autopopulate and allows to change the value or not for printing process.passed
-And Verify the cost is displaying or not for printing process...............passed
-And Select the Fabric Manager from the dropdown list of Fabric Manager field for printing process.passed
-And Fabric manager assistants should display based on the selection of Fabric Manager for printing process.passed
-And Select Fabric Executive from the dropdown list for printing process.....passed
-And Click on submit button to save the mu working...........................passed
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="75.245">
-    <testcase classname="Feature to test Jiva design Merchandising T and A Data Entry screen functionality" name="To Test the Filter Functionality" time="74.582">
-        <system-out><![CDATA[When User navigates to Login page...........................................passed
-Then User enters the username and password..................................passed
-And User click on the signIn................................................passed
-And Click on the Woven Module...............................................passed
-Then click on the Merchandising Module......................................passed
-And Click on the T and A Module.............................................passed
-And Click on the Merchandising T&A Data Entry Screen........................passed
-And Click on the Styles Expansion...........................................passed
-And Click on the Filter Icon................................................passed
-And Search The IPO and Style................................................passed
-And Click on the Apply button...............................................passed
-And Select the IPO and Style................................................passed
-And Click on the Add button.................................................passed
-Given Enter the data in proto commends received field.......................passed
-Given Enter the data in Fit submittion and Approval fields..................passed
-And Enter the data in Fit Remarks Field.....................................passed
-And Verify whether the Fabric Initial In House date is prepopulated in the field or not.passed
-And Click on the Fabric Initial In House Date View button...................passed
-And Click on the Fabric Initial In House Date View Close button.............passed
-And Click on the PP Add button..............................................passed
-And Enter the data in PP Submission and Approval............................passed
->>>>>>> refs/remotes/origin/main
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="155.748">
+    <testcase classname="Adding the processed for a fabric" name="Adding the Dyeing and Printing processes" time="155.357">
+        <system-out><![CDATA[When user navigates to Login page...........................................passed
+Given Login with the Production Manager.....................................passed
+And Click on the SignIn button..............................................passed
+Then Navigate to Revised Fabric Sheet Working screen........................passed
+Then Click_on_the_Styles_expansion..........................................passed
+Then Click_on_Clear_Filter_icon.............................................passed
+And Select an IPO from the Menu list........................................passed
+And Click_on_Edit_icon_in_MU_Working_grid_for_a_Fabric......................passed
+Given Enter_the_value_in_the_Residual_Shrinkage_field.......................passed
+Then Select_a_process_in_the_Process1_field.................................passed
+Then Select_another_process_in_the_Process2_field...........................passed
+Then Verify_the_Greige_Qty_value............................................passed
+Given Enter_Dyeing_MU_value_in_the_MU_field.................................passed
+And Verify_the_Dyeing_qty_value_in_the_Qty_field............................passed
+Given Enter_the_text_in_the_Print_Type_field................................passed
+Given Enter_Printing_MU_value_in_the_MU_field...............................passed
+Then Verify_the_Printing_qty_value_in_the_Qty_field.........................passed
+Given Enter_the_Rate_for_Griege_Fabric_Qty..................................passed
+Then Select_the_Fabric_Manager_from_the_dropdown_list_in_the_Fabric_Manager_field_for_Griege_process.passed
+Then Select_the_Fabric_Executives_from_the_dropdown_list_in_the_Fabric_Executives_field_for_Griege_process.passed
+Given Enter_the_Rate_for_Dyeing_Qty.........................................passed
+Then Select_the_Fabric_Manager_from_the_dropdown_list_in_the_Fabric_Manager_field_for_Dyeing_process.passed
+Then Select_the_Assitant_Fabric_Manager_from_the_dropdown_list_in_the_Assitant_Fabric_Manager_field_for_Dyeing_process.passed
+Given Enter_the_Rate_for_Printing_Qty.......................................passed
+Then Select_the_Fabric_Manager_from_the_dropdown_list_in_the_Fabric_Manager_field_for_Printing_process.passed
+Then Select_the_Fabric_Executives_from_the_dropdown_list_in_the_Fabric_Executives_field_for_Printing_process.passed
+Given Enter_the_Rate_for_FreightGriege_Fabric_Qty...........................passed
+Given Enter_the_Rate_for_Freight_Dyeing_Qty.................................passed
+Given Enter_the_Rate_for_Freight_Printing_Qty...............................passed
+Then Verify_the_Submit_button_properties....................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

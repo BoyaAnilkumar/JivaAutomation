@@ -49,7 +49,7 @@ Feature: Title of your features
     Then Select a Category from the dropdown under the TrimAccessoriesII grid
     Then Click on the Item dropdown field under the TrimAccessoriesII grid
     Then Select a Item from the dropdown under the TrimAccessoriesII grid
-<<<<<<< HEAD
+
     Then Enter the Cost Cutting grid
     Given To check whether the Overhead Cost is displaying a value or not
     Given Enter Overhead Cost value
@@ -110,39 +110,31 @@ Feature: Title of your features
     Then Click on the Cancel in the Print form
     Then Click on the Download As Excel button Import
 
-=======
+
     Then Enter the Cost 
-<<<<<<< HEAD
-=======
->>>>>>> refs/remotes/origin/main
->>>>>>> refs/remotes/origin/main
+
     #Cutting grid
     Given To check whether the Overhead Cost is displaying a value or not
     Given Enter Overhead Cost value
     Given To check whether the Garment Cutting Cost is displaying a value or not
     Given Enter Garment Cutting Cost value
-<<<<<<< HEAD
+
 	#Computer Embriodiery
-=======
+
     #Computer Embriodiery
->>>>>>> refs/remotes/origin/main
+
     Given Enter No of Stiches
     Given Enter Rate
     Given Enter Overhead
     Given Enter Addl Charges
-<<<<<<< HEAD
    # Adda Embriodiery
-=======
+
     #Adda Embriodiery
->>>>>>> refs/remotes/origin/main
     Given Enter Adda Hours
     Given Enter Adda Rate
     Given Enter Adda Overhead
-<<<<<<< HEAD
    # Manual Embriodiery
-=======
     #Manual Embriodiery
->>>>>>> refs/remotes/origin/main
     Given Enter Manual Hours
     Given Enter Manual Rate
     Given Enter Manual Overhead
@@ -160,39 +152,27 @@ Feature: Title of your features
     When To verify whether the user is able to click the Description dropdown field or not
     Then Select a value from the dropdown field
     Given Enter the Stitching Cost value 
-<<<<<<< HEAD
    # Finishing and PAcking
-=======
     #Finishing and PAcking
->>>>>>> refs/remotes/origin/main
     Then Click on the Add Process button under Finising and Packing grid
     Then Select a Finishing and Packing process1 
     Given Enter the Finishing and Packing cost1
-<<<<<<< HEAD
   #  Washing / GArment process
-=======
     #Washing / GArment process
->>>>>>> refs/remotes/origin/main
     Then Check the Yes or No toggle button status
     Then Click on the Add Process button when the toggle button is in enabled state
     Then Select a Washing Process1
     Given Enter the Washing Cost1
-<<<<<<< HEAD
    # testing and inspection
-=======
     #testing and inspection
->>>>>>> refs/remotes/origin/main
     Given Enter the value in the FPT GPT Total Cost field
     Given Enter the value in the FPT GPT Cost field
     Given Enter the value in the Addl Tests Total Cost field
     Given Enter the value in the Addl Tests Cost field
     Given Enter the value in the Inspection Charges Total Cost field
     Given Enter the value in the Inspection Charges Cost field
-<<<<<<< HEAD
   #  Freight And Clearance
-=======
     #Freight And Clearance
->>>>>>> refs/remotes/origin/main
     Given Enter the value in the NO of PO by Sea field
     Given Enter the value in the NO of PO by Air field
     Given Enter the value in the Custom Clearance Total Cost field
@@ -200,32 +180,24 @@ Feature: Title of your features
     Given Enter the value in the Cartage Total Cost field
     Given Enter the value in the Cartage Cost field
     Given Enter the value in the Additional Buffer field
-<<<<<<< HEAD
    # TOTAL DIRECT EXPENSE
-=======
     #TOTAL DIRECT EXPENSE
->>>>>>> refs/remotes/origin/main
     Given Enter the value in the Rejection field
     Given Enter the value in the OverHead field
     Given Enter the value in the Profit MarkUp field
     Given Enter the value in the Commission field
     Given Enter the value in the Currency field
     Given Enter the value in the Price Quoted To Buyer field
-<<<<<<< HEAD
   #  Submit Buttons
-=======
     #Submit Buttons
->>>>>>> refs/remotes/origin/main
     Then Click on the PSave button
     Then Click on the Submit button
     Then Click on the View For Print button
     Then Click on the Cancel in the Print form
     Then Click on the Download As Excel button
-<<<<<<< HEAD
   #  Import
-=======
+
     #Import
->>>>>>> refs/remotes/origin/main
     Then Click on Import button
     When Check wether the Import Version Details Version popup window opened or not
     Then Click Versions dropdown field
