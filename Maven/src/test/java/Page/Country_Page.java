@@ -260,6 +260,7 @@ public class Country_Page extends DriverFactory{
 
 			}
 
+<<<<<<< HEAD
 			public void User_enters_the_username_and_password() {
 				// TODO Auto-generated method stub
 				
@@ -274,11 +275,18 @@ public class Country_Page extends DriverFactory{
 				// TODO Auto-generated method stub
 				
 			}
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 			}	
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	
 
 

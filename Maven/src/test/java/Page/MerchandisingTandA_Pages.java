@@ -1,15 +1,7 @@
 package Page;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import util.DriverFactory;
 import util.Utilities;
 
@@ -81,8 +73,6 @@ public class MerchandisingTandA_Pages extends DriverFactory{
 		driver.findElement(Proto_comments).sendKeys("1206");
     }
 
-   
-
 	
 	public void Enter_the_data_in_Fit_submittion_field() throws Throwable {
       utilities.webDriverWait(driver, Fit_Submission1);
@@ -108,8 +98,7 @@ public class MerchandisingTandA_Pages extends DriverFactory{
 	  driver.findElement(Fit_Approval2).sendKeys("1512");
 	  utilities.MediumWait(driver);
 
-    	
-		
+
 	}
 	public void Enter_the_data_in_Fit_submittion_and_Approval_fields() {
 		

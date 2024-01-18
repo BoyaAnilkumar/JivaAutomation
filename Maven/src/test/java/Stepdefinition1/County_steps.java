@@ -8,6 +8,7 @@ import io.cucumber.java.en.Then;
 
 import io.cucumber.java.en.When;
 
+<<<<<<< HEAD
 public class County_steps {
 
 	
@@ -81,6 +82,82 @@ public class County_steps {
 			   Country_Page.Click_on_the_Cancel_button();
 
 		}
+=======
+
+
+
+
+public class County_steps {
+
+	
+          Country_Page Country_Page = new Country_Page(); 
+		
+	
+		@And ("^Click on the Master Module$")
+		   public void Click_on_the_Master_Module() throws Throwable{
+			 Country_Page.Click_on_the_Master_Module();
+
+		}
+		  
+		   @And ("^click on the Country screen$")
+		   public void click_on_the_Country_screen() throws Throwable{
+			   Country_Page.click_on_the_Country_screen();
+
+		}
+		   @And ("^Click on the Country Add button$")
+		   public void Click_on_the_Country_Add_button() throws Throwable{
+			   Country_Page.Click_on_the_Country_Add_button();
+
+		}
+		   @And ("^Verify the Alert msg$")
+		   public void Verify_the_Alert_msg() throws Throwable{
+			   Country_Page.Verify_the_Alert_msg();
+		   }
+		   @Given ("^Enter the data in Country name field$")
+		   public void Enter_the_data_in_Country_name_field() throws Throwable{
+			   Country_Page.Enter_the_data_in_Country_name_field();
+
+		}
+
+		   @And ("^Enter the data in Country code field$")
+		   public void Enter_the_data_in_Country_code_field() throws Throwable{
+			   Country_Page.Enter_the_data_in_Country_code_field();
+
+		}
+
+		   @Then ("^CLick on the Currency type field$")
+		   public void CLick_on_the_Currency_type_field() throws Throwable{
+			   Country_Page.CLick_on_the_Currency_type_field();
+
+		}
+
+		   @And ("^Select the Currency type$")
+		   public void Select_the_Currency_type() throws Throwable{
+			   Country_Page.Select_the_Currency_type();
+
+		}
+		   @Given ("^Enter the data in Conversion Rate field$")
+		   public void Enter_the_data_in_Conversion_Rate_field() throws Throwable{
+			   Country_Page.Enter_the_data_in_Conversion_Rate_field();
+
+		}
+		   @And ("^Select the Active Check box$")
+		   public void Select_the_Active_Check_box() throws Throwable{
+			   Country_Page.Select_the_Active_Check_box();
+
+		}
+		   @And ("^CLick on the Save button$")
+		   public void CLick_on_the_Save_button() throws Throwable{
+			   Country_Page.CLick_on_the_Save_button();
+
+		}
+		   @And ("^Verify the successfull msg$")
+		   public void Verify_the_successfull_msg() throws Throwable{
+			   Country_Page.Verify_the_successfull_msg();
+
+		}
+		  
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 //		   @And ("^Click on the Edit Icon$")
 //		   public void Click_on_the_Edit_Icon() throws Throwable{
 //			   Country_Page.Click_on_the_Edit_Icon();
@@ -132,7 +209,13 @@ public class County_steps {
 		   @And ("^Search the Country name$")
 		   public void Search_the_Country_name() throws Throwable{
 			   Country_Page.Search_the_Country_name();
+<<<<<<< HEAD
+=======
+     }
+
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 }
+<<<<<<< HEAD
 }
 //public class County_steps1 {
 //
@@ -256,8 +339,12 @@ public class County_steps {
 //
 //
 //}
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
+ 
 
+<<<<<<< HEAD
 
 
 
@@ -266,3 +353,5 @@ public class County_steps {
  
 
 
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
