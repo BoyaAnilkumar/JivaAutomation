@@ -209,13 +209,12 @@ public class County_steps {
 		   @And ("^Search the Country name$")
 		   public void Search_the_Country_name() throws Throwable{
 			   Country_Page.Search_the_Country_name();
-<<<<<<< HEAD
-=======
+
      }
 
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 }
-<<<<<<< HEAD
+
 }
 //public class County_steps1 {
 //

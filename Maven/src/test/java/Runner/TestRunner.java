@@ -11,27 +11,21 @@ import io.cucumber.junit.CucumberOptions;
 				               ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
 				  glue="Stepdefinition1",
 				  features = "Features",
-<<<<<<< HEAD
+
 				  monochrome = true,
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
-<<<<<<< HEAD
 		          tags ="@RevisedMUWorking1")
-=======
-		          tags ="@tag2")
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 
-<<<<<<< HEAD
+
+
 
 
 public class TestRunner {
 	
-=======
-public class TestRunner {
 
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
+
 }
 
 
