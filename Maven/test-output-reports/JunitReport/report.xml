@@ -1,66 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="110.891">
-    <testcase classname="Title of your features" name="Creating the Costing Version" time="110.619">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class='btn btn-primary btn-md float-right ng-star-inserted']&quot;}&#10;  (Session info: chrome=120.0.6099.110)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'ANIL', ip: '192.168.1.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\banil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 2bc3eae99318c10cf845cf4790e1cfc8&#10;*** Element info: {Using=xpath, value=//button[@class='btn btn-primary btn-md float-right ng-star-inserted']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Navigates to the Login pages..........................................passed
-Then Enter valid Username and password......................................passed
-And Click on SignIn.........................................................passed
-Then Click on Import button.................................................failed
-When Check wether the Import Version Details Version popup window opened or not.skipped
-Then Click Versions dropdown field..........................................skipped
-Then Select a value from the dropdown.......................................skipped
-Then Click on the Close button..............................................skipped
-Then Click on the Import buttton............................................skipped
-Then Click on Close icon....................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-primary btn-md float-right ng-star-inserted']"}
-  (Session info: chrome=120.0.6099.110)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'ANIL', ip: '192.168.1.75', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.110, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\banil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52296}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2bc3eae99318c10cf845cf4790e1cfc8
-*** Element info: {Using=xpath, value=//button[@class='btn btn-primary btn-md float-right ng-star-inserted']}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.Costingpages.Click_on_Import_button(Costingpages.java:830)
-	at Stepdefinition1.CostingSteps.Click_on_Import_button(CostingSteps.java:446)
-	at ✽.Click on Import button(file:///C:/Users/banil/git/JivaAutomation/Maven/Features/Costing.feature:122)
-]]></failure>
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="226.006">
-    <testcase classname="I want to add process details for IPO which is having the fabric sheet" name="Verification of submitting the MU working for Shiffly process" time="225.661">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="92.547">
+    <testcase classname="Verification of GRN Data after submitting the Daily In Input" name="Navigate to GRN Data and Verify the data is displaying for IPO or not" time="92.185">
         <system-out><![CDATA[When User navigates to Login page...........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
-And navigate to New Fabric Sheet working screen.............................passed
-And Click on styles expansion...............................................passed
-And click on IPO in the styles expansion....................................passed
-And Verify that data is displaying in grids after selecting the IPO.........passed
-And Click on Edit icon in MU Working grid...................................passed
-And Verify the Fabric Required is displaying the value or not...............passed
-And Enter the value in Residual shrinkage...................................passed
-And select the process1 as Shiffly process..................................passed
-Then select the process2 as NA..............................................passed
-Then verify the qty in greige field whether value is displaying or not......passed
-And Enter the data in Shiffly process section fields........................passed
-Then Enter Fabric Budget details for greige process.........................passed
-And Enter Fabric Budget details for Shiffly process.........................passed
-And Click on submit button to save the mu working...........................passed
+And Click on the Woven Module...............................................passed
+Then Click on the Audit module..............................................passed
+Then Click on GRN data screen...............................................passed
+And Click on the Styles Expansion...........................................passed
+And Click on the Filter Icon................................................passed
+Then Select the Merchant and Supplier.......................................passed
+And click on Apply button and Reset button..................................passed
+And Select the IPO in Style expansion.......................................passed
+When user selects the Ipo verify the Ipo details which are displayed on the screen or not.passed
+Then verify the grid is displaying or not...................................passed
+And Verify the expansion icon is displaying or not..........................passed
+And Click on expansion icon.................................................passed
+Then verify the data is displaying in the expansion grid or not.............passed
+And validate the expansion grid data........................................passed
 ]]></system-out>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
     </testcase>
 </testsuite>
