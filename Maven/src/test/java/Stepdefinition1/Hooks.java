@@ -34,7 +34,10 @@ public class Hooks extends DriverFactory{
 //		scenario.attach(Utilities.getByteScreenshot(driver), "image/png", "");
 //	}
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	@AfterStep
 	public void as(Scenario scenario) throws IOException {
 		scenario.attach(Utilities.getByteScreenshot(driver), "image/png", "");

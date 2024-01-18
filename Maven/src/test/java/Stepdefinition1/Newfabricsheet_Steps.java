@@ -11,6 +11,29 @@ public class Newfabricsheet_Steps {
 
 	Newfabricsheet_Pages Newfabricsheet_Pages = new Newfabricsheet_Pages();
 
+<<<<<<< HEAD
+
+
+	
+//	         @When("^User navigates to Login page$")
+//		     public void User_navigates_to_Login_page() throws Throwable {
+//			 Newfabricsheet_Pages.User_navigates_to_Login_page();
+//			}
+			
+//			@Then("^User enters the username and password$")
+//			public void User_enters_the_username_and_password() throws Throwable {
+//				Newfabricsheet_Pages.User_enters_the_username_and_password();
+//
+//		    }
+
+//			@And("^User click on the signIn$")
+//			public void User_click_on_the_signIn() throws Throwable {
+//				Newfabricsheet_Pages.User_click_on_the_signIn();
+//
+//		   }
+
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 			 @And ("^Click on the Woven Module$")
 			   public void Click_on_the_Woven_Module() throws Throwable{
 				 Newfabricsheet_Pages.Click_on_the_Woven_Module();
@@ -133,10 +156,10 @@ public class Newfabricsheet_Steps {
 			   public void Check_the_Total_Fabric_Required_field_value_is_calculated_or_not() throws Throwable{
 				  Newfabricsheet_Pages.Check_the_Total_Fabric_Required_field_value_is_calculated_or_not();
 			   }
-			   @And ("^Click on the cancel button$")
-			   public void Click_on_the_cancel_button() throws Throwable{
-				  Newfabricsheet_Pages.Click_on_the_cancel_button();
-			   }
+//			   @And ("^Click on the cancel button$")
+//			   public void Click_on_the_cancel_button() throws Throwable{
+//				  Newfabricsheet_Pages.Click_on_the_cancel_button();
+//			   }
 			   @And ("^Click on the Save button$")
 			   public void Click_on_the_Save_button() throws Throwable{
 				  Newfabricsheet_Pages.Click_on_the_Save_button();
@@ -241,10 +264,10 @@ public class Newfabricsheet_Steps {
 			   public void Update_the_Quantity_Requirment_details() throws Throwable{
 				  Newfabricsheet_Pages.Update_the_Quantity_Requirment_details();
 			   }
-			   @And ("^Click on the Cancel button$")
-			   public void Click_on_the_Cancel_button() throws Throwable{
-				  Newfabricsheet_Pages.Click_on_the_Cancel_button();
-			   }
+//			   @And ("^Click on the Cancel button$")
+//			   public void Click_on_the_Cancel_button() throws Throwable{
+//				  Newfabricsheet_Pages.Click_on_the_Cancel_button();
+//			   }
 			   @And ("^Click on the Submit button$")
 			   public void Click_on_the_Submit_button() throws Throwable{
 				  Newfabricsheet_Pages.Click_on_the_Submit_button();
