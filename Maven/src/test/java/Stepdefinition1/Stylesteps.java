@@ -1,14 +1,14 @@
-//package Stepdefinition1;
-//
-//import Page.Stylepage;
-//import io.cucumber.java.en.And;
-//import io.cucumber.java.en.Given;
-//import io.cucumber.java.en.Then;
-//import io.cucumber.java.en.When;
-//
-//public class Stylesteps {
-//	Stylepage Stylepage = new Stylepage(); 
-//		
+package Stepdefinition1;
+
+import Page.Stylepage;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Stylesteps {
+	Stylepage Stylepage = new Stylepage(); 
+		
 //		
 //		@When("^User navigates to Login page$")
 //	    	public void User_navigates_to_Login_page() throws Throwable {
@@ -36,6 +36,13 @@
 //		   public void click_on_the_PD_Module() throws Throwable{
 //			   Stylepage.click_on_the_PD_Module();
 //		   }
+//		   
+		   @And("^Click on Data Entry$")
+		   public void Click_on_Data_Entry() throws Throwable {
+			   Stylepage.Click_on_Data_Entry();
+		   }
+		   
+		   
 //		   @And ("^click on the Style Master screen$")
 //		   public void click_on_the_Style_Master_screen() throws Throwable{
 //			   Stylepage.click_on_the_Style_Master_screen();
@@ -172,13 +179,7 @@
 //			   Stylepage.print_the_displayed_header_message();
 //
 //		   }
-//		   
-//		   
-//		   
-//		   
-//		   
-//		   
-//		   
+//	
 //		   
 //		   @Then ("^User enter the the Tech Pack Name$")
 //		   public void User_enter_the_the_Tech_Pack_Name() throws Throwable{
@@ -451,7 +452,7 @@
 //		   public void Verify_whether_the_delete_is_working_or_not () throws Throwable {
 //			   Stylepage.Verify_whether_the_delete_is_working_or_not();   
 //		   }
-//		   }
-package Stepdefinition1;
+		   }
+
 
 

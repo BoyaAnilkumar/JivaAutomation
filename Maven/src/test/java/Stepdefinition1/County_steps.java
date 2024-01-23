@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 
 import io.cucumber.java.en.When;
 
-<<<<<<< HEAD
+
 public class County_steps {
 
 	
@@ -82,12 +82,12 @@ public class County_steps {
 			   Country_Page.Click_on_the_Cancel_button();
 
 		}
-=======
 
 
 
 
-public class County_steps {
+
+public class County_steps1 {
 
 	
           Country_Page Country_Page = new Country_Page(); 
@@ -157,7 +157,7 @@ public class County_steps {
 
 		}
 		  
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 //		   @And ("^Click on the Edit Icon$")
 //		   public void Click_on_the_Edit_Icon() throws Throwable{
 //			   Country_Page.Click_on_the_Edit_Icon();
@@ -209,13 +209,11 @@ public class County_steps {
 		   @And ("^Search the Country name$")
 		   public void Search_the_Country_name() throws Throwable{
 			   Country_Page.Search_the_Country_name();
-<<<<<<< HEAD
-=======
+
      }
 
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 }
-<<<<<<< HEAD
+
 }
 //public class County_steps1 {
 //
@@ -339,19 +337,4 @@ public class County_steps {
 //
 //
 //}
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
- 
-
-<<<<<<< HEAD
-
-
-
-
-
- 
-
-
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git

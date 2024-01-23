@@ -4,6 +4,7 @@ package Stepdefinition1;
 import Page.MerchandisingTandA_Pages;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 public class MerchandisingTandA_Steps {
 
@@ -77,10 +78,147 @@ public class MerchandisingTandA_Steps {
 		     MerchandisingTandA_Pages.Enter_the_data_in_PP_Submission_and_Approval();
 		 }
 		
+		 @And("^Click on the Testing GPT1 Add button$")
+		 public void Click_on_the_Testing_GPT1_Add_button() {
+			 MerchandisingTandA_Pages.Click_on_the_Testing_GPT1_Add_button();
+		 }
+		 
+		 @Given("^Enter the data in Testing GPT1 submission and Approval$")
+		 public void Enter_the_data_in_Testing_GPT1_submission_and_Approval() {
+			 MerchandisingTandA_Pages.Enter_the_data_in_Testing_GPT1_submission_and_Approval();
+		 }
+		 
+		 @And("^Enter the data in GPT1 Remarks Field$")
+		 public void Enter_the_data_in_GPT1_Remarks_Field() {
+			 MerchandisingTandA_Pages.Enter_the_data_in_GPT1_Remarks_Field();
+		 }
+		 
+		 @And("^Click on the Testing GPT1 Delete Icon$")
+		 public void Click_on_the_Testing_GPT1_Delete_Icon() {
+			 MerchandisingTandA_Pages.Click_on_the_Testing_GPT1_Delete_Icon();
+		 }
 		 
 		 
+		 @And("^Click on the Testing FPT1 Add button$")
+		 public void Click_on_the_Testing_FPT1_Add_button() {
+			 MerchandisingTandA_Pages.Click_on_the_Testing_FPT1_Add_button();
+		 }
+		 
+		 @Given("^Enter the data in Testing FPT1 submission and Approval$")
+		 public void Enter_the_data_in_Testing_FPT1_submission_and_Approval() {
+			 MerchandisingTandA_Pages.Enter_the_data_in_Testing_FPT1_submission_and_Approval();
+		 }
+		 
+		 @And("^Enter the data in FPT1 Remarks Field$")
+		 public void Enter_the_data_in_FPT1_Remarks_Field() {
+			 MerchandisingTandA_Pages.Enter_the_data_in_FPT1_Remarks_Field();
+		 }
+		 
+		 @And("^Click on the Testing FPT1 Delete Icon$")
+		 public void Click_on_the_Testing_FPT1_Delete_Icon() {
+			 MerchandisingTandA_Pages.Click_on_the_Testing_FPT1_Delete_Icon();
+		 }
+		 
+		 @And("^Click on the Testing Photoshoot1 Add button$")
+		 public void Click_on_the_Testing_Photoshoot1_Add_button() {
+			 MerchandisingTandA_Pages.Click_on_the_Testing_Photoshoot1_Add_button();
+		 }
+		 
+		 @Given("^Enter the data in Testing Photoshoot1 submission and Approval$")
+		 public void Enter_the_data_in_Testing_Photoshoot1_submission_and_Approval() {
+			 MerchandisingTandA_Pages.Enter_the_data_in_Testing_Photoshoot1_submission_and_Approval();
+		 }
+		 
+		 @And("^Enter the data in Photoshoot1 Remarks Field$")
+		 public void Enter_the_data_in_Photoshoot1_Remarks_Field() {
+			 MerchandisingTandA_Pages.Enter_the_data_in_Photoshoot1_Remarks_Field();
+		 }
+		 
+		 @And("^Click on the Testing Photoshoot1 Delete Icon$")
+		 public void Click_on_the_Testing_Photoshoot1_Delete_Icon() {
+			 MerchandisingTandA_Pages.Click_on_the_Testing_Photoshoot1_Delete_Icon();
+		 }
+		 
+		 @And("^Click on the TOP Sample1 Add button$")
+		 public void Click_on_the_TOP_Sample1_Add_button() {
+			 MerchandisingTandA_Pages.Click_on_the_TOP_Sample1_Add_button();
+		 }
+		 
+		 @Given("^Enter the data in TOP Sample1 submission and Approval$")
+		 public void Enter_the_data_in_TOP_Sample1_submission_and_Approval() {
+			 MerchandisingTandA_Pages.Enter_the_data_in_TOP_Sample1_submission_and_Approval();
+		 }
+		 
+		 @And("^Enter the data in TOP Sample1 Remarks Field$")
+		 public void Enter_the_data_in_TOP_Sample1_Remarks_Field() {
+			 MerchandisingTandA_Pages.Enter_the_data_in_TOP_Sample1_Remarks_Field();
+		 }
+		 
+		 @And("^Click on Add button of TOP Sample1$")
+		 public void Click_on_Add_button_of_TOP_Sample1() {
+			 MerchandisingTandA_Pages.Click_on_Add_button_of_TOP_Sample1();
+		 }
 		 
 		 
+		 @And("^Click on the TOP Sample1 Delete Icon$")
+		 public void Click_on_the_TOP_Sample1_Delete_Icon() {
+			 MerchandisingTandA_Pages.Click_on_the_TOP_Sample1_Delete_Icon();
+		 }
+		 
+		 @Given("^Enter the data in File Handover$")
+		 public void Enter_the_data_in_File_Handover() {
+			 MerchandisingTandA_Pages.Enter_the_data_in_File_Handover();
+		 }
+		 
+		 @Given("^Enter the data in Size set$")
+		 public void Enter_the_data_in_Size_set() {
+			 MerchandisingTandA_Pages.Enter_the_data_in_Size_set();
+		 }
+		 
+		 @Given("^Enter the data in PPM$")
+		 public void Enter_the_data_in_PPM() {
+			 MerchandisingTandA_Pages.Enter_the_data_in_PPM();
+		 }
+		 
+		 @And("^Verify the Bulk Fabric Flow date is displaying or not$")
+		 public void Verify_the_Bulk_Fabric_Flow_date_is_displaying_or_not() {
+			 MerchandisingTandA_Pages.Verify_the_Bulk_Fabric_Flow_date_is_displaying_or_not();
+		 }
+		 
+		 @And("^Click on View icon for Bulk Fabric Flow$")
+		 public void Click_on_View_icon_for_Bulk_Fabric_Flow() {
+			 MerchandisingTandA_Pages.Click_on_View_icon_for_Bulk_Fabric_Flow();
+		 }
+		 
+		 @And("^Verify the EMB PCD is clickable or not$")
+		 public void Verify_the_EMB_PCD_is_clickable_or_not() {
+			 MerchandisingTandA_Pages.Verify_the_EMB_PCD_is_clickable_or_not();
+		 }
+		 
+		 @And("^Verify that data is displaying for the EMB PCD or not$")
+		 public void Verify_that_data_is_displaying_for_the_EMB_PCD_or_not() {
+			 MerchandisingTandA_Pages.Verify_that_data_is_displaying_for_the_EMB_PCD_or_not();
+		 }
+		 
+		 @Given("^Enter the date in PCD Field$")
+		 public void Enter_the_date_in_PCD_Field() {
+			 MerchandisingTandA_Pages.Enter_the_date_in_PCD_Field();
+		 }
+		 
+		 @And("^click on dropdown to change the PCD Test$")
+		 public void click_on_dropdown_to_change_the_PCD_Test() {
+			 MerchandisingTandA_Pages.click_on_dropdown_to_change_the_PCD_Test();
+		 }
+		 
+		 @And("^Verify that ExFactory date is displaying or not$")
+		 public void Verify_that_ExFactory_date_is_displaying_or_not() {
+			 MerchandisingTandA_Pages.Verify_that_ExFactory_date_is_displaying_or_not();
+		 }
+		 
+		 @Then("^Verify that DTP days are displaying after inserting the date in PCD Test$")
+		 public void Verify_that_DTP_days_are_displaying_after_inserting_the_date_in_PCD_Test() {
+			 MerchandisingTandA_Pages.Verify_that_DTP_days_are_displaying_after_inserting_the_date_in_PCD_Test();
+		 }
 		 
 		 
 		 
