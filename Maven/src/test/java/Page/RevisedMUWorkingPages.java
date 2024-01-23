@@ -482,7 +482,7 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	public void Verify_the_Submit_button_properties() throws Throwable {
 		utilities.webDriverWait(driver,buttsubmit);
 		driver.findElement(buttsubmit).click();
-		Thread.sleep(1000);
+		Thread.sleep(10000);
 	}
 
 	public void Select_an_IPO_from_the_Menu_list() throws Throwable {
