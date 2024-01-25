@@ -6,7 +6,8 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 
-@RunWith(Cucumber.class)
+
+ @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"pretty", "html:target/cucumber-html-report.html", "json:test-output-reports/JsonReport/report.json","junit:test-output-reports/JunitReport/report.xml"
 				               ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
 				  glue="Stepdefinition1",
@@ -14,24 +15,8 @@ import io.cucumber.junit.CucumberOptions;
 
 				  monochrome = true,
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-		          tags ="@Smoketest")
-=======
-<<<<<<< HEAD
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 		          tags ="@RevisedMUWorking1")
-
-
-<<<<<<< HEAD
-
-
-=======
-<<<<<<< HEAD
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-
 
 public class TestRunner {
 	

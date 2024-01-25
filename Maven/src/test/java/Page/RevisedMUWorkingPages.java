@@ -18,12 +18,23 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	By txtPwd = By.xpath("//input[@id='userpassword']");
 	By modWoven = By.xpath("//span[text()='Woven / knit']");
 	By modFabricSourcing =By.xpath("//span[text()='Fabric Sourcing ']");
+	By DataEntry = By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[1]");
 	By modGenerateFabMUworking = By.xpath("//span[text()='Generate Fabric Sheet Working']");
 	By modRevisedFabMUworking = By.xpath("//a[text()=' Revised Fabric Sheet Working ']");
 	By buttSHOStyle = By.xpath("//a[@id='sidebarCollapse']");
 	By iconClear = By.xpath("//button[@class='btn btn-outline-secondary btn-sm mr-2 mb-2 float-right ng-star-inserted']");
 	By iconFilter = By.xpath("//button[@class='btn btn-primary btn-sm mb-2 float-right']");
-	By Buyer = By.xpath("//div[text()='Select Buyer']");
+	By F_buyer =By.xpath("//div[text()='Select Buyer']"); 
+	By F_enterBuyer = By.xpath("(//label[text()='Buyer']/following::input)[3]");
+	By F_selectBuyer = By.xpath("//div[text()='Testbuyer']");
+	By F_season =By.xpath("//select[@formcontrolname='seasonId']"); 
+	By F_enterseason = By.xpath("");
+	By F_selectseason = By.xpath("//option[text()=' Holiday 2022']");
+	By F_Status =By.xpath("//select[@formcontrolname='staticStatusId']"); 
+	By F_enterStatus = By.xpath("");
+	By F_selectStatus = By.xpath("//option[text()=' Fabric Sheet Working not Submitted']");
+	
+	
 	By IPOname = By.xpath("//a[@id='v-pills-tabIPO32']");
 	By QtyReqgrid = By.xpath("//p-table[@class='p-element ng-star-inserted']");
 	By buttExpansion = By.xpath("//span[@class='p-button-icon pi pi-chevron-right']");
@@ -38,13 +49,14 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	By Selectprocess1				= By.xpath("//select[@formcontrolname='process1TypeId']/..//option[text()=' Dyeing']");
 	By Process2						= By.xpath("//select[@formcontrolname='process2TypeId']");
 	By Selectprocess2				= By.xpath("//select[@formcontrolname='process2TypeId']/..//option[text()=' Printing']");
-	By Greigeqty					= By.xpath("//input[@placeholder='Enter Griege Qty']");
+	By Greigeqty					= By.xpath("(//input[@formcontrolname='greigeBaseFabricReq'])[2]");
 	By Process1MU					= By.xpath("(//input[@placeholder='Enter Mu%'])[1]");
 	By Process1Qty					= By.xpath("(//input[@placeholder='Enter Qty'])[2]");
 	By PrintType					= By.xpath("//input[@formcontrolname='printingType']");
 	By Process2MU					= By.xpath("(//input[@placeholder='Enter Mu%'])[2]");
 	By Process2Qty					= By.xpath("(//input[@placeholder='Enter Qty'])[3]");
 	By FBGreige						= By.xpath("//h5[text()='GREIGE / BASE / Knitting ']");
+	By FBGreigeQty					= By.xpath("(//input[@formcontrolname='greigeBaseQTY'])[1]");
 	By FBDyeing						= By.xpath("(//h5[text()='DYEING'])[2]");
 	By FBPrinting					= By.xpath("(//h5[text()='PRINTING'])[2]");
 	By GFqty						= By.xpath("(//label[text()='Greige Fabric Qty ']/..//input[@class='form-control form-control-sm ng-untouched ng-pristine ng-valid'])[1]");
@@ -76,12 +88,15 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	By PrintingFabricManagerAsst	= By.xpath("//ng-select[@formcontrolname='printingFabricAssistantsId']");
 	By PrintingFabricExecutive		= By.xpath("//select[@formcontrolname='printingFabricExecutiveId']");
 	By SelectPFE					= By.xpath("//select[@formcontrolname='printingFabricExecutiveId']/..//option[text()=' Ramya']");
+	By FreGreqty					= By.xpath("(//div[@formgroupname='ipoFabricBudget']/..//input[@formcontrolname='greigeBaseQTY'])[2]");
 	By FreGreigeRate				= By.xpath("(//input[@formcontrolname='greigeBaseFabricRate'])[2]");
 	By FreGreigeConvRate			= By.xpath("(//input[@formcontrolname='greigeBaseFabricConversionRate'])[2]");
 	By FreGreCost					= By.xpath("(//input[@formcontrolname='greigeBaseFabricCostInINR'])[2]");
+	By FreDyeingQty					= By.xpath("(//input[@formcontrolname='dyingQty'])[3]");
 	By FreDyeRate					= By.xpath("//input[@formcontrolname='dyingRateInINR']");
 	By FreDyeConvRate				= By.xpath("(//input[@formcontrolname='dyingConversionRate'])[2]");
 	By FreDyeCost					= By.xpath("(//input[@formcontrolname='dyingCostInINR'])[2]");
+	By FrePrintQty					= By.xpath("(//input[@formcontrolname='printingQty'])[3]");
 	By FrePrintRate					= By.xpath("//input[@formcontrolname='printingRateInINR']");
 	By FrePrintConvRate				= By.xpath("(//input[@formcontrolname='printingConversionRate'])[2]");
 	By FrePrintCost					= By.xpath("(//input[@formcontrolname='printingCostInINR'])[2]");
@@ -109,12 +124,19 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	public void Navigate_to_Revised_Fabric_Sheet_Working_screen() throws Throwable {
 		utilities.webDriverWait(driver, modWoven);
 		driver.findElement(modWoven).click();
+		utilities.MinimumWait(driver);
 		utilities.webDriverWait(driver, modFabricSourcing);
 		driver.findElement(modFabricSourcing).click();
+		utilities.MinimumWait(driver);
+		utilities.webDriverWait(driver, DataEntry);
+		driver.findElement(DataEntry).click();
+		utilities.MinimumWait(driver);
 		utilities.webDriverWait(driver, modGenerateFabMUworking);
 		driver.findElement(modGenerateFabMUworking).click();
+		utilities.MinimumWait(driver);
 		utilities.webDriverWait(driver, modRevisedFabMUworking);
 		driver.findElement(modRevisedFabMUworking).click();
+		utilities.MinimumWait(driver);
 	}
 
 	public void Click_on_the_Styles_expansion() throws Throwable {
@@ -131,10 +153,34 @@ public class RevisedMUWorkingPages extends DriverFactory{
 		utilities.webDriverWait(driver, iconFilter);
 		driver.findElement(iconFilter).click();
 	}
+	
+	public void Select_a_Buyer_from_dropdown_list() throws Throwable {
+		utilities.webDriverWait(driver, F_buyer);
+		driver.findElement(F_buyer).click();
+		System.out.println("Clicked in the Buyer  field");
+		utilities.webDriverWait(driver, F_enterBuyer);
+		driver.findElement(F_enterBuyer).sendKeys("tes");
+		System.out.println("Entered the first 3 letters");
+		utilities.webDriverWait(driver, F_selectBuyer);
+		driver.findElement(F_selectBuyer).click();
+		System.out.println("Buyer selected");
+		utilities.webDriverWait(driver, F_buyer);
+		driver.findElement(F_buyer).click();
 
-	public void Click_on_Buyer_dropdown() throws Throwable {
-		utilities.webDriverWait(driver, Buyer);
-		driver.findElement(Buyer).click();
+	}
+	
+	public void Select_a_Season_from_dropdown_list() throws Throwable {
+		utilities.webDriverWait(driver, F_season);
+		driver.findElement(F_season).click();
+		utilities.webDriverWait(driver, F_selectseason);
+		driver.findElement(F_selectseason).click();
+	}
+
+	public void Select_a_Status_from_dropdown_list() throws Throwable {
+		utilities.webDriverWait(driver, F_Status);
+		driver.findElement(F_Status).click();
+		utilities.webDriverWait(driver, F_selectStatus);
+		driver.findElement(F_selectStatus).click();
 	}
 
 	public void Verify_the_count_of_the_Fabric_records_under_the_Quantity_Requirment_grid() throws Throwable {
@@ -195,11 +241,29 @@ public class RevisedMUWorkingPages extends DriverFactory{
 		utilities.webDriverWait(driver,buttEdit);
 		driver.findElement(buttEdit).click();
 	}
+	
+	public void Verify_the_Final_Fabric_Required_qty_value() throws Throwable {
+		utilities.MinimumWait(driver);
+		utilities.webDriverWait(driver,Fabricrequiredqty);
+		WebElement FabReqQty = driver.findElement(Fabricrequiredqty);
+		if (!FabReqQty.isEnabled()) {
+            System.out.println("Final Fabric Required Qty field is in enabled state.");
+        } else {
+            System.out.println("Final Fabric Required Qty field is in disabled state.");
+        }
+		System.out.println("Final Fabric Required Qty field is in " +!FabReqQty.isEnabled()+ " state");
+	}
 
 	public void Enter_the_value_in_the_Residual_Shrinkage_field() throws Throwable {
 		utilities.webDriverWait(driver,Residualshrinkage);
+		WebElement RS = driver.findElement(Residualshrinkage);
 		driver.findElement(Residualshrinkage).clear();
-		driver.findElement(Residualshrinkage).sendKeys("5");;
+		driver.findElement(Residualshrinkage).sendKeys("5");
+		if (RS.isEnabled()) {
+            System.out.println("Residual Shrinkage field is in enabled state.");
+        } else {
+            System.out.println("Residual Shrinkage field is in disabled state.");
+        }
 	}
 
 	public void Select_a_process_in_the_Process1_field() throws Throwable {
@@ -220,6 +284,13 @@ public class RevisedMUWorkingPages extends DriverFactory{
 		utilities.webDriverWait(driver,Greigeqty);
 		WebElement GQty = driver.findElement(Greigeqty);
 		String  GreigeQty = GQty.getAttribute("value");
+		
+		if (GQty.isEnabled()) {
+            System.out.println("Greige Qty field is in enabled state.");
+        } else {
+            System.out.println("Greige Qty field is in disabled state.");
+        }
+		System.out.println("Greige Qty field is in " + GQty.isEnabled() + " state.");
 		System.out.println("Display the Greige Qty value - " + GreigeQty);
 	}
 
@@ -250,16 +321,28 @@ public class RevisedMUWorkingPages extends DriverFactory{
 
 	public void Verify_the_Printing_qty_value_in_the_Qty_field() throws Throwable {
 		utilities.webDriverWait(driver,Process2Qty);
-		WebElement DQty = driver.findElement(Process2Qty);
-		String  DyeQty = DQty.getAttribute("value");
-		System.out.println("Display the Dyeing Qty value " + DyeQty);
+		WebElement PQty = driver.findElement(Process2Qty);
+		String  PrintQty = PQty.getAttribute("value");
+		System.out.println("Display the Printing Qty value " + PrintQty);
 	}
 
 	public void Verify_the_Greige_Qty_value_in_the_Greige_Fabric_Qty_field() throws Throwable {
-		utilities.webDriverWait(driver,GFqty);
-		WebElement Gqty = driver.findElement(GFqty);
+		utilities.webDriverWait(driver,Greigeqty);
+		WebElement Greigqty = driver.findElement(Greigeqty);
+		String MainGreQty = Greigqty.getAttribute("value");
+//		System.out.println("Display the main Greige Fabric Qty under Fabric Budget - " +MainGreQty);
+		
+		utilities.webDriverWait(driver,FBGreigeQty);
+		WebElement Gqty = driver.findElement(FBGreigeQty);
 		String Greqty = Gqty.getAttribute("value");
-		System.out.println("Display the Greige Fabric Qty under Fabric Budget - " +Greqty);
+//		System.out.println("Display the Greige Fabric Qty under Fabric Budget - " +Greqty);
+		if (Greqty.equals(MainGreQty)) {
+			System.out.println("Correct Greige Qty value is displayed in the Fabric Budget Greige Qty field - "+Greqty);
+		} else {
+			System.out.println("Worng Greige Qty value is displayed in the Fabric Budget Greige Qty field - "+Greqty);
+			System.out.println("Whereas should get display - "+MainGreQty+ " value.");
+		}
+
 	}
 
 	public void Enter_the_Rate_for_Griege_Fabric_Qty() throws Throwable {
@@ -303,10 +386,23 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	}
 
 	public void Verify_the_Dyeing_Qty_value_in_the_Dyeing_Qty_field() throws Throwable {
-		utilities.webDriverWait(driver,Dyeingqty);
-		WebElement Dqty = driver.findElement(Dyeingqty);
+		utilities.webDriverWait(driver,Process1Qty);
+		WebElement DyeQty = driver.findElement(Process1Qty);
+		String  MainDyeQty = DyeQty.getAttribute("value");
+		System.out.println("Display the Dyeing Qty value " + MainDyeQty);
+		
+		utilities.webDriverWait(driver,FreDyeingQty);
+		WebElement Dqty = driver.findElement(FreDyeingQty);
 		String Dyeqty = Dqty.getAttribute("value");
 		System.out.println("Display the Dyeing Qty value - " +Dyeqty);
+		
+		if (Dyeqty.equals(MainDyeQty)) {
+			System.out.println("Correct Dyeing Qty value is displayed in the Fabric Budget Dyeing Qty field - "+Dyeqty);
+		} else {
+			System.out.println("Worng Dyeing Qty value is displayed in the Fabric Budget Dyeing Qty field - "+Dyeqty);
+			System.out.println("Whereas should get display - "+MainDyeQty+ " value.");
+		}
+		
 	}
 
 	public void Enter_the_Rate_for_Dyeing_Qty() throws Throwable {
@@ -350,10 +446,28 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	}
 
 	public void Verify_the_Printing_Qty_value_in_the_Printing_Qty_field() throws Throwable {
+		utilities.webDriverWait(driver,Process2Qty);
+		WebElement PQty = driver.findElement(Process2Qty);
+		String  mainPrintQty = PQty.getAttribute("value");
+		System.out.println("Display the Printing Qty value " + mainPrintQty);
+		
+		utilities.webDriverWait(driver,Printingqty);
+		WebElement FPqty = driver.findElement(Printingqty);
+		String FPrtqty = FPqty.getAttribute("value");
+		System.out.println("Display the Freight Printing Qty under Fabric budget section - " +FPrtqty);
+		
+		if (FPrtqty.equals(mainPrintQty)) {
+			System.out.println("Correct Printing Qty value is displayed in the Fabric Budget Printing Qty field - "+FPrtqty);
+		} else {
+			System.out.println("Worng Printing Qty value is displayed in the Freight Budget Printing Qty field - "+FPrtqty);
+			System.out.println("Whereas should get display - "+mainPrintQty+ " value.");
+		}
+		
+		
 		utilities.webDriverWait(driver,Printingqty);
 		WebElement Pqty = driver.findElement(Printingqty);
 		String Printqty = Pqty.getAttribute("value");
-		System.out.println("Display the Dyeing Qty value - " +Printqty);
+		System.out.println("Display the Printing Qty value - " +Printqty);
 	}
 
 	public void Enter_the_Rate_for_Printing_Qty() throws Throwable {
@@ -397,10 +511,27 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	}
 
 	public void Verify_the_Freight_Greige_Qty_value_in_the_Greige_Fabric_Qty_field() throws Throwable {
+		utilities.webDriverWait(driver,Greigeqty);
+		WebElement Greigqty = driver.findElement(Greigeqty);
+		String MainGreQty = Greigqty.getAttribute("value");
+//		System.out.println("Display the main Greige Fabric Qty under Fabric Budget - " +MainGreQty);
+		
 		utilities.webDriverWait(driver,GFqty);
 		WebElement Gqty = driver.findElement(GFqty);
 		String Greqty = Gqty.getAttribute("value");
-		System.out.println("Display the Greige Fabric Qty under Freight budget section - " +Greqty);
+//		System.out.println("Display the Greige Fabric Qty under Freight budget section - " +Greqty);
+		if (Greqty.equals(MainGreQty)) {
+			System.out.println("Correct Greige Qty value is displayed in the Freight Budget Greige Qty field - "+Greqty);
+		} else {
+			System.out.println("Worng Greige Qty value is displayed in the Freight Budget Greige Qty field - "+Greqty);
+			System.out.println("Whereas should get display - "+MainGreQty+ " value.");
+		}
+		
+		
+//		utilities.webDriverWait(driver,GFqty);
+//		WebElement Gqty = driver.findElement(GFqty);
+//		String Greqty = Gqty.getAttribute("value");
+//		System.out.println("Display the Greige Fabric Qty under Freight budget section - " +Greqty);
 	}
 
 	public void Enter_the_Rate_for_FreightGriege_Fabric_Qty() throws Throwable {
@@ -423,10 +554,28 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	}
 
 	public void Verify_the_Freight_Dyeing_Qty_value_in_the_Dyeing_Fabric_Qty_field() throws Throwable {
+		utilities.webDriverWait(driver,Process1Qty);
+		WebElement DyeQty = driver.findElement(Process1Qty);
+		String  MainDyeQty = DyeQty.getAttribute("value");
+		System.out.println("Display the Dyeing Qty value " + MainDyeQty);
+		
 		utilities.webDriverWait(driver,Dyeingqty);
 		WebElement FDqty = driver.findElement(Dyeingqty);
 		String FDyeqty = FDqty.getAttribute("value");
 		System.out.println("Display the Freight Dyeing Qty under Freight budget section - " +FDyeqty);
+		
+		if (FDyeqty.equals(MainDyeQty)) {
+			System.out.println("Correct Dyeing Qty value is displayed in the Fabric Budget Dyeing Qty field - "+FDyeqty);
+		} else {
+			System.out.println("Worng Dyeing Qty value is displayed in the Fabric Budget Dyeing Qty field - "+FDyeqty);
+			System.out.println("Whereas should get display - "+MainDyeQty+ " value.");
+		}
+		
+		
+//		utilities.webDriverWait(driver,Dyeingqty);
+//		WebElement FDqty = driver.findElement(Dyeingqty);
+//		String FDyeqty = FDqty.getAttribute("value");
+//		System.out.println("Display the Freight Dyeing Qty under Freight budget section - " +FDyeqty);
 	}
 
 	public void Enter_the_Rate_for_Freight_Dyeing_Qty() throws Throwable {
@@ -449,10 +598,27 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	}
 
 	public void Verify_the_Freight_Printing_Qty_value_in_the_Printing_Fabric_Qty_field() throws Throwable {
+		utilities.webDriverWait(driver,Process2Qty);
+		WebElement PQty = driver.findElement(Process2Qty);
+		String  mainPrintQty = PQty.getAttribute("value");
+		System.out.println("Display the Printing Qty value " + mainPrintQty);
+		
 		utilities.webDriverWait(driver,Printingqty);
 		WebElement FPqty = driver.findElement(Printingqty);
 		String FPrtqty = FPqty.getAttribute("value");
 		System.out.println("Display the Freight Printing Qty under Freight budget section - " +FPrtqty);
+		
+		if (FPrtqty.equals(mainPrintQty)) {
+			System.out.println("Correct Printing Qty value is displayed in the Freight Budget Printing Qty field - "+FPrtqty);
+		} else {
+			System.out.println("Worng Printing Qty value is displayed in the Freight Budget Printing Qty field - "+FPrtqty);
+			System.out.println("Whereas should get display - "+mainPrintQty+ " value.");
+		}
+		
+//		utilities.webDriverWait(driver,Printingqty);
+//		WebElement FPqty = driver.findElement(Printingqty);
+//		String FPrtqty = FPqty.getAttribute("value");
+//		System.out.println("Display the Freight Printing Qty under Freight budget section - " +FPrtqty);
 	}
 
 	public void Enter_the_Rate_for_Freight_Printing_Qty() throws Throwable {
@@ -482,13 +648,30 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	public void Verify_the_Submit_button_properties() throws Throwable {
 		utilities.webDriverWait(driver,buttsubmit);
 		driver.findElement(buttsubmit).click();
-		Thread.sleep(10000);
+		Thread.sleep(20000);
 	}
 
 	public void Select_an_IPO_from_the_Menu_list() throws Throwable {
 		utilities.webDriverWait(driver,IPOname);
 		driver.findElement(IPOname).click();
 	}
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+
+
+	
 
 	
 
