@@ -1,0 +1,55 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="159.354">
+    <testcase classname="Adding the processes for a fabric" name="Submit the fabric sheet details in Revised fabric sheet" time="158.948">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()='Select Buyer']&quot;}&#10;  (Session info: chrome=120.0.6099.225)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e1c1f14f9384783f21c52a19fb251852&#10;*** Element info: {Using=xpath, value=//div[text()='Select Buyer']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When user navigates to Login page...........................................passed
+Given Login with the Production Manager.....................................passed
+And Click on the SignIn button..............................................passed
+Then Navigate to Revised Fabric Sheet Working screen........................passed
+And click on Styles expansion...............................................passed
+And click on clear filter icon..............................................passed
+Then click on filter icon...................................................passed
+Then Select a Buyer from dropdown list......................................failed
+Then Select a Season from dropdown list.....................................skipped
+Then Select a Status from dropdown list.....................................skipped
+Then Enter an IPO name in the Search by Buyer Style or IPO textbox field....skipped
+And Click on the Filt_Apply button..........................................skipped
+Then Click on Filter button.................................................skipped
+Then Verify whether data is getting cleared or not on OnClick the Reset button.skipped
+And Verify whether the user is able to Select an IPO from the Menu list.....skipped
+Then Click on the Style ShowHide button for closing the menu list...........skipped
+Then Verify the count of the Fabric records under the Fabric Details grid...skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Select Buyer']"}
+  (Session info: chrome=120.0.6099.225)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e1c1f14f9384783f21c52a19fb251852
+*** Element info: {Using=xpath, value=//div[text()='Select Buyer']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.RevisedMUWorkingPages.Select_a_Buyer_from_dropdown_list(RevisedMUWorkingPages.java:168)
+	at Stepdefinition1.RevisedMUWorkingSteps.Select_a_Buyer_from_dropdown_list(RevisedMUWorkingSteps.java:224)
+	at ✽.Select a Buyer from dropdown list(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/RevisedMUWorking.feature:15)
+]]></failure>
+    </testcase>
+</testsuite>
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git

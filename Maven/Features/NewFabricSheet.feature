@@ -69,19 +69,35 @@ Then User enters the username and password
  #And Select the Season
  #When Search the IPO
  #And Click on the Apply button
+<<<<<<< HEAD
+
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+ Then Select the Buyer
+<<<<<<< HEAD
+And Click on the Season Field
+ And Select the Season
+ When Search the IPO
+ And Click on the Apply button
+
+ Then Select the Buyer
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+ And Click on the Season Field
+ And Select the Season
+ When Search the IPO
+ And Click on the Apply button
+
+<<<<<<< HEAD
+=======
+
  Then Select the Buyer
  And Click on the Season Field
  And Select the Season
  When Search the IPO
  And Click on the Apply button
 
-
- Then Select the Buyer
- And Click on the Season Field
- And Select the Season
- When Search the IPO
- And Click on the Apply button
-
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  And Click on the Season Field
  And Select the Season
  When Search the IPO
@@ -90,12 +106,15 @@ Then User enters the username and password
 
  #And Click on the Reset button
  #And Select the IPO and Style
+<<<<<<< HEAD
+=======
 
  
 
 
 
 
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  And Click on the Season Field
  And Select the Season
  When Search the IPO
@@ -103,7 +122,15 @@ Then User enters the username and password
  And Click on the Reset button
  And Select the IPO and Style
  And Click on the Reset button
+<<<<<<< HEAD
+
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  And Click on the Reset button
+<<<<<<< HEAD
+
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  And Select the IPO and Style
  And Select the IPO and Style
  
@@ -150,6 +177,11 @@ Then User enters the username and password
  Given Enter the data in Bulk Fabric Deadline field
  And Click on the Fabric Manager Field
  And Select the Fabric Manager Assistants
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  And Click on the Add New Fabric button
  And Select the Is Nominated Check box
  When User select the Supplier name
@@ -171,6 +203,10 @@ Then User enters the username and password
  And Check the Fabric Required For Cutting field value is calculated or not
  And Enter the data in Fabric Required For Sampling
  And Check the Total Fabric Required field value is calculated or not
+<<<<<<< HEAD
+
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  #And Click on the cancel button
  #And Click on the Save button
  #And After click on the Save button the validation msg is displaying or not
@@ -178,6 +214,10 @@ Then User enters the username and password
  #And Click on the Delete Icon
  #When Click on the Import Fabric details button
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  And Click on the Add New Fabric button
  And Select the Is Nominated Check box
  When User select the Supplier name
@@ -277,6 +317,10 @@ Then User enters the username and password
  #And Update the Applicable Combos
  #And Update the Garment Average Details
  #And Update the Quantity Requirment details
+<<<<<<< HEAD
+
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  And Click on the Close Icon in Import Fabric details page
  And Click on the Close button
  And Click on the Import button
@@ -338,9 +382,17 @@ Then User enters the username and password
  And Update the Applicable Combos
  And Update the Garment Average Details
  And Update the Quantity Requirment details
+<<<<<<< HEAD
+#And Update the Quantity Requirment details
+=======
  #And Update the Quantity Requirment details
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  #And Click on the Cancel button
  #And Click on the Submit button
+<<<<<<< HEAD
+
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
  And Update the Quantity Requirment details
  And Click on the Cancel button
  And Click on the Submit button

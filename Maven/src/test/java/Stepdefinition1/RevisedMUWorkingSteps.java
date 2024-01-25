@@ -38,6 +38,10 @@ public void Click_on_Clear_Filter_icon() throws Throwable {
 public void Click_on_Edit_icon_in_MU_Working_grid_for_a_Fabric() throws Throwable {
 	RMUW.Click_on_Edit_icon_in_MU_Working_grid_for_a_Fabric();
 }
+@And ("^Verify the Final Fabric Required qty value$")
+public void Verify_the_Final_Fabric_Required_qty_value() throws Throwable {
+	RMUW.Verify_the_Final_Fabric_Required_qty_value();
+}
 @Given ("^Enter_the_value_in_the_Residual_Shrinkage_field$")
 public void Enter_the_value_in_the_Residual_Shrinkage_field() throws Throwable {
 	RMUW.Enter_the_value_in_the_Residual_Shrinkage_field();
@@ -213,6 +217,19 @@ public void Verify_the_Cancel_button_properties() throws Throwable {
 @Then ("^Verify_the_Submit_button_properties$")
 public void Verify_the_Submit_button_properties() throws Throwable {
 	RMUW.Verify_the_Submit_button_properties();
+}
+
+@Then ("^Select a Buyer from dropdown list$")
+public void Select_a_Buyer_from_dropdown_list() throws Throwable {
+	RMUW.Select_a_Buyer_from_dropdown_list();
+}
+@Then ("^Select a Season from dropdown list$")
+public void Select_a_Season_from_dropdown_list() throws Throwable {
+	RMUW.Select_a_Season_from_dropdown_list();
+}
+@Then ("^Select a Status from dropdown list$")
+public void Select_a_Status_from_dropdown_list() throws Throwable {
+	RMUW.Select_a_Status_from_dropdown_list();
 }
 
 
