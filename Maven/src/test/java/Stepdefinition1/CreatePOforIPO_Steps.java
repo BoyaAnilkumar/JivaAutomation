@@ -81,7 +81,7 @@ public class CreatePOforIPO_Steps {
 	}
 	
 	@And("^verify the payment terms are displaying after selecting the supplier$")
-	public void verify_the_payment_terms_are_displaying_after_selecting_the_supplier() {
+	public void verify_the_payment_terms_are_displaying_after_selecting_the_supplier() throws Throwable {
 		CreatePOforIPO_pages.verify_the_payment_terms_are_displaying_after_selecting_the_supplier();
 	}
 	

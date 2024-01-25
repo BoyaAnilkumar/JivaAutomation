@@ -1,8 +1,5 @@
 package Page;
 
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -24,14 +21,17 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	By POdate						= By.xpath("//input[@formcontrolname='poDate']");
 	By POnumber						= By.xpath("//input[@formcontrolname='poNumber']");
 	By DeliverTo					= By.xpath("//input[@placeholder='Search By Deliver To']");
+	By SelectDeliver				= By.xpath("//span[text()='JIVA DESIGNS PVT. LTD.']");
 	By DeliverAddress				= By.xpath("//input[@formcontrolname='deliverAddress']");
 	By DeliverGST					= By.xpath("//input[@formcontrolname='deliverGstNumber']");
 	By Supplier						= By.xpath("//input[@placeholder='Search By Supplier']");
+	By Selectsupplier				= By.xpath("//span[text()='Anil']");
 	By SupplierAddress				= By.xpath("//input[@formcontrolname='supplierAddress']");
 	By SupplierGST					= By.xpath("//input[@formcontrolname='gstNumber']");
 	By SupplierPaymentterms			= By.xpath("//input[@formcontrolname='paymentTypeId']");
 	By SupDeliveryterms				= By.xpath("//select[@formcontrolname='deliveryTypeId']");
 	By Leadtime						= By.xpath("//input[@formcontrolname='leadtime']");
+	By FabricDetails				= By.xpath("//h5[text()='Fabric Details']");
 	By Process						= By.xpath("//select[@formcontrolname='processTypeId']");
 	By selectgriegeprocess			= By.xpath("//select[@formcontrolname='processTypeId']/.//option[text()=' Greige']");
 	By FabricType					= By.xpath("//select[@formcontrolname='fabricType']");
@@ -147,23 +147,23 @@ public class CreatePOforIPO_pages extends DriverFactory {
 		driver.findElement(DeliverTo).click();
 		driver.findElement(DeliverTo).sendKeys("Jiva DESIGNS");
 		utilities.MinimumWait(driver);
-		Robot a = new Robot();
-		a.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(5000);
+		driver.findElement(SelectDeliver).click();
 	}
 
 	public void Deliver_address_is_displaying_after_selecting_the_deliver_to_details_or_not() throws Throwable {
 		utilities.webDriverWait(driver, DeliverAddress);
+		driver.findElement(DeliverAddress).click();
 		WebElement DelAddress = driver.findElement(DeliverAddress);
-				String Address = DelAddress.getText();
+				String Address = DelAddress.getAttribute("value");
 				System.out.println("Delivery Address:  "  +  Address);
 				utilities.MinimumWait(driver);
 	}
 
 	public void verify_the_GSTIN_number_is_displaying_or_not() throws Throwable {
 		utilities.webDriverWait(driver, DeliverGST);
+		driver.findElement(DeliverGST).click();
 		WebElement DelGST = driver.findElement(DeliverGST);
-				String GST = DelGST.getText();
+				String GST = DelGST.getAttribute("value");
 				System.out.println("GST Number  : "  +  GST);
 				utilities.MinimumWait(driver);
 		
@@ -173,17 +173,14 @@ public class CreatePOforIPO_pages extends DriverFactory {
 		utilities.webDriverWait(driver, Supplier);
 		driver.findElement(Supplier).sendKeys("Anil");
 		utilities.MinimumWait(driver);
-		
-		Robot b = new Robot();
-		b.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(5000);
-		
+		driver.findElement(Selectsupplier).click();		
 	}
 
 	public void verify_the_supplier_address_after_selecting_the_supplier() throws Throwable {
 		utilities.webDriverWait(driver, SupplierAddress);
+		driver.findElement(SupplierAddress).click();
 		WebElement SupplierAdd = driver.findElement(SupplierAddress);
-				String Address = SupplierAdd.getText();
+				String Address = SupplierAdd.getAttribute("value");
 				System.out.println("Supplier Address:   "  +   Address);
 				utilities.MinimumWait(driver);
 		
@@ -191,35 +188,63 @@ public class CreatePOforIPO_pages extends DriverFactory {
 
 	public void verify_the_GSTIN_number_is_displaying_after_selecting_the_supplier() throws Throwable {
 		utilities.webDriverWait(driver, SupplierGST);
+		driver.findElement(SupplierGST).click();
 		WebElement GST = driver.findElement(SupplierGST);
-				String SupGST = GST.getText();
+				String SupGST = GST.getAttribute("value");
 				System.out.println("Supplier GST number:  " +  SupGST);
 				utilities.MinimumWait(driver);
 		
 	}
 
-	public void verify_the_payment_terms_are_displaying_after_selecting_the_supplier() {
-		// TODO Auto-generated method stub
+	public void verify_the_payment_terms_are_displaying_after_selecting_the_supplier() throws Throwable {
+		utilities.webDriverWait(driver, SupplierPaymentterms);
+//		driver.findElement(SupplierPaymentterms).click();
+		WebElement Paymentterms = driver.findElement(SupplierPaymentterms);
+		String terms = Paymentterms.getAttribute("value");
+		System.out.println("Displaying payment terms:  " + terms);
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void verify_that_Delivery_terms_are_displaying_after_selecting_the_supplier() {
-		// TODO Auto-generated method stub
+	public void verify_that_Delivery_terms_are_displaying_after_selecting_the_supplier() throws Throwable {
+		utilities.webDriverWait(driver,SupDeliveryterms);
+		WebElement deliveryterms = driver.findElement(SupDeliveryterms);
+				String Delterms = deliveryterms.getAttribute("value");
+				System.out.println("Displaying delivery terms:  "  +   Delterms);
+				utilities.MinimumWait(driver);
 		
 	}
 
-	public void Enter_Lead_time_in_Days() {
-		// TODO Auto-generated method stub
+	public void Enter_Lead_time_in_Days() throws Throwable {
+		utilities.webDriverWait(driver, Leadtime);
+		driver.findElement(Leadtime).sendKeys("3");
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(Leadtime).click();
+		utilities.MinimumWait(driver);
+		WebElement LEADTIME = driver.findElement(Leadtime);
+		String LT = LEADTIME.getAttribute("value");
+		System.out.println("Displaying Inserted Leadtime:  " + LT);
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void verify_the_Fabric_Details_are_displaying_or_not() {
-		// TODO Auto-generated method stub
-		
+	public void verify_the_Fabric_Details_are_displaying_or_not() throws Throwable {
+		utilities.webDriverWait(driver, FabricDetails);
+		WebElement FabDetails = driver.findElement(FabricDetails);
+		String FABRICDETAILS = FabDetails.getAttribute("value");
+		System.out.println("Displaying fabric details:  " + FABRICDETAILS);
+		utilities.MinimumWait(driver);
+
 	}
 
-	public void Select_Process_from_dropdown_list() {
-		// TODO Auto-generated method stub
+	public void Select_Process_from_dropdown_list() throws Throwable {
+		utilities.webDriverWait(driver, Process);
+		driver.findElement(Process).click();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(selectgriegeprocess).click();
+		utilities.MinimumWait(driver);
 		
 	}
 

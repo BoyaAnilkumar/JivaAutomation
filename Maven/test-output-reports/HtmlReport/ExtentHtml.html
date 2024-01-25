@@ -44,7 +44,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -54,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 25, 2024 03:41:52 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 25, 2024 05:44:20 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -70,8 +69,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -125,10 +122,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -139,10 +136,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -155,12 +152,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='68.75%'><span class='strong'>55</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>100</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='3.75%'>3</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='27.5%'>22</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='27.5%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -178,11 +175,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Verification and Validation of Create PO for Fabric</span>
-						<span class='test-time'>Jan 25, 2024 03:41:56 pm</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Jan 25, 2024 05:44:29 pm</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -191,14 +188,14 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label'>@FeatureGroup</span>
 		<span class='category label'>@CreatePOforIPOSmoke</span>
 	</div>
-	<span class='duration right label'>0h 1m 28s+256ms</span>
+	<span class='duration right label'>0h 1m 32s+785ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: To Test the user able to navigate to create po for ipo screen and submit the po for ipo</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: To Test the user able to navigate to create po for ipo screen and submit the po for ipo</div>
 	</div>
 	<ul class='steps'>
 		<li test-id='4' class='node when pass' status='pass'>
@@ -502,166 +499,254 @@
 			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_GSM_is_prepopulated_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verify that GSM is prepopulated or not</div>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='59' class='node * fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.86)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83749057bac6da5fee684cefc0facf15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at util.Utilities.getByteScreenshot(Utilities.java:74)
-	at Stepdefinition1.Hooks.as(Hooks.java:40)
-</textarea>
+		<li test-id='59' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded28.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='60' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_cuttable_width_is_prepopulated_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then verify that cuttable width is prepopulated or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='60' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_cuttable_width_is_prepopulated_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verify that cuttable width is prepopulated or not</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='62' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Select_color_for_the_fabric()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Select color for the fabric</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='61' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded29.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='64' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_qty_required_is_displaying_with_value_based_on_the_selected_process_fabric_and_color()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then verify the qty required is displaying with value based on the selected process fabric and color</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='62' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Select_color_for_the_fabric()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select color for the fabric</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='66' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_qty_available_in_stock_is_displaying_if_qty_is_available()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then verify the qty available in stock is displaying if qty is available</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='63' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded30.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='68' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_residual_shrinkage_is_displaying_with_value_based_on_the_selected_process_fabric_and_color()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then verify that residual shrinkage is displaying based on the selected process fabric and color</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='64' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_qty_required_is_displaying_with_value_based_on_the_selected_process_fabric_and_color()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verify the qty required is displaying with value based on the selected process fabric and color</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='70' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_qty_allowed_is_displaying_with_default_value_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify that qty allowed is displaying with default value or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='65' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded31.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='72' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_currency_is_displaying_with_value()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify that currency is displaying with value</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='66' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_qty_available_in_stock_is_displaying_if_qty_is_available()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verify the qty available in stock is displaying if qty is available</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='74' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_rate_is_displaying_with_value_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify that rate is displaying with value or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='67' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded32.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='76' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_UOM_is_displayed_or_user_should_select()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify that UOM is displayed or user should select</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='68' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_residual_shrinkage_is_displaying_with_value_based_on_the_selected_process_fabric_and_color()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verify that residual shrinkage is displaying based on the selected process fabric and color</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='78' class='node given skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Enter_the_data_in_L_Short_If_Any_field()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given Enter the data in L Short If Any field</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='69' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded33.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='80' class='node given skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Enter_the_data_in_Additional_Information1_field()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given Enter the data in Additional Information1 field</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='70' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_qty_allowed_is_displaying_with_default_value_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify that qty allowed is displaying with default value or not</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='82' class='node given skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Enter_the_data_in_Additional_Information2_field()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Given Enter the data in Additional Information2 field</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='71' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded34.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='84' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_Add_IPO_button_is_enable_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify that Add IPO button is enable or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='72' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_currency_is_displaying_with_value()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify that currency is displaying with value</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='86' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.click_on_delete_icon_is_able_to_click_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And click on delete icon is able to click or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='73' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded35.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='88' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.select_the_IPO_from_the_dropdown_list()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And select the IPO from the dropdown list</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='74' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_rate_is_displaying_with_value_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify that rate is displaying with value or not</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='90' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_due_date_is_displayed_as_current_date()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the due date is displayed as current date</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='75' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded36.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='92' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quatity_is_displayed_as_greater_than_zero_in_quantity_field()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the quatity is displayed as greater than zero in quantity field</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='76' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_UOM_is_displayed_or_user_should_select()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify that UOM is displayed or user should select</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='94' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_use_from_stock_field()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the quantity is displayed as greater than zero in qty use from stock field</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='77' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded37.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='96' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_to_be_bought_field()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the quantity is displayed as greater than zero in qty to be bought field</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='78' class='node given pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Enter_the_data_in_L_Short_If_Any_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Enter the data in L Short If Any field</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='98' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_rate_value_is_prepopulated_in_grid_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the rate value is prepopulated in grid or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='79' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded38.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='100' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_Amount_is_displayed_after_selecting_the_ipo_in_grid()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the Amount is displayed after selecting the ipo in grid</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='80' class='node given pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Enter_the_data_in_Additional_Information1_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Enter the data in Additional Information1 field</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='102' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.click_on_save_button_and_verify_that_save_button_is_enable_after_inserting_the_data_in_mandatory_fields()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then click on save button and verify that save button is enable after inserting the data in mandatory fields</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='81' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded39.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='104' class='node * fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Stepdefinition1.Hooks.CloseBrowser()</div>
-			<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=121.0.6167.86)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83749057bac6da5fee684cefc0facf15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
-	at Stepdefinition1.Hooks.CloseBrowser(Hooks.java:47)
-</textarea>
+		<li test-id='82' class='node given pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Enter_the_data_in_Additional_Information2_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Enter the data in Additional Information2 field</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='105' class='node * fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.86)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83749057bac6da5fee684cefc0facf15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:26)
-</textarea>
+		<li test-id='83' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded40.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='84' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_that_Add_IPO_button_is_enable_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify that Add IPO button is enable or not</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='85' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded41.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='86' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.click_on_delete_icon_is_able_to_click_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on delete icon is able to click or not</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='87' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded42.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='88' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.select_the_IPO_from_the_dropdown_list()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And select the IPO from the dropdown list</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='89' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded43.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='90' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_due_date_is_displayed_as_current_date()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the due date is displayed as current date</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='91' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded44.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='92' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quatity_is_displayed_as_greater_than_zero_in_quantity_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the quatity is displayed as greater than zero in quantity field</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='93' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded45.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='94' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_use_from_stock_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the quantity is displayed as greater than zero in qty use from stock field</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='95' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded46.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='96' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_to_be_bought_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the quantity is displayed as greater than zero in qty to be bought field</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='97' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded47.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='98' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_rate_value_is_prepopulated_in_grid_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the rate value is prepopulated in grid or not</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='99' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded48.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='100' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_Amount_is_displayed_after_selecting_the_ipo_in_grid()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the Amount is displayed after selecting the ipo in grid</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='101' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded49.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='102' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.click_on_save_button_and_verify_that_save_button_is_enable_after_inserting_the_data_in_mandatory_fields()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on save button and verify that save button is enable after inserting the data in mandatory fields</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='103' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded50.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
 	</ul>
 </div>
@@ -709,13 +794,13 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 					<div class='category-heading'>
 						<span class='category-name'>@FeatureGroup</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -729,14 +814,14 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 25, 2024 03:41:56 pm</td>
+										<td>Jan 25, 2024 05:44:29 pm</td>
 										<td class='linked' test-id='1'>Verification and Validation of Create PO for Fabric</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 25, 2024 03:41:56 pm</td>
+										<td>Jan 25, 2024 05:44:29 pm</td>
 										<td class='linked' test-id='2'>To Test the user able to navigate to create po for ipo screen and submit the po for ipo</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -747,13 +832,13 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 					<div class='category-heading'>
 						<span class='category-name'>@CreatePOforIPOSmoke</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -767,9 +852,9 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 25, 2024 03:41:56 pm</td>
+										<td>Jan 25, 2024 05:44:29 pm</td>
 										<td class='linked' test-id='2'>To Test the user able to navigate to create po for ipo screen and submit the po for ipo</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -785,158 +870,7 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.NoSuchWindowException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 25, 2024 03:43:23 pm</td>
-										<td class='linked' test-id='59'>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.86)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83749057bac6da5fee684cefc0facf15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at util.Utilities.getByteScreenshot(Utilities.java:74)
-	at Stepdefinition1.Hooks.as(Hooks.java:40)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Jan 25, 2024 03:43:25 pm</td>
-										<td class='linked' test-id='105'>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.86)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83749057bac6da5fee684cefc0facf15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:26)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.WebDriverException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 25, 2024 03:43:24 pm</td>
-										<td class='linked' test-id='104'>Stepdefinition1.Hooks.CloseBrowser()</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=121.0.6167.86)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83749057bac6da5fee684cefc0facf15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
-	at Stepdefinition1.Hooks.CloseBrowser(Hooks.java:47)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -956,25 +890,25 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>80</div>
+					<div class='panel-lead'>100</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 25, 2024 03:41:52 pm</div>
+					<div class='panel-lead'>Jan 25, 2024 05:44:20 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 25, 2024 03:43:25 pm</div>
+			 		<div class='panel-lead'>Jan 25, 2024 05:46:03 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 33s+83ms</div>
+					<div class='panel-lead'>0h 1m 42s+466ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -991,20 +925,20 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 						</tr>
 						<tr>
 							<td>@FeatureGroup</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									50%
 							</td>
 						</tr>
 						<tr>
 							<td>@CreatePOforIPOSmoke</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -1019,38 +953,38 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
-				grandChildCount: 80,
-				passGrandChild: 55,
-				failGrandChild: 3,
+				exceptionsChild: 0,
+				grandChildCount: 100,
+				passGrandChild: 100,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 22,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 25,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Verification and Validation of Create PO for Fabric":88.256
+			        "Verification and Validation of Create PO for Fabric":92.785
 			};
 		</script>
 	
