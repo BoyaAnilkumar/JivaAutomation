@@ -13,41 +13,12 @@ import io.cucumber.junit.CucumberOptions;
 				  features = "Features",
 
 				  monochrome = true,
-<<<<<<< HEAD
-				  tags ="@MerchandisingTAndA1")
-=======
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-		          tags ="@Smoketest")
-=======
-<<<<<<< HEAD
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-		          tags ="@RevisedMUWorking1")
+				  tags ="@CreatePOforIPOSmoke")
 
-
-<<<<<<< HEAD
-
-
-=======
-<<<<<<< HEAD
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 public class TestRunner {
-<<<<<<< HEAD
-=======
-	
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 }
 
 

@@ -33,7 +33,7 @@ public class DriverFactory {
 
 			System.setProperty("webdriver.chrome.driver", "resources\\chromedriver.exe");
 
-			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 
 			driver = new ChromeDriver();
 			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
