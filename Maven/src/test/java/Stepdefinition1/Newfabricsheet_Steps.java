@@ -11,7 +11,7 @@ public class Newfabricsheet_Steps {
 
 	Newfabricsheet_Pages Newfabricsheet_Pages = new Newfabricsheet_Pages();
 
-<<<<<<< HEAD
+
 
 
 	
@@ -32,8 +32,7 @@ public class Newfabricsheet_Steps {
 //
 //		   }
 
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 			 @And ("^Click on the Woven Module$")
 			   public void Click_on_the_Woven_Module() throws Throwable{
 				 Newfabricsheet_Pages.Click_on_the_Woven_Module();

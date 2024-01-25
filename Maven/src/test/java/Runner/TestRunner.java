@@ -15,13 +15,15 @@ import io.cucumber.junit.CucumberOptions;
 
 				  monochrome = true,
 
+<<<<<<< HEAD
 
 		          tags ="@RevisedMUWorking1")
+=======
+				  tags ="@CreatePOforIPOSmoke")
+
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 public class TestRunner {
-	
-
-
 
 }
 
