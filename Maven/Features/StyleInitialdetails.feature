@@ -8,6 +8,7 @@ Then User enters the username and password
  And User click on the signIn
  And Click on the Woven Module
  Then click on the Merchandising Module
+ And click on Data Entry dropdown
  And click on the Style Initail Details screen
  
  And Click on the Styles Expansion
@@ -37,7 +38,7 @@ Then User enters the username and password
  And Click on the Delete Garment Icon1
  And Click on the Delete garment Icon2
  And Click on the Garment type field
- And Select the Garment type
+ And Click and Select the Garment type
  And Click on the Submit Order details button
  And Verify the Alert msg
  And Verify the Saved msg

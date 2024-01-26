@@ -20,6 +20,7 @@ import util.Utilities;
 
 			
 			By Merchandising = By.xpath("(//span[text()='Merchandising '])[1]");
+			By MerchandisingDataEntry = By.xpath("(//span[text()='Data Entry'])[3]");
 			By Style_Initial = By.xpath("(//a[text()='Style Initial Details'])[1]");
 
 			By Style_Ex = By.xpath("//a[@id='sidebarCollapse']");
@@ -83,7 +84,14 @@ import util.Utilities;
             By Expected = By.xpath("//p[@class='text-center']");
 
 			
+            public void click_on_Data_Entry_dropdown() throws Throwable {
+            	
+            	utilities.webDriverWait(driver, MerchandisingDataEntry);
+            	driver.findElement(MerchandisingDataEntry).click();
+            	utilities.MinimumWait(driver);
+            	
 				
+			}
 				
 				public void click_on_the_Style_Initail_Details_screen() throws Throwable{
 				   utilities.webDriverWait(driver, Style_Initial );
@@ -280,7 +288,7 @@ import util.Utilities;
 
 
 				}
-				public void Select_the_Garment_type() throws Throwable {
+				public void Click_and_Select_the_Garment_type() throws Throwable {
 					utilities.webDriverWait(driver, SelectGarment2);
 					driver.findElement(SelectGarment2).click();
 					
@@ -417,6 +425,7 @@ import util.Utilities;
 					}
 					
 				}
+				
 				
 				
 

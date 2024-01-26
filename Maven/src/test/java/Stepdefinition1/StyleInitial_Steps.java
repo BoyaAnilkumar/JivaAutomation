@@ -13,7 +13,10 @@ import io.cucumber.java.en.When;
 
 
 			 
-			  
+			  @And("^click on Data Entry dropdown$")
+			  public void click_on_Data_Entry_dropdown() throws Throwable {
+				  StyleInitail_Page.click_on_Data_Entry_dropdown();
+			  }
 			   @And ("^click on the Style Initail Details screen$")
 			   public void click_on_the_Style_Initail_Details_screen() throws Throwable{
 				   StyleInitail_Page.click_on_the_Style_Initail_Details_screen();
@@ -144,9 +147,9 @@ import io.cucumber.java.en.When;
 				   StyleInitail_Page.Click_on_the_Garment_type_field();
 			   }
 
-			   @And ("^Select the Garment type$")
-			   public void Select_the_Garment_type() throws Throwable{
-				   StyleInitail_Page.Select_the_Garment_type();
+			   @And ("^Click and Select the Garment type$")
+			   public void Click_and_Select_the_Garment_type() throws Throwable{
+				   StyleInitail_Page.Click_and_Select_the_Garment_type();
 			   }
 
 			   @And ("^Click on the Submit Order details button$")

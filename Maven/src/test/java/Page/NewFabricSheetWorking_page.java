@@ -106,6 +106,7 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By ShifflyAsstManager						= By.xpath("//ng-select[@formcontrolname='schifflyFabricAssistantsId']");
 	By Shifflyexecutive							= By.xpath("//select[@formcontrolname='schifflyFabricExecutiveId']");
 	
+
 	By Isyarn   =  By.xpath("//input[@formcontrolname='isYarn']");
 	By Isknitting  = By.xpath("//input[@formcontrolname='isKnitting']");
 	By Yarntype		= By.xpath("//select[@formcontrolname='yarnTypeId']");
@@ -118,6 +119,12 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By EnterOtherProcessName = By.xpath("//input[@formcontrolname='otherProcessName']");
 	By OtherMuperc			= By.xpath("//input[@formcontrolname='otherMUPercentage']");
 	By OtherQty				= By.xpath("//input[@formcontrolname='otherQty']");
+	By ProcessName			= By.xpath("//input[@formcontrolname='otherProcessName']");
+	By OtherMU 				= By.xpath("//input[@formcontrolname='otherMUPercentage']");
+	By Otherprocessqty		= By.xpath("//div[@class='row align-items-end']/..//input[@formcontrolname='otherQty']");
+	By OtherFbqty			= By.xpath("//div[@class='card ng-pristine ng-invalid ng-touched']//input[@formcontrolname='otherQty']");
+	
+	
 	
 	
 	
@@ -941,6 +948,21 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	}
 
 	public void click_on_yarn_working_checkbox() throws Throwable {
+
+		utilities.webDriverWait(driver, Isyarn);
+		driver.findElement(Isyarn).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Isknitting);
+		driver.findElement(Isknitting).click();
+		utilities.MinimumWait(driver);
+
+		
+		utilities.webDriverWait(driver, Residualshrinkage);
+		driver.findElement(Residualshrinkage).click();
+		driver.findElement(Residualshrinkage).sendKeys("7.25");
+		utilities.MinimumWait(driver);
+		
 		utilities.webDriverWait(driver, Isyarn);
 		driver.findElement(Isyarn).click();
 		utilities.MinimumWait(driver);
@@ -949,17 +971,27 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		driver.findElement(Isknitting).click();
 		utilities.MinimumWait(driver);
 		
+		utilities.webDriverWait(driver, Yarntype);
+		driver.findElement(Yarntype).click();
+		utilities.MinimumWait(driver);
+				
 	}
 
 	public void Select_Yarn_Type() throws Throwable {
+
 		utilities.webDriverWait(driver,Yarntype );
 		driver.findElement(selectyarntype).click();
 		utilities.MinimumWait(driver);
 		
+
+		utilities.webDriverWait(driver, selectyarntype);
+		driver.findElement(selectyarntype).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
 	public void Enter_value_in_knitting_and_Spinning_MU() throws Throwable {
+
 		utilities.webDriverWait(driver, knitSpinMU );
 		driver.findElement(knitSpinMU).sendKeys("5.23");
 		utilities.MinimumWait(driver);
@@ -979,6 +1011,26 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		utilities.MinimumWait(driver);
 		
 		
+		utilities.webDriverWait(driver, knitSpinMU);
+		driver.findElement(knitSpinMU).click();
+		driver.findElement(knitSpinMU).clear();
+		driver.findElement(knitSpinMU).sendKeys("5");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Yarnqty);
+		driver.findElement(Yarnqty).click();
+		WebElement YarnqQty = driver.findElement(Yarnqty);
+		String YarnQuantity = YarnQty.getAttribute("Value");
+		System.out.println("Yarn Quantity is displaying:  " +  YarnQuantity);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, yarncolor);
+		driver.findElement(yarncolor).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, selectyarncolor);
+		driver.findElement(selectyarncolor).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
@@ -1006,7 +1058,29 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		String Greigequantity = GRQty.getAttribute("value");
 		System.out.println("Displaying greige qty :" + Greigequantity);
 		utilities.MinimumWait(driver);
+		utilities.webDriverWait(driver, Process1);
+		driver.findElement(Process1).click();
+		utilities.MinimumWait(driver);
 		
+		utilities.webDriverWait(driver, selectotherprocess);
+		driver.findElement(selectotherprocess).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Process2);
+		driver.findElement(Process2).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, selectNA);
+		driver.findElement(selectNA).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Greigeqty);
+		driver.findElement(Greigeqty).click();
+		WebElement GreigeQty = driver.findElement(Greigeqty);
+		String GQuantity = GreigeQty.getAttribute("value");
+		System.out.println("Greige Quantity is displaying:  " +  GQuantity);
+		utilities.MinimumWait(driver);
+				
 	}
 
 	public void Enter_the_value_in_MU_percentage_field() throws Throwable {
@@ -1031,17 +1105,17 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 
 	public void Enter_Fabric_Budget_details_for_Yarn_process() {
 		
-		
+
 		
 	}
 
 	public void Enter_Fabric_Budget_details_for_knitting_and_spinning_process() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	public void Enter_Fabric_Budget_details_for_Other_process() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 

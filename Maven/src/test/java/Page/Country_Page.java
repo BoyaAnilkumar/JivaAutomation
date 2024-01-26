@@ -49,7 +49,9 @@ public class Country_Page extends DriverFactory{
 	By Edit_1 =By.xpath("//i[@class='ti-pencil-alt']");
 	By Delete_1 = By.xpath("//i[@class='ti-trash']");
 
-	 	   public void Click_on_the_Master_Module() throws Throwable{
+	 	   
+	
+	public void Click_on_the_Master_Module() throws Throwable{
 			utilities.webDriverWait(driver, Master );
 			driver.findElement(Master).click();
 		  	}
@@ -259,13 +261,28 @@ public class Country_Page extends DriverFactory{
 			}
 
 
+			public void User_enters_the_username_and_password() {
+				// TODO Auto-generated method stub
+				
+			}
+
+			public void User_click_on_the_signIn() {
+				// TODO Auto-generated method stub
+				
+			}
+
+			public void User_navigates_to_Login_page() {
+				// TODO Auto-generated method stub
+				
+			}
+
 			}	
 
 
 
 
 
-	
+
 
 
 

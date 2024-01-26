@@ -28,6 +28,7 @@ public class Stylepage extends DriverFactory{
 		By password = By.xpath("//input[@id='userpassword']");
 		By Woven = By. xpath ("//span[text()='Woven / knit']");
 		By PD = By.xpath("//ul[@class='mm-collapse mm-show']/..//span[text()='PD ']");
+		By DataEntry = By.xpath("//a[@aria-expanded='true']//span[contains(text(),'Data Entry')]");
 		By StyleMaster = By.xpath("//a[text()=' Style Master ']");
 		//Filter 
 		By Filter = By.xpath("//button[@class='btn btn-primary btn-sm mr-3']");
@@ -173,8 +174,16 @@ public class Stylepage extends DriverFactory{
 			public void click_on_the_PD_Module() throws Throwable{
 			utilities.webDriverWait(driver, PD );
 			driver.findElement(PD).click();	
-
+			
 			}
+			
+			public void Click_on_Data_Entry() throws Throwable {
+				utilities.webDriverWait(driver, DataEntry);
+				driver.findElement(DataEntry).click();
+				utilities.MinimumWait(driver);
+				
+			}
+			
 			public void click_on_the_Style_Master_screen() throws Throwable{
 			   utilities.webDriverWait(driver, StyleMaster );
 			   driver.findElement(StyleMaster).click();	
@@ -707,6 +716,7 @@ public class Stylepage extends DriverFactory{
 					System.out.println("Alert message is incorrect."+ actualMessage);
 				}
 			}
+		
 				
 				
 		

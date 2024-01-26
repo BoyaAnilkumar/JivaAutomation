@@ -2,11 +2,10 @@
 
 #@FeatureGroup 
 #Feature: feature to test Jiva design New Fabric Sheet screen functionality
-#
  #@NewFabricSheet
  #Scenario: To Test the New Fabric Sheet screen
  #When User navigates to Login page
-#Then User enters the username and password
+ #Then User enters the username and password
  #And User click on the signIn
  #And Click on the Woven Module
  #Then click on the Merchandising Module
@@ -14,7 +13,7 @@
  #And Click on the New Fabric Sheet Screen
  #And Verify whether the New fabric sheet screen is displaying or not
  #And Click on the Styles Expansion
- #
+ 
  #And Click on the Filter Icon
  #And Click on the Buyer Field
 
@@ -76,30 +75,16 @@ Then User enters the username and password
  And Select the Season
  When Search the IPO
  And Click on the Apply button
- And Click on the Season Field
- And Select the Season
- When Search the IPO
- And Click on the Apply button
 
  #And Click on the Reset button
  #And Select the IPO and Style
- #
-
-
-
  And Click on the Season Field
  And Select the Season
  When Search the IPO
  And Click on the Apply button
  And Click on the Reset button
-
  And Select the IPO and Style
-
  And Click on the Reset button
-
- And Select the IPO and Style
- 
-
  And Select the IPO and Style
  
  @NewFabricSheet123 
@@ -141,12 +126,10 @@ Then User enters the username and password
  #And Check the Fabric Required For Cutting field value is calculated or not
  #And Enter the data in Fabric Required For Sampling
  #And Check the Total Fabric Required field value is calculated or not
- 
 
  Given Enter the data in Bulk Fabric Deadline field
  And Click on the Fabric Manager Field
  And Select the Fabric Manager Assistants
-
 
  And Click on the Add New Fabric button
  And Select the Is Nominated Check box
@@ -178,7 +161,6 @@ Then User enters the username and password
  #When Click on the Import Fabric details button
 
 
-
  And Click on the Add New Fabric button
  And Select the Is Nominated Check box
  When User select the Supplier name
@@ -205,8 +187,6 @@ Then User enters the username and password
  And After click on the Save button the validation msg is displaying or not
  And Click on the Submit to Fabric Team button
  And Click on the Delete Icon
-
-
  When Click on the Import Fabric details button
  And Click on the Add New Fabric button
  And Select the Is Nominated Check box
@@ -256,9 +236,8 @@ Then User enters the username and password
  And Select the IPO and Style
  And Click on the Add New Fabric button
  When Click on the Import Fabric details button
-
  #And Select the WithIn IPO Radio button
-
+ #And Select the WithIn IPO Radio button
  And Select the WithIn IPO Radio button
  And Select the Other Radio button
  And Select the PD FDS Radio button
@@ -343,18 +322,11 @@ Then User enters the username and password
  And Update the Applicable Combos
  And Update the Garment Average Details
  And Update the Quantity Requirment details
-
+#And Update the Quantity Requirment details
  #And Update the Quantity Requirment details
  #And Click on the Cancel button
  #And Click on the Submit button
 
  And Update the Quantity Requirment details
-
  And Click on the Cancel button
-
  And Click on the Submit button
-
- 
- 
- 
-

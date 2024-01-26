@@ -11,6 +11,12 @@ public class CostingSteps {
 	Costingpages cos = new Costingpages();
 
 	  
+	  @Then ("^Click on the Woven Modules$") 
+	  public void Click_on_the_Woven_Modules() throws Throwable {
+		  cos.Click_on_the_Woven_Modules();
+	  }
+
+	  
 	  @Then("^Click on the PD Module$")
 	  public void Click_on_the_PD_Module() throws Throwable {
 		  cos.Click_on_the_PD_Module();

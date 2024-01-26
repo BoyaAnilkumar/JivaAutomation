@@ -145,7 +145,17 @@ public class Costingpages extends DriverFactory {
 	By Imp_Close1 = By.xpath("(//button[@data-dismiss='modal'])[1]");
 	
 
+	public void Navigates_to_the_Login_pages() {
+		driver.get(prop.getProperty("url"));
+	}
 
+
+
+
+	public void Click_on_the_Woven_Modules() {
+		
+		
+	}
 
 	public void Click_on_the_PD_Module() throws Throwable {
 		utilities.webDriverWait(driver, PD);
@@ -836,6 +846,9 @@ public class Costingpages extends DriverFactory {
 		utilities.webDriverWait(driver, Imp_closeButton);
 		driver.findElement(Imp_Close1);
 	}
+
+
+
 
 
 	
