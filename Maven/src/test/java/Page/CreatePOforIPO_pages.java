@@ -1,6 +1,11 @@
 package Page;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import util.DriverFactory;
@@ -35,9 +40,9 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	By Process						= By.xpath("//select[@formcontrolname='processTypeId']");
 	By selectgriegeprocess			= By.xpath("//select[@formcontrolname='processTypeId']/.//option[text()=' Greige']");
 	By FabricType					= By.xpath("//select[@formcontrolname='fabricType']");
-	By selectFabricType				= By.xpath("//select[@formcontrolname='fabricType']/.//option[text()=' Knit']");
+	By selectFabricType				= By.xpath("//select[@formcontrolname='fabricType']/.//option[text()=' Woven']");
 	By FabricName					= By.xpath("//ng-select[@formcontrolname='fabricName']");
-	By SelectFabric					= By.xpath("");
+	By SelectFabric					= By.xpath("//span[text()='Raw silk']");
 	By Content						= By.xpath("//select[@formcontrolname='content']");
 	By CountandConstruction			= By.xpath("//select[@formcontrolname='countOfConstruction']");
 	By GSM							= By.xpath("//select[@formcontrolname='gsm']");
@@ -50,12 +55,17 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	By Currency						= By.xpath("//select[@formcontrolname='currencyType']");
 	By Rate							= By.xpath("//input[@formcontrolname='totalqtyRate']");
 	By UOM							= By.xpath("//select[@formcontrolname='uom']");
+	By SelectUOM					= By.xpath("//option[text()=' Meters']");
 	By LShortIfAny					= By.xpath("//textarea[@formcontrolname='laddtionalInfo']");
 	By Addinfor1					= By.xpath("//textarea[@formcontrolname='addtionalInfo1']");
 	By Addinfor2					= By.xpath("//textarea[@formcontrolname='addtionalInfo2']");
 	By Addipobutton					= By.xpath("//button[@class='btn btn-md btn-primary float-right ng-star-inserted']");
+	By Sno							= By.xpath("(//tr[@class='ng-untouched ng-pristine ng-invalid ng-star-inserted'])[2]/.//td[text()='2']");
 	By Deletebutton					= By.xpath("//button[@class='btn btn-outline-danger btn-sm']");
-	By SelectIPO					= By.xpath("//ng-select[@formcontrolname='ipoId']");
+	By Delepopyes					= By.xpath("//button[text()='Yes']");
+	By Delepopno					= By.xpath("//div[@class='swal2-actions']/.//button[text()='No'][2]");
+	By IPOdropdown					= By.xpath("//ng-select[@formcontrolname='ipoId']");
+	By SelectIpo					= By.xpath("//div[@id='abfcdfc8b80d-0']");
 	By duedate						= By.xpath("//input[@formcontrolname='dueDate']");
 	By qtyrequired					= By.xpath("//input[@formcontrolname='qtyrequired']");
 	By qtyusefromstock				= By.xpath("//input[@formcontrolname='qtyUsefromStock']");
@@ -248,48 +258,120 @@ public class CreatePOforIPO_pages extends DriverFactory {
 		
 	}
 
-	public void Select_Fabric_Type() {
-		// TODO Auto-generated method stub
+	public void Select_Fabric_Type() throws Throwable {
+		utilities.webDriverWait(driver, FabricType);
+		driver.findElement(FabricType).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, selectFabricType);
+		driver.findElement(selectFabricType).click();
+		utilities.MinimumWait(driver);
+		try {
+            Robot robot = new Robot();
+		
+            robot.delay(2000);
+		
+            int scrollAmount = 5;
+            for (int i = 0; i < scrollAmount; i++) {
+                robot.keyPress(KeyEvent.VK_UP);
+                robot.keyRelease(KeyEvent.VK_UP);
+                robot.delay(500);
+            }
+
+        } catch (AWTException e) {
+            e.printStackTrace();
+        } 
+	}
+
+	public void Select_Fabric_Name() throws Throwable {
+	
+        utilities.MaximumWait(driver);
+		utilities.webDriverWait(driver, FabricName);
+		driver.findElement(FabricName).click();
+		utilities.MinimumWait(driver);
+		try {
+            Robot robot = new Robot();
+		
+            robot.delay(2000);
+		
+            int scrollAmount = 5;
+            for (int i = 0; i < scrollAmount; i++) {
+                robot.keyPress(KeyEvent.VK_UP);
+                robot.keyRelease(KeyEvent.VK_UP);
+                robot.delay(500);
+            }
+
+        } catch (AWTException e) {
+            e.printStackTrace();
+        } 
+		
+		utilities.MinimumWait(driver);
+		utilities.webDriverWait(driver, SelectFabric);
+		driver.findElement(SelectFabric).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void Select_Fabric_Name() {
-		// TODO Auto-generated method stub
+	public void verify_that_content_is_prepopulating_after_selecting_the_fabric_name() throws Throwable {
+		utilities.webDriverWait(driver, Content);
+		driver.findElement(Content).click();
+		WebElement content = driver.findElement(Content);
+		String CONTENT = content.getAttribute("value");
+		System.out.println("Content is prepopulated based on the selection of fabric:  " + CONTENT);
+		utilities.MinimumWait(driver);
+		
 		
 	}
 
-	public void verify_that_content_is_prepopulating_after_selecting_the_fabric_name() {
-		// TODO Auto-generated method stub
+	public void verify_that_count_and_construction_is_prepopulated_or_not() throws Throwable {
+		 utilities.webDriverWait(driver, CountandConstruction);
+		 driver.findElement(CountandConstruction).click();
+		 WebElement countandconstruction = driver.findElement(CountandConstruction);
+		 String CountConstruction = countandconstruction.getAttribute("value");
+		 System.out.println("count and construction is prepopulated based on the selection of fabric:  " +  CountConstruction);
+		 utilities.MinimumWait(driver);
+		 
 		
 	}
 
-	public void verify_that_count_and_construction_is_prepopulated_or_not() {
-		// TODO Auto-generated method stub
+	public void verify_that_GSM_is_prepopulated_or_not() throws Throwable {
+		utilities.webDriverWait(driver, GSM);
+		driver.findElement(GSM).click();
+		WebElement gsm = driver.findElement(GSM);
+		String Gsm = gsm.getAttribute("value");
+		System.out.println("GSM is prepopulating based on the selection of fabirc:  " + Gsm);
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void verify_that_GSM_is_prepopulated_or_not() {
-		// TODO Auto-generated method stub
+	public void verify_that_cuttable_width_is_prepopulated_or_not() throws Throwable {
+		utilities.webDriverWait(driver, cuttablewidth);
+		driver.findElement(cuttablewidth).click();
+		WebElement CuttableWidth = driver.findElement(cuttablewidth);
+		String Width = CuttableWidth.getAttribute("value");
+		System.out.println("Cuttable width is prepopulated based on the selection of fabric:  " + Width);
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void verify_that_cuttable_width_is_prepopulated_or_not() {
-		// TODO Auto-generated method stub
+	public void Select_color_for_the_fabric() throws Throwable {
+		utilities.webDriverWait(driver, Color);
+		driver.findElement(Color).click();
+		WebElement COLOR = driver.findElement(Color);
+		String displaycolor = COLOR.getAttribute("value");
+		System.out.println("Griege color is prepopulated for the Griege process:  " +  displaycolor);
+		utilities.MinimumWait(driver);
+		
 		
 	}
 
-	public void Select_color_for_the_fabric() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public void verify_the_qty_required_is_displaying_with_value_based_on_the_selected_process_fabric_and_color() {
-		// TODO Auto-generated method stub
+	public void verify_the_qty_required_is_displaying_with_value_based_on_the_selected_process_fabric_and_color() throws Throwable {
+		utilities.webDriverWait(driver, QtyRequired);
 		
 	}
 
 	public void verify_the_qty_available_in_stock_is_displaying_if_qty_is_available() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
@@ -298,58 +380,165 @@ public class CreatePOforIPO_pages extends DriverFactory {
 		
 	}
 
-	public void verify_that_qty_allowed_is_displaying_with_default_value_or_not() {
-		// TODO Auto-generated method stub
+	public void verify_that_qty_allowed_is_displaying_with_default_value_or_not() throws Throwable {
+		utilities.webDriverWait(driver, QtyAllowed);
+		WebElement Quantity = driver.findElement(QtyAllowed);
+		String QTYallowed = Quantity.getAttribute("value");
+		System.out.println("Displaying default value as:  "  +  QTYallowed);
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(QtyAllowed).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(QtyAllowed).sendKeys("5.5");
+		utilities.MinimumWait(driver);
+		System.out.println("Displaying default value as:  "  +  QTYallowed);
 		
 	}
 
-	public void verify_that_currency_is_displaying_with_value() {
-		// TODO Auto-generated method stub
+	public void verify_that_currency_is_displaying_with_value() throws Throwable {
+		utilities.webDriverWait(driver, Currency);
+		WebElement Curr = driver.findElement(Currency);
+				String CURRENCY = Curr.getAttribute("value");
+				System.out.println("Currency is displaying based on the selection of supplier:  " + CURRENCY);
+				utilities.MinimumWait(driver);
 		
 	}
 
-	public void verify_that_rate_is_displaying_with_value_or_not() {
-		// TODO Auto-generated method stub
+	public void verify_that_rate_is_displaying_with_value_or_not() throws Throwable {
+		utilities.webDriverWait(driver, Rate);
+		driver.findElement(Rate).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(Rate).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(Rate).sendKeys("8");
+		utilities.MinimumWait(driver);
+		WebElement rt = driver.findElement(Rate);
+		String RATE = rt.getAttribute("Value");
+		System.out.println("Displaying the rate: "+ RATE);
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void verify_that_UOM_is_displayed_or_user_should_select() {
-		// TODO Auto-generated method stub
+	public void verify_that_UOM_is_displayed_or_user_should_select() throws Throwable {
+		utilities.webDriverWait(driver, UOM);
+		driver.findElement(UOM).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, SelectUOM);
+		driver.findElement(SelectUOM).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void Enter_the_data_in_L_Short_If_Any_field() {
-		// TODO Auto-generated method stub
+	public void Enter_the_data_in_L_Short_If_Any_field() throws Throwable {
+		utilities.webDriverWait(driver, LShortIfAny);
+		driver.findElement(LShortIfAny).sendKeys("Comments");
+		utilities.MinimumWait(driver);
+		
+		WebElement L = driver.findElement(LShortIfAny);
+		String Lshort = L.getAttribute("value");
+		System.out.println("Displaying comments:  " + Lshort);
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void Enter_the_data_in_Additional_Information1_field() {
-		// TODO Auto-generated method stub
+	public void Enter_the_data_in_Additional_Information1_field() throws Throwable {
+		utilities.webDriverWait(driver, Addinfor1);
+		driver.findElement(Addinfor1).sendKeys("Additional Information");
+		utilities.MinimumWait(driver);
+		
+		WebElement Addinformation1 = driver.findElement(Addinfor1);
+		String Addinf = Addinformation1.getAttribute("value");
+		System.out.println("Displaying comments:  " + Addinf);
+		utilities.MinimumWait(driver);	
 		
 	}
 
-	public void Enter_the_data_in_Additional_Information2_field() {
-		// TODO Auto-generated method stub
+	public void Enter_the_data_in_Additional_Information2_field() throws Throwable {
+		utilities.webDriverWait(driver, Addinfor2);
+		driver.findElement(Addinfor2).sendKeys("Additional Information 2");
+		utilities.MinimumWait(driver);
+		
+		WebElement Addinformation2 = driver.findElement(Addinfor1);
+		String Addinf = Addinformation2.getAttribute("value");
+		System.out.println("Displaying comments:  " + Addinf);
+		utilities.MinimumWait(driver);	
 		
 	}
 
-	public void verify_that_Add_IPO_button_is_enable_or_not() {
-		// TODO Auto-generated method stub
+	public void verify_that_Add_IPO_button_is_enable_or_not() throws Throwable {
+		utilities.webDriverWait(driver, Addipobutton);
+		driver.findElement(Addipobutton).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Sno);
+		driver.findElement(Sno).click();
+		WebElement Newrecord = driver.findElement(Sno);
+		String NEW = Newrecord.getText();
+		System.out.println("Displaying new record:  " + NEW);
+		utilities.MinimumWait(driver);
+		try {
+            Robot robot = new Robot();
+		
+            robot.delay(2000);
+		
+            int scrollAmount = 5;
+            for (int i = 0; i < scrollAmount; i++) {
+                robot.keyPress(KeyEvent.VK_UP);
+                robot.keyRelease(KeyEvent.VK_UP);
+                robot.delay(500);
+            }
+
+        } catch (AWTException e) {
+            e.printStackTrace();
+        } 
 		
 	}
 
-	public void click_on_delete_icon_is_able_to_click_or_not() {
-		// TODO Auto-generated method stub
+	public void click_on_delete_icon_is_able_to_click_or_not() throws Throwable {
+		utilities.webDriverWait(driver, Deletebutton);
+		driver.findElement(Deletebutton).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Delepopyes);
+		driver.findElement(Delepopyes).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Addipobutton);
+		driver.findElement(Addipobutton).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Deletebutton);
+		driver.findElement(Deletebutton).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Delepopno);
+		driver.findElement(Delepopno).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Deletebutton);
+		driver.findElement(Deletebutton).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Delepopyes);
+		driver.findElement(Delepopyes).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void select_the_IPO_from_the_dropdown_list() {
-		// TODO Auto-generated method stub
+	public void select_the_IPO_from_the_dropdown_list() throws Throwable {
+		utilities.webDriverWait(driver, IPOdropdown);
+		driver.findElement(IPOdropdown).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, SelectIpo);
+		driver.findElement(SelectIpo).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
 	public void verify_the_due_date_is_displayed_as_current_date() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 

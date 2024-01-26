@@ -212,10 +212,7 @@ public class County_steps1 {
 
      }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 }
 
 }

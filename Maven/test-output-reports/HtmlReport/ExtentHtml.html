@@ -44,6 +44,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -53,15 +54,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-<<<<<<< HEAD
-			<span class='label blue darken-3 suite-start-time'>Jan 25, 2024 05:44:20 pm</span>
-=======
-<<<<<<< HEAD
-			<span class='label blue darken-3 suite-start-time'>Jan 25, 2024 04:24:52 pm</span>
-=======
-			<span class='label blue darken-3 suite-start-time'>Jan 25, 2024 03:41:52 pm</span>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+			<span class='label blue darken-3 suite-start-time'>Jan 26, 2024 06:30:12 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -77,6 +70,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -88,13 +83,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-<<<<<<< HEAD
-					<li><a href='#'>@tag</a></li>
-					<li><a href='#'>@RevisedMUWorking1</a></li>
-=======
 					<li><a href='#'>@FeatureGroup</a></li>
 					<li><a href='#'>@CreatePOforIPOSmoke</a></li>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -135,10 +125,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -149,10 +139,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -165,32 +155,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-<<<<<<< HEAD
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>100</span> step(s) passed</span>
-=======
-<<<<<<< HEAD
-                    <span class='tooltipped' data-position='top' data-tooltip='57.692%'><span class='strong'>15</span> step(s) passed</span>
-=======
-                    <span class='tooltipped' data-position='top' data-tooltip='68.75%'><span class='strong'>55</span> step(s) passed</span>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+                    <span class='tooltipped' data-position='top' data-tooltip='90.426%'><span class='strong'>85</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-<<<<<<< HEAD
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
-=======
-<<<<<<< HEAD
-                    <span class='strong tooltipped' data-position='top' data-tooltip='7.692%'>2</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='34.615%'>9</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='34.615%'>0</span> others
-=======
-                    <span class='strong tooltipped' data-position='top' data-tooltip='3.75%'>3</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='27.5%'>22</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='27.5%'>0</span> others
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+                    <span class='strong tooltipped' data-position='top' data-tooltip='2.128%'>2</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='7.447%'>7</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='7.447%'>0</span> others
                 </div>
             </div>
         </div>
@@ -208,21 +178,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-<<<<<<< HEAD
-						<span class='test-name'>Adding the processes for a fabric</span>
-						<span class='test-time'>Jan 25, 2024 04:24:59 pm</span>
-=======
 						<span class='test-name'>Verification and Validation of Create PO for Fabric</span>
-<<<<<<< HEAD
-						<span class='test-time'>Jan 25, 2024 05:44:29 pm</span>
-						<span class='test-status right pass'>pass</span>
-=======
-						<span class='test-time'>Jan 25, 2024 03:41:56 pm</span>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+						<span class='test-time'>Jan 26, 2024 06:30:17 pm</span>
 						<span class='test-status right fail'>fail</span>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -231,43 +191,18 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='fail'>
 	<div class='category-list'>
-<<<<<<< HEAD
-		<span class='category label'>@tag</span>
-		<span class='category label'>@RevisedMUWorking1</span>
-=======
 		<span class='category label'>@FeatureGroup</span>
 		<span class='category label'>@CreatePOforIPOSmoke</span>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	</div>
-<<<<<<< HEAD
-	<span class='duration right label'>0h 1m 32s+785ms</span>
-=======
-<<<<<<< HEAD
-	<span class='duration right label'>0h 2m 33s+40ms</span>
-=======
-	<span class='duration right label'>0h 1m 28s+256ms</span>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+	<span class='duration right label'>0h 5m 58s+258ms</span>
 	<div class="bdd-test">
-<<<<<<< HEAD
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: To Test the user able to navigate to create po for ipo screen and submit the po for ipo</div>
-=======
-<<<<<<< HEAD
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Submit the fabric sheet details in Revised fabric sheet</div>
-	</div>
-	<ul class='steps'>
-		<li test-id='4' class='node when pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.user_navigates_to_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When user navigates to Login page</div>
-=======
 		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: To Test the user able to navigate to create po for ipo screen and submit the po for ipo</div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	</div>
 	<ul class='steps'>
 		<li test-id='4' class='node when pass' status='pass'>
 			<div class="step-name" title="Stepdefinition1.Login_steps.User_navigates_to_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When User navigates to Login page</div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 			<div class="node-step"></div>
 		</li>
 		<li test-id='5' class='node * pass' status='pass'>
@@ -277,65 +212,6 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-<<<<<<< HEAD
-		<li test-id='6' class='node given pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.RevisedMUWorkingSteps.Login_with_the_Production_Manager()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Login with the Production Manager</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='7' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded2.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='8' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.Click_on_the_SignIn_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the SignIn button</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='9' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded3.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='10' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.RevisedMUWorkingSteps.Navigate_to_Revised_Fabric_Sheet_Working_screen()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Navigate to Revised Fabric Sheet Working screen</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='11' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded4.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='12' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.click_on_Styles_expansion()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on Styles expansion</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='13' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded5.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='14' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.click_on_clear_filter_icon()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on clear filter icon</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='15' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded6.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='16' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.NewFabricSheetWorking_Steps.click_on_filter_icon()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on filter icon</div>
-=======
 		<li test-id='6' class='node then pass' status='pass'>
 			<div class="step-name" title="Stepdefinition1.Login_steps.User_enters_the_username_and_password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then User enters the username and password</div>
 			<div class="node-step"></div>
@@ -393,7 +269,6 @@
 		</li>
 		<li test-id='16' class='node and pass' status='pass'>
 			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.click_on_Generate_PO()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on Generate PO</div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 			<div class="node-step"></div>
 		</li>
 		<li test-id='17' class='node * pass' status='pass'>
@@ -403,42 +278,9 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-<<<<<<< HEAD
-		<li test-id='18' class='node then fail' status='fail'>
-			<div class="step-name" title="Stepdefinition1.RevisedMUWorkingSteps.Select_a_Buyer_from_dropdown_list()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Then Select a Buyer from dropdown list</div>
-			<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Select Buyer']"}
-  (Session info: chrome=120.0.6099.225)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e1c1f14f9384783f21c52a19fb251852
-*** Element info: {Using=xpath, value=//div[text()='Select Buyer']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.RevisedMUWorkingPages.Select_a_Buyer_from_dropdown_list(RevisedMUWorkingPages.java:168)
-	at Stepdefinition1.RevisedMUWorkingSteps.Select_a_Buyer_from_dropdown_list(RevisedMUWorkingSteps.java:224)
-	at ✽.Select a Buyer from dropdown list(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/RevisedMUWorking.feature:15)
-</textarea>
-=======
 		<li test-id='18' class='node then pass' status='pass'>
 			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.click_on_Create_PO_for_Fabric()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on Create PO for Fabric</div>
 			<div class="node-step"></div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 		</li>
 		<li test-id='19' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
@@ -447,81 +289,54 @@ Session ID: e1c1f14f9384783f21c52a19fb251852
 			</ul>
 			<div class="node-step"></div>
 		</li>
-<<<<<<< HEAD
-		<li test-id='20' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.RevisedMUWorkingSteps.Select_a_Season_from_dropdown_list()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Select a Season from dropdown list</div>
-			<div class="node-step">Step skipped</div>
-=======
 		<li test-id='20' class='node and pass' status='pass'>
 			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Verify_the_Create_PO_for_IPO_screen_is_displayed_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Verify the Create PO for IPO screen is displayed or not</div>
 			<div class="node-step"></div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 		</li>
-		<li test-id='22' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.RevisedMUWorkingSteps.Select_a_Status_from_dropdown_list()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Select a Status from dropdown list</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='21' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded9.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-<<<<<<< HEAD
-		<li test-id='24' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.Enter_an_IPO_name_in_the_Search_by_Buyer_Style_or_IPO_textbox_field()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Enter an IPO name in the Search by Buyer Style or IPO textbox field</div>
-			<div class="node-step">Step skipped</div>
-=======
 		<li test-id='22' class='node and pass' status='pass'>
 			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Select_Type_of_Order()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select Type of Order</div>
 			<div class="node-step"></div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 		</li>
-		<li test-id='26' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.Click_on_the_Filt_Apply_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Click on the Filt_Apply button</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='23' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded10.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-<<<<<<< HEAD
-		<li test-id='28' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.Click_on_Filter_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Click on Filter button</div>
-			<div class="node-step">Step skipped</div>
-=======
 		<li test-id='24' class='node then pass' status='pass'>
 			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_PO_Date_is_displaying_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verify the PO Date is displaying or not</div>
 			<div class="node-step"></div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 		</li>
-		<li test-id='30' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_data_is_getting_cleared_or_not_on_OnClick_the_Reset_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Verify whether data is getting cleared or not on OnClick the Reset button</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='25' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded11.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-<<<<<<< HEAD
-		<li test-id='32' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.Verify_whether_the_user_is_able_to_Select_an_IPO_from_the_Menu_list()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Verify whether the user is able to Select an IPO from the Menu list</div>
-			<div class="node-step">Step skipped</div>
-=======
 		<li test-id='26' class='node given pass' status='pass'>
 			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Verify_the_PO_Number_us_displaying_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Verify the PO Number us displaying or not</div>
 			<div class="node-step"></div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 		</li>
-		<li test-id='34' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.Click_on_the_Style_ShowHide_button_for_closing_the_menu_list()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Click on the Style ShowHide button for closing the menu list</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='27' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded12.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
-<<<<<<< HEAD
-		<li test-id='36' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.Verify_the_count_of_the_Fabric_records_under_the_Fabric_Details_grid()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then Verify the count of the Fabric records under the Fabric Details grid</div>
-			<div class="node-step">Step skipped</div>
-=======
 		<li test-id='28' class='node when pass' status='pass'>
 			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Enter_Deliver_To_details_and_select_from_the_suggestions()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter Deliver To details and select from the suggestions</div>
 			<div class="node-step"></div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 		</li>
-<<<<<<< HEAD
-		<li test-id='39' class='node * fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-=======
 		<li test-id='29' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
 			<ul class='screenshots right'>
@@ -819,7 +634,6 @@ Driver info: driver.version: RemoteWebDriver
 			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Enter_the_data_in_Additional_Information2_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Enter the data in Additional Information2 field</div>
 			<div class="node-step"></div>
 		</li>
-<<<<<<< HEAD
 		<li test-id='83' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
 			<ul class='screenshots right'>
@@ -849,9 +663,34 @@ Driver info: driver.version: RemoteWebDriver
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='88' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.select_the_IPO_from_the_dropdown_list()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And select the IPO from the dropdown list</div>
-			<div class="node-step"></div>
+		<li test-id='88' class='node and fail' status='fail'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.select_the_IPO_from_the_dropdown_list()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>And select the IPO from the dropdown list</div>
+			<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='abfcdfc8b80d-0']"}
+  (Session info: chrome=121.0.6167.86)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4441b068549bbdd7d16709c31a1f4c50
+*** Element info: {Using=xpath, value=//div[@id='abfcdfc8b80d-0']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.CreatePOforIPO_pages.select_the_IPO_from_the_dropdown_list(CreatePOforIPO_pages.java:535)
+	at Stepdefinition1.CreatePOforIPO_Steps.select_the_IPO_from_the_dropdown_list(CreatePOforIPO_Steps.java:205)
+	at ✽.select the IPO from the dropdown list(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/CreatePOforIPO.feature:48)
+</textarea>
 		</li>
 		<li test-id='89' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
@@ -860,108 +699,47 @@ Driver info: driver.version: RemoteWebDriver
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='90' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_due_date_is_displayed_as_current_date()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the due date is displayed as current date</div>
-			<div class="node-step"></div>
+		<li test-id='90' class='node and skip' status='skip'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_due_date_is_displayed_as_current_date()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the due date is displayed as current date</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='91' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded44.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
+		<li test-id='92' class='node and skip' status='skip'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quatity_is_displayed_as_greater_than_zero_in_quantity_field()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the quatity is displayed as greater than zero in quantity field</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='92' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quatity_is_displayed_as_greater_than_zero_in_quantity_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the quatity is displayed as greater than zero in quantity field</div>
-			<div class="node-step"></div>
+		<li test-id='94' class='node and skip' status='skip'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_use_from_stock_field()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the quantity is displayed as greater than zero in qty use from stock field</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='93' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded45.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
+		<li test-id='96' class='node and skip' status='skip'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_to_be_bought_field()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the quantity is displayed as greater than zero in qty to be bought field</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='94' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_use_from_stock_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the quantity is displayed as greater than zero in qty use from stock field</div>
-			<div class="node-step"></div>
+		<li test-id='98' class='node and skip' status='skip'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_rate_value_is_prepopulated_in_grid_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the rate value is prepopulated in grid or not</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='95' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded46.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
+		<li test-id='100' class='node and skip' status='skip'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_Amount_is_displayed_after_selecting_the_ipo_in_grid()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And verify the Amount is displayed after selecting the ipo in grid</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='96' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_to_be_bought_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the quantity is displayed as greater than zero in qty to be bought field</div>
-			<div class="node-step"></div>
+		<li test-id='102' class='node then skip' status='skip'>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.click_on_save_button_and_verify_that_save_button_is_enable_after_inserting_the_data_in_mandatory_fields()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then click on save button and verify that save button is enable after inserting the data in mandatory fields</div>
+			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='97' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded47.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='98' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_rate_value_is_prepopulated_in_grid_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the rate value is prepopulated in grid or not</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='99' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded48.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='100' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.verify_the_Amount_is_displayed_after_selecting_the_ipo_in_grid()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And verify the Amount is displayed after selecting the ipo in grid</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='101' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded49.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='102' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.click_on_save_button_and_verify_that_save_button_is_enable_after_inserting_the_data_in_mandatory_fields()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on save button and verify that save button is enable after inserting the data in mandatory fields</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='103' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded50.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-=======
 		<li test-id='105' class='node * fail' status='fail'>
 			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.86)
+			<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83749057bac6da5fee684cefc0facf15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
 	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:26)
 </textarea>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 		</li>
 	</ul>
 </div>
@@ -1009,13 +787,13 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 					<div class='category-heading'>
 						<span class='category-name'>@FeatureGroup</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -1029,40 +807,14 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 								</thead>
 								<tbody>
 									<tr>
-<<<<<<< HEAD
-										<td>Jan 25, 2024 05:44:29 pm</td>
-=======
-<<<<<<< HEAD
-										<td>Jan 25, 2024 04:24:59 pm</td>
-										<td class='linked' test-id='1'>Adding the processes for a fabric</td>
-=======
-										<td>Jan 25, 2024 03:41:56 pm</td>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+										<td>Jan 26, 2024 06:30:17 pm</td>
 										<td class='linked' test-id='1'>Verification and Validation of Create PO for Fabric</td>
-<<<<<<< HEAD
-										<td><span class='test-status pass'>pass</span></td>
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 										<td><span class='test-status fail'>fail</span></td>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 									</tr>
 									<tr>
-<<<<<<< HEAD
-										<td>Jan 25, 2024 05:44:29 pm</td>
-=======
-<<<<<<< HEAD
-										<td>Jan 25, 2024 04:24:59 pm</td>
-										<td class='linked' test-id='2'>Submit the fabric sheet details in Revised fabric sheet</td>
-=======
-										<td>Jan 25, 2024 03:41:56 pm</td>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+										<td>Jan 26, 2024 06:30:17 pm</td>
 										<td class='linked' test-id='2'>To Test the user able to navigate to create po for ipo screen and submit the po for ipo</td>
-<<<<<<< HEAD
-										<td><span class='test-status pass'>pass</span></td>
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 										<td><span class='test-status fail'>fail</span></td>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 									</tr>
 								</tbody>
 							</table>
@@ -1071,19 +823,15 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-<<<<<<< HEAD
-						<span class='category-name'>@RevisedMUWorking1</span>
-=======
 						<span class='category-name'>@CreatePOforIPOSmoke</span>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -1097,22 +845,9 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 								</thead>
 								<tbody>
 									<tr>
-<<<<<<< HEAD
-										<td>Jan 25, 2024 05:44:29 pm</td>
-=======
-<<<<<<< HEAD
-										<td>Jan 25, 2024 04:24:59 pm</td>
-										<td class='linked' test-id='2'>Submit the fabric sheet details in Revised fabric sheet</td>
-=======
-										<td>Jan 25, 2024 03:41:56 pm</td>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+										<td>Jan 26, 2024 06:30:17 pm</td>
 										<td class='linked' test-id='2'>To Test the user able to navigate to create po for ipo screen and submit the po for ipo</td>
-<<<<<<< HEAD
-										<td><span class='test-status pass'>pass</span></td>
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 										<td><span class='test-status fail'>fail</span></td>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 									</tr>
 								</tbody>
 							</table>
@@ -1128,9 +863,6 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 		</div>
 	</div>
 </div>
-<<<<<<< HEAD
-<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
-=======
 <!-- category view --><div id='exception-view' class='view hide'>
 	<section id='controls'>
 		<div class='controls grey lighten-4'>
@@ -1151,7 +883,6 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-<<<<<<< HEAD
 						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
 						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
 					</div>
@@ -1167,23 +898,21 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 25, 2024 04:25:39 pm</td>
-										<td class='linked' test-id='18'>Then Select a Buyer from dropdown list</td>
+										<td>Jan 26, 2024 06:34:28 pm</td>
+										<td class='linked' test-id='88'>And select the IPO from the dropdown list</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Select Buyer']"}
-  (Session info: chrome=120.0.6099.225)
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='abfcdfc8b80d-0']"}
+  (Session info: chrome=121.0.6167.86)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e1c1f14f9384783f21c52a19fb251852
-*** Element info: {Using=xpath, value=//div[text()='Select Buyer']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59523}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4441b068549bbdd7d16709c31a1f4c50
+*** Element info: {Using=xpath, value=//div[@id='abfcdfc8b80d-0']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -1194,9 +923,9 @@ Session ID: e1c1f14f9384783f21c52a19fb251852
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.RevisedMUWorkingPages.Select_a_Buyer_from_dropdown_list(RevisedMUWorkingPages.java:168)
-	at Stepdefinition1.RevisedMUWorkingSteps.Select_a_Buyer_from_dropdown_list(RevisedMUWorkingSteps.java:224)
-	at ✽.Select a Buyer from dropdown list(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/RevisedMUWorking.feature:15)
+	at Page.CreatePOforIPO_pages.select_the_IPO_from_the_dropdown_list(CreatePOforIPO_pages.java:535)
+	at Stepdefinition1.CreatePOforIPO_Steps.select_the_IPO_from_the_dropdown_list(CreatePOforIPO_Steps.java:205)
+	at ✽.select the IPO from the dropdown list(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/CreatePOforIPO.feature:48)
 </textarea>
 										</td>
 									</tr>
@@ -1222,12 +951,12 @@ Session ID: e1c1f14f9384783f21c52a19fb251852
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 25, 2024 04:27:32 pm</td>
-										<td class='linked' test-id='39'>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</td>
+										<td>Jan 26, 2024 06:36:15 pm</td>
+										<td class='linked' test-id='105'>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</td>
 										<td>
 											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -1235,122 +964,6 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
 	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
 	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:26)
-=======
-						<span class='exception-name'>org.openqa.selenium.NoSuchWindowException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 25, 2024 03:43:23 pm</td>
-										<td class='linked' test-id='59'>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.86)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83749057bac6da5fee684cefc0facf15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at util.Utilities.getByteScreenshot(Utilities.java:74)
-	at Stepdefinition1.Hooks.as(Hooks.java:40)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Jan 25, 2024 03:43:25 pm</td>
-										<td class='linked' test-id='105'>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.86)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83749057bac6da5fee684cefc0facf15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:26)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.WebDriverException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 25, 2024 03:43:24 pm</td>
-										<td class='linked' test-id='104'>Stepdefinition1.Hooks.CloseBrowser()</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=121.0.6167.86)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.153', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 83749057bac6da5fee684cefc0facf15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
-	at Stepdefinition1.Hooks.CloseBrowser(Hooks.java:47)
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 </textarea>
 										</td>
 									</tr>
@@ -1369,7 +982,6 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 	</div>
 </div>
 <!-- exception view --><div id='dashboard-view' class='view hide'>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -1389,57 +1001,25 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-<<<<<<< HEAD
-					<div class='panel-lead'>100</div>
-=======
-<<<<<<< HEAD
-					<div class='panel-lead'>26</div>
-=======
-					<div class='panel-lead'>80</div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+					<div class='panel-lead'>94</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-<<<<<<< HEAD
-					<div class='panel-lead'>Jan 25, 2024 05:44:20 pm</div>
-=======
-<<<<<<< HEAD
-					<div class='panel-lead'>Jan 25, 2024 04:24:52 pm</div>
-=======
-					<div class='panel-lead'>Jan 25, 2024 03:41:52 pm</div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+					<div class='panel-lead'>Jan 26, 2024 06:30:12 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-<<<<<<< HEAD
-			 		<div class='panel-lead'>Jan 25, 2024 05:46:03 pm</div>
-=======
-<<<<<<< HEAD
-			 		<div class='panel-lead'>Jan 25, 2024 04:27:32 pm</div>
-=======
-			 		<div class='panel-lead'>Jan 25, 2024 03:43:25 pm</div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+			 		<div class='panel-lead'>Jan 26, 2024 06:36:16 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-<<<<<<< HEAD
-					<div class='panel-lead'>0h 1m 42s+466ms</div>
-=======
-<<<<<<< HEAD
-					<div class='panel-lead'>0h 2m 39s+820ms</div>
-=======
-					<div class='panel-lead'>0h 1m 33s+83ms</div>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+					<div class='panel-lead'>0h 6m 3s+267ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1455,37 +1035,21 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 							<th>Passed %</th>
 						</tr>
 						<tr>
-<<<<<<< HEAD
-							<td>@tag</td>
-=======
 							<td>@FeatureGroup</td>
-<<<<<<< HEAD
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 							<td>0</td>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									50%
+									0%
 							</td>
 						</tr>
 						<tr>
-<<<<<<< HEAD
-							<td>@RevisedMUWorking1</td>
-=======
 							<td>@CreatePOforIPOSmoke</td>
-<<<<<<< HEAD
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 							<td>0</td>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -1500,75 +1064,38 @@ Session ID: 83749057bac6da5fee684cefc0facf15
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 1,
-				passChild: 1,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-<<<<<<< HEAD
-				exceptionsChild: 0,
-				grandChildCount: 100,
-				passGrandChild: 100,
-				failGrandChild: 0,
-=======
 				exceptionsChild: 1,
-<<<<<<< HEAD
-				grandChildCount: 26,
-				passGrandChild: 15,
+				grandChildCount: 94,
+				passGrandChild: 85,
 				failGrandChild: 2,
-=======
-				grandChildCount: 80,
-				passGrandChild: 55,
-				failGrandChild: 3,
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-<<<<<<< HEAD
-				skipGrandChild: 0,
-=======
-<<<<<<< HEAD
-				skipGrandChild: 9,
-=======
-				skipGrandChild: 22,
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+				skipGrandChild: 7,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-<<<<<<< HEAD
-				exceptionsGrandChild: 0,
-=======
-<<<<<<< HEAD
-				exceptionsGrandChild: 11,
-=======
-				exceptionsGrandChild: 25,
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+				exceptionsGrandChild: 9,
 			};
 		</script>
 		<script>
 			var timeline = {
-<<<<<<< HEAD
-			        "Verification and Validation of Create PO for Fabric":92.785
-=======
-<<<<<<< HEAD
-			        "Adding the processes for a fabric":153.04
-=======
-			        "Verification and Validation of Create PO for Fabric":88.256
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+			        "Verification and Validation of Create PO for Fabric":358.258
 			};
 		</script>
 	
