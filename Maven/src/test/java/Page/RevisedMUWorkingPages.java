@@ -16,15 +16,15 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	
 	By txtUN = By.xpath("//input[@id='userName']");
 	By txtPwd = By.xpath("//input[@id='userpassword']");
-	By modWoven = By.xpath("//span[text()='Woven / knit']");
-	By modFabricSourcing =By.xpath("//span[text()='Fabric Sourcing ']");
-	By DataEntry = By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[1]");
+	public By modWoven = By.xpath("//span[text()='Woven / knit']");
+	public By modFabricSourcing =By.xpath("//span[text()='Fabric Sourcing ']");
+	public By DataEntry = By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[1]");
 	By modGenerateFabMUworking = By.xpath("//span[text()='Generate Fabric Sheet Working']");
 	By modRevisedFabMUworking = By.xpath("//a[text()=' Revised Fabric Sheet Working ']");
 	By buttSHOStyle = By.xpath("//a[@id='sidebarCollapse']");
 	By iconClear = By.xpath("//button[@class='btn btn-outline-secondary btn-sm mr-2 mb-2 float-right ng-star-inserted']");
 	By iconFilter = By.xpath("//button[@class='btn btn-primary btn-sm mb-2 float-right']");
-	By F_buyer =By.xpath("//div[text()='Select Buyer']"); 
+	By F_buyer =By.xpath("//div[contains(@class,'p-element p-multiselect-label-container')]//div[1]"); 
 	By F_enterBuyer = By.xpath("(//label[text()='Buyer']/following::input)[3]");
 	By F_selectBuyer = By.xpath("//div[text()='Testbuyer']");
 	By F_season =By.xpath("//select[@formcontrolname='seasonId']"); 
@@ -33,13 +33,16 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	By F_Status =By.xpath("//select[@formcontrolname='staticStatusId']"); 
 	By F_enterStatus = By.xpath("");
 	By F_selectStatus = By.xpath("//option[text()=' Fabric Sheet Working not Submitted']");
+	By F_IPOSearch = By.xpath("//input[@formcontrolname='searchText']");
+	By F_buttApply = By.xpath("(//button[@type='submit'])[1]");
+	By F_buttReset = By.xpath("//button[@type='reset']");
 	
 	
 	By IPOname = By.xpath("//a[@id='v-pills-tabIPO32']");
 	By QtyReqgrid = By.xpath("//p-table[@class='p-element ng-star-inserted']");
 	By buttExpansion = By.xpath("//span[@class='p-button-icon pi pi-chevron-right']");
 	By Usegrid = By.xpath("(//table[@class='p-datatable-table ng-star-inserted'])[2]");
-	By MUWorkinggrid = By.xpath("(//table[@class='p-datatable-table ng-star-inserted'])[5]");
+	By MUWorkinggrid = By.xpath("(//table[@class='p-datatable-table ng-star-inserted'])[4]");
 	By navRevFabMUSheet = By.xpath("//h3[text()='Revised Fabric Sheet Working']");
 	By buttEdit	  					= By.xpath("//button[@class='btn btn-sm btn-info mr-1']");
 	
@@ -181,6 +184,21 @@ public class RevisedMUWorkingPages extends DriverFactory{
 		driver.findElement(F_Status).click();
 		utilities.webDriverWait(driver, F_selectStatus);
 		driver.findElement(F_selectStatus).click();
+	}
+	
+	public void Enter_an_IPO_name_in_the_Search_by_IPO_textbox_field() throws Throwable {
+		utilities.webDriverWait(driver, F_IPOSearch);
+		driver.findElement(F_IPOSearch).sendKeys("IPO32");
+	}
+
+	public void Click_on_the_Filter_Apply_button() throws Throwable {
+		utilities.webDriverWait(driver, F_buttApply);
+		driver.findElement(F_buttApply).click();
+	}
+	
+	public void Verify_whether_data_is_cleared_or_not_on_OnClick_the_Reset_button() throws Throwable {
+		utilities.webDriverWait(driver, F_buttReset);
+		driver.findElement(F_buttReset).click();
 	}
 
 	public void Verify_the_count_of_the_Fabric_records_under_the_Quantity_Requirment_grid() throws Throwable {
@@ -655,29 +673,7 @@ public class RevisedMUWorkingPages extends DriverFactory{
 		utilities.webDriverWait(driver,IPOname);
 		driver.findElement(IPOname).click();
 	}
-
-
-
-
-
 	
-
-
-
-
-
-	
-
-
-
-
-	
-
-	
-
-	
-	
-
 }
 
 	

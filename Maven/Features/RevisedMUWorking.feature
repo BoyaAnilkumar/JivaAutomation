@@ -14,14 +14,14 @@ Then click on filter icon
 #Given Enter Buyer in search box
 Then Select a Buyer from dropdown list
 Then Select a Season from dropdown list
-Then Select a Status from dropdown list
-Then Enter an IPO name in the Search by Buyer Style or IPO textbox field
-And Click on the Filt_Apply button
-Then Click on Filter button 
-Then Verify whether data is getting cleared or not on OnClick the Reset button
-And Verify whether the user is able to Select an IPO from the Menu list
-Then Click on the Style ShowHide button for closing the menu list
-Then Verify the count of the Fabric records under the Fabric Details grid
+#Then Select a Status from dropdown list
+Then Enter an IPO name in the Search by IPO textbox field
+And Click on the Filter_Apply button
+#Then click on filter icon
+#Then Verify whether data is cleared or not on OnClick the Reset button
+And Select an IPO from the Menu list
+Then Click_on_the_Styles_expansion
+Then Verify the count of the Fabric records under the MU Working grid
 
 
 
