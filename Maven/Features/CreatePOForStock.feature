@@ -34,7 +34,6 @@ Feature: Title of your feature
   Then Select a Cuttable Width
   Then Select a Color
   When Verify whether the Qty Required field is displaying 0 by default
- 
   Given Enter Residual Shrinkage value
   Given Enter Process Loss value
   And Verify whether by default 3 is displayed in the Qty Allowed field
