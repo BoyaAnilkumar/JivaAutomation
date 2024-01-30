@@ -64,8 +64,8 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	By Deletebutton					= By.xpath("//button[@class='btn btn-outline-danger btn-sm']");
 	By Delepopyes					= By.xpath("//button[text()='Yes']");
 	By Delepopno					= By.xpath("//div[@class='swal2-actions']/.//button[text()='No'][2]");
-	By IPOdropdown					= By.xpath("//ng-select[@formcontrolname='ipoId']");
-	By SelectIpo					= By.xpath("//div[@id='abfcdfc8b80d-0']");
+	By IPOdropdown					= By.xpath("(//ng-select[@formcontrolname='ipoId'])[1]");
+	By SelectIpo					= By.xpath("//span[text()='0809-MulDept (RS:4)']");
 	By duedate						= By.xpath("//input[@formcontrolname='dueDate']");
 	By qtyrequired					= By.xpath("//input[@formcontrolname='qtyrequired']");
 	By qtyusefromstock				= By.xpath("//input[@formcontrolname='qtyUsefromStock']");
@@ -529,6 +529,9 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	public void select_the_IPO_from_the_dropdown_list() throws Throwable {
 		utilities.webDriverWait(driver, IPOdropdown);
 		driver.findElement(IPOdropdown).click();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(IPOdropdown).sendKeys("MUL");
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, SelectIpo);
