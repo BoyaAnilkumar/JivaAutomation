@@ -3,7 +3,10 @@ package Page;
 import java.text.SimpleDateFormat;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import freemarker.core.ParseException;
 import io.cucumber.java.it.Date;
@@ -12,6 +15,8 @@ import util.Utilities;
 
 public class CreatePOForStockPage extends DriverFactory{
 	
+	private static final WebElement dropdown = null;
+
 	Utilities utilities = new Utilities();
 	
 	public By modWoven = By.xpath("//span[text()='Woven / knit']");
@@ -72,7 +77,9 @@ public class CreatePOForStockPage extends DriverFactory{
 	By DueOn = By.xpath("//input[@formcontrolname='dueDate']");
 	By Qty = By.xpath("//input[@formcontrolname='qtyrequired']");
 	By Sampling = By.xpath("//input[@formcontrolname='Sampling']");
+	By Total 	= By.xpath("//td[text()='Total']");
 	By butt_Save = By.xpath("(//button[@type='submit'])[1]");
+	By SaveToaster = By.xpath("//h2[text()='Create PO For Fabric Saved Successfully']");
 	By butt_Reset = By.xpath("//button[text()=' Reset']");
 	By a = By.xpath("");
 	
@@ -91,6 +98,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(modGeneratePO).click();
 		utilities.webDriverWait(driver, modCreatePOStk);
 		driver.findElement(modCreatePOStk).click();
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -99,6 +107,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(Ordertype).click();
 		utilities.webDriverWait(driver, sec_Order);
 		driver.findElement(sec_Order).click();
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -114,6 +123,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		String formattedDate = outputFormat.format(date);
 
 		System.out.println("Print the PO Date - " + formattedDate);
+		utilities.MinimumWait(driver);
 		
 	}
 
@@ -124,6 +134,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		WebElement PO = driver.findElement(POnum);
 		String POno = PO.getAttribute("value");
 		System.out.println("Print the PO number - " +POno);
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -132,12 +143,14 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(Buyer).click();
 		utilities.webDriverWait(driver, sec_Buyer);
 		driver.findElement(sec_Buyer).click();
+		utilities.MinimumWait(driver);
 	}
 
 
 	public void Enter_the_Style() throws Throwable {
 		utilities.webDriverWait(driver, Style);
 		driver.findElement(Style).sendKeys("Style1");
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -147,6 +160,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(Delivery).sendKeys("Jiva");
 		utilities.webDriverWait(driver, sec_Delivery);
 		driver.findElement(sec_Delivery).click();
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -156,6 +170,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		WebElement add = driver.findElement(Dev_Address);
 		String DeliverAdd = add.getAttribute("value");
 		System.out.println("Address of the selected factory - "+DeliverAdd);
+		utilities.MinimumWait(driver);
 		
 		
 	}
@@ -167,6 +182,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		WebElement GST = driver.findElement(Dev_GST);
 		String DeliverGST = GST.getAttribute("value");
 		System.out.println("GST number of the selected factory - "+DeliverGST);
+		utilities.MinimumWait(driver);
 
 	}
 
@@ -177,6 +193,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(Supplier).sendKeys("Sou");
 		utilities.webDriverWait(driver, sec_Supplier);
 		driver.findElement(sec_Supplier).click();
+		utilities.MinimumWait(driver);
 
 	}
 
@@ -187,6 +204,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		WebElement add = driver.findElement(Sup_Address);
 		String SuppAdd = add.getAttribute("value");
 		System.out.println("Address of the selected Supplier - "+SuppAdd);
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -196,6 +214,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		WebElement GST = driver.findElement(Sup_GST);
 		String SuppGST = GST.getAttribute("value");
 		System.out.println("GST number of the selected Supplier - "+SuppGST);
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -205,30 +224,44 @@ public class CreatePOForStockPage extends DriverFactory{
 		WebElement PT = driver.findElement(PaymentTerm);
 		String PtyTerms = PT.getAttribute("value");
 		System.out.println("Selected Supplier Payment Terms pre-populated value - "+PtyTerms);
+		utilities.MinimumWait(driver);
 	}
 	
 	public void Verify_whether_the_user_is_able_to_edit_the_Payment_Terms() throws Throwable {
 		utilities.webDriverWait(driver,PaymentTerm);
 		driver.findElement(PaymentTerm).clear();
 		driver.findElement(PaymentTerm).sendKeys("updated to 56%");
+		utilities.MinimumWait(driver);
 	}
 
 
 	public void Verify_whether_the_Supplier_Delivery_Terms_are_prepopulated_or_not() throws Throwable {
 		utilities.webDriverWait(driver,DeliveryTerm);
-		driver.findElement(DeliveryTerm).isDisplayed();
+		
+		 WebElement dropdownElement = driver.findElement(DeliveryTerm);
+	        Select dropdown = new Select(dropdownElement);
+
+	        WebElement selectedOption = dropdown.getFirstSelectedOption();
+	        String defaultSelectedValue = selectedOption.getText();
+
+			System.out.println("By default the Currency displayed in the field is - "+ defaultSelectedValue);
+//		driver.findElement(DeliveryTerm).isDisplayed();
+		
 		WebElement DT = driver.findElement(DeliveryTerm);
 		String DelivTerms = DT.getText();
-		System.out.println("Selected Supplier Delivery Terms pre-populated value - "+DelivTerms);
+		System.out.println("Selected Supplier Delivery Terms pre-populated value - "+ DelivTerms);
+		utilities.MinimumWait(driver);
 	}
 	public void Verify_whether_the_user_is_able_to_edit_the_Delivery_Terms() throws Throwable {
 		utilities.webDriverWait(driver,sec_DeliveryTerm);
 		driver.findElement(sec_DeliveryTerm).click();
+		utilities.MinimumWait(driver);
 	}
 
 	public void Enter_Lead_Time_value() throws Throwable {
 		utilities.webDriverWait(driver,LeadTime);
-		driver.findElement(LeadTime).sendKeys("5");		
+		driver.findElement(LeadTime).sendKeys("5");	
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -237,14 +270,20 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(Process).click();
 		utilities.webDriverWait(driver,sec_Process);
 		driver.findElement(sec_Process).click();
+		utilities.MinimumWait(driver);
 	}
 
 
 	public void Select_a_Fabric_Type() throws Throwable {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("scrollBy(0, 500)");
+		utilities.MinimumWait(driver);
+		
 		utilities.webDriverWait(driver,FabricType);
 		driver.findElement(FabricType).click();
 		utilities.webDriverWait(driver,sec_FabricType);
 		driver.findElement(sec_FabricType).click();
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -254,6 +293,7 @@ public class CreatePOForStockPage extends DriverFactory{
 //		driver.findElement(FabricName).sendKeys("raw");
 		utilities.webDriverWait(driver,sec_FabricName);
 		driver.findElement(sec_FabricName).click();
+		
 	}
 
 
@@ -262,6 +302,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(Content).click();
 		utilities.webDriverWait(driver,sec_Content);
 		driver.findElement(sec_Content).click();
+		utilities.MinimumWait(driver);
 
 	}
 
@@ -271,6 +312,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(Count).click();
 		utilities.webDriverWait(driver,sec_Count);
 		driver.findElement(sec_Count).click();
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -279,6 +321,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(GSM).click();
 		utilities.webDriverWait(driver,sec_GSM);
 		driver.findElement(sec_GSM).click();
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -287,7 +330,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(CuttableWdt).click();
 		utilities.webDriverWait(driver,sec_CuttableWdt);
 		driver.findElement(sec_CuttableWdt).click();
-
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -296,6 +339,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(Color).click();
 		utilities.webDriverWait(driver,sec_Color);
 		driver.findElement(sec_Color).click();
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -304,6 +348,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		WebElement Qreq = driver.findElement(QtyReq);
 		String QtyRequired = Qreq.getAttribute("value");
 		System.out.println("By default the Qty Required value is - "+QtyRequired);
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -311,19 +356,22 @@ public class CreatePOForStockPage extends DriverFactory{
 		utilities.webDriverWait(driver,QtyReq);
 		WebElement Qreq = driver.findElement(QtyReq);
 		String QtyRequired = Qreq.getAttribute("value");
-		System.out.println("After entering the Stock Qty, the Qty Required value is - "+QtyRequired);
+		System.out.println("After entering the Stock Qty, the Qty Required value is - "+ QtyRequired);
+		utilities.MinimumWait(driver);
 	}
 
 
 	public void Enter_Residual_Shrinkage_value() throws Throwable {
 		utilities.webDriverWait(driver,Residual);
 		driver.findElement(Residual).sendKeys("12");
+		utilities.MinimumWait(driver);
 		
 	}
 	
 	public void Enter_Process_Loss_value() throws Throwable {
 		utilities.webDriverWait(driver,ProcessLoss);
 		driver.findElement(ProcessLoss).sendKeys("6");
+		utilities.MinimumWait(driver);
 	}
 
 	public void Verify_whether_by_default_3_is_displayed_in_the_Qty_Allowed_field() throws Throwable {
@@ -331,6 +379,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		WebElement Qtyper = driver.findElement(QtyAllowed);
 		String QtyAllowper = Qtyper.getAttribute("value");
 		System.out.println("By default the +/-Qty Allowed percentage value is - "+QtyAllowper);
+		utilities.MinimumWait(driver);
 
 	}
 
@@ -342,19 +391,30 @@ public class CreatePOForStockPage extends DriverFactory{
 		WebElement Qtyper = driver.findElement(QtyAllowed);
 		String QtyAllowper = Qtyper.getAttribute("value");
 		System.out.println("Updated +/-Qty Allowed percentage value is - "+QtyAllowper);
+		utilities.MinimumWait(driver);
 		
 	}
 
 
 	public void Select_a_Currency() throws Throwable {
 		utilities.webDriverWait(driver,Currency);
-		WebElement Curr = driver.findElement(Currency);
-		String currency = Curr.getText();
-		System.out.println("By default the Currency displayed in the field is - "+currency);
+		
+        WebElement dropdownElement = driver.findElement(Currency);
+        Select dropdown = new Select(dropdownElement);
+
+        WebElement selectedOption = dropdown.getFirstSelectedOption();
+        String defaultSelectedValue = selectedOption.getText();
+
+		System.out.println("By default the Currency displayed in the field is - "+ defaultSelectedValue);
+		utilities.MinimumWait(driver);
+		
+		
 		utilities.webDriverWait(driver,sec_Currency);
+		driver.findElement(sec_Currency).click();
 		WebElement UCurr = driver.findElement(sec_Currency);
 		String Ucurrency = UCurr.getText();
 		System.out.println("Updated currency type in the Currency field is - "+Ucurrency);
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -362,32 +422,45 @@ public class CreatePOForStockPage extends DriverFactory{
 		utilities.webDriverWait(driver,Rate);
 		driver.findElement(Rate).clear();
 		driver.findElement(Rate).sendKeys("8");
+		utilities.MinimumWait(driver);
 	}
 
 
 	public void Select_an_UOM() throws Throwable {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("scrollBy(0, 500)");
+		utilities.MinimumWait(driver);
+		
 		utilities.webDriverWait(driver,UOM);
 		driver.findElement(UOM).click();
 		utilities.webDriverWait(driver,sec_UOM);
 		driver.findElement(sec_UOM).click();
+		utilities.MinimumWait(driver);
 	}
 
 
 	public void Enter_remarks_in_the_L_Short_If_Any_field() throws Throwable {
 		utilities.webDriverWait(driver,LShort);
 		driver.findElement(LShort).sendKeys("Remarks entered in the L-Short field");
+		utilities.MinimumWait(driver);
 	}
 
 
 	public void Enter_remarks_in_the_Addl_Information_1_field() throws Throwable {
 		utilities.webDriverWait(driver,AddlInfo1);
 		driver.findElement(AddlInfo1).sendKeys("Remarks entered in the Additional Information 1 field");
+		utilities.MinimumWait(driver);
 	}
 
 
 	public void Enter_remarks_in_the_Addl_Information_2_field() throws Throwable {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("scrollBy(0, 500)");
+		utilities.MinimumWait(driver);
+		
 		utilities.webDriverWait(driver,AddInfo2);
 		driver.findElement(AddInfo2).sendKeys("Remarks entered in the Additional Information 2 field");
+		utilities.MinimumWait(driver);
 	}
 
 
@@ -397,26 +470,60 @@ public class CreatePOForStockPage extends DriverFactory{
 		WebElement due = driver.findElement(DueOn);
 		String Duedate = due.getAttribute("value");
 		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+Duedate);
+		utilities.MinimumWait(driver);
 	}
 
 
 	public void Enter_the_Quantity_of_the_Fabric() throws Throwable {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("scrollBy(0, 500)");
+		utilities.MinimumWait(driver);
 		utilities.webDriverWait(driver,Qty);
+		driver.findElement(Qty).clear();
 		driver.findElement(Qty).sendKeys("3400");
+		utilities.MinimumWait(driver);
+		utilities.webDriverWait(driver, Total);
+		driver.findElement(Total).click();
+		utilities.MinimumWait(driver);
 	}
 
 
 	public void Click_on_Reset_button_in_the_Create_PO_For_Stock_screen() throws Throwable {
 		utilities.webDriverWait(driver,butt_Reset);
 		driver.findElement(butt_Reset).click();
+		utilities.MinimumWait(driver);
 	}
 
 
 	public void Click_on_Save_button_in_the_Create_PO_For_Stock_screen() throws Throwable {
 		utilities.webDriverWait(driver,butt_Save);
 		driver.findElement(butt_Save).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, SaveToaster);
+		WebElement saveButton = driver.findElement(SaveToaster);
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(saveButton).perform();
+	        
+        WebElement successToaster = driver.findElement(SaveToaster);
+        String expectedToasterMessage = "Create PO For Fabric Saved Successfully"; 
+
+        String actualToasterMessage = successToaster.getText();
+
+        if (actualToasterMessage.equals(expectedToasterMessage)) {
+            System.out.println("Toaster message is correct: " + actualToasterMessage);
+        } else {
+            System.out.println("Toaster message is incorrect: " + actualToasterMessage);
+        }
 	}
 
 	
 
 }
+
+
+
+
+
+

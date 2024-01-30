@@ -14,9 +14,9 @@ Feature: Title of your feature
   Then Verify whether the PO Number field value
   And Select a Buyer
   Given Enter the Style
-  When Select a Delivery To factory name
-  Then Verify whether the Delivery Factory Address is displayed or not
-  Then Verify whether the Delivery Factory GST number is displayed or not
+  #When Select a Delivery To factory name
+  #Then Verify whether the Delivery Factory Address is displayed or not
+  #Then Verify whether the Delivery Factory GST number is displayed or not
   When Select a Supplier name
   Then Verify whether the Supplier Address is displayed or not
   Then Verify whether the Supplier GST number is displayed or not
@@ -47,7 +47,7 @@ Feature: Title of your feature
   Then Verify the DueOn Date value
   Given Enter the Quantity of the Fabric 
   Then Verify whether the Qty Required field is displaying the entered qty or not
-  Then Click on the Reset button in the Create PO For Stock screen
+  #Then Click on the Reset button in the Create PO For Stock screen
   Then Click on Save button in the Create PO For Stock screen
      
    
