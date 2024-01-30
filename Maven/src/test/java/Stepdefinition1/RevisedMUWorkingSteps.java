@@ -231,7 +231,26 @@ public void Select_a_Season_from_dropdown_list() throws Throwable {
 public void Select_a_Status_from_dropdown_list() throws Throwable {
 	RMUW.Select_a_Status_from_dropdown_list();
 }
-
+@Then ("^Enter an IPO name in the Search by IPO textbox field$")
+public void Enter_an_IPO_name_in_the_Search_by_IPO_textbox_field() throws Throwable {
+	RMUW.Enter_an_IPO_name_in_the_Search_by_IPO_textbox_field();
+}
+@And ("^Click on the Filter_Apply button$")
+public void Click_on_the_Filter_Apply_button() throws Throwable {
+	RMUW.Click_on_the_Filter_Apply_button();
+}
+@Then ("^Verify whether data is cleared or not on OnClick the Reset button$")
+public void Verify_whether_data_is_cleared_or_not_on_OnClick_the_Reset_button() throws Throwable {
+	RMUW.Verify_whether_data_is_cleared_or_not_on_OnClick_the_Reset_button();
+}
+//@Then ("^Click_on_the_Styles_expansion$")
+//public void Click_on_the_Styles_expansion() {
+//	RMUW.Click_on_the_Styles_expansion();
+//}
+@Then ("^Verify the count of the Fabric records under the MU Working grid$")
+public void Verify_the_count_of_the_Fabric_records_under_the_MU_Working_grid() throws Throwable {
+	RMUW.Verify_the_count_of_the_Fabric_records_under_the_MU_Working_grid();
+}
 
 }
 	

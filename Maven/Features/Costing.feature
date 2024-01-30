@@ -151,7 +151,28 @@ Feature: Title of your features
     Then Click on the View For Print button
     Then Click on the Cancel in the Print form
     Then Click on the Download As Excel button Import
+
+
+
+
+
+
+
+    Then Enter the Cost 
+
+
+
+
+
+
+
     Then Enter the Cost
+
+
+
+
+
+
 
     #Cutting grid
     Given To check whether the Overhead Cost is displaying a value or not
@@ -159,17 +180,50 @@ Feature: Title of your features
     Given To check whether the Garment Cutting Cost is displaying a value or not
     Given Enter Garment Cutting Cost value
 
+
+
+
+
+
+	#Computer Embriodiery
+
+
+
+
     #Computer Embriodiery
+
+
+
+
 
     Given Enter No of Stiches
     Given Enter Rate
     Given Enter Overhead
     Given Enter Addl Charges
 
+
+
+
+
+
+   # Adda Embriodiery
+
+
+   
+
+
+
     #Adda Embriodiery
     Given Enter Adda Hours
     Given Enter Adda Rate
     Given Enter Adda Overhead
+
+
+
+   # Manual Embriodiery
+
+
+
 
     #Manual Embriodiery
     Given Enter Manual Hours
@@ -188,18 +242,47 @@ Feature: Title of your features
     Given Enter a value in Rate
     When To verify whether the user is able to click the Description dropdown field or not
     Then Select a value from the dropdown field
+
+
+
+
+
+    Given Enter the Stitching Cost value 
+
+   # Finishing and PAcking
+
+
+
     Given Enter the Stitching Cost value
+
+
+
+
+
 
     #Finishing and PAcking
     Then Click on the Add Process button under Finising and Packing grid
     Then Select a Finishing and Packing process1
     Given Enter the Finishing and Packing cost1
 
+
+  #  Washing / GArment process
+
+
+
+
+
     #Washing / GArment process
     Then Check the Yes or No toggle button status
     Then Click on the Add Process button when the toggle button is in enabled state
     Then Select a Washing Process1
     Given Enter the Washing Cost1
+
+
+   # testing and inspection
+
+
+
 
 
     #testing and inspection
@@ -210,6 +293,13 @@ Feature: Title of your features
     Given Enter the value in the Inspection Charges Total Cost field
     Given Enter the value in the Inspection Charges Cost field
 
+
+  #  Freight And Clearance
+
+
+
+
+
     #Freight And Clearance
     Given Enter the value in the NO of PO by Sea field
     Given Enter the value in the NO of PO by Air field
@@ -218,6 +308,13 @@ Feature: Title of your features
     Given Enter the value in the Cartage Total Cost field
     Given Enter the value in the Cartage Cost field
     Given Enter the value in the Additional Buffer field
+
+
+   # TOTAL DIRECT EXPENSE
+
+
+
+
 
     #TOTAL DIRECT EXPENSE
     Given Enter the value in the Rejection field
@@ -228,12 +325,29 @@ Feature: Title of your features
     Given Enter the value in the Price Quoted To Buyer field
 
 
+
+  #  Submit Buttons
+
+
+
+
+
+
+
+
     #Submit Buttons
     Then Click on the PSave button
     Then Click on the Submit button
     Then Click on the View For Print button
     Then Click on the Cancel in the Print form
     Then Click on the Download As Excel button
+
+
+  #  Import
+
+
+
+
 
     #Import
     Then Click on Import button

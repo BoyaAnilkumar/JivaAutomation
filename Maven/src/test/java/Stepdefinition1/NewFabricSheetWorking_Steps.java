@@ -316,7 +316,7 @@ public class NewFabricSheetWorking_Steps {
 	}
 	
 	@And("^Enter the value in MU percentage field$")
-	public void Enter_the_value_in_MU_percentage_field() {
+	public void Enter_the_value_in_MU_percentage_field() throws Throwable {
 		NewFabricSheetWorkingpage.Enter_the_value_in_MU_percentage_field();
 	}
 	

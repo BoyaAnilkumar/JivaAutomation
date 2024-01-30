@@ -1,7 +1,6 @@
 package Runner;
 
 import org.junit.runner.RunWith;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
@@ -14,7 +13,8 @@ import io.cucumber.junit.CucumberOptions;
 				  features = "Features",
 
 				  monochrome = true,
-				  tags ="@CreatePOforIPOSmoke")
+
+		          tags ="@CreatePOForStock1")
 
 
 public class TestRunner {

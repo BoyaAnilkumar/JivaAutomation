@@ -122,9 +122,9 @@ public class RevisedFabricSheetPages extends DriverFactory {
 		driver.findElement(txtPwd).sendKeys(prop.getProperty("password"));
 		
 	}
-	public void Click_on_the_SignIn_button() {
+	public void Click_on_the_SignIn_button() throws Throwable {
 		driver.findElement(btnSignIn).click();
-		
+		Thread.sleep(10000);
 	}
 	public void user_navigates_to_Revised_Fabric_Sheet() throws Throwable {
 		utilities.webDriverWait(driver, Woven);
