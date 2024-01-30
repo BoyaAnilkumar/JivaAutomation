@@ -157,13 +157,19 @@ Feature: Title of your features
 
 
 
+
     Then Enter the Cost 
 
 
 
 
 
+
+
     Then Enter the Cost
+
+
+
 
 
 
@@ -178,10 +184,16 @@ Feature: Title of your features
 
 
 
+
 	#Computer Embriodiery
 
 
+
+
     #Computer Embriodiery
+
+
+
 
 
     Given Enter No of Stiches
@@ -190,10 +202,16 @@ Feature: Title of your features
     Given Enter Addl Charges
 
 
+
+
+
+
    # Adda Embriodiery
 
 
    
+
+
 
     #Adda Embriodiery
     Given Enter Adda Hours
@@ -201,7 +219,10 @@ Feature: Title of your features
     Given Enter Adda Overhead
 
 
+
    # Manual Embriodiery
+
+
 
 
     #Manual Embriodiery
@@ -225,11 +246,17 @@ Feature: Title of your features
 
 
 
+
     Given Enter the Stitching Cost value 
 
    # Finishing and PAcking
 
+
+
     Given Enter the Stitching Cost value
+
+
+
 
 
 
@@ -238,7 +265,10 @@ Feature: Title of your features
     Then Select a Finishing and Packing process1
     Given Enter the Finishing and Packing cost1
 
+
   #  Washing / GArment process
+
+
 
 
 
@@ -248,7 +278,10 @@ Feature: Title of your features
     Then Select a Washing Process1
     Given Enter the Washing Cost1
 
+
    # testing and inspection
+
+
 
 
 
@@ -260,7 +293,10 @@ Feature: Title of your features
     Given Enter the value in the Inspection Charges Total Cost field
     Given Enter the value in the Inspection Charges Cost field
 
+
   #  Freight And Clearance
+
+
 
 
 
@@ -273,7 +309,10 @@ Feature: Title of your features
     Given Enter the value in the Cartage Cost field
     Given Enter the value in the Additional Buffer field
 
+
    # TOTAL DIRECT EXPENSE
+
+
 
 
 
@@ -286,7 +325,13 @@ Feature: Title of your features
     Given Enter the value in the Price Quoted To Buyer field
 
 
+
   #  Submit Buttons
+
+
+
+
+
 
 
 
@@ -297,7 +342,10 @@ Feature: Title of your features
     Then Click on the Cancel in the Print form
     Then Click on the Download As Excel button
 
+
   #  Import
+
+
 
 
 

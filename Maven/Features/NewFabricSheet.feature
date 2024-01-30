@@ -73,6 +73,7 @@ Then User enters the username and password
 
 
 
+
  Then Select the Buyer
 
 And Click on the Season Field
@@ -91,6 +92,8 @@ And Click on the Season Field
 
 
 
+
+
  Then Select the Buyer
  And Click on the Season Field
  And Select the Season
@@ -98,14 +101,18 @@ And Click on the Season Field
  And Click on the Apply button
 
 
+
  And Click on the Season Field
  And Select the Season
  When Search the IPO
  And Click on the Apply button
 
 
+
+
  #And Click on the Reset button
  #And Select the IPO and Style
+
 
 
 
@@ -115,6 +122,8 @@ And Click on the Season Field
 
 
 
+
+
  And Click on the Season Field
  And Select the Season
  When Search the IPO
@@ -126,12 +135,15 @@ And Click on the Season Field
 
 
 
+
  And Click on the Reset button
 
 
 
 
  And Select the IPO and Style
+
+
  And Select the IPO and Style
  
  @NewFabricSheet123 
@@ -182,6 +194,9 @@ And Click on the Season Field
 
 
 
+
+
+
  And Click on the Add New Fabric button
  And Select the Is Nominated Check box
  When User select the Supplier name
@@ -207,12 +222,18 @@ And Click on the Season Field
 
 
 
+
+
+
  #And Click on the cancel button
  #And Click on the Save button
  #And After click on the Save button the validation msg is displaying or not
  #And Click on the Submit to Fabric Team button
  #And Click on the Delete Icon
  #When Click on the Import Fabric details button
+
+
+
 
 
 
@@ -321,6 +342,9 @@ And Click on the Season Field
 
 
 
+
+
+
  And Click on the Close Icon in Import Fabric details page
  And Click on the Close button
  And Click on the Import button
@@ -383,12 +407,24 @@ And Click on the Season Field
  And Update the Garment Average Details
  And Update the Quantity Requirment details
 
+
+
+
 #And Update the Quantity Requirment details
+
+
+
 
  #And Update the Quantity Requirment details
 
+
+
+
  #And Click on the Cancel button
  #And Click on the Submit button
+
+
+
 
 
 
