@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 
 				  monochrome = true,
 
-		          tags ="@CreatePOForStock1")
+		          tags ="@POmastersheetsmoke")
 
 
 public class TestRunner {

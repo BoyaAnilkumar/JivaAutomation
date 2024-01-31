@@ -45,7 +45,7 @@ utilities.webDriverWait(driver, SignIn);
 }
 public void User_enters_the_username_and_password() throws Throwable {
 utilities.webDriverWait(driver, username);
-driver.findElement(username).sendKeys("admin");
+driver.findElement(username).sendKeys("lokesh");
 driver.findElement(password).sendKeys("Abcd@123");
 utilities.MediumWait(driver);
 	

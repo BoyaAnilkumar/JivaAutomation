@@ -16,7 +16,7 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	Utilities utilities = new Utilities();
 	
 	By FabricSourcingmodule			= By.xpath("//span[text()='Fabric Sourcing ']");
-	By DataEntry 					= By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[4]");
+	By DataEntry 					= By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[1]");
 	By GeneratePO 					= By.xpath("(//span[text()='Generate PO'])[1]");
 	By CreatePOforIPO				= By.xpath("//li[@class='ng-star-inserted mm-active']/.//a[text()=' Create PO for IPO# ']");
 	By screenname					= By.xpath("//h3[@class='f_s_25 f_w_700 dark_text mr_30']");

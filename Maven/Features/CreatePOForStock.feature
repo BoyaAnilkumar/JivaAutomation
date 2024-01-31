@@ -1,7 +1,6 @@
 
 @FeatureGroup
-Feature: Title of your feature
-  I want to use this template for my feature file
+Feature: I want to use this template for my feature file
 
   @CreatePOForStock1
   Scenario: Adding a PO Stock record 
