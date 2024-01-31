@@ -18,7 +18,7 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	CreatePOForStockPage CPOS = new CreatePOForStockPage();
 	
 	By FabricSourcingmodule			= By.xpath("//span[text()='Fabric Sourcing ']");
-	By DataEntry 					= By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[4]");
+	By DataEntry 					= By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[1]");
 	By GeneratePO 					= By.xpath("(//span[text()='Generate PO'])[1]");
 	By CreatePOforIPO				= By.xpath("//li[@class='ng-star-inserted mm-active']/.//a[text()=' Create PO for IPO# ']");
 	By screenname					= By.xpath("//h3[@class='f_s_25 f_w_700 dark_text mr_30']");
@@ -67,6 +67,7 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	By Delepopyes					= By.xpath("//button[text()='Yes']");
 	By Delepopno					= By.xpath("//div[@class='swal2-actions']/.//button[text()='No'][2]");
 	By IPOdropdown					= By.xpath("(//ng-select[@formcontrolname='ipoId'])[1]");
+	By insertIPO					= By.xpath("//input[@autocomplete='a58c532d4feb']");
 	By SelectIpo					= By.xpath("//span[text()='0809-MulDept (RS:4)']");
 	By duedate						= By.xpath("//input[@formcontrolname='dueDate']");
 	By qtyrequired					= By.xpath("//input[@formcontrolname='qtyrequired']");
@@ -531,11 +532,20 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	public void select_the_IPO_from_the_dropdown_list() throws Throwable {
 		utilities.webDriverWait(driver, IPOdropdown);
 		driver.findElement(IPOdropdown).click();
+<<<<<<< HEAD
 //		utilities.MinimumWait(driver);
 		Thread.sleep(10000);
 //		driver.findElement(IPOdropdown).sendKeys("MUL");
 //		utilities.MinimumWait(driver);
 		Thread.sleep(5000);
+=======
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, insertIPO);
+		driver.findElement(insertIPO).sendKeys("MUL");
+		utilities.MinimumWait(driver);
+		
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 		utilities.webDriverWait(driver, SelectIpo);
 		driver.findElement(SelectIpo).click();
 		utilities.MinimumWait(driver);

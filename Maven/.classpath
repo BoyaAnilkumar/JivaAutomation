@@ -36,6 +36,7 @@
 			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/selenium-java-4.17.0/lib/auto-service-annotations-1.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/selenium-java-4.17.0/lib/byte-buddy-1.14.11.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/selenium-java-4.17.0/lib/checker-qual-3.41.0.jar"/>
@@ -60,5 +61,8 @@
 	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/selenium-java-4.17.0/lib/opentelemetry-sdk-metrics-1.34.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/selenium-java-4.17.0/lib/opentelemetry-sdk-trace-1.34.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/selenium-java-4.17.0/lib/opentelemetry-semconv-1.23.1-alpha.jar"/>
+=======
+	<classpathentry kind="lib" path="C:/Users/Calibrage26/Downloads/selenium-server-standalone-3.141.59.jar"/>
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
