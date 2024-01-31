@@ -206,37 +206,37 @@ public class CreatePOforIPO_Steps {
 	}
 	
 	@And("^verify the due date is displayed as current date$")
-	public void verify_the_due_date_is_displayed_as_current_date() {
+	public void verify_the_due_date_is_displayed_as_current_date() throws Throwable {
 		CreatePOforIPO_pages.verify_the_due_date_is_displayed_as_current_date();
 	}
 	
 	@And("^verify the quatity is displayed as greater than zero in quantity field$")
-	public void verify_the_quatity_is_displayed_as_greater_than_zero_in_quantity_field() {
+	public void verify_the_quatity_is_displayed_as_greater_than_zero_in_quantity_field() throws Throwable {
 		CreatePOforIPO_pages.verify_the_quatity_is_displayed_as_greater_than_zero_in_quantity_field();
 	}
 	
 	@And("^verify the quantity is displayed as greater than zero in qty use from stock field$")
-	public void verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_use_from_stock_field() {
+	public void verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_use_from_stock_field() throws Throwable {
 		CreatePOforIPO_pages.verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_use_from_stock_field();
 	}
 	
 	@And("^verify the quantity is displayed as greater than zero in qty to be bought field$")
-	public void verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_to_be_bought_field() {
+	public void verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_to_be_bought_field() throws Throwable {
 		CreatePOforIPO_pages.verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_to_be_bought_field();
 	}
 	
 	@And("^verify the rate value is prepopulated in grid or not$")
-	public void verify_the_rate_value_is_prepopulated_in_grid_or_not() {
+	public void verify_the_rate_value_is_prepopulated_in_grid_or_not() throws Throwable {
 		CreatePOforIPO_pages.verify_the_rate_value_is_prepopulated_in_grid_or_not();
 	}
 	
 	@And("^verify the Amount is displayed after selecting the ipo in grid$")
-	public void verify_the_Amount_is_displayed_after_selecting_the_ipo_in_grid() {
+	public void verify_the_Amount_is_displayed_after_selecting_the_ipo_in_grid() throws Throwable {
 		CreatePOforIPO_pages.verify_the_Amount_is_displayed_after_selecting_the_ipo_in_grid();
 	}
 	
 	@Then("^click on save button and verify that save button is enable after inserting the data in mandatory fields$")
-	public void click_on_save_button_and_verify_that_save_button_is_enable_after_inserting_the_data_in_mandatory_fields() {
+	public void click_on_save_button_and_verify_that_save_button_is_enable_after_inserting_the_data_in_mandatory_fields() throws Throwable {
 		CreatePOforIPO_pages.click_on_save_button_and_verify_that_save_button_is_enable_after_inserting_the_data_in_mandatory_fields();
 	}
 }

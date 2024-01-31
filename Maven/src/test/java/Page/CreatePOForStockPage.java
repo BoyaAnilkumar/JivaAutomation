@@ -1,5 +1,8 @@
 package Page;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 
 import org.openqa.selenium.By;
@@ -13,10 +16,11 @@ import util.Utilities;
 public class CreatePOForStockPage extends DriverFactory{
 	
 	Utilities utilities = new Utilities();
+	RevisedMUWorkingPages RMUW = new RevisedMUWorkingPages();
 	
-	public By modWoven = By.xpath("//span[text()='Woven / knit']");
-	public By modFabricSourcing =By.xpath("//span[text()='Fabric Sourcing ']");
-	public By DataEntry = By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[1]");
+//	public By modWoven = By.xpath("//span[text()='Woven / knit']");
+//	public By modFabricSourcing =By.xpath("//span[text()='Fabric Sourcing ']");
+//	public By DataEntry = By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[1]");
 	By modGeneratePO = By.xpath("(//span[text()='Generate PO'])[1]");
 	By modCreatePOStk = By.xpath("(//a[text()=' Create PO for Stock '])[1]");
 	By Ordertype = By.xpath("//select[@formcontrolname='typeofPo']");
@@ -54,7 +58,7 @@ public class CreatePOForStockPage extends DriverFactory{
 	By sec_CuttableWdt = By.xpath("//option[text()=' 8']");
 	By Color = By.xpath("//ng-select[@formcontrolname='poColorId']");
 	By sec_Color = By.xpath("//span[text()='Alabaster']");
-	By QtyReq = By.xpath("//input[@formcontrolname='totalqtyRequired']");
+	By QtyReq = By.xpath("//input[@class='form-control ng-pristine ng-valid ng-touched']");
 	By AvailableStkQty = By.xpath("//input[@formcontrolname='totalqtystock']");
 	By Residual = By.xpath("//input[@formcontrolname='residualShrinkage']");
 	By ProcessLoss = By.xpath("//input[@formcontrolname='processLoss']");
@@ -69,24 +73,24 @@ public class CreatePOForStockPage extends DriverFactory{
 	By AddInfo2 = By.xpath("//textarea[@formcontrolname='addtionalInfo2']");
 //	By butt_AddIPO = By.xpath("//button[@class='btn btn-md btn-primary float-right ng-star-inserted']");
 	By Stockgrid = By.xpath("//thead[@class='p-datatable-thead']");
-	By DueOn = By.xpath("//input[@formcontrolname='dueDate']");
-	By Qty = By.xpath("//input[@formcontrolname='qtyrequired']");
+	public By DueOn = By.xpath("//input[@formcontrolname='dueDate']");
+	public By Qty = By.xpath("//input[@formcontrolname='qtyrequired']");
 	By Sampling = By.xpath("//input[@formcontrolname='Sampling']");
-	By butt_Save = By.xpath("(//button[@type='submit'])[1]");
+	public By butt_Save = By.xpath("(//button[@type='submit'])[1]");
 	By butt_Reset = By.xpath("//button[text()=' Reset']");
 	By a = By.xpath("");
 	
 	
 
 	public void Navigate_to_Create_PO_For_Stock_screen() throws Throwable {
-		utilities.webDriverWait(driver, modWoven);
-		driver.findElement(modWoven).click();
+		utilities.webDriverWait(driver, RMUW.modWoven);
+		driver.findElement(RMUW.modWoven).click();
 		utilities.MinimumWait(driver);
-		utilities.webDriverWait(driver, modFabricSourcing);
-		driver.findElement(modFabricSourcing).click();
+		utilities.webDriverWait(driver, RMUW.modFabricSourcing);
+		driver.findElement(RMUW.modFabricSourcing).click();
 		utilities.MinimumWait(driver);
-		utilities.webDriverWait(driver, DataEntry);
-		driver.findElement(DataEntry).click();
+		utilities.webDriverWait(driver, RMUW.DataEntry);
+		driver.findElement(RMUW.DataEntry).click();
 		utilities.webDriverWait(driver, modGeneratePO);
 		driver.findElement(modGeneratePO).click();
 		utilities.webDriverWait(driver, modCreatePOStk);
@@ -218,7 +222,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		utilities.webDriverWait(driver,DeliveryTerm);
 		driver.findElement(DeliveryTerm).isDisplayed();
 		WebElement DT = driver.findElement(DeliveryTerm);
-		String DelivTerms = DT.getText();
+		String DelivTerms = DT.getAttribute("value");
 		System.out.println("Selected Supplier Delivery Terms pre-populated value - "+DelivTerms);
 	}
 	public void Verify_whether_the_user_is_able_to_edit_the_Delivery_Terms() throws Throwable {
@@ -308,10 +312,27 @@ public class CreatePOForStockPage extends DriverFactory{
 
 
 	public void Verify_whether_the_Qty_Required_field_is_displaying_the_entered_qty_or_not() throws Throwable {
+		try {
+            Robot robot = new Robot();
+		
+            robot.delay(2000);
+		
+            int scrollAmount = 3;
+            for (int i = 0; i < scrollAmount; i++) {
+                robot.keyPress(KeyEvent.VK_UP);
+                robot.keyRelease(KeyEvent.VK_UP);
+                robot.delay(500);
+            }
+
+        } catch (AWTException e) {
+            e.printStackTrace();
+        }
 		utilities.webDriverWait(driver,QtyReq);
-		WebElement Qreq = driver.findElement(QtyReq);
-		String QtyRequired = Qreq.getAttribute("value");
-		System.out.println("After entering the Stock Qty, the Qty Required value is - "+QtyRequired);
+		System.out.println("came to Qty Required field");
+		driver.findElement(QtyReq).click();
+		WebElement QReq = driver.findElement(QtyReq);
+		String QtyReq = QReq.getText();
+		System.out.println("After entering the Stock Qty, the Qty Required value is - "+QtyReq);
 	}
 
 
@@ -349,8 +370,9 @@ public class CreatePOForStockPage extends DriverFactory{
 	public void Select_a_Currency() throws Throwable {
 		utilities.webDriverWait(driver,Currency);
 		WebElement Curr = driver.findElement(Currency);
-		String currency = Curr.getText();
+		String currency = Curr.getAttribute("value");
 		System.out.println("By default the Currency displayed in the field is - "+currency);
+		utilities.MaximumLongWait(driver);
 		utilities.webDriverWait(driver,sec_Currency);
 		WebElement UCurr = driver.findElement(sec_Currency);
 		String Ucurrency = UCurr.getText();
@@ -361,7 +383,7 @@ public class CreatePOForStockPage extends DriverFactory{
 	public void Enter_Rate_value() throws Throwable {
 		utilities.webDriverWait(driver,Rate);
 		driver.findElement(Rate).clear();
-		driver.findElement(Rate).sendKeys("8");
+		driver.findElement(Rate).sendKeys("48");
 	}
 
 
@@ -396,12 +418,20 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(DueOn).isDisplayed();
 		WebElement due = driver.findElement(DueOn);
 		String Duedate = due.getAttribute("value");
-		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+Duedate);
+		SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
+		java.util.Date date;
+		date = inputFormat.parse(Duedate);
+		SimpleDateFormat outputFormat = new SimpleDateFormat("dd-MM-yyyy");
+		String formattedDate = outputFormat.format(date);
+		
+		
+		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+formattedDate);
 	}
-
+	
 
 	public void Enter_the_Quantity_of_the_Fabric() throws Throwable {
 		utilities.webDriverWait(driver,Qty);
+		driver.findElement(Qty).clear();
 		driver.findElement(Qty).sendKeys("3400");
 	}
 

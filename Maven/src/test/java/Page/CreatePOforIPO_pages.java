@@ -3,6 +3,7 @@ package Page;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.text.SimpleDateFormat;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -14,6 +15,7 @@ import util.Utilities;
 public class CreatePOforIPO_pages extends DriverFactory {
 	
 	Utilities utilities = new Utilities();
+	CreatePOForStockPage CPOS = new CreatePOForStockPage();
 	
 	By FabricSourcingmodule			= By.xpath("//span[text()='Fabric Sourcing ']");
 	By DataEntry 					= By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[4]");
@@ -410,13 +412,13 @@ public class CreatePOforIPO_pages extends DriverFactory {
 		utilities.MinimumWait(driver);
 		driver.findElement(Rate).clear();
 		utilities.MinimumWait(driver);
-		driver.findElement(Rate).sendKeys("8");
-		utilities.MinimumWait(driver);
-		WebElement rt = driver.findElement(Rate);
-		String RATE = rt.getAttribute("Value");
-		System.out.println("Displaying the rate: "+ RATE);
-		utilities.MinimumWait(driver);
-		
+//		driver.findElement(Rate).sendKeys("8");
+//		utilities.MinimumWait(driver);
+//		WebElement rt = driver.findElement(Rate);
+//		String RATE = rt.getAttribute("Value");
+//		System.out.println("Displaying the rate: "+ RATE);
+//		utilities.MinimumWait(driver);
+//		
 	}
 
 	public void verify_that_UOM_is_displayed_or_user_should_select() throws Throwable {
@@ -529,50 +531,70 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	public void select_the_IPO_from_the_dropdown_list() throws Throwable {
 		utilities.webDriverWait(driver, IPOdropdown);
 		driver.findElement(IPOdropdown).click();
-		utilities.MinimumWait(driver);
-		
-		driver.findElement(IPOdropdown).sendKeys("MUL");
-		utilities.MinimumWait(driver);
-		
+//		utilities.MinimumWait(driver);
+		Thread.sleep(10000);
+//		driver.findElement(IPOdropdown).sendKeys("MUL");
+//		utilities.MinimumWait(driver);
+		Thread.sleep(5000);
 		utilities.webDriverWait(driver, SelectIpo);
 		driver.findElement(SelectIpo).click();
 		utilities.MinimumWait(driver);
 		
 	}
 
-	public void verify_the_due_date_is_displayed_as_current_date() {
+	public void verify_the_due_date_is_displayed_as_current_date() throws Throwable {
+		utilities.webDriverWait(driver, CPOS.DueOn);
+		driver.findElement(CPOS.DueOn).isDisplayed();
+		WebElement due = driver.findElement(CPOS.DueOn);
+		String Duedate = due.getAttribute("value");
+		SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
+		java.util.Date date;
+		date = inputFormat.parse(Duedate);
+		SimpleDateFormat outputFormat = new SimpleDateFormat("dd-MM-yyyy");
+		String formattedDate = outputFormat.format(date);
 		
 		
+		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+formattedDate);
 	}
 
-	public void verify_the_quatity_is_displayed_as_greater_than_zero_in_quantity_field() {
-		// TODO Auto-generated method stub
-		
+	public void verify_the_quatity_is_displayed_as_greater_than_zero_in_quantity_field() throws Throwable {
+		utilities.webDriverWait(driver,CPOS.Qty);
+		WebElement qty = driver.findElement(CPOS.Qty);
+		String Quty = qty.getAttribute("value");
+		System.out.println("Display the selected IPO Qty - "+Quty);
 	}
 
-	public void verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_use_from_stock_field() {
-		// TODO Auto-generated method stub
-		
+	public void verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_use_from_stock_field() throws Throwable {
+		utilities.webDriverWait(driver,qtyusefromstock);
+		WebElement qty = driver.findElement(qtyusefromstock);
+		String Quty = qty.getAttribute("value");
+		System.out.println("Display the Available Stock Qty - "+Quty);		
 	}
 
-	public void verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_to_be_bought_field() {
-		// TODO Auto-generated method stub
-		
+	public void verify_the_quantity_is_displayed_as_greater_than_zero_in_qty_to_be_bought_field() throws Throwable {
+		utilities.webDriverWait(driver,qtytobebought);
+		WebElement qty = driver.findElement(qtytobebought);
+		String Quty = qty.getAttribute("value");
+		System.out.println("Display the Quantity to be Bought Qty - "+Quty);
 	}
 
-	public void verify_the_rate_value_is_prepopulated_in_grid_or_not() {
-		// TODO Auto-generated method stub
-		
+	public void verify_the_rate_value_is_prepopulated_in_grid_or_not() throws Throwable {
+		utilities.webDriverWait(driver,gridRate);
+		WebElement rate = driver.findElement(gridRate);
+		String Grate = rate.getText();
+		System.out.println("Display the Rate value - "+Grate);
 	}
 
-	public void verify_the_Amount_is_displayed_after_selecting_the_ipo_in_grid() {
-		// TODO Auto-generated method stub
-		
+	public void verify_the_Amount_is_displayed_after_selecting_the_ipo_in_grid() throws Throwable {
+		utilities.webDriverWait(driver,gridamount);
+		WebElement amt = driver.findElement(gridamount);
+		String Gamt = amt.getText();
+		System.out.println("Display the Amount value for the Qty and Rate - "+Gamt);		
 	}
 
-	public void click_on_save_button_and_verify_that_save_button_is_enable_after_inserting_the_data_in_mandatory_fields() {
-		// TODO Auto-generated method stub
-		
+	public void click_on_save_button_and_verify_that_save_button_is_enable_after_inserting_the_data_in_mandatory_fields() throws Throwable {
+		utilities.webDriverWait(driver,CPOS.butt_Save);
+		driver.findElement(CPOS.butt_Save).click();
 	}
 
 }
