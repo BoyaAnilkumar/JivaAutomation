@@ -532,7 +532,7 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	public void select_the_IPO_from_the_dropdown_list() throws Throwable {
 		utilities.webDriverWait(driver, IPOdropdown);
 		driver.findElement(IPOdropdown).click();
-<<<<<<< HEAD
+
 //		utilities.MinimumWait(driver);
 		Thread.sleep(10000);
 //		driver.findElement(IPOdropdown).sendKeys("MUL");

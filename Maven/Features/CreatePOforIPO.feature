@@ -39,21 +39,20 @@ Feature: Verification and Validation of Create PO for Fabric
     #And verify that qty allowed is displaying with default value or not
     #And verify that currency is displaying with value
     And verify that rate is displaying with value or not
-<<<<<<< HEAD
+
     #And verify that UOM is displayed or user should select
     #Given Enter the data in L Short If Any field
     #Given Enter the data in Additional Information1 field
     #Given Enter the data in Additional Information2 field
     #And verify that Add IPO button is enable or not
     #And click on delete icon is able to click or not
-=======
+
     And verify that UOM is displayed or user should select
     Given Enter the data in L Short If Any field
     Given Enter the data in Additional Information1 field
     Given Enter the data in Additional Information2 field
     And verify that Add IPO button is enable or not
     And click on delete icon is able to click or not
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
     And select the IPO from the dropdown list
     And verify the due date is displayed as current date
     And verify the quatity is displayed as greater than zero in quantity field

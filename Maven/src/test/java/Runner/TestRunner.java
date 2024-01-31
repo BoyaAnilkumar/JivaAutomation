@@ -11,14 +11,10 @@ import io.cucumber.junit.CucumberOptions;
 				               ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
 				  glue="Stepdefinition1",
 				  features = "Features",
-
 				  monochrome = true,
-
-<<<<<<< HEAD
 		          tags ="@CreatePOforIPOSmoke")
-=======
-		          tags ="@POmastersheetsmoke")
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
+
 
 
 public class TestRunner {
