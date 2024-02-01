@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">io.cucumber.core.exception.CucumberException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.support.ui.UnexpectedTagNameException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">io.cucumber.core.exception.CucumberException</h5>
+								<h5 class="mb-4">org.openqa.selenium.support.ui.UnexpectedTagNameException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="12" parent-id="1">
+<tr class="s-fail" test-id="46" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Then Click on Fabric sourcing module <br/><span class="text-muted text-sm">To Test the user able to navigate to create po for ipo screen and submit the po for ipo</span></td>
-	<td>0h 0m 0s+14msc</td>
+	<td class="_600">When verify the Fabric Details are prepopulating or not <br/><span class="text-muted text-sm">Create PO for the IPO process</span></td>
+	<td>0h 0m 5s+359msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,85 +137,14 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">io.cucumber.core.exception.CucumberException: Failed to instantiate class Stepdefinition1.CreatePOforIPO_Steps
-	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:149)
-	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:133)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:79)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:141)
-	... 35 more
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	Syntax error on tokens, delete these tokens
-	Duplicate field CreatePOForStockPage.butt_Save
-	Syntax error on tokens, delete these tokens
-	Duplicate field CreatePOForStockPage.butt_Save
-	Syntax error on tokens, delete these tokens
-	Invalid character constant
-	of cannot be resolved to a type
-	Syntax error on tokens, delete these tokens
-	Syntax error on tokens, delete these tokens
-	Duplicate local variable DelivTerms
-	Syntax error, insert ";" to complete Statement
-	Invalid character constant
-	Syntax error on tokens, delete these tokens
-	Syntax error on tokens, delete these tokens
-	The method findElement(By) in the type WebDriver is not applicable for the arguments (String)
-	Syntax error, insert ";" to complete Statement
-	Invalid character constant
-	Syntax error on tokens, delete these tokens
-	Syntax error on tokens, delete these tokens
-	Syntax error on tokens, delete these tokens
-	Invalid character constant
-	Syntax error on tokens, delete these tokens
-	Syntax error on tokens, Expression expected instead
-	Syntax error, insert ";" to complete Statement
-	Invalid character constant
-	Syntax error on tokens, delete these tokens
-	Syntax error on tokens, Expression expected instead
-	Syntax error, insert ";" to complete Statement
-	Invalid character constant
-
-	at Page.CreatePOForStockPage.<init>(CreatePOForStockPage.java:84)
-	at Page.CreatePOforIPO_pages.<init>(CreatePOforIPO_pages.java:18)
-	at Stepdefinition1.CreatePOforIPO_Steps.<init>(CreatePOforIPO_Steps.java:11)
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	... 38 more
+		<textarea disabled class="code-block">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "ng-select"
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:47)
+	at Page.POMasterSheetpage.verify_the_Fabric_Details_are_prepopulating_or_not(POMasterSheetpage.java:629)
+	at Stepdefinition1.POMasterSheet_Steps.verify_the_Fabric_Details_are_prepopulating_or_not(POMasterSheet_Steps.java:81)
+	at ✽.verify the Fabric Details are prepopulating or not(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/POMasterSheet.feature:62)
 </textarea>
 	</td>
 </tr>
@@ -245,8 +174,8 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 	
 <tr class="s-fail" test-id="63" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">To Test the user able to navigate to create po for ipo screen and submit the po for ipo</span></td>
-	<td>0h 0m 0s+6msc</td>
+	<td class="_600">Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario) <br/><span class="text-muted text-sm">Create PO for the IPO process</span></td>
+	<td>0h 0m 0s+3msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -292,7 +221,7 @@ Driver info: driver.version: RemoteWebDriver
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Jan 31, 2024 10:55:28 am</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Feb 1, 2024 05:39:08 pm</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

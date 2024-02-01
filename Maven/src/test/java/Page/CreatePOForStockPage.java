@@ -81,13 +81,12 @@ public class CreatePOForStockPage extends DriverFactory{
 	public By DueOn = By.xpath("//input[@formcontrolname='dueDate']");
 	public By Qty = By.xpath("//input[@formcontrolname='qtyrequired']");
 	By Sampling = By.xpath("//input[@formcontrolname='Sampling']");
-<<<<<<< HEAD
-	public By butt_Save = By.xpath("(//button[@type='submit'])[1]");
-=======
+
+//	public By butt_Save = By.xpath("(//button[@type='submit'])[1]");
+
 	By Total 	= By.xpath("//td[text()='Total']");
 	By butt_Save = By.xpath("(//button[@type='submit'])[1]");
 	By SaveToaster = By.xpath("//h2[text()='Create PO For Fabric Saved Successfully']");
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	By butt_Reset = By.xpath("//button[text()=' Reset']");
 	By a = By.xpath("");
 	
@@ -253,17 +252,15 @@ public class CreatePOForStockPage extends DriverFactory{
 	        String defaultSelectedValue = selectedOption.getText();
 
 			System.out.println("By default the Currency displayed in the field is - "+ defaultSelectedValue);
-//		driver.findElement(DeliveryTerm).isDisplayed();
+		driver.findElement(DeliveryTerm).isDisplayed();
 		
 		WebElement DT = driver.findElement(DeliveryTerm);
-<<<<<<< HEAD
+
 		String DelivTerms = DT.getAttribute("value");
 		System.out.println("Selected Supplier Delivery Terms pre-populated value - "+DelivTerms);
-=======
-		String DelivTerms = DT.getText();
-		System.out.println("Selected Supplier Delivery Terms pre-populated value - "+ DelivTerms);
+//		String DelivTerms = DT.getText();
+//		System.out.println("Selected Supplier Delivery Terms pre-populated value - "+ DelivTerms);
 		utilities.MinimumWait(driver);
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	}
 	public void Verify_whether_the_user_is_able_to_edit_the_Delivery_Terms() throws Throwable {
 		utilities.webDriverWait(driver,sec_DeliveryTerm);
@@ -382,18 +379,16 @@ public class CreatePOForStockPage extends DriverFactory{
             e.printStackTrace();
         }
 		utilities.webDriverWait(driver,QtyReq);
-<<<<<<< HEAD
+
 		System.out.println("came to Qty Required field");
 		driver.findElement(QtyReq).click();
-		WebElement QReq = driver.findElement(QtyReq);
-		String QtyReq = QReq.getText();
-		System.out.println("After entering the Stock Qty, the Qty Required value is - "+QtyReq);
-=======
+//		WebElement QReq = driver.findElement(QtyReq);
+//		String QtyReq = QReq.getText();
+//		System.out.println("After entering the Stock Qty, the Qty Required value is - "+QtyReq);
 		WebElement Qreq = driver.findElement(QtyReq);
 		String QtyRequired = Qreq.getAttribute("value");
 		System.out.println("After entering the Stock Qty, the Qty Required value is - "+ QtyRequired);
 		utilities.MinimumWait(driver);
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	}
 
 
@@ -434,12 +429,10 @@ public class CreatePOForStockPage extends DriverFactory{
 
 	public void Select_a_Currency() throws Throwable {
 		utilities.webDriverWait(driver,Currency);
-<<<<<<< HEAD
 		WebElement Curr = driver.findElement(Currency);
 		String currency = Curr.getAttribute("value");
 		System.out.println("By default the Currency displayed in the field is - "+currency);
 		utilities.MaximumLongWait(driver);
-=======
 		
         WebElement dropdownElement = driver.findElement(Currency);
         Select dropdown = new Select(dropdownElement);
@@ -451,7 +444,6 @@ public class CreatePOForStockPage extends DriverFactory{
 		utilities.MinimumWait(driver);
 		
 		
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 		utilities.webDriverWait(driver,sec_Currency);
 		driver.findElement(sec_Currency).click();
 		WebElement UCurr = driver.findElement(sec_Currency);
@@ -464,12 +456,9 @@ public class CreatePOForStockPage extends DriverFactory{
 	public void Enter_Rate_value() throws Throwable {
 		utilities.webDriverWait(driver,Rate);
 		driver.findElement(Rate).clear();
-<<<<<<< HEAD
 		driver.findElement(Rate).sendKeys("48");
-=======
 		driver.findElement(Rate).sendKeys("8");
 		utilities.MinimumWait(driver);
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	}
 
 
@@ -516,7 +505,6 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(DueOn).isDisplayed();
 		WebElement due = driver.findElement(DueOn);
 		String Duedate = due.getAttribute("value");
-<<<<<<< HEAD
 		SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
 		java.util.Date date;
 		date = inputFormat.parse(Duedate);
@@ -525,10 +513,8 @@ public class CreatePOForStockPage extends DriverFactory{
 		
 		
 		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+formattedDate);
-=======
 		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+Duedate);
 		utilities.MinimumWait(driver);
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	}
 	
 

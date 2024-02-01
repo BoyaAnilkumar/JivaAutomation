@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-		          tags ="@CreatePOforIPOSmoke")
+		          tags ="@POmastersheetsmoke1")
 
 
 
@@ -20,11 +20,3 @@ import io.cucumber.junit.CucumberOptions;
 public class TestRunner {
 
 }
-
-
-
-
-
-
-
-

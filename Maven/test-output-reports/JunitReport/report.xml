@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="121.562">
+    <testcase classname="I want to create po for the process" name="Create PO for the IPO process" time="121.181">
+        <failure message="Element should have been &quot;select&quot; but was &quot;ng-select&quot;&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.support.ui.UnexpectedTagNameException"><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then Click on Fabric sourcing module........................................passed
+And click on Data Entry in fabric sourcing module...........................passed
+And click on Generate PO....................................................passed
+And click on PO Master Sheet................................................passed
+Given Search with IPO in search keyword textbox.............................passed
+And click on generate po icon...............................................passed
+Then Verify the Create PO for IPO screen is displayed or not................passed
+And Verify the PO details are displaying....................................passed
+When Enter Deliver To details and select from the suggestions...............passed
+When Deliver address is displaying after selecting the deliver to details or not.passed
+When verify the GSTIN number is displaying or not...........................passed
+Then Enter supplier name and select from the suggestions....................passed
+And verify the supplier address after selecting the supplier................passed
+And verify the GSTIN number is displaying after selecting the supplier......passed
+And verify the payment terms are displaying after selecting the supplier....passed
+And verify that Delivery terms are displaying after selecting the supplier..passed
+And Enter Lead time in Days.................................................passed
+When verify the Fabric Details are prepopulating or not.....................failed
+When verify the Quantity Details are displaying or not......................skipped
+When verify the IPO Details are prepopulating or not........................skipped
+And click on Add IPO button whether button is working or not................skipped
+And Delete the record in IPO table..........................................skipped
+Then Click on save button to generate po....................................skipped
+And verify whether the user is navigated to Print form......................skipped
+And Click on cancel to navigate back to po master sheet screen..............skipped
+
+StackTrace:
+org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "ng-select"
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:47)
+	at Page.POMasterSheetpage.verify_the_Fabric_Details_are_prepopulating_or_not(POMasterSheetpage.java:629)
+	at Stepdefinition1.POMasterSheet_Steps.verify_the_Fabric_Details_are_prepopulating_or_not(POMasterSheet_Steps.java:81)
+	at ✽.verify the Fabric Details are prepopulating or not(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/POMasterSheet.feature:62)
+]]></failure>
+    </testcase>
+</testsuite>
