@@ -11,14 +11,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-import freemarker.core.ParseException;
-import io.cucumber.java.it.Date;
 import util.DriverFactory;
 import util.Utilities;
 
 public class CreatePOForStockPage extends DriverFactory{
 	
-	private static final WebElement dropdown = null;
+//	private static final WebElement dropdown = null;
 
 	Utilities utilities = new Utilities();
 	RevisedMUWorkingPages RMUW = new RevisedMUWorkingPages();
@@ -26,7 +24,7 @@ public class CreatePOForStockPage extends DriverFactory{
 //	public By modWoven = By.xpath("//span[text()='Woven / knit']");
 //	public By modFabricSourcing =By.xpath("//span[text()='Fabric Sourcing ']");
 //	public By DataEntry = By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[1]");
-	By modGeneratePO = By.xpath("(//span[text()='Generate PO'])[1]");
+	public By modGeneratePO = By.xpath("(//span[text()='Generate PO'])[1]");
 	By modCreatePOStk = By.xpath("(//a[text()=' Create PO for Stock '])[1]");
 	By Ordertype = By.xpath("//select[@formcontrolname='typeofPo']");
 	By sec_Order = By.xpath("//option[text()=' Job Work Order']");
@@ -63,7 +61,7 @@ public class CreatePOForStockPage extends DriverFactory{
 	By sec_CuttableWdt = By.xpath("//option[text()=' 8']");
 	By Color = By.xpath("//ng-select[@formcontrolname='poColorId']");
 	By sec_Color = By.xpath("//span[text()='Alabaster']");
-	By QtyReq = By.xpath("//input[@class='form-control ng-pristine ng-valid ng-touched']");
+	By QtyReq = By.xpath("//input[@formcontrolname='totalqtyRequired']");
 	By AvailableStkQty = By.xpath("//input[@formcontrolname='totalqtystock']");
 	By Residual = By.xpath("//input[@formcontrolname='residualShrinkage']");
 	By ProcessLoss = By.xpath("//input[@formcontrolname='processLoss']");
@@ -81,18 +79,37 @@ public class CreatePOForStockPage extends DriverFactory{
 	public By DueOn = By.xpath("//input[@formcontrolname='dueDate']");
 	public By Qty = By.xpath("//input[@formcontrolname='qtyrequired']");
 	By Sampling = By.xpath("//input[@formcontrolname='Sampling']");
-<<<<<<< HEAD
-	public By butt_Save = By.xpath("(//button[@type='submit'])[1]");
-=======
-	By Total 	= By.xpath("//td[text()='Total']");
-	By butt_Save = By.xpath("(//button[@type='submit'])[1]");
-	By SaveToaster = By.xpath("//h2[text()='Create PO For Fabric Saved Successfully']");
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-	By butt_Reset = By.xpath("//button[text()=' Reset']");
-	By a = By.xpath("");
-	
-	
 
+	public By butt_Save = By.xpath("(//button[@type='submit'])[1]");
+
+	By Total 	= By.xpath("//td[text()='Total']");
+//	By butt_Save = By.xpath("(//button[@type='submit'])[1]");
+	By SaveToaster = By.xpath("//h2[text()='Create PO For Fabric Saved Successfully']");
+	By MandatoryToaster = By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
+	By butt_Reset = By.xpath("//button[text()=' Reset']");
+	By inf_OrderType = By.xpath("//div[@data-validate='Type of Order is required']");
+	By inf_DevliverTo = By.xpath("//div[@data-validate='Deliver To is required']");
+	By inf_Supplier = By.xpath("//div[@data-validate='Supplier is required']");
+	By inf_PaymentTerms = By.xpath("//div[@data-validate='Payment Terms is required']");
+	By inf_DeliveryTerms = By.xpath("//div[@data-validate='Delivery Terms is required']");
+	By inf_LeadTime = By.xpath("//div[@data-validate='Lead time (days) is required']");
+	By inf_Process = By.xpath("//div[@data-validate='Process is required']");
+	By inf_FabricType = By.xpath("//div[@data-validate='Fabric Type is required']");
+	By inf_FabricName = By.xpath("//div[@data-validate='Fabric Name is required']");
+	By inf_Content = By.xpath("//div[@data-validate='Content is required']");
+	By inf_Count = By.xpath("//div[@data-validate='Count/Construction is required']");
+	By inf_GSM = By.xpath("//div[@data-validate='GSM is required']");
+	By inf_CuttableWdt = By.xpath("//div[@data-validate='Cuttable width is required']");
+	By inf_Color = By.xpath("//div[@data-validate='Color is required']");
+	By inf_Rresidual = By.xpath("//div[@data-validate='ResidualShrinkage  is required']");
+	By inf_ProLoss = By.xpath("");
+	By inf_QtyAllowed = By.xpath("//div[@data-validate='Qty Allowed  is required']");
+	By inf_Rate = By.xpath("Rate is required");
+	By inf_UOM = By.xpath("//div[@data-validate='UOM is required']");
+	By inf_Qty = By.xpath("//div[@data-validate='Qty is required']");
+	
+		
+	
 	public void Navigate_to_Create_PO_For_Stock_screen() throws Throwable {
 		utilities.webDriverWait(driver, RMUW.modWoven);
 		driver.findElement(RMUW.modWoven).click();
@@ -107,6 +124,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		utilities.webDriverWait(driver, modCreatePOStk);
 		driver.findElement(modCreatePOStk).click();
 		utilities.MinimumWait(driver);
+		
 	}
 
 
@@ -150,6 +168,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		utilities.webDriverWait(driver, Buyer);
 		driver.findElement(Buyer).click();
 		utilities.webDriverWait(driver, sec_Buyer);
+		Thread.sleep(5000);
 		driver.findElement(sec_Buyer).click();
 		utilities.MinimumWait(driver);
 	}
@@ -256,14 +275,14 @@ public class CreatePOForStockPage extends DriverFactory{
 //		driver.findElement(DeliveryTerm).isDisplayed();
 		
 		WebElement DT = driver.findElement(DeliveryTerm);
-<<<<<<< HEAD
-		String DelivTerms = DT.getAttribute("value");
-		System.out.println("Selected Supplier Delivery Terms pre-populated value - "+DelivTerms);
-=======
+
+//		String DelivTerms = DT.getAttribute("value");
+//		System.out.println("Selected Supplier Delivery Terms pre-populated value - "+DelivTerms);
+
 		String DelivTerms = DT.getText();
 		System.out.println("Selected Supplier Delivery Terms pre-populated value - "+ DelivTerms);
 		utilities.MinimumWait(driver);
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 	}
 	public void Verify_whether_the_user_is_able_to_edit_the_Delivery_Terms() throws Throwable {
 		utilities.webDriverWait(driver,sec_DeliveryTerm);
@@ -288,8 +307,8 @@ public class CreatePOForStockPage extends DriverFactory{
 
 
 	public void Select_a_Fabric_Type() throws Throwable {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("scrollBy(0, 500)");
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("scrollBy(0, 500)");
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver,FabricType);
@@ -371,7 +390,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		
             robot.delay(2000);
 		
-            int scrollAmount = 3;
+            int scrollAmount = 5;
             for (int i = 0; i < scrollAmount; i++) {
                 robot.keyPress(KeyEvent.VK_UP);
                 robot.keyRelease(KeyEvent.VK_UP);
@@ -382,18 +401,18 @@ public class CreatePOForStockPage extends DriverFactory{
             e.printStackTrace();
         }
 		utilities.webDriverWait(driver,QtyReq);
-<<<<<<< HEAD
+
 		System.out.println("came to Qty Required field");
 		driver.findElement(QtyReq).click();
 		WebElement QReq = driver.findElement(QtyReq);
-		String QtyReq = QReq.getText();
+		String QtyReq = QReq.getAttribute("value");
 		System.out.println("After entering the Stock Qty, the Qty Required value is - "+QtyReq);
-=======
-		WebElement Qreq = driver.findElement(QtyReq);
-		String QtyRequired = Qreq.getAttribute("value");
-		System.out.println("After entering the Stock Qty, the Qty Required value is - "+ QtyRequired);
-		utilities.MinimumWait(driver);
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
+//		WebElement Qreq = driver.findElement(QtyReq);
+//		String QtyRequired = Qreq.getAttribute("value");
+//		System.out.println("After entering the Stock Qty, the Qty Required value is - "+ QtyRequired);
+//		utilities.MinimumWait(driver);
+
 	}
 
 
@@ -434,12 +453,12 @@ public class CreatePOForStockPage extends DriverFactory{
 
 	public void Select_a_Currency() throws Throwable {
 		utilities.webDriverWait(driver,Currency);
-<<<<<<< HEAD
-		WebElement Curr = driver.findElement(Currency);
-		String currency = Curr.getAttribute("value");
-		System.out.println("By default the Currency displayed in the field is - "+currency);
-		utilities.MaximumLongWait(driver);
-=======
+
+//		WebElement Curr = driver.findElement(Currency);
+//		String currency = Curr.getAttribute("value");
+//		System.out.println("By default the Currency displayed in the field is - "+currency);
+//		utilities.MaximumLongWait(driver);
+
 		
         WebElement dropdownElement = driver.findElement(Currency);
         Select dropdown = new Select(dropdownElement);
@@ -451,7 +470,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		utilities.MinimumWait(driver);
 		
 		
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 		utilities.webDriverWait(driver,sec_Currency);
 		driver.findElement(sec_Currency).click();
 		WebElement UCurr = driver.findElement(sec_Currency);
@@ -464,19 +483,19 @@ public class CreatePOForStockPage extends DriverFactory{
 	public void Enter_Rate_value() throws Throwable {
 		utilities.webDriverWait(driver,Rate);
 		driver.findElement(Rate).clear();
-<<<<<<< HEAD
+
 		driver.findElement(Rate).sendKeys("48");
-=======
-		driver.findElement(Rate).sendKeys("8");
+
+//		driver.findElement(Rate).sendKeys("8");
 		utilities.MinimumWait(driver);
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 	}
 
 
 	public void Select_an_UOM() throws Throwable {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("scrollBy(0, 500)");
-		utilities.MinimumWait(driver);
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("scrollBy(0, 500)");
+//		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver,UOM);
 		driver.findElement(UOM).click();
@@ -516,7 +535,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(DueOn).isDisplayed();
 		WebElement due = driver.findElement(DueOn);
 		String Duedate = due.getAttribute("value");
-<<<<<<< HEAD
+
 		SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
 		java.util.Date date;
 		date = inputFormat.parse(Duedate);
@@ -525,10 +544,10 @@ public class CreatePOForStockPage extends DriverFactory{
 		
 		
 		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+formattedDate);
-=======
-		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+Duedate);
+
+//		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+Duedate);
 		utilities.MinimumWait(driver);
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 	}
 	
 
@@ -559,7 +578,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, SaveToaster);
-		
+		utilities.WaitUntilPageIsLoaded(driver);
 		WebElement saveButton = driver.findElement(SaveToaster);
 		
         Actions actions = new Actions(driver);
@@ -575,6 +594,253 @@ public class CreatePOForStockPage extends DriverFactory{
         } else {
             System.out.println("Toaster message is incorrect: " + actualToasterMessage);
         }
+	}
+
+
+	public void Enter_Quantity_of_the_Fabric() throws Throwable {
+		utilities.webDriverWait(driver,Qty);
+		driver.findElement(Qty).clear();
+		driver.findElement(Qty).sendKeys("890");
+		utilities.webDriverWait(driver,Qty);
+		driver.findElement(Sampling).click();
+		utilities.webDriverWait(driver,QtyAllowed);
+		driver.findElement(QtyAllowed).clear();
+		utilities.webDriverWait(driver, Rate);
+		driver.findElement(Rate).clear();
+	}
+
+
+	public void Verify_the_mandatory_validation_msg_on_saving() throws Throwable {
+		utilities.webDriverWait(driver,butt_Save);
+		driver.findElement(butt_Save).click();
+//		utilities.webDriverWait(driver, MandatoryToaster);
+//		WebElement saveButton = driver.findElement(MandatoryToaster);
+//		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", saveButton);
+//		((JavascriptExecutor) driver).executeScript("arguments[0].onmouseover()", saveButton);
+//		Thread.sleep(2000);
+//        Actions actions = new Actions(driver);
+//        actions.moveToElement(saveButton).perform();
+////        utilities.MaximumWait(driver);
+//	    String expectedToasterMessage = "Mandatory Fields Are Required With Valid Data."; 
+//        String actualToasterMessage = saveButton.getText();
+//
+//        if (actualToasterMessage.equals(expectedToasterMessage)) {
+//            System.out.println("Toaster message is correct: " + actualToasterMessage);
+//        } else {
+//            System.out.println("Toaster message is incorrect: " + actualToasterMessage);
+//        }
+//        utilities.MaximumWait(driver);
+	}
+
+
+	public void Verify_the_Type_of_Order_info_tag() throws Throwable {
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+		js1.executeScript("scrollTo(0, 0)");
+		utilities.MaximumWait(driver);
+//		try {
+//            Robot robot = new Robot();
+//		
+//            robot.delay(2000);
+//		
+//            int scrollAmount = 30;
+//            for (int i = 0; i < scrollAmount; i++) {
+//                robot.keyPress(KeyEvent.VK_UP);
+//                robot.keyRelease(KeyEvent.VK_UP);
+//                robot.delay(500);
+//            }
+//
+//        } catch (AWTException e) {
+//            e.printStackTrace();
+//        }
+		
+		Thread.sleep(5000);
+		
+		WebElement validationmessage = driver.findElement(inf_OrderType);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Type of Order validation msg is :" + validationmsg);
+		utilities.MinimumWait(driver);
+	
+	
+	}
+
+
+	public void Verify_the_Deliver_To_info_tag() throws Throwable {
+		utilities.webDriverWait(driver,inf_DevliverTo);
+		WebElement validationmessage = driver.findElement(inf_DevliverTo);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Delivery To validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Supplier_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_Supplier);
+		WebElement validationmessage = driver.findElement(inf_Supplier);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Supplier validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Payment_Terms_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_PaymentTerms);
+		WebElement validationmessage = driver.findElement(inf_PaymentTerms);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Payment Terms validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Delivery_Terms_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_DeliveryTerms);
+		WebElement validationmessage = driver.findElement(inf_DeliveryTerms);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Delivery Terms validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Lead_Time_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_LeadTime);
+		WebElement validationmessage = driver.findElement(inf_LeadTime);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Lead Time validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Process_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_Process);
+		WebElement validationmessage = driver.findElement(inf_Process);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Process validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Fabric_Type_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_FabricType);
+		WebElement validationmessage = driver.findElement(inf_FabricType);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Fabric Type validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Fabric_Name_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_FabricName);
+		WebElement validationmessage = driver.findElement(inf_FabricName);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Fabric Name validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Content_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_Content);
+		WebElement validationmessage = driver.findElement(inf_Content);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Content validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Count_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_Count);
+		WebElement validationmessage = driver.findElement(inf_Count);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Count/Counstruction validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_GSM_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_GSM);
+		WebElement validationmessage = driver.findElement(inf_GSM);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("GSM validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Cuttable_Width_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_CuttableWdt);
+		WebElement validationmessage = driver.findElement(inf_CuttableWdt);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Cuttable Width validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Color_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_Color);
+		WebElement validationmessage = driver.findElement(inf_Color);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Color validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Residual_Shrinkage_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_Rresidual);
+		WebElement validationmessage = driver.findElement(inf_Rresidual);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Residual Shrinkage validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Process_Loss_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_ProLoss);
+		WebElement validationmessage = driver.findElement(inf_ProLoss);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Process Loss validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Qty_Allowed_tag_name() throws Throwable {
+//		utilities.webDriverWait(driver,QtyAllowed);
+//		driver.findElement(QtyAllowed).clear();
+//		utilities.webDriverWait(driver,inf_Rresidual);
+//		driver.findElement(QtyAllowed).click();
+		utilities.webDriverWait(driver,inf_QtyAllowed);
+		System.out.println("+/- Qty Allowed field got cleared");
+		WebElement validationmessage = driver.findElement(inf_QtyAllowed);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("+/- Qty Allowed validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Rate_tag_name() throws Throwable {
+//		utilities.webDriverWait(driver,Rate);
+//		driver.findElement(Rate).clear();
+		utilities.webDriverWait(driver,inf_Rate);
+		WebElement validationmessage = driver.findElement(inf_Rate);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Rate validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);	
+	}
+
+
+	public void Verify_the_UOM_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,inf_UOM);
+		WebElement validationmessage = driver.findElement(inf_UOM);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("UOM validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void Verify_the_Quantity_tag_name() throws Throwable {
+		utilities.webDriverWait(driver,Qty);
+		driver.findElement(Qty).clear();
+		utilities.webDriverWait(driver,inf_Qty);
+		WebElement validationmessage = driver.findElement(inf_Qty);
+		String validationmsg = validationmessage.getAttribute("data-validate");
+		System.out.println("Quantity validation msg is:" + validationmsg);
+		utilities.MinimumWait(driver);
 	}
 
 	

@@ -24,7 +24,7 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	By buttSHOStyle = By.xpath("//a[@id='sidebarCollapse']");
 	By iconClear = By.xpath("//button[@class='btn btn-outline-secondary btn-sm mr-2 mb-2 float-right ng-star-inserted']");
 	By iconFilter = By.xpath("//button[@class='btn btn-primary btn-sm mb-2 float-right']");
-	By F_buyer =By.xpath("//div[contains(@class,'p-element p-multiselect-label-container')]//div[1]"); 
+	By F_buyer =By.xpath("//div[text()='Select Buyer']"); 
 	By F_enterBuyer = By.xpath("(//label[text()='Buyer']/following::input)[3]");
 	By F_selectBuyer = By.xpath("//div[text()='Testbuyer']");
 	By F_season =By.xpath("//select[@formcontrolname='seasonId']"); 
@@ -161,14 +161,21 @@ public class RevisedMUWorkingPages extends DriverFactory{
 		utilities.webDriverWait(driver, F_buyer);
 		driver.findElement(F_buyer).click();
 		System.out.println("Clicked in the Buyer  field");
+		utilities.MinimumWait(driver);
+		
 		utilities.webDriverWait(driver, F_enterBuyer);
 		driver.findElement(F_enterBuyer).sendKeys("tes");
 		System.out.println("Entered the first 3 letters");
+		utilities.MinimumWait(driver);
+		
 		utilities.webDriverWait(driver, F_selectBuyer);
 		driver.findElement(F_selectBuyer).click();
 		System.out.println("Buyer selected");
+		utilities.MinimumWait(driver);
+		
 		utilities.webDriverWait(driver, F_buyer);
 		driver.findElement(F_buyer).click();
+		utilities.MinimumWait(driver);
 
 	}
 	

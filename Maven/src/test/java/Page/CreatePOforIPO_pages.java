@@ -532,20 +532,20 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	public void select_the_IPO_from_the_dropdown_list() throws Throwable {
 		utilities.webDriverWait(driver, IPOdropdown);
 		driver.findElement(IPOdropdown).click();
-<<<<<<< HEAD
+
 //		utilities.MinimumWait(driver);
 		Thread.sleep(10000);
 //		driver.findElement(IPOdropdown).sendKeys("MUL");
 //		utilities.MinimumWait(driver);
 		Thread.sleep(5000);
-=======
+
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, insertIPO);
 		driver.findElement(insertIPO).sendKeys("MUL");
 		utilities.MinimumWait(driver);
 		
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 		utilities.webDriverWait(driver, SelectIpo);
 		driver.findElement(SelectIpo).click();
 		utilities.MinimumWait(driver);
