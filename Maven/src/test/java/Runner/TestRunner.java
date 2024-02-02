@@ -11,21 +11,10 @@ import io.cucumber.junit.CucumberOptions;
 				               ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
 				  glue="Stepdefinition1",
 				  features = "Features",
-
 				  monochrome = true,
-
-
-		          tags ="@StockPO1")
+		       		          tags ="@StockPO1")
 
 		        
 public class TestRunner {
 
 }
-
-
-
-
-
-
-
-

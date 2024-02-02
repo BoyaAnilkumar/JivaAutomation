@@ -30,7 +30,7 @@ public class CreatePOforIPO_Steps {
 		CreatePOforIPO_pages.click_on_Create_PO_for_Fabric();
 	}
 	
-	@And("^Verify the Create PO for IPO screen is displayed or not$")
+	@Then("^Verify the Create PO for IPO screen is displayed or not$")
 	public void Verify_the_Create_PO_for_IPO_screen_is_displayed_or_not() throws Throwable {
 		CreatePOforIPO_pages.Verify_the_Create_PO_for_IPO_screen_is_displayed_or_not();
 	}               

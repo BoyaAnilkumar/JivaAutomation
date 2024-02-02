@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="63.778">
-    <testcase classname="PO For Stock screen functionality" name="Checking the Filter functionality" time="63.267">
-        <failure message="element click intercepted: Element &lt;div class=&quot;p-multiselect-label ng-tns-c92-16 p-placeholder&quot;&gt;...&lt;/div&gt; is not clickable at point (418, 345). Other element would receive the click: &lt;li pripple=&quot;&quot; class=&quot;p-ripple p-element p-multiselect-item p-highlight&quot; aria-label=&quot;Soujanya&quot; tabindex=&quot;0&quot;&gt;...&lt;/li&gt;&#10;  (Session info: chrome=121.0.6167.86)&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 16e6a8d1ebac9870a1677032b9bdd373" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[When user navigates to Login page...........................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="205.625">
+    <testcase classname="PO For Stock screen functionality" name="Adding a PO Stock record" time="146.157">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()='Create PO For Fabric Saved Successfully']&quot;}&#10;  (Session info: chrome=121.0.6167.86)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 613d915d728f083426e30c4d19df5ead&#10;*** Element info: {Using=xpath, value=//h2[text()='Create PO For Fabric Saved Successfully']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When user navigates to Login page...........................................passed
 Given Login with the Production Manager.....................................passed
 And Click on the SignIn button..............................................passed
 Then Navigate to PO For Stock screen........................................passed
-Then Click on the Filter showhide button....................................passed
-Then Select a Supplier from dropdown list...................................passed
-Then Select a Buyer from dropdown list......................................failed
-Then Select a Fabric Quality from dropdown list.............................skipped
-And Click on the Filter_Apply button........................................skipped
-Then Verify whether data is cleared or not on OnClick the Reset button......skipped
+When Click on the Add Data Entry button.....................................passed
+Then Verify whether the page is navigated to the Create PO For Stock or not.passed
+Then Click and Select Order Type............................................passed
+When Select a Delivery To factory name......................................passed
+When Select a Supplier name.................................................passed
+Given Enter Lead Time value.................................................passed
+Then Select a Process for the selected Order Type...........................passed
+Then Select a Fabric Type...................................................passed
+Then Select a Fabric Name...................................................passed
+Then Select a Color.........................................................passed
+Given Enter Residual Shrinkage value........................................passed
+Given Enter Process Loss value..............................................passed
+Given Enter Rate value......................................................passed
+Then Select an UOM..........................................................passed
+Given Enter the Quantity of the Fabric......................................passed
+Then Click on Save button in the Create PO For Stock screen.................failed
 
 StackTrace:
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="p-multiselect-label ng-tns-c92-16 p-placeholder">...</div> is not clickable at point (418, 345). Other element would receive the click: <li pripple="" class="p-ripple p-element p-multiselect-item p-highlight" aria-label="Soujanya" tabindex="0">...</li>
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text()='Create PO For Fabric Saved Successfully']"}
   (Session info: chrome=121.0.6167.86)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 16e6a8d1ebac9870a1677032b9bdd373
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 613d915d728f083426e30c4d19df5ead
+*** Element info: {Using=xpath, value=//h2[text()='Create PO For Fabric Saved Successfully']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -31,11 +43,21 @@ Session ID: 16e6a8d1ebac9870a1677032b9bdd373
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Page.RevisedMUWorkingPages.Select_a_Buyer_from_dropdown_list(RevisedMUWorkingPages.java:162)
-	at Stepdefinition1.RevisedMUWorkingSteps.Select_a_Buyer_from_dropdown_list(RevisedMUWorkingSteps.java:224)
-	at ✽.Select a Buyer from dropdown list(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/POForStock.feature:12)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.CreatePOForStockPage.Click_on_Save_button_in_the_Create_PO_For_Stock_screen(CreatePOForStockPage.java:616)
+	at Stepdefinition1.CreatePOForStockSteps.Click_on_Save_button_in_the_Create_PO_For_Stock_screen(CreatePOForStockSteps.java:177)
+	at ✽.Click on Save button in the Create PO For Stock screen(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/POForStock.feature:62)
 ]]></failure>
+    </testcase>
+    <testcase classname="PO For Stock screen functionality" name="Verifying wether the added record is displayed in the grid or not" time="58.888">
+        <system-out><![CDATA[When user navigates to Login page...........................................passed
+Given Login with the Production Manager.....................................passed
+And Click on the SignIn button..............................................passed
+Then Navigate to PO For Stock screen........................................passed
+Then Verify the count of the PO Records in the PO grid......................passed
+]]></system-out>
     </testcase>
 </testsuite>

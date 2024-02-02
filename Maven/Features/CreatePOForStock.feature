@@ -43,11 +43,6 @@ Feature: I want to use this template for my feature file
   Then Verify whether the PO Number field value
   And Select a Buyer
   Given Enter the Style
-  #When Select a Delivery To factory name
-  #Then Verify whether current PO Date is displayed or not
-  #Then Verify whether the PO Number field value
-  #And Select a Buyer
-  #Given Enter the Style
   When Select a Delivery To factory name
   Then Verify whether the Delivery Factory Address is displayed or not
   Then Verify whether the Delivery Factory GST number is displayed or not
