@@ -3,8 +3,11 @@ package Page;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -40,9 +43,13 @@ public class POMasterSheetpage extends DriverFactory{
 	By Searchkeyword										= By.xpath("//input[@placeholder='Search PO#']");
 	By generatepo											= By.xpath("(//a[@title='Generate PO'])[1]");
 	By ipo_grid												= By.xpath("(//td[text()=' Boult IPO 1 '])[1]");
-	
-	
-	
+	By FabricName											= By.xpath("//ng-select[@formcontrolname='fabricName']/.//div[@class='ng-input']");
+	By Color												= By.xpath("//ng-select[@formcontrolname='poColorId']/.//input[@type='text']");
+	By ProcessLoss											= By.xpath("//input[@formcontrolname='processLoss']");
+	By Amount												= By.xpath("//td[@class='text-right']/.//span[@class='ng-star-inserted']");
+	By Savebutton											= By.xpath("//button[@type='submit']");
+	By Printscreen											= By.xpath("//img[@alt='Logo Icon']");
+	By cancelbutton											= By.xpath("//button[@id='closepagebutton']");
 	
 	
 	
@@ -611,6 +618,10 @@ public class POMasterSheetpage extends DriverFactory{
 
 	public void verify_the_Fabric_Details_are_prepopulating_or_not() throws Throwable {
 		
+		JavascriptExecutor js = (JavascriptExecutor) driver;   //To scroll the page
+		js.executeScript("scrollBy(0, 500)");
+		utilities.MinimumWait(driver);
+		
 		utilities.webDriverWait(driver, CPOI.FabricDetails);
 		driver.findElement(CPOI.FabricDetails).click();
 		WebElement FDetails = driver.findElement(CPOI.FabricDetails);
@@ -625,18 +636,22 @@ public class POMasterSheetpage extends DriverFactory{
         System.out.println("Displaying Fabric Type Order as:  " +  defaultSelectedValue);
 		utilities.MinimumWait(driver);
 		
-		WebElement dropdownElement1 = driver.findElement(CPOI.FabricName);
-        Select dropdown1 = new Select(dropdownElement1);
-        WebElement selectedOption1 = dropdown1.getFirstSelectedOption();
-        String defaultSelectedValue1 = selectedOption1.getText();
-        System.out.println("Displaying Fabric Name as:  " +  defaultSelectedValue1);
+		WebElement dropdownElement1 = driver.findElement(FabricName);
+//        Select dropdown1 = new Select(dropdownElement1);
+//        WebElement selectedOption1 = dropdown1.getFirstSelectedOption();
+//        String defaultSelectedValue1 = selectedOption1.getText();
+//        System.out.println("Displaying Fabric Name as:  " +  defaultSelectedValue1);
+		driver.findElement(FabricName).click();
+		WebElement fabricname = driver.findElement(FabricName);
+		String fabric = fabricname.getText();
+		System.out.println("Displaying the Fabric Name: "  +  fabric);
 		utilities.MinimumWait(driver);
 		
 		WebElement dropdownElement2 = driver.findElement(CPOI.Content);
         Select dropdown2 = new Select(dropdownElement2);
         WebElement selectedOption2 = dropdown2.getFirstSelectedOption();
         String defaultSelectedValue2 = selectedOption2.getText();
-        System.out.println("Displaying Fabric Type Order as:  " +  defaultSelectedValue2);
+        System.out.println("Displaying Content as:  " +  defaultSelectedValue2);
 		utilities.MinimumWait(driver);
 		
 		
@@ -644,21 +659,134 @@ public class POMasterSheetpage extends DriverFactory{
         Select dropdown3 = new Select(dropdownElement3);
         WebElement selectedOption3 = dropdown3.getFirstSelectedOption();
         String defaultSelectedValue3 = selectedOption3.getText();
-        System.out.println("Displaying Fabric Type Order as:  " +  defaultSelectedValue3);
+        System.out.println("Displaying Count and Construction as:  " +  defaultSelectedValue3);
 		utilities.MinimumWait(driver);
 		
+		WebElement dropdownElement4 = driver.findElement(CPOI.GSM);
+        Select dropdown4 = new Select(dropdownElement4);
+        WebElement selectedOption4 = dropdown4.getFirstSelectedOption();
+        String defaultSelectedValue4 = selectedOption4.getText();
+        System.out.println("Displaying GSM as:  " +  defaultSelectedValue4);
+		utilities.MinimumWait(driver);
+		
+		WebElement dropdownElement5 = driver.findElement(CPOI.cuttablewidth);
+        Select dropdown5 = new Select(dropdownElement5);
+        WebElement selectedOption5 = dropdown5.getFirstSelectedOption();
+        String defaultSelectedValue5 = selectedOption5.getText();
+        System.out.println("Displaying cuttablewidth as:  " +  defaultSelectedValue5);
+		utilities.MinimumWait(driver);
+		
+//		WebElement dropdownElement6 = driver.findElement(CPOI.Color);
+//        Select dropdown6 = new Select(dropdownElement6);
+//        WebElement selectedOption6 = dropdown6.getFirstSelectedOption();
+//        String defaultSelectedValue6 = selectedOption6.getText();
+//        System.out.println("Displaying Color as:  " +  defaultSelectedValue6);
+		
+		utilities.webDriverWait(driver, Color);
+		driver.findElement(Color).click();
+		WebElement defaultcolor = driver.findElement(Color);
+		String color = defaultcolor.getAttribute("value");
+		System.out.println("Displaying the default color:  " + color);
+		utilities.MinimumWait(driver);
+				
 		
 		
 	}
 
-	public void verify_the_Quantity_Details_are_displaying_or_not() {
+	public void verify_the_Quantity_Details_are_displaying_or_not() throws Throwable {
 		
+		utilities.webDriverWait(driver, CPOI.QtyRequired);
+		WebElement QuantyRequired = driver.findElement(CPOI.QtyRequired);
+		String quantity = QuantyRequired.getAttribute("value");
+		System.out.println("Displaying Quantity Required:  "  +  quantity);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, CPOI.QtyAvailableINStock);
+		WebElement Stock = driver.findElement(CPOI.QtyAvailableINStock);
+		String Stockqty = Stock.getAttribute("value");
+		System.out.println("Displaying quatity available in stock as:  " + Stockqty);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, CPOI.Residualshrinkage);
+		WebElement Residual = driver.findElement(CPOI.Residualshrinkage);
+		String residualshrinkage = Residual.getAttribute("value");
+		System.out.println("Displaying Residual Shrikange as:  " + residualshrinkage);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, ProcessLoss);
+		WebElement process = driver.findElement(ProcessLoss);
+		String processloss = process.getAttribute("value");
+		System.out.println("Displaying Process Loss:  " + processloss);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, CPOI.QtyAllowed);
+		WebElement Qtyallowed = driver.findElement(CPOI.QtyAllowed);
+		String Qty = Qtyallowed.getAttribute("value");
+		System.out.println("Displaying the Qyt Allowed default value:  " + Qty);
+		driver.findElement(CPOI.QtyAllowed).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(CPOI.QtyAllowed).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(CPOI.QtyAllowed).sendKeys("5");
+		WebElement Quantity = driver.findElement(CPOI.QtyAllowed);
+		String QuantityAllowed = Quantity.getAttribute("value");
+		System.out.println("Displaying the Qty Allowed:  " + QuantityAllowed);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver,CPOI.Currency);
+		WebElement Curr = driver.findElement(CPOI.Currency);
+		String currency = Curr.getText();
+//		System.out.println("By default the Currency displayed in the field is - "+currency);
+		utilities.MaximumLongWait(driver);
+		
+        WebElement dropdownElement = driver.findElement(CPOI.Currency);
+        Select dropdown = new Select(dropdownElement);
+
+        WebElement selectedOption = dropdown.getFirstSelectedOption();
+        String defaultSelectedValue = selectedOption.getText();
+
+		System.out.println("By default the Currency displayed in the field is - "+ defaultSelectedValue);
+		utilities.MinimumWait(driver);
+				
+		utilities.webDriverWait(driver, CPOI.Rate);
+		driver.findElement(CPOI.Rate).sendKeys("3.5");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, CPOI.UOM);
+		WebElement UOM = driver.findElement(CPOI.UOM);
+		String AtUOM = UOM.getText();
+		System.out.println("displaying the uom default:  " + AtUOM);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, CPOI.LShortIfAny);
+		driver.findElement(CPOI.LShortIfAny).sendKeys("When verify the Quantity Details are displaying or not, And click on Add IPO button whether button is working or not");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, CPOI.Addinfor1);
+		driver.findElement(CPOI.Addinfor1).sendKeys("When verify the Quantity Details are displaying or not, And click on Add IPO button whether button is working or not");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, CPOI.Addinfor2);
+		driver.findElement(CPOI.Addinfor2).sendKeys("When verify the Quantity Details are displaying or not, And click on Add IPO button whether button is working or not");
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void verify_the_IPO_Details_are_prepopulating_or_not() {
+	public void verify_the_IPO_Details_are_prepopulating_or_not() throws Throwable {
 		
+		utilities.webDriverWait(driver, CPOI.IPOdropdown);
+		WebElement IPO = driver.findElement(CPOI.IPOdropdown);
+		String Iponame = IPO.getAttribute("value");
+		System.out.println("Print Displaying IPO:  " + Iponame);
+		utilities.MinimumWait(driver);
 		
+		utilities.webDriverWait(driver, Amount);
+		driver.findElement(Amount).click();
+		WebElement amount = driver.findElement(Amount);
+		String amountwithrate = amount.getAttribute("value");
+		System.out.println("Print amount: " + amountwithrate);
+		utilities.MinimumWait(driver);
+
 	}
 
 	public void click_on_Add_IPO_button_whether_button_is_working_or_not() {
@@ -671,18 +799,31 @@ public class POMasterSheetpage extends DriverFactory{
 		
 	}
 
-	public void Click_on_save_button_to_generate_po() {
-		// TODO Auto-generated method stub
+	public void Click_on_save_button_to_generate_po() throws Throwable {
+		utilities.webDriverWait(driver, Savebutton);
+		driver.findElement(Savebutton).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void verify_whether_the_user_is_navigated_to_Print_form() {
-		// TODO Auto-generated method stub
+	public void verify_whether_the_user_is_navigated_to_Print_form() throws Throwable {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("scrollBy(0, -700)");
+		utilities.webDriverWait(driver, Printscreen);
+		driver.findElement(Printscreen).click();
+		WebElement icon = driver.findElement(Printscreen);
+		File image = icon.getScreenshotAs(OutputType.FILE);
+		
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void Click_on_cancel_to_navigate_back_to_po_master_sheet_screen() {
-		// TODO Auto-generated method stub
+	public void Click_on_cancel_to_navigate_back_to_po_master_sheet_screen() throws Throwable {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("scrollBy(0, 700)");
+		utilities.webDriverWait(driver, cancelbutton);
+		driver.findElement(cancelbutton).click();
+		utilities.MinimumWait(driver);
 		
 	}
 

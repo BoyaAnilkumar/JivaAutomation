@@ -54,7 +54,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Feb 1, 2024 05:39:08 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Feb 2, 2024 06:25:07 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -155,12 +155,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='82.692%'><span class='strong'>43</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='86.792%'><span class='strong'>46</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='3.846%'>2</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='13.462%'>7</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='13.462%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='1.887%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='11.321%'>6</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='11.321%'>0</span> others
                 </div>
             </div>
         </div>
@@ -181,7 +181,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>I want to create po for the process</span>
-						<span class='test-time'>Feb 1, 2024 05:39:12 pm</span>
+						<span class='test-time'>Feb 2, 2024 06:25:11 pm</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -196,7 +196,7 @@
 		<span class='category label'>@FeatureGroup</span>
 		<span class='category label'>@POmastersheetsmoke1</span>
 	</div>
-	<span class='duration right label'>0h 1m 57s+927ms</span>
+	<span class='duration right label'>0h 3m 58s+378ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Create PO for the IPO process</div>
 	</div>
@@ -432,17 +432,9 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='46' class='node when fail' status='fail'>
-			<div class="step-name" title="Stepdefinition1.POMasterSheet_Steps.verify_the_Fabric_Details_are_prepopulating_or_not()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When verify the Fabric Details are prepopulating or not</div>
-			<textarea disabled class="code-block">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "ng-select"
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:47)
-	at Page.POMasterSheetpage.verify_the_Fabric_Details_are_prepopulating_or_not(POMasterSheetpage.java:629)
-	at Stepdefinition1.POMasterSheet_Steps.verify_the_Fabric_Details_are_prepopulating_or_not(POMasterSheet_Steps.java:81)
-	at ✽.verify the Fabric Details are prepopulating or not(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/POMasterSheet.feature:62)
-</textarea>
+		<li test-id='46' class='node when pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.POMasterSheet_Steps.verify_the_Fabric_Details_are_prepopulating_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When verify the Fabric Details are prepopulating or not</div>
+			<div class="node-step"></div>
 		</li>
 		<li test-id='47' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
@@ -451,9 +443,41 @@ Driver info: driver.version: unknown
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='48' class='node when skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.POMasterSheet_Steps.verify_the_Quantity_Details_are_displaying_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When verify the Quantity Details are displaying or not</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='48' class='node when fail' status='fail'>
+			<div class="step-name" title="Stepdefinition1.POMasterSheet_Steps.verify_the_Quantity_Details_are_displaying_or_not()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When verify the Quantity Details are displaying or not</div>
+			<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@formcontrolname='residualShrinkage']"}
+  (Session info: chrome=121.0.6167.86)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57792}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22d37c40ce7d4f07ab54ab9b6ab320b0
+*** Element info: {Using=xpath, value=//input[@formcontrolname='residualShrinkage']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.POMasterSheetpage.verify_the_Quantity_Details_are_displaying_or_not(POMasterSheetpage.java:711)
+	at Stepdefinition1.POMasterSheet_Steps.verify_the_Quantity_Details_are_displaying_or_not(POMasterSheet_Steps.java:86)
+	at ✽.verify the Quantity Details are displaying or not(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/POMasterSheet.feature:63)
+</textarea>
+		</li>
+		<li test-id='49' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.as(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded23.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
 		<li test-id='50' class='node when skip' status='skip'>
 			<div class="step-name" title="Stepdefinition1.POMasterSheet_Steps.verify_the_IPO_Details_are_prepopulating_or_not()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When verify the IPO Details are prepopulating or not</div>
@@ -479,19 +503,12 @@ Driver info: driver.version: unknown
 			<div class="step-name" title="Stepdefinition1.POMasterSheet_Steps.Click_on_cancel_to_navigate_back_to_po_master_sheet_screen()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And Click on cancel to navigate back to po master sheet screen</div>
 			<div class="node-step">Step skipped</div>
 		</li>
-		<li test-id='63' class='node * fail' status='fail'>
-			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:29)
-</textarea>
+		<li test-id='62' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded24.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
 	</ul>
 </div>
@@ -559,12 +576,12 @@ Driver info: driver.version: RemoteWebDriver
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 1, 2024 05:39:12 pm</td>
+										<td>Feb 2, 2024 06:25:11 pm</td>
 										<td class='linked' test-id='1'>I want to create po for the process</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Feb 1, 2024 05:39:12 pm</td>
+										<td>Feb 2, 2024 06:25:11 pm</td>
 										<td class='linked' test-id='2'>Create PO for the IPO process</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -597,7 +614,7 @@ Driver info: driver.version: RemoteWebDriver
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 1, 2024 05:39:12 pm</td>
+										<td>Feb 2, 2024 06:25:11 pm</td>
 										<td class='linked' test-id='2'>Create PO for the IPO process</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -635,7 +652,7 @@ Driver info: driver.version: RemoteWebDriver
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.support.ui.UnexpectedTagNameException</span>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
 						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
 					</div>
 					<div class='exception-content hide'>
@@ -650,55 +667,34 @@ Driver info: driver.version: RemoteWebDriver
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 1, 2024 05:41:03 pm</td>
-										<td class='linked' test-id='46'>When verify the Fabric Details are prepopulating or not</td>
+										<td>Feb 2, 2024 06:27:20 pm</td>
+										<td class='linked' test-id='48'>When verify the Quantity Details are displaying or not</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "ng-select"
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@formcontrolname='residualShrinkage']"}
+  (Session info: chrome=121.0.6167.86)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:47)
-	at Page.POMasterSheetpage.verify_the_Fabric_Details_are_prepopulating_or_not(POMasterSheetpage.java:629)
-	at Stepdefinition1.POMasterSheet_Steps.verify_the_Fabric_Details_are_prepopulating_or_not(POMasterSheet_Steps.java:81)
-	at ✽.verify the Fabric Details are prepopulating or not(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/POMasterSheet.feature:62)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.NoSuchSessionException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Feb 1, 2024 05:41:10 pm</td>
-										<td class='linked' test-id='63'>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57792}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 22d37c40ce7d4f07ab54ab9b6ab320b0
+*** Element info: {Using=xpath, value=//input[@formcontrolname='residualShrinkage']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
-	at Stepdefinition1.Hooks.captureScreenshot(Hooks.java:29)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.POMasterSheetpage.verify_the_Quantity_Details_are_displaying_or_not(POMasterSheetpage.java:711)
+	at Stepdefinition1.POMasterSheet_Steps.verify_the_Quantity_Details_are_displaying_or_not(POMasterSheet_Steps.java:86)
+	at ✽.verify the Quantity Details are displaying or not(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/POMasterSheet.feature:63)
 </textarea>
 										</td>
 									</tr>
@@ -736,25 +732,25 @@ Driver info: driver.version: RemoteWebDriver
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>52</div>
+					<div class='panel-lead'>53</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 1, 2024 05:39:08 pm</div>
+					<div class='panel-lead'>Feb 2, 2024 06:25:07 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 1, 2024 05:41:10 pm</div>
+			 		<div class='panel-lead'>Feb 2, 2024 06:29:11 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 2s+0ms</div>
+					<div class='panel-lead'>0h 4m 4s+269ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -816,21 +812,21 @@ Driver info: driver.version: RemoteWebDriver
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 1,
-				grandChildCount: 52,
-				passGrandChild: 43,
-				failGrandChild: 2,
+				grandChildCount: 53,
+				passGrandChild: 46,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 7,
+				skipGrandChild: 6,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 9,
+				exceptionsGrandChild: 7,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "I want to create po for the process":117.927
+			        "I want to create po for the process":238.378
 			};
 		</script>
 	

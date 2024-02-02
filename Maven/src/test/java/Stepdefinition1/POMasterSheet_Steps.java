@@ -82,12 +82,12 @@ public class POMasterSheet_Steps {
 	}
 	
 	@When("^verify the Quantity Details are displaying or not$")
-	public void verify_the_Quantity_Details_are_displaying_or_not() {
+	public void verify_the_Quantity_Details_are_displaying_or_not() throws Throwable {
 		pomastersheetpage.verify_the_Quantity_Details_are_displaying_or_not();
 	}
 	
 	@When("^verify the IPO Details are prepopulating or not$")
-	public void verify_the_IPO_Details_are_prepopulating_or_not() {
+	public void verify_the_IPO_Details_are_prepopulating_or_not() throws Throwable {
 		pomastersheetpage.verify_the_IPO_Details_are_prepopulating_or_not();
 	}
 	
@@ -102,17 +102,17 @@ public class POMasterSheet_Steps {
 	}
 	
 	@Then("^Click on save button to generate po$")
-	public void Click_on_save_button_to_generate_po() {
+	public void Click_on_save_button_to_generate_po() throws Throwable {
 		pomastersheetpage.Click_on_save_button_to_generate_po();
 	}
 	
 	@And("^verify whether the user is navigated to Print form$")
-	public void verify_whether_the_user_is_navigated_to_Print_form() {
+	public void verify_whether_the_user_is_navigated_to_Print_form() throws Throwable {
 		pomastersheetpage.verify_whether_the_user_is_navigated_to_Print_form();
 	}
 	
 	@And("^Click on cancel to navigate back to po master sheet screen$")
-	public void Click_on_cancel_to_navigate_back_to_po_master_sheet_screen() {
+	public void Click_on_cancel_to_navigate_back_to_po_master_sheet_screen() throws Throwable {
 		pomastersheetpage.Click_on_cancel_to_navigate_back_to_po_master_sheet_screen();
 	}
 	
