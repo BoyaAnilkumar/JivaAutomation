@@ -544,7 +544,7 @@ public class CreatePOforIPO_pages extends DriverFactory {
 		utilities.webDriverWait(driver, insertIPO);
 		driver.findElement(insertIPO).sendKeys("MUL");
 		utilities.MinimumWait(driver);
-		
+
 		utilities.webDriverWait(driver, SelectIpo);
 		driver.findElement(SelectIpo).click();
 		utilities.MinimumWait(driver);

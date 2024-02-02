@@ -36,9 +36,9 @@ public class POMasterSheetpage extends DriverFactory{
 	By SearchByIPO											= By.xpath("//div[text()='Select IPO']");
 	By SelectIPO											= By.xpath("//input[@role='textbox']");
 	
-	By Applybutton											= By.xpath("//button[@class='btn btn-md btn-primary']");
-	By Resetbutton											= By.xpath("//button[@class='btn btn-md btn-light btn-active-light-primary mr-2']");
-	By Pagination											= By.xpath("//span[@class='p-paginator-current ng-star-inserted']");
+	public By Applybutton									= By.xpath("//button[@class='btn btn-md btn-primary']");
+	public By Resetbutton									= By.xpath("//button[@class='btn btn-md btn-light btn-active-light-primary mr-2']");
+	public By Pagination									= By.xpath("//span[@class='p-paginator-current ng-star-inserted']");
 	
 	By Searchkeyword										= By.xpath("//input[@placeholder='Search PO#']");
 	By generatepo											= By.xpath("(//a[@title='Generate PO'])[1]");

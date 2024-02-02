@@ -176,6 +176,95 @@ public class CreatePOForStockSteps {
 	public void Click_on_Save_button_in_the_Create_PO_For_Stock_screen() throws Throwable {
 		CPOFS.Click_on_Save_button_in_the_Create_PO_For_Stock_screen();
 	}
-	
+	@Given ("^Enter Quantity of the Fabric$")
+	public void Enter_Quantity_of_the_Fabric() throws Throwable {
+		CPOFS.Enter_Quantity_of_the_Fabric();
+	}
+	@Then ("^Verify the mandatory validation msg on saving$")
+	public void Verify_the_mandatory_validation_msg_on_saving() throws Throwable {
+		CPOFS.Verify_the_mandatory_validation_msg_on_saving();
+	}
+	@Then ("^Verify the Type of Order info tag name$")
+	public void Verify_the_Type_of_Order_info_tag() throws Throwable {
+		CPOFS.Verify_the_Type_of_Order_info_tag();
+	}
+	@Then ("^Verify the Deliver To info tag name$")
+	public void Verify_the_Deliver_To_info_tag() throws Throwable {
+		CPOFS.Verify_the_Deliver_To_info_tag();
+	}
+	@Then ("^Verify the Supplier info tag name$")
+	public void Verify_the_Supplier_tag_name() throws Throwable {
+		CPOFS.Verify_the_Supplier_tag_name();
+	}
+	@Then ("^Verify the Payment Terms info tag name$")
+	public void Verify_the_Payment_Terms_tag_name() throws Throwable {
+		CPOFS.Verify_the_Payment_Terms_tag_name();
+	}
+	@Then ("^Verify the Delivery Terms info tag name$")
+	public void Verify_the_Delivery_Terms_tag_name() throws Throwable {
+		CPOFS.Verify_the_Delivery_Terms_tag_name();
+	}
+	@Then ("^Verify the Lead Time info tag name$")
+	public void Verify_the_Lead_Time_tag_name() throws Throwable {
+		CPOFS.Verify_the_Lead_Time_tag_name();
+	}
+	@Then ("^Verify the Process info tag name$")
+	public void Verify_the_Process_tag_name() throws Throwable {
+		CPOFS.Verify_the_Process_tag_name();
+	}
+	@Then ("^Verify the Fabric Type info tag name$")
+	public void Verify_the_Fabric_Type_tag_name() throws Throwable {
+		CPOFS.Verify_the_Fabric_Type_tag_name();
+	}
+	@Then ("^Verify the Fabric Name info tag name$")
+	public void Verify_the_Fabric_Name_tag_name() throws Throwable {
+		CPOFS.Verify_the_Fabric_Name_tag_name();
+	}
+	@Then ("^Verify the Content info tag name$")
+	public void Verify_the_Content_tag_name() throws Throwable {
+		CPOFS.Verify_the_Content_tag_name();
+	}
+	@Then ("^Verify the Count info tag name$")
+	public void Verify_the_Count_tag_name() throws Throwable {
+		CPOFS.Verify_the_Count_tag_name();
+	}
+	@Then ("^Verify the GSM info tag name$")
+	public void Verify_the_GSM_tag_name() throws Throwable {
+		CPOFS.Verify_the_GSM_tag_name();
+	}
+	@Then ("^Verify the Cuttable Width info tag name$")
+	public void Verify_the_Cuttable_Width_tag_name() throws Throwable {
+		CPOFS.Verify_the_Cuttable_Width_tag_name();
+	}
+	@Then ("^Verify the Color info tag name$")
+	public void Verify_the_Color_tag_name() throws Throwable {
+		CPOFS.Verify_the_Color_tag_name();
+	}
+	@Then ("^Verify the Residual Shrinkage info tag name$")
+	public void Verify_the_Residual_Shrinkage_tag_name() throws Throwable {
+		CPOFS.Verify_the_Residual_Shrinkage_tag_name();
+	}
+	@Then ("^Verify the Process Loss info tag name$")
+	public void Verify_the_Process_Loss_tag_name() throws Throwable {
+		CPOFS.Verify_the_Process_Loss_tag_name();
+	}
+	@Then ("^Verify the Qty Allowed info tag name$")
+	public void Verify_the_Qty_Allowed_tag_name() throws Throwable {
+		CPOFS.Verify_the_Qty_Allowed_tag_name();
+	}
+	@Then ("^Verify the Rate info tag name$")
+	public void Verify_the_Rate_tag_name() throws Throwable {
+		CPOFS.Verify_the_Rate_tag_name();
+	}
+	@Then ("^Verify the UOM info tag name$")
+	public void Verify_the_UOM_tag_name() throws Throwable {
+		CPOFS.Verify_the_UOM_tag_name();
+	}
+	@Then ("^Verify the Quantity info tag name$")
+	public void Verify_the_Quantity_tag_name() throws Throwable {
+		CPOFS.Verify_the_Quantity_tag_name();
+	}
+	  
+	 
 
 }

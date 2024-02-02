@@ -1,7 +1,7 @@
 @FeatureGroup
 Feature: I want to create po for the process
 
-  @POmastersheetsmoke
+  @POmastersheetsmoke1
   Scenario: Verification of Filter functionality
     When User navigates to Login page
     Then User enters the username and password
@@ -33,7 +33,7 @@ Feature: I want to create po for the process
     And click on filter expansion
     Then Select all the Fields in the filter and apply filter
 
-  @POmastersheetsmoke1
+  @POmastersheetsmoke
   Scenario: Create PO for the IPO process
     When User navigates to Login page
     Then User enters the username and password

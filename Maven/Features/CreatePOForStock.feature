@@ -2,14 +2,47 @@
 @FeatureGroup
 Feature: I want to use this template for my feature file
 
-  @CreatePOForStock1
+@CreatePOForStock1
+  Scenario: Verifying the MAndatory validation msg
+  When user navigates to Login page
+  Given Login with the Production Manager
+  And Click on the SignIn button
+  Then Navigate to Create PO For Stock screen
+  Given Enter Quantity of the Fabric
+  Then Verify the mandatory validation msg on saving
+  Then Verify the Type of Order info tag name
+  Then Verify the Deliver To info tag name
+  Then Verify the Supplier info tag name
+  Then Verify the Payment Terms info tag name
+  Then Verify the Delivery Terms info tag name
+  Then Verify the Lead Time info tag name
+  Then Verify the Process info tag name
+  Then Verify the Fabric Type info tag name
+  Then Verify the Fabric Name info tag name
+  Then Verify the Content info tag name
+  Then Verify the Count info tag name
+  Then Verify the GSM info tag name
+  Then Verify the Cuttable Width info tag name
+  Then Verify the Color info tag name
+  Then Verify the Residual Shrinkage info tag name
+  #Then Verify the Process Loss info tag name
+  Then Verify the Qty Allowed info tag name
+  Then Verify the Rate info tag name
+  Then Verify the UOM info tag name
+  #Then Verify the Quantity info tag name
+  
+
+  @CreatePOForStock
   Scenario: Adding a PO Stock record 
    When user navigates to Login page
   Given Login with the Production Manager
   And Click on the SignIn button
   Then Navigate to Create PO For Stock screen
   Then Click and Select Order Type
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
   Then Verify whether current PO Date is displayed or not
   Then Verify whether the PO Number field value
   And Select a Buyer
