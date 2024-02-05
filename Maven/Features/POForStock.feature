@@ -14,12 +14,13 @@ Feature: PO For Stock screen functionality
   Given Enter the Style name in Search By Style field 
   And click on Reset and Apply button
  
- @StockPO1
+ @StockPO2
   Scenario: Adding a PO Stock record
   When user navigates to Login page
   Given Login with the Production Manager
   And Click on the SignIn button
   Then Navigate to PO For Stock screen
+  Then Verify the count of the PO Records in the PO grid before adding the PO record
   When Click on the Add Data Entry button
   Then Verify whether the page is navigated to the Create PO For Stock or not
   Then Click and Select Order Type
@@ -60,6 +61,10 @@ Feature: PO For Stock screen functionality
   #Then Verify the DueOn Date value
   Given Enter the Quantity of the Fabric 
   Then Click on Save button in the Create PO For Stock screen
+  #Then Click on the Cancel button in the Print Preview form
+  Then Verify whether the page is navigated to the PO For Stock or not
+  Then Verify the count of the PO Records in the PO grid after adding the PO record
+  Then Verify whether the added PO record is added to the grid
   
   
    @StockPO1

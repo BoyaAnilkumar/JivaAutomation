@@ -181,7 +181,7 @@ public class CreatePOForStockPage extends DriverFactory{
 	public void Select_a_Delivery_To_factory_name() throws Throwable {
 		driver.findElement(Delivery).click();
 		driver.findElement(Delivery).clear();
-		driver.findElement(Delivery).sendKeys("Jiva");
+		driver.findElement(Delivery).sendKeys("Jiv");
 		utilities.webDriverWait(driver, sec_Delivery);
 		driver.findElement(sec_Delivery).click();
 		utilities.MinimumWait(driver);
@@ -435,14 +435,14 @@ public class CreatePOForStockPage extends DriverFactory{
 
 	public void Enter_Residual_Shrinkage_value() throws Throwable {
 		utilities.webDriverWait(driver,Residual);
-		driver.findElement(Residual).sendKeys("8");
+		driver.findElement(Residual).sendKeys("4");
 		utilities.MinimumWait(driver);
 		
 	}
 	
 	public void Enter_Process_Loss_value() throws Throwable {
 		utilities.webDriverWait(driver,ProcessLoss);
-		driver.findElement(ProcessLoss).sendKeys("9");
+		driver.findElement(ProcessLoss).sendKeys("5");
 		utilities.MinimumWait(driver);
 	}
 
@@ -459,7 +459,7 @@ public class CreatePOForStockPage extends DriverFactory{
 	public void Verify_whether_the_user_is_able_to_change_the_value() throws Throwable {
 		utilities.webDriverWait(driver,QtyAllowed);
 		driver.findElement(QtyAllowed).clear();
-		driver.findElement(QtyAllowed).sendKeys("4");
+		driver.findElement(QtyAllowed).sendKeys("3.3");
 		WebElement Qtyper = driver.findElement(QtyAllowed);
 		String QtyAllowper = Qtyper.getAttribute("value");
 		System.out.println("Updated +/-Qty Allowed percentage value is - "+QtyAllowper);
@@ -510,7 +510,7 @@ public class CreatePOForStockPage extends DriverFactory{
 	public void Enter_Rate_value() throws Throwable {
 		utilities.webDriverWait(driver,Rate);
 		driver.findElement(Rate).clear();
-		driver.findElement(Rate).sendKeys("8");
+		driver.findElement(Rate).sendKeys("34");
 		utilities.MinimumWait(driver);
 
 	}
@@ -591,7 +591,7 @@ public class CreatePOForStockPage extends DriverFactory{
 		utilities.MinimumWait(driver);
 		utilities.webDriverWait(driver,Qty);
 		driver.findElement(Qty).clear();
-		driver.findElement(Qty).sendKeys("6000");
+		driver.findElement(Qty).sendKeys("5600");
 		utilities.MinimumWait(driver);
 		utilities.webDriverWait(driver, Total);
 		driver.findElement(Total).click();
@@ -611,23 +611,23 @@ public class CreatePOForStockPage extends DriverFactory{
 		driver.findElement(butt_Save).click();
 		utilities.MinimumWait(driver);
 		
-		utilities.webDriverWait(driver, SaveToaster);
-		utilities.WaitUntilPageIsLoaded(driver);
-		WebElement saveButton = driver.findElement(SaveToaster);
-		
-        Actions actions = new Actions(driver);
-        actions.moveToElement(saveButton).perform();
-	        
-        WebElement successToaster = driver.findElement(SaveToaster);
-        String expectedToasterMessage = "Create PO For Fabric Saved Successfully"; 
-
-        String actualToasterMessage = successToaster.getText();
-
-        if (actualToasterMessage.equals(expectedToasterMessage)) {
-            System.out.println("Toaster message is correct: " + actualToasterMessage);
-        } else {
-            System.out.println("Toaster message is incorrect: " + actualToasterMessage);
-        }
+//		utilities.webDriverWait(driver, SaveToaster);
+//		utilities.WaitUntilPageIsLoaded(driver);
+//		WebElement saveButton = driver.findElement(SaveToaster);
+//		
+//        Actions actions = new Actions(driver);
+//        actions.moveToElement(saveButton).perform();
+//	        
+//        WebElement successToaster = driver.findElement(SaveToaster);
+//        String expectedToasterMessage = "Create PO For Fabric Saved Successfully"; 
+//
+//        String actualToasterMessage = successToaster.getText();
+//
+//        if (actualToasterMessage.equals(expectedToasterMessage)) {
+//            System.out.println("Toaster message is correct: " + actualToasterMessage);
+//        } else {
+//            System.out.println("Toaster message is incorrect: " + actualToasterMessage);
+//        }
 	}
 
 

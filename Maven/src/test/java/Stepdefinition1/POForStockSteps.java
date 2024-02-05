@@ -31,9 +31,25 @@ public class POForStockSteps {
 	public void Verify_whether_the_page_is_navigated_to_the_Create_PO_For_Stock_or_not() throws Throwable {
 		POS.Verify_whether_the_page_is_navigated_to_the_Create_PO_For_Stock_or_not();
 	}
-	@Then ("^Verify the count of the PO Records in the PO grid$")
-	public void Verify_the_count_of_the_PO_Records_in_the_PO_grid() throws Throwable {
-		POS.Verify_the_count_of_the_PO_Records_in_the_PO_grid();
+	@Then ("^Verify the count of the PO Records in the PO grid before adding the PO record$")
+	public void Verify_the_count_of_the_PO_Records_in_the_PO_grid_before_adding_the_PO_record() throws Throwable {
+		POS.Verify_the_count_of_the_PO_Records_in_the_PO_grid_before_adding_the_PO_record();
+	}
+	@Then ("^Click on the Cancel button in the Print Preview form$")
+	public void Click_on_the_Cancel_button_in_the_Print_Preview_form() throws Throwable {
+		POS.Click_on_the_Cancel_button_in_the_Print_Preview_form();
+	}
+	@Then ("^Verify whether the page is navigated to the PO For Stock or not$")
+	public void Verify_whether_the_page_is_navigated_to_the_PO_For_Stock_or_not() throws Throwable {
+		POS.Verify_whether_the_page_is_navigated_to_the_PO_For_Stock_or_not();
+	}
+	@Then ("^Verify the count of the PO Records in the PO grid after adding the PO record$")
+	public void Verify_the_count_of_the_PO_Records_in_the_PO_grid_after_adding_the_PO_record() throws Throwable {
+		POS.Verify_the_count_of_the_PO_Records_in_the_PO_grid_after_adding_the_PO_record();
+	}
+	@Then ("^Verify whether the added PO record is added to the grid$")
+	public void Verify_whether_the_added_PO_record_is_added_to_the_grid() throws Throwable {
+		POS.Verify_whether_the_added_PO_record_is_added_to_the_grid();
 	}
 
 }

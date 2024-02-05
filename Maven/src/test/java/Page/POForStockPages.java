@@ -1,14 +1,7 @@
 package Page;
 
-import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.SwingUtilities;
-import javax.swing.table.DefaultTableModel;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import util.DriverFactory;
@@ -20,6 +13,9 @@ public class POForStockPages extends DriverFactory {
 	RevisedMUWorkingPages RMUW = new RevisedMUWorkingPages();
 	CreatePOForStockPage CPOS = new CreatePOForStockPage();
 	POMasterSheetpage POMS = new POMasterSheetpage();
+	
+	int afterTotalRowcount=0;
+	int beforeTotalRowcount=0;
 	
 	By modPOStk = By.xpath("//a[text()='PO For Stock']");
 	By Fil_Textbox = By.xpath("//input[@role='textbox']");
@@ -35,6 +31,10 @@ public class POForStockPages extends DriverFactory {
 	By navCreatePOStk 		= By.xpath("//h3[text()='Create PO for Stock']");
 	static By tab_PO 				= By.xpath("//p-table[@class='p-element']");
 	By page_next			= By.xpath("//span[@class='p-paginator-pages ng-star-inserted']/following-sibling::button[1]");
+	By butt_Cancel 			= By.xpath("//button[@id='closepagebutton']");
+	By navPOforStock		= By.xpath("//div[contains(@class,'page_title_left d-flex')]//h3[1]");
+	
+	
 	
 
 	public void Navigate_to_PO_For_Stock_screen() throws Throwable {
@@ -107,6 +107,9 @@ public class POForStockPages extends DriverFactory {
 	}
 
 	public void Click_on_the_Add_Data_Entry_button() throws Throwable {
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+		js1.executeScript("scrollTo(0, 0)");
+		utilities.MaximumWait(driver);
 		utilities.webDriverWait(driver, butt_AddDataEntry);
 		driver.findElement(butt_AddDataEntry).click();
 	}
@@ -120,7 +123,7 @@ public class POForStockPages extends DriverFactory {
 		
 	}
 
-	public void Verify_the_count_of_the_PO_Records_in_the_PO_grid() throws Throwable {
+	public void Verify_the_count_of_the_PO_Records_in_the_PO_grid_before_adding_the_PO_record() throws Throwable {
 		 utilities.webDriverWait(driver, tab_PO);
 		    WebElement table = driver.findElement(tab_PO);
 		    // Get the row count on the current page
@@ -139,8 +142,67 @@ public class POForStockPages extends DriverFactory {
 		        nextPageButton = driver.findElement(page_next);
 		    }
 
-		    int TotalRowcount = gridRowCount -5;
-		    System.out.println("Total number of PO Records in the PO grid: " + TotalRowcount);
+		    beforeTotalRowcount = gridRowCount -7;
+		    System.out.println("Total number of PO Records in the PO grid before adding the PO record: " + beforeTotalRowcount);
+	}
+
+	public void Click_on_the_Cancel_button_in_the_Print_Preview_form() throws Throwable {
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+		js1.executeScript("scrollTo(0, 500)");
+		utilities.MaximumWait(driver);
+		utilities.webDriverWait(driver, butt_Cancel);
+		driver.findElement(butt_Cancel).click();
+	}
+
+	public void Verify_whether_the_page_is_navigated_to_the_PO_For_Stock_or_not() throws Throwable {
+		utilities.webDriverWait(driver, modPOStk);
+		driver.findElement(modPOStk).click();
+		utilities.webDriverWait(driver, navPOforStock);
+		driver.findElement(navPOforStock).isDisplayed();
+		WebElement POStk = driver.findElement(navPOforStock);
+		String POforStk = POStk.getText();
+		System.out.println("Navigated to " +POforStk + " screen");
+	}
+
+	public void Verify_the_count_of_the_PO_Records_in_the_PO_grid_after_adding_the_PO_record() throws Throwable {
+		utilities.webDriverWait(driver, tab_PO);
+	    WebElement table = driver.findElement(tab_PO);
+	    // Get the row count on the current page
+	    int rowCountOnCurrentPage = table.findElements(By.tagName("tr")).size();
+	    // Check if there is pagination
+	    WebElement nextPageButton = driver.findElement(page_next);
+	    int gridRowCount = rowCountOnCurrentPage;
+	    // Loop through pages and get the total row count
+	    while (nextPageButton.isEnabled()) {
+	        nextPageButton.click();
+	        utilities.webDriverWait(driver, tab_PO);
+	        table = driver.findElement(tab_PO);
+	        rowCountOnCurrentPage = table.findElements(By.tagName("tr")).size();
+	        gridRowCount += rowCountOnCurrentPage;
+	        // Check if there is another next page
+	        nextPageButton = driver.findElement(page_next);
+	    }
+
+	    afterTotalRowcount = gridRowCount -7;
+	    System.out.println("Total number of PO Records in the PO grid after adding the PO record: " + afterTotalRowcount);
+
+	}
+
+	public void Verify_whether_the_added_PO_record_is_added_to_the_grid() throws Throwable {
+//		POForStockPages POFSP = new POForStockPages();
+//		POFSP.Verify_the_count_of_the_PO_Records_in_the_PO_grid_after_adding_the_PO_record();
+//		POFSP.Verify_the_count_of_the_PO_Records_in_the_PO_grid_before_adding_the_PO_record();
+		System.out.println(beforeTotalRowcount);
+		System.out.println(afterTotalRowcount);
+		
+		
+		int diff = afterTotalRowcount - beforeTotalRowcount;
+		System.out.println("print the difference - "+diff);	
+		if (diff==1) {
+			System.out.println("Display the PO record has added to the grid");	
+		}
+		
+		
 	}
 
 }
