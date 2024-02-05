@@ -29,6 +29,7 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	public	By POnumber						= By.xpath("//input[@formcontrolname='poNumber']");
 	public	By DeliverTo					= By.xpath("//input[@placeholder='Search By Deliver To']");
 	public	By SelectDeliver				= By.xpath("//span[text()='JIVA DESIGNS PVT. LTD.']");
+	public 	By SelectAnieDeliver			= By.xpath("//span[text()='Anie Textiles']");
 	public	By DeliverAddress				= By.xpath("//input[@formcontrolname='deliverAddress']");
 	public	By DeliverGST					= By.xpath("//input[@formcontrolname='deliverGstNumber']");
 	public	By Supplier						= By.xpath("//input[@placeholder='Search By Supplier']");

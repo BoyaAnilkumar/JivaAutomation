@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="243.792">
-    <testcase classname="I want to create po for the process" name="Create PO for the IPO process" time="243.386">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@formcontrolname='residualShrinkage']&quot;}&#10;  (Session info: chrome=121.0.6167.86)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57792}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22d37c40ce7d4f07ab54ab9b6ab320b0&#10;*** Element info: {Using=xpath, value=//input[@formcontrolname='residualShrinkage']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When User navigates to Login page...........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="89.88">
+    <testcase classname="I want to create po for the process" name="Revising the valid PO in PO Master Screen" time="89.498">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
 And Click on the Woven Module...............................................passed
@@ -11,115 +10,10 @@ And click on Data Entry in fabric sourcing module...........................pass
 And click on Generate PO....................................................passed
 And click on PO Master Sheet................................................passed
 Given Search with IPO in search keyword textbox.............................passed
-And click on generate po icon...............................................passed
-Then Verify the Create PO for IPO screen is displayed or not................passed
-And Verify the PO details are displaying....................................passed
-When Enter Deliver To details and select from the suggestions...............passed
-When Deliver address is displaying after selecting the deliver to details or not.passed
-When verify the GSTIN number is displaying or not...........................passed
-Then Enter supplier name and select from the suggestions....................passed
-And verify the supplier address after selecting the supplier................passed
-And verify the GSTIN number is displaying after selecting the supplier......passed
-And verify the payment terms are displaying after selecting the supplier....passed
-And verify that Delivery terms are displaying after selecting the supplier..passed
-And Enter Lead time in Days.................................................passed
-When verify the Fabric Details are prepopulating or not.....................passed
-When verify the Quantity Details are displaying or not......................failed
-When verify the IPO Details are prepopulating or not........................skipped
-And click on Add IPO button whether button is working or not................skipped
-And Delete the record in IPO table..........................................skipped
-Then Click on save button to generate po....................................skipped
-And verify whether the user is navigated to Print form......................skipped
-And Click on cancel to navigate back to po master sheet screen..............skipped
-=======
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="205.625">
-    <testcase classname="PO For Stock screen functionality" name="Adding a PO Stock record" time="146.157">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[text()='Create PO For Fabric Saved Successfully']&quot;}&#10;  (Session info: chrome=121.0.6167.86)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 613d915d728f083426e30c4d19df5ead&#10;*** Element info: {Using=xpath, value=//h2[text()='Create PO For Fabric Saved Successfully']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When user navigates to Login page...........................................passed
-Given Login with the Production Manager.....................................passed
-And Click on the SignIn button..............................................passed
-Then Navigate to PO For Stock screen........................................passed
-When Click on the Add Data Entry button.....................................passed
-Then Verify whether the page is navigated to the Create PO For Stock or not.passed
-Then Click and Select Order Type............................................passed
-When Select a Delivery To factory name......................................passed
-When Select a Supplier name.................................................passed
-Given Enter Lead Time value.................................................passed
-Then Select a Process for the selected Order Type...........................passed
-Then Select a Fabric Type...................................................passed
-Then Select a Fabric Name...................................................passed
-Then Select a Color.........................................................passed
-Given Enter Residual Shrinkage value........................................passed
-Given Enter Process Loss value..............................................passed
-Given Enter Rate value......................................................passed
-Then Select an UOM..........................................................passed
-Given Enter the Quantity of the Fabric......................................passed
-Then Click on Save button in the Create PO For Stock screen.................failed
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-
-StackTrace:
-<<<<<<< HEAD
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@formcontrolname='residualShrinkage']"}
-=======
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[text()='Create PO For Fabric Saved Successfully']"}
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-  (Session info: chrome=121.0.6167.86)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-<<<<<<< HEAD
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57792}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 22d37c40ce7d4f07ab54ab9b6ab320b0
-*** Element info: {Using=xpath, value=//input[@formcontrolname='residualShrinkage']}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.POMasterSheetpage.verify_the_Quantity_Details_are_displaying_or_not(POMasterSheetpage.java:711)
-	at Stepdefinition1.POMasterSheet_Steps.verify_the_Quantity_Details_are_displaying_or_not(POMasterSheet_Steps.java:86)
-	at ✽.verify the Quantity Details are displaying or not(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/POMasterSheet.feature:63)
-=======
-System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 613d915d728f083426e30c4d19df5ead
-*** Element info: {Using=xpath, value=//h2[text()='Create PO For Fabric Saved Successfully']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.CreatePOForStockPage.Click_on_Save_button_in_the_Create_PO_For_Stock_screen(CreatePOForStockPage.java:616)
-	at Stepdefinition1.CreatePOForStockSteps.Click_on_Save_button_in_the_Create_PO_For_Stock_screen(CreatePOForStockSteps.java:177)
-	at ✽.Click on Save button in the Create PO For Stock screen(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/POForStock.feature:62)
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
-]]></failure>
-    </testcase>
-    <testcase classname="PO For Stock screen functionality" name="Verifying wether the added record is displayed in the grid or not" time="58.888">
-        <system-out><![CDATA[When user navigates to Login page...........................................passed
-Given Login with the Production Manager.....................................passed
-And Click on the SignIn button..............................................passed
-Then Navigate to PO For Stock screen........................................passed
-Then Verify the count of the PO Records in the PO grid......................passed
+When click on filter icon on grid and search with the process name..........passed
+And click on revise po icon.................................................passed
+And navigated to revise po screen and displaying the update form or not.....passed
+Then update the data and submit the revise po...............................passed
 ]]></system-out>
     </testcase>
 </testsuite>

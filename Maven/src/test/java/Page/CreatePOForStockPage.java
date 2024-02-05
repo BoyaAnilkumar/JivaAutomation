@@ -179,7 +179,7 @@ public class CreatePOForStockPage extends DriverFactory{
 
 
 	public void Select_a_Delivery_To_factory_name() throws Throwable {
-<<<<<<< HEAD
+
 //		utilities.webDriverWait(driver, Delivery);
 //		driver.findElement(Delivery).click();
 //		driver.findElement(Delivery).sendKeys("Jiva");
@@ -187,8 +187,6 @@ public class CreatePOForStockPage extends DriverFactory{
 //		driver.findElement(sec_Delivery).click();
 		
 		utilities.webDriverWait(driver, Delivery);
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 		driver.findElement(Delivery).click();
 		driver.findElement(Delivery).clear();
 		driver.findElement(Delivery).sendKeys("Jiva");

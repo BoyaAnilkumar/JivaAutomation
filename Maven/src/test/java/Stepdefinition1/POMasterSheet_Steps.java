@@ -116,5 +116,48 @@ public class POMasterSheet_Steps {
 		pomastersheetpage.Click_on_cancel_to_navigate_back_to_po_master_sheet_screen();
 	}
 	
+	@When("^click on filter icon on grid and search with the process name$")
+	public void click_on_filter_icon_on_grid_and_search_with_the_process_name() throws Throwable {
+		pomastersheetpage.click_on_filter_icon_on_grid_and_search_with_the_process_name();
+	}
+	
+	@And("^click on revise po icon$")
+	public void click_on_revise_po_icon() throws Throwable {
+		pomastersheetpage.click_on_revise_po_icon();
+	}
+	
+	@And("^navigated to revise po screen and displaying the update form or not$")
+	public void navigated_to_revise_po_screen_and_displaying_the_update_form_or_not() throws Throwable {
+		pomastersheetpage.navigated_to_revise_po_screen_and_displaying_the_update_form_or_not();
+	}
+	
+	@Then("^update the data and submit the revise po$")
+	public void update_the_data_and_submit_the_revise_po() {
+		pomastersheetpage.update_the_data_and_submit_the_revise_po();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }

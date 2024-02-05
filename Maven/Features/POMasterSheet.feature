@@ -70,6 +70,21 @@ Feature: I want to create po for the process
     
     
     
+    @RevisePO
+    Scenario: Revising the valid PO in PO Master Screen
+    When User navigates to Login page
+    Then User enters the username and password
+    And User click on the signIn
+    And Click on the Woven Module
+    Then Click on Fabric sourcing module
+    And click on Data Entry in fabric sourcing module
+    And click on Generate PO
+    And click on PO Master Sheet
+    Given Search with IPO in search keyword textbox
+    When click on filter icon on grid and search with the process name
+    And click on revise po icon
+    And navigated to revise po screen and displaying the update form or not
+    Then update the data and submit the revise po
     
     
     

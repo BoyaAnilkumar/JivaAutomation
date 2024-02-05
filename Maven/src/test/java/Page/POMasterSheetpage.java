@@ -50,6 +50,18 @@ public class POMasterSheetpage extends DriverFactory{
 	By Savebutton											= By.xpath("//button[@type='submit']");
 	By Printscreen											= By.xpath("//img[@alt='Logo Icon']");
 	By cancelbutton											= By.xpath("//button[@id='closepagebutton']");
+	By Fabricprocessgrid									= By.xpath("//div[text()=' Fabric Process ']");
+	By Fabricprocessfiltericon								= By.xpath("(//button[@type='button']//span)[4]");
+	By Filterinput											= By.xpath("//input[@class='p-inputtext p-component p-element ng-star-inserted']");
+	By FilterApply											= By.xpath("//span[text()='Apply']");
+	By RevisePO												= By.xpath("//a[@class='btn btn-sm btn-warning ng-star-inserted']");
+	By processname											= By.xpath("//td[text()='Printing']");
+	By Revisedscreenname									= By.xpath("//h3[text()='revised PO for Fabric']");
+	By Suppliercode											= By.xpath("//input[@formcontrolname='supplierCode']");
+	
+	
+	
+	
 	
 	
 	
@@ -824,6 +836,85 @@ public class POMasterSheetpage extends DriverFactory{
 		utilities.webDriverWait(driver, cancelbutton);
 		driver.findElement(cancelbutton).click();
 		utilities.MinimumWait(driver);
+		
+	}
+
+	public void click_on_filter_icon_on_grid_and_search_with_the_process_name() throws Throwable {
+		utilities.webDriverWait(driver, Fabricprocessgrid);
+		driver.findElement(Fabricprocessgrid).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Fabricprocessfiltericon);
+		System.out.println("Click on the filter icon");
+		driver.findElement(Fabricprocessfiltericon).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Filterinput);
+		driver.findElement(Filterinput).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(Filterinput).sendKeys("Printing");
+		utilities.MinimumWait(driver);
+		driver.findElement(FilterApply).click();
+		utilities.MinimumWait(driver);
+		
+	}
+
+	public void click_on_revise_po_icon() throws Throwable {
+		//verify the printing process is displaying after applying the filters
+		driver.findElement(processname).click();
+		WebElement ProcessName = driver.findElement(processname);
+		String Process = ProcessName.getText();
+		if(Process.equals("Printing")) {
+		System.out.println("Displaying the selected process name:  " + Process);
+		}else {
+		System.out.println("Not Displaying the Selected process");
+		}
+		
+		
+		utilities.webDriverWait(driver, RevisePO);
+		driver.findElement(RevisePO).click();
+		utilities.MinimumWait(driver);
+
+	}
+
+	public void navigated_to_revise_po_screen_and_displaying_the_update_form_or_not() throws Throwable {
+		
+		utilities.webDriverWait(driver, Revisedscreenname);
+		driver.findElement(Revisedscreenname).click();
+		WebElement screenname = driver.findElement(Revisedscreenname);
+		String Nameofscreen = screenname.getText();
+		if(Nameofscreen.equals("revised PO for Fabric")) {
+			System.out.println("Displaying the screen name as:  " +  Nameofscreen);
+		}else {
+			System.out.println("Screen name is not displaying as:  "  + Nameofscreen);
+		}
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, CPOI.DeliverTo);
+		driver.findElement(CPOI.DeliverTo).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(CPOI.DeliverTo).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(CPOI.DeliverTo).sendKeys("Anie");
+		utilities.MinimumWait(driver);
+		driver.findElement(CPOI.SelectAnieDeliver).click();
+		utilities.MinimumWait(driver);
+		System.out.println("Should display deliver to name as: "+ "Anie Textiles");
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("scrollBy(0, 500)");
+		utilities.webDriverWait(driver, Suppliercode);
+		driver.findElement(Suppliercode).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(Suppliercode).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(Suppliercode).sendKeys("AK/SPG");
+		utilities.MinimumWait(driver);
+		System.out.println("Supplier code is changes as: " + "AK/SPG");
+	}
+
+	public void update_the_data_and_submit_the_revise_po() {
+		// TODO Auto-generated method stub
 		
 	}
 

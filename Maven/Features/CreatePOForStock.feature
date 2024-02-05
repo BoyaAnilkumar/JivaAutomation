@@ -39,10 +39,6 @@ Feature: I want to use this template for my feature file
   And Click on the SignIn button
   Then Navigate to Create PO For Stock screen
   Then Click and Select Order Type
-<<<<<<< HEAD
-
-=======
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
   Then Verify whether current PO Date is displayed or not
   Then Verify whether the PO Number field value
   And Select a Buyer
