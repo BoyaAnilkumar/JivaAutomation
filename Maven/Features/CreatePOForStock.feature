@@ -76,7 +76,7 @@ Feature: I want to use this template for my feature file
   Then Verify the DueOn Date value
   Given Enter the Quantity of the Fabric 
   Then Verify whether the Qty Required field is displaying the entered qty or not
-  #Then Click on the Reset button in the Create PO For Stock screen
+  Then Click on the Reset button in the Create PO For Stock screen
   Then Click on Save button in the Create PO For Stock screen
      
    

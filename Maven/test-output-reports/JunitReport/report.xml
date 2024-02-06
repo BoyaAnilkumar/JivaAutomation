@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="209.573">
-    <testcase classname="PO For Stock screen functionality" name="Adding a PO Stock record" time="209.081">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="53.28">
+    <testcase classname="PO For Stock screen functionality" name="Verifying revision of the PO record in the Revised PO For Stock screen" time="52.816">
         <system-out><![CDATA[When user navigates to Login page...........................................passed
 Given Login with the Production Manager.....................................passed
 And Click on the SignIn button..............................................passed
 Then Navigate to PO For Stock screen........................................passed
-Then Verify the count of the PO Records in the PO grid before adding the PO record.passed
-When Click on the Add Data Entry button.....................................passed
-Then Verify whether the page is navigated to the Create PO For Stock or not.passed
-Then Click and Select Order Type............................................passed
-When Select a Delivery To factory name......................................passed
-When Select a Supplier name.................................................passed
-Given Enter Lead Time value.................................................passed
-Then Select a Process for the selected Order Type...........................passed
-Then Select a Fabric Type...................................................passed
-Then Select a Fabric Name...................................................passed
-Then Select a Color.........................................................passed
-Given Enter Residual Shrinkage value........................................passed
-Given Enter Process Loss value..............................................passed
-Given Enter Rate value......................................................passed
-Then Select an UOM..........................................................passed
-Given Enter the Quantity of the Fabric......................................passed
-Then Click on Save button in the Create PO For Stock screen.................passed
-Then Verify whether the page is navigated to the PO For Stock or not........passed
-Then Verify the count of the PO Records in the PO grid after adding the PO record.passed
-Then Verify whether the added PO record is added to the grid................passed
+When Click on the Revise PO button..........................................passed
+And Verify whether the page is navigated to Revised PO For Stock form.......passed
 ]]></system-out>
     </testcase>
 </testsuite>

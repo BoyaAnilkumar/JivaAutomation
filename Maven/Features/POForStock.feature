@@ -14,8 +14,8 @@ Feature: PO For Stock screen functionality
   Given Enter the Style name in Search By Style field 
   And click on Reset and Apply button
  
- @StockPO2
-  Scenario: Adding a PO Stock record
+ @StockPO
+  Scenario: Adding a PO Stock record  
   When user navigates to Login page
   Given Login with the Production Manager
   And Click on the SignIn button
@@ -66,14 +66,56 @@ Feature: PO For Stock screen functionality
   Then Verify the count of the PO Records in the PO grid after adding the PO record
   Then Verify whether the added PO record is added to the grid
   
-  
-   @StockPO1
-  Scenario: Verifying wether the added record is displayed in the grid or not
+  @StockPO
+  Scenario: Verifying the added PO record is added to the grid   
   When user navigates to Login page
   Given Login with the Production Manager
   And Click on the SignIn button
   Then Navigate to PO For Stock screen
-  Then Verify the count of the PO Records in the PO grid
-   
-
+  Then Verify the count of the PO Records in the PO grid before adding the PO record
+  When Click on the Add Data Entry button
+  Then Verify whether the page is navigated to the Create PO For Stock or not
+  Then Click and Select Order Type
+  When Select a Delivery To factory name
+  When Select a Supplier name
+  Given Enter Lead Time value
+  Then Select a Process for the selected Order Type
+  Then Select a Fabric Type
+  Then Select a Fabric Name
+  Then Select a Color
+  Given Enter Residual Shrinkage value
+  Given Enter Process Loss value
+  Given Enter Rate value
+  Then Select an UOM
+  Given Enter the Quantity of the Fabric 
+  Then Click on Save button in the Create PO For Stock screen
+  Then Verify whether the page is navigated to the PO For Stock or not
+  Then Verify the count of the PO Records in the PO grid after adding the PO record
+  Then Verify whether the added PO record is added to the grid
  
+  @StockPO
+  Scenario: Verifying deletion of the records in the grid   
+  When user navigates to Login page
+  Given Login with the Production Manager
+  And Click on the SignIn button
+  Then Navigate to PO For Stock screen
+  When Click on the Cancel button for a combination stock record
+  Then Verify whether the Cancel toaster msg is displayed 
+  Then Verify whether the respective record is not Cancelled on clicking the NO option
+  When Click on the Cancel button for a combination stock record
+  Then Verify whether the Cancel toaster msg is displayed 
+  When Click on Yes option in the cancel toaster msg
+  Then Verify whether the Successfull msg is displayed or not
+  #And Verify whether the Status is changed to Cancelled state under Status column
+  
+  
+  @StockPO1
+  Scenario: Verifying revision of the PO record in the Revised PO For Stock screen   
+  When user navigates to Login page
+  Given Login with the Production Manager
+  And Click on the SignIn button
+  Then Navigate to PO For Stock screen
+  When Click on the Revise PO button 
+  And Verify whether the page is navigated to Revised PO For Stock form
+  
+  

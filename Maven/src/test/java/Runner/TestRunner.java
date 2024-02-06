@@ -12,9 +12,9 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-		       		          tags ="@StockPO2")
 
-		        
+		       		          tags ="@StockPO1")
+
 public class TestRunner {
 
 }

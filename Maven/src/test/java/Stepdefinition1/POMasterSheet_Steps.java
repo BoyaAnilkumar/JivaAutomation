@@ -82,12 +82,12 @@ public class POMasterSheet_Steps {
 	}
 	
 	@When("^verify the Quantity Details are displaying or not$")
-	public void verify_the_Quantity_Details_are_displaying_or_not() {
+	public void verify_the_Quantity_Details_are_displaying_or_not() throws Throwable {
 		pomastersheetpage.verify_the_Quantity_Details_are_displaying_or_not();
 	}
 	
 	@When("^verify the IPO Details are prepopulating or not$")
-	public void verify_the_IPO_Details_are_prepopulating_or_not() {
+	public void verify_the_IPO_Details_are_prepopulating_or_not() throws Throwable {
 		pomastersheetpage.verify_the_IPO_Details_are_prepopulating_or_not();
 	}
 	
@@ -102,19 +102,62 @@ public class POMasterSheet_Steps {
 	}
 	
 	@Then("^Click on save button to generate po$")
-	public void Click_on_save_button_to_generate_po() {
+	public void Click_on_save_button_to_generate_po() throws Throwable {
 		pomastersheetpage.Click_on_save_button_to_generate_po();
 	}
 	
 	@And("^verify whether the user is navigated to Print form$")
-	public void verify_whether_the_user_is_navigated_to_Print_form() {
+	public void verify_whether_the_user_is_navigated_to_Print_form() throws Throwable {
 		pomastersheetpage.verify_whether_the_user_is_navigated_to_Print_form();
 	}
 	
 	@And("^Click on cancel to navigate back to po master sheet screen$")
-	public void Click_on_cancel_to_navigate_back_to_po_master_sheet_screen() {
+	public void Click_on_cancel_to_navigate_back_to_po_master_sheet_screen() throws Throwable {
 		pomastersheetpage.Click_on_cancel_to_navigate_back_to_po_master_sheet_screen();
 	}
+	
+	@When("^click on filter icon on grid and search with the process name$")
+	public void click_on_filter_icon_on_grid_and_search_with_the_process_name() throws Throwable {
+		pomastersheetpage.click_on_filter_icon_on_grid_and_search_with_the_process_name();
+	}
+	
+	@And("^click on revise po icon$")
+	public void click_on_revise_po_icon() throws Throwable {
+		pomastersheetpage.click_on_revise_po_icon();
+	}
+	
+	@And("^navigated to revise po screen and displaying the update form or not$")
+	public void navigated_to_revise_po_screen_and_displaying_the_update_form_or_not() throws Throwable {
+		pomastersheetpage.navigated_to_revise_po_screen_and_displaying_the_update_form_or_not();
+	}
+	
+	@Then("^update the data and submit the revise po$")
+	public void update_the_data_and_submit_the_revise_po() {
+		pomastersheetpage.update_the_data_and_submit_the_revise_po();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }
