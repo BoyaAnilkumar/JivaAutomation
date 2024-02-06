@@ -132,7 +132,7 @@ public class POMasterSheet_Steps {
 	}
 	
 	@Then("^update the data and submit the revise po$")
-	public void update_the_data_and_submit_the_revise_po() {
+	public void update_the_data_and_submit_the_revise_po() throws Throwable {
 		pomastersheetpage.update_the_data_and_submit_the_revise_po();
 	}
 	
