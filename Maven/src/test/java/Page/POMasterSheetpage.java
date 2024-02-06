@@ -18,6 +18,7 @@ public class POMasterSheetpage extends DriverFactory{
 
 	Utilities utilities = new Utilities();
 	CreatePOforIPO_pages CPOI = new CreatePOforIPO_pages();
+	CreatePOForStockPage CPOS = new CreatePOForStockPage();
 	
 	By POmasterSheet  										= By.xpath("//a[text()=' PO Master Sheet ']");
 	By CardHeader											= By.xpath("//div[@class='card-header']");                             
@@ -58,6 +59,7 @@ public class POMasterSheetpage extends DriverFactory{
 	By processname											= By.xpath("//td[text()='Printing']");
 	By Revisedscreenname									= By.xpath("//h3[text()='revised PO for Fabric']");
 	By Suppliercode											= By.xpath("//input[@formcontrolname='supplierCode']");
+	By IPOdropdown											= By.xpath("//div[@class='p-datatable-wrapper']//table[1]");
 	
 	
 	
@@ -911,10 +913,34 @@ public class POMasterSheetpage extends DriverFactory{
 		driver.findElement(Suppliercode).sendKeys("AK/SPG");
 		utilities.MinimumWait(driver);
 		System.out.println("Supplier code is changes as: " + "AK/SPG");
+		utilities.MinimumWait(driver);
 	}
 
-	public void update_the_data_and_submit_the_revise_po() {
-		// TODO Auto-generated method stub
+	public void update_the_data_and_submit_the_revise_po() throws Throwable {
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("scrollBy(0, 700)");
+		
+		
+		utilities.webDriverWait(driver, IPOdropdown);
+		boolean isIPOSelected = driver.findElement(IPOdropdown).isSelected();
+		
+		WebElement IPO = driver.findElement(IPOdropdown);
+		
+		if (IPO.isDisplayed()) {
+		    String IPOname = IPO.getAttribute("value");
+		    System.out.println("Displaying the IPO: " + IPOname);
+		} else {
+		    System.out.println("IPO element is not displayed");
+		}
+		// Print whether the element is selected
+		System.out.println("Is IPO selected? " + isIPOSelected);
+		utilities.MinimumWait(driver);
+
+		
+//		utilities.webDriverWait(driver, CPOS.butt_Save);
+//		driver.findElement(CPOS.butt_Save).click();
+//		utilities.MinimumWait(driver);
 		
 	}
 
