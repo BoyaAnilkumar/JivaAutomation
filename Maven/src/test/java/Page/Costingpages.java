@@ -152,8 +152,10 @@ public class Costingpages extends DriverFactory {
 
 
 
-	public void Click_on_the_Woven_Modules() {
-		
+	public void Click_on_the_Woven_Modules() throws Throwable {
+		utilities.webDriverWait(driver, Woven);
+		driver.findElement(Woven).click();
+		utilities.MinimumWait(driver);
 		
 	}
 

@@ -10,7 +10,7 @@ public class MerchandisingTandA_Pages extends DriverFactory{
 	Utilities utilities = new Utilities();
 	
 	
-	By T_And_A = By.xpath("(//span[text()='T&A'])[1]");
+	By T_And_A = By.xpath("//a[text()='Merchandising T&A Data Entry']]");
 	By Merch_TandA = By.xpath("//a[text()='Merchandising T&A Data Entry']");
 	By Month = By.xpath("//select[@formcontrolname='month']");
 	By Select_Month = By.xpath("//option[@value='Nov/2023']");
@@ -29,10 +29,6 @@ public class MerchandisingTandA_Pages extends DriverFactory{
     
     
 
-	public void Click_on_the_T_and_A_Module() throws Throwable {
-		utilities.webDriverWait(driver, T_And_A);
-		driver.findElement(T_And_A).click();	
-	}
 	public void Click_on_the_Merchandising_T_and_A_Data_Entry_Screen() throws Throwable {
 		utilities.webDriverWait(driver, Merch_TandA);
 		driver.findElement(Merch_TandA).click();		
@@ -72,10 +68,12 @@ public class MerchandisingTandA_Pages extends DriverFactory{
 	
 	public void Enter_the_data_in_proto_commends_received_field() throws Throwable {
 		utilities.webDriverWait(driver, Proto_comments);
+//		driver.findElement(Proto_comments).click();
+//		utilities.MinimumWait(driver);
+		
 		driver.findElement(Proto_comments).clear();
 		utilities.MinimumWait(driver);
-		driver.findElement(Proto_comments).click();
-		utilities.MinimumWait(driver);
+		
 		driver.findElement(Proto_comments).sendKeys("1206");
 		utilities.MinimumWait(driver);
     }

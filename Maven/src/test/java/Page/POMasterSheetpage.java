@@ -60,6 +60,7 @@ public class POMasterSheetpage extends DriverFactory{
 	By Revisedscreenname									= By.xpath("//h3[text()='revised PO for Fabric']");
 	By Suppliercode											= By.xpath("//input[@formcontrolname='supplierCode']");
 	By IPOdropdown											= By.xpath("//div[@class='p-datatable-wrapper']//table[1]");
+	By SupplierName											= By.xpath("//p-autocomplete[@field='supplierName']//span[1]");
 	
 	
 	
@@ -902,6 +903,16 @@ public class POMasterSheetpage extends DriverFactory{
 		driver.findElement(CPOI.SelectAnieDeliver).click();
 		utilities.MinimumWait(driver);
 		System.out.println("Should display deliver to name as: "+ "Anie Textiles");
+	
+		
+		utilities.webDriverWait(driver, SupplierName);
+//		driver.findElement(SupplierName).isSelected();
+		WebElement supplier = driver.findElement(SupplierName);
+		String revisesupplier = supplier.getAttribute("Anil");
+		System.out.println("Print the displayed element:  " + revisesupplier);
+		utilities.MinimumWait(driver);
+
+		
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("scrollBy(0, 500)");
@@ -914,7 +925,8 @@ public class POMasterSheetpage extends DriverFactory{
 		utilities.MinimumWait(driver);
 		System.out.println("Supplier code is changes as: " + "AK/SPG");
 		utilities.MinimumWait(driver);
-	}
+	        }
+	
 
 	public void update_the_data_and_submit_the_revise_po() throws Throwable {
 		

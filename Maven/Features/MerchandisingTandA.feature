@@ -9,7 +9,6 @@ Feature: Feature to test Jiva design Merchandising T and A Data Entry screen fun
     And Click on the Woven Module
     Then click on the Merchandising Module
     And click on Data Entry dropdown
-    And Click on the T and A Module
     And Click on the Merchandising T&A Data Entry Screen
 
   @MerchandisingTAndA
@@ -20,7 +19,6 @@ Feature: Feature to test Jiva design Merchandising T and A Data Entry screen fun
     And Click on the Woven Module
     Then click on the Merchandising Module
     And click on Data Entry dropdown
-    And Click on the T and A Module
     And Click on the Merchandising T&A Data Entry Screen
     And Click on the Styles Expansion
     And Click on the Filter Icon
@@ -41,7 +39,6 @@ Feature: Feature to test Jiva design Merchandising T and A Data Entry screen fun
     And Click on the Woven Module
     Then click on the Merchandising Module
     And click on Data Entry dropdown
-    And Click on the T and A Module
     And Click on the Merchandising T&A Data Entry Screen
     And Click on the Styles Expansion
     And Click on the Filter Icon
@@ -62,7 +59,6 @@ Feature: Feature to test Jiva design Merchandising T and A Data Entry screen fun
     And Click on the Woven Module
     Then click on the Merchandising Module
     And click on Data Entry dropdown
-    And Click on the T and A Module
     And Click on the Merchandising T&A Data Entry Screen
     And Click on the Styles Expansion
     And Click on the Filter Icon

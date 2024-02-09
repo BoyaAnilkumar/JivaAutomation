@@ -22,7 +22,7 @@ public class IPOListPages extends DriverFactory {
 	Date currentDate = new Date();
 	SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 	String TodayDate = dateFormat.format(currentDate);
-//	private String ipon;
+
 	Utilities utilities = new Utilities();
 	
 //	Filters functionality
@@ -30,13 +30,14 @@ public class IPOListPages extends DriverFactory {
 	By txtPwd = By.xpath("//input[@id='userpassword']");
 	By btnSignIn = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
 	By Woven = By.xpath("//span[text()='Woven / knit']");
-	By Audit = By.xpath("(//span[text()='Audit '])[1]");
-	By IPOList = By.xpath("//a[@routerlink='/ipo-list']");
+	By Audit = By.xpath("(//span[text()='Audit '])");
+	By Dataentry = By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[2]");
+	By IPOList = By.xpath("//a[@href='/JivaDesign_Test/Web/ipo-list']");
 	By Filter_but = By.xpath("//button[@id='navbarDropdown3']");
 	
 	By IPOFromDate = By.xpath("//input[@formcontrolname='ipoFromDate']");
 	By IPOToDate = By.xpath("//input[@formcontrolname='ipoToDate']");
-	By Buyer = By.xpath("//div[@class='p-multiselect-label ng-tns-c92-9 p-placeholder']");
+	By Buyer = By.xpath("//div[text()='Select Buyer']");
 	By Select_Buyer = By.xpath("//li[@aria-label='8 Seconds']");
 	By PDMerchant = By.xpath("//input[@class='ng-tns-c93-10 p-autocomplete-input p-inputtext p-component ng-star-inserted']");
 	By Select_PDMerchant = By.xpath("//span[text()='Phani L']");
@@ -98,49 +99,38 @@ public class IPOListPages extends DriverFactory {
 	By buttNo = By.xpath("(//button[text()='No'])[2]");
 	By buttYes = By.xpath("//button[text()='Yes']");
 
-	public void Navigates_to_the_Login_page() {
-		driver.get(prop.getProperty("url"));
-		
-	}
+//	public void Navigates_to_the_Login_page() {
+//		driver.get(prop.getProperty("url"));
+//	}
 
-	public void Enter_valid_Username_and_password() throws Throwable {
-//		utilities.webDriverWait(driver, txtUN);
-		driver.findElement(txtUN).clear();
-		driver.findElement(txtUN).sendKeys("lokesh");
-		utilities.MinimumWait(driver);
-		driver.findElement(txtPwd).clear();
-		driver.findElement(txtPwd).sendKeys("Abcd@123");
-	}
-
-	public void Click_on_SignIn() {
-		driver.findElement(btnSignIn).click();
-		
-	}
 
 	public void Click_on_the_Woven_Modules() throws Throwable {
 		utilities.webDriverWait(driver, Woven);
 		driver.findElement(Woven).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
 	public void Click_on_Audit_module() throws Throwable {
 		utilities.webDriverWait(driver, Audit);
 		driver.findElement(Audit).click();
+		utilities.MinimumWait(driver);
 		
+		utilities.webDriverWait(driver, Dataentry);
+		driver.findElement(Dataentry).click();
+		utilities.MinimumWait(driver);
 	}
-
+	
 	public void Click_on_IPO_List_module() throws Throwable {
-		utilities.webDriverWait(driver, IPOList);
-		driver.findElement(IPOList).isDisplayed();
-//		IPO.isEnabled();                                                                              
+		utilities.webDriverWait(driver, IPOList);                                                                              
 		driver.findElement(IPOList).click();
-		
+		utilities.MinimumWait(driver);
 	}
 
 	public void Click_on_the_Filter_button() throws Throwable {
-//		utilities.webDriverWait(driver, IPOList);
+		utilities.webDriverWait(driver, Filter_but);
 		driver.findElement(Filter_but).click();
-		
+		utilities.MinimumWait(driver);
 	}
 
 	public void Click_in_the_IPO_From_Date_field() throws Throwable {
@@ -160,9 +150,10 @@ public class IPOListPages extends DriverFactory {
 		System.out.println("Current date: " + TodayDate);
 	}
 
-	public void Click_in_the_Buyer_field() {
+	public void Click_in_the_Buyer_field() throws Throwable {
+		utilities.webDriverWait(driver, Buyer);
 		driver.findElement(Buyer).click();
-		
+		utilities.MinimumWait(driver);
 	}
 
 	public void Select_a_Buyer_from_the_dropdown_list() throws Throwable {
