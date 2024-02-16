@@ -372,11 +372,7 @@ public class IPOListPages extends DriverFactory {
 		
 	}
 
-	public void Click_on_the_Save_button() throws Throwable {
-		utilities.webDriverWait(driver, Save);
-		driver.findElement(Save).click();
 
-	}
 	
 	public void Click_on_Cancel_button_in_the_Add_IPO() {
 		driver.findElement(Cancel).click();

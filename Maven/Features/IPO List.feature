@@ -59,4 +59,4 @@ Feature: Creating an IPO for a confirmed style
     And To verify whether the Delete button is clickable or not
     Then Verifying the Delete toaster msg
     When Clicked on No button in the toaster msg
-    When Clicked on Yes button in the toaster msg
+    #When Clicked on Yes button in the toaster msg

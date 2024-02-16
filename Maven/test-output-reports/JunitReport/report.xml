@@ -1,58 +1,36 @@
-<<<<<<< HEAD
-=======
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="53.28">
-    <testcase classname="PO For Stock screen functionality" name="Verifying revision of the PO record in the Revised PO For Stock screen" time="52.816">
-        <system-out><![CDATA[When user navigates to Login page...........................................passed
-Given Login with the Production Manager.....................................passed
-And Click on the SignIn button..............................................passed
-Then Navigate to PO For Stock screen........................................passed
-When Click on the Revise PO button..........................................passed
-And Verify whether the page is navigated to Revised PO For Stock form.......passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="243.561">
+    <testcase classname="feature to test Jiva design Fabric Type screen functionality" name="To Test the Fabric Type screen" time="146.223">
+        <system-out><![CDATA[When User navigates to the Login page and enter credentials and signin......passed
+And Select the Fabric type screen...........................................passed
+Then click on the fabric type add button....................................passed
+And click on save button to submit the Fabric Type..........................passed
+When Select category dropdown...............................................passed
+When user enter the Fabric Name.............................................passed
+When User enter the content.................................................passed
+When User enter the supplier or internal code...............................passed
+When User enter the GSM1....................................................passed
+When User enter the Count and construction1.................................passed
+When User enter the width in inches.........................................passed
+When User enter the GSM2....................................................passed
+When User enter the count and construction2.................................passed
+When User enter the cuttable width in inches................................passed
+When User enter the approx lead time........................................passed
+Then User able to select the is nominated...................................passed
+When User enter the Fabric price............................................passed
+When User selects the Currency..............................................passed
+When User selects the UOM...................................................passed
+When User verify the Price..................................................passed
+Then User upload the file...................................................passed
+And User clicks on the cancel button........................................passed
 ]]></system-out>
-=======
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="97.897">
-    <testcase classname="I want to create po for the process" name="Revising the valid PO in PO Master Screen" time="97.54">
-        <failure message="no such element: No node with given id found&#10;  (Session info: chrome=121.0.6167.140)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 64774cb0252134ec4216d188a7b00944" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When User navigates to Login page...........................................passed
-Then User enters the username and password..................................passed
-And User click on the signIn................................................passed
-And Click on the Woven Module...............................................passed
-Then Click on Fabric sourcing module........................................passed
-And click on Data Entry in fabric sourcing module...........................passed
-And click on Generate PO....................................................passed
-And click on PO Master Sheet................................................passed
-Given Search with IPO in search keyword textbox.............................passed
-When click on filter icon on grid and search with the process name..........passed
-And click on revise po icon.................................................passed
-And navigated to revise po screen and displaying the update form or not.....failed
-Then update the data and submit the revise po...............................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: No node with given id found
-  (Session info: chrome=121.0.6167.140)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 64774cb0252134ec4216d188a7b00944
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-	at Page.POMasterSheetpage.navigated_to_revise_po_screen_and_displaying_the_update_form_or_not(POMasterSheetpage.java:920)
-	at Stepdefinition1.POMasterSheet_Steps.navigated_to_revise_po_screen_and_displaying_the_update_form_or_not(POMasterSheet_Steps.java:131)
-	at ✽.navigated to revise po screen and displaying the update form or not(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/POMasterSheet.feature:86)
-]]></failure>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+    </testcase>
+    <testcase classname="feature to test Jiva design Fabric Type screen functionality" name="To Test the Fabric Type home screen" time="96.907">
+        <system-out><![CDATA[When User navigates to the Login page and enter credentials and signin......passed
+And Select the Fabric type screen...........................................passed
+Then User able to search the data by using search box funtionality..........passed
+When User able to update the details by selecting edit icon.................passed
+Then Check the sorting functionality........................................passed
+]]></system-out>
     </testcase>
 </testsuite>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git

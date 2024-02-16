@@ -95,10 +95,7 @@ public class IPOListSteps {
 	public void Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not() {
 		IPOl.Verify_whether_the_page_is_navigating_to_the_Add_IPO_screen_or_not();
 	}
-	@When ("^Click on the save button$")
-	public void Click_on_the_save_button() throws Throwable {
-		IPOl.Click_on_the_save_button();
-	}
+	
 	@Then ("^Select an IPO Date$")
 	public void Select_an_IPO_Date() throws Throwable {
 		IPOl.Select_an_IPO_Date();

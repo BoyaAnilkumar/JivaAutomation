@@ -5,6 +5,7 @@ import Page.MerchandisingTandA_Pages;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class MerchandisingTandA_Steps {
 
@@ -15,8 +16,8 @@ public class MerchandisingTandA_Steps {
 		 @And ("^Click on the Merchandising T&A Data Entry Screen$")
 		 public void Click_on_the_Merchandising_T_and_A_Data_Entry_Screen() throws Throwable{
 		  MerchandisingTandA_Pages.Click_on_the_Merchandising_T_and_A_Data_Entry_Screen();
-		 
-}
+		 }
+		
 		 @And ("^Select the Month$")
 		 public void Select_the_Month() throws Throwable{
 		  MerchandisingTandA_Pages.Select_the_Month();
@@ -82,12 +83,12 @@ public class MerchandisingTandA_Steps {
 		 }
 		 
 		 @Given("^Enter the data in Testing GPT1 submission and Approval$")
-		 public void Enter_the_data_in_Testing_GPT1_submission_and_Approval() {
+		 public void Enter_the_data_in_Testing_GPT1_submission_and_Approval() throws Throwable {
 			 MerchandisingTandA_Pages.Enter_the_data_in_Testing_GPT1_submission_and_Approval();
 		 }
 		 
 		 @And("^Enter the data in GPT1 Remarks Field$")
-		 public void Enter_the_data_in_GPT1_Remarks_Field() {
+		 public void Enter_the_data_in_GPT1_Remarks_Field() throws Throwable {
 			 MerchandisingTandA_Pages.Enter_the_data_in_GPT1_Remarks_Field();
 		 }
 		 
@@ -103,12 +104,12 @@ public class MerchandisingTandA_Steps {
 		 }
 		 
 		 @Given("^Enter the data in Testing FPT1 submission and Approval$")
-		 public void Enter_the_data_in_Testing_FPT1_submission_and_Approval() {
+		 public void Enter_the_data_in_Testing_FPT1_submission_and_Approval() throws Throwable {
 			 MerchandisingTandA_Pages.Enter_the_data_in_Testing_FPT1_submission_and_Approval();
 		 }
 		 
 		 @And("^Enter the data in FPT1 Remarks Field$")
-		 public void Enter_the_data_in_FPT1_Remarks_Field() {
+		 public void Enter_the_data_in_FPT1_Remarks_Field() throws Throwable {
 			 MerchandisingTandA_Pages.Enter_the_data_in_FPT1_Remarks_Field();
 		 }
 		 
@@ -123,12 +124,12 @@ public class MerchandisingTandA_Steps {
 		 }
 		 
 		 @Given("^Enter the data in Testing Photoshoot1 submission and Approval$")
-		 public void Enter_the_data_in_Testing_Photoshoot1_submission_and_Approval() {
+		 public void Enter_the_data_in_Testing_Photoshoot1_submission_and_Approval() throws Throwable {
 			 MerchandisingTandA_Pages.Enter_the_data_in_Testing_Photoshoot1_submission_and_Approval();
 		 }
 		 
 		 @And("^Enter the data in Photoshoot1 Remarks Field$")
-		 public void Enter_the_data_in_Photoshoot1_Remarks_Field() {
+		 public void Enter_the_data_in_Photoshoot1_Remarks_Field() throws Throwable {
 			 MerchandisingTandA_Pages.Enter_the_data_in_Photoshoot1_Remarks_Field();
 		 }
 		 
@@ -143,82 +144,98 @@ public class MerchandisingTandA_Steps {
 		 }
 		 
 		 @Given("^Enter the data in TOP Sample1 submission and Approval$")
-		 public void Enter_the_data_in_TOP_Sample1_submission_and_Approval() {
+		 public void Enter_the_data_in_TOP_Sample1_submission_and_Approval() throws Throwable {
 			 MerchandisingTandA_Pages.Enter_the_data_in_TOP_Sample1_submission_and_Approval();
 		 }
 		 
 		 @And("^Enter the data in TOP Sample1 Remarks Field$")
-		 public void Enter_the_data_in_TOP_Sample1_Remarks_Field() {
+		 public void Enter_the_data_in_TOP_Sample1_Remarks_Field() throws Throwable {
 			 MerchandisingTandA_Pages.Enter_the_data_in_TOP_Sample1_Remarks_Field();
 		 }
-		 
-		 @And("^Click on Add button of TOP Sample1$")
-		 public void Click_on_Add_button_of_TOP_Sample1() {
-			 MerchandisingTandA_Pages.Click_on_Add_button_of_TOP_Sample1();
-		 }
-		 
 		 
 		 @And("^Click on the TOP Sample1 Delete Icon$")
 		 public void Click_on_the_TOP_Sample1_Delete_Icon() {
 			 MerchandisingTandA_Pages.Click_on_the_TOP_Sample1_Delete_Icon();
 		 }
 		 
-		 @Given("^Enter the data in File Handover$")
-		 public void Enter_the_data_in_File_Handover() {
-			 MerchandisingTandA_Pages.Enter_the_data_in_File_Handover();
+		 @And ("^Select the value in File Handover field$")
+		 public void Select_the_value_in_File_Handover_field() throws Throwable{
+		     MerchandisingTandA_Pages.Select_the_value_in_File_Handover_field();
 		 }
-		 
-		 @Given("^Enter the data in Size set$")
-		 public void Enter_the_data_in_Size_set() {
-			 MerchandisingTandA_Pages.Enter_the_data_in_Size_set();
+		 @Given ("^Enter the data in File handover date field$")
+		 public void Enter_the_data_in_File_handover_date_field() throws Throwable{
+		     MerchandisingTandA_Pages.Enter_the_data_in_File_handover_date_field();
 		 }
-		 
-		 @Given("^Enter the data in PPM$")
-		 public void Enter_the_data_in_PPM() {
-			 MerchandisingTandA_Pages.Enter_the_data_in_PPM();
+		 @When ("^Enter the data in File handover Remarks field$")
+		 public void Enter_the_data_in_File_handover_Remarks_field() throws Throwable{
+		     MerchandisingTandA_Pages.Enter_the_data_in_File_handover_Remarks_field();
 		 }
-		 
-		 @And("^Verify the Bulk Fabric Flow date is displaying or not$")
-		 public void Verify_the_Bulk_Fabric_Flow_date_is_displaying_or_not() {
-			 MerchandisingTandA_Pages.Verify_the_Bulk_Fabric_Flow_date_is_displaying_or_not();
+		 @And ("^Select the value in Size set field$")
+		 public void Select_the_value_in_Size_set_field() throws Throwable{
+		     MerchandisingTandA_Pages.Select_the_value_in_Size_set_field();
 		 }
+
 		 
-		 @And("^Click on View icon for Bulk Fabric Flow$")
-		 public void Click_on_View_icon_for_Bulk_Fabric_Flow() {
-			 MerchandisingTandA_Pages.Click_on_View_icon_for_Bulk_Fabric_Flow();
+		 @Given ("^Enter the data in Size set date field$")
+		 public void Enter_the_data_in_Size_set_date_field() throws Throwable{
+		     MerchandisingTandA_Pages.Enter_the_data_in_Size_set_date_field();
 		 }
+
 		 
-		 @And("^Verify the EMB PCD is clickable or not$")
-		 public void Verify_the_EMB_PCD_is_clickable_or_not() {
-			 MerchandisingTandA_Pages.Verify_the_EMB_PCD_is_clickable_or_not();
+		 @When ("^Enter the data in Size set Remarks field$")
+		 public void Enter_the_data_in_Size_set_Remarks_field()throws Throwable{
+		     MerchandisingTandA_Pages.Enter_the_data_in_Size_set_Remarks_field();
 		 }
+
 		 
-		 @And("^Verify that data is displaying for the EMB PCD or not$")
-		 public void Verify_that_data_is_displaying_for_the_EMB_PCD_or_not() {
-			 MerchandisingTandA_Pages.Verify_that_data_is_displaying_for_the_EMB_PCD_or_not();
-		 }
-		 
-		 @Given("^Enter the date in PCD Field$")
-		 public void Enter_the_date_in_PCD_Field() {
+		 @And ("^Select the value in PPM field$")
+	     public void Select_the_value_in_PPM_field() throws Throwable{
+		 MerchandisingTandA_Pages.Select_the_value_in_PPM_field();
+	}
+		@Given ("^Enter the data in PPM date field$")
+		public void Enter_the_data_in_PPM_date_field() throws Throwable{
+			 MerchandisingTandA_Pages.Enter_the_data_in_PPM_date_field();
+		}
+		 @When ("^Enter the data in PPM Remarks field$")
+		 public void Enter_the_data_in_PPM_Remarks_field() throws Throwable{
+			 MerchandisingTandA_Pages.Enter_the_data_in_PPM_Remarks_field();
+		}
+		 @And ("^Verify whether the Bulk Fabric Flow date is prepopulated in the field or not$")
+		 public void Verify_whether_the_Bulk_Fabric_Flow_date_is_prepopulated_in_the_field_or_not() throws Throwable{
+			 MerchandisingTandA_Pages.Verify_whether_the_Bulk_Fabric_Flow_date_is_prepopulated_in_the_field_or_not();
+		}
+		@And ("^Click on the Bulk Fabric Flow View button$")
+		public void Click_on_the_Bulk_Fabric_Flow_View_button() throws Throwable{
+			 MerchandisingTandA_Pages.Click_on_the_Bulk_Fabric_Flow_View_button();
+		}
+		@And ("^Click on the Bulk Fabric Flow View Close button$")
+		public void Click_on_the_Bulk_Fabric_Flow_View_Close_button() throws Throwable{
+			 MerchandisingTandA_Pages.Click_on_the_Bulk_Fabric_Flow_View_Close_button();
+		}
+		 @And ("^Select the value in PCD Field$")
+		 public void Select_the_value_in_PCD_Field() throws Throwable{
+			 MerchandisingTandA_Pages.Select_the_value_in_PCD_Field();
+		}
+		 @Then ("^Enter the date in PCD Field$")
+		 public void Enter_the_date_in_PCD_Field() throws Throwable{
 			 MerchandisingTandA_Pages.Enter_the_date_in_PCD_Field();
-		 }
-		 
-		 @And("^click on dropdown to change the PCD Test$")
-		 public void click_on_dropdown_to_change_the_PCD_Test() {
-			 MerchandisingTandA_Pages.click_on_dropdown_to_change_the_PCD_Test();
-		 }
-		 
-		 @And("^Verify that ExFactory date is displaying or not$")
-		 public void Verify_that_ExFactory_date_is_displaying_or_not() {
-			 MerchandisingTandA_Pages.Verify_that_ExFactory_date_is_displaying_or_not();
-		 }
-		 
-		 @Then("^Verify that DTP days are displaying after inserting the date in PCD Test$")
-		 public void Verify_that_DTP_days_are_displaying_after_inserting_the_date_in_PCD_Test() {
-			 MerchandisingTandA_Pages.Verify_that_DTP_days_are_displaying_after_inserting_the_date_in_PCD_Test();
-		 }
-		 
-		 
+		}
+		 @And ("^Verify the Ex factory field date is prepopulated or not$")
+		 public void Verify_the_Ex_factory_field_date_is_prepopulated_or_not() throws Throwable{
+			 MerchandisingTandA_Pages.Verify_the_Ex_factory_field_date_is_prepopulated_or_not();
+		}
+		 @And ("^Verify the DTP field data is prepopulated or not$")
+		 public void Verify_the_DTP_field_data_is_prepopulated_or_not() throws Throwable{
+			 MerchandisingTandA_Pages.Verify_the_DTP_field_data_is_prepopulated_or_not();
+		}
+		 @And ("^Click on the Save button in T and A Input$")
+		 public void Click_on_the_Save_button_in_T_and_A_Input() throws Throwable{
+			 MerchandisingTandA_Pages.Click_on_the_Save_button_in_T_and_A_Input();
+		}
+		 @And ("^Click on the Cancel button in T and A Input$")
+		 public void Click_on_the_Cancel_button_in_T_and_A_Input() throws Throwable{
+			 MerchandisingTandA_Pages.Click_on_the_Cancel_button_in_T_and_A_Input();
+		}
 		 
 		 
 		 

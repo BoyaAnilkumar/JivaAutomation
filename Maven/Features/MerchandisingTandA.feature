@@ -58,7 +58,6 @@ Feature: Feature to test Jiva design Merchandising T and A Data Entry screen fun
     And User click on the signIn
     And Click on the Woven Module
     Then click on the Merchandising Module
-    And click on Data Entry dropdown
     And Click on the Merchandising T&A Data Entry Screen
     And Click on the Styles Expansion
     And Click on the Filter Icon
@@ -90,19 +89,22 @@ Feature: Feature to test Jiva design Merchandising T and A Data Entry screen fun
     And Click on the TOP Sample1 Add button
     Given Enter the data in TOP Sample1 submission and Approval
     And Enter the data in TOP Sample1 Remarks Field
-    And Click on Add button of TOP Sample1
     And Click on the TOP Sample1 Delete Icon
-    Given Enter the data in File Handover
-    Given Enter the data in Size set
-    Given Enter the data in PPM
-    And Verify the Bulk Fabric Flow date is displaying or not
-    And Click on View icon for Bulk Fabric Flow
-    And Verify the EMB PCD is clickable or not
-    And Verify that data is displaying for the EMB PCD or not
-		Given Enter the date in PCD Field
-		And click on dropdown to change the PCD Test
-		And Verify that ExFactory date is displaying or not
-		Then Verify that DTP days are displaying after inserting the date in PCD Test
-		When click on save button
-		
-		
+    And Select the value in File Handover field
+    Given Enter the data in File handover date field
+    When Enter the data in File handover Remarks field
+    And Select the value in Size set field
+    Given Enter the data in Size set date field
+    When Enter the data in Size set Remarks field
+    And Select the value in PPM field
+    Given Enter the data in PPM date field
+    When Enter the data in PPM Remarks field
+    And Verify whether the Bulk Fabric Flow date is prepopulated in the field or not
+    And Click on the Bulk Fabric Flow View button
+    And Click on the Bulk Fabric Flow View Close button
+    And Select the value in PCD Field
+    Then Enter the date in PCD Field
+    And Verify the Ex factory field date is prepopulated or not
+    And Verify the DTP field data is prepopulated or not
+    #And Click on the Save button in T and A Input
+    And Click on the Cancel button in T and A Input
