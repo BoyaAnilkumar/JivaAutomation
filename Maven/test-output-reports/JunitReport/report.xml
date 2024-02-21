@@ -1,36 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="243.561">
-    <testcase classname="feature to test Jiva design Fabric Type screen functionality" name="To Test the Fabric Type screen" time="146.223">
-        <system-out><![CDATA[When User navigates to the Login page and enter credentials and signin......passed
-And Select the Fabric type screen...........................................passed
-Then click on the fabric type add button....................................passed
-And click on save button to submit the Fabric Type..........................passed
-When Select category dropdown...............................................passed
-When user enter the Fabric Name.............................................passed
-When User enter the content.................................................passed
-When User enter the supplier or internal code...............................passed
-When User enter the GSM1....................................................passed
-When User enter the Count and construction1.................................passed
-When User enter the width in inches.........................................passed
-When User enter the GSM2....................................................passed
-When User enter the count and construction2.................................passed
-When User enter the cuttable width in inches................................passed
-When User enter the approx lead time........................................passed
-Then User able to select the is nominated...................................passed
-When User enter the Fabric price............................................passed
-When User selects the Currency..............................................passed
-When User selects the UOM...................................................passed
-When User verify the Price..................................................passed
-Then User upload the file...................................................passed
-And User clicks on the cancel button........................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="feature to test Jiva design Fabric Type screen functionality" name="To Test the Fabric Type home screen" time="96.907">
-        <system-out><![CDATA[When User navigates to the Login page and enter credentials and signin......passed
-And Select the Fabric type screen...........................................passed
-Then User able to search the data by using search box funtionality..........passed
-When User able to update the details by selecting edit icon.................passed
-Then Check the sorting functionality........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="66.937">
+    <testcase classname="Feature to test Jiva design View Fabric Sheet Working Functionality" name="To Test the user able to navigate to Fabric T and A Data entry screen" time="66.55">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then Click on Fabric sourcing module........................................passed
+And click on Reports in fabric sourcing module..............................passed
+And click on View fabric sheet working......................................passed
+Then Click on Style show/hide button........................................passed
+Then Click on Filter button in the Menu list................................passed
+And Verifying the Buyer field for selecting a Buyer.........................passed
+And Verify whether the user is able to select a Season in the season field..passed
+And Click on the Status field...............................................passed
+When User select the Status.................................................passed
+And Enter the IPO or Buyer in the Search by Buyer Style or IPO field........passed
+Then Click on Apply button..................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

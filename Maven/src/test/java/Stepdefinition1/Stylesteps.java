@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 public class Stylesteps {
 	Stylepage Stylepage = new Stylepage(); 
 		
-//		
+		
 //		@When("^User navigates to Login page$")
 //	    	public void User_navigates_to_Login_page() throws Throwable {
 //			Stylepage.User_navigates_to_Login_page();
@@ -37,12 +37,12 @@ public class Stylesteps {
 //			   Stylepage.click_on_the_PD_Module();
 //		   }
 //		   
-		   @And("^Click on Data Entry$")
-		   public void Click_on_Data_Entry() throws Throwable {
-			   Stylepage.Click_on_Data_Entry();
-		   }
-		   
-		   
+//		   @And("^Click on Data Entry$")
+//		   public void Click_on_Data_Entry() throws Throwable {
+//			   Stylepage.Click_on_Data_Entry();
+//		   }
+//		   
+//		   
 //		   @And ("^click on the Style Master screen$")
 //		   public void click_on_the_Style_Master_screen() throws Throwable{
 //			   Stylepage.click_on_the_Style_Master_screen();
@@ -231,11 +231,11 @@ public class Stylesteps {
 //			   Stylepage.select_PD_Assistants();
 //			   
 //		   }
-//		   @And ("^Click on the Cancel button$")
-//		   public void Click_on_the_Cancel_button() throws Throwable{
-//			   Stylepage.Click_on_the_Cancel_button();
-//
-//		   }
+////		   @And ("^Click on the Cancel button$")
+////		   public void Click_on_the_Cancel_button() throws Throwable{
+////			   Stylepage.Click_on_the_Cancel_button();
+////
+////		   }
 //		   @And ("^Click on the created style$")
 //		   public void Click_on_the_created_style() throws Throwable{
 //			   Stylepage.Click_on_the_created_style();
@@ -395,10 +395,10 @@ public class Stylesteps {
 //		   Stylepage.Click_on_the_Manage_Images_cancel_Icon();
 //		   }
 //		   
-//		   @And ("^Click on the Edit Icon$")
-//		   public void Click_on_the_Edit_Icon() throws Throwable{
-//		   Stylepage.Click_on_the_Edit_Icon();
-//		   }
+////		   @And ("^Click on the Edit Icon$")
+////		   public void Click_on_the_Edit_Icon() throws Throwable{
+////		   Stylepage.Click_on_the_Edit_Icon();
+////		   }
 //		   @Given ("^the user is on the edit form page$")
 //		   public void the_user_is_on_the_edit_form_page() throws Throwable{
 //		   Stylepage.the_user_is_on_the_edit_form_page();

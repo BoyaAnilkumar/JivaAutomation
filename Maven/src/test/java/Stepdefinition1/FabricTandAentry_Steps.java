@@ -104,9 +104,68 @@ public class FabricTandAentry_Steps {
 		FabricTandAentrypage.Click_on_Add_button_to_insert_the_second_test_for_bulk();
 	}
 	
-	@Given("^Enter dates and change the first tests data$")
-	public void Enter_dates_and_change_the_first_tests_data() {
-		FabricTandAentrypage.Enter_dates_and_change_the_first_tests_data();
+	@Given("^Select and enter data for second Bulk Lot In house$")
+	public void Select_and_enter_data_for_second_Bulk_Lot_In_house() throws Throwable {
+		FabricTandAentrypage.Select_and_enter_data_for_second_Bulk_Lot_In_house();
 	}
 	
+	@And("^click on quality submission status$")
+	public void click_on_quality_submission_status() throws Throwable {
+		FabricTandAentrypage.click_on_quality_submission_status();
+	}
+	
+	@And("^Select the quality submission status$")
+	public void Select_the_quality_submission_status() throws Throwable {
+		FabricTandAentrypage.Select_the_quality_submission_status();
+	}
+	
+	@And("^click on quality approval status$")
+	public void click_on_quality_approval_status() throws Throwable {
+		FabricTandAentrypage.click_on_quality_approval_status();
+	}
+	
+	@And("^Select the quality Approval status$")
+	public void Select_the_quality_Approval_status() throws Throwable {
+		FabricTandAentrypage.Select_the_quality_Approval_status();
+	}
+	
+	@And("^Click on Initial bulk submission status$")
+	public void Click_on_Initial_bulk_submission_status() throws Throwable {
+		FabricTandAentrypage.Click_on_Initial_bulk_submission_status();
+	}
+	
+	@And("^Select the Initial bulk submission status$")
+	public void Select_the_Initial_bulk_submission_status() throws Throwable {
+		FabricTandAentrypage.Select_the_Initial_bulk_submission_status();
+	}
+	
+	@And("^Click on Initial bulk Approval status$")
+	public void Click_on_Initial_bulk_Approval_status() throws Throwable {
+		FabricTandAentrypage.Click_on_Initial_bulk_Approval_status();
+	}
+	
+	@And("^Select the Initial bulk Approval status$")
+	public void Select_the_Initial_bulk_Approval_status() throws Throwable {
+		FabricTandAentrypage.Select_the_Initial_bulk_Approval_status();
+	}
+	
+	@And("^Click on Bulk Lot In house status$")
+	public void Click_on_Bulk_Lot_In_house_status() throws Throwable {
+		FabricTandAentrypage.Click_on_Bulk_Lot_In_house_status();
+	}
+	
+	@And("^Select the Bulk Lot In house status$")
+	public void Select_the_Bulk_Lot_In_house_status() throws Throwable {
+		FabricTandAentrypage.Select_the_Bulk_Lot_In_house_status();
+	}
+	
+	@And("^Change the Quantity in Bulk Lot In house status$")
+	public void Change_the_Quantity_in_Bulk_Lot_In_house_status() throws Throwable {
+		FabricTandAentrypage.Change_the_Quantity_in_Bulk_Lot_In_house_status();
+	}
+	
+	@And("^Change the InHousedate of Bulk Lot In house$")
+	public void Change_the_InHousedate_of_Bulk_Lot_In_house() throws Throwable {
+		FabricTandAentrypage.Change_the_InHousedate_of_Bulk_Lot_In_house();
+	}
 }

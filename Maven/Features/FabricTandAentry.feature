@@ -40,7 +40,39 @@ Feature: Feature to test Jiva design Fabric T and A Data Entry screen functional
     Given Remarks for Bulk Test
     When click on the save button
 
-  @FabricTandAdataEntryrevised
+ 
+		 
+	@FabricTandAtestchange
+	Scenario: To Test that user able to change the status of Tests from Expected to Another
+		When User navigates to Login page
+    Then User enters the username and password
+    And User click on the signIn
+    And Click on the Woven Module
+    Then Click on Fabric sourcing module
+    And click on Data Entry in fabric sourcing module
+    And Click on the T and A Data Entry Screen
+    And Click on the Styles Expansion
+    And Click on the Filter Icon
+    And Search and select the IPO
+    And Click on the Apply button
+    And Select the IPO and Style
+		When click on add button for griege process
+		And click on quality submission status
+		And Select the quality submission status
+		And click on quality approval status
+		And Select the quality Approval status
+		And Click on Initial bulk submission status
+		And Select the Initial bulk submission status
+		And Click on Initial bulk Approval status
+		And Select the Initial bulk Approval status
+		And Click on Bulk Lot In house status
+		And Select the Bulk Lot In house status
+		And Change the Quantity in Bulk Lot In house status
+		And Change the InHousedate of Bulk Lot In house
+		When click on the save button
+		
+		
+	@FabricTandAdataEntryrevised
   Scenario: To Test the griege process with existing data and enter new data
     When User navigates to Login page
     Then User enters the username and password
@@ -60,7 +92,13 @@ Feature: Feature to test Jiva design Fabric T and A Data Entry screen functional
 		And Click on Add button to insert the second test for Initial Bulk
 		Given Enter dates for Initial Bulk second test and change the first test
 		And Click on Add button to insert the second test for bulk
-		Given Enter dates and change the first tests data
-		#When click on the save button
+		Given Select and enter data for second Bulk Lot In house
+		When click on the save button
+		
+		
+		
+		
+		
+		
 		
 		
