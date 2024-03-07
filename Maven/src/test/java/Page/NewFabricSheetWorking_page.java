@@ -127,7 +127,7 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By Otherprocessqty							= By.xpath("//div[@class='row align-items-end']/..//input[@formcontrolname='otherQty']");
 	By OtherFbqty								= By.xpath("//div[@class='card ng-pristine ng-invalid ng-touched']//input[@formcontrolname='otherQty']");
 	
-	By DataEntry								= By.xpath("(//span[text()='Data Entry'])[1]");
+	public By DataEntry							= By.xpath("(//span[text()='Data Entry'])[1]");
 	By SaleSelectprocess1						= By.xpath("//select[@formcontrolname='process1TypeId']/..//option[text()=' N/A']");
 	By salefabricqty							= By.xpath("//label[text()=' Sale Fabric Qty']/..//input[@formcontrolname='saleFabricQTY']");
 	By Fabricbudgetqty							= By.xpath("//label[text()='Qty ']/..//input[@formcontrolname='saleFabricQTY']");

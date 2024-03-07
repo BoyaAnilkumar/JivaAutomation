@@ -18,4 +18,11 @@ Feature: Feature to test Jiva design View Fabric Sheet Working Functionality
     When User select the Status
     And Enter the IPO or Buyer in the Search by Buyer Style or IPO field
     Then Click on Apply button
-    
+    Then Check whether the respective IPO is displayed or not in the Menu List
+    And Click on the IPO in side menu
+    When Verify the IPO details displaying on the screen
+   	And Validate that Quantity Requirement grid is displaying with data or not
+    And Validate that MU Working grid is displaying with data or not
+    When verify the view for print button is displaying or not
+    And click on view for print button
+    Then Print screen is opened

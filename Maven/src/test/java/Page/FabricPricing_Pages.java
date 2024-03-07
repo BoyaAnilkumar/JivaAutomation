@@ -2,6 +2,7 @@ package Page;
 
 import java.util.List;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -20,7 +21,7 @@ public class FabricPricing_Pages extends DriverFactory{
 	By Filter = By.xpath("//button[@class='btn btn-primary btn-sm float-right mb-2']");
 	By Season = By.xpath("//select[@formcontrolname='seasonTypeId']");
 	By Search_Style = By.xpath("//input[@formcontrolname='buyerStyleNumber']");
-	By Select_Style = By.xpath("//div[@class='nav flex-column nav-pills ng-star-inserted']");
+	By Select_Style = By.xpath("//a[@class='nav-link lite-yellow']");
 	By Fabric1 = By.xpath("(//li[@class='nav-item ng-star-inserted'])[1]");
 	By Dis_Style = By.xpath("(//p[@class='mb-0 text-primary'])[1]");
 	By Dis_Buyer = By.xpath("(//p[@class='mb-0 text-primary'])[2]");
@@ -81,13 +82,18 @@ public class FabricPricing_Pages extends DriverFactory{
 		driver.findElement(password).sendKeys("Abcd@123");
 		utilities.MediumWait(driver);
 	}
-	public void Click_on_the_PD_Fabric_Pricing_under_the_Fabric_Sourcing_Module() throws Throwable {
+	public void Click_on_Fabric_Sourcing_module() throws Throwable {
 		utilities.webDriverWait(driver, Fabric_Sourcing );
 		 driver.findElement(Fabric_Sourcing).click();
 		 utilities.MediumWait(driver);
-		 driver.findElement(PDFabric_Pricing).click();	
-		
 	}
+		 
+	public void click_on_PD_Fabric_Pricing() throws Throwable {
+		utilities.webDriverWait(driver, PDFabric_Pricing);
+		 driver.findElement(PDFabric_Pricing).click();
+		 utilities.MinimumWait(driver);
+	}
+	
 	public void Click_on_the_Filter_icon() throws Throwable {
 		utilities.webDriverWait(driver, Filter );
 		 driver.findElement(Filter).click();
@@ -100,7 +106,7 @@ public class FabricPricing_Pages extends DriverFactory{
 	}
 	public void Search_The_Style() throws Throwable {
 		utilities.webDriverWait(driver, Search_Style);
-		driver.findElement(Search_Style).sendKeys("Retro style");
+		driver.findElement(Search_Style).sendKeys("Style10203");
 		Thread.sleep(5000);
 		WebElement IPOname = driver.findElement(Search_Style);
 		String style = IPOname.getAttribute("value");
@@ -300,6 +306,7 @@ public class FabricPricing_Pages extends DriverFactory{
 	public void Enter_the_Price() throws Throwable {
 		utilities.webDriverWait(driver, Price);
 		driver.findElement(Price).sendKeys("50");
+		utilities.MinimumWait(driver);
 		
 	}
 	public void Select_the_Fabric_Supplier() throws Throwable {
@@ -307,21 +314,25 @@ public class FabricPricing_Pages extends DriverFactory{
 		driver.findElement(Fabric_supplier).click();
 	    utilities.MediumWait(driver);
 		driver.findElement(Select_Supplier).click();
+		utilities.MinimumWait(driver);
 		
 	}
 	public void Enter_the_Remarks_Field() throws Throwable {
 		utilities.webDriverWait(driver, Remarks);
 		driver.findElement(Remarks).sendKeys("Price");
+		utilities.MinimumWait(driver);
 		
 	}
 	public void Click_on_the_delete_icon() throws Throwable {
 		utilities.webDriverWait(driver, Delete_button);
 		driver.findElement(Delete_button).click();	
+		utilities.MinimumWait(driver);
 		
 	}
 	public void Enter_the_data_in_Total_Price_Field() throws Throwable {
 		utilities.webDriverWait(driver, Total_Price);
 		driver.findElement(Total_Price).sendKeys("100");
+		utilities.MinimumWait(driver);
 		
 	}
 	public void Enter_the_data_in_Total_Fabric_Lead_Time() throws Throwable {
@@ -401,6 +412,9 @@ public class FabricPricing_Pages extends DriverFactory{
 		
 	}
 	public void Verify_whether_the_View_for_print_page_is_displaying_or_not() {
+		  JavascriptExecutor js = (JavascriptExecutor) driver;
+	        // Scroll down by a certain pixel value (e.g., 500)
+	        js.executeScript("window.scrollBy(0,-500)");
 		WebElement Data = driver.findElement(ViewPage_Name);
 		String Orderdate = Data.getText();
 		String expectedData = "Fabric Detail Sheet";

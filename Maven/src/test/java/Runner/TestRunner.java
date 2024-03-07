@@ -1,4 +1,4 @@
-package Runner;
+package Runner; 
 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
@@ -12,10 +12,11 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-				  tags ="@ViewFabricSheetWorking")
+				  tags ="@Fabric_Pricing1")
 
 
 public class TestRunner {
 
 }
  
+   
