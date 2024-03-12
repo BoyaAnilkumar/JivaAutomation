@@ -1,55 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="53.28">
-    <testcase classname="PO For Stock screen functionality" name="Verifying revision of the PO record in the Revised PO For Stock screen" time="52.816">
-        <system-out><![CDATA[When user navigates to Login page...........................................passed
-Given Login with the Production Manager.....................................passed
-And Click on the SignIn button..............................................passed
-Then Navigate to PO For Stock screen........................................passed
-When Click on the Revise PO button..........................................passed
-And Verify whether the page is navigated to Revised PO For Stock form.......passed
-]]></system-out>
-=======
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="97.897">
-    <testcase classname="I want to create po for the process" name="Revising the valid PO in PO Master Screen" time="97.54">
-        <failure message="no such element: No node with given id found&#10;  (Session info: chrome=121.0.6167.140)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 64774cb0252134ec4216d188a7b00944" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When User navigates to Login page...........................................passed
-Then User enters the username and password..................................passed
-And User click on the signIn................................................passed
-And Click on the Woven Module...............................................passed
-Then Click on Fabric sourcing module........................................passed
-And click on Data Entry in fabric sourcing module...........................passed
-And click on Generate PO....................................................passed
-And click on PO Master Sheet................................................passed
-Given Search with IPO in search keyword textbox.............................passed
-When click on filter icon on grid and search with the process name..........passed
-And click on revise po icon.................................................passed
-And navigated to revise po screen and displaying the update form or not.....failed
-Then update the data and submit the revise po...............................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="282.839">
+    <testcase classname="Creating an IPO for a confirmed style" name="Checking the details of the fabric sheet" time="282.132">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id='printpagebutton']&quot;}&#10;  (Session info: chrome=122.0.6261.112)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 610fa83557e84237277a1c2fe239e827&#10;*** Element info: {Using=xpath, value=//button[@id='printpagebutton']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Navigate to the Login page............................................passed
+Then Enter valid Username and Password......................................passed
+And Click on SignIn in the login page.......................................passed
+Then Click on Woven Module..................................................passed
+Then Click on Merchandising module..........................................passed
+Then Click on the Reports under Merchandising module........................passed
+Then Click on View Fabric Sheet module......................................passed
+Then Click on Style show/hide button........................................passed
+Then Click on Filter button in the Menu list................................passed
+And Verifying the Buyer field for selecting a Buyer.........................passed
+And Verify whether the user is able to select a Season in the season field..passed
+And Enter the IPO or Buyer in the Search by Buyer Style or IPO field........passed
+Then Click on Apply button..................................................passed
+When Check whether the respective IPO is displayed or not in the Menu List..passed
+Then Select the IPO in the Menu List........................................passed
+Then Check whether the page is navigated to the View Fabric Sheet...........passed
+When Click on the History button............................................passed
+Then Check whether page is navigated to the History page or not.............passed
+Then Verify whether the history records are there or not....................passed
+Then Verify whether the page is navigated to the PDF form or not............passed
+Then Verify whether the Back button is clickable............................passed
+And Check whether page is navigated to the View Fabric Sheet or not.........passed
+Then Verify whether the added fabrics are displayed or not on clicking the Fabric Details link.passed
+Then Verify whether the added fabrics Garment Average records are displayed or not on clicking the Garment Average link.passed
+Then Verify whether the added fabrics Quantity Requirment records are displayed or not on clicking the Quantity Requirment link.passed
+When Verify whether page is navigating to the Print form on clicking the View For Print By Combo Name button with Print and Cancel buttons.passed
+Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form.passed
+Then Verify whether the Print button is clickable...........................passed
+When Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Quality button.passed
+Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form.passed
+Then Verify whether the Print button is clickable...........................failed
+When Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Sheet button.skipped
+Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form.skipped
+Then Verify whether the Print button is clickable...........................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: No node with given id found
-  (Session info: chrome=121.0.6167.140)
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='printpagebutton']"}
+  (Session info: chrome=122.0.6261.112)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+System info: host: 'CALIBRAGE22-PC', ip: '192.168.1.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 64774cb0252134ec4216d188a7b00944
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 610fa83557e84237277a1c2fe239e827
+*** Element info: {Using=xpath, value=//button[@id='printpagebutton']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-	at Page.POMasterSheetpage.navigated_to_revise_po_screen_and_displaying_the_update_form_or_not(POMasterSheetpage.java:920)
-	at Stepdefinition1.POMasterSheet_Steps.navigated_to_revise_po_screen_and_displaying_the_update_form_or_not(POMasterSheet_Steps.java:131)
-	at ✽.navigated to revise po screen and displaying the update form or not(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/POMasterSheet.feature:86)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.ViewFabricSheetPages.Verify_whether_the_Print_button_is_clickable(ViewFabricSheetPages.java:251)
+	at Stepdefinition1.ViewFabricSheetSteps.Verify_whether_the_Print_button_is_clickable(ViewFabricSheetSteps.java:123)
+	at ✽.Verify whether the Print button is clickable(file:///C:/Users/Admin/eclipse-workspace/JivaAutomation/Maven/Features/ViewFabricSheet.feature:41)
 ]]></failure>
->>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
     </testcase>
 </testsuite>

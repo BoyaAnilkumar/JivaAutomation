@@ -24,35 +24,35 @@ Feature: PO For Stock screen functionality
   When Click on the Add Data Entry button
   Then Verify whether the page is navigated to the Create PO For Stock or not
   Then Click and Select Order Type
-  #Then Verify whether current PO Date is displayed or not
-  #Then Verify whether the PO Number field value
-  #And Select a Buyer
-  #Given Enter the Style
+  Then Verify whether current PO Date is displayed or not
+  Then Verify whether the PO Number field value
+  And Select a Buyer
+  Given Enter the Style
   When Select a Delivery To factory name
-  #Then Verify whether the Delivery Factory Address is displayed or not
-  #Then Verify whether the Delivery Factory GST number is displayed or not
+  Then Verify whether the Delivery Factory Address is displayed or not
+  Then Verify whether the Delivery Factory GST number is displayed or not
   When Select a Supplier name
-  #Then Verify whether the Supplier Address is displayed or not
-  #Then Verify whether the Supplier GST number is displayed or not
-  #Then Verify whether the Supplier Payment Terms are prepopulated or not
-  #Then Verify whether the user is able to edit the Payment Terms
-  #Then Verify whether the Supplier Delivery Terms are prepopulated or not
-  #Then Verify whether the user is able to edit the Delivery Terms
+  Then Verify whether the Supplier Address is displayed or not
+  Then Verify whether the Supplier GST number is displayed or not
+  Then Verify whether the Supplier Payment Terms are prepopulated or not
+  Then Verify whether the user is able to edit the Payment Terms
+  Then Verify whether the Supplier Delivery Terms are prepopulated or not
+  Then Verify whether the user is able to edit the Delivery Terms
   Given Enter Lead Time value
   Then Select a Process for the selected Order Type
   Then Select a Fabric Type
   Then Select a Fabric Name
-  #Then Select a Content
-  #Then Select a Count_Counstruction
-  #Then Select a GSM
-  #Then Select a Cuttable Width
+  Then Select a Content
+  Then Select a Count_Counstruction
+  Then Select a GSM
+  Then Select a Cuttable Width
   Then Select a Color
-  #When Verify whether the Qty Required field is displaying 0 by default
+  When Verify whether the Qty Required field is displaying 0 by default
   Given Enter Residual Shrinkage value
   Given Enter Process Loss value
-  #And Verify whether by default 3 is displayed in the Qty Allowed field
-  #Given Verify whether the user is able to change the value
-  #Then Select a Currency
+  And Verify whether by default 3 is displayed in the Qty Allowed field
+  Given Verify whether the user is able to change the value
+  Then Select a Currency
   Given Enter Rate value
   Then Select an UOM
   #Given Enter remarks in the L - Short If Any field
@@ -107,9 +107,10 @@ Feature: PO For Stock screen functionality
   When Click on Yes option in the cancel toaster msg
   Then Verify whether the Successfull msg is displayed or not
   #And Verify whether the Status is changed to Cancelled state under Status column
+  #validating the cancel record is pending
   
   
-  @StockPO1
+  @StockPO
   Scenario: Verifying revision of the PO record in the Revised PO For Stock screen   
   When user navigates to Login page
   Given Login with the Production Manager
@@ -117,5 +118,25 @@ Feature: PO For Stock screen functionality
   Then Navigate to PO For Stock screen
   When Click on the Revise PO button 
   And Verify whether the page is navigated to Revised PO For Stock form
+  Then Print the PO Details section values
+  When Update the Delevery To field value
+  Then Print the Address and GSTIn field values
+  Then Print Supplier Details section values
+  Then Print the Process name
+  Then Print the Fabric Type and Name
+  Then Print Content, Count, GSM, Cuttable Width and Color field values
+  Then Print Original and Revised Qtys under the Quantity Details section
+  Given Update the Residual Shrinkage value
+  Then Verify the Process Loss, Qty Allowed, Currency, Rate and UOM field values
+  Given Verify the DueOn Date value  
+  Given Update the Quantity value
+  Then Click on the Sample field under the Stock Details grid
+  Then Print Original and Revised Qtys under the Quantity Details section 
+  Then Click on the Save button in the Revised PO For Stock form
+  Then Click on the Cancel button in the Print Preview form
+  And Verify whether page is navigated to PO For Stock screen
+  # Supplier name and Fabric Names are not printing
+  
+  
   
   

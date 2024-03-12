@@ -29,6 +29,10 @@ public class ViewFabricSheetSteps {
 	public void Click_on_Merchandising_module() throws Throwable {
 		VFSP.Click_on_Merchandising_module();
 	}
+	@Then ("^Click on the Reports under Merchandising module$")
+	public void Click_on_the_Reports_under_Merchandising_module() throws Throwable {
+		VFSP.Click_on_the_Reports_under_Merchandising_module();
+	}
 	@Then ("^Click on View Fabric Sheet module$")
 	public void Click_on_View_Fabric_Sheet_module() throws Throwable {
 		VFSP.Click_on_View_Fabric_Sheet_module();

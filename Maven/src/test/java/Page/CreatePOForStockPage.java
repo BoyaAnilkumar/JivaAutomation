@@ -49,7 +49,7 @@ public class CreatePOForStockPage extends DriverFactory{
 	By sec_Process = By.xpath("//option[text()=' Dyeing']");
 	By FabricType = By.xpath("//select[@formcontrolname='fabricType']");
 	By sec_FabricType = By.xpath("//option[text()=' Woven']");
-	By FabricName = By.xpath("//ng-select[@bindlabel='fabricName']");
+	By FabricName = By.cssSelector("//ng-select[@bindlabel='fabricName']");//by.xpath("//ng-select[@bindlabel='fabricName']");
 	By sec_FabricName = By.xpath("//span[text()='Raw silk']");
 	By Content = By.xpath("//select[@formcontrolname='content']");
 	By sec_Content = By.xpath("//option[text()=' 80%']");
@@ -63,7 +63,7 @@ public class CreatePOForStockPage extends DriverFactory{
 	By sec_Color = By.xpath("//span[text()='Alabaster']");
 	By QtyReq = By.xpath("//input[@formcontrolname='totalqtyRequired']");
 	By AvailableStkQty = By.xpath("//input[@formcontrolname='totalqtystock']");
-	By Residual = By.xpath("//input[@formcontrolname='residualShrinkage']");
+	public By Residual = By.xpath("//input[@formcontrolname='residualShrinkage']");
 	By ProcessLoss = By.xpath("//input[@formcontrolname='processLoss']");
 	By QtyAllowed = By.xpath("//input[@formcontrolname='qtyAllowd']");
 	By Currency = By.xpath("//select[@formcontrolname='currencyType']");
@@ -78,7 +78,7 @@ public class CreatePOForStockPage extends DriverFactory{
 	By Stockgrid = By.xpath("//thead[@class='p-datatable-thead']");
 	public By DueOn = By.xpath("//input[@formcontrolname='dueDate']");
 	public By Qty = By.xpath("//input[@formcontrolname='qtyrequired']");
-	public By Sampling = By.xpath("//input[@formcontrolname='Sampling']");
+	public By Sampling = By.xpath("//input[@formcontrolname='isSampling']");
 	public By Total 	= By.xpath("//td[text()='Total']");
 	public By SaveToaster = By.xpath("//h2[text()='Create PO For Fabric Saved Successfully']");
 	public By butt_Reset = By.xpath("//button[text()=' Reset']");
@@ -180,12 +180,6 @@ public class CreatePOForStockPage extends DriverFactory{
 
 	public void Select_a_Delivery_To_factory_name() throws Throwable {
 
-//		utilities.webDriverWait(driver, Delivery);
-//		driver.findElement(Delivery).click();
-//		driver.findElement(Delivery).sendKeys("Jiva");
-//		utilities.webDriverWait(driver, sec_Delivery);
-//		driver.findElement(sec_Delivery).click();
-		
 		utilities.webDriverWait(driver, Delivery);
 		driver.findElement(Delivery).click();
 		driver.findElement(Delivery).clear();
@@ -584,7 +578,7 @@ public class CreatePOForStockPage extends DriverFactory{
 
 //		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+Duedate);
 
-		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+Duedate);
+//		System.out.println("Displaying the DueOn Date according to the Lead Time days entered - "+Duedate);
 
 		utilities.MinimumWait(driver);
 

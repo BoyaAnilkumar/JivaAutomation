@@ -22,6 +22,7 @@ public class ViewFabricSheetPages extends DriverFactory{
 	By btnSignIn = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
 	By Woven = By.xpath("//span[text()='Woven / knit']");
 	By Merchandising = By.xpath("(//span[text()='Merchandising '])[1]");
+	By Reports = By.xpath("((//li[@class='ng-star-inserted mm-active'])[2]/..//span[text()='Reports'])[2]");
 	By ViewFabricSheet = By.xpath("//a[text()='View Fabric Sheet']");
 	By ShowHide = By.xpath("//a[@id='sidebarCollapse']");
 	By buttFilter = By.xpath("//i[@class=\"pi pi-filter\"]");
@@ -81,6 +82,10 @@ public class ViewFabricSheetPages extends DriverFactory{
 	public void Click_on_Merchandising_module() throws Throwable {
 		utilities.webDriverWait(driver, Merchandising);
 		driver.findElement(Merchandising).click();
+	}
+	public void Click_on_the_Reports_under_Merchandising_module() throws Throwable {
+		utilities.webDriverWait(driver, Reports);
+		driver.findElement(Reports).click();
 	}
 
 	public void Click_on_View_Fabric_Sheet_module() throws Throwable {
@@ -145,9 +150,9 @@ public class ViewFabricSheetPages extends DriverFactory{
 		utilities.webDriverWait(driver, ML_selectIPO);
 		driver.findElement(ML_selectIPO).click();
 		System.out.println("IPO Selected");
-		utilities.MediumWait(driver);
-		driver.findElement(GoToTop).click();
-		utilities.MediumWait(driver);
+//		utilities.MediumWait(driver);
+//		driver.findElement(GoToTop).click();
+//		utilities.MediumWait(driver);
 		//utilities.WaitUntilPageIsLoaded(driver);
 		driver.findElement(ShowHide).click();
 		utilities.WaitUntilPageIsLoaded(driver);
@@ -212,7 +217,10 @@ public class ViewFabricSheetPages extends DriverFactory{
 
 	public void Check_whether_page_is_navigated_to_the_View_Fabric_Sheet_or_not() throws Throwable {
 		utilities.webDriverWait(driver, navViewFabricSheet);
-		driver.findElement(navViewFabricSheet).click();
+		driver.findElement(navViewFabricSheet).isDisplayed();
+		WebElement viewfab = driver.findElement(navViewFabricSheet);
+		String viewfabsheet = viewfab.getText();
+		System.out.println("Print the screen name : "+ viewfabsheet);
 		
 	}
 
@@ -283,5 +291,7 @@ public class ViewFabricSheetPages extends DriverFactory{
 		driver.findElement(PrintForm).isDisplayed();
 		
 	}
+
+	
 
 }
