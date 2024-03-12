@@ -32,10 +32,10 @@ import org.openqa.selenium.By;
 			By PDModule 				= By.xpath("//span[text()='PD ']");
 			By PDFDS 					= By.xpath("//a[text()=' PD FDS ']");
 			By Stylesexpansion 			= By.xpath("//a[@id='sidebarCollapse']");
-			By FilterIcon				= By.xpath("//i[@class='pi pi-filter']");
-			By SearchByIPO				= By.xpath("//input[@placeholder='Search by style #']");
-			By Apply_Filter				= By.xpath("//button[text()='Apply']");
-			By SelecttheIPO				= By.xpath("//a[@class='nav-link lite-yellow']");
+	 public By FilterIcon				= By.xpath("//i[@class='pi pi-filter']");
+	 public	By SearchByIPO				= By.xpath("//input[@placeholder='Search by style #']");
+	 public	By Apply_Filter				= By.xpath("//button[text()='Apply']");
+	 public By SelecttheStyle			= By.xpath("//a[@class='nav-link lite-yellow']");
 			By ClickonStylesExpansion 	= By.xpath("//a[@id='sidebarCollapse']");
 			By AddNewFabric 			= By.xpath("//a[@Class='nav-link add-fabric']");
 			By ClickonFabricQuality 	= By.xpath("//ng-select[@formcontrolname='fabricQualityId']");
@@ -163,8 +163,8 @@ import org.openqa.selenium.By;
 			}
 
 			public void Select_the_IPO() throws Throwable {
-				utilities.webDriverWait(driver, SelecttheIPO);
-				driver.findElement(SelecttheIPO).click();
+				utilities.webDriverWait(driver, SelecttheStyle);
+				driver.findElement(SelecttheStyle).click();
 				utilities.MinimumWait(driver);
 				
 				utilities.webDriverWait(driver, ClickonStylesExpansion);
@@ -474,8 +474,8 @@ import org.openqa.selenium.By;
 				driver.findElement(Apply_Filter).click();
 				utilities.MinimumWait(driver);
 				
-				utilities.webDriverWait(driver, SelecttheIPO);
-				driver.findElement(SelecttheIPO).click();
+				utilities.webDriverWait(driver, SelecttheStyle);
+				driver.findElement(SelecttheStyle).click();
 				utilities.MinimumWait(driver);
 				
 			

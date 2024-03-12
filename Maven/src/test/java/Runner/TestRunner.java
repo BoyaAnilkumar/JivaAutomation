@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-				  tags ="@Fabric_Pricing1")
+				  tags ="@Costing1")
 
 
 public class TestRunner {

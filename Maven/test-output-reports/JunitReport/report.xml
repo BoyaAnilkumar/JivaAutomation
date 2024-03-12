@@ -1,46 +1,117 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="171.142">
-    <testcase classname="feature to test Jiva design PD Fabric Pricing screen functionality" name="To Test the Nominated Fabric page" time="170.763">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//li[@class='nav-item ng-star-inserted'])[2]&quot;}&#10;  (Session info: chrome=122.0.6261.95)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4a974a6b295ee4101715b2aeaa89f7f0&#10;*** Element info: {Using=xpath, value=(//li[@class='nav-item ng-star-inserted'])[2]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When User navigates to Login page...........................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="468.392">
+    <testcase classname="Title of your features" name="Creating the Costing Version" time="467.962">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class='btn btn-primary btn-md float-right ng-star-inserted']&quot;}&#10;  (Session info: chrome=122.0.6261.112)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62767}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9794c84179464efc05f2c0874029e9d3&#10;*** Element info: {Using=xpath, value=//button[@class='btn btn-primary btn-md float-right ng-star-inserted']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When User navigates to Login page...........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
-And Click on the Woven Module...............................................passed
-And Click on Fabric Sourcing module.........................................passed
-And click on Data Entry in fabric sourcing module...........................passed
-And click on PD Fabric Pricing..............................................passed
-And Click on the Styles Expansion...........................................passed
-And Click on the Filter icon................................................passed
-And Search The Style........................................................passed
-And Click on the Apply button...............................................passed
-And Select the Style........................................................passed
-And Click on the Fabric name tab............................................failed
-And Verify the Style name is displayed or not...............................skipped
-And Verify the Buyer name is displayed or not...............................skipped
-And Verify the Season name is displayed or not..............................skipped
-And Verify the Qty value is displayed or not................................skipped
-And Verify the Order date is displayed or not...............................skipped
-And Click on the download icon..............................................skipped
-And Verify whether the Fabric Quality field data is prepopulated or not.....skipped
-And Verify whether the Content field data is prepopulated or not............skipped
-And Verify whether the color field data is prepopulated or not..............skipped
-And Verify wether the Count Construction field data is prepopulated or not..skipped
-And Verify whether the GSM field data is prepopulated or not................skipped
-And Verify whether the Specific Requirements field data is prepopulated or not.skipped
-And Verify whether the Fabric Quantity field data is prepopulated or not....skipped
-And Verify whether the Full Width field data is prepopulated or not.........skipped
-And Verify wether the Cuttable Width field data is prepopulated or not......skipped
-And Verify whether the Use field data is prepopulated or not................skipped
+Then Click on the Woven Modules.............................................passed
+Then Click on the PD Module.................................................passed
+Then Click on the Costing Module............................................passed
+Then Click on the Style button..............................................passed
+Then Select an IPO in the Menu List.........................................passed
+Then Click on Style Button..................................................passed
+Then Click on the Submit1 button............................................passed
+Given Enter Version Name....................................................passed
+Given Enter Remarks.........................................................passed
+Then Click on Add Combo button..............................................passed
+Given Enter Combo Name......................................................passed
+Given Enter Combo Qty.......................................................passed
+When Click in the App_Combo1................................................passed
+When Select an App_combo1...................................................passed
+When Enter Garment Average1.................................................passed
+When Enter Wastage1.........................................................passed
+When Enter Rate1............................................................passed
+When Enter Conversion Rate1.................................................passed
+Given Enter Additional Sampling Cost........................................passed
+Given Enter Per pc Freight Cost.............................................passed
+And Click on Add Trims button...............................................passed
+Then Click on the Category1 dropdown field..................................passed
+Then Select a Category1 from the dropdown...................................passed
+Then Click on the Item1 dropdown field......................................passed
+Then Select an Item1 from the dropdown......................................passed
+And Enter Avg of an Item1 value.............................................passed
+And Enter Wastage of the selected Trim Accessories1.........................passed
+And Enter Rate of the selected Trim Accessories1............................passed
+And Click on the Add Accessories button.....................................passed
+Then Click on the Category dropdown field under the TrimAccessoriesII grid..passed
+Then Select a Category from the dropdown under the TrimAccessoriesII grid...passed
+Then Click on the Item dropdown field under the TrimAccessoriesII grid......passed
+Then Select a Item from the dropdown under the TrimAccessoriesII grid.......passed
+Then Enter the Cost.........................................................passed
+Given To check whether the Overhead Cost is displaying a value or not.......passed
+Given Enter Overhead Cost value.............................................passed
+Given To check whether the Garment Cutting Cost is displaying a value or not.passed
+Given Enter Garment Cutting Cost value......................................passed
+Given Enter No of Stiches...................................................passed
+Given Enter Rate............................................................passed
+Given Enter Overhead........................................................passed
+Given Enter Addl Charges....................................................passed
+Given Enter Adda Hours......................................................passed
+Given Enter Adda Rate.......................................................passed
+Given Enter Adda Overhead...................................................passed
+Given Enter Manual Hours....................................................passed
+Given Enter Manual Rate.....................................................passed
+Given Enter Manual Overhead.................................................passed
+When To verify on clicking the Add Process button under Stitching...........passed
+Given Enter a value in OB1..................................................passed
+Given Enter a value in OB2..................................................passed
+Given Enter a value in OB3..................................................passed
+Given Enter a value in Cost1................................................passed
+Given Enter a value in Cost2................................................passed
+Given Enter a value in Cost3................................................passed
+Then Select an option in Booked field.......................................passed
+Given Enter a value in Smocking.............................................passed
+Given Enter a value in Rate.................................................passed
+When To verify whether the user is able to click the Description dropdown field or not.passed
+Then Select a value from the dropdown field.................................passed
+Given Enter the Stitching Cost value........................................passed
+Then Click on the Add Process button under Finising and Packing grid........passed
+Then Select a Finishing and Packing process1................................passed
+Given Enter the Finishing and Packing cost1.................................passed
+Then Check the Yes or No toggle button status...............................passed
+Then Click on the Add Process button when the toggle button is in enabled state.passed
+Then Select a Washing Process1..............................................passed
+Given Enter the Washing Cost1...............................................passed
+Given Enter the value in the FPT GPT Total Cost field.......................passed
+Given Enter the value in the FPT GPT Cost field.............................passed
+Given Enter the value in the Addl Tests Total Cost field....................passed
+Given Enter the value in the Addl Tests Cost field..........................passed
+Given Enter the value in the Inspection Charges Total Cost field............passed
+Given Enter the value in the Inspection Charges Cost field..................passed
+Given Enter the value in the NO of PO by Sea field..........................passed
+Given Enter the value in the NO of PO by Air field..........................passed
+Given Enter the value in the Custom Clearance Total Cost field..............passed
+Given Enter the value in the Custom Clearance Cost field....................passed
+Given Enter the value in the Cartage Total Cost field.......................passed
+Given Enter the value in the Cartage Cost field.............................passed
+Given Enter the value in the Additional Buffer field........................passed
+Given Enter the value in the Rejection field................................passed
+Given Enter the value in the OverHead field.................................passed
+Given Enter the value in the Profit MarkUp field............................passed
+Given Enter the value in the Commission field...............................passed
+Given Enter the value in the Currency field.................................passed
+Given Enter the value in the Price Quoted To Buyer field....................passed
+Then Click on the View For Print button.....................................passed
+Then Click on the Cancel in the Print form..................................passed
+Then Click on the Download As Excel button..................................passed
+Then Click on Import button.................................................failed
+When Check wether the Import Version Details Version popup window opened or not.skipped
+Then Click Versions dropdown field..........................................skipped
+Then Select a value from the dropdown.......................................skipped
+Then Click on the Close button..............................................skipped
+Then Click on the Import buttton............................................skipped
+Then Click on Close icon....................................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//li[@class='nav-item ng-star-inserted'])[2]"}
-  (Session info: chrome=122.0.6261.95)
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-primary btn-md float-right ng-star-inserted']"}
+  (Session info: chrome=122.0.6261.112)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4a974a6b295ee4101715b2aeaa89f7f0
-*** Element info: {Using=xpath, value=(//li[@class='nav-item ng-star-inserted'])[2]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62767}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9794c84179464efc05f2c0874029e9d3
+*** Element info: {Using=xpath, value=//button[@class='btn btn-primary btn-md float-right ng-star-inserted']}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -54,9 +125,9 @@ Session ID: 4a974a6b295ee4101715b2aeaa89f7f0
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.FabricPricing_Pages.Click_on_the_Fabric_name_tab(FabricPricing_Pages.java:429)
-	at Stepdefinition1.PDFabricPricing_Steps.Click_on_the_Fabric_name_tab(PDFabricPricing_Steps.java:225)
-	at ✽.Click on the Fabric name tab(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/PDFabricPricing.feature:148)
+	at Page.Costingpages.Click_on_Import_button(Costingpages.java:873)
+	at Stepdefinition1.CostingSteps.Click_on_Import_button(CostingSteps.java:434)
+	at ✽.Click on Import button(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/Costing.feature:195)
 ]]></failure>
     </testcase>
 </testsuite>
