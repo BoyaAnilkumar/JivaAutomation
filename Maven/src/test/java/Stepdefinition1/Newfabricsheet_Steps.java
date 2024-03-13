@@ -267,7 +267,7 @@ public class Newfabricsheet_Steps {
 //			   public void Click_on_the_Cancel_button() throws Throwable{
 //				  Newfabricsheet_Pages.Click_on_the_Cancel_button();
 //			   }
-			   @And ("^Click on the Submit button$")
+			   @And ("^Click on the Submit button $")
 			   public void Click_on_the_Submit_button() throws Throwable{
 				  Newfabricsheet_Pages.Click_on_the_Submit_button();
 			   }

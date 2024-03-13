@@ -4,6 +4,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 
 import org.joda.time.DateTime;
 import org.openqa.selenium.By;
@@ -18,7 +19,7 @@ public class Stylepage extends DriverFactory{
 	String formattedDate = dateFormat.format(currentDate);
 	String Pastdate = DateTime.now().plusDays(-1).toString("dd-MM-yyyy");
 	String tomorrow = DateTime.now().plusDays(1).toString("dd-MM-yyyy");
-		
+	String TaskName = null;
 	
 	
     
@@ -710,6 +711,15 @@ public class Stylepage extends DriverFactory{
 				} else {
 					System.out.println("Alert message is incorrect."+ actualMessage);
 				}
+			}
+
+			public void Create_multiple_style_masters_details_in_pd_module() {
+				Random rand = new Random();
+			    int int1 = rand.nextInt(100000000);
+			    String RandomNumber= Integer.toString(int1);
+			    TaskName = "Test " + RandomNumber;
+				
+			    
 			}
 		
 				

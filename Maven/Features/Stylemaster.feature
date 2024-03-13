@@ -112,3 +112,13 @@ And Click on the Delete Icon in style master grid
 And Click on the Yes button
 And Click on the No button
 And Verify whether the delete is working or not
+
+ @MultipleStyleMasters
+ Scenario: Creating Mutiple Style Masters
+ 
+ Given Create multiple style masters details in pd module
+ 
+ 
+ 
+ 
+ 

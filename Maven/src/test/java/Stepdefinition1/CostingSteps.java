@@ -413,10 +413,10 @@ public class CostingSteps {
 	  public void Click_on_the_PSave_button() throws Throwable {
 		  cos.Click_on_the_PSave_button();
 	  }
-//	  @Then ("^Click on the Submit button$")
-//	  public void Click_on_the_Submit_button() throws Throwable {
-//		  cos.Click_on_the_Submit_button();
-//	  }
+	  @Then ("^Click on the Submit button$")
+	  public void Click_on_the_Submit_button() throws Throwable {
+		  cos.Click_on_the_Submit_button();
+	  }
 	  @Then ("^Click on the View For Print button$")
 	  public void Click_on_the_View_For_Print_button() throws Throwable {
 		  cos.Click_on_the_View_For_Print_button();

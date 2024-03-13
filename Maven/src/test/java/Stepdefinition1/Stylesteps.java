@@ -426,6 +426,17 @@ public class Stylesteps {
 		   public void Verify_whether_the_delete_is_working_or_not () throws Throwable {
 			   Stylepage.Verify_whether_the_delete_is_working_or_not();   
 		   }
+		   
+		   @Given("^Create multiple style masters details in pd module$")
+		   public void Create_multiple_style_masters_details_in_pd_module() {
+			   Stylepage.Create_multiple_style_masters_details_in_pd_module();
+		   }
+		   
+		   
+		   
+		   
+		   
+		   
 		   }
 		   
 

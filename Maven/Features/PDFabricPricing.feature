@@ -131,7 +131,7 @@ Feature: feature to test Jiva design PD Fabric Pricing screen functionality
  And Verify whether the View for print page is displaying or not
  And Click on the cancel Button
  #And click on the Print button
- @Fabric_Pricing1
+ @Fabric_Pricing
  Scenario: To Test the Nominated Fabric page
  When User navigates to Login page
  Then User enters the username and password
@@ -151,7 +151,7 @@ Feature: feature to test Jiva design PD Fabric Pricing screen functionality
  And Verify the Season name is displayed or not
  And Verify the Qty value is displayed or not
  And Verify the Order date is displayed or not
- And Click on the download icon
+ #And Click on the download icon
  And Verify whether the Fabric Quality field data is prepopulated or not
  And Verify whether the Content field data is prepopulated or not
  And Verify whether the color field data is prepopulated or not
@@ -162,3 +162,4 @@ Feature: feature to test Jiva design PD Fabric Pricing screen functionality
  And Verify whether the Full Width field data is prepopulated or not
  And Verify wether the Cuttable Width field data is prepopulated or not
  And Verify whether the Use field data is prepopulated or not
+ 
