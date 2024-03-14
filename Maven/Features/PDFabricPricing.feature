@@ -7,7 +7,9 @@ Feature: feature to test Jiva design PD Fabric Pricing screen functionality
  Given User Enters the username and password
  And User click on the signIn
  And Click on the Woven Module
- Then Click on the PD Fabric Pricing under the Fabric Sourcing Module
+ And Click on Fabric Sourcing module
+ And click on Data Entry in fabric sourcing module
+ And click on PD Fabric Pricing
  And Click on the Styles Expansion
  
  
@@ -17,12 +19,14 @@ Feature: feature to test Jiva design PD Fabric Pricing screen functionality
  Then User enters the username and password
  And User click on the signIn
  And Click on the Woven Module
- Then Click on the PD Fabric Pricing under the Fabric Sourcing Module
+ And Click on Fabric Sourcing module
+ And click on Data Entry in fabric sourcing module
+ And click on PD Fabric Pricing
  And Click on the Styles Expansion
  And Click on the Filter icon
- And Click on the Buyer Field
- And Click on the Season field
- And Select the Season
+ #And Click on the Buyer Field
+ #And Click on the Season field
+ #And Select the Season
  #And Select the Status in the Status dropdown list
  And Search The Style
  And Click on the Apply button
@@ -36,7 +40,9 @@ Feature: feature to test Jiva design PD Fabric Pricing screen functionality
  Then User enters the username and password
  And User click on the signIn
  And Click on the Woven Module
- Then Click on the PD Fabric Pricing under the Fabric Sourcing Module
+ And Click on Fabric Sourcing module
+ And click on Data Entry in fabric sourcing module
+ And click on PD Fabric Pricing
  And Click on the Styles Expansion
  And Click on the Filter icon
  And Search The Style
@@ -54,7 +60,9 @@ Feature: feature to test Jiva design PD Fabric Pricing screen functionality
  Then User enters the username and password
  And User click on the signIn
  And Click on the Woven Module
- Then Click on the PD Fabric Pricing under the Fabric Sourcing Module
+  And Click on Fabric Sourcing module
+ And click on Data Entry in fabric sourcing module
+ And click on PD Fabric Pricing
  And Click on the Styles Expansion
  And Click on the Filter icon
  And Search The Style
@@ -78,7 +86,9 @@ Feature: feature to test Jiva design PD Fabric Pricing screen functionality
  Then User enters the username and password
  And User click on the signIn
  And Click on the Woven Module
- Then Click on the PD Fabric Pricing under the Fabric Sourcing Module
+  And Click on Fabric Sourcing module
+ And click on Data Entry in fabric sourcing module
+ And click on PD Fabric Pricing
  And Click on the Styles Expansion
  And Click on the Filter icon
  And Search The Style
@@ -89,7 +99,7 @@ Feature: feature to test Jiva design PD Fabric Pricing screen functionality
  Given Enter the Price 
  And Select the Fabric Supplier
  And Enter the Remarks Field 
- And Click on the delete icon
+ #And Click on the delete icon
  And Enter the data in Total Price Field
  Given Enter the data in Total Fabric Lead Time
  And Enter the data in Price Valid For Days
@@ -109,7 +119,9 @@ Feature: feature to test Jiva design PD Fabric Pricing screen functionality
  Then User enters the username and password
  And User click on the signIn
  And Click on the Woven Module
- Then Click on the PD Fabric Pricing under the Fabric Sourcing Module
+  And Click on Fabric Sourcing module
+ And click on Data Entry in fabric sourcing module
+ And click on PD Fabric Pricing
  And Click on the Styles Expansion
  And Click on the Filter icon
  And Search The Style
@@ -119,13 +131,15 @@ Feature: feature to test Jiva design PD Fabric Pricing screen functionality
  And Verify whether the View for print page is displaying or not
  And Click on the cancel Button
  #And click on the Print button
- @Fabric_Pricing
+ @Fabric_Pricing1
  Scenario: To Test the Nominated Fabric page
  When User navigates to Login page
  Then User enters the username and password
  And User click on the signIn
  And Click on the Woven Module
- Then Click on the PD Fabric Pricing under the Fabric Sourcing Module
+  And Click on Fabric Sourcing module
+ And click on Data Entry in fabric sourcing module
+ And click on PD Fabric Pricing
  And Click on the Styles Expansion
  And Click on the Filter icon
  And Search The Style

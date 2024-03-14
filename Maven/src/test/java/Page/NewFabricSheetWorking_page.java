@@ -13,13 +13,14 @@ import util.Utilities;
 public class NewFabricSheetWorking_page extends DriverFactory {
 
 	Utilities utilities = new Utilities();
+	CreatePOforIPO_pages CPFI = new CreatePOforIPO_pages();
 	
 	By WovenModule 					= By.xpath("//span[text()='Woven / knit']");
 	By Fabricsourcing				= By.xpath("//span[text()='Fabric Sourcing ']");
 	By GenerateFabricsheet			= By.xpath("//span[text()='Generate Fabric Sheet Working']");
 	By NewFabricsheetworking		= By.xpath("//a[text()=' New Fabric Sheet Working ']");
 	By Styleexpansion				= By.xpath("//a[@id='sidebarCollapse']");
-	By SelectIPO					= By.xpath("//a[@id='v-pills-tabVelIPO']");
+	By SelectIPO					= By.xpath("//a[text()='Sty070901 / Sty070901']");
 	By Filtericon					= By.xpath("//button[@class='btn btn-primary btn-sm mb-2 float-right']");
 	By Buyer						= By.xpath("//div[text()='Select Buyer']");
 	By EnterBuyername				= By.xpath("//div[@class='p-multiselect-filter-container ng-tns-c92-1 ng-star-inserted']/..//input[@class='p-multiselect-filter p-inputtext p-component ng-tns-c92-1']");
@@ -31,6 +32,8 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By Applybutton					= By.xpath("//button[@class='btn btn-md btn-primary']");
 	By Resetbutton					= By.xpath("//button[@class='btn btn-md btn-light btn-active-light-primary mr-2']");
 	By Editicon						= By.xpath("//button[@class='btn btn-sm btn-info mr-1']");
+	By IPOdetails					= By.xpath("//ul[@class='row view-details']");
+	By FinalFabricRequired			= By.xpath("//input[@formcontrolname='finalRequredQty']");
 	By Fabricrequiredqty			= By.xpath("//input[@formcontrolname='finalRequredQty']");
 	By Residualshrinkage			= By.xpath("//label[text()='Residual Shrinkage']/..//input[@class='form-control form-control-sm ng-untouched ng-pristine ng-valid']");
 	By Process1						= By.xpath("//select[@formcontrolname='process1TypeId']");
@@ -107,22 +110,59 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	By Shifflyexecutive							= By.xpath("//select[@formcontrolname='schifflyFabricExecutiveId']");
 	
 
-	By Isyarn   =  By.xpath("//input[@formcontrolname='isYarn']");
-	By Isknitting  = By.xpath("//input[@formcontrolname='isKnitting']");
-	By Yarntype		= By.xpath("//select[@formcontrolname='yarnTypeId']");
-	By selectyarntype = By.xpath("//option[text()=' Dyed Yarn']");
-	By knitSpinMU		= By.xpath("//input[@formcontrolname='knittingMUPercentage']");
-	By Yarnqty			= By.xpath("//input[@formcontrolname='yarnQty']");
-	By yarncolor		= By.xpath("//select[@formcontrolname='yarnColorId']");
-	By selectyarncolor	= By.xpath("//select[@formcontrolname='yarnColorId']/..//option[text()=' Lilac']");
-	By selectotherprocess = By.xpath("//select[@formcontrolname='process1TypeId']/..//option[text()=' Other']");
-	By EnterOtherProcessName = By.xpath("//input[@formcontrolname='otherProcessName']");
-	By OtherMuperc			= By.xpath("//input[@formcontrolname='otherMUPercentage']");
-	By OtherQty				= By.xpath("//input[@formcontrolname='otherQty']");
-	By ProcessName			= By.xpath("//input[@formcontrolname='otherProcessName']");
-	By OtherMU 				= By.xpath("//input[@formcontrolname='otherMUPercentage']");
-	By Otherprocessqty		= By.xpath("//div[@class='row align-items-end']/..//input[@formcontrolname='otherQty']");
-	By OtherFbqty			= By.xpath("//div[@class='card ng-pristine ng-invalid ng-touched']//input[@formcontrolname='otherQty']");
+	By Isyarn   								= By.xpath("//input[@formcontrolname='isYarn']");
+	By Isknitting  								= By.xpath("//input[@formcontrolname='isKnitting']");
+	By Yarntype									= By.xpath("//select[@formcontrolname='yarnTypeId']");
+	By selectyarntype 							= By.xpath("//option[text()=' Dyed Yarn']");
+	By knitSpinMU								= By.xpath("//input[@formcontrolname='knittingMUPercentage']");
+	By Yarnqty									= By.xpath("//input[@formcontrolname='yarnQty']");
+	By yarncolor								= By.xpath("//select[@formcontrolname='yarnColorId']");
+	By selectyarncolor							= By.xpath("//select[@formcontrolname='yarnColorId']/..//option[text()=' Lilac']");
+	By selectotherprocess 						= By.xpath("//select[@formcontrolname='process1TypeId']/..//option[text()=' Other']");
+	By EnterOtherProcessName 					= By.xpath("//input[@formcontrolname='otherProcessName']");
+	By OtherMuperc								= By.xpath("//input[@formcontrolname='otherMUPercentage']");
+	By OtherQty									= By.xpath("//input[@formcontrolname='otherQty']");
+	By ProcessName								= By.xpath("//input[@formcontrolname='otherProcessName']");
+	By OtherMU 									= By.xpath("//input[@formcontrolname='otherMUPercentage']");
+	By Otherprocessqty							= By.xpath("//div[@class='row align-items-end']/..//input[@formcontrolname='otherQty']");
+	By OtherFbqty								= By.xpath("//div[@class='card ng-pristine ng-invalid ng-touched']//input[@formcontrolname='otherQty']");
+	
+	public By DataEntry							= By.xpath("(//span[text()='Data Entry'])[1]");
+	By SaleSelectprocess1						= By.xpath("//select[@formcontrolname='process1TypeId']/..//option[text()=' N/A']");
+	By salefabricqty							= By.xpath("//label[text()=' Sale Fabric Qty']/..//input[@formcontrolname='saleFabricQTY']");
+	By Fabricbudgetqty							= By.xpath("//label[text()='Qty ']/..//input[@formcontrolname='saleFabricQTY']");
+	By Salefabricrate							= By.xpath("//label[text()='Rate ']/..//input[@formcontrolname='saleFabricRate']");
+	By Saleconversionrate						= By.xpath("//label[text()='Conversion Rate ']/..//input[@formcontrolname='saleFabricConversionRate']");
+	By SaleFabricbudgetCost						= By.xpath("(//input[@formcontrolname='saleFabricCostInINR'])[1]");
+	By SaleFabricfreightcost					= By.xpath("(//input[@formcontrolname='saleFabricCostInINR'])[2]");
+	By SaleFabricManager						= By.xpath("//select[@formcontrolname='saleFabricManagerId']");
+	By Select_SaleFabricManager					= By.xpath("//select[@formcontrolname='saleFabricManagerId']/..//option[text()=' Lokesh P']");
+	By SaleFabricManagerassistant				= By.xpath("//ng-select[@formcontrolname='saleFabricAssistantsId']");
+	By Select_SaleFabricmanagerasst				= By.xpath("//span[text()='Anil Kumar']");
+	By Fabricexecutive							= By.xpath("//select[@formcontrolname='saleFabricExecutiveId']");
+	By Select_FabricExecutive					= By.xpath("//select[@formcontrolname='saleFabricExecutiveId']/..//option[text()=' Nikhil']");
+	By SaleFreightqty							= By.xpath("//label[text()='Qty']/..//input[@formcontrolname='saleFabricQTY']");
+	By SaleFreigthRate							= By.xpath("//label[text()='Rate']/..//input[@formcontrolname='saleFabricRate']");
+	By SaleFreigthConvRate						= By.xpath("//label[text()='Conversion Rate ']/..//input[@formcontrolname='saleFabricCurrency']");
+	By SaleFreigthCost							= By.xpath("(//label[text()='Cost']/..//input[@formcontrolname='saleFabricCostInINR'])[2]");
+	By toastermessage							= By.xpath("//h2[text()='Fabric Order Sheet Saved Successfully']");
+	
+	By Basefabriccheckbox						= By.xpath("//input[@formcontrolname='isBaseFabric']");
+	By Basecolor								= By.xpath("//select[@formcontrolname='baseFabricColorId']");
+	By SelectBaseColor							= By.xpath("//select[@formcontrolname='baseFabricColorId']/..//option[text()=' Green']");
+	By BaseFabricQty							= By.xpath("//label[text()='Base Fabric Qty']/..//input[@formcontrolname='greigeBaseFabricReq']");
+	By BaseFabricbudgetqty						= By.xpath("//label[text()='Base Fabric Qty']/..//input[@formcontrolname='greigeBaseQTY']");
+	By BaseFabricrate							= By.xpath("//label[text()='Rate ']/..//input[@formcontrolname='greigeBaseFabricRate']");
+	By BaseFabricConversionrate					= By.xpath("//label[text()='Conversion Rate ']/..//input[@formcontrolname='greigeBaseFabricConversionRate']");
+	By BaseFabriccost							= By.xpath("//label[text()='Cost ']/..//input[@formcontrolname='greigeBaseFabricCostInINR']");
+	By BaseFabricManager						= By.xpath("//select[@formcontrolname='greigeBaseFabricManagerId']");
+	By Select_BaseFabricManager					= By.xpath("//select[@formcontrolname='greigeBaseFabricManagerId']/.//option[text()=' Anil Singh']");
+	By BaseFabricManagerAssist					= By.xpath("//ng-select[@formcontrolname='greigeBaseFabricAssistantsId']");
+	By Select_BaseFabricManagerAssist			= By.xpath("//span[text()='Sanjeev Kumar']");
+	By BaseFabricExecutive						= By.xpath("//select[@formcontrolname='greigeBaseFabricExecutiveId']");
+	By Select_BaseFabricExecutive				= By.xpath("//select[@formcontrolname='greigeBaseFabricExecutiveId']/..//option[text()=' Anil Kumar']");
+	
+	
 	
 	
 	
@@ -136,6 +176,10 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		 
 		 utilities.webDriverWait(driver, Fabricsourcing);
 		 driver.findElement(Fabricsourcing).click();
+		 utilities.MinimumWait(driver);
+		 
+		 utilities.webDriverWait(driver, DataEntry);
+		 driver.findElement(DataEntry).click();
 		 utilities.MinimumWait(driver);
 		 
 		 utilities.webDriverWait(driver, GenerateFabricsheet);
@@ -161,7 +205,9 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 		utilities.webDriverWait(driver, SelectIPO);
 		driver.findElement(SelectIPO).click();
 		utilities.MinimumWait(driver);
-		
+		utilities.webDriverWait(driver, Styleexpansion);
+		driver.findElement(Styleexpansion).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
@@ -240,10 +286,13 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 
 	public void Verify_that_data_is_displaying_in_grids_after_selecting_the_IPO() throws Throwable {
 		 
-		utilities.webDriverWait(driver, SelectIPO);
-		driver.findElement(SelectIPO).click();
-		utilities.MinimumWait(driver);
-		driver.findElement(SelectIPO).click();	
+		utilities.webDriverWait(driver, IPOdetails);
+		WebElement IPO = driver.findElement(IPOdetails);
+				String Details	= IPO.getText();
+				System.out.println("Display IPO details: " + Details);
+				utilities.MinimumWait(driver);
+
+		
 	}
 
 	public void Click_on_Edit_icon_in_MU_Working_grid() throws Throwable {
@@ -1115,6 +1164,351 @@ public class NewFabricSheetWorking_page extends DriverFactory {
 	}
 
 	public void Enter_Fabric_Budget_details_for_Other_process() {
+		
+		
+	}
+
+	public void select_the_process1_as_NA() throws Throwable {
+		utilities.webDriverWait(driver, Process1);
+		driver.findElement(Process1).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, SaleSelectprocess1);
+		driver.findElement(SaleSelectprocess1).click();
+		utilities.MinimumWait(driver);
+		
+		
+	}
+
+	public void verify_the_qty_in_sale_fabric_qty_field_whether_value_is_displaying_or_not() throws Throwable {
+		utilities.webDriverWait(driver, salefabricqty);
+		driver.findElement(salefabricqty).click();
+		WebElement FabricQTY = driver.findElement(salefabricqty);
+		String saleqty = FabricQTY.getAttribute("value");
+		System.out.println("Display the sale fabric qty: " + saleqty);
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(FinalFabricRequired).click();
+		WebElement FinalQty = driver.findElement(FinalFabricRequired);
+		String finalfabqty = FinalQty.getAttribute("value");
+		System.out.println("Display the Final Fabric Required Qty:  " + finalfabqty);
+		utilities.MinimumWait(driver);
+		
+		if(saleqty.equals(finalfabqty)) {
+			System.out.println("Final Fabric Qty is same as sale fabric qty::  "  +  finalfabqty);
+		}else {
+			System.out.println("Final Fabric Qty is not equal to sale fabric qty::  " +  saleqty);
+		}
+		utilities.MinimumWait(driver);
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;  //To scroll the page
+		js.executeScript("scrollBy(0, 500)");
+
+	}
+
+	public void Enter_Fabric_Budget_details_for_Sale_process() throws Throwable {
+		utilities.webDriverWait(driver, Fabricbudgetqty);
+		driver.findElement(Fabricbudgetqty).click();
+		WebElement SaleFabric = driver.findElement(Fabricbudgetqty);
+		String saleqty = SaleFabric.getAttribute("value");
+		System.out.println("Display the sale fabric budget qty: " + saleqty);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Salefabricrate);
+		driver.findElement(Salefabricrate).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(Salefabricrate).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(Salefabricrate).sendKeys("12");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Saleconversionrate);
+		driver.findElement(Saleconversionrate).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(Saleconversionrate).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(Saleconversionrate).sendKeys("2");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, SaleFabricbudgetCost);
+		driver.findElement(SaleFabricbudgetCost).click();
+		WebElement Salecost = driver.findElement(SaleFabricbudgetCost);
+		String Salefabriccost = Salecost.getAttribute("value");
+		System.out.println("Display the sale fabric budget cost: " + Salefabriccost);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, SaleFabricManager);
+		driver.findElement(SaleFabricManager).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Select_SaleFabricManager);
+		driver.findElement(Select_SaleFabricManager).click();
+		WebElement fabricmanager = driver.findElement(Select_SaleFabricManager);
+		String selectmanager = fabricmanager.getText();
+		System.out.println("Display selected sale fabric manager: " + selectmanager);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, SaleFabricManagerassistant);
+		driver.findElement(SaleFabricManagerassistant).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Select_SaleFabricmanagerasst);
+		driver.findElement(Select_SaleFabricmanagerasst).click();
+		WebElement Fabricmanagerassist = driver.findElement(Select_SaleFabricmanagerasst);
+		String Assistant = Fabricmanagerassist.getText();
+		System.out.println("Display selected sale fabric manager assistant:  " + Assistant);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Fabricexecutive);
+		driver.findElement(Fabricexecutive).click();
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Select_FabricExecutive);
+		driver.findElement(Select_FabricExecutive).click();
+		WebElement FabricExecutive = driver.findElement(Select_FabricExecutive);
+		String Executive = FabricExecutive.getText();
+		System.out.println("Display selected fabric executive: " + Executive);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+	}
+
+	public void Enter_Freight_Budget_details_for_Sale_process() throws Throwable {
+		utilities.webDriverWait(driver, SaleFreightqty);
+		driver.findElement(SaleFreightqty).click();
+		WebElement freightqty = driver.findElement(SaleFreightqty);
+		String qty = freightqty.getAttribute("value");
+		System.out.println("Display sale Frieght qty: " + qty);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, SaleFreigthRate);
+		driver.findElement(SaleFreigthRate).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(SaleFreigthRate).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(SaleFreigthRate).sendKeys("3");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, SaleFreigthConvRate);
+		driver.findElement(SaleFreigthConvRate).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(SaleFreigthConvRate).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(SaleFreigthConvRate).sendKeys("1.2");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, SaleFreigthCost);
+		driver.findElement(SaleFreigthCost).click();
+		WebElement freightcost = driver.findElement(SaleFreigthCost);
+		String cost = freightcost.getAttribute("value");
+		System.out.println("Display sale Frieght cost: " + cost);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		
+		
+	}
+
+	public void click_on_Base_Fabric_process_checkbox() throws Throwable {
+		utilities.webDriverWait(driver, Basefabriccheckbox);
+		driver.findElement(Basefabriccheckbox).click();
+		utilities.MinimumWait(driver);
+		
+		
+	}
+
+	public void select_the_color_for_base_fabric() throws Throwable {
+		utilities.webDriverWait(driver, Basecolor);
+		driver.findElement(Basecolor).click();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(SelectBaseColor).click();
+		utilities.MinimumWait(driver);
+		
+	}
+
+	public void verify_the_base_fabric_qty_is_displaying_as_same_as_the_final_fabric_req_or_not() throws Throwable {
+		utilities.webDriverWait(driver, BaseFabricQty);
+		driver.findElement(BaseFabricQty).click();
+		WebElement fabricqty = driver.findElement(BaseFabricQty);
+		String BaseFabric	= fabricqty.getAttribute("value");
+		System.out.println("display base fabric qty: "  + BaseFabric);
+		System.out.println("");
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(0,500)");
+	
+	}
+
+	
+
+	public void Enter_mu_percentage_for_dyeing_process() throws Throwable {
+		utilities.webDriverWait(driver, Process1MU);
+		driver.findElement(Process1MU).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(Process1MU).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(Process1MU).sendKeys("4");
+		utilities.MinimumWait(driver);
+		
+//		driver.findElement(BaseFabricQty).click();
+		WebElement fabricqty = driver.findElement(BaseFabricQty);
+		String BaseFabric	= fabricqty.getAttribute("value");
+		System.out.println("display base fabric qty: "  + BaseFabric);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Process1Qty);
+		driver.findElement(Process1Qty).click();
+		WebElement process1 = driver.findElement(Process1Qty);
+		String p1q	= process1.getAttribute("value");
+		System.out.println("display Process1 qty: "  + p1q);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+	}
+
+	public void Enter_Print_Type_date_for_printing_process() throws Throwable {
+		utilities.webDriverWait(driver, PrintType);
+		driver.findElement(PrintType).sendKeys("Blue");
+		utilities.MinimumWait(driver);
+		
+		
+		
+		
+	}
+
+	public void Enter_mu_percentage_for_printing_process() throws Throwable {
+		utilities.webDriverWait(driver, Process2MU);
+		driver.findElement(Process2MU).click();
+		driver.findElement(Process2MU).clear();
+		driver.findElement(Process2MU).sendKeys("3.25");
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Process2Qty);
+		driver.findElement(Process2Qty).click();
+		WebElement Process2 = driver.findElement(Process2Qty);
+		String P2Q = Process2.getAttribute("value");
+		System.out.println("Displaying the Process2:  " + P2Q);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, BaseFabricQty);
+		driver.findElement(BaseFabricQty).click();
+		WebElement fabricqty = driver.findElement(BaseFabricQty);
+		String BaseFabric	= fabricqty.getAttribute("value");
+		System.out.println("display base fabric qty: "  + BaseFabric);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Process1Qty);
+		driver.findElement(Process1Qty).click();
+		WebElement process1 = driver.findElement(Process1Qty);
+		String p1q	= process1.getAttribute("value");
+		System.out.println("display Process1 qty: "  + p1q);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(0,-500)");
+		 utilities.MediumWait(driver);
+		driver.findElement(FinalFabricRequired).click();
+		WebElement FinalQty = driver.findElement(FinalFabricRequired);
+		String finalfabqty = FinalQty.getAttribute("value");
+		
+		//Verifying that Base Fabric qty and Final Fabric qty are equal or not
+		if(BaseFabric.equals(finalfabqty)) {
+			System.out.println("Base Fabric qty and Final Fabric qty are equal");
+			System.out.println("");
+			System.out.println("Base Fabric Qty- " + BaseFabric + "  Final Fabric Qty- " + finalfabqty);
+			System.out.println("");
+		}else {
+			System.out.println("Base Fabric qty and Final Fabric qty are not equal");
+			System.out.println("");
+			System.out.println("Base Fabric Qty- " + BaseFabric + "  Final Fabric Qty- " + finalfabqty);
+			System.out.println("");
+		}
+		
+		//Verifying that Dyeing process qty and Final Fabric qty are equal or not
+		if(p1q.equals(finalfabqty)) {
+			System.out.println("Dyeing process qty and Final Fabric qty are equal");
+			System.out.println("");
+			System.out.println("Dyeing Process Qty- " + p1q + "  Final Fabric Qty- " + finalfabqty);
+			System.out.println("");
+		}else {
+			System.out.println("Dyeing process qty and Final Fabric qty are not equal");
+			System.out.println("");
+			System.out.println("Dyeing Process Qty- " + p1q + "  Final Fabric Qty- " + finalfabqty);
+			System.out.println("");
+		}
+		
+		//Verifying that Printing process qty and final fabric qty are equal or not
+		if(P2Q.equals(finalfabqty)) {
+			System.out.println("Printing process qty and Final Fabric qty are equal");
+			System.out.println("");
+			System.out.println("Printing Process Qty- " + P2Q + "   Final Fabric Qty- " + finalfabqty);
+			System.out.println("");
+		}else {
+			System.out.println("Printing process qty and Final Fabric qty are not equal");
+			System.out.println("");
+			System.out.println("Printing Process Qty- " + P2Q + "  Final Fabric Qty- " + finalfabqty);
+			System.out.println("");
+		}
+		
+		utilities.MediumWait(driver);
+		
+	}
+
+	public void verify_the_Fabric_Budget_details_for_the_processes() throws Throwable {
+		utilities.webDriverWait(driver, BaseFabricbudgetqty);
+		driver.findElement(BaseFabricbudgetqty).click();
+		WebElement BaseFabric = driver.findElement(BaseFabricbudgetqty);
+		String Baseqty = BaseFabric.getAttribute("value");
+		System.out.println("print base fabric budget qty- " +  Baseqty);
+		System.out.println("");
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, BaseFabricrate);
+		driver.findElement(BaseFabricrate).click();
+		driver.findElement(BaseFabricrate).clear();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(BaseFabricrate).sendKeys("8.45");
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(BaseFabricConversionrate).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(BaseFabricConversionrate).clear();
+		utilities.MinimumWait(driver);
+		driver.findElement(BaseFabricConversionrate).sendKeys("0.55");
+		utilities.MinimumWait(driver);
+		
+		String elementvalue = driver.findElement(BaseFabriccost).getAttribute("value");
+		System.out.println("Print =  " + elementvalue);
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(BaseFabricManager).click();
+		utilities.MediumWait(driver);
+		driver.findElement(Select_BaseFabricManager).click();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(BaseFabricManagerAssist).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(Select_BaseFabricManagerAssist).click();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(BaseFabricExecutive).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(Select_BaseFabricExecutive).click();
+		utilities.MinimumWait(driver);
+		
+		
 		
 		
 	}

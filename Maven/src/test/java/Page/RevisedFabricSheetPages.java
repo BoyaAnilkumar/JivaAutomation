@@ -433,6 +433,23 @@ public class RevisedFabricSheetPages extends DriverFactory {
 		System.out.println("Display the Total Fabric Required prepopulated value - " + TotalFabReq);	
 	}
 	public void Click_on_Submit_button() throws Throwable {
+		try {
+            Robot robot = new Robot();
+		
+            robot.delay(2000);
+		
+            int scrollAmount = 5;
+            for (int i = 0; i < scrollAmount; i++) {
+                robot.keyPress(KeyEvent.VK_UP);
+                robot.keyRelease(KeyEvent.VK_UP);
+                robot.delay(500);
+            }
+
+        } catch (AWTException e) {
+            e.printStackTrace();
+        }
+		utilities.webDriverWait(driver,buttEdit);
+		driver.findElement(buttEdit).click();
 		utilities.webDriverWait(driver,buttSubmit);
 		driver.findElement(buttSubmit).click();
 	}

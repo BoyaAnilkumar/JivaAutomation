@@ -215,6 +215,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		public void Select_the_IPO_and_Style() throws Throwable {
 			utilities.webDriverWait(driver, Select_IPO);
 			driver.findElement(Select_IPO).click();
+			utilities.MinimumWait(driver);
 			
 		}
 

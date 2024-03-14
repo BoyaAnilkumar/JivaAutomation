@@ -22,9 +22,9 @@ public class GRNdatapages extends DriverFactory{
 	By IPOdetails = By.xpath("//ul[@class='row view-details mb-3']");
 	By griddetails = By.xpath("//div[@class='row ng-star-inserted']/..//div[@class='col-lg-12']");
 	By Expansionicon = By.xpath("//a[@class='p-element']");
-	By Expansiongrid = By.xpath("//table[@id='pr_id_14-table']");
+	By Expansiongrid = By.xpath("//div[@id='tabs']/div[@class='card']/div[@class='card-body']//div[@class='col-lg-12']/p-table[@class='p-element']/div/div[@class='p-datatable-wrapper']/table[@role='table']/tbody/tr[2]/td");
 	By Pagenation = By.xpath("//div[@class='ng-tns-c74-30 p-paginator-rpp-options p-dropdown p-component']");
-	
+	By Report = By.xpath("//ul[@id='sidebar_menu']/li[5]/ul[@class='mm-collapse mm-show']/li[2]/ul[@class='mm-collapse mm-show']/li[2]/a[@href='#']");
 	
 	
 	
@@ -35,9 +35,16 @@ public class GRNdatapages extends DriverFactory{
 	
 	
 	public void Click_on_the_Audit_module() throws Throwable {
+		
 		utilities.webDriverWait(driver, Auditmodule);
 		driver.findElement(Auditmodule).click();
 		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Report);
+		driver.findElement(Report).click();
+		utilities.MinimumWait(driver);
+		
+		
 	}
 
 	
@@ -93,7 +100,7 @@ public class GRNdatapages extends DriverFactory{
 		utilities.webDriverWait(driver, IPOdetails);
 		driver.findElement(IPOdetails).isDisplayed();
 		WebElement Details  = driver.findElement(IPOdetails);
-		String IPODETAILS = Details.getAttribute("Value");
+		String IPODETAILS = Details.getText();
 		utilities.MinimumWait(driver);
 		System.out.println("Details: "+ IPODETAILS );
 		utilities.MinimumWait(driver);
@@ -104,7 +111,7 @@ public class GRNdatapages extends DriverFactory{
 		
 		utilities.webDriverWait(driver, griddetails);
 		WebElement GridDetails = driver.findElement(griddetails);
-		String GridDet = GridDetails.getAttribute("values");
+		String GridDet = GridDetails.getText();
 		System.out.println("Displaying Grid Details: " + GridDet);
 		utilities.MinimumWait(driver);
 		
@@ -127,19 +134,17 @@ public class GRNdatapages extends DriverFactory{
 
 	public void verify_the_data_is_displaying_in_the_expansion_grid_or_not() throws Throwable {
 		utilities.webDriverWait(driver, Expansiongrid);
-		driver.findElement(Expansiongrid).click();
-		utilities.MinimumWait(driver);
-		WebElement Griddataexp = driver.findElement(Expansionicon);
-		String expansgrid = Griddataexp.getAttribute("value");
+		WebElement Griddataexp = driver.findElement(Expansiongrid);
+		String expansgrid = Griddataexp.getText();
 		System.out.println("Displaying data in expansion grid: "+ expansgrid);
 		utilities.MinimumWait(driver);
-		
 		
 	}
 
 	public void validate_the_expansion_grid_data() throws Throwable {
-		utilities.webDriverWait(driver, Expansiongrid);
-		
+		utilities.webDriverWait(driver, Expansionicon);
+		driver.findElement(Expansionicon).click();
+		utilities.MinimumWait(driver);
 		
 		
 	}

@@ -336,18 +336,61 @@ public class NewFabricSheetWorking_Steps {
 	}
 	
 	
+	@And("^select the process1 as NA$")
+	public void select_the_process1_as_NA() throws Throwable {
+		NewFabricSheetWorkingpage.select_the_process1_as_NA();
+	}
+	
+	@And("^verify the qty in sale fabric qty field whether value is displaying or not$")
+	public void verify_the_qty_in_sale_fabric_qty_field_whether_value_is_displaying_or_not() throws Throwable {
+		NewFabricSheetWorkingpage.verify_the_qty_in_sale_fabric_qty_field_whether_value_is_displaying_or_not();
+	}
+	
+	@And("^Enter Fabric Budget details for Sale process$")
+	public void Enter_Fabric_Budget_details_for_Sale_process() throws Throwable {
+		NewFabricSheetWorkingpage.Enter_Fabric_Budget_details_for_Sale_process();
+	}
+	
+	@And("^Enter Freight Budget details for Sale process$")
+	public void Enter_Freight_Budget_details_for_Sale_process() throws Throwable {
+		NewFabricSheetWorkingpage.Enter_Freight_Budget_details_for_Sale_process();
+	}
+	
+	@And("^click on Base Fabric process checkbox$")
+	public void click_on_Base_Fabric_process_checkbox() throws Throwable {
+		NewFabricSheetWorkingpage.click_on_Base_Fabric_process_checkbox();
+	}
+	
+	@When("^select the color for base fabric$")
+	public void select_the_color_for_base_fabric() throws Throwable {
+		NewFabricSheetWorkingpage.select_the_color_for_base_fabric();
+	}
+	
+	@Then("^verify the base fabric qty is displaying as same as the final fabric req or not$")
+	public void verify_the_base_fabric_qty_is_displaying_as_same_as_the_final_fabric_req_or_not() throws Throwable {
+		NewFabricSheetWorkingpage.verify_the_base_fabric_qty_is_displaying_as_same_as_the_final_fabric_req_or_not();
+	}
 	
 	
+	@And("^Enter mu percentage for dyeing process$")
+	public void Enter_mu_percentage_for_dyeing_process() throws Throwable {
+		NewFabricSheetWorkingpage.Enter_mu_percentage_for_dyeing_process();
+	}
 	
+	@And("^Enter Print Type date for printing process$")
+	public void Enter_Print_Type_date_for_printing_process() throws Throwable {
+		NewFabricSheetWorkingpage.Enter_Print_Type_date_for_printing_process();
+	}
 	
+	@And("^Enter mu percentage for printing process$")
+	public void Enter_mu_percentage_for_printing_process() throws Throwable {
+		NewFabricSheetWorkingpage.Enter_mu_percentage_for_printing_process();
+	}
 	
-	
-	
-	
-	
-	
-	
-	
+	@And("^verify the Fabric Budget details for the processes$")
+	public void verify_the_Fabric_Budget_details_for_the_processes() throws Throwable {
+		NewFabricSheetWorkingpage.verify_the_Fabric_Budget_details_for_the_processes();
+	}
 	
 	}
 	

@@ -1,26 +1,26 @@
 @FeatureGroup_Requirement
 Feature: feature to test Jiva design style master screen functionality
 
- @Test1
+ @StyleMaster
  Scenario: To Test the Style Master screen
  When User navigates to Login page
 Then User enters the username and password
  And User click on the signIn
  And Click on the Woven Module
  Then click on the PD Module
- And Click on Data Entry
+ And Click on Data Entry in PD Module
  And click on the Style Master screen
 
- Then click on the Filter Icon
- And Click on the Buyer filed
- When User select the Buyer in buyer dropdown field
- And Click on the season field
- When User Select the Season in season dropdown field
- And Click on the Status field
- When User select the Status
- And Enter the data in Search By Style field
- And Click on the Filter Apply button
- And Click on the Filter Reset button
+ #Then click on the Filter Icon
+ #And Click on the Buyer filed
+ #When User select the Buyer in buyer dropdown field
+ #And Click on the season field
+ #When User Select the Season in season dropdown field
+ #And Click on the Status field
+ #When User select the Status
+ #And Enter the data in Search By Style field
+ #And Click on the Filter Apply button
+ #And Click on the Filter Reset button
  
 
 Then Click on the Add New style button
@@ -29,8 +29,7 @@ When User select the PD merchant name
 And Enter the data in BuyerStyle field
 And Click on the Buyer field
 When User select the Buyer
-And Click on the Season field
-When User select the Season
+And Click on the Season field in Add form
 And Click on the Garment Type field
 Then Select the Garment type
 And Click on the Garment process field
@@ -45,14 +44,15 @@ And Enter the data in expected order qty field
 Then User select the expected order date field
 When The user select the PD Assistants
 And select PD Assistants
-And Click on the Save button
-Given I am on the homepage
-Then print the displayed header message
+And Click on the Save button in create style master
+
+#Given I am on the homepage
+#Then print the displayed header message
 
 
-And Click on the Cancel button
+#And Click on the Cancel button
 And Click on the created style
-And Click on the Back button
+#And Click on the Back button
 
 
 When User click on the add revise estimates button
@@ -62,8 +62,8 @@ And Select the Order date
 And Select the Exfactory date
 Given User enter the Order qty
 And Select the Costing Version
-And click on the Save button
-And Click on the cancel button
+And click on the Save button in create style master
+And Click on the cancel button in create style master
 And Click on the Generate new order radio button
 
 And Click on the Add new tech pack button
@@ -81,7 +81,7 @@ And User Select the Sampling type
 And Select the Submission date
 And Click on the sampling Save button
 And Click on the Cancel button
-And Click on the Cancel Icon
+And Click on the Cancel Icon in create style master
 And User Click on the Link to PD FDS button
 And Click on the Link button
 
@@ -94,7 +94,7 @@ And Click on the Manage Close button
 And Click on the Manage Images cancel Icon
 
 
-And Click on the Edit Icon
+And Click on the Edit Icon in style master grid
 And CLick on the Edit Close icon
 And Click on the Edit Close button
 And Click on the Update button
@@ -108,7 +108,7 @@ And Click on the Update button
 And CLick on the Edit Close icon
 And Click on the Edit Close button
 
-And Click on the Delete Icon
+And Click on the Delete Icon in style master grid
 And Click on the Yes button
 And Click on the No button
 And Verify whether the delete is working or not

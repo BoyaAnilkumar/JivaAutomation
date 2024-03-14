@@ -15,10 +15,15 @@ public class PDFabricPricing_Steps {
 	
     }
 	
-	@Then ("^Click on the PD Fabric Pricing under the Fabric Sourcing Module$")
-	 public void Click_on_the_PD_Fabric_Pricing_under_the_Fabric_Sourcing_Module() throws Throwable{
-		FabricPricing_Pages.Click_on_the_PD_Fabric_Pricing_under_the_Fabric_Sourcing_Module();
+	@Then ("^Click on Fabric Sourcing module$")
+	 public void Click_on_Fabric_Sourcing_module() throws Throwable{
+		FabricPricing_Pages.Click_on_Fabric_Sourcing_module();
 }
+	
+	@And("^click on PD Fabric Pricing$")
+	public void click_on_PD_Fabric_Pricing() throws Throwable {
+		FabricPricing_Pages.click_on_PD_Fabric_Pricing();
+	}
 
 	 @And ("^Click on the Filter icon$")
 	 public void Click_on_the_Filter_icon() throws Throwable{

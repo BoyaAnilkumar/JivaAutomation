@@ -16,8 +16,8 @@ public class Pdfds_Steps {
 		}
 		
 		@When("^User Enter Valid username and password$")
-		public void user_Enter_invalid_username_and_valid_password() throws Throwable {
-			page.user_Enter_invalid_username_and_valid_password();
+		public void user_Enter_valid_username_and_valid_password() throws Throwable {
+			page.user_Enter_valid_username_and_valid_password();
 		}
 		@Then("^Click on SignIn button$")
 		public void Click_on_SignIn_button() throws Throwable {
@@ -51,6 +51,10 @@ public class Pdfds_Steps {
 		@When("^I mouse hover on tool tip$")
 		public void I_mouse_hover_on_tool_tip() throws Throwable {
 			page.I_mouse_hover_on_tool_tip();
+		}
+		@And ("^Verify the Toaster text is displaying or not$")
+		public void Verify_the_Toaster_text_is_displaying_or_not() throws Throwable {
+			page.Verify_the_Toaster_text_is_displaying_or_not();
 		}
 		@Then("^Click on Add New Fabric button$")
 		public void Click_on_Add_New_Fabric_button() throws Throwable {
@@ -105,13 +109,10 @@ public class Pdfds_Steps {
 		public void Click_on_Save_button() throws Throwable {
 			page.Click_on_Save_button();
 		}
-		@And ("^Verify the Toaster text is displaying or not$")
-		public void Verify_the_Toaster_text_is_displaying_or_not() throws Throwable {
-			page.Verify_the_Toaster_text_is_displaying_or_not();
-		}
-		@And ("^Click on Nomination checkbox$")
-		public void Click_on_Nomination_Checkbox() throws Throwable {
-			page.Click_on_Nomination_Checkbox();
+	
+		@And ("^Click on Fabric Manager$")
+		public void Click_on_Fabric_Manager() throws Throwable {
+			page.Click_on_Fabric_Manager();
 		}
 		
 		@And("^click on User Account$")

@@ -1,11 +1,8 @@
 package Stepdefinition1;
 import java.io.IOException;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
@@ -16,9 +13,10 @@ import util.Utilities;
 
 
 public class Hooks extends DriverFactory{
-	
+    
 	@Before
 	public void setUp(Scenario scenario) throws Throwable {
+	    
 		//Driver initialization
 		initialization();
 		Utilities.scenario = scenario;
@@ -47,5 +45,6 @@ public class Hooks extends DriverFactory{
 		driver.quit();
 		
 	}
+	}
+
 	
-}

@@ -14,11 +14,11 @@ public class RevisedMUWorkingPages extends DriverFactory{
 
 	Utilities utilities = new Utilities();
 	
-	By txtUN = By.xpath("//input[@id='userName']");
-	By txtPwd = By.xpath("//input[@id='userpassword']");
+	public By txtUN = By.xpath("//input[@id='userName']");
+	public By txtPwd = By.xpath("//input[@id='userpassword']");
 	public By modWoven = By.xpath("//span[text()='Woven / knit']");
 	public By modFabricSourcing =By.xpath("//span[text()='Fabric Sourcing ']");
-	public By DataEntry = By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[1]");
+	public By DataEntry = By.xpath("(//a[@aria-expanded='false']/..//span[text()='Data Entry'])[6]");
 	By modGenerateFabMUworking = By.xpath("//span[text()='Generate Fabric Sheet Working']");
 	By modRevisedFabMUworking = By.xpath("//a[text()=' Revised Fabric Sheet Working ']");
 	By buttSHOStyle = By.xpath("//a[@id='sidebarCollapse']");

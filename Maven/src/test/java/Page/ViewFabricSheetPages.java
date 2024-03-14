@@ -28,12 +28,12 @@ public class ViewFabricSheetPages extends DriverFactory{
 	By buttFilter = By.xpath("//i[@class=\"pi pi-filter\"]");
 	By f_buyer = By.xpath("//p-multiselect[@placeholder='Select Buyer']");
 	By f_enterBuyer = By.xpath("//input[@role='textbox']");
-	By f_selectBuyer = By.xpath("//div[text()='Testbuyer']");
+	By f_selectBuyer = By.xpath("//div[@class='p-checkbox-box']");
 	By f_season = By.xpath("//select[@formcontrolname='seasonId']");
-	By f_selectSeason = By.xpath("//option[@value='116']");
+	By f_selectSeason = By.xpath("//option[@value='232']");
 	By f_IPOBuyersearch = By.xpath("//input[@formcontrolname='searchText']");
 	By f_Apply = By.xpath("//button[@class='btn btn-md btn-primary']");
-	By ML_selectIPO = By.xpath("//a[@id='v-pills-tabTestIPO']");
+	By ML_selectIPO = By.xpath("//a[@id='v-pills-tabIPO0210']");
 	By GoToTop = By.xpath("//a[@title='Go to Top']");
 	By StyleShowHide_collapse = By.xpath("//div[@id='content']/..//a[@id='sidebarCollapse']");
 			//i[@class='pi pi-angle-up']");
@@ -107,15 +107,15 @@ public class ViewFabricSheetPages extends DriverFactory{
 		utilities.webDriverWait(driver, f_buyer);
 		driver.findElement(f_buyer).click();
 		System.out.println("Clicked in the buyer field");
-		driver.findElement(f_enterBuyer).sendKeys("Te");
+		driver.findElement(f_enterBuyer).sendKeys("Ann Taylor Sleep");
 		Thread.sleep(3000);
-		System.out.println("Entered first 2 letters in the Buyer field");
+		System.out.println("Entered Buyer name in the Buyer field");
 		driver.findElement(f_selectBuyer).click();
 		
 		driver.findElement(f_buyer).click();
-		WebElement Bname = driver.findElement(f_selectBuyer);
-		String BuyerName = Bname.getText();
-		System.out.println("Print the selected Buyer Name : " + BuyerName);
+//		WebElement Bname = driver.findElement(f_selectBuyer);
+//		String BuyerName = Bname.getText();
+//		System.out.println("Print the selected Buyer Name : " + BuyerName);
 		
 	}
 
@@ -130,7 +130,7 @@ public class ViewFabricSheetPages extends DriverFactory{
 
 	public void Enter_the_IPO_or_Buyer_in_the_Search_by_Buyer_Style_or_IPO_field() throws Throwable {
 		utilities.webDriverWait(driver, f_IPOBuyersearch);
-		driver.findElement(f_IPOBuyersearch).sendKeys("TestIPO");
+		driver.findElement(f_IPOBuyersearch).sendKeys("IPO0210");
 	}
 
 	public void Click_on_Apply_button() throws Throwable {

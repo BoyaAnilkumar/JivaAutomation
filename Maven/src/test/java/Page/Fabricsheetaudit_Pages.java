@@ -65,7 +65,7 @@ public class Fabricsheetaudit_Pages extends DriverFactory{
 	
 	public void Search_The_IPO() throws Throwable {
 		utilities.webDriverWait(driver, Search_IPO);
-		driver.findElement(Search_IPO).sendKeys("IPO16/10");
+		driver.findElement(Search_IPO).sendKeys("IPO -Style-001");
 		Thread.sleep(5000);
 		WebElement IPOname = driver.findElement(Search_IPO);
 		String ipon = IPOname.getAttribute("value");
