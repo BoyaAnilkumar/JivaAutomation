@@ -21,7 +21,7 @@ public class FabricPricing_Pages extends DriverFactory{
 	By Filter = By.xpath("//button[@class='btn btn-primary btn-sm float-right mb-2']");
 	By Season = By.xpath("//select[@formcontrolname='seasonTypeId']");
 	By Search_Style = By.xpath("//input[@formcontrolname='buyerStyleNumber']");
-	By Select_Style = By.xpath("//a[@class='nav-link lite-yellow']");
+	By Select_Style = By.xpath("(//a[@role='tab'])[1]");
 	By Fabric1 = By.xpath("(//li[@class='nav-item ng-star-inserted'])[1]");
 	By Dis_Style = By.xpath("(//p[@class='mb-0 text-primary'])[1]");
 	By Dis_Buyer = By.xpath("(//p[@class='mb-0 text-primary'])[2]");
@@ -121,7 +121,7 @@ public class FabricPricing_Pages extends DriverFactory{
 	public void Verify_the_Style_name_is_displayed_or_not() throws Throwable {
 		WebElement Data = driver.findElement(Dis_Style);
 		String Style = Data.getText();
-		String expectedData = "Retro style";
+		String expectedData = "Style10203";
 		if (expectedData.equals(Style)) {
 			System.out.println("Display Style name is correct." + Style);
 		} else {
@@ -425,8 +425,8 @@ public class FabricPricing_Pages extends DriverFactory{
 		}	
 	}
 	public void Click_on_the_Fabric_name_tab() throws Throwable {
-		utilities.webDriverWait(driver, Nom_Fabric);
-		driver.findElement(Nom_Fabric).click();
+		utilities.webDriverWait(driver, Fabric1);
+		driver.findElement(Fabric1).click();
 		
 	}
 	public void Click_on_the_download_icon() throws Throwable {

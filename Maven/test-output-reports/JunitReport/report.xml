@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="58.909">
     <testcase classname="Creating Potential Debit and Credit notes for the Qty and Rate mismatch records for IPOs" name="Creating a Credit Note" time="58.374">
         <system-out><![CDATA[When user navigates to Login page...........................................passed
@@ -13,5 +14,139 @@ Given Enter Reason in the Credit Note form..................................pass
 When Click on Submit button in the Credit note form.........................passed
 Then Verify the Successfull msg.............................................passed
 ]]></system-out>
+=======
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="560.737">
+    <testcase classname="Title of your features" name="Creating the Costing Version" time="560.27">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class='btn btn-primary btn-md float-right ng-star-inserted']&quot;}&#10;  (Session info: chrome=122.0.6261.112)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58105}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4e04a11920171eb56b4fbe775bd3f239&#10;*** Element info: {Using=xpath, value=//button[@class='btn btn-primary btn-md float-right ng-star-inserted']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When User navigates to Login page...........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+Then Click on the Woven Modules.............................................passed
+Then Click on the PD Module.................................................passed
+Then Click on the Costing Module............................................passed
+Then Click on the Style button..............................................passed
+Then Select an IPO in the Menu List.........................................passed
+Then Click on Style Button..................................................passed
+Then Click on the Submit1 button............................................passed
+Given Enter Version Name....................................................passed
+Given Enter Remarks.........................................................passed
+Then Click on Add Combo button..............................................passed
+Given Enter Combo Name......................................................passed
+Given Enter Combo Qty.......................................................passed
+When Click in the App_Combo1................................................passed
+When Select an App_combo1...................................................passed
+When Enter Garment Average1.................................................passed
+When Enter Wastage1.........................................................passed
+When Enter Rate1............................................................passed
+When Enter Conversion Rate1.................................................passed
+Given Enter Additional Sampling Cost........................................passed
+Given Enter Per pc Freight Cost.............................................passed
+And Click on Add Trims button...............................................passed
+Then Click on the Category1 dropdown field..................................passed
+Then Select a Category1 from the dropdown...................................passed
+Then Click on the Item1 dropdown field......................................passed
+Then Select an Item1 from the dropdown......................................passed
+And Enter Avg of an Item1 value.............................................passed
+And Enter Wastage of the selected Trim Accessories1.........................passed
+And Enter Rate of the selected Trim Accessories1............................passed
+And Click on the Add Accessories button.....................................passed
+Then Click on the Category dropdown field under the TrimAccessoriesII grid..passed
+Then Select a Category from the dropdown under the TrimAccessoriesII grid...passed
+Then Click on the Item dropdown field under the TrimAccessoriesII grid......passed
+Then Select a Item from the dropdown under the TrimAccessoriesII grid.......passed
+Then Enter the Cost.........................................................passed
+Given To check whether the Overhead Cost is displaying a value or not.......passed
+Given Enter Overhead Cost value.............................................passed
+Given To check whether the Garment Cutting Cost is displaying a value or not.passed
+Given Enter Garment Cutting Cost value......................................passed
+Given Enter No of Stiches...................................................passed
+Given Enter Rate............................................................passed
+Given Enter Overhead........................................................passed
+Given Enter Addl Charges....................................................passed
+Given Enter Adda Hours......................................................passed
+Given Enter Adda Rate.......................................................passed
+Given Enter Adda Overhead...................................................passed
+Given Enter Manual Hours....................................................passed
+Given Enter Manual Rate.....................................................passed
+Given Enter Manual Overhead.................................................passed
+When To verify on clicking the Add Process button under Stitching...........passed
+Given Enter a value in OB1..................................................passed
+Given Enter a value in OB2..................................................passed
+Given Enter a value in OB3..................................................passed
+Given Enter a value in Cost1................................................passed
+Given Enter a value in Cost2................................................passed
+Given Enter a value in Cost3................................................passed
+Then Select an option in Booked field.......................................passed
+Given Enter a value in Smocking.............................................passed
+Given Enter a value in Rate.................................................passed
+When To verify whether the user is able to click the Description dropdown field or not.passed
+Then Select a value from the dropdown field.................................passed
+Given Enter the Stitching Cost value........................................passed
+Then Click on the Add Process button under Finising and Packing grid........passed
+Then Select a Finishing and Packing process1................................passed
+Given Enter the Finishing and Packing cost1.................................passed
+Then Check the Yes or No toggle button status...............................passed
+Then Click on the Add Process button when the toggle button is in enabled state.passed
+Then Select a Washing Process1..............................................passed
+Given Enter the Washing Cost1...............................................passed
+Given Enter the value in the FPT GPT Total Cost field.......................passed
+Given Enter the value in the FPT GPT Cost field.............................passed
+Given Enter the value in the Addl Tests Total Cost field....................passed
+Given Enter the value in the Addl Tests Cost field..........................passed
+Given Enter the value in the Inspection Charges Total Cost field............passed
+Given Enter the value in the Inspection Charges Cost field..................passed
+Given Enter the value in the NO of PO by Sea field..........................passed
+Given Enter the value in the NO of PO by Air field..........................passed
+Given Enter the value in the Custom Clearance Total Cost field..............passed
+Given Enter the value in the Custom Clearance Cost field....................passed
+Given Enter the value in the Cartage Total Cost field.......................passed
+Given Enter the value in the Cartage Cost field.............................passed
+Given Enter the value in the Additional Buffer field........................passed
+Given Enter the value in the Rejection field................................passed
+Given Enter the value in the OverHead field.................................passed
+Given Enter the value in the Profit MarkUp field............................passed
+Given Enter the value in the Commission field...............................passed
+Given Enter the value in the Currency field.................................passed
+Given Enter the value in the Price Quoted To Buyer field....................passed
+Then Click on the PSave button..............................................passed
+Then Click on the Submit button.............................................passed
+Then Click on the View For Print button.....................................passed
+Then Click on the Cancel in the Print form..................................passed
+Then Click on the Download As Excel button..................................passed
+Then Click on Import button.................................................failed
+When Check wether the Import Version Details Version popup window opened or not.skipped
+Then Click Versions dropdown field..........................................skipped
+Then Select a value from the dropdown.......................................skipped
+Then Click on the Close button..............................................skipped
+Then Click on the Import buttton............................................skipped
+Then Click on Close icon....................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='btn btn-primary btn-md float-right ng-star-inserted']"}
+  (Session info: chrome=122.0.6261.112)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.120', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58105}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e04a11920171eb56b4fbe775bd3f239
+*** Element info: {Using=xpath, value=//button[@class='btn btn-primary btn-md float-right ng-star-inserted']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.Costingpages.Click_on_Import_button(Costingpages.java:954)
+	at Stepdefinition1.CostingSteps.Click_on_Import_button(CostingSteps.java:434)
+	at ✽.Click on Import button(file:///E:/New%20folder/JivaAutomation/JivaAutomation/Maven/Features/Costing.feature:133)
+]]></failure>
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
     </testcase>
 </testsuite>

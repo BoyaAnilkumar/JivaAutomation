@@ -100,10 +100,10 @@ public class PotentialDebitNoteSteps {
 //	 public void Verify_the_Successfull_msg() {
 //		 PDNP.Verify_the_Successfull_msg();
 //	 }
-	 @Then ("^Verify whether the page is navigated to the Potential Credit Note screen$")
-	 public void Verify_whether_the_page_is_navigated_to_the_Potential_Credit_Note_screen() throws Throwable {
-		 PDNP.Verify_whether_the_page_is_navigated_to_the_Potential_Credit_Note_screen();
-	 }
+//	 @Then ("^Verify whether the page is navigated to the Potential Credit Note screen$")
+//	 public void Verify_whether_the_page_is_navigated_to_the_Potential_Credit_Note_screen() throws Throwable {
+//		 PDNP.Verify_whether_the_page_is_navigated_to_the_Potential_Credit_Note_screen();
+//	 }
 	 
 	 @Then ("^Verify the success msg on submitting the Notes$")
 	 public void Verify_the_success_msg_on_submitting_the_Notes() {
