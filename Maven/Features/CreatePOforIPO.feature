@@ -15,18 +15,15 @@ Feature: Verification and Validation of Create PO for Fabric
     And Select Type of Order
     Then verify the PO Date is displaying or not
     Given Verify the PO Number us displaying or not
-    
     When Enter Deliver To details and select from the suggestions
     When Deliver address is displaying after selecting the deliver to details or not
     When verify the GSTIN number is displaying or not
-    
     Then Enter supplier name and select from the suggestions
     And verify the supplier address after selecting the supplier
     And verify the GSTIN number is displaying after selecting the supplier
     And verify the payment terms are displaying after selecting the supplier
     And verify that Delivery terms are displaying after selecting the supplier
     And Enter Lead time in Days
-    
     Then verify the Fabric Details are displaying or not
     And Select Process from dropdown list
     And Select Fabric Type
@@ -48,16 +45,12 @@ Feature: Verification and Validation of Create PO for Fabric
     #Given Enter the data in Additional Information2 field
     #And verify that Add IPO button is enable or not
     #And click on delete icon is able to click or not
-
-
-
     And verify that UOM is displayed or user should select
     Given Enter the data in L Short If Any field
     Given Enter the data in Additional Information1 field
     Given Enter the data in Additional Information2 field
     And verify that Add IPO button is enable or not
     And click on delete icon is able to click or not
-
     And select the IPO from the dropdown list
     And verify the due date is displayed as current date
     And verify the quatity is displayed as greater than zero in quantity field
@@ -66,7 +59,3 @@ Feature: Verification and Validation of Create PO for Fabric
 		And verify the rate value is prepopulated in grid or not
 		And verify the Amount is displayed after selecting the ipo in grid
 		Then click on save button and verify that save button is enable after inserting the data in mandatory fields
-		
-
-    
-    
