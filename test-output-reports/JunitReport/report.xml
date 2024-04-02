@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="111.053">
+    <testcase classname="Feature to test Jiva design Daily In Input Data Entry" name="To Test the Thaans functionality" time="110.437">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Given User enters the username and password.................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+And click on Fabric Store module............................................passed
+And Click on Data Entry in Fabric Store.....................................passed
+When click on Daily In and Out menu.........................................passed
+And Click on Daily In Data Entry............................................passed
+When Verify that Daily In Data Entry screen is displaying or not............passed
+And Click on Add thaan button...............................................passed
+And Enter Thaan name Thaan Qty..............................................passed
+And click on delete icon to delete the thaan................................passed
+And click on add button to add thaans.......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
