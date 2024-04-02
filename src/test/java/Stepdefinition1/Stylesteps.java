@@ -438,27 +438,27 @@ public class Stylesteps {
 		   }
 		   
 		   @And("^Click on Style number$")
-		   public void Click_on_Style_number() {
+		   public void Click_on_Style_number() throws Throwable {
 			   Stylepage.Click_on_Style_number();
 		   }
 		   
 		   @Then("^user navigates to Style details screen under the style master$")
-		   public void user_navigates_to_Style_details_screen_under_the_style_master() {
+		   public void user_navigates_to_Style_details_screen_under_the_style_master() throws Throwable {
 			   Stylepage.user_navigates_to_Style_details_screen_under_the_style_master();
 		   }
 		   
 		   @And("^Add New Techpack details$")
-		   public void Add_New_Techpack_details() {
+		   public void Add_New_Techpack_details() throws Throwable {
 			   Stylepage.Add_New_Techpack_details();
 		   }
 		   
 		   @And("^Add Sampling Details$")
-		   public void Add_Sampling_Details() {
+		   public void Add_Sampling_Details() throws Throwable {
 			   Stylepage.Add_Sampling_Details();
 		   }
 		   
 		   @And("^Add Revise Estimates$")
-		   public void Add_Revise_Estimates() {
+		   public void Add_Revise_Estimates() throws Throwable {
 			   Stylepage.Add_Revise_Estimates();
 		   }
 		   

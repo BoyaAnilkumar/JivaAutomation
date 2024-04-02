@@ -35,10 +35,10 @@ import io.cucumber.java.en.When;
 				   StyleInitail_Page.Click_on_the_Buyer_Field();
 			   }
 
-//			   @Then ("^Select the Buyer$")
-//			   public void Select_the_Buyer() throws Throwable{
-//				   StyleInitail_Page.Select_the_Buyer();
-//			   }
+			   @Then ("^Select the Buyer$")
+			   public void Select_the_Buyer() throws Throwable{
+				   StyleInitail_Page.Select_the_Buyer();
+			   }
 
 			   @And ("^Click on the Season Field$")
 			   public void Click_on_the_Season_Field() throws Throwable{

@@ -1,7 +1,7 @@
 @FeatureGroup 
 Feature: feature to test Jiva design style initial details screen functionality
 
- @Style123
+ @StyleInitialDetails
  Scenario: To Test the Style initial details screen
  When User navigates to Login page
 Then User enters the username and password

@@ -41,6 +41,12 @@ public class Newfabricsheet_Steps {
 			   public void click_on_the_Merchandising_Module() throws Throwable{
 				  Newfabricsheet_Pages.click_on_the_Merchandising_Module();
 			   }
+			  
+			  @And("^Click on data entry in merchandising module$")
+			  public void Click_on_data_entry_in_merchandising_module() throws Throwable {
+				  Newfabricsheet_Pages.Click_on_data_entry_in_merchandising_module();
+			  }
+			  
 			  @And ("^Click on the Generate Fabric Sheet Module$")
 			   public void Click_on_the_Generate_Fabric_Sheet_Module() throws Throwable{
 				  Newfabricsheet_Pages.Click_on_the_Generate_Fabric_Sheet_Module();
@@ -155,10 +161,10 @@ public class Newfabricsheet_Steps {
 			   public void Check_the_Total_Fabric_Required_field_value_is_calculated_or_not() throws Throwable{
 				  Newfabricsheet_Pages.Check_the_Total_Fabric_Required_field_value_is_calculated_or_not();
 			   }
-//			   @And ("^Click on the cancel button$")
-//			   public void Click_on_the_cancel_button() throws Throwable{
-//				  Newfabricsheet_Pages.Click_on_the_cancel_button();
-//			   }
+			   @And ("^Click on the cancel button$")
+			   public void Click_on_the_cancel_button() throws Throwable{
+				  Newfabricsheet_Pages.Click_on_the_cancel_button();
+			   }
 			   @And ("^Click on the Save button$")
 			   public void Click_on_the_Save_button() throws Throwable{
 				  Newfabricsheet_Pages.Click_on_the_Save_button();

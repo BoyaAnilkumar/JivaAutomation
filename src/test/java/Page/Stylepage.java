@@ -155,13 +155,17 @@ public class Stylepage extends DriverFactory{
 		By Deletesucess 				= By.xpath("//div[@aria-describedby='swa12-html-container']");
 		
 		By SortingByColumns				= By.xpath("(//tr[@class='ng-star-inserted'])[1]");
+		By Buyer_Filter_Column			= By.xpath("(//table/thead/tr/th/div/p-columnfilter)[1]");
+		By Filter_Buyer					= By.xpath("//p-columnfilterformelement/input");
+		By Filter_Buyer_apply			= By.xpath("//span[text()='Apply']");
 		
 		//Add Style details for the style number
 		By Style_Number					= By.xpath("//tbody/tr/td/span/a");
+		By Screen_Name					= By.xpath("//h3[text()='Style Details']");
 		By Type_Enter_number			= By.xpath("//input[@placeholder='Search bar for style ⏎']");
 		By Add_Tech_Pack				= By.xpath("//button[text()=' Add New Tech Pack ']");
 		By Tech_Pack_Name				= By.xpath("//input[@formcontrolname='techPackName']");
-		By Tech_Pack_File				= By.xpath("//div/div/div/input[@type='file']");
+		By Tech_Pack_File				= By.xpath("(//input[@type='file']/following-sibling::label)[2]");
 		By Tech_Pack_Desc				= By.xpath("//textarea[@formcontrolname='description']");
 		By Tech_Pack_Received_Date		= By.xpath("//input[@formcontrolname='techPackSampleReceivedDate']");
 		By Tech_Pack_Save_button		= By.xpath("//button[text()=' Save']");
@@ -172,9 +176,18 @@ public class Stylepage extends DriverFactory{
 		By Sampling_Type				= By.xpath("//select[@formcontrolname='sampleTypeId']");
 		By Select_Sampling_Type			= By.xpath("//select[@formcontrolname='sampleTypeId']/option[text()=' Development']");
 		By Sampling_submission_date		= By.xpath("//input[@formcontrolname='sampleSubmissionDate']");
-		By Sampling_details_save		= By.xpath("//button[text()=' Save']");
+		By Sampling_details_save		= By.xpath("(//button[text()=' Save'])[3]");
 		By Sampling_details_cancel		= By.xpath("//button[text()=' Cancel']");
-		By Add_Revise_Estimates			= By.xpath("");
+		By Add_Revise_Estimates			= By.xpath("//button[text()=' Add Revise Estimates']");
+		By Order_Type					= By.xpath("//select[@formcontrolname='orderTypeId']");
+		By Select_Order_Type_confirmed	= By.xpath("//select[@formcontrolname='orderTypeId']//option[text()=' Confirmed']");
+		By Select_Order_Type_CancelorHold	= By.xpath("//select[@formcontrolname='orderTypeId']//option[text()=' Cancel/Hold']");
+		By Select_Order_Type_Expected	= By.xpath("//select[@formcontrolname='orderTypeId']//option[text()=' Expected']");
+		By Order_Date					= By.xpath("//input[@formcontrolname='orderDate']");
+		By Order_Quantity				= By.xpath("//input[@formcontrolname='orderQuantity']");
+		By Exfactory_Date				= By.xpath("//input[@formcontrolname='exfactoryDate']");
+		By Costing_Version				= By.xpath("//ng-select[@formcontrolname='costingVersionIds']");
+		By Order_save_button			= By.xpath("(//button[text()=' Save'])[4]");
 		
 		
 		    public void User_navigates_to_Login_page() throws Throwable {
@@ -236,7 +249,7 @@ public class Stylepage extends DriverFactory{
 			 utilities.MediumWait(driver);
 			}
 			public void Enter_the_data_in_Search_By_Style_field() throws Throwable{ 
-			driver.findElement(Searchbystyle).sendKeys("iuywteryut4385");		
+			driver.findElement(Searchbystyle).sendKeys("iuywteryut4382");		
 			utilities.MediumWait(driver);
 			}
 			public void Click_on_the_Filter_Apply_button() throws Throwable{ 
@@ -802,28 +815,91 @@ public class Stylepage extends DriverFactory{
 			    }
 			}
 
-			public void Click_on_Style_number() {
-				// TODO Auto-generated method stub
+			public void Click_on_Style_number() throws Throwable {
+				utilities.webDriverWait(driver, Buyer_Filter_Column);
+				driver.findElement(Buyer_Filter_Column).click();
+				Thread.sleep(2000);
+				driver.findElement(Filter_Buyer).sendKeys("Style239");
+				Thread.sleep(2000);
+				driver.findElement(Filter_Buyer_apply).click();
+				utilities.MinimumWait(driver);
+				
+				utilities.webDriverWait(driver, Style_Number);
+				driver.findElement(Style_Number).click();
+				utilities.MinimumWait(driver);
 				
 			}
 
-			public void user_navigates_to_Style_details_screen_under_the_style_master() {
-				// TODO Auto-generated method stub
+			public void user_navigates_to_Style_details_screen_under_the_style_master() throws Throwable {
+				utilities.webDriverWait(driver,Screen_Name );
+				String Screen_Style_Details 	=	driver.findElement(Screen_Name).getText();
+				System.out.println("Print the screen name after clicked on style number:  " +  Screen_Style_Details);
+				utilities.MinimumWait(driver);
+				
+				utilities.webDriverWait(driver, Type_Enter_number);
+				driver.findElement(Type_Enter_number).click();
+				Robot C = new Robot();
+				C.keyPress(KeyEvent.VK_ENTER);
+				utilities.MinimumWait(driver);
 				
 			}
 
-			public void Add_New_Techpack_details() {
-				// TODO Auto-generated method stub
+			public void Add_New_Techpack_details() throws Throwable {
+				utilities.webDriverWait(driver, Add_Tech_Pack);
+				driver.findElement(Add_Tech_Pack).click();
+				Thread.sleep(2000);
+				driver.findElement(Tech_Pack_Name).click();
+				driver.findElement(Tech_Pack_Name).sendKeys("Tech1");
+				Thread.sleep(2000);
+				driver.findElement(Tech_Pack_File).click();
+				Thread.sleep(5000);
 				
 			}
 
-			public void Add_Sampling_Details() {
-				// TODO Auto-generated method stub
+			public void Add_Sampling_Details() throws Throwable {
+				utilities.webDriverWait(driver, Add_Sampling_details);
+				driver.findElement(Add_Sampling_details).click();
+				utilities.MinimumWait(driver);
+				
+				utilities.webDriverWait(driver, Sample_Status);
+				boolean samplestatus = driver.findElement(Sample_Status).isDisplayed();
+				System.out.println("Print if the sample status is displayed " + samplestatus);
+				utilities.MinimumWait(driver);
+				
+				utilities.webDriverWait(driver, Sampling_Type);
+				driver.findElement(Sampling_Type).click();
+				Thread.sleep(2000);
+				driver.findElement(Select_Sampling_Type).click();
+				Thread.sleep(2000);
+				
+				utilities.webDriverWait(driver, Select_Sampling_Type);
+				driver.findElement(Select_Sampling_Type).click();
+				Thread.sleep(2000);
+				
+				utilities.webDriverWait(driver, Sampling_submission_date);
+				driver.findElement(Sampling_submission_date).sendKeys(formattedDate);
+				utilities.MinimumWait(driver);
+				
+				utilities.webDriverWait(driver, Sampling_details_save);
+				driver.findElement(Sampling_details_save).click();
+				utilities.MinimumWait(driver);
 				
 			}
 
-			public void Add_Revise_Estimates() {
-				// TODO Auto-generated method stub
+			public void Add_Revise_Estimates() throws Throwable {
+				utilities.webDriverWait(driver, Add_Revise_Estimates);
+				driver.findElement(Add_Revise_Estimates).click();
+				Thread.sleep(2000);
+				boolean ordertype = driver.findElement(Order_Type).isDisplayed();
+				System.out.println("Displaying the order type:  " + ordertype);
+				Thread.sleep(2000);
+				driver.findElement(Order_Date).sendKeys(formattedDate);
+				Thread.sleep(2000);
+				driver.findElement(Order_Quantity).sendKeys("5000");
+				utilities.MinimumWait(driver);
+				
+				driver.findElement(Order_save_button).click();
+				Thread.sleep(2000);
 				
 			}
 

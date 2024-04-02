@@ -22,6 +22,7 @@ public class ViewFabricSheetPages extends DriverFactory{
 	By btnSignIn = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
 	By Woven = By.xpath("//span[text()='Woven / knit']");
 	By Merchandising = By.xpath("(//span[text()='Merchandising '])[1]");
+	By Reports	= By.xpath("(//li/ul/li/a/div/span[text()='Reports'])[1]");
 	By ViewFabricSheet = By.xpath("//a[text()='View Fabric Sheet']");
 	By ShowHide = By.xpath("//a[@id='sidebarCollapse']");
 	By buttFilter = By.xpath("//i[@class=\"pi pi-filter\"]");
@@ -81,7 +82,16 @@ public class ViewFabricSheetPages extends DriverFactory{
 	public void Click_on_Merchandising_module() throws Throwable {
 		utilities.webDriverWait(driver, Merchandising);
 		driver.findElement(Merchandising).click();
+		utilities.MinimumWait(driver);
 	}
+	
+	public void Click_on_Report_in_merchandising_module() throws Throwable {
+		utilities.webDriverWait(driver, Reports);
+		driver.findElement(Reports).click();
+		utilities.MinimumWait(driver);
+		
+	}
+
 
 	public void Click_on_View_Fabric_Sheet_module() throws Throwable {
 		utilities.webDriverWait(driver, ViewFabricSheet);
@@ -283,5 +293,6 @@ public class ViewFabricSheetPages extends DriverFactory{
 		driver.findElement(PrintForm).isDisplayed();
 		
 	}
+
 
 }

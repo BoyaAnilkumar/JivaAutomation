@@ -142,6 +142,8 @@ Given User navigates to Login page
  And User click on the signIn
  And Click on the Woven Module
  Then click on the PD Module
+ And Click on Data Entry in PD Module
+ And click on the Style Master screen
  And Click on Style number
  Then user navigates to Style details screen under the style master
  And Add New Techpack details

@@ -130,14 +130,14 @@ import util.Utilities;
 
 
 				}
-//				public void Select_the_Buyer() throws Throwable {
-//					utilities.webDriverWait(driver, SelectBuyer);
-//					driver.findElement(SelectBuyer).click();
-//					utilities.MediumWait(driver);
-//					driver.findElement(CL).click();
-//					
-//					
-//				}
+				public void Select_the_Buyer() throws Throwable {
+					utilities.webDriverWait(driver, SelectBuyer);
+					driver.findElement(SelectBuyer).click();
+					utilities.MediumWait(driver);
+					driver.findElement(CL).click();
+					
+					
+				}
 				public void Click_on_the_Cancel_Icon() throws Throwable  {
 					 utilities.webDriverWait(driver, CL);
 						driver.findElement(CL).click();
@@ -165,7 +165,7 @@ import util.Utilities;
 				}
 				public void Search_the_IPO() throws Throwable {
 					utilities.webDriverWait(driver, SearchIPO);
-					driver.findElement(SearchIPO).sendKeys("IPO16/10");
+					driver.findElement(SearchIPO).sendKeys("IPO-004.2");
 					Thread.sleep(5000);
 					WebElement IPOname = driver.findElement(SearchIPO);
 					String ipon = IPOname.getAttribute("value");
