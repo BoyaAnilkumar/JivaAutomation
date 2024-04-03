@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="61.871">
-    <testcase classname="Feature to test Jiva design Merchandising T and A Dues screen functionality" name="To Test the Merchandising T and A Dues screen" time="61.47">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="152.961">
+    <testcase classname="Feature to test Jiva design Merchandising T and A Dues screen functionality" name="To Test the Merchandising T and A Dues screen" time="152.514">
         <system-out><![CDATA[Given User navigates to Login page..........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
@@ -9,7 +9,9 @@ Then Click on Merchandising module..........................................pass
 And Click on Report in merchandising module.................................passed
 And Click on TandA..........................................................passed
 And Click on TandA Dues.....................................................passed
-Then Click on Overdue.......................................................passed
+Then Click on Overdue tab...................................................passed
+And Click on Today tab......................................................passed
+And Click on Upcoming tab...................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

@@ -11,5 +11,6 @@ Feature: Feature to test Jiva design Merchandising T and A Dues screen functiona
     And Click on Report in merchandising module
     And Click on TandA
     And Click on TandA Dues
-    Then Click on Overdue
-   
+    Then Click on Overdue tab
+    And Click on Today tab
+   	And Click on Upcoming tab
