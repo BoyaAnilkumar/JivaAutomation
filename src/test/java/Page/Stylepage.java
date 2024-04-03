@@ -24,7 +24,6 @@ public class Stylepage extends DriverFactory{
 	String TaskName = null;
 	String TaskName1 = null;
 	
-	
     
 	Utilities utilities = new Utilities();
 	

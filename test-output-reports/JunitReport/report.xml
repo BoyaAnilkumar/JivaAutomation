@@ -1,63 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="125.01">
-    <testcase classname="Creating an IPO for a confirmed style" name="Checking the details of the fabric sheet" time="124.598">
-        <failure message="element not interactable&#10;  (Session info: chrome=123.0.6312.86)&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 60a26939f1e0ca6f007ed3e2325a4817" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given Navigate to the Login page............................................passed
-Then Enter valid Username and Password......................................passed
-And Click on SignIn in the login page.......................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="61.871">
+    <testcase classname="Feature to test Jiva design Merchandising T and A Dues screen functionality" name="To Test the Merchandising T and A Dues screen" time="61.47">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
 Then Click on Woven Module..................................................passed
 Then Click on Merchandising module..........................................passed
-And Click on Report in merchandising module.................................failed
-Then Click on View Fabric Sheet module......................................skipped
-Then Click on Style show/hide button........................................skipped
-Then Click on Filter button in the Menu list................................skipped
-And Verifying the Buyer field for selecting a Buyer.........................skipped
-And Verify whether the user is able to select a Season in the season field..skipped
-And Enter the IPO or Buyer in the Search by Buyer Style or IPO field........skipped
-Then Click on Apply button..................................................skipped
-When Check whether the respective IPO is displayed or not in the Menu List..skipped
-Then Select the IPO in the Menu List........................................skipped
-Then Check whether the page is navigated to the View Fabric Sheet...........skipped
-When Click on the History button............................................skipped
-Then Check whether page is navigated to the History page or not.............skipped
-Then Verify whether the history records are there or not....................skipped
-Then Verify whether the page is navigated to the PDF form or not............skipped
-Then Verify whether the Back button is clickable............................skipped
-And Check whether page is navigated to the View Fabric Sheet or not.........skipped
-Then Verify whether the added fabrics are displayed or not on clicking the Fabric Details link.skipped
-Then Verify whether the added fabrics Garment Average records are displayed or not on clicking the Garment Average link.skipped
-Then Verify whether the added fabrics Quantity Requirment records are displayed or not on clicking the Quantity Requirment link.skipped
-When Verify whether page is navigating to the Print form on clicking the View For Print By Combo Name button with Print and Cancel buttons.skipped
-Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form.skipped
-Then Verify whether the Print button is clickable...........................skipped
-When Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Quality button.skipped
-Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form.skipped
-Then Verify whether the Print button is clickable...........................skipped
-When Verify whether page is navigating to the Print form on clicking the View For Print By Fabric Sheet button.skipped
-Then Verify whether the page is navigating to the View Fabric Sheet on OnClick the Cancel button in the Print Form.skipped
-Then Verify whether the Print button is clickable...........................skipped
-
-StackTrace:
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=123.0.6312.86)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64903}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 60a26939f1e0ca6f007ed3e2325a4817
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Page.ViewFabricSheetPages.Click_on_Report_in_merchandising_module(ViewFabricSheetPages.java:90)
-	at Stepdefinition1.ViewFabricSheetSteps.Click_on_Report_in_merchandising_module(ViewFabricSheetSteps.java:34)
-	at ✽.Click on Report in merchandising module(file:///E:/Maven/Features/ViewFabricSheet.feature:12)
-]]></failure>
+And Click on Report in merchandising module.................................passed
+And Click on TandA..........................................................passed
+And Click on TandA Dues.....................................................passed
+Then Click on Overdue.......................................................passed
+]]></system-out>
     </testcase>
 </testsuite>

@@ -22,7 +22,7 @@ public class ViewFabricSheetPages extends DriverFactory{
 	By btnSignIn = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
 	By Woven = By.xpath("//span[text()='Woven / knit']");
 	By Merchandising = By.xpath("(//span[text()='Merchandising '])[1]");
-	By Reports	= By.xpath("(//li/ul/li/a/div/span[text()='Reports'])[1]");
+	By Reports	= By.xpath("(//ul/li/a/div/span[text()='Reports'])[1]");
 	By ViewFabricSheet = By.xpath("//a[text()='View Fabric Sheet']");
 	By ShowHide = By.xpath("//a[@id='sidebarCollapse']");
 	By buttFilter = By.xpath("//i[@class=\"pi pi-filter\"]");
@@ -57,21 +57,7 @@ public class ViewFabricSheetPages extends DriverFactory{
 	
 	
 
-	public void Navigate_to_the_Login_page() {
-		driver.get(prop.getProperty("url"));		
-	}
-
-	public void Enter_valid_Username_and_Password() {
-		driver.findElement(txtUN).clear();
-		driver.findElement(txtUN).sendKeys(prop.getProperty("username"));
-//		utilities.MinimumWait(driver);
-		driver.findElement(txtPwd).clear();
-		driver.findElement(txtPwd).sendKeys(prop.getProperty("password"));
-	}
-
-	public void Click_on_SignIn_in_the_login_page() {
-		driver.findElement(btnSignIn).click();
-	}
+	
 
 	public void Click_on_Woven_Module() throws Throwable {
 		utilities.webDriverWait(driver, Woven);
@@ -83,6 +69,7 @@ public class ViewFabricSheetPages extends DriverFactory{
 		utilities.webDriverWait(driver, Merchandising);
 		driver.findElement(Merchandising).click();
 		utilities.MinimumWait(driver);
+		
 	}
 	
 	public void Click_on_Report_in_merchandising_module() throws Throwable {

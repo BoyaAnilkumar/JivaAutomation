@@ -9,18 +9,7 @@ import io.cucumber.java.en.When;
 public class ViewFabricSheetSteps {
 	ViewFabricSheetPages VFSP = new ViewFabricSheetPages();
 		
-	@Given ("^Navigate to the Login page$")
-	public void Navigate_to_the_Login_page() {
-		VFSP.Navigate_to_the_Login_page();
-	}
-	@Then ("^Enter valid Username and Password$")
-	public void Enter_valid_Username_and_Password() {
-		VFSP.Enter_valid_Username_and_Password();
-	}
-	@And ("^Click on SignIn in the login page$")
-	public void Click_on_SignIn_in_the_login_page() {
-		VFSP.Click_on_SignIn_in_the_login_page();
-	}
+	
 	@Then ("^Click on Woven Module$")
 	public void Click_on_Woven_Module() throws Throwable {
 		VFSP.Click_on_Woven_Module();

@@ -8,15 +8,14 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
     And User click on the signIn
     And Click on the Woven Module
     Then click on the Merchandising Module
+    And Click on data entry in merchandising module
     And Click on the Generate Fabric Sheet Module
     And Click on the New Fabric Sheet Screen
     And Verify whether the New fabric sheet screen is displaying or not
     And Click on the Styles Expansion
     And Click on the Filter Icon
     And Click on the Buyer Field
-    And Click on the Styles Expansion
-    And Click on the Filter Icon
-    And Click on the Buyer Field
+
 
   @NewFabricSheet123
   Scenario: To Test the New Fabric Sheet screen
@@ -25,18 +24,20 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
     And User click on the signIn
     And Click on the Woven Module
     Then click on the Merchandising Module
+    And Click on data entry in merchandising module
     And Click on the Generate Fabric Sheet Module
     And Click on the New Fabric Sheet Screen
     And Verify whether the New fabric sheet screen is displaying or not
     And Click on the Styles Expansion
 
-  @NewFabricSheet123
+  @NewFabricSheet1234
   Scenario: To Test the Filter Functionality
     When User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
     And Click on the Woven Module
     Then click on the Merchandising Module
+    And Click on data entry in merchandising module
     And Click on the Generate Fabric Sheet Module
     And Click on the New Fabric Sheet Screen
     And Click on the Styles Expansion
@@ -47,21 +48,18 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
     And Select the Season
     When Search the IPO
     And Click on the Apply button
-    And Click on the Season Field
-    And Select the Season
-    When Search the IPO
-    And Click on the Apply button
     And Click on the Reset button
     And Select the IPO and Style
     And Click on the Reset button
 
-  @NewFabricSheet123
+  @NewFabricSheetAddFabric
   Scenario: To Test the Add new fabric functionality
     When User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
     And Click on the Woven Module
     Then click on the Merchandising Module
+    And Click on data entry in merchandising module
     And Click on the Generate Fabric Sheet Module
     And Click on the New Fabric Sheet Screen
     And Click on the Styles Expansion
@@ -69,9 +67,9 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
     When Search the IPO
     And Click on the Apply button
     And Select the IPO and Style
-    Given Enter the data in Bulk Fabric Deadline field
-    And Click on the Fabric Manager Field
-    And Select the Fabric Manager Assistants
+    #Given Enter the data in Bulk Fabric Deadline field
+    #And Click on the Fabric Manager Field
+    #And Select the Fabric Manager Assistants
     And Click on the Add New Fabric button
     And Select the Is Nominated Check box
     When User select the Supplier name
@@ -93,39 +91,56 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
     And Check the Fabric Required For Cutting field value is calculated or not
     And Enter the data in Fabric Required For Sampling
     And Check the Total Fabric Required field value is calculated or not
-    And Click on the cancel button
+    #And Click on the cancel button
     And Click on the Save button
     And After click on the Save button the validation msg is displaying or not
     And Click on the Submit to Fabric Team button
     #And Click on the Delete Icon
-    When Click on the Import Fabric details button
-    And Click on the Add New Fabric button
-    And Select the Is Nominated Check box
-    When User select the Supplier name
-    And Click on the Fabric Quality field
-    And Select the Fabric Quality
-    Then Click on the Content
-    Then Click on the Count Construction
-    And Click on the Required GSM
-    And Click on the Cuttable Width
-    And Select the Fabric Use
-    When Select the Colour
-    And Select the Applicable Combos
-    And Enter the data in Addl Information field
-    And Enter the data in Additional field
-    Given Enter the data in garment average field
-    And Select the Garment Average UOM
-    And Select the Required UOM
-    Given Enter the data in Cutting wastage field
-    And Check the Fabric Required For Cutting field value is calculated or not
-    And Enter the data in Fabric Required For Sampling
-    And Check the Total Fabric Required field value is calculated or not
-    And Click on the cancel button
-    And Click on the Save button
-    And After click on the Save button the validation msg is displaying or not
-    And Click on the Submit to Fabric Team button
+    
+    #@NewFabricSheetImport
+  #Scenario: To Test the Import functionality
+    #When User navigates to Login page
+    #Then User enters the username and password
+    #And User click on the signIn
+    #And Click on the Woven Module
+    #Then click on the Merchandising Module
+    #And Click on data entry in merchandising module
+    #And Click on the Generate Fabric Sheet Module
+    #And Click on the New Fabric Sheet Screen
+    #And Click on the Styles Expansion
+    #And Click on the Filter Icon
+    #When Search the IPO
+    #And Click on the Apply button
+    #And Select the IPO and Style
+    #And Click on the Add New Fabric button
+    #When Click on the Import Fabric details button
+    #And Click on the Add New Fabric button
+    #And Select the Is Nominated Check box
+    #When User select the Supplier name
+    #And Click on the Fabric Quality field
+    #And Select the Fabric Quality
+    #Then Click on the Content
+    #Then Click on the Count Construction
+    #And Click on the Required GSM
+    #And Click on the Cuttable Width
+    #And Select the Fabric Use
+    #When Select the Colour
+    #And Select the Applicable Combos
+    #And Enter the data in Addl Information field
+    #And Enter the data in Additional field
+    #Given Enter the data in garment average field
+    #And Select the Garment Average UOM
+    #And Select the Required UOM
+    #Given Enter the data in Cutting wastage field
+    #And Check the Fabric Required For Cutting field value is calculated or not
+    #And Enter the data in Fabric Required For Sampling
+    #And Check the Total Fabric Required field value is calculated or not
+    #And Click on the cancel button
+    #And Click on the Save button
+    #And After click on the Save button the validation msg is displaying or not
+    #And Click on the Submit to Fabric Team button
     #And Click on the Delete Icon
-    When Click on the Import Fabric details button
+    #When Click on the Import Fabric details button
 
   @NewFabricSheet123
   Scenario: To Test the Import functionality
@@ -134,6 +149,7 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
     And User click on the signIn
     And Click on the Woven Module
     Then click on the Merchandising Module
+    And Click on data entry in merchandising module
     And Click on the Generate Fabric Sheet Module
     And Click on the New Fabric Sheet Screen
     And Click on the Styles Expansion
@@ -188,6 +204,7 @@ Feature: feature to test Jiva design New Fabric Sheet screen functionality
     And User click on the signIn
     And Click on the Woven Module
     Then click on the Merchandising Module
+    And Click on data entry in merchandising module
     And Click on the Generate Fabric Sheet Module
     And Click on the New Fabric Sheet Screen
     And Click on the Styles Expansion

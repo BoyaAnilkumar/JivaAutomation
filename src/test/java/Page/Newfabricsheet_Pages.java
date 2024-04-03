@@ -19,6 +19,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 	
 	By Woven = By. xpath ("//span[text()='Woven / knit']");
 	By Merchandising = By.xpath("(//span[text()='Merchandising '])[1]");
+	By Data_Entry = By.xpath("(//ul/li/a/div/span[text()='Data Entry'])[3]");
 	By Generate_Fabric = By.xpath("//span[text()='Generate Fabric Sheet']");
 	By New_FabricSheet = By.xpath("//a[text()='New Fabric Sheet ']");
 	By NewFabricSheet_Screen = By.xpath("//h3[@class='f_s_25 f_w_700 dark_text mr_30']");
@@ -46,7 +47,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 	By AddNew_Fabricbutton = By.xpath("//a[@class='btn btn-primary btn-sm ng-star-inserted']");
 	By Is_Nominated = By.xpath("//input[@formcontrolname='isNominated']");
 	By Supplier_Name = By.xpath("//select[@formcontrolname='supplierId']");
-	By Select_Supplier = By.xpath("//option[@value='4']");
+	By Select_Supplier = By.xpath("//select[@formcontrolname='supplierId']/.//option[text()=' Ramya']");
 	By Fabric_Quality = By.xpath("(//ng-select[@bindlabel='fabricName'])[1]");
 	By Select_Fabric = By.xpath("(//span[@class='ng-option-label ng-star-inserted'])[1]");
 	By Content =  By.xpath("//select[@formcontrolname='content']");
@@ -104,7 +105,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 	By Close = By.xpath("//button[@aria-label='Close']");
 	By PDFds_Fabric = By.xpath("(//ng-select[@bindvalue='fabricId'])[3]");
 	By Val_Save = By.xpath("//h2[text()='New Fabric Sheet Partially Updated Successfully']");
-	By Toaster_msg = By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
+	By Toaster_msg = By.xpath("//div[@aria-labelledby='swal2-title']/..//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
 	
 //update the new fabric sheet by clicking on edit icon 
 	By Edit = By.xpath("(//button[@class='btn btn-sm btn-info mr-1 ng-star-inserted'])[1]");
@@ -148,23 +149,34 @@ public class Newfabricsheet_Pages extends DriverFactory{
 	public void Click_on_the_Woven_Module() throws Throwable {
 		utilities.webDriverWait(driver, Woven );
 		driver.findElement(Woven).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
 	public void click_on_the_Merchandising_Module() throws Throwable {
 		utilities.webDriverWait(driver, Merchandising );
 		driver.findElement(Merchandising).click();
+		utilities.MinimumWait(driver);
+	}
+	
+	public void Click_on_data_entry_in_merchandising_module() throws Throwable {
+		utilities.webDriverWait(driver, Data_Entry);
+		driver.findElement(Data_Entry).click();
+		utilities.MinimumWait(driver);
 		
 	}
+
 
 	public void Click_on_the_Generate_Fabric_Sheet_Module() throws Throwable {
 		 utilities.webDriverWait(driver, Generate_Fabric );
 		   driver.findElement(Generate_Fabric).click();
+		   utilities.MinimumWait(driver);
 	}
 
 	public void Click_on_the_New_Fabric_Sheet_Screen() throws Throwable {
 		 utilities.webDriverWait(driver, New_FabricSheet );
 		   driver.findElement(New_FabricSheet).click();
+		   utilities.MinimumWait(driver);
 		
 	}
 
@@ -265,7 +277,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			
 			
 			driver.findElement(A_Submit).click();	
-			utilities.MediumWait(driver);
+			driver.findElement(Toaster_msg).click();
 			WebElement AlertMsg = driver.findElement(Toaster_msg);
 			String SVM = AlertMsg.getText();
 			String expectedMessage = "Mandatory Fields Are Required With Valid Data.";
@@ -295,12 +307,13 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			utilities.webDriverWait(driver, Fabric_Quality);
 			driver.findElement(Fabric_Quality).click();	
 			utilities.MediumWait(driver);
-			driver.findElement(Select_Fabric).click();	
+			
 			
 		}
 
-		public void Select_the_Fabric_Quality() {
-		
+		public void Select_the_Fabric_Quality() throws Throwable {
+			utilities.webDriverWait(driver, Select_Fabric);
+			driver.findElement(Select_Fabric).click();
 			
 		}
 		public void Click_on_the_Content() throws Throwable {
@@ -383,20 +396,25 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			utilities.webDriverWait(driver, Gar_Avg1);
 			driver.findElement(Gar_Avg1).clear();
 			driver.findElement(Gar_Avg1).sendKeys("40");
-			utilities.webDriverWait(driver, Gar_Avg2);
-			driver.findElement(Gar_Avg2).clear();
-			driver.findElement(Gar_Avg2).sendKeys("50");
+			utilities.MinimumWait(driver);
+//			utilities.webDriverWait(driver, Gar_Avg2);
+//			driver.findElement(Gar_Avg2).clear();
+//			driver.findElement(Gar_Avg2).sendKeys("50");
 			
 		}
 
 		public void Select_the_Garment_Average_UOM() throws Throwable {
 			utilities.webDriverWait(driver, GarmentAvg_Uom);
-			driver.findElement(GarmentAvg_Uom).click();
+			String uom = driver.findElement(GarmentAvg_Uom).getAttribute("value");
+			System.out.println("Print the displaying UOM: " + uom);
+			utilities.MinimumWait(driver);
 		}
 
 		public void Select_the_Required_UOM() throws Throwable {
 			utilities.webDriverWait(driver, Required_Uom);
-			driver.findElement(Required_Uom).click();
+			String requireduom = driver.findElement(Required_Uom).getAttribute("value");
+			System.out.println("Print the displaying UOM: " + requireduom);
+			utilities.MinimumWait(driver);
 			
 		}
 
@@ -574,9 +592,8 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		}
 
 		public void After_click_on_the_Save_button_the_validation_msg_is_displaying_or_not() throws Throwable {
-//			driver.findElement(P_Save).click();
-//			utilities.MediumWait(driver);
-			utilities.MediumWait(driver);
+			utilities.webDriverWait(driver, Val_Save);
+			driver.findElement(Val_Save).click();
 			WebElement AlertMsg = driver.findElement(Val_Save);
 			String SVM = AlertMsg.getText();
 			String expectedMessage = "New Fabric Sheet Partially Updated Successfully";
@@ -749,6 +766,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			
 		}
 
+		
 		
 
 		
