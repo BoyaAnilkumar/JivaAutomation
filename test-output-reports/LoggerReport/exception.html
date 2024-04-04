@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.ElementClickInterceptedException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.WebDriverException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.ElementClickInterceptedException</h5>
+								<h5 class="mb-4">org.openqa.selenium.WebDriverException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="22" parent-id="1">
+<tr class="s-fail" test-id="30" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">And Click on Today tab <br/><span class="text-muted text-sm">To Test the Merchandising T and A Dues screen</span></td>
-	<td>0h 1m 59s+26msc</td>
+	<td class="_600">Stepdefinition1.Hooks.CloseBrowser() <br/><span class="text-muted text-sm">To Test the Thaans functionality</span></td>
+	<td>0h 0m 1s+42msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,13 +137,14 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-ull-c200="" id="pills-fabricappr1-tab" data-toggle="pill" href="#pills-fabricappr1" role="tab" aria-controls="pills-fabricappr1" aria-selected="true" class="nav-link active">...</a> is not clickable at point (450, 18). Other element would receive the click: <div _ngcontent-ull-c51="" class="header_iner d-flex justify-content-between align-items-center">...</div>
+		<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
   (Session info: chrome=123.0.6312.86)
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'ANIL', ip: '192.168.0.8', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\banil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60191}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0a167646dcb3a2b5cb316da0fc9b4014
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58333}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c61e8678d45a8cadee295816b31db52
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -153,11 +154,9 @@ Session ID: 0a167646dcb3a2b5cb316da0fc9b4014
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Page.MerchandisingTandADues_Pages.Click_on_Today_tab(MerchandisingTandADues_Pages.java:83)
-	at Stepdefinition1.MerchandisingTandADues_Steps.Click_on_Today_tab(MerchandisingTandADues_Steps.java:27)
-	at ✽.Click on Today tab(file:///C:/Users/banil/JivaDesigns/Features/MerchandisingTandAdues.feature:15)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
+	at Stepdefinition1.Hooks.CloseBrowser(Hooks.java:44)
 </textarea>
 	</td>
 </tr>
@@ -185,7 +184,7 @@ Session ID: 0a167646dcb3a2b5cb316da0fc9b4014
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Apr 3, 2024 10:29:38 pm</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Apr 4, 2024 06:59:05 pm</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

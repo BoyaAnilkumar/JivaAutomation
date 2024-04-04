@@ -37,10 +37,11 @@ public class DailyInInputpages extends DriverFactory {
 	By Select_PO_Number						=	By.xpath("//span[text()='J-102']");
 	By Supplier_Name						=	By.xpath("//select[@formcontrolname='supplier']");
 	By From_Location						=	By.xpath("//select[@formcontrolname='fromLocation']");
+	By Select_From_Location					=	By.xpath("");
 	By Process_Name							=	By.xpath("//select[@formcontrolname='processName']");
 	By Fabric_Name							=	By.xpath("//ng-select[@formcontrolname='fabric']");
 	By Color								=	By.xpath("//ng-select[@formcontrolname='color']");
-	By Applicable_IPO						=	By.xpath("//p-multiselect[@formcontrolname='applicableIpo']");
+	By Applicable_IPO						=	By.xpath("//select[@formcontrolname='applicableIpo']");
 	By Content								=	By.xpath("//input[@formcontrolname='content']");
 	By Count								=	By.xpath("//input[@formcontrolname='count']");
 	By GSM 									=	By.xpath("//input[@formcontrolname='gsm']");
@@ -285,8 +286,13 @@ public class DailyInInputpages extends DriverFactory {
 		
 		utilities.webDriverWait(driver, From_Location);
 		driver.findElement(From_Location).click();
+		Robot r = new Robot();
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
 		WebElement FromLocation	=	driver.findElement(From_Location);
-		String Location	=	FromLocation.getText();
+		String Location	=	FromLocation.getAttribute("value");
 		if(FromLocation.isDisplayed()) {
 		System.out.println("Not Displaying the From Location");
 		}else {
@@ -298,8 +304,16 @@ public class DailyInInputpages extends DriverFactory {
 		utilities.webDriverWait(driver, Process_Name);
 		driver.findElement(Process_Name).click();
 		
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
 		WebElement ProcessName	=	driver.findElement(Process_Name);
-		String Process =	ProcessName.getText();
+		String Process =	ProcessName.getAttribute("value");
 		if(ProcessName.isDisplayed()) {
 		System.out.println("Process name is displaying as: " + Process);
 		}else {
@@ -309,8 +323,16 @@ public class DailyInInputpages extends DriverFactory {
 		
 		utilities.webDriverWait(driver, Fabric_Name);
 		driver.findElement(Fabric_Name).click();
+		
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
 		WebElement FabricName =		driver.findElement(Fabric_Name);
-		String Fabric =		FabricName.getText();
+		String Fabric =		FabricName.getAttribute("value");
 		if(FabricName.isDisplayed()) {
 		System.out.println("Fabric Name is displaying as: " + Fabric);
 		}else {
@@ -321,8 +343,17 @@ public class DailyInInputpages extends DriverFactory {
 		
 		utilities.webDriverWait(driver, Color);
 		driver.findElement(Color).click();
+		
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		
 		WebElement color =		driver.findElement(Color);
-		String COLOR	=	color.getText();
+		String COLOR	=	color.getAttribute("value");
 		if(color.isDisplayed()) {
 			System.out.println("Fabric color is displaying as: " + COLOR);
 		}else {

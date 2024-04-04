@@ -1,4 +1,4 @@
-@FeatureGroup
+@DailyINInput
 Feature: Feature to test Jiva design Daily In Input Data Entry
 
   @DailyInInput
