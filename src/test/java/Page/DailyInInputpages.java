@@ -4,8 +4,10 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
@@ -16,8 +18,8 @@ public class DailyInInputpages extends DriverFactory {
 	Date currentDate = new Date();
 	SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 	String formattedDate = dateFormat.format(currentDate);
-	
-	
+	String TaskName;
+	String GRN_Quantity;
 	Utilities utilities = new Utilities();
 	
 	By Fabric_Store							=	By.xpath("//span[text()='Fabric Store ']");
@@ -57,12 +59,21 @@ public class DailyInInputpages extends DriverFactory {
 	By Toaster_Message						=	By.xpath("//h2[@id='swal2-title']");
 	By Add_Thaan							=	By.xpath("//button[@title='Add Than Details']");
 	By Thaan_Name 							=	By.xpath("//input[@formcontrolname='nameOfThaan']");
+	By Thaan_Name2							= 	By.xpath("(//input[@formcontrolname='nameOfThaan'])[2]");
+	By Thaan_Name3							= 	By.xpath("(//input[@formcontrolname='nameOfThaan'])[3]");
+	By Thaan_Name4							= 	By.xpath("(//input[@formcontrolname='nameOfThaan'])[4]");
+	By Thaan_Name5							= 	By.xpath("(//input[@formcontrolname='nameOfThaan'])[5]");
 	By Thaan_Qty							=	By.xpath("//input[@formcontrolname='qty']");
+	By Thaan_Qty2							=	By.xpath("(//input[@formcontrolname='qty'])[2]");
+	By Thaan_Qty3							=	By.xpath("(//input[@formcontrolname='qty'])[3]");
+	By Thaan_Qty4							=	By.xpath("(//input[@formcontrolname='qty'])[4]");
+	By Thaan_Qty5							=	By.xpath("(//input[@formcontrolname='qty'])[5]");
 	By Thaan_delete							=	By.xpath("//button[@title='Delete']");
 	By Thaan_delete_Confirmation			=	By.xpath("//h2[text()='Are You Sure You Want To Delete?']");
 	By Thaan_Delete_Yes						=	By.xpath("//button[text()='Yes']");
 	By Thaan_Delete_No						=	By.xpath("(//button[text()='No'])[2]");
 	By Add_Thaan_Qty						=	By.xpath("(//button[@type='button'])[2]");
+	By Save_Thaan_Details					=	By.xpath("(//button[text()='Save'])");
 	
 	
 	
@@ -211,9 +222,11 @@ public class DailyInInputpages extends DriverFactory {
 		driver.findElement(PO_Number).sendKeys("J-10");
 		utilities.MediumWait(driver);
 		Robot R = new Robot();
-		R.keyPress(KeyEvent.VK_2);
-		Thread.sleep(5000);
-		driver.findElement(Select_PO_Number).click();
+		R.keyPress(KeyEvent.VK_7);
+		Thread.sleep(2000);
+		R.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		R.keyPress(KeyEvent.VK_ENTER);
 		utilities.MinimumWait(driver);
 	}
 
@@ -294,7 +307,7 @@ public class DailyInInputpages extends DriverFactory {
 		WebElement FromLocation	=	driver.findElement(From_Location);
 		String Location	=	FromLocation.getAttribute("value");
 		if(FromLocation.isDisplayed()) {
-		System.out.println("Not Displaying the From Location");
+		System.out.println("Not Displaying the From Location" + Location);
 		}else {
 			System.out.println("Displaying the From Location Value");
 		}
@@ -379,9 +392,9 @@ public class DailyInInputpages extends DriverFactory {
 		WebElement CONTENT =	driver.findElement(Content);
 		String Acontent	=		CONTENT.getText();
 		if(CONTENT.isDisplayed()) {
-			System.out.println("Content is displaying as: " + CONTENT);
+			System.out.println("Content is displaying as: " + Acontent);
 		}else {
-			System.out.println("Content is not displaying as: " + CONTENT);
+			System.out.println("Content is not displaying as: " + Acontent);
 		}
 		utilities.MinimumWait(driver);
 		
@@ -427,9 +440,9 @@ public class DailyInInputpages extends DriverFactory {
 		WebElement uom  =  driver.findElement(UOM);
 		String Uom = uom.getText();
 		if(uom.isDisplayed()) {
-			System.out.println("UOM is displaying as: "+ uom);
+			System.out.println("UOM is displaying as: "+ Uom);
 		}else {
-			System.out.println("UOM is not displayed as: " + uom);
+			System.out.println("UOM is not displayed as: " + Uom);
 		}utilities.MinimumWait(driver);
 	}
 
@@ -446,8 +459,12 @@ public class DailyInInputpages extends DriverFactory {
 		utilities.webDriverWait(driver, Thaan_Name);
 		driver.findElement(Thaan_Name).click();
 		Thread.sleep(2000);
-		driver.findElement(Thaan_Name).sendKeys("10Th");
+		driver.findElement(Thaan_Name).sendKeys("Jus1");
 		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Thaan_Qty);
+		driver.findElement(Thaan_Qty).sendKeys("200");
+		Thread.sleep(2000);
 		
 	}
 
@@ -467,10 +484,17 @@ public class DailyInInputpages extends DriverFactory {
 		
 	}
 	public void click_on_add_button_to_add_thaan() throws Throwable {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,500)", "");
+		
 		utilities.webDriverWait(driver, Add_Thaan_Qty);
 		driver.findElement(Add_Thaan_Qty).click();
+		String Add_Thaan_Button  = driver.findElement(Add_Thaan_Qty).getText();
+		System.out.println("clicked on Add thaan qty button:  " + Add_Thaan_Button);
 		utilities.MinimumWait(driver);
 		
+		 for (int i = 0; i<=4; i++) {
+			 //delete the thaans
 		utilities.webDriverWait(driver, Thaan_delete);
 		driver.findElement(Thaan_delete).click();
 		utilities.MinimumWait(driver);
@@ -479,6 +503,67 @@ public class DailyInInputpages extends DriverFactory {
 		driver.findElement(Thaan_Delete_Yes).click();
 		utilities.MinimumWait(driver);
 		
+		 }
+		 
+			 //Add thaan name and qty
+			 Random rand = new Random();
+			    int int1 = rand.nextInt(100);
+			    String QtyNumber = Integer.toString(int1);
+			    GRN_Quantity = "1" + QtyNumber;
+			    
+		 driver.findElement(Thaan_Name).sendKeys("Thaan1");
+		 String ThaanName = driver.findElement(Thaan_Name).getAttribute("value");
+		 System.out.println(ThaanName);
+		 utilities.MinimumWait(driver);
+		 
+		 driver.findElement(Thaan_Qty).sendKeys(GRN_Quantity);
+		 String ThaanQty = driver.findElement(Thaan_Qty).getAttribute("value");
+		 System.out.println(ThaanQty);
+		 utilities.MinimumWait(driver);
+		 
+		 driver.findElement(Thaan_Name2).sendKeys("Thaan2");
+		 String ThaanName2 = driver.findElement(Thaan_Name2).getAttribute("value");
+		 System.out.println(ThaanName2);
+		 utilities.MinimumWait(driver);
+		 
+		 driver.findElement(Thaan_Qty2).sendKeys(GRN_Quantity);
+		 String ThaanQty2 = driver.findElement(Thaan_Qty2).getAttribute("value");
+		 System.out.println(ThaanQty2);
+		 utilities.MinimumWait(driver);
+		 
+		 driver.findElement(Thaan_Name3).sendKeys("Thaan3");
+		 String ThaanName3 = driver.findElement(Thaan_Name3).getAttribute("value");
+		 System.out.println(ThaanName3);
+		 utilities.MinimumWait(driver);
+		 
+		 driver.findElement(Thaan_Qty3).sendKeys(GRN_Quantity);
+		 String ThaanQty3 = driver.findElement(Thaan_Qty3).getAttribute("value");
+		 System.out.println(ThaanQty3);
+		 utilities.MinimumWait(driver);
+		 
+		 driver.findElement(Thaan_Name4).sendKeys("Thaan4");
+		 String ThaanName4 = driver.findElement(Thaan_Name4).getAttribute("value");
+		 System.out.println(ThaanName4);
+		 utilities.MinimumWait(driver);
+		 
+		 driver.findElement(Thaan_Qty4).sendKeys(GRN_Quantity);
+		 String ThaanQty4 = driver.findElement(Thaan_Qty4).getAttribute("value");
+		 System.out.println(ThaanQty4);
+		 utilities.MinimumWait(driver);
+		 
+		 driver.findElement(Thaan_Name5).sendKeys("Thaan5");
+		 String ThaanName5 = driver.findElement(Thaan_Name5).getAttribute("value");
+		 System.out.println(ThaanName5);
+		 utilities.MinimumWait(driver);
+		 
+		 driver.findElement(Thaan_Qty5).sendKeys(GRN_Quantity);
+		 String ThaanQty5 = driver.findElement(Thaan_Qty5).getAttribute("value");
+		 System.out.println(ThaanQty5);
+		 utilities.MinimumWait(driver);
+		 
+		 utilities.webDriverWait(driver, Save_Thaan_Details);
+		 driver.findElement(Save_Thaan_Details).click();
+		 utilities.MinimumWait(driver);
 	}
 
 
