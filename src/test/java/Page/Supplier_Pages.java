@@ -46,6 +46,7 @@ public class Supplier_Pages extends DriverFactory{
 	By PDC_Open_Credit = By.xpath("//select[@formcontrolname='creditType']");
 	By Number_of_Days = By.xpath("//input[@formcontrolname='numberofDays']");
 	By Save_Button = By.xpath("//button[@type='submit']");
+	By update_Toaster = By.xpath("//h2[text()='Supplier Updated Successfully']");
 	
 	//Validation Texts
 	By Validation_Supplier_Name = By.xpath("//div[@data-validate='Supplier Name is required']");
@@ -68,6 +69,18 @@ public class Supplier_Pages extends DriverFactory{
 	By Validation_Credit_PDC = By.xpath("//div[@data-validate=' % Credit / PDC is required']");
 	By Validation_PDC_Open_Credit = By.xpath("//div[@data-validate='PDC or Open Credit is required']");
 	By Validation_Number_of_Days = By.xpath("//div[@data-validate='Number of Days is required']");
+	
+	
+	//Update the Supplier Details by clicking on Edit icon
+	By Search_Keyword = By.xpath("//input[@placeholder='Search keyword']");
+	By Edit_Icon = By.xpath("//button[@title='Edit'][1]");
+	
+	//Delete the supplier by clicking on delete icon
+	By Delete_Icon = By.xpath("(//button[@title='Delete'])[1]");
+	By Confirmation = By.xpath("//h2[text()='Are you sure you want to Deactivate?']");
+	By Yes_Delete = By.xpath("//button[text()='Yes']");
+	By No_Delete = By.xpath("//button[text()='No'][2]");
+	By Delete_Successfull_Toaster = By.xpath("//h2[@id='swal2-title']");
 	
 	
 	public void Click_on_the_Supplier_screen() throws Throwable {
@@ -159,6 +172,7 @@ public class Supplier_Pages extends DriverFactory{
 		r.keyPress(KeyEvent.VK_ENTER);
 		driver.findElement(Number_of_Days).click();
 		driver.findElement(Number_of_Days).sendKeys("15");
+		Thread.sleep(2000);
 		
 		
 	}
@@ -227,6 +241,62 @@ public class Supplier_Pages extends DriverFactory{
 		Thread.sleep(2000);
 		
 		
+	}
+
+
+	public void Click_on_Edit_icon_in_grid_table() throws Throwable {
+		utilities.webDriverWait(driver, Search_Keyword);
+		driver.findElement(Search_Keyword).click();
+		Thread.sleep(2000);
+		driver.findElement(Search_Keyword).sendKeys("pandu");
+		Thread.sleep(2000);
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollTo(250,0)", "");
+		
+		utilities.webDriverWait(driver, Edit_Icon);
+		driver.findElement(Edit_Icon).click();
+		Thread.sleep(2000);
+		
+		utilities.webDriverWait(driver, Supplier_Category);
+		driver.findElement(Supplier_Category).click();
+		Thread.sleep(2000);
+		
+		utilities.webDriverWait(driver, Fabric_Supplier);
+		driver.findElement(Fabric_Supplier).click();
+		Thread.sleep(2000);
+
+		js.executeScript("window.scrollTo(0,350)", "");
+		
+		driver.findElement(Save_Button).click();
+		Thread.sleep(2000);
+		
+		driver.findElement(update_Toaster).click();
+		String toasterupdate = driver.findElement(update_Toaster).getText();
+		System.out.println(toasterupdate);
+	}
+
+
+	public void Click_on_Delete_icon_in_grid_table() throws Throwable {
+		utilities.webDriverWait(driver, Search_Keyword);
+		driver.findElement(Search_Keyword).click();
+		Thread.sleep(2000);
+		driver.findElement(Search_Keyword).sendKeys("pandu");
+		Thread.sleep(2000);
+		
+		utilities.webDriverWait(driver, Delete_Icon);
+		driver.findElement(Delete_Icon).click();
+		Thread.sleep(2000);
+		
+		String confirmation_text = driver.findElement(Confirmation).getText();
+		System.out.println(confirmation_text);
+		driver.findElement(Yes_Delete).click();
+		Thread.sleep(2000);
+		
+		driver.findElement(Delete_Successfull_Toaster).click();
+		String deletetoaster = driver.findElement(Delete_Successfull_Toaster).getText();
+		System.out.println(deletetoaster);
+		Thread.sleep(2000);
 	}
 
 }

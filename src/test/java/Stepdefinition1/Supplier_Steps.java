@@ -37,4 +37,14 @@ public class Supplier_Steps {
 	public void Verify_the_Validation_messsages_for_mandatory_fields() throws Throwable {
 		supplier.Verify_the_Validation_messsages_for_mandatory_fields();
 	}
+	
+	@And("^Click on Edit icon in grid table$")
+	public void Click_on_Edit_icon_in_grid_table() throws Throwable {
+		supplier.Click_on_Edit_icon_in_grid_table();
+	}
+	
+	@And("^Click on Delete icon in grid table$")
+	public void Click_on_Delete_icon_in_grid_table() throws Throwable {
+		supplier.Click_on_Delete_icon_in_grid_table();
+	}
 }

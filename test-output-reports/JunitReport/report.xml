@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="123.667">
-    <testcase classname="feature to test Jiva design Supplier screen functionality" name="To Test the validation messages" time="123.196">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="208.626">
+    <testcase classname="feature to test Jiva design Factory List screen functionality" name="To Test the Factory List functionality" time="85.64">
         <system-out><![CDATA[Given User navigates to Login page..........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
 And Click on the master module..............................................passed
-And Click on the Supplier screen............................................passed
-Then Click on Add button to add the supplier details........................passed
-And Click on Save button in create supplier screen..........................passed
-Then Verify the Validation messsages for mandatory fields...................passed
+And Click on the Factory List screen........................................passed
+Then Click on Add button to add the Factory List details....................passed
+And Enter the mandatory fields data in Factory List.........................passed
+And Click on Save button in create Factory List screen......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Jiva design Factory List screen functionality" name="To Test the update Factory List functionality" time="61.123">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the master module..............................................passed
+And Click on the Factory List screen........................................passed
+Then Click on Edit icon to update the Factory List details..................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Jiva design Factory List screen functionality" name="To Test the delete Factory List functionality" time="61.418">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the master module..............................................passed
+And Click on the Factory List screen........................................passed
+Then Click on delete icon to update the Factory List details................passed
 ]]></system-out>
     </testcase>
 </testsuite>
