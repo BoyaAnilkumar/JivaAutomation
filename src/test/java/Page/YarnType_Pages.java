@@ -14,7 +14,14 @@ public class YarnType_Pages extends DriverFactory{
 	By Content = By.xpath("//input[@formcontrolname='content']");
 	By Count = By.xpath("//input[@formcontrolname='count']");
 	By Save_Button = By.xpath("//button[@type='submit']");
-	
+	By Search_Keyword = By.xpath("//input[@placeholder='Search keyword']");
+	By Edit_Icon = By.xpath("//button[@title='Edit'][1]");
+	By Delete_Icon = By.xpath("(//button[@title='Delete'])[1]");
+	By Confirmation = By.xpath("//h2[text()='Are you sure you want to Deactivate?']");
+	By Yes_Delete = By.xpath("//button[text()='Yes']");
+	By No_Delete = By.xpath("//button[text()='No'][2]");
+	By Delete_Successfull_Toaster = By.xpath("//h2[@id='swal2-title']");
+	By supplier_internal = By.xpath("//input[@formcontrolname='supplierCode']");
 	
 	
 	public void Click_on_the_Yarn_type_screen() throws Throwable {
@@ -60,5 +67,30 @@ public class YarnType_Pages extends DriverFactory{
 		utilities.MinimumWait(driver);
 		
 	}
+
+	public void user_search_the_yarn_type_in_search_keyword() throws Throwable {
+		utilities.webDriverWait(driver, Search_Keyword);
+		driver.findElement(Search_Keyword).click();
+		Thread.sleep(2000);
+		driver.findElement(Search_Keyword).sendKeys("mauthoe");
+		Thread.sleep(2000);
+		
+	}
+
+
+	public void Click_on_Edit_icon_to_update_the_Yarn_type_details() throws Throwable {
+		utilities.webDriverWait(driver, Edit_Icon);
+		driver.findElement(Edit_Icon).click();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(supplier_internal).click();
+		Thread.sleep(2000);
+		driver.findElement(supplier_internal).sendKeys("50");
+		Thread.sleep(2000);
+	}
+
+
+
+	
 	
 }

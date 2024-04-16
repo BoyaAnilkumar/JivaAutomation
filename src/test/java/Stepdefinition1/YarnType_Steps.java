@@ -3,6 +3,7 @@ package Stepdefinition1;
 import Page.YarnType_Pages;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class YarnType_Steps {
 	
@@ -26,5 +27,15 @@ public class YarnType_Steps {
 	@And("^Click on Save button in create Yarn type screen$")
 	public void Click_on_Save_button_in_create_Yarn_type_screen() throws Throwable {
 		yarntype.Click_on_Save_button_in_create_Yarn_type_screen();
+	}
+	
+	@When("^user search the yarn type in search keyword$")
+	public void user_search_the_yarn_type_in_search_keyword() throws Throwable {
+		yarntype.user_search_the_yarn_type_in_search_keyword();
+	}
+	
+	@Then("^Click on Edit icon to update the Yarn type details$")
+	public void Click_on_Edit_icon_to_update_the_Yarn_type_details() throws Throwable {
+		yarntype.Click_on_Edit_icon_to_update_the_Yarn_type_details();
 	}
 }

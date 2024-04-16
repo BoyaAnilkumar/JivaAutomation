@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-				  tags ="@Yarntype_Non_Nominated")
+				  tags ="@Yarntype_Non_Nominated1")
 
 
 public class TestRunner {
