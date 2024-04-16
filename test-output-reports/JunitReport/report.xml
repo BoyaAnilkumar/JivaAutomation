@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="64.031">
     <testcase classname="feature to test Jiva design Machine screen functionality" name="To Test the update Machine functionality" time="63.617">
@@ -11,3 +12,5 @@ Then Click on Edit icon to update the Yarn type details.....................pass
 ]]></system-out>
     </testcase>
 </testsuite>
+=======
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
