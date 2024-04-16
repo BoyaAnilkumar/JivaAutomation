@@ -29,33 +29,92 @@ public class Machine_Pages extends DriverFactory{
 	
 	
 	
-	public void Click_on_the_Machine_screen() {
-		// TODO Auto-generated method stub
+	public void Click_on_the_Machine_screen() throws Throwable {
+		utilities.webDriverWait(driver, Machine);
+		driver.findElement(Machine).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void Click_on_Add_button_to_add_the_Machine_details() {
-		// TODO Auto-generated method stub
+	public void Click_on_Add_button_to_add_the_Machine_details() throws Throwable {
+		utilities.webDriverWait(driver, Add_button);
+		driver.findElement(Add_button).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void Enter_the_mandatory_fields_data_in_Machine() {
-		// TODO Auto-generated method stub
+	public void Enter_the_mandatory_fields_data_in_Machine() throws Throwable {
+		utilities.webDriverWait(driver, Serial_Number);
+		String SNo = driver.findElement(Serial_Number).getAttribute("value");
+		System.out.println("Serial Number:  " + SNo);
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(Machine_Model_Name).click();
+		Thread.sleep(2000);
+		driver.findElement(Machine_Model_Name).sendKeys("A-101");
+		Thread.sleep(2000);
+		String modelname = driver.findElement(Machine_Model_Name).getAttribute("value");
+		System.out.println("Machine Model Name:  " + modelname);
+		
+		driver.findElement(Min_Gauge).click();
+		Thread.sleep(2000);
+		driver.findElement(Min_Gauge).sendKeys("20");
+		Thread.sleep(2000);
+		String mingauge = driver.findElement(Min_Gauge).getAttribute("value");
+		System.out.println("Machine Min Gauge:  " + mingauge);
+		
+		driver.findElement(Max_Gauge).click();
+		Thread.sleep(2000);
+		driver.findElement(Max_Gauge).sendKeys("50");
+		Thread.sleep(2000);
+		String maxgauge = driver.findElement(Min_Gauge).getAttribute("value");
+		System.out.println("Machine Max Gauge:  " + maxgauge);
 		
 	}
 
-	public void Click_on_Save_button_in_create_Machine_screen() {
-		// TODO Auto-generated method stub
+	public void Click_on_Save_button_in_create_Machine_screen() throws Throwable {
+		utilities.webDriverWait(driver, Save_Button);
+		driver.findElement(Save_Button).click();
+		utilities.MinimumWait(driver);
 		
 	}
 
-	public void Click_on_Edit_icon_to_update_the_Machine_details() {
-		// TODO Auto-generated method stub
+	public void Click_on_Edit_icon_to_update_the_Machine_details() throws Throwable {
+		utilities.webDriverWait(driver, Search_Keyword);
+		driver.findElement(Search_Keyword).click();
+		Thread.sleep(2000);
+		driver.findElement(Search_Keyword).sendKeys("A-101");
+		Thread.sleep(2000);
+		
+		utilities.webDriverWait(driver, Edit_Icon);
+		driver.findElement(Edit_Icon).click();
+		Thread.sleep(2000);
+		
+		driver.findElement(Min_Gauge).click();
+		driver.findElement(Min_Gauge).clear();
+		Thread.sleep(2000);
+		driver.findElement(Min_Gauge).sendKeys("25");
+		Thread.sleep(2000);
+		
+		driver.findElement(Save_Button).click();
+		Thread.sleep(2000);
+		
 		
 	}
 
-	public void Click_on_delete_icon_to_update_the_Machine_details() {
-		// TODO Auto-generated method stub
+	public void Click_on_delete_icon_to_update_the_Machine_details() throws Throwable {
+		utilities.webDriverWait(driver, Search_Keyword);
+		driver.findElement(Search_Keyword).click();
+		Thread.sleep(2000);
+		driver.findElement(Search_Keyword).sendKeys("A-101");
+		Thread.sleep(2000);
+		
+		driver.findElement(Delete_Icon).click();
+		Thread.sleep(2000);
+		driver.findElement(Delete_Successfull_Toaster).click();
+		Thread.sleep(2000);
+		String delete_toaster = driver.findElement(Delete_Successfull_Toaster).getText();
+		System.out.println(delete_toaster);
 		
 	}
 	
