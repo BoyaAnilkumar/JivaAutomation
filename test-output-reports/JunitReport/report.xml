@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="196.762">
-    <testcase classname="feature to test Jiva design Machine screen functionality" name="To Test the Yarn type functionality" time="195.869">
-        <failure message="invalid argument&#10;  (Session info: chrome=123.0.6312.123)&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4547616f5b81f98cbb5c79737f2c8f90" type="org.openqa.selenium.InvalidArgumentException"><![CDATA[Given User navigates to Login page..........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="63.374">
+    <testcase classname="feature to test Jiva design Machine screen functionality" name="To Test the PD cost configuration functionality" time="62.905">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
 And Click on the master module..............................................passed
-And Click on the Yarn type screen...........................................passed
-Then Click on Add button to add the Nominated Yarn type.....................passed
-And Enter the mandatory fields data in Nominated Yarn type..................failed
+And Click on the YarnPDCostConfig screen....................................passed
+When click on edit icon for each row in YarnPDCostConfig....................passed
+And change the value in edit form in YarnPDCostConfig.......................passed
+Then click on update button to update the value in YarnPDCostConfig.........passed
+]]></system-out>
+    </testcase>
+</testsuite>
+abled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 39a91a1ccf7c4232fd4a30d00acc6407&#10;*** Element info: {Using=xpath, value=//a[text()='Yarn PD Cost Configuration']}" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given User navigates to Login page..........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the master module..............................................passed
+And Click on the YarnPDCostConfig screen....................................failed
+When click on edit icon for each row in YarnPDCostConfig....................skipped
+And change the value in edit form in YarnPDCostConfig.......................skipped
+Then click on update button to update the value in YarnPDCostConfig.........skipped
 
 StackTrace:
-org.openqa.selenium.InvalidArgumentException: invalid argument
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=123.0.6312.123)
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4547616f5b81f98cbb5c79737f2c8f90
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54379}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 39a91a1ccf7c4232fd4a30d00acc6407
+*** Element info: {Using=xpath, value=//a[text()='Yarn PD Cost Configuration']}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -26,11 +40,13 @@ Session ID: 4547616f5b81f98cbb5c79737f2c8f90
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Page.YarnType_Pages.Enter_the_mandatory_field_data_in_Nominated_Yarn_type(YarnType_Pages.java:170)
-	at Stepdefinition1.YarnType_Steps.Enter_the_mandatory_field_data_in_Nominated_Yarn_type(YarnType_Steps.java:54)
-	at ✽.Enter the mandatory fields data in Nominated Yarn type(file:///E:/Maven/Features/YarnType.feature:43)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.YarnPDCostconfig_pages.Click_on_the_YarnPDCostConfig_screen(YarnPDCostconfig_pages.java:19)
+	at Stepdefinition1.YarnPDCostconfig_Steps.Click_on_the_YarnPDCostConfig_screen(YarnPDCostconfig_Steps.java:14)
+	at ✽.Click on the YarnPDCostConfig screen(file:///E:/Maven/Features/YarnPDCostconfig.feature:10)
 ]]></failure>
     </testcase>
 </testsuite>

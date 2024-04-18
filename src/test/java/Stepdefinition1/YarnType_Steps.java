@@ -55,12 +55,12 @@ public class YarnType_Steps {
 	}
 	
 	@When("^user search the nominated yarn type in search keyword$")
-	public void user_search_the_nominated_yarn_type_in_search_keyword() {
+	public void user_search_the_nominated_yarn_type_in_search_keyword() throws Throwable {
 		yarntype.user_search_the_nominated_yarn_type_in_search_keyword();
 	}
 	
 	@Then("^Click on Edit icon to update the nominated Yarn type details$")
-	public void Click_on_Edit_icon_to_update_the_nominated_Yarn_type_details() {
+	public void Click_on_Edit_icon_to_update_the_nominated_Yarn_type_details() throws Throwable {
 		yarntype.Click_on_Edit_icon_to_update_the_nominated_Yarn_type_details();
 	}
 	

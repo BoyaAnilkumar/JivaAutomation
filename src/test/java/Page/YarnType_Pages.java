@@ -25,6 +25,7 @@ public class YarnType_Pages extends DriverFactory{
 	By No_Delete = By.xpath("//button[text()='No'][2]");
 	By Delete_Successfull_Toaster = By.xpath("//h2[@id='swal2-title']");
 	By supplier_internal = By.xpath("//input[@formcontrolname='supplierCode']");
+	By Approximate_Leadtime = By.xpath("//input[@formcontrolname='approxLeadTimeinDays']");
 	
 	//NominatedYarnType
 	By Nominated  = By.xpath("//input[@formcontrolname='isNominated']");
@@ -33,6 +34,7 @@ public class YarnType_Pages extends DriverFactory{
 	By UOM = By.xpath("//select[@formcontrolname='uomId']");
 	By upload_File = By.xpath("//input[@type='file']");
 	
+
 	
 	public void Click_on_the_Yarn_type_screen() throws Throwable {
 		utilities.webDriverWait(driver, Yarn_Type);
@@ -174,18 +176,34 @@ public class YarnType_Pages extends DriverFactory{
 
 
 
-	public void user_search_the_nominated_yarn_type_in_search_keyword() {
-		// TODO Auto-generated method stub
+	public void user_search_the_nominated_yarn_type_in_search_keyword() throws Throwable {
+		utilities.webDriverWait(driver, Search_Keyword);
+		driver.findElement(Search_Keyword).click();
+		Thread.sleep(2000);
+		driver.findElement(Search_Keyword).sendKeys("mauthoe");
+		utilities.MinimumWait(driver);
+		
 		
 	}
 
 
 
-	public void Click_on_Edit_icon_to_update_the_nominated_Yarn_type_details() {
-		// TODO Auto-generated method stub
+	public void Click_on_Edit_icon_to_update_the_nominated_Yarn_type_details() throws Throwable {
+		utilities.webDriverWait(driver, Edit_Icon);
+		driver.findElement(Edit_Icon).click();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(supplier_internal).click();
+		Thread.sleep(2000);
+		driver.findElement(supplier_internal).sendKeys("50");
+		Thread.sleep(2000);
+		
+		driver.findElement(Save_Button).click();
+		Thread.sleep(2000);
 		
 	}
 
+	
 
 
 	

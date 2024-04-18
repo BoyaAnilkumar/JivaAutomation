@@ -41,7 +41,7 @@ Feature: feature to test Jiva design Machine screen functionality
     And Click on the Yarn type screen
     Then Click on Add button to add the Nominated Yarn type
     And Enter the mandatory fields data in Nominated Yarn type
-    #And Click on Save button in create Yarn type screen
+    And Click on Save button in create Yarn type screen
 
   @Yarntype_Nominated1
   Scenario: To Test the update Yarn type functionality
