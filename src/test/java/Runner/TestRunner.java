@@ -12,8 +12,8 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-				  tags ="@YarnPDCostConfig")
-
+				  tags ="@Ad"
+				  		+ "StyleMaster1")
 
 
 public class TestRunner {

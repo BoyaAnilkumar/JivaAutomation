@@ -52,13 +52,13 @@ public class Stylepage extends DriverFactory{
 		By selectPDMerchant 			= By.xpath("//li[text()=' Phani L - [ phani@gmail.com ] - [ 9854785623 ] ']|//li[@Class='p-ripple p-element p-autocomplete-item ng-tns-c93-12 ng-star-inserted']");
 		By Buyerstyle 					= By.xpath("(//input[@placeholder='Enter Buyer Style'])[1]");
 		By Buyerfield 					= By.xpath("(//select[@formcontrolname='buyerId'])[1]");
-		By Buyerselect 					= By.xpath("(//option[text()=' Spin'])[1]");
+		By Buyerselect 					= By.xpath("//option[text()=' Amazon (Core)']");
 		By Season						= By.xpath("(//select[@formcontrolname='seasonTypeId'])[1]");
-		By Selectseason 				= By.xpath("(//option[text()=' Summer2023'])[1]");
+		By Selectseason 				= By.xpath("//option[text()=' Summer']");
 		By GarmentType 					= By.xpath("(//select[@formcontrolname='garmentTypeId'])[1]");
 		By selectgarmenttype 			= By.xpath("(//option[text()=' Dress'])[1]");
 		By garmentprocess				= By.xpath("(//select[@formcontrolname='garmentProcessId'])[1]");
-		By selectgarmentprocesstype		= By.xpath("(//option[text()=' E.C&S (comp)'])[1]");
+		By selectgarmentprocesstype		= By.xpath("(//option[text()=' C&S + emb (beading)'])[1]");
 		By Techpackname					= By.xpath("//input[@placeholder='Enter Tech Pack Name']");
 		By Techpackdesc					= By.xpath("//textarea[@placeholder='Enter Tech Pack Desc']");
 		By Teckpackreceiveddate 		= By.xpath("(//input[@formcontrolname='techPackSampleReceivedDate'])[1]");
@@ -73,7 +73,7 @@ public class Stylepage extends DriverFactory{
 		By Cancel 						= By.xpath("(//button[@class='btn btn-md btn-danger btn-active-light-primary mr-2'])[1]");
         //Add Revise Estimates
 		By SelectStyle 					= By.xpath("(//tr[@class='ng-star-inserted']//a[@class='ng-star-inserted'])[1]");
-		By Addreviseestimates 			= By.xpath("(//button[@class='btn btn-primary btn-sm shadow-sm float-right ng-star-inserted'])[3]");
+		By Addreviseestimates 			= By.xpath("//button[text()=' Add Revise Estimates']");
 		By Ordertype 					= By.xpath("//select[@formcontrolname='orderTypeId']");
 		By selectordertype 				= By.xpath("//option[text()=' Confirmed']");
 		By Orderdate 					= By.xpath("//input[@formcontrolname='orderDate']");
@@ -300,8 +300,13 @@ public class Stylepage extends DriverFactory{
 			public void Enter_the_data_in_BuyerStyle_field() throws Throwable{
 			    utilities.webDriverWait(driver, Buyerstyle );
 			    driver.findElement(Buyerstyle_toggle).click();
-			    utilities.MediumWait(driver);  
-			    driver.findElement(Buyerstyle).sendKeys("Style10204");
+			    utilities.MediumWait(driver);
+			    
+			    Random rand = new Random();
+			    int int1 = rand.nextInt(100);
+			    String RandomNumber= Integer.toString(int1);
+			    TaskName = "F1" + RandomNumber;
+			    driver.findElement(Buyerstyle).sendKeys(TaskName);
 			    utilities.MediumWait(driver);
 			}
 			public void Click_on_the_Buyer_field() throws Throwable{
@@ -313,8 +318,9 @@ public class Stylepage extends DriverFactory{
 			}
 			public void User_select_the_Buyer() throws Throwable{
 			  utilities.webDriverWait(driver, Buyerselect );
-			  utilities.MediumWait(driver);
 			  driver.findElement(Buyerselect).click();	
+			  utilities.MediumWait(driver);
+			  
 				
 			}
 			public void Click_on_the_Season_field_in_Add_form() throws Throwable{
@@ -464,10 +470,14 @@ public class Stylepage extends DriverFactory{
 					
 					utilities.webDriverWait(driver, SelectStyle );
 					driver.findElement(SelectStyle).click();
-//					WebElement S_S = driver.findElement(SelectStyle);
-//					String Select = S_S.getText();
-//					System.out.println(Select);
-//					driver.findElement(SelectStyle).click();
+					Thread.sleep(5000);
+					
+					WebElement S_S = driver.findElement(SelectStyle);
+					String Select = S_S.getText();
+					System.out.println(Select);
+					driver.findElement(SelectStyle).click();
+					Thread.sleep(2000);
+					
 				}
 				public void User_click_on_the_add_revise_estimates_button() throws Throwable{
 					
@@ -793,7 +803,8 @@ public class Stylepage extends DriverFactory{
 				Thread.sleep(2000);
 			    driver.findElement(selectPDMerchant).click();Thread.sleep(2000);
 			    driver.findElement(Buyerstyle).click();Thread.sleep(2000);
-			    WebElement Style = driver.findElement(Buyerstyle);
+			    //WebElement Style = driver.findElement(Buyerstyle);
+			    
 			    driver.findElement(Buyerstyle).sendKeys(TaskName);
 			    Thread.sleep(2000);
 			   
@@ -818,7 +829,7 @@ public class Stylepage extends DriverFactory{
 				utilities.webDriverWait(driver, Buyer_Filter_Column);
 				driver.findElement(Buyer_Filter_Column).click();
 				Thread.sleep(2000);
-				driver.findElement(Filter_Buyer).sendKeys("Style239");
+				driver.findElement(Filter_Buyer).sendKeys("F166");
 				Thread.sleep(2000);
 				driver.findElement(Filter_Buyer_apply).click();
 				utilities.MinimumWait(driver);

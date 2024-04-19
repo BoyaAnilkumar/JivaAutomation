@@ -16,6 +16,7 @@ public class Fabricsheetaudit_Pages extends DriverFactory{
 	Utilities utilities = new Utilities();
 	
 	By Audit = By.xpath("(//span[text()='Audit '])[1]");
+	By Data_Entry = By.xpath("(//span[text()='Data Entry'])[2]");
 	By Fabirc_Sheet_Audit = By.xpath("//a[text()='Fabric Sheet Audit']");
 	By Select_IPO = By.xpath("//a[text()='IPO00 / TestStyle']");
 	By Filter_Slash = By.xpath("//button[@class='btn btn-outline-secondary btn-sm mr-2 mb-2 float-right ng-star-inserted']");
@@ -43,7 +44,12 @@ public class Fabricsheetaudit_Pages extends DriverFactory{
 		utilities.webDriverWait(driver, Audit );
 		 driver.findElement(Audit).click();
 		 utilities.MediumWait(driver);
+		 
+		 driver.findElement(Data_Entry).click();
+		 Thread.sleep(2000);
+		 
 		 driver.findElement(Fabirc_Sheet_Audit).click();	
+		 Thread.sleep(2000);
 	}
 	public void Select_the_IPO_in_IPO_list() throws Throwable {
 		

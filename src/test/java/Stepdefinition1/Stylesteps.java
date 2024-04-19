@@ -226,6 +226,13 @@ public class Stylesteps {
 			   Stylepage.User_click_on_the_add_revise_estimates_button();
 
 		   }
+		   
+		   @And ("^Click on the Generate new order radio button$")
+		   public void Click_on_the_Generate_new_order_radio_button() throws Throwable{
+			   Stylepage.Click_on_the_Generate_new_order_radio_button();
+
+		   }
+		   
 		   @And ("^Select the Order Type$")
 		   public void Select_the_Order_Type() throws Throwable{
 			   Stylepage.Select_the_Order_Type();
@@ -261,11 +268,7 @@ public class Stylesteps {
 			   Stylepage.Click_on_the_cancel_button_in_create_style_master();
 
 		   }
-		   @And ("^Click on the Generate new order radio button$")
-		   public void Click_on_the_Generate_new_order_radio_button() throws Throwable{
-			   Stylepage.Click_on_the_Generate_new_order_radio_button();
-
-		   }
+		 
 		   @And ("^Click on the Add new tech pack button$")
 		   public void Click_on_the_Add_new_tech_pack_button() throws Throwable{
 			   Stylepage.Click_on_the_Add_new_tech_pack_button();
