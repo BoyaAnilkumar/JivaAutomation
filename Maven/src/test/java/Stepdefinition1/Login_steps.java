@@ -10,24 +10,24 @@ import io.cucumber.java.en.When;
 public class Login_steps {
 	LoginPage LoginPage = new LoginPage(); 
 	
-	
-	@When("^User navigates to Login page$")
-    	public void User_navigates_to_Login_page() throws Throwable {
-    		LoginPage.User_navigates_to_Login_page();
-    		
-      }
-
-	@Then("^User enters the username and password$")
-	public void User_enters_the_username_and_password() throws Throwable {
-		LoginPage.User_enters_the_username_and_password();
-	
-    }
-	
-	@And("^User click on the signIn$")
-	public void User_click_on_the_signIn() throws Throwable {
-		LoginPage.User_click_on_the_signIn();
-		
-   }
+//	
+//	@When("^User navigates to Login page$")
+//    	public void User_navigates_to_Login_page() throws Throwable {
+//    		LoginPage.User_navigates_to_Login_page();
+//    		
+//      }
+//
+//	@Then("^User enters the username and password$")
+//	public void User_enters_the_username_and_password() throws Throwable {
+//		LoginPage.User_enters_the_username_and_password();
+//	
+//    }
+//	
+//	@And("^User click on the signIn$")
+//	public void User_click_on_the_signIn() throws Throwable {
+//		LoginPage.User_click_on_the_signIn();
+//		
+//   }
 	 
 	@And("^User click on the user icon$")
 	public void User_click_on_the_user_icon() throws Throwable {

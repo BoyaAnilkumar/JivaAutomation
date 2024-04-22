@@ -39,22 +39,20 @@ public class LoginPage extends DriverFactory{
 public void User_navigates_to_Login_page() throws Throwable {
 driver.get(prop.getProperty("url"));
 utilities.webDriverWait(driver, SignIn);
-//driver.findElement(SignIn).click();
-//utilities.MinimumWait(driver);
+driver.findElement(SignIn).click();
+utilities.MinimumWait(driver);
 		
 }
 public void User_enters_the_username_and_password() throws Throwable {
 utilities.webDriverWait(driver, username);
-utilities.webDriverWait(driver, password);
-driver.findElement(username).sendKeys("Phanindra");
-utilities.MinimumWait(driver);
+driver.findElement(username).sendKeys("Admin");
 driver.findElement(password).sendKeys("Abcd@123");
 utilities.MediumWait(driver);
 	
 }
 	
 public void User_click_on_the_signIn() throws Throwable {
-utilities.webDriverWait(driver, SignIn);		
+utilities.webDriverWait(driver, password);		
 driver.findElement(SignIn).click();
 utilities.MaximumWait(driver);
 		
