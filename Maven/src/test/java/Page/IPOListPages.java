@@ -41,7 +41,7 @@ public class IPOListPages extends DriverFactory {
 	By Select_Buyer = By.xpath("//li[@aria-label='8 Seconds']");
 	By PDMerchant = By.xpath("//input[@class='ng-tns-c93-10 p-autocomplete-input p-inputtext p-component ng-star-inserted']");
 	By Select_PDMerchant = By.xpath("//span[text()='Phani L']");
-	By Merchant = By.xpath("//div[@class='p-element p-multiselect-label-container ng-tns-c92-11']");
+	By Merchant = By.xpath("//div[@class='p-element p-multiselect-label-container ng-tns-c92-65']");
 	By Select_Merchant = By.xpath("//li[@aria-label='Lavanya K']");
 	By AssMthYear = By.xpath("//input[@class='ng-tns-c81-22 p-inputtext p-component ng-star-inserted']");
 	By Select_AssMthYear = By.xpath("//span[text()=' Sep ']");

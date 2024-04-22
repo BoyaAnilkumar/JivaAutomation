@@ -3,11 +3,6 @@ Feature: Creating Potential Debit and Credit notes for the Qty and Rate mismatch
 
   @PotentialDebitNotes
   Scenario: Checking Request Approval Closed button properties
-  
-  
-  
-  @PotentialDebitNotes
-  Scenario: Creating a Debit Note
   When User navigates to Login page
   Given Login with the Fabric Manager
   And Click on the SignIn button
@@ -21,7 +16,7 @@ Feature: Creating Potential Debit and Credit notes for the Qty and Rate mismatch
   Then Click on the Submit button in the Reuest Approval Close window
   Then Verify the Successfiull msgn user navigates to Login page
   
-@PotentialDebitNotes
+  @PotentialDebitNotes
   Scenario: Creating a Debit Note
   When user navigates to Login page
   Given Login with the Fabric Manager
@@ -35,7 +30,9 @@ Feature: Creating Potential Debit and Credit notes for the Qty and Rate mismatch
   When Click on Submit button in the Dedit note form
   #Then Verify the success msg on submitting the Notes
   Then Verify the Successfull msg
-  #Then Verify whether the page is navigated to the Potential Debit Note screen
+  Then Verify whether the page is navigated to the Debit Note print form
+  When Click on the Cancel button in the Debit Note print form
+  When Verify whether the page is navigated to the Potential Debit Note screen
   
   @PotentialDebitNotes1
   Scenario: Creating a Credit Note
@@ -50,4 +47,13 @@ Feature: Creating Potential Debit and Credit notes for the Qty and Rate mismatch
   Given Enter Reason in the Credit Note form
   When Click on Submit button in the Credit note form
   Then Verify the Successfull msg
-  #Then Verify whether the page is navigated to the Potential Credit Note screen
+  Then Verify whether the page is navigated to the Credit Note print form
+  When Click on the Cancel button in the Credit Note print form
+  When Verify whether the page is navigated to the Potential Debit Note screen
+  
+  
+  
+  
+  
+  
+  

@@ -111,14 +111,14 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	
 	
 
-	public void Login_with_the_Production_Manager() {
-		driver.findElement(txtUN).clear();
-		driver.findElement(txtUN).sendKeys("Lokesh");
-//		utilities.MinimumWait(driver);
-		driver.findElement(txtPwd).clear();
-		driver.findElement(txtPwd).sendKeys("Abcd@123");
-		
-	}
+//	public void Login_with_the_Fabric_Manager() {
+//		driver.findElement(txtUN).clear();
+//		driver.findElement(txtUN).sendKeys("Lokesh");
+////		utilities.MinimumWait(driver);
+//		driver.findElement(txtPwd).clear();
+//		driver.findElement(txtPwd).sendKeys("Abcd@123");
+//		
+//	}
 	
 	
 	
@@ -270,7 +270,7 @@ public class RevisedMUWorkingPages extends DriverFactory{
 	public void Verify_the_Final_Fabric_Required_qty_value() throws Throwable {
 		utilities.MinimumWait(driver);
 		utilities.webDriverWait(driver,Fabricrequiredqty);
-		WebElement FabReqQty = driver.findElement(Fabricrequiredqty);
+		WebElement FabReqQty = driver.findElement(Fabricrequiredqty); 
 		if (!FabReqQty.isEnabled()) {
             System.out.println("Final Fabric Required Qty field is in enabled state.");
         } else {

@@ -47,7 +47,7 @@ public class Stylepage extends DriverFactory{
 		//Create Style Master Form
 		By Add 							= By.xpath("//button[@class='btn btn-primary btn-sm shadow-sm float-right ng-star-inserted']");
 		By PDMerchant 					= By.xpath("(//input[@placeholder='Search By Name/Email/Ph.no'])	[1]");
-		By selectPDMerchant 			= By.xpath("//li[text()=' Phani L - [ phani@gmail.com ] - [ 9854785623 ] ']|//li[@Class='p-ripple p-element p-autocomplete-item ng-tns-c93-12 ng-star-inserted']");
+		public By selectPDMerchant 			= By.xpath("(//li[contains(@class,'p-ripple p-element')])[1]");
 		By Buyerstyle 					= By.xpath("(//input[@placeholder='Enter Buyer Style'])[1]");
 		By Buyerfield 					= By.xpath("(//select[@formcontrolname='buyerId'])[1]");
 		By Buyerselect 					= By.xpath("(//option[text()=' Spin'])[1]");

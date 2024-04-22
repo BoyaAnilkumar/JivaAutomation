@@ -15,7 +15,7 @@ public class PotentialDebitNotePages extends DriverFactory {
 	DailyInInputpages DIIP = new DailyInInputpages();
 	Utilities utilities = new Utilities();
 	
-	By FabricStore = By.xpath("//span[text()='Fabric Store ']");
+	public By FabricStore = By.xpath("//span[text()='Fabric Store ']");
 	By FSDataEntry = By.xpath("(//span[text()='Data Entry'])[2]");
 	By PotentialNotes = By.xpath("//a[text()='Potential Debit Notes']");
 	By buttReqApprovalClose = By.xpath("(//a[@title='Request Approval to Close'])[1]");
@@ -27,13 +27,17 @@ public class PotentialDebitNotePages extends DriverFactory {
 	By Remarks = By.xpath("//textarea[@formcontrolname='approvalorRejectRemarks']");
 	By buttSubmit = By.xpath("(//button[@class='btn btn-primary'])[2]");
 	By Mandatorymsg = By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
-	By Successmsg = By.xpath("//h2[text()='Status Updated Successfully']");
+	public By Successmsg = By.xpath("//h2[text()='Status Updated Successfully']");
 	By navDebitNote = By.xpath("//h3[text()='Debit Note Details']");
 	By navCerditNote = By.xpath("//h3[text()='Credit Note Details']");
 	By Reason = By.xpath("//textarea[@formcontrolname='reason']");
 	By buttSubmit_notes = By.xpath("(//button[text()='Submit'])[1]");
 	By buttCancel_notes = By.xpath("//button[@id='closepagebutton']//i[1]");
 	By Debitsucesssg = By.xpath("//div[@role='alert']");
+	By PrtCreditnote = By.xpath("//h3[text()='Credit Note']");
+	By PrtDebitnote = By.xpath("//h3[text()='Debit Note']");
+	By buttPFCancel1 = By.xpath("//button[@id='closepagebutton']");
+	By buttPFCancel = By.id("closepagebutton");
 	
 	
 	
@@ -166,11 +170,11 @@ public class PotentialDebitNotePages extends DriverFactory {
 
 
 	public void Verify_whether_the_page_is_navigated_to_the_Potential_Debit_Note_screen() throws Throwable {
-		utilities.webDriverWait(driver, navDebitNote);
-		driver.findElement(navDebitNote).isDisplayed();
-		WebElement debit = driver.findElement(navDebitNote);
+		utilities.webDriverWait(driver, navPotentialNotes);
+		driver.findElement(navPotentialNotes).isDisplayed();
+		WebElement debit = driver.findElement(navPotentialNotes);
 		String debitnote = debit.getText();
-		System.out.println("Print the Debit Note page name : "+debitnote);
+		System.out.println("Print the screen name : "+debitnote);
  	}
 
 	public void Navigate_to_the_Potential_Credit_Note_screen() throws Throwable {
@@ -218,10 +222,36 @@ public class PotentialDebitNotePages extends DriverFactory {
 		driver.findElement(buttSubmit_notes).click();
 	}
 
-//	public void Verify_whether_the_page_is_navigated_to_the_Potential_Credite_Note_screen() {
-//		// TODO Auto-generated method stub
-//		
-//	}
+	public void Verify_whether_the_page_is_navigated_to_the_Debit_Note_print_form() throws Throwable {
+		utilities.webDriverWait(driver, PrtDebitnote);
+		driver.findElement(PrtDebitnote).isDisplayed();
+		WebElement debit = driver.findElement(PrtDebitnote);
+		String PFdebit = debit.getText();
+		System.out.println("Print the Debit Note Print Form name : "+PFdebit);
+	}
+
+	public void Click_on_the_Cancel_button_in_the_Debit_Note_print_form() throws Throwable {
+		utilities.webDriverWait(driver, buttPFCancel);
+		driver.findElement(buttPFCancel).click();
+	}
+
+	public void Verify_whether_the_page_is_navigated_to_the_Credit_Note_print_form() throws Throwable {
+		utilities.webDriverWait(driver, PrtCreditnote);
+		driver.findElement(PrtCreditnote).isDisplayed();
+		WebElement credit = driver.findElement(PrtCreditnote);
+		String PFcredit = credit.getText();
+		System.out.println("Print the Credit Note Print Form name: "+PFcredit);
+	}
+
+	public void Click_on_the_Cancel_button_in_the_Credit_Note_print_form() throws Throwable {
+		utilities.webDriverWait(driver, buttPFCancel);
+//		driver.findElement(buttPFCancel).click();
+		String tagName = driver.findElement(buttPFCancel).getTagName();
+		System.out.println("Tag Name: " + tagName);
+		driver.findElement(buttPFCancel).click();
+	}
+
+
 
 
 }

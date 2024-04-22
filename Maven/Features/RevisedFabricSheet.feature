@@ -26,10 +26,18 @@ Then Click on the Style ShowHide button for closing the menu list
 Then Verify the count of the Fabric records under the Fabric Details grid
 
 
-@RevisedFabricSheeet
+@RevisedFabricSheeet1
 Scenario: Adding a Fabric to the grid 
+When user navigates to Login page
+Given Login with the Fabric Manager
+And Click on the SignIn button
+When user navigates to Revised Fabric Sheet
+And click on Styles expansion
+And click on clear filter icon
+And Verify whether the user is able to Select an IPO from the Menu list
+Then Click on the Style ShowHide button for closing the menu list
 And click on Add data button
-Then Click on Cancel button
+#Then Click on Cancel button
 #Then Click on the Is Nominated textbox field
 #And Verify whether the Supplier Name field is changed to enbaled state or not
 #Then Click in the Supplier Name dropdown field
@@ -96,7 +104,7 @@ And Verify and Update the field value displayed in the Fabric Required For Sampl
 Then Click on the Update button in the Update Fabric Sheet form
 
 
-@RevisedFabricSheeet1
+@RevisedFabricSheeet
 Scenario: Importing functionality 
 When user navigates to Login page
 Given Login with Production Manager
@@ -125,6 +133,11 @@ Then Select the PDFDS option in the Import window
 And Verify whether mandatory validation msg is displayed or not on Onclick the Import button without selecting any values
 Then Verify whether the user is able to add the Selected Fabric on Importing 
 Then Verify whether the imported fabric is able to Submit to the Fabric Team or not
+
+
+@RevisedFabricSheeet1
+Scenario: Add different fabrics at a time
+
 
 
 

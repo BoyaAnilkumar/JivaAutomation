@@ -117,5 +117,21 @@ public class PotentialDebitNoteSteps {
 	 public void Click_on_Submit_button_in_the_Credit_note_form() throws Throwable {
 		 PDNP.Click_on_Submit_button_in_the_Credit_note_form();
 	 }
+	 @Then ("^Verify whether the page is navigated to the Debit Note print form$")
+	 public void Verify_whether_the_page_is_navigated_to_the_Debit_Note_print_form() throws Throwable {
+		 PDNP.Verify_whether_the_page_is_navigated_to_the_Debit_Note_print_form();
+	 }
+	 @When ("^Click on the Cancel button in the Debit Note print form$")
+	 public void Click_on_the_Cancel_button_in_the_Debit_Note_print_form() throws Throwable {
+		 PDNP.Click_on_the_Cancel_button_in_the_Debit_Note_print_form();
+	 }
+	 @Then ("^Verify whether the page is navigated to the Credit Note print form$")
+	 public void Verify_whether_the_page_is_navigated_to_the_Credit_Note_print_form() throws Throwable {
+		 PDNP.Verify_whether_the_page_is_navigated_to_the_Credit_Note_print_form();
+	 }
+	 @When ("^Click on the Cancel button in the Credit Note print form$")
+	 public void Click_on_the_Cancel_button_in_the_Credit_Note_print_form() throws Throwable {
+		 PDNP.Click_on_the_Cancel_button_in_the_Credit_Note_print_form();
+	 }
 
 }

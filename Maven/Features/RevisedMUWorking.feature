@@ -4,7 +4,7 @@ Feature: Adding the processes for a fabric
   @RevisedMUWorking1
   Scenario: Submit the fabric sheet details in Revised fabric sheet
     When user navigates to Login page
-    Given Login with the Production Manager
+    Given Login with the Fabric Manager
     And Click on the SignIn button
     Then Navigate to Revised Fabric Sheet Working screen
     And click on Styles expansion
@@ -26,7 +26,7 @@ Feature: Adding the processes for a fabric
   @RevisedMUWorking
   Scenario: Adding the Dyeing and Printing processes
     When user navigates to Login page
-    Given Login with the Production Manager
+    Given Login with the Fabric Manager
     And Click on the SignIn button
     Then Navigate to Revised Fabric Sheet Working screen
     Then Click_on_the_Styles_expansion

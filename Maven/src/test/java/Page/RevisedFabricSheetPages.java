@@ -5,10 +5,18 @@ import java.awt.AWTException;
 //import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.util.Collection;
+import java.util.List;
+import java.util.Properties;
+import java.util.Random;
 
 //import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import util.DriverFactory;
 import util.Utilities;
 
@@ -20,6 +28,7 @@ public class RevisedFabricSheetPages extends DriverFactory {
 	By btnSignIn = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
 	By Woven = By.xpath("//span[text()='Woven / knit']");
 	By Merchandising = By.xpath("(//span[text()='Merchandising '])[1]");
+	By DataEntry = By.xpath("(//span[text()='Data Entry'])[2]");
 	By GenerateFabricSheet = By.xpath("//span[text()='Generate Fabric Sheet']");
 	By RevisedFabricSheet = By.xpath("//a[text()='Revised Fabric Sheet']");
 	By buttStyleSH = By.xpath("//a[@id='sidebarCollapse']");
@@ -44,8 +53,12 @@ public class RevisedFabricSheetPages extends DriverFactory {
 	By IsNominated = By.xpath("//label[@for='nominated']");
 	By Supplier = By.xpath("//select[@formcontrolname='supplierId']");
 	By Select_Supplier = By.xpath("//option[@value='11']");
-	By FabricQuality = By.xpath("//input[@autocomplete='ad15c6b9940d']");
-	By SelectFabricQuality = By.xpath("//span[text()='Cotton denim']");
+	By FabricQuality = By.xpath("//ng-select[@bindvalue='fabricName']");
+	By SelectFabricQuality = By.xpath("(//div[@class='ng-dropdown-panel-items scroll-host']//div)[7]");
+	By selectFQ = By.xpath("//ng-dropdown-panel/div/div/div[@id='a8f320b6fd6b-0']");
+	By secFQ = By.id("ac705ae292a6-0");
+	By secFq = By.xpath("//div[@id='a3c157884dfc-0']");
+	//div[@id='ac705ae292a6-0']
 	//div[@id='a5a4c6782d00-1']/..
 	By scroll = By.xpath("//div[@class='ng-dropdown-panel-items scroll-host']");
 	By Content = By.xpath("//select[@formcontrolname='content']");
@@ -131,6 +144,8 @@ public class RevisedFabricSheetPages extends DriverFactory {
 		driver.findElement(Woven).click();
 		utilities.webDriverWait(driver, Merchandising);
 		driver.findElement(Merchandising).click();
+		utilities.webDriverWait(driver, DataEntry);
+		driver.findElement(DataEntry).click();
 		utilities.webDriverWait(driver, GenerateFabricSheet);
 		driver.findElement(GenerateFabricSheet).click();
 		utilities.webDriverWait(driver, RevisedFabricSheet);
@@ -272,11 +287,23 @@ public class RevisedFabricSheetPages extends DriverFactory {
 	public void Verify_whether_the_user_is_able_to_select_the_Fabric_Quality_from_the_dropdown_list_in_the_Fabric_Quality_field() throws Throwable {
 		utilities.webDriverWait(driver,FabricQuality);
 		driver.findElement(FabricQuality).click();
-		utilities.MediumWait(driver);
-		driver.findElement(SelectFabricQuality).click();
+//		utilities.MediumWait(driver);
+		
 		WebElement Quality = driver.findElement(SelectFabricQuality);
 		String QualityName = Quality.getText();
 		System.out.println("Selected Fabric Quality - " + QualityName);
+		driver.findElement(SelectFabricQuality).click();
+//		utilities.webDriverWait(driver,selectFQ);
+//		System.out.println("Test1");
+//		driver.findElement(selectFQ).click();
+//		System.out.println("Test2");
+//		driver.switchTo().frame("frameId");
+//		WebDriverWait wait = new WebDriverWait(driver, 5);
+//		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@class='ng-dropdown-panel-items scroll-host']//div)[3]")));
+//		element.click();
+//		System.out.println("FAbric Quality selected");
+
+		
 	}
 	public void Verify_whether_the_Contetnt_value_is_selected_or_not_for_the_selected_fabric() throws Throwable {
 		utilities.webDriverWait(driver,Content);
@@ -448,8 +475,8 @@ public class RevisedFabricSheetPages extends DriverFactory {
         } catch (AWTException e) {
             e.printStackTrace();
         }
-		utilities.webDriverWait(driver,buttEdit);
-		driver.findElement(buttEdit).click();
+//		utilities.webDriverWait(driver,buttEdit);
+//		driver.findElement(buttEdit).click();
 		utilities.webDriverWait(driver,buttSubmit);
 		driver.findElement(buttSubmit).click();
 	}
