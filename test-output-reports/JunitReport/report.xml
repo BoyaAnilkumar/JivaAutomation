@@ -1,41 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="85.752">
-    <testcase classname="feature to test Jiva design style master screen functionality" name="Add Style details by clicking on the style number" time="85.219">
-        <failure message="element click intercepted: Element &lt;label _ngcontent-ifn-c188=&quot;&quot; for=&quot;techPack&quot; class=&quot;custom-file-label form-control&quot;&gt;...&lt;/label&gt; is not clickable at point (951, 401). Other element would receive the click: &lt;input _ngcontent-ifn-c188=&quot;&quot; type=&quot;file&quot; id=&quot;techPack&quot; accept=&quot;.pdf&quot; class=&quot;custom-file-input&quot;&gt;&#10;  (Session info: chrome=123.0.6312.123)&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63954}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a7be9bec29efc5b1e3d744b1a7c3a731" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given User navigates to Login page..........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="143.355">
+    <testcase classname="feature to test Jiva design style initial details screen functionality" name="To Test submit order details in Style Initial details screen" time="142.904">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
 And Click on the Woven Module...............................................passed
-Then click on the PD Module.................................................passed
-And Click on Data Entry in PD Module........................................passed
-And click on the Style Master screen........................................passed
-And Click on Style number...................................................passed
-Then user navigates to Style details screen under the style master..........passed
-And Add New Techpack details................................................failed
-And Add Sampling Details....................................................skipped
-And Add Revise Estimates....................................................skipped
-
-StackTrace:
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <label _ngcontent-ifn-c188="" for="techPack" class="custom-file-label form-control">...</label> is not clickable at point (951, 401). Other element would receive the click: <input _ngcontent-ifn-c188="" type="file" id="techPack" accept=".pdf" class="custom-file-input">
-  (Session info: chrome=123.0.6312.123)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.123, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63954}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a7be9bec29efc5b1e3d744b1a7c3a731
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Page.Stylepage.Add_New_Techpack_details(Stylepage.java:864)
-	at Stepdefinition1.Stylesteps.Add_New_Techpack_details(Stylesteps.java:455)
-	at ✽.Add New Techpack details(file:///E:/Maven/Features/Stylemaster.feature:149)
-]]></failure>
+Then click on the Merchandising Module......................................passed
+And click on Data Entry dropdown............................................passed
+And click on the Style Initail Details screen...............................passed
+And Click on the Styles Expansion...........................................passed
+And Select IPO..............................................................passed
+And Verify whether the Combo field is prepopulated with data or not.........passed
+And Verify whether the Garment Size type field data is displayed or not.....passed
+Given User enter the data in PO Qty field...................................passed
+And Enter the data in IPO% field............................................passed
+And Click on the submit button..............................................passed
+And Verify the validation msg is displaying or not..........................passed
+]]></system-out>
     </testcase>
 </testsuite>

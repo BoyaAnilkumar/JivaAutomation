@@ -44,10 +44,10 @@ import util.Utilities;
 
 
 			By SelectIPO = By.xpath("//div[@class='nav flex-column nav-pills ng-star-inserted']");
-			By IPO = By.xpath("//b[text()='New0987']");
-			By Style =By.xpath("//b[text()='Retro style']");
-			By Buyer = By.xpath("//b[text()='Spin ']");
-			By Season = By.xpath("//b[text()='Holiday 2022']");
+			By IPO = By.xpath("//b[text()='220424']");
+			By Style =By.xpath("//b[text()='NINA PJ SHIRT']");
+			By Buyer = By.xpath("//b[text()='White Stuff ']");
+			By Season = By.xpath("//b[text()='Winter']");
 			By FileHandover = By.xpath("//input[@formcontrolname='handoverDate']");
 			By Add1 = By.xpath("(//button[@title='Add Combo'])[1]");
 			By Add2 = By.xpath("(//button[@title='Add Combo'])[2]");
@@ -66,7 +66,7 @@ import util.Utilities;
             By Savemsg = By.xpath("//h2[@class='swal2-title']");
             By Yes = By.xpath("//button[@class='swal2-confirm swal2-styled']");
             By No = By.xpath("//button[@class='swal2-cancel swal2-styled']");
-            By C1 = By.xpath("//option[text()=' CM2']");
+            By C1 = By.xpath("//option[text()=' CM3']");
             By petite1 = By.xpath("//option[text()=' Petite']");
             By POQty1 = By.xpath("(//input[@placeholder='Enter PO Qty'])[1]");
             By POQty2 = By.xpath("(//input[@placeholder='Enter PO Qty'])[2]");
@@ -165,7 +165,7 @@ import util.Utilities;
 				}
 				public void Search_the_IPO() throws Throwable {
 					utilities.webDriverWait(driver, SearchIPO);
-					driver.findElement(SearchIPO).sendKeys("IPO-004.2");
+					driver.findElement(SearchIPO).sendKeys("6591");
 					Thread.sleep(5000);
 					WebElement IPOname = driver.findElement(SearchIPO);
 					String ipon = IPOname.getAttribute("value");
@@ -187,6 +187,9 @@ import util.Utilities;
 				public void Select_IPO() throws Throwable {
 					utilities.webDriverWait(driver, SelectIPO );
 				    driver.findElement(SelectIPO).click();
+				    
+				    driver.findElement(Style_Ex).click();
+				    
 				    driver.findElement(SubmitOrderdetails).click();
 
 				}
@@ -257,6 +260,7 @@ import util.Utilities;
 				}
 				public void Enter_the_data_in_Combo2() throws Throwable {
 				utilities.webDriverWait(driver, Combo2);
+				
 				driver.findElement(Combo2).sendKeys("CM3");
 				Thread.sleep(5000);
 				WebElement IPOname = driver.findElement(Combo2);
@@ -296,9 +300,8 @@ import util.Utilities;
 				public void Click_on_the_Submit_Order_details_button() throws Throwable {
 					utilities.webDriverWait(driver, SubmitOrderdetails);
 					driver.findElement(SubmitOrderdetails).click();
-					utilities.MediumWait(driver);
-//					driver.findElement(Yes).click();
-//					utilities.MediumWait(driver);
+					utilities.MinimumWait(driver);
+
 				}
 				public void Verify_the_Alert_msg() throws Throwable {
                    
@@ -311,6 +314,7 @@ import util.Utilities;
 					} else {
 						System.out.println("Alert message is incorrect."+ ALM);
 					}
+					
 
 				}
 				public void Verify_the_Saved_msg() {
@@ -328,7 +332,7 @@ import util.Utilities;
 					 utilities.MediumWait(driver);
 					WebElement AlertMsg = driver.findElement(C1);
 					String Combo = AlertMsg.getText();
-					String expectedMessage = "CM2";
+					String expectedMessage = "CM3";
 					if (expectedMessage.equals(Combo)) {
 						System.out.println("Combo field data is displaying correct." + Combo);
 					} else {
@@ -404,7 +408,7 @@ import util.Utilities;
 					utilities.MediumWait(driver);
 					driver.findElement(Yes_button).click();
 					utilities.MediumWait(driver);
-//					driver.findElement(No_button).click();
+
 //					 WebElement DisplayValue = driver.findElement(Expected);
 //					 String AF = DisplayValue.getText();
 //					 String expectedMessage = "Expected Order Qty = 20000";
@@ -417,6 +421,7 @@ import util.Utilities;
 				public void Verify_the_validation_msg_is_displaying_or_not() {
 					WebElement AlertMsg = driver.findElement(A_S);
 					String SVM = AlertMsg.getText();
+					driver.findElement(A_S).click();
 					String expectedMessage = "IPO Order Quantity Details Saved Successfully";
 					if (expectedMessage.equals(SVM)) {
 						System.out.println("Alert message is correct." + SVM);

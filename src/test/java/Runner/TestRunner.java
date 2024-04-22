@@ -12,8 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-				  tags ="@Ad"
-				  		+ "StyleMaster1")
+				  tags ="@StyleInitialDetailsorderdetails")
 
 
 public class TestRunner {
