@@ -23,7 +23,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 	By Generate_Fabric = By.xpath("//span[text()='Generate Fabric Sheet']");
 	By New_FabricSheet = By.xpath("//a[text()='New Fabric Sheet ']");
 	By NewFabricSheet_Screen = By.xpath("//h3[@class='f_s_25 f_w_700 dark_text mr_30']");
-	By Styles = By.xpath("//a[@class='btn btn-collapse-style btn-sm']");
+	By StylesExpansion = By.xpath("//a[@type='button']");
 
 //Verifiying the filter functionality
 //	By FilterIcon = By.xpath("//button[@id='navbarDropdown3']");
@@ -185,13 +185,13 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			boolean ElementPresent = driver.findElements(NewFabricSheet_Screen).size()>0;
 			   if(ElementPresent) {
 				utilities.webDriverWait(driver,NewFabricSheet_Screen);
-	            utilities.MediumWait(driver);	
+	            utilities.MinimumWait(driver);	
 	            System.out.println("The Page is navigated to " + " New Fabric Sheet Screen");
 			   }
 			   else {
-				   utilities.webDriverWait(driver,Styles);
-				   driver.findElement(Styles).click();
-				   utilities.MediumWait(driver);	
+				   utilities.webDriverWait(driver,StylesExpansion);
+				   driver.findElement(StylesExpansion).click();
+				   utilities.MinimumWait(driver);	
 				   System.out.println("Click on the Styles Expansion");
 	}
 		
@@ -229,27 +229,32 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			driver.findElement(Select_IPO).click();
 			utilities.MinimumWait(driver);
 			
+			utilities.webDriverWait(driver,StylesExpansion);
+			   driver.findElement(StylesExpansion).click();
+			   utilities.MinimumWait(driver);	
+			   System.out.println("Click on the Styles Expansion");
+			
 		}
 
 		public void Enter_the_data_in_Bulk_Fabric_Deadline_field() throws Throwable {
 			utilities.webDriverWait(driver, Bulk_Fabric);
 			driver.findElement(Bulk_Fabric).sendKeys("4");
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			
 		}
 
 		public void Click_on_the_Fabric_Manager_Field() throws Throwable {
 			utilities.webDriverWait(driver, Fabric_Manager);
 			driver.findElement(Fabric_Manager).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Select_Manager).click();	
 		}
         public void Select_the_Fabric_Manager_Assistants() throws Throwable {
         	utilities.webDriverWait(driver, Fabric_Manager_Assistants);
 			driver.findElement(Fabric_Manager_Assistants).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Select_Manager_Assistants).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Assistants_Close).click();
 			
 		}
@@ -257,7 +262,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		public void Click_on_the_Add_New_Fabric_button() throws Throwable {
 			utilities.webDriverWait(driver, AddNew_Fabricbutton);
 			driver.findElement(AddNew_Fabricbutton).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			
 			try {
 	            Robot robot = new Robot();
@@ -286,7 +291,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			} else {
 				System.out.println("Alert message is incorrect."+ SVM);
 			}
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(GoToTop).click();
 		}
 
@@ -298,15 +303,19 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		public void User_select_the_Supplier_name() throws Throwable {
 			utilities.webDriverWait(driver, Supplier_Name);
 			driver.findElement(Supplier_Name).click();	
-			utilities.MediumWait(driver);
-			driver.findElement(Select_Supplier).click();	
+			utilities.MinimumWait(driver);
+			Robot selectsupplier = new Robot();
+			selectsupplier.keyPress(KeyEvent.VK_DOWN);
+			selectsupplier.keyPress(KeyEvent.VK_DOWN);selectsupplier.keyPress(KeyEvent.VK_DOWN);
+			selectsupplier.keyPress(KeyEvent.VK_ENTER);
+			utilities.MinimumWait(driver);
 			
 		}
 
 		public void Click_on_the_Fabric_Quality_field() throws Throwable {
 			utilities.webDriverWait(driver, Fabric_Quality);
 			driver.findElement(Fabric_Quality).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			
 			
 		}
@@ -317,26 +326,39 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			
 		}
 		public void Click_on_the_Content() throws Throwable {
+			
+			if(Content.equals(select_content)) {
+				System.out.println("Content is prepopulated");
+				
+			}
+			else {
 			driver.findElement(Content).click();
 		    driver.findElement(select_content).click();
 		    WebElement Content = driver.findElement(select_content);
 			String DisContent = Content.getText();
 			System.out.println("Displaying the selected Content value: " + DisContent);
+			}
            
 		}
 		public void Click_on_the_Count_Construction() throws Throwable {
+			
+			if(Construction.equals(Select_Construction)) {
+				System.out.println("Contruction is prepopulated");
+			}else {
 				driver.findElement(Construction).click();
-				utilities.MediumWait(driver);
+				utilities.MinimumWait(driver);
 				driver.findElement(Select_Construction).click();
 				WebElement Contruction = driver.findElement(Select_Construction);
 				String DisConstruction = Contruction.getText();
 				System.out.println("Displaying the selected Count Construction value: " + DisConstruction);
+			}
+				
 	   }
 		
 
 		public void Click_on_the_Required_GSM() throws Throwable {
 				driver.findElement(Required_GSM).click();
-				utilities.MediumWait(driver);
+				utilities.MinimumWait(driver);
 				driver.findElement(Select_GSM).click();
 				WebElement GSM = driver.findElement(Select_GSM);
 				String DisGSM = GSM.getText();
@@ -346,7 +368,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 
 		public void Click_on_the_Cuttable_Width() throws Throwable {
 				driver.findElement(Cuttable_Width).click();
-				utilities.MediumWait(driver);
+				utilities.MinimumWait(driver);
 				driver.findElement(Select_Width).click();
 				WebElement Width = driver.findElement(Select_Width);
 				String Diswidth = Width.getText();
@@ -356,7 +378,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		public void Select_the_Fabric_Use() throws Throwable {
 			utilities.webDriverWait(driver, Fabric_Use);
 			driver.findElement(Fabric_Use).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Select_Use).click();	
 			WebElement Use = driver.findElement(Select_Use);
 			String DisUse = Use.getText();
@@ -366,7 +388,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		public void Select_the_Colour() throws Throwable {
 			utilities.webDriverWait(driver, Colour);
 			driver.findElement(Colour).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Select_Colour).click();		
 			
 		}
@@ -374,7 +396,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		public void Select_the_Applicable_Combos() throws Throwable {
 			utilities.webDriverWait(driver, Applicable_Combos);
 			driver.findElement(Applicable_Combos).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Select_Combos).click();		
 			
 		}
@@ -457,7 +479,7 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		public void Click_on_the_Save_button() throws Throwable {
 			utilities.webDriverWait(driver, A_Submit);
 			driver.findElement(A_Submit).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(P_Save).click();
 			
 			
@@ -465,38 +487,38 @@ public class Newfabricsheet_Pages extends DriverFactory{
 
 		public void Click_on_the_Delete_Icon() throws Throwable {
 			utilities.webDriverWait(driver, Delete);
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(GoToTop).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Delete).click();
 			driver.findElement(Yes).click();
 		//	driver.findElement(No).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(P_Save).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 		}
 
 		public void Click_on_the_Import_Fabric_details_button() throws Throwable {
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Import).click();
 			
 		}
 
 		public void Select_the_Other_Radio_button() throws Throwable {
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(OtherIPO).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Import_Other_IPO).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Import_Other_SelectIPO).click();
 			
 			
 		}
 
 		public void Select_the_Fabric_name() throws Throwable {
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Import_Other_Fabric).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Import_SelectFabric).click();
 		}
 
@@ -506,63 +528,63 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		}
 
 		public void Click_on_the_Close_button() throws Throwable {
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Import_Close).click();
 			
 		}
 
 		public void Click_on_the_Import_button() throws Throwable {
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Import_button).click();
 		}
 		   public void Enter_the_data_after_import_the_fabric_details() throws Throwable {
 			Thread.sleep(5000);
 			driver.findElement(Fabric_Use).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Select_Use).click();	
 			
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Colour).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Select_Colour).click();
 			
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Applicable_Combos).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Select_Combos).click();	
 			
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Additional_per).clear();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Additional_per).sendKeys("20");
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Gar_Avg1).clear();
 			driver.findElement(Gar_Avg1).sendKeys("40");
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Gar_Avg2).clear();
 			driver.findElement(Gar_Avg2).sendKeys("50");
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Fabric_RequiredforSampling).clear();
 			driver.findElement(Fabric_RequiredforSampling).sendKeys("50");
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(A_Submit).click();
 		}
 
 		public void Select_the_WithIn_IPO_Radio_button() throws Throwable {
 			utilities.webDriverWait(driver, WithIn_IPO);
 			driver.findElement(WithIn_IPO).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(WithIn_Fabric).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Import_SelectFabric).click();
 		}
 
 		public void Select_the_PD_FDS_Radio_button() throws Throwable {
 			utilities.webDriverWait(driver, PD_FDS);
 			driver.findElement(PD_FDS).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(PDFds_Fabric).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Import_SelectFabric).click();
 			
 		}
@@ -576,11 +598,11 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		public void Click_on_the_Submit_to_Fabric_Team_button() throws Throwable {
 			utilities.webDriverWait(driver, Submit_FabricTeam);
 			driver.findElement(Submit_FabricTeam).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Submit_FabricTeam_Yes).click();
-//			utilities.MediumWait(driver);
+//			utilities.MinimumWait(driver);
 //			driver.findElement(Submit_FabricTeam_No).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			WebElement AlertMsg = driver.findElement(Submit_Validationmsg);
 			String Val = AlertMsg.getText();
 			String expectedMessage = "New Fabric Sheet Submitted Successfully";
@@ -606,12 +628,12 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			
 		}
 		public void Click_on_the_Edit_Icon() throws Throwable {
-//			utilities.MediumWait(driver);
+//			utilities.MinimumWait(driver);
 //			driver.findElement(GoToTop).click();
 			
 			utilities.webDriverWait(driver, Edit);
 			driver.findElement(Edit).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 //			try {
 //	            Robot robot = new Robot();
 //			
@@ -628,9 +650,9 @@ public class Newfabricsheet_Pages extends DriverFactory{
 //	            e.printStackTrace();
 //	        }
 //			driver.findElement(A_Submit).click();
-//			utilities.MediumWait(driver);
+//			utilities.MinimumWait(driver);
 //			driver.findElement(P_Save).click();
-//			utilities.MediumWait(driver);
+//			utilities.MinimumWait(driver);
 //			WebElement AlertMsg = driver.findElement(Val_Save);
 //			String SVM = AlertMsg.getText();
 //			String expectedMessage = "New Fabric Sheet Partially Updated Successfully";
@@ -643,23 +665,23 @@ public class Newfabricsheet_Pages extends DriverFactory{
 
 		public void Update_the_Supplier_Information() throws Throwable {
 			utilities.webDriverWait(driver, Update_Is_Nominated);
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Update_Is_Nominated).click();
 			utilities.webDriverWait(driver, Update_Supplier_Name);
 			driver.findElement(Update_Supplier_Name).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Update_Select_Supplier).click();
 		}
 
 		public void Update_the_Fabric_Quality() throws Throwable {
 			utilities.webDriverWait(driver, Update_Fabric_Quality);
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Update_Fabric_Quality).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Update_Select_Fabric).click();
 		}
 		public void Update_the_Content() throws Throwable {
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Update_Content).click();
 		    driver.findElement(Update_select_content).click();
 		    WebElement Content = driver.findElement(Update_select_content);
@@ -667,37 +689,37 @@ public class Newfabricsheet_Pages extends DriverFactory{
 			System.out.println("Displaying the selected Content value: " + DisContent);
 		}
 		public void Update_the_Count_construction() throws Throwable {
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
            driver.findElement(Update_Construction).click();
-		    utilities.MediumWait(driver);
+		    utilities.MinimumWait(driver);
 		   driver.findElement(Update_Select_Construction).click();
 			WebElement Contruction = driver.findElement(Update_Select_Construction);
 			String DisConstruction = Contruction.getText();
 			System.out.println("Displaying the selected Count Construction value: " + DisConstruction);
 		}	
 		public void Update_the_Required_GSM() throws Throwable {
-				utilities.MediumWait(driver);
+				utilities.MinimumWait(driver);
 				driver.findElement(Update_Required_GSM).click();
-				utilities.MediumWait(driver);
+				utilities.MinimumWait(driver);
 				driver.findElement(Update_Select_GSM).click();
 				WebElement GSM = driver.findElement(Update_Select_GSM);
 				String DisGSM = GSM.getText();
 				System.out.println("Displaying the selected Required GSM value: " + DisGSM);
 			}	
 			public void Update_the_Cuttable_Width() throws Throwable {
-				utilities.MediumWait(driver);
+				utilities.MinimumWait(driver);
 				driver.findElement(Update_Cuttable_Width).click();
-				utilities.MediumWait(driver);
+				utilities.MinimumWait(driver);
 				driver.findElement(Update_Select_Width).click();
 				WebElement Width = driver.findElement(Update_Select_Width);
 				String Diswidth = Width.getText();
 				System.out.println("Displaying the selected Cuttable width value: " + Diswidth);
 			}	
 			public void Update_the_Fabric_Use() throws Throwable {
-				utilities.MediumWait(driver);
+				utilities.MinimumWait(driver);
 				utilities.webDriverWait(driver, Fabric_Use);
 			   driver.findElement(Update_Fabric_Use).click();	
-			   utilities.MediumWait(driver);
+			   utilities.MinimumWait(driver);
 			   driver.findElement(Update_Select_Use).click();	
 			   WebElement Use = driver.findElement(Update_Select_Use);
 			   String DisUse = Use.getText();
@@ -708,13 +730,13 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		public void Update_the_Colour() throws Throwable {
 			utilities.webDriverWait(driver, Update_Colour);
 			driver.findElement(Update_Colour).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Update_Select_Colour).click();	
 		}
 		public void Update_the_Applicable_Combos() throws Throwable {
 			utilities.webDriverWait(driver, Update_Applicable_Combos);
 			driver.findElement(Update_Applicable_Combos).click();	
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(Update_Select_Combos).click();	
 			
 		}
@@ -759,9 +781,9 @@ public class Newfabricsheet_Pages extends DriverFactory{
 		public void Click_on_the_Submit_button() throws Throwable {
 			utilities.webDriverWait(driver, Update_A_Submit);
 			driver.findElement(Update_A_Submit).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			driver.findElement(P_Save).click();
-			utilities.MediumWait(driver);
+			utilities.MinimumWait(driver);
 			
 			
 		}

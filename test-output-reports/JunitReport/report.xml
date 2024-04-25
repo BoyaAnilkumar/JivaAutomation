@@ -1,21 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="143.355">
-    <testcase classname="feature to test Jiva design style initial details screen functionality" name="To Test submit order details in Style Initial details screen" time="142.904">
-        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="103.552">
+    <testcase classname="feature to test Jiva design New Fabric Sheet screen functionality" name="To Test the Import functionality" time="102.94">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class='ng-option-label ng-star-inserted']&quot;}&#10;  (Session info: chrome=124.0.6367.78)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64043}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e742f866cb1d6588b9e9424124244d5c&#10;*** Element info: {Using=xpath, value=//span[@class='ng-option-label ng-star-inserted']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User navigates to Login page..........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
 And Click on the Woven Module...............................................passed
 Then click on the Merchandising Module......................................passed
-And click on Data Entry dropdown............................................passed
-And click on the Style Initail Details screen...............................passed
+And Click on data entry in merchandising module.............................passed
+And Click on the Generate Fabric Sheet Module...............................passed
+And Click on the New Fabric Sheet Screen....................................passed
 And Click on the Styles Expansion...........................................passed
-And Select IPO..............................................................passed
-And Verify whether the Combo field is prepopulated with data or not.........passed
-And Verify whether the Garment Size type field data is displayed or not.....passed
-Given User enter the data in PO Qty field...................................passed
-And Enter the data in IPO% field............................................passed
-And Click on the submit button..............................................passed
-And Verify the validation msg is displaying or not..........................passed
-]]></system-out>
+And Select the IPO and Style................................................passed
+And Click on the Add New Fabric button......................................passed
+When Click on the Import Fabric details button..............................passed
+And Select the WithIn IPO Radio button......................................failed
+And Select the Other Radio button...........................................skipped
+And Select the PD FDS Radio button..........................................skipped
+And Select the Fabric name..................................................skipped
+And Select the IPO name.....................................................skipped
+And Click on the Close Icon in Import Fabric details page...................skipped
+And Click on the Close button...............................................skipped
+And Click on the Import button..............................................skipped
+When Enter the data after import the fabric details.........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='ng-option-label ng-star-inserted']"}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64043}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e742f866cb1d6588b9e9424124244d5c
+*** Element info: {Using=xpath, value=//span[@class='ng-option-label ng-star-inserted']}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.Newfabricsheet_Pages.Select_the_WithIn_IPO_Radio_button(Newfabricsheet_Pages.java:579)
+	at Stepdefinition1.Newfabricsheet_Steps.Select_the_WithIn_IPO_Radio_button(Newfabricsheet_Steps.java:192)
+	at ✽.Select the WithIn IPO Radio button(file:///E:/Maven/Features/NewFabricSheet.feature:138)
+]]></failure>
     </testcase>
 </testsuite>
