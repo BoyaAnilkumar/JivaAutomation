@@ -15,7 +15,7 @@ public class ViewFabricSheetWorkingpage extends DriverFactory {
 	
 	Utilities utilities = new Utilities();
 	
-	By FabricSourcing_Reports				=	By.xpath("(//span[text()='Reports'])[2]");
+	By FabricSourcing_Reports				=	By.xpath("//span[text()='Reports']");
 	By ViewFabricSheetWorking				=	By.xpath("//a[text()='View Fabric Sheet Working ']");
 	By Filter_Status						=	By.xpath("//select[@formcontrolname='statusId']");
 	By Select_Filter_Status					=	By.xpath("//option[text()=' Fabric Sheet Working Approved']");

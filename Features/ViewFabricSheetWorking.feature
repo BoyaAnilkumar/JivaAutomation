@@ -3,7 +3,7 @@ Feature: Feature to test Jiva design View Fabric Sheet Working Functionality
 
   @ViewFabricSheetWorking
   Scenario: To Test the user able to navigate to Fabric T and A Data entry screen
-    When User navigates to Login page
+    Given User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
     And Click on the Woven Module

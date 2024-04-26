@@ -1,38 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="103.552">
-    <testcase classname="feature to test Jiva design New Fabric Sheet screen functionality" name="To Test the Import functionality" time="102.94">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class='ng-option-label ng-star-inserted']&quot;}&#10;  (Session info: chrome=124.0.6367.78)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64043}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e742f866cb1d6588b9e9424124244d5c&#10;*** Element info: {Using=xpath, value=//span[@class='ng-option-label ng-star-inserted']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User navigates to Login page..........................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="103.023">
+    <testcase classname="Feature to test the Pending Po Report screen in Jiva Designs Application" name="Navigate to Pending PO report screen" time="102.482">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class='p-element p-multiselect-label-container ng-tns-c92-1']&quot;}&#10;  (Session info: chrome=124.0.6367.78)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 940f624da1ceef446476b3d932ae8960&#10;*** Element info: {Using=xpath, value=//div[@class='p-element p-multiselect-label-container ng-tns-c92-1']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User navigates to Login page..........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
 And Click on the Woven Module...............................................passed
-Then click on the Merchandising Module......................................passed
-And Click on data entry in merchandising module.............................passed
-And Click on the Generate Fabric Sheet Module...............................passed
-And Click on the New Fabric Sheet Screen....................................passed
-And Click on the Styles Expansion...........................................passed
-And Select the IPO and Style................................................passed
-And Click on the Add New Fabric button......................................passed
-When Click on the Import Fabric details button..............................passed
-And Select the WithIn IPO Radio button......................................failed
-And Select the Other Radio button...........................................skipped
-And Select the PD FDS Radio button..........................................skipped
-And Select the Fabric name..................................................skipped
-And Select the IPO name.....................................................skipped
-And Click on the Close Icon in Import Fabric details page...................skipped
-And Click on the Close button...............................................skipped
-And Click on the Import button..............................................skipped
-When Enter the data after import the fabric details.........................skipped
+Then Click on Fabric sourcing module........................................passed
+And click on Reports in fabric sourcing module..............................passed
+Then click on pending po reports............................................passed
+And click on Filter expansion and apply filters to get the data.............failed
+Then click on export button to download the data into excel sheet...........skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='ng-option-label ng-star-inserted']"}
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='p-element p-multiselect-label-container ng-tns-c92-1']"}
   (Session info: chrome=124.0.6367.78)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64043}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e742f866cb1d6588b9e9424124244d5c
-*** Element info: {Using=xpath, value=//span[@class='ng-option-label ng-star-inserted']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 940f624da1ceef446476b3d932ae8960
+*** Element info: {Using=xpath, value=//div[@class='p-element p-multiselect-label-container ng-tns-c92-1']}
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -46,9 +34,9 @@ Session ID: e742f866cb1d6588b9e9424124244d5c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.Newfabricsheet_Pages.Select_the_WithIn_IPO_Radio_button(Newfabricsheet_Pages.java:579)
-	at Stepdefinition1.Newfabricsheet_Steps.Select_the_WithIn_IPO_Radio_button(Newfabricsheet_Steps.java:192)
-	at ✽.Select the WithIn IPO Radio button(file:///E:/Maven/Features/NewFabricSheet.feature:138)
+	at Page.PendingPOreport_pages.click_on_Filter_expansion_and_apply_filters_to_get_the_data(PendingPOreport_pages.java:107)
+	at Stepdefinition1.PendingPOreport_Steps.click_on_Filter_expansion_and_apply_filters_to_get_the_data(PendingPOreport_Steps.java:18)
+	at ✽.click on Filter expansion and apply filters to get the data(file:///E:/Maven/Features/PendingPOreport.feature:13)
 ]]></failure>
     </testcase>
 </testsuite>
