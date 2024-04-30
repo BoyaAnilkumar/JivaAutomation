@@ -5,11 +5,7 @@ Feature: feature to test Jiva design login functionality
 Scenario: To Test the Jiva design Login page is opened
 When User navigates to Login page
 Then User enters the username and password
-
 And User click on the signIn
-
-And User click on the signIn 
-
 And User click on the user icon
 Then User click on the security
 @smokeTest2
