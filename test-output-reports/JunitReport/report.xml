@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="103.023">
-    <testcase classname="Feature to test the Pending Po Report screen in Jiva Designs Application" name="Navigate to Pending PO report screen" time="102.482">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class='p-element p-multiselect-label-container ng-tns-c92-1']&quot;}&#10;  (Session info: chrome=124.0.6367.78)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 940f624da1ceef446476b3d932ae8960&#10;*** Element info: {Using=xpath, value=//div[@class='p-element p-multiselect-label-container ng-tns-c92-1']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User navigates to Login page..........................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="202.915">
+    <testcase classname="Feature to test the Fabric Liability Details screen in Jiva Designs Application" name="Test the submit liability Information" time="190.419">
+        <failure message="element not interactable&#10;  (Session info: chrome=124.0.6367.91)&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61584}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5a53cfea101b8e6e10a2246963cec96b" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given User navigates to Login page..........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
 And Click on the Woven Module...............................................passed
 Then Click on Fabric sourcing module........................................passed
-And click on Reports in fabric sourcing module..............................passed
-Then click on pending po reports............................................passed
-And click on Filter expansion and apply filters to get the data.............failed
-Then click on export button to download the data into excel sheet...........skipped
+And click on Fabric liability details in menu...............................passed
+And click on Styles expansion...............................................passed
+Then Select the IPO in styles expansion in liability details................passed
+And click on add liability information button to navigate to the add fabric liability details.passed
+When Enter the data in mandatory fields for liability.......................failed
+And click on Add liability details button...................................skipped
+Then click on submit button.................................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='p-element p-multiselect-label-container ng-tns-c92-1']"}
-  (Session info: chrome=124.0.6367.78)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=124.0.6367.91)
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 940f624da1ceef446476b3d932ae8960
-*** Element info: {Using=xpath, value=//div[@class='p-element p-multiselect-label-container ng-tns-c92-1']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61584}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a53cfea101b8e6e10a2246963cec96b
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -30,13 +31,11 @@ Session ID: 940f624da1ceef446476b3d932ae8960
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.PendingPOreport_pages.click_on_Filter_expansion_and_apply_filters_to_get_the_data(PendingPOreport_pages.java:107)
-	at Stepdefinition1.PendingPOreport_Steps.click_on_Filter_expansion_and_apply_filters_to_get_the_data(PendingPOreport_Steps.java:18)
-	at ✽.click on Filter expansion and apply filters to get the data(file:///E:/Maven/Features/PendingPOreport.feature:13)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at Page.FabricLiabilityDetails_page.Enter_the_data_in_mandatory_fields_for_liability(FabricLiabilityDetails_page.java:126)
+	at Stepdefinition1.FabricLiabilityDetails_Steps.Enter_the_data_in_mandatory_fields_for_liability(FabricLiabilityDetails_Steps.java:51)
+	at ✽.Enter the data in mandatory fields for liability(file:///E:/Maven/Features/FabricLiabilityDetails.feature:40)
 ]]></failure>
     </testcase>
 </testsuite>

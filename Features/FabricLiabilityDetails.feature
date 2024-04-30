@@ -23,7 +23,7 @@ Feature: Feature to test the Fabric Liability Details screen in Jiva Designs App
     Then Select the IPO in styles expansion in liability details
     When IPO is selected verify the IPO details
     And Verify the data is displaying in the grid or not
-    And click on add liability details button to navigate to the add fabric liability details
+    And click on add liability information button to navigate to the add fabric liability details
     Then verify the Process details are displaying or not
     
     @FabricLiabilitydetails2
@@ -36,8 +36,9 @@ Feature: Feature to test the Fabric Liability Details screen in Jiva Designs App
     And click on Fabric liability details in menu
     And click on Styles expansion
     Then Select the IPO in styles expansion in liability details
-    And click on Add liability details button
+    And click on add liability information button to navigate to the add fabric liability details
     When Enter the data in mandatory fields for liability
+    And click on Add liability details button
     Then click on submit button
     
     @FabricLiabilitydetails3
