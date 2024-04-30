@@ -41,7 +41,7 @@ Feature: Feature to test the Fabric Liability Details screen in Jiva Designs App
     And click on Add liability details button
     Then click on submit button
     
-    @FabricLiabilitydetails3
+    @KnittingAndSpinningProcess
     Scenario: Test that data is displaying in expansion grid after successfull submit
     Given User navigates to Login page
     Then User enters the username and password
