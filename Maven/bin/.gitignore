@@ -1,0 +1,9 @@
+/target/
+/.metadata/
+<<<<<<< HEAD
+=======
+/test-output-reports/
+/src/
+>>>>>>> branch 'main' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+/Features/
+/Maven/

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="69.537">
+    <testcase classname="Daily Out Adding, Editing, Approoving and Deleting functionalites" name="Verifying the Print button fuctionality" time="69.034">
+        <system-out><![CDATA[When User navigates to Login page...........................................passed
+Given Login with the Fabric Manager.........................................passed
+And Click on the SignIn button..............................................passed
+Then Navigate to the Daily Out Data Entry screen............................passed
+Then Click on Print button..................................................passed
+Then Verify whether the page is navigated to the Print form.................passed
+Then Verify and print the data displayed in the Print form..................passed
+Then Click on the Close button in the Print form............................passed
+And Verify whether the page is navigated to the Daily Out Data Entry screen.passed
+]]></system-out>
+    </testcase>
+</testsuite>
