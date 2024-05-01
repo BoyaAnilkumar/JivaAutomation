@@ -57,18 +57,58 @@ public class FabricLiabilityDetails_Steps {
 	}
 	
 	@Then("^click on submit button$")
-	public void click_on_submit_button() {
+	public void click_on_submit_button() throws Throwable {
 		FLDP.click_on_submit_button();
 	}
 	
 	@Then("^click on expansion icon to view the data$")
-	public void click_on_expansion_icon_to_view_the_data() {
+	public void click_on_expansion_icon_to_view_the_data() throws Throwable {
 		FLDP.click_on_expansion_icon_to_view_the_data();
 	}
 	
 	@And("^verify that data is displaying in expansion grid or not$")
-	public void verify_that_data_is_displaying_in_expansion_grid_or_not() {
+	public void verify_that_data_is_displaying_in_expansion_grid_or_not() throws Throwable {
 		FLDP.verify_that_data_is_displaying_in_expansion_grid_or_not();
+	}
+	
+	@And("^click on edit icon in liability details$")
+	public void click_on_edit_icon_in_liability_details() throws Throwable {
+		FLDP.click_on_edit_icon_in_liability_details();
+	}
+	
+	@And("^verify that details are displaying in edit form$")
+	public void verify_that_details_are_displaying_in_edit_form() throws Throwable {
+		FLDP.verify_that_details_are_displaying_in_edit_form();
+	}
+	
+	@When("^enter the data in physical liability$")
+	public void enter_the_data_in_physical_liability() throws Throwable {
+		FLDP.enter_the_data_in_physical_liability();
+	}
+	
+	@Then("^submit the edit form$")
+	public void submit_the_edit_form() throws Throwable {
+		FLDP.submit_the_edit_form();
+	}
+	
+	@When("^user enter the mandatory fields with knitting and spinning process$")
+	public void user_enter_the_mandatory_fields_with_knitting_and_spinning_process() throws Throwable {
+		FLDP.user_enter_the_mandatory_fields_with_knitting_and_spinning_process();
+	}
+	
+	@And("^click on submit button to save the knitting and spinning process liability details$")
+	public void click_on_submit_button_to_save_the_knitting_and_spinning_process_liability_details() throws Throwable {
+		FLDP.click_on_submit_button_to_save_the_knitting_and_spinning_process_liability_details();
+	}
+	
+	@Then("^user enter the data for dyeing process and shiffly process in add liability$")
+	public void user_enter_the_data_for_dyeing_process_and_shiffly_process_in_add_liability() throws Throwable {
+		FLDP.user_enter_the_data_for_dyeing_process_and_shiffly_process_in_add_liability();
+	}
+	
+	@And("^submit the data and verify the process data in expansion grid$")
+	public void submit_the_data_and_verify_the_process_data_in_expansion_grid() throws Throwable {
+		FLDP.submit_the_data_and_verify_the_process_data_in_expansion_grid();
 	}
 	
 }

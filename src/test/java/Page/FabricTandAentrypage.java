@@ -62,8 +62,12 @@ public class FabricTandAentrypage extends DriverFactory {
 	
 	By Printing_Add_button					=	By.xpath("(//button[text()=' Add'])[2]");
 	
-	
-	
+	By Dyeing_Process_Add_Button			= By.xpath("(//div[@class='card ng-star-inserted'])[2]//button[@type='button']");
+	By Color_Standard 						= By.xpath("(//input[@placeholder='dd-mm'])[1]");
+	By Color_Standard_Remarks 				= By.xpath("(//input[@formcontrolname='remarks'])[1]");
+	By labdip_submission1					= By.xpath("(//input[@placeholder='dd-mm'])[2]");
+	By labdip_submission3					= By.xpath("(//input[@placeholder='dd-mm'])[3]");
+	By Other_Process_Add_Button 			= By.xpath("(//div[@class='card ng-star-inserted'])[3]//button[@type='button']");
 	
 	public void Click_on_the_T_and_A_Data_Entry_Screen() throws Throwable {
 		utilities.webDriverWait(driver, T_and_A_Data_Entry);
@@ -91,7 +95,7 @@ public class FabricTandAentrypage extends DriverFactory {
 
 	public void Search_and_select_the_IPO() throws Throwable {
 		utilities.webDriverWait(driver, Search_IPO);
-		driver.findElement(Search_IPO).sendKeys("IPO -Style-001");
+		driver.findElement(Search_IPO).sendKeys("230424");
 		utilities.MinimumWait(driver);
 		
 	}
@@ -118,11 +122,11 @@ public class FabricTandAentrypage extends DriverFactory {
 
 	public void Enter_Submission_date_for_quality_Test() throws Throwable {
 		utilities.webDriverWait(driver, Quality_Submission);
-		driver.findElement(Quality_Submission).sendKeys("1402");
+		driver.findElement(Quality_Submission).sendKeys("3004");
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, Quality_Approval);
-		driver.findElement(Quality_Approval).sendKeys("1502");
+		driver.findElement(Quality_Approval).sendKeys("3004");
 		utilities.MinimumWait(driver);
 		
 	}
@@ -142,11 +146,11 @@ public class FabricTandAentrypage extends DriverFactory {
 	public void Enter_Initial_Bulk_Submission_and_Approval_dates() throws Throwable {
 		
 		utilities.webDriverWait(driver, Initialbulk_submission);
-		driver.findElement(Initialbulk_submission).sendKeys("1402");
+		driver.findElement(Initialbulk_submission).sendKeys("0505");
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, Initialbulk_Approval);
-		driver.findElement(Initialbulk_Approval).sendKeys("1502");
+		driver.findElement(Initialbulk_Approval).sendKeys("0505");
 		utilities.MinimumWait(driver);
 		
 	}
@@ -172,12 +176,12 @@ public class FabricTandAentrypage extends DriverFactory {
 		utilities.webDriverWait(driver, Bulk_Exmill_date);
 		driver.findElement(Bulk_Exmill_date).click();
 		utilities.MinimumWait(driver);
-		driver.findElement(Bulk_Exmill_date).sendKeys("1702");
+		driver.findElement(Bulk_Exmill_date).sendKeys("1005");
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, Bulk_In_House_date);
 		driver.findElement(Bulk_In_House_date).click();
-		driver.findElement(Bulk_In_House_date).sendKeys("1802");
+		driver.findElement(Bulk_In_House_date).sendKeys("1105");
 		utilities.MinimumWait(driver);
 		
 		
@@ -241,13 +245,13 @@ public class FabricTandAentrypage extends DriverFactory {
 		utilities.webDriverWait(driver, Quality_Submission_2);
 		driver.findElement(Quality_Submission_2).click();
 		utilities.MinimumWait(driver);
-		driver.findElement(Quality_Submission_2).sendKeys("1502");
+		driver.findElement(Quality_Submission_2).sendKeys("0105");
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, Quality_Approval_2);
 		driver.findElement(Quality_Approval_2).click();
 		utilities.MinimumWait(driver);
-		driver.findElement(Quality_Approval_2).sendKeys("1602");
+		driver.findElement(Quality_Approval_2).sendKeys("0305");
 		utilities.MinimumWait(driver);
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -286,13 +290,13 @@ public class FabricTandAentrypage extends DriverFactory {
 		utilities.webDriverWait(driver, Initialbulk_submission_2);
 		driver.findElement(Initialbulk_submission_2).click();
 		utilities.MinimumWait(driver);
-		driver.findElement(Initialbulk_submission_2).sendKeys("1802");
+		driver.findElement(Initialbulk_submission_2).sendKeys("1605");
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, Initialbulk_Approval_2);
 		driver.findElement(Initialbulk_Approval_2).click();
 		utilities.MinimumWait(driver);
-		driver.findElement(Initialbulk_Approval_2).sendKeys("1902");
+		driver.findElement(Initialbulk_Approval_2).sendKeys("2005");
 		utilities.MinimumWait(driver);
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -336,13 +340,13 @@ public class FabricTandAentrypage extends DriverFactory {
 		utilities.webDriverWait(driver, Bulk_Exmill_date_2);
 		driver.findElement(Bulk_Exmill_date_2).click();
 		utilities.MediumWait(driver);
-		driver.findElement(Bulk_Exmill_date_2).sendKeys("2102");
+		driver.findElement(Bulk_Exmill_date_2).sendKeys("2505");
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, Bulk_In_House_date_2);
 		driver.findElement(Bulk_In_House_date_2).click();
 		utilities.MinimumWait(driver);
-		driver.findElement(Bulk_In_House_date_2).sendKeys("2202");
+		driver.findElement(Bulk_In_House_date_2).sendKeys("2605");
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, Bulk_Remarks_2);
@@ -454,8 +458,25 @@ public class FabricTandAentrypage extends DriverFactory {
 		Thread.sleep(5000);
 		driver.findElement(Bulk_In_House_date).clear();
 		Thread.sleep(5000);
-		driver.findElement(Bulk_In_House_date).sendKeys("2102");
+		driver.findElement(Bulk_In_House_date).sendKeys("2205");
 		utilities.MinimumWait(driver);
+		
+	}
+
+
+	public void Click_on_Add_button_for_Dyeing_process() throws Throwable {
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,850)");
+		utilities.webDriverWait(driver, Dyeing_Process_Add_Button);
+		driver.findElement(Dyeing_Process_Add_Button).click();
+		utilities.MaximumWait(driver);
+		
+		driver.findElement(Color_Standard).click(); Thread.sleep(2000);
+		driver.findElement(Color_Standard).sendKeys("0205"); Thread.sleep(1000);
+		driver.findElement(Color_Standard_Remarks).click(); Thread.sleep(1000);
+		driver.findElement(Color_Standard_Remarks).sendKeys("Test Main"); Thread.sleep(1000);
+		
 		
 	}
 

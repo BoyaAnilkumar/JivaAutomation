@@ -3,6 +3,7 @@ package Stepdefinition1;
 import Page.FabricTandAentrypage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class FabricTandAentry_Steps {
@@ -167,5 +168,10 @@ public class FabricTandAentry_Steps {
 	@And("^Change the InHousedate of Bulk Lot In house$")
 	public void Change_the_InHousedate_of_Bulk_Lot_In_house() throws Throwable {
 		FabricTandAentrypage.Change_the_InHousedate_of_Bulk_Lot_In_house();
+	}
+	
+	@Then("^Click on Add button for Dyeing process$")
+	public void Click_on_Add_button_for_Dyeing_process() throws Throwable {
+		FabricTandAentrypage.Click_on_Add_button_for_Dyeing_process();
 	}
 }

@@ -3,7 +3,7 @@ Feature: Feature to test Jiva design Fabric T and A Data Entry screen functional
 
   @FabricTandAdataEntry
   Scenario: To Test the user able to navigate to Fabric T and A Data entry screen
-    When User navigates to Login page
+    Given User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
     And Click on the Woven Module
@@ -13,7 +13,7 @@ Feature: Feature to test Jiva design Fabric T and A Data Entry screen functional
 
   @FabricTandAdataEntryforGreigeProcess
   Scenario: To Test the user able to navigate to Fabric T and A Data entry screen
-    When User navigates to Login page
+    Given User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
     And Click on the Woven Module
@@ -44,7 +44,7 @@ Feature: Feature to test Jiva design Fabric T and A Data Entry screen functional
 		 
 	@FabricTandAtestchange
 	Scenario: To Test that user able to change the status of Tests from Expected to Another
-		When User navigates to Login page
+		Given User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
     And Click on the Woven Module
@@ -74,7 +74,7 @@ Feature: Feature to test Jiva design Fabric T and A Data Entry screen functional
 		
 	@FabricTandAdataEntryrevised
   Scenario: To Test the griege process with existing data and enter new data
-    When User navigates to Login page
+    Given User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
     And Click on the Woven Module
@@ -96,6 +96,22 @@ Feature: Feature to test Jiva design Fabric T and A Data Entry screen functional
 		When click on the save button
 		
 		
+	@FabricTandAdataEntryDyeing
+	Scenario: To Test the Dyeing Process functionality
+	Given User navigates to Login page
+    Then User enters the username and password
+    And User click on the signIn
+    And Click on the Woven Module
+    Then Click on Fabric sourcing module
+    And click on Data Entry in fabric sourcing module
+    And Click on the T and A Data Entry Screen
+    And Click on the Styles Expansion
+    And Click on the Filter Icon
+    And Search and select the IPO
+    And Click on the Apply button
+    And Select the IPO and Style
+    Then Click on Add button for Dyeing process
+    
 		
 		
 		

@@ -44,7 +44,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -54,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Apr 30, 2024 11:30:44 am</span>
+			<span class='label blue darken-3 suite-start-time'>May 1, 2024 06:00:21 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -70,8 +69,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -84,7 +81,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@FeatureGroup</a></li>
-					<li><a href='#'>@FabricLiabilitydetails2</a></li>
+					<li><a href='#'>@FabricTandAdataEntryDyeing</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -125,10 +122,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -139,10 +136,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -155,12 +152,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='86.364%'><span class='strong'>19</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>26</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='4.545%'>1</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>2</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -178,11 +175,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Feature to test the Fabric Liability Details screen in Jiva Designs Application</span>
-						<span class='test-time'>Apr 30, 2024 11:30:49 am</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>Feature to test Jiva design Fabric T and A Data Entry screen functionality</span>
+						<span class='test-time'>May 1, 2024 06:00:30 pm</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -191,14 +188,14 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
 	<div class='category-list'>
 		<span class='category label'>@FeatureGroup</span>
-		<span class='category label'>@FabricLiabilitydetails2</span>
+		<span class='category label'>@FabricTandAdataEntryDyeing</span>
 	</div>
-	<span class='duration right label'>0h 3m 2s+835ms</span>
+	<span class='duration right label'>0h 1m 30s+696ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Test the submit liability Information</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: To Test the Dyeing Process functionality</div>
 	</div>
 	<ul class='steps'>
 		<li test-id='4' class='node given pass' status='pass'>
@@ -257,7 +254,7 @@
 			<div class="node-step"></div>
 		</li>
 		<li test-id='14' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.FabricLiabilityDetails_Steps.click_on_Fabric_liability_details_in_menu()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on Fabric liability details in menu</div>
+			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.click_on_Data_Entry_in_fabric_sourcing_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on Data Entry in fabric sourcing module</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='15' class='node * pass' status='pass'>
@@ -268,7 +265,7 @@
 			<div class="node-step"></div>
 		</li>
 		<li test-id='16' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.RevisedFabricSheetSteps.click_on_Styles_expansion()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on Styles expansion</div>
+			<div class="step-name" title="Stepdefinition1.FabricTandAentry_Steps.Click_on_the_T_and_A_Data_Entry_Screen()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the T and A Data Entry Screen</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='17' class='node * pass' status='pass'>
@@ -278,8 +275,8 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='18' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.FabricLiabilityDetails_Steps.Select_the_IPO_in_styles_expansion_in_liability_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Select the IPO in styles expansion in liability details</div>
+		<li test-id='18' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.StyleInitial_Steps.Click_on_the_Styles_Expansion()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Styles Expansion</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='19' class='node * pass' status='pass'>
@@ -290,7 +287,7 @@
 			<div class="node-step"></div>
 		</li>
 		<li test-id='20' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.FabricLiabilityDetails_Steps.click_on_add_liability_information_button_to_navigate_to_the_add_fabric_liability_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on add liability information button to navigate to the add fabric liability details</div>
+			<div class="step-name" title="Stepdefinition1.StyleInitial_Steps.Click_on_the_Filter_Icon()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Filter Icon</div>
 			<div class="node-step"></div>
 		</li>
 		<li test-id='21' class='node * pass' status='pass'>
@@ -300,30 +297,9 @@
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='22' class='node when fail' status='fail'>
-			<div class="step-name" title="Stepdefinition1.FabricLiabilityDetails_Steps.Enter_the_data_in_mandatory_fields_for_liability()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When Enter the data in mandatory fields for liability</div>
-			<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=124.0.6367.91)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61584}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a53cfea101b8e6e10a2246963cec96b
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at Page.FabricLiabilityDetails_page.Enter_the_data_in_mandatory_fields_for_liability(FabricLiabilityDetails_page.java:126)
-	at Stepdefinition1.FabricLiabilityDetails_Steps.Enter_the_data_in_mandatory_fields_for_liability(FabricLiabilityDetails_Steps.java:51)
-	at ✽.Enter the data in mandatory fields for liability(file:///E:/Maven/Features/FabricLiabilityDetails.feature:40)
-</textarea>
+		<li test-id='22' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.FabricTandAentry_Steps.Search_and_select_the_IPO()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Search and select the IPO</div>
+			<div class="node-step"></div>
 		</li>
 		<li test-id='23' class='node * pass' status='pass'>
 			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
@@ -332,13 +308,38 @@ Session ID: 5a53cfea101b8e6e10a2246963cec96b
 			</ul>
 			<div class="node-step"></div>
 		</li>
-		<li test-id='24' class='node and skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.FabricLiabilityDetails_Steps.click_on_Add_liability_details_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>And click on Add liability details button</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='24' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.StyleInitial_Steps.Click_on_the_Apply_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Apply button</div>
+			<div class="node-step"></div>
 		</li>
-		<li test-id='26' class='node then skip' status='skip'>
-			<div class="step-name" title="Stepdefinition1.FabricLiabilityDetails_Steps.click_on_submit_button()"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>Then click on submit button</div>
-			<div class="node-step">Step skipped</div>
+		<li test-id='25' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded11.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='26' class='node and pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.Newfabricsheet_Steps.Select_the_IPO_and_Style()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the IPO and Style</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='27' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded12.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='28' class='node then pass' status='pass'>
+			<div class="step-name" title="Stepdefinition1.FabricTandAentry_Steps.Click_on_Add_button_for_Dyeing_process()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Add button for Dyeing process</div>
+			<div class="node-step"></div>
+		</li>
+		<li test-id='29' class='node * pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
+			<ul class='screenshots right'>
+				<li><a data-featherlight="image" href="../screenshots/embedded13.png"><i class='material-icons'>panorama</i></a></li>
+			</ul>
+			<div class="node-step"></div>
 		</li>
 	</ul>
 </div>
@@ -386,13 +387,13 @@ Session ID: 5a53cfea101b8e6e10a2246963cec96b
 					<div class='category-heading'>
 						<span class='category-name'>@FeatureGroup</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -406,14 +407,14 @@ Session ID: 5a53cfea101b8e6e10a2246963cec96b
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 30, 2024 11:30:49 am</td>
-										<td class='linked' test-id='1'>Feature to test the Fabric Liability Details screen in Jiva Designs Application</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>May 1, 2024 06:00:30 pm</td>
+										<td class='linked' test-id='1'>Feature to test Jiva design Fabric T and A Data Entry screen functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Apr 30, 2024 11:30:49 am</td>
-										<td class='linked' test-id='2'>Test the submit liability Information</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>May 1, 2024 06:00:30 pm</td>
+										<td class='linked' test-id='2'>To Test the Dyeing Process functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -422,15 +423,15 @@ Session ID: 5a53cfea101b8e6e10a2246963cec96b
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@FabricLiabilitydetails2</span>
+						<span class='category-name'>@FabricTandAdataEntryDyeing</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -444,9 +445,9 @@ Session ID: 5a53cfea101b8e6e10a2246963cec96b
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 30, 2024 11:30:49 am</td>
-										<td class='linked' test-id='2'>Test the submit liability Information</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td>May 1, 2024 06:00:30 pm</td>
+										<td class='linked' test-id='2'>To Test the Dyeing Process functionality</td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -462,83 +463,7 @@ Session ID: 5a53cfea101b8e6e10a2246963cec96b
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Apr 30, 2024 11:31:53 am</td>
-										<td class='linked' test-id='22'>When Enter the data in mandatory fields for liability</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=124.0.6367.91)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 123.0.6312.86 (9b72c47a0536..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61584}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5a53cfea101b8e6e10a2246963cec96b
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
-	at Page.FabricLiabilityDetails_page.Enter_the_data_in_mandatory_fields_for_liability(FabricLiabilityDetails_page.java:126)
-	at Stepdefinition1.FabricLiabilityDetails_Steps.Enter_the_data_in_mandatory_fields_for_liability(FabricLiabilityDetails_Steps.java:51)
-	at ✽.Enter the data in mandatory fields for liability(file:///E:/Maven/Features/FabricLiabilityDetails.feature:40)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -558,25 +483,25 @@ Session ID: 5a53cfea101b8e6e10a2246963cec96b
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>22</div>
+					<div class='panel-lead'>26</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 30, 2024 11:30:44 am</div>
+					<div class='panel-lead'>May 1, 2024 06:00:21 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 30, 2024 11:34:16 am</div>
+			 		<div class='panel-lead'>May 1, 2024 06:02:02 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 3m 31s+442ms</div>
+					<div class='panel-lead'>0h 1m 41s+71ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -593,20 +518,20 @@ Session ID: 5a53cfea101b8e6e10a2246963cec96b
 						</tr>
 						<tr>
 							<td>@FeatureGroup</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									50%
 							</td>
 						</tr>
 						<tr>
-							<td>@FabricLiabilitydetails2</td>
-							<td>0</td>
+							<td>@FabricTandAdataEntryDyeing</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 					</table>
@@ -621,38 +546,38 @@ Session ID: 5a53cfea101b8e6e10a2246963cec96b
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 1,
-				grandChildCount: 22,
-				passGrandChild: 19,
-				failGrandChild: 1,
+				exceptionsChild: 0,
+				grandChildCount: 26,
+				passGrandChild: 26,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 2,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 3,
+				exceptionsGrandChild: 0,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Feature to test the Fabric Liability Details screen in Jiva Designs Application":182.835
+			        "Feature to test Jiva design Fabric T and A Data Entry screen functionality":90.696
 			};
 		</script>
 	
