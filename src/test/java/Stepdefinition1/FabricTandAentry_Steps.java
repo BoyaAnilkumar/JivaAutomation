@@ -174,4 +174,9 @@ public class FabricTandAentry_Steps {
 	public void Click_on_Add_button_for_Dyeing_process() throws Throwable {
 		FabricTandAentrypage.Click_on_Add_button_for_Dyeing_process();
 	}
+	
+	@And("^Enter the data for Dyeing process in add form$")
+	public void Enter_the_data_for_Dyeing_process_in_add_form() throws Throwable {
+		FabricTandAentrypage.Enter_the_data_for_Dyeing_process_in_add_form();
+	}
 }

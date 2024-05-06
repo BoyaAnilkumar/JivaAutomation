@@ -61,12 +61,26 @@ public class FabricTandAentrypage extends DriverFactory {
 	By Select_Bulk_LotInHouse				=	By.xpath("//option[text()='Done ']");
 	
 	By Printing_Add_button					=	By.xpath("(//button[text()=' Add'])[2]");
-	
+	//Dyeing process xpaths
 	By Dyeing_Process_Add_Button			= By.xpath("(//div[@class='card ng-star-inserted'])[2]//button[@type='button']");
 	By Color_Standard 						= By.xpath("(//input[@placeholder='dd-mm'])[1]");
 	By Color_Standard_Remarks 				= By.xpath("(//input[@formcontrolname='remarks'])[1]");
 	By labdip_submission1					= By.xpath("(//input[@placeholder='dd-mm'])[2]");
-	By labdip_submission3					= By.xpath("(//input[@placeholder='dd-mm'])[3]");
+	By labdip_Approval1						= By.xpath("(//input[@placeholder='dd-mm'])[3]");
+	By labdip_Remarks1						= By.xpath("(//input[@formcontrolname='remarks'])[2]");
+	By labdip_submission2					= By.xpath("(//input[@placeholder='dd-mm'])[4]");
+	By labdip_Approval2						= By.xpath("(//input[@placeholder='dd-mm'])[5]");
+	By labdip_Remarks2						= By.xpath("(//input[@formcontrolname='remarks'])[2]");
+	By Initial_Bulk_Submission				= By.xpath("(//input[@placeholder='dd-mm'])[6]");
+	By Initial_Bulk_Approval				= By.xpath("(//input[@placeholder='dd-mm'])[7]");
+	By Bulk_Exmill							= By.xpath("(//input[@placeholder='dd-mm'])[8]");
+	By Bulk_Inhouse							= By.xpath("(//input[@placeholder='dd-mm'])[9]");
+	
+	
+	
+	
+	
+	//Other process xpaths
 	By Other_Process_Add_Button 			= By.xpath("(//div[@class='card ng-star-inserted'])[3]//button[@type='button']");
 	
 	public void Click_on_the_T_and_A_Data_Entry_Screen() throws Throwable {
@@ -472,10 +486,43 @@ public class FabricTandAentrypage extends DriverFactory {
 		driver.findElement(Dyeing_Process_Add_Button).click();
 		utilities.MaximumWait(driver);
 		
+		
+		
+	}
+
+
+	public void Enter_the_data_for_Dyeing_process_in_add_form() throws Throwable {
+		utilities.webDriverWait(driver, Color_Standard);
 		driver.findElement(Color_Standard).click(); Thread.sleep(2000);
 		driver.findElement(Color_Standard).sendKeys("0205"); Thread.sleep(1000);
 		driver.findElement(Color_Standard_Remarks).click(); Thread.sleep(1000);
 		driver.findElement(Color_Standard_Remarks).sendKeys("Test Main"); Thread.sleep(1000);
+		driver.findElement(labdip_submission1).click(); Thread.sleep(1000);
+		driver.findElement(labdip_submission1).sendKeys("0205"); Thread.sleep(1000);
+		driver.findElement(labdip_Approval1).click(); Thread.sleep(1000);
+		driver.findElement(labdip_Approval1).sendKeys("0305"); Thread.sleep(1000);
+		driver.findElement(labdip_submission2).click(); Thread.sleep(1000);
+		driver.findElement(labdip_submission2).sendKeys("0205"); Thread.sleep(1000);
+		driver.findElement(labdip_Approval2).click(); Thread.sleep(1000);
+		driver.findElement(labdip_Approval2).sendKeys("0305"); Thread.sleep(1000);
+		driver.findElement(labdip_Remarks1).click();
+		driver.findElement(labdip_Remarks1).sendKeys("Test1");
+		driver.findElement(labdip_Remarks2).click();
+		driver.findElement(labdip_Remarks2).sendKeys("Test2");Thread.sleep(1000);
+		driver.findElement(Initial_Bulk_Submission).click();
+		driver.findElement(Initial_Bulk_Submission).sendKeys("0405"); Thread.sleep(1000);
+		driver.findElement(Initial_Bulk_Approval).click();
+		driver.findElement(Initial_Bulk_Approval).sendKeys("0505"); Thread.sleep(1000);
+		driver.findElement(Bulk_Quantity).click();
+		driver.findElement(Bulk_Quantity).sendKeys("5000"); Thread.sleep(1000);
+		driver.findElement(Bulk_Exmill).click();
+		driver.findElement(Bulk_Exmill).sendKeys("0605");
+		driver.findElement(Bulk_Inhouse).click();
+		driver.findElement(Bulk_Inhouse).sendKeys("0705"); Thread.sleep(1000);
+		
+		utilities.webDriverWait(driver, Save);
+		driver.findElement(Save).click();
+		Thread.sleep(1000);
 		
 		
 	}

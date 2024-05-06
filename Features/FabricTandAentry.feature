@@ -111,6 +111,7 @@ Feature: Feature to test Jiva design Fabric T and A Data Entry screen functional
     And Click on the Apply button
     And Select the IPO and Style
     Then Click on Add button for Dyeing process
+    And Enter the data for Dyeing process in add form
     
 		
 		
