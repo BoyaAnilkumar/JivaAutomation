@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="118.426">
-    <testcase classname="Feature to test Jiva design Fabric T and A Data Entry screen functionality" name="To Test the Dyeing Process functionality" time="118.001">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="193.724">
+    <testcase classname="Create out challans for the Buying house" name="Navigate to Add Out Challan form submit Out challan for supplier with item production" time="98.148">
         <system-out><![CDATA[Given User navigates to Login page..........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
 And Click on the Woven Module...............................................passed
-Then Click on Fabric sourcing module........................................passed
-And click on Data Entry in fabric sourcing module...........................passed
-And Click on the T and A Data Entry Screen..................................passed
-And Click on the Styles Expansion...........................................passed
-And Click on the Filter Icon................................................passed
-And Search and select the IPO...............................................passed
-And Click on the Apply button...............................................passed
-And Select the IPO and Style................................................passed
-Then Click on Add button for Dyeing process.................................passed
-And Enter the data for Dyeing process in add form...........................passed
+Then Click on Challans sub module...........................................passed
+And Click on Out Challans in menu...........................................passed
+Then user clicked on Add button.............................................passed
+And Select the source as supplier...........................................passed
+And Select the Supplier Name"Anjani fabric".................................passed
+And Select the date from datepicker.........................................passed
+Then Select the Challan type"PreProduction".................................passed
+And Enter the data in item textfield"buttons"...............................passed
+And Enter quantity"5000"....................................................passed
+And Enter data in Description textfield"Test1"..............................passed
+Then user clicked on save button............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Create out challans for the Buying house" name="Navigate to Add Out Challan form submit Out challan for supplier with item production 2" time="95.053">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Then User enters the username and password..................................passed
+And User click on the signIn................................................passed
+And Click on the Woven Module...............................................passed
+Then Click on Challans sub module...........................................passed
+And Click on Out Challans in menu...........................................passed
+Then user clicked on Add button.............................................passed
+And Select the source as supplier...........................................passed
+And Select the Supplier Name"Blue Apparels".................................passed
+And Select the date from datepicker.........................................passed
+Then Select the Challan type"Other".........................................passed
+And Enter the data in item textfield"Needle"................................passed
+And Enter quantity"2000"....................................................passed
+And Enter data in Description textfield"creating challan for needle"........passed
+Then user clicked on save button............................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

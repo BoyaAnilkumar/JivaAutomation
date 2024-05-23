@@ -93,9 +93,9 @@ public class Pdfds_Steps {
 		public void Enter_Fabric_Quantity() throws Throwable {
 			page.Enter_Fabric_Quantity();
 		}
-		@And ("^Enter Full width$")
-		public void Enter_Full_width() throws Throwable {
-			page.Enter_Full_width();
+		@And ("^Enter Full width in PDFDS$")
+		public void Enter_Full_width_in_PDFDS() throws Throwable {
+			page.Enter_Full_width_in_PDFDS();
 		}
 		@And ("^Select use$")
 		public void Select_use() throws Throwable {

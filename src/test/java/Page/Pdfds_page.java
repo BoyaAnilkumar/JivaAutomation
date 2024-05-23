@@ -288,7 +288,7 @@ import org.openqa.selenium.By;
 				utilities.MinimumWait(driver);
 			}
 
-			public void Enter_Full_width() throws Throwable {
+			public void Enter_Full_width_in_PDFDS() throws Throwable {
 				utilities.webDriverWait(driver, EnterFullwidth);
 				driver.findElement(EnterFullwidth).sendKeys("30");
 				utilities.MinimumWait(driver);
@@ -482,6 +482,7 @@ import org.openqa.selenium.By;
 				
 			}
 
+		
 			
 			
 

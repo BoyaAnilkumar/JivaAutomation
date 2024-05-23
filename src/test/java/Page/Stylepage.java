@@ -47,7 +47,7 @@ public class Stylepage extends DriverFactory{
 		By Reset 						= By.xpath("//button[@class='btn btn-md btn-danger btn-active-light-primary mr-2']");
 		
 		//Create Style Master Form
-		By Add 							= By.xpath("//button[@class='btn btn-primary btn-sm shadow-sm float-right ng-star-inserted']");
+		By Add 							= By.xpath("//button[text()=' Add New Style ']");
 		By PDMerchant 					= By.xpath("(//input[@placeholder='Search By Name/Email/Ph.no'])	[1]");
 		By selectPDMerchant 			= By.xpath("//li[text()=' Phani L - [ phani@gmail.com ] - [ 9854785623 ] ']|//li[@Class='p-ripple p-element p-autocomplete-item ng-tns-c93-12 ng-star-inserted']");
 		By Buyerstyle 					= By.xpath("(//input[@placeholder='Enter Buyer Style'])[1]");

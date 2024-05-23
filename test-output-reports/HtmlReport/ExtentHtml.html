@@ -53,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 3, 2024 03:39:11 pm</span>
+			<span class='label blue darken-3 suite-start-time'>May 23, 2024 10:44:36 am</span>
 			</a>
 		</ul>
 	</div>
@@ -80,8 +80,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@FeatureGroup</a></li>
-					<li><a href='#'>@FabricTandAdataEntryDyeing</a></li>
+					<li><a href='#'>@OutChallans</a></li>
+					<li><a href='#'>@CreateOutChallanforSupplier</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -136,7 +136,7 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -152,7 +152,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>28</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>60</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
@@ -177,8 +177,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Feature to test Jiva design Fabric T and A Data Entry screen functionality</span>
-						<span class='test-time'>May 3, 2024 03:39:16 pm</span>
+						<span class='test-name'>Create out challans for the Buying house</span>
+						<span class='test-time'>May 23, 2024 10:44:43 am</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -188,169 +188,356 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='test-desc'>I want to use this template to create out challans feature.</div>
+<div class='scenario outline node' test-id='2' status='pass'>
 	<div class='category-list'>
-		<span class='category label'>@FeatureGroup</span>
-		<span class='category label'>@FabricTandAdataEntryDyeing</span>
+		<span class='category label'>@CreateOutChallanforSupplier</span>
 	</div>
-	<span class='duration right label'>0h 1m 52s+180ms</span>
+	<span class='duration right label'>0h 3m 5s+935ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: To Test the Dyeing Process functionality</div>
+		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Navigate to Add Out Challan form submit Out challan for supplier with item production</div>
+		<table class='runtime-table table-striped table'><tr><td>Supplier Name</td><td>type</td><td>qty</td><td>description</td><td>item</td></tr><tr><td>Anjani fabric</td><td>PreProduction</td><td>5000</td><td>Test1</td><td>buttons</td></tr><tr><td>Blue Apparels</td><td>Other</td><td>2000</td><td>creating challan for needle</td><td>Needle</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='4' class='node given pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.Login_steps.User_navigates_to_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User navigates to Login page</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='5' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded1.png"><i class='material-icons'>panorama</i></a></li>
+		<li test-id='3' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Navigate to Add Out Challan form submit Out challan for supplier with item production</div>
+			<ul class='gc steps'>
+				<li test-id='5' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Login_steps.User_navigates_to_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User navigates to Login page</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='6' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded1.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='7' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Login_steps.User_enters_the_username_and_password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then User enters the username and password</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='8' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded2.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='9' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Login_steps.User_click_on_the_signIn()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click on the signIn</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='10' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded3.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='11' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Newfabricsheet_Steps.Click_on_the_Woven_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Woven Module</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='12' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded4.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='13' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Click_on_Challans_sub_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Challans sub module</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='14' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded5.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='15' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Click_on_Out_Challans_in_menu()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Out Challans in menu</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='16' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded6.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='17' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.user_clicked_on_Add_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user clicked on Add button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='18' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded7.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='19' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Select_the_source_as_supplier()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the source as supplier</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='20' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded8.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='21' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Select_the_Supplier_Name(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the Supplier Name"Anjani fabric"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='22' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded9.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='23' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Select_the_date_from_datepicker()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the date from datepicker</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='24' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded10.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='25' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Select_the_Challan_type(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Select the Challan type"PreProduction"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='26' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded11.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='27' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Enter_the_data_in_item_textfield(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the data in item textfield"buttons"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='28' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded12.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='29' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Enter_quantity(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter quantity"5000"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='30' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded13.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='31' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Enter_data_in_Description_textfield(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter data in Description textfield"Test1"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='32' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded14.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='33' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.user_clicked_on_save_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user clicked on save button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='34' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded15.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
 			</ul>
-			<div class="node-step"></div>
 		</li>
-		<li test-id='6' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.Login_steps.User_enters_the_username_and_password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then User enters the username and password</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='7' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded2.png"><i class='material-icons'>panorama</i></a></li>
+		<li test-id='36' class='node scenario pass' status='pass'>
+			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Navigate to Add Out Challan form submit Out challan for supplier with item production</div>
+			<ul class='gc steps'>
+				<li test-id='38' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Login_steps.User_navigates_to_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User navigates to Login page</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='39' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded16.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='40' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Login_steps.User_enters_the_username_and_password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then User enters the username and password</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='41' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded17.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='42' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Login_steps.User_click_on_the_signIn()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click on the signIn</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='43' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded18.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='44' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Newfabricsheet_Steps.Click_on_the_Woven_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Woven Module</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='45' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded19.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='46' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Click_on_Challans_sub_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Challans sub module</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='47' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded20.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='48' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Click_on_Out_Challans_in_menu()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Out Challans in menu</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='49' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded21.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='50' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.user_clicked_on_Add_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user clicked on Add button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='51' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded22.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='52' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Select_the_source_as_supplier()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the source as supplier</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='53' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded23.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='54' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Select_the_Supplier_Name(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the Supplier Name"Blue Apparels"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='55' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded24.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='56' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Select_the_date_from_datepicker()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the date from datepicker</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='57' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded25.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='58' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Select_the_Challan_type(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Select the Challan type"Other"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='59' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded26.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='60' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Enter_the_data_in_item_textfield(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the data in item textfield"Needle"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='61' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded27.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='62' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Enter_quantity(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter quantity"2000"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='63' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded28.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='64' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.Enter_data_in_Description_textfield(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter data in Description textfield"creating challan for needle"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='65' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded29.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='66' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.OutChallans_Steps.user_clicked_on_save_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user clicked on save button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='67' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded30.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
 			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='8' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.Login_steps.User_click_on_the_signIn()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click on the signIn</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='9' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded3.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='10' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.Newfabricsheet_Steps.Click_on_the_Woven_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Woven Module</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='11' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded4.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='12' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.Click_on_Fabric_sourcing_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Fabric sourcing module</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='13' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded5.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='14' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.CreatePOforIPO_Steps.click_on_Data_Entry_in_fabric_sourcing_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on Data Entry in fabric sourcing module</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='15' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded6.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='16' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.FabricTandAentry_Steps.Click_on_the_T_and_A_Data_Entry_Screen()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the T and A Data Entry Screen</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='17' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded7.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='18' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.StyleInitial_Steps.Click_on_the_Styles_Expansion()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Styles Expansion</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='19' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded8.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='20' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.StyleInitial_Steps.Click_on_the_Filter_Icon()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Filter Icon</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='21' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded9.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='22' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.FabricTandAentry_Steps.Search_and_select_the_IPO()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Search and select the IPO</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='23' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded10.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='24' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.StyleInitial_Steps.Click_on_the_Apply_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Apply button</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='25' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded11.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='26' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.Newfabricsheet_Steps.Select_the_IPO_and_Style()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the IPO and Style</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='27' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded12.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='28' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.FabricTandAentry_Steps.Click_on_Add_button_for_Dyeing_process()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Add button for Dyeing process</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='29' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded13.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='30' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.FabricTandAentry_Steps.Enter_the_data_for_Dyeing_process_in_add_form()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the data for Dyeing process in add form</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='31' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded14.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
 		</li>
 	</ul>
 </div>
@@ -396,14 +583,14 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@FeatureGroup</span>
+						<span class='category-name'>@OutChallans</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
 							
 						</div>
@@ -418,13 +605,18 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 3, 2024 03:39:16 pm</td>
-										<td class='linked' test-id='1'>Feature to test Jiva design Fabric T and A Data Entry screen functionality</td>
+										<td>May 23, 2024 10:44:43 am</td>
+										<td class='linked' test-id='1'>Create out challans for the Buying house</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>May 3, 2024 03:39:16 pm</td>
-										<td class='linked' test-id='2'>To Test the Dyeing Process functionality</td>
+										<td>May 23, 2024 10:44:43 am</td>
+										<td class='linked' test-id='3'>Navigate to Add Out Challan form submit Out challan for supplier with item production</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 23, 2024 10:46:18 am</td>
+										<td class='linked' test-id='36'>Navigate to Add Out Challan form submit Out challan for supplier with item production</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -434,14 +626,14 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@FabricTandAdataEntryDyeing</span>
+						<span class='category-name'>@CreateOutChallanforSupplier</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
 							
 							
 						</div>
@@ -456,8 +648,18 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 3, 2024 03:39:16 pm</td>
-										<td class='linked' test-id='2'>To Test the Dyeing Process functionality</td>
+										<td>May 23, 2024 10:44:43 am</td>
+										<td class='linked' test-id='2'>Navigate to Add Out Challan form submit Out challan for supplier with item production</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 23, 2024 10:44:43 am</td>
+										<td class='linked' test-id='3'>Navigate to Add Out Challan form submit Out challan for supplier with item production</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>May 23, 2024 10:46:18 am</td>
+										<td class='linked' test-id='36'>Navigate to Add Out Challan form submit Out challan for supplier with item production</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -488,31 +690,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>28</div>
+					<div class='panel-lead'>60</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 3, 2024 03:39:11 pm</div>
+					<div class='panel-lead'>May 23, 2024 10:44:36 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 3, 2024 03:41:10 pm</div>
+			 		<div class='panel-lead'>May 23, 2024 10:47:50 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 58s+850ms</div>
+					<div class='panel-lead'>0h 3m 14s+254ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -528,17 +730,17 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@FeatureGroup</td>
-							<td>1</td>
+							<td>@OutChallans</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
-									50%
+									66.667%
 							</td>
 						</tr>
 						<tr>
-							<td>@FabricTandAdataEntryDyeing</td>
-							<td>1</td>
+							<td>@CreateOutChallanforSupplier</td>
+							<td>3</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -564,8 +766,8 @@
 				warningParent: 0,
 				skipParent: 0,
 				exceptionsParent: 0,
-				childCount: 1,
-				passChild: 1,
+				childCount: 2,
+				passChild: 2,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -574,8 +776,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 28,
-				passGrandChild: 28,
+				grandChildCount: 60,
+				passGrandChild: 60,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -588,7 +790,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Feature to test Jiva design Fabric T and A Data Entry screen functionality":112.18
+			        "Create out challans for the Buying house":185.935
 			};
 		</script>
 	

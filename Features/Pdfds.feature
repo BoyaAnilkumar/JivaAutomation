@@ -1,7 +1,7 @@
 @FeatureGroup_Requirement
-Feature: Login the application and Add New Fabric Sheet
+Feature: Login the application and Add Fabric quality in PDFDS
 
-  @SmokeTestPDFDS
+  @PDFDS
   Scenario: Add New Fabric to the Style
     Given Navigate to the Login Page
     When User Enter Valid username and password
