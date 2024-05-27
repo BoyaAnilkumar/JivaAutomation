@@ -97,6 +97,10 @@ public class Pdfds_Steps {
 		public void Enter_Full_width_in_PDFDS() throws Throwable {
 			page.Enter_Full_width_in_PDFDS();
 		}
+		@And("^Select Fabric Type from dropdown$")
+		public void Select_Fabric_Type_from_dropdown() throws Throwable {
+			page.Select_Fabric_Type_from_dropdown();
+		}
 		@And ("^Select use$")
 		public void Select_use() throws Throwable {
 			page.Select_use();

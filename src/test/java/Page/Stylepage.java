@@ -88,7 +88,7 @@ public class Stylepage extends DriverFactory{
 		By Generate 					= By.xpath("//input[@id='new']");
 		By ReviseEstimates 				= By.xpath("//input[@id='revised']");	
 		//Add Tech pack details
-		By Addnewtechpack 				= By.xpath("(//button[@class='btn btn-primary btn-sm shadow-sm float-right ng-star-inserted'])[1]");
+		By Addnewtechpack 				= By.xpath("//button[text()=' Add New Tech Pack ']");
 		By Techpacknamefield  			= By.xpath("//input[@formcontrolname='techPackName']");
 		By TechPackDesc 				= By.xpath("//textarea[@formcontrolname='description']");
 		By TechPackReceivedDate 		= By.xpath("//input[@formcontrolname='techPackSampleReceivedDate']");
@@ -164,7 +164,7 @@ public class Stylepage extends DriverFactory{
 		By Type_Enter_number			= By.xpath("//input[@placeholder='Search bar for style ⏎']");
 		By Add_Tech_Pack				= By.xpath("//button[text()=' Add New Tech Pack ']");
 		By Tech_Pack_Name				= By.xpath("//input[@formcontrolname='techPackName']");
-		By Tech_Pack_File				= By.xpath("(//input[@type='file']/following-sibling::label)[2]");
+		By Tech_Pack_File				= By.xpath("//label[text()='Choose']");
 		By Tech_Pack_Desc				= By.xpath("//textarea[@formcontrolname='description']");
 		By Tech_Pack_Received_Date		= By.xpath("//input[@formcontrolname='techPackSampleReceivedDate']");
 		By Tech_Pack_Save_button		= By.xpath("//button[text()=' Save']");
@@ -469,14 +469,14 @@ public class Stylepage extends DriverFactory{
 				public void Click_on_the_created_style()throws Throwable{
 					
 					utilities.webDriverWait(driver, SelectStyle );
-					driver.findElement(SelectStyle).click();
-					Thread.sleep(5000);
-					
 					WebElement S_S = driver.findElement(SelectStyle);
 					String Select = S_S.getText();
 					System.out.println(Select);
+					Thread.sleep(1000);
 					driver.findElement(SelectStyle).click();
-					Thread.sleep(2000);
+					Thread.sleep(5000);
+					
+					
 					
 				}
 				public void User_click_on_the_add_revise_estimates_button() throws Throwable{
@@ -829,7 +829,7 @@ public class Stylepage extends DriverFactory{
 				utilities.webDriverWait(driver, Buyer_Filter_Column);
 				driver.findElement(Buyer_Filter_Column).click();
 				Thread.sleep(2000);
-				driver.findElement(Filter_Buyer).sendKeys("F166");
+				driver.findElement(Filter_Buyer).sendKeys("Style755");
 				Thread.sleep(2000);
 				driver.findElement(Filter_Buyer_apply).click();
 				utilities.MinimumWait(driver);
@@ -905,6 +905,9 @@ public class Stylepage extends DriverFactory{
 				Thread.sleep(2000);
 				driver.findElement(Order_Date).sendKeys(formattedDate);
 				Thread.sleep(2000);
+				driver.findElement(Order_Quantity).click();
+				driver.findElement(Order_Quantity).clear();
+				Thread.sleep(1000);
 				driver.findElement(Order_Quantity).sendKeys("5000");
 				utilities.MinimumWait(driver);
 				

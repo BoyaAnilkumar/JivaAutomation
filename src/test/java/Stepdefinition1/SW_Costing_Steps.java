@@ -45,9 +45,19 @@ public class SW_Costing_Steps {
 		SWCosting.User_has_entered_additional_sampling_cost(Addlitionalsamplingcost,PerPcFreightCost);
 	}
 	
-	@Then("click on Trims and Accessories{string} and {string} and {string}")
-	public void click_on_Trims_and_Accessories(String TrimAccessoriesAvggarment , String TrimsWastage , String TrimsRate ) throws Throwable {
-		SWCosting.click_on_Trims_and_Accessories(TrimAccessoriesAvggarment,TrimsWastage,TrimsRate);
+	@Then("click on Trims and Accessories{string} and {string} and {string} and {string} and {string}")
+	public void click_on_Trims_and_Accessories(String Trimcategory , String TrimItem, String TrimAccessoriesAvggarment , String TrimsWastage , String TrimsRate ) throws Throwable {
+		SWCosting.click_on_Trims_and_Accessories(Trimcategory,TrimItem,TrimAccessoriesAvggarment,TrimsWastage,TrimsRate);
+	}
+	
+	@And("Click on Add Knitting button and enter data for{string} and {string} and {string} and {string} and {string}")
+	public void Click_on_Add_Knitting_button_and_enter_data_for(String Knittingstructure, String GG, String Numberofends, String KnittingTime, String Knittingbuffer) throws Throwable {
+		SWCosting.Click_on_Add_Knitting_button_and_enter_data_for(Knittingstructure, GG, Numberofends, KnittingTime, Knittingbuffer);
+	}
+	
+	@And("Enter Garment Linking rate{string}")
+	public void Enter_Garment_Linking_rate(String GarmentLinking) throws Throwable {
+		SWCosting.Enter_Garment_Linking_rate(GarmentLinking);
 	}
 		
 }

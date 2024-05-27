@@ -3,14 +3,11 @@ package Page;
 
 	import java.awt.Robot;
 	import java.awt.event.KeyEvent;
-import java.util.List;
-import java.util.NoSuchElementException;
-
-import org.openqa.selenium.By;
+	import java.util.NoSuchElementException;
+	import org.openqa.selenium.By;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.interactions.Actions;
 	import org.openqa.selenium.support.ui.WebDriverWait;
-
 	import util.DriverFactory;
 	import util.Utilities;
 
@@ -19,6 +16,7 @@ import org.openqa.selenium.By;
 		Utilities utilities=new Utilities();
 		
 		NewFabricSheetWorking_page NFWS = new NewFabricSheetWorking_page();
+		SW_PDFDS_page SWPDFDS = new SW_PDFDS_page();
 			
 			By username 				= By.xpath("//input[@name='username']");
 			By Password					= By.xpath("//input[@name='password']");
@@ -38,16 +36,15 @@ import org.openqa.selenium.By;
 	 public By SelecttheStyle			= By.xpath("//a[@class='nav-link lite-yellow']");
 			By ClickonStylesExpansion 	= By.xpath("//a[@id='sidebarCollapse']");
 			By AddNewFabric 			= By.xpath("//a[@Class='nav-link add-fabric']");
-			By ClickonFabricQuality 	= By.xpath("//ng-select[@formcontrolname='fabricQualityId']");
+			By ClickonFabricQuality 	= By.xpath("//ng-select[@formcontrolname='fabricQuantityName']");
 			By Enter_Fabric_Quality		= By.xpath("//input[@aria-activedescendant='ab87bdb8e703-0']");
-			
-			By SelectFabricQuality 		= By.xpath("//span[text()='Cotton poplin']");
+			By SelectFabricQuality 		= By.xpath("//span[text()='40s cotton poplin']");
 			
 			By ClickContent 			= By.xpath("//select[@formcontrolname='content']");
 			By ClickonContent 			= By.xpath("//option[@value='100% cotton']");
 			By Selectcontent 			= By.xpath("//option[text()=' 100% Ecoliva']|//select[@class='form-control ng-pristine ng-invalid ng-touched'][2]");
 			By ClickonColor 			= By.xpath("(//div[@Class='ng-input'])[2]");
-			By Selectcolor 				= By.xpath("//span[text()='Autumn Memories']");	
+			By Selectcolor 				= By.xpath("//span[text()='Autumn memories print']");	
 			
 			By CountConstruction 		= By.xpath("//select[@formcontrolname='countOfConstruction']");
 			
@@ -56,6 +53,7 @@ import org.openqa.selenium.By;
 			By specificrequirements 	= By.xpath("//input[@placeholder='Enter Specific Requirements']");
 			By EnterFabricQuantity 		= By.xpath("//input[@placeholder='Enter Fabric Quantity']");
 			By EnterFullwidth 			= By.xpath("//input[@placeholder='Enter Width']");
+			By Fabric_Type 				= By.xpath("//select[@formcontrolname='fabricTypeId']");
 			By ClickonUse 				= By.xpath("//select[@formcontrolname='use']");
 			By SelectUse 				= By.xpath("//option[@value='193']");
 			By ClickonResetbutton 		= By.xpath("//button[@class='btn btn-md btn-danger btn-active-light-primary mr-2 ng-star-inserted']");
@@ -129,24 +127,26 @@ import org.openqa.selenium.By;
 			public void Click_on_Wovenknit_module() throws Throwable {
 				utilities.webDriverWait(driver, WovenKnit);
 				driver.findElement(WovenKnit).click();
-				
+				utilities.MinimumWait(driver);
 			}
 
 			public void Click_on_PD_module() throws Throwable {
 				utilities.webDriverWait(driver, PDModule);
 				driver.findElement(PDModule).click();
-				
+				utilities.MinimumWait(driver);
 			}
 
 			public void click_on_pd_fds() throws Throwable {
 				utilities.webDriverWait(driver, PDFDS);
 				driver.findElement(PDFDS).click();
+				utilities.MinimumWait(driver);
 			}
 			
 
 			public void Click_on_Style_expansion() throws Throwable {
 				utilities.webDriverWait(driver, Stylesexpansion);
 				driver.findElement(Stylesexpansion).click();
+				utilities.MinimumWait(driver);
 				
 				utilities.webDriverWait(driver, FilterIcon);
 				driver.findElement(FilterIcon).click();
@@ -154,7 +154,7 @@ import org.openqa.selenium.By;
 				
 				utilities.webDriverWait(driver, SearchByIPO);
 				driver.findElement(SearchByIPO).click();
-				driver.findElement(SearchByIPO).sendKeys("Style10203");
+				driver.findElement(SearchByIPO).sendKeys("Style755");
 				utilities.MinimumWait(driver);
 				
 				utilities.webDriverWait(driver, Apply_Filter);
@@ -264,7 +264,7 @@ import org.openqa.selenium.By;
 				R.keyPress(KeyEvent.VK_DOWN);
 				Thread.sleep(5000);
 				utilities.MinimumWait(driver);
-				driver.findElement(SelectCountcons).isSelected();
+				driver.findElement(CountConstruction).isSelected();
 				utilities.MinimumWait(driver);
 				
 			}
@@ -293,11 +293,25 @@ import org.openqa.selenium.By;
 				driver.findElement(EnterFullwidth).sendKeys("30");
 				utilities.MinimumWait(driver);
 			}
+			
+			public void Select_Fabric_Type_from_dropdown() throws Throwable {
+				utilities.webDriverWait(driver, Fabric_Type);
+				driver.findElement(Fabric_Type).click();
+				Thread.sleep(1000);
+				Robot FabricType = new Robot();
+				FabricType.keyPress(KeyEvent.VK_ENTER);
+				Thread.sleep(1000);
+				FabricType.keyPress(KeyEvent.VK_DOWN);
+				Thread.sleep(1000);
+				FabricType.keyPress(KeyEvent.VK_ENTER);
+				Thread.sleep(2000);
+				
+			}
 
 			public void Select_use() throws Throwable {
 				utilities.webDriverWait(driver, ClickonUse);
 				driver.findElement(ClickonUse).click();
-				Thread.sleep(4000);
+				Thread.sleep(2000);
 				driver.findElement(SelectUse).click();
 				utilities.MinimumWait(driver);
 			}
@@ -385,14 +399,14 @@ import org.openqa.selenium.By;
 				driver.findElement(ClickonSavebutton).click();
 				Thread.sleep(2000);
 				
-				utilities.webDriverWait(driver, Submit_ToFabric_Team);
-				driver.findElement(Submit_ToFabric_Team).click();
-				utilities.MinimumWait(driver);
-				
-				WebElement elementToHover = driver.findElement(VFabricmanager);
-				Actions actions = new Actions(driver);
-		        actions.moveToElement(elementToHover).perform();
-		        utilities.MaximumLongWait(driver);
+//				utilities.webDriverWait(driver, Submit_ToFabric_Team);
+//				driver.findElement(Submit_ToFabric_Team).click();
+//				utilities.MinimumWait(driver);
+//				
+//				WebElement elementToHover = driver.findElement(VFabricmanager);
+//				Actions actions = new Actions(driver);
+//		        actions.moveToElement(elementToHover).perform();
+//		        utilities.MaximumLongWait(driver);
 				
 			}
 
@@ -467,7 +481,7 @@ import org.openqa.selenium.By;
 				
 				utilities.webDriverWait(driver, SearchByIPO);
 				driver.findElement(SearchByIPO).click();
-				driver.findElement(SearchByIPO).sendKeys("Style10204");
+				driver.findElement(SearchByIPO).sendKeys("Style755");
 				utilities.MinimumWait(driver);
 				
 				utilities.webDriverWait(driver, Apply_Filter);
@@ -478,9 +492,118 @@ import org.openqa.selenium.By;
 				driver.findElement(SelecttheStyle).click();
 				utilities.MinimumWait(driver);
 				
-			
+				utilities.webDriverWait(driver, SWPDFDS.Process_dropdown);
+				driver.findElement(SWPDFDS.Process_dropdown).click();
+				Thread.sleep(2000);
+				Robot R = new Robot();
+				R.keyPress(KeyEvent.VK_DOWN);
+				R.keyPress(KeyEvent.VK_ENTER);
+				Thread.sleep(2000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Price);
+				driver.findElement(SWPDFDS.Price).click();
+				Thread.sleep(2000);
+				driver.findElement(SWPDFDS.Price).sendKeys("5230");
+				Thread.sleep(2000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Fabric_Supplier);
+				driver.findElement(SWPDFDS.Fabric_Supplier).click();
+				Thread.sleep(2000);
+				R.keyPress(KeyEvent.VK_DOWN);
+				R.keyPress(KeyEvent.VK_ENTER);
+				Thread.sleep(2000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Remarks);
+				driver.findElement(SWPDFDS.Remarks).click();
+				Thread.sleep(2000);
+				driver.findElement(SWPDFDS.Remarks).sendKeys("Test");
+				Thread.sleep(2000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Total_Price);
+				driver.findElement(SWPDFDS.Total_Price).click();
+				Thread.sleep(1000);
+				driver.findElement(SWPDFDS.Total_Price).sendKeys("520");
+				Thread.sleep(1000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Total_Fabric_Lead_Time);
+				driver.findElement(SWPDFDS.Total_Fabric_Lead_Time).click();
+				Thread.sleep(1000);
+				driver.findElement(SWPDFDS.Total_Fabric_Lead_Time).sendKeys("192");
+				Thread.sleep(1000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Price_valid_for_days);
+				driver.findElement(SWPDFDS.Price_valid_for_days).click();
+				Thread.sleep(1000);
+				driver.findElement(SWPDFDS.Price_valid_for_days).sendKeys("24");
+				Thread.sleep(1000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Residual_Shrinkage);
+				driver.findElement(SWPDFDS.Residual_Shrinkage).click();
+				Thread.sleep(1000);
+				driver.findElement(SWPDFDS.Residual_Shrinkage).sendKeys("3.53");
+				Thread.sleep(1000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Boing);
+				driver.findElement(SWPDFDS.Boing).click();
+				Thread.sleep(1000);
+				driver.findElement(SWPDFDS.Boing).sendKeys("12");
+				Thread.sleep(1000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.CS);
+				driver.findElement(SWPDFDS.CS).click();
+				Thread.sleep(1000);
+				driver.findElement(SWPDFDS.CS).sendKeys("15");
+				Thread.sleep(1000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Color_Fastness );
+				driver.findElement(SWPDFDS.Color_Fastness).click();
+				Thread.sleep(1000);
+				driver.findElement(SWPDFDS.Color_Fastness).sendKeys("15");
+				Thread.sleep(1000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.GSM_Variation);
+				driver.findElement(SWPDFDS.GSM_Variation).click();
+				Thread.sleep(1000);
+				driver.findElement(SWPDFDS.GSM_Variation).sendKeys("17");
+				Thread.sleep(1000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Crinkle_Variation);
+				driver.findElement(SWPDFDS.Crinkle_Variation).click();
+				Thread.sleep(1000);
+				driver.findElement(SWPDFDS.Crinkle_Variation).sendKeys("20");
+				Thread.sleep(1000);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Other_Remarks);
+				driver.findElement(SWPDFDS.Other_Remarks).click();
+				Thread.sleep(1000);
+				driver.findElement(SWPDFDS.Other_Remarks).sendKeys("Test");
+				Thread.sleep(1000);
+				
+				utilities.webDriverWait(driver, Save_Button);
+				driver.findElement(Save_Button).click();
+				Thread.sleep(1000);
+//				driver.findElement(SWPDFDS.update_Toaster).click();
+//				Thread.sleep(1000);
+//				WebElement update = driver.findElement(SWPDFDS.update_Toaster);
+//				String updateToaster = update.getText();
+//				System.out.println();
+//				System.out.println(updateToaster);
+//				utilities.MinimumWait(driver);
+				
+				utilities.webDriverWait(driver, SWPDFDS.Submit_To_PO_Merchant_Team);
+				driver.findElement(SWPDFDS.Submit_To_PO_Merchant_Team).click();
+				Thread.sleep(1000);
+//				driver.findElement(SWPDFDS.Toaster_submit).click();
+//				Thread.sleep(1000);
+//				WebElement submit = driver.findElement(SWPDFDS.Toaster_submit);
+//				String submitToaster = submit.getText();
+//				System.out.println();
+//				System.out.println(submitToaster);
+//				Thread.sleep(1000);
 				
 			}
+
+			
 
 		
 			

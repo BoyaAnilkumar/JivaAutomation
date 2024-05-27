@@ -33,14 +33,14 @@ public class CostingSteps {
 		  
 	  }
 	  
-	  @Then ("^Select an IPO in the Menu List$")
-	  public void Select_an_IPO_in_the_Menu_List() throws Throwable {
-		  cos.Select_an_IPO_in_the_Menu_List();
+	  @Then ("^Select an Style in the Menu List$")
+	  public void Select_an_Style_in_the_Menu_List() throws Throwable {
+		  cos.Select_an_Style_in_the_Menu_List();
 	  }
 	  
-	  @Then ("^Click on Style Button$")
-	  public void Click_on_Style_Button() throws Throwable {
-		  cos.Click_on_Style_Button();
+	  @Then ("^Click on Style button$")
+	  public void Click_on_Style_button() throws Throwable {
+		  cos.Click_on_Style_button();
 	  }
 	  @Then ("^Click on the Submit1 button$")
 	  public void Click_on_the_Submit1_button() throws Throwable {
@@ -442,22 +442,22 @@ public class CostingSteps {
 		  cos.Click_Versions_dropdown_field();
 	  }
 	  @Then ("^Select a value from the dropdown$")
-	  public void Select_a_value_from_the_dropdown() {
+	  public void Select_a_value_from_the_dropdown() throws Throwable {
 		  cos.Select_a_value_from_the_dropdown();
 	  }
-//	  @Then ("^Click on the Close button$")
-//	  public void Click_on_the_Close_button() throws Throwable {
-//		  cos.Click_on_the_Close_button();
-//	  }
+	  @Then ("^Click on the Close button in costing import$")
+	  public void Click_on_the_Close_button_in_costing_import() throws Throwable {
+		  cos.Click_on_the_Close_button_in_costing_import();
+	  }
 	  @Then ("^Click on the Import buttton$")
 	  public void Click_on_the_Import_buttton() throws Throwable {
 		  cos.Click_on_the_Import_buttton();
 	  }
-//	  @Then ("^Click on Close icon$")
-//	  public void Click_on_Close_icon() throws Throwable {
-//		  cos.Click_on_Close_icon();
-//	  }
-//	    
+	  @Then ("^Click on Close icon in costing import$")
+	  public void Click_on_Close_icon_in_costing_import() throws Throwable {
+		  cos.Click_on_Close_icon_in_costing_import();
+	  }
+	    
 	    
 
 	

@@ -111,4 +111,44 @@ Feature: Create out challans for the Buying house
       | Anjani fabric | PreProduction | 5000 | Test1        							| buttons |
       | Blue Apparels | Other         | 2000 | creating challan for needle| Needle	|
     
-   
+   @RejectOutChallan
+   Scenario: Navigate to out challan and reject
+    Given User navigates to Login page
+    Then User enters the username and password
+    And User click on the signIn
+    And Click on the Woven Module
+    Then Click on Challans sub module
+    And Click on Out Challans in menu
+    Then Click on Reject icon and reject the challan
+    
+    @Edit&UpdateOutChallan
+    Scenario Outline: Navigate to Out Challan and Update the rejected challan
+    Given User navigates to Login page
+    Then User enters the username and password
+    And User click on the signIn
+    And Click on the Woven Module
+    Then Click on Challans sub module
+    And Click on Out Challans in menu
+    Then click on edit icon
+    And Update the supplier name"<Supplier Name>"
+    And Update the type"<type>"
+    And Update the Quantity"<qty>"
+    
+    Examples: 
+      | Supplier Name | type  | qty  |
+      | AURO TEXTILES | Other | 5500 |
+    
+    
+    @GridData
+    Scenario: Verify grid data loading
+    Given User navigates to Login page
+    Then User enters the username and password
+    And User click on the signIn
+    And Click on the Woven Module
+    Then Click on Challans sub module
+    And Click on Out Challans in menu
+    Given the user is on the grid data page
+    Then the grid should display the correct data
+    #Then the grid should display columns "Column1", "Column2", "Column3"
+    
+    

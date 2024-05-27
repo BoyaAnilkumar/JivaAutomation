@@ -4,6 +4,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import org.joda.time.DateTime;
 import org.openqa.selenium.By;
@@ -46,7 +47,13 @@ public class OutChallans_Page extends DriverFactory{
 	By Conf_Approve = By.xpath("//h2[text()='Are you sure you want to Approve']");
 	By Conf_Yes_Approve = By.xpath("//button[text()='Yes']");
 	By Conf_No_Approve = By.xpath("//button[text()='No']");
-	
+	By Reject_icon = By.xpath("(//a[@title='Reject'])[1]");
+	By Conf_Reject = By.xpath("//h2[text()='Are you sure you want to Reject']");
+	By Conf_Yes_Reject = By.xpath("//button[text()='Yes']");
+	By Conf_No_Reject = By.xpath("//button[text()='No']");
+	By Edit_Icon = By.xpath("//button[@title='Edit']");
+	By Table = By.xpath("//tbody");
+	By Update_button = By.xpath("//button[text()=' Update']");
 	
 
 	public void Click_on_Challans_sub_module() throws Throwable {
@@ -223,6 +230,95 @@ public class OutChallans_Page extends DriverFactory{
 		Select Supplier = new Select(SupplierName);
 		Supplier.selectByVisibleText(suppliername);
 		Thread.sleep(1000);
+	}
+
+	public void Click_on_Reject_icon_and_reject_the_challan() throws Throwable {
+		utilities.webDriverWait(driver, Reject_icon);
+		driver.findElement(Reject_icon).click();
+		Thread.sleep(1000);
+		String ConfirmationText = driver.findElement(Conf_Reject).getText();
+		System.out.println(ConfirmationText);
+		Thread.sleep(1000);
+		
+		driver.findElement(Conf_Yes_Reject).click();
+		Thread.sleep(1000);
+		System.out.println("Rejected the Challan");
+	}
+
+	public void click_on_edit_icon() throws Throwable {
+		utilities.webDriverWait(driver, Edit_Icon);
+		driver.findElement(Edit_Icon).click();
+		utilities.MinimumWait(driver);
+		
+	}
+
+	public void Update_the_supplier_name(String suppliername) throws Throwable {
+		utilities.webDriverWait(driver, Supplier_Name);
+		driver.findElement(Supplier_Name).click();
+		Thread.sleep(1000);
+		WebElement SupplierName = driver.findElement(Supplier_Name);
+		Select Supplier = new Select(SupplierName);
+		Supplier.selectByVisibleText(suppliername);
+		Thread.sleep(1000);
+		Thread.sleep(1000);
+		
+	}
+
+	public void Update_the_type(String type) throws Throwable {
+		utilities.webDriverWait(driver, Challan_Type);
+		driver.findElement(Challan_Type).click();
+		Thread.sleep(1000);
+		driver.findElement(Challan_Type).sendKeys(type);
+		Thread.sleep(1000);
+		
+	}
+
+	public void Update_the_Quantity(String qty) throws Throwable {
+	utilities.webDriverWait(driver, Quantity1);
+	driver.findElement(Quantity1).click();
+	Thread.sleep(1000);
+	driver.findElement(Quantity1).clear();
+	Thread.sleep(1000);
+	driver.findElement(Quantity1).sendKeys(qty);
+	Thread.sleep(1000);
+	utilities.webDriverWait(driver, Update_button);
+	driver.findElement(Update_button).click();
+	Thread.sleep(1000);
+		
+	}
+
+	public void the_user_is_on_the_grid_data_page() throws Throwable {
+		utilities.webDriverWait(driver, Screen_Title);
+		String Title = driver.findElement(Screen_Title).getText();
+		System.out.println(Title);
+		Thread.sleep(1000);
+	}
+
+	public void the_grid_should_display_the_correct_data() throws Throwable {
+		WebElement OrderData = driver.findElement(Table);
+		  
+	    WebElement Data = driver.findElement(Table);
+	    
+	    List<WebElement> rows1 = Data.findElements(By.tagName("tr"));
+	        int Irowcount = rows1.size();
+            int Idatarowcount = Irowcount;
+            System.out.println("No. of data Rows in the grid : " + Idatarowcount);
+            
+        if(driver.findElements(Table).size() > 0) {
+        utilities.MediumWait(driver);            
+        String OrderDataText1 = OrderData.getText();
+		utilities.MediumWait(driver);	    
+		            
+        String[] rows = OrderDataText1.split("\n");
+		for (String row : rows) {
+	     System.out.println(row);
+	        System.out.println();
+    
+	    }
+	
+	}	    
+	
+		
 	}
 
 	

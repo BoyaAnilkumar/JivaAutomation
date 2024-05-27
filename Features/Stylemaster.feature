@@ -146,7 +146,7 @@ Given User navigates to Login page
  And click on the Style Master screen
  And Click on Style number
  Then user navigates to Style details screen under the style master
- And Add New Techpack details
+ #And Add New Techpack details
  And Add Sampling Details
  And Add Revise Estimates
  

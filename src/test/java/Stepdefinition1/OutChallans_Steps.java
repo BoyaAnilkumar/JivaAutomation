@@ -2,6 +2,7 @@ package Stepdefinition1;
 
 import Page.OutChallans_Page;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
 public class OutChallans_Steps {
@@ -100,5 +101,40 @@ public class OutChallans_Steps {
 	@And("Select the Supplier Name{string}")
 	public void Select_the_Supplier_Name(String Suppliername) throws Throwable {
 		OTCP.Select_the_Supplier_Name(Suppliername);
+	}
+	
+	@Then("^Click on Reject icon and reject the challan$")
+	public void Click_on_Reject_icon_and_reject_the_challan() throws Throwable {
+		OTCP.Click_on_Reject_icon_and_reject_the_challan();
+	}
+	
+	@Then("^click on edit icon$")
+	public void click_on_edit_icon() throws Throwable {
+		OTCP.click_on_edit_icon();
+	}
+	
+	@And("Update the supplier name{string}")
+	public void Update_the_supplier_name(String suppliername) throws Throwable {
+		OTCP.Update_the_supplier_name(suppliername);
+	}
+	
+	@And("Update the type{string}")
+	public void Update_the_type(String type) throws Throwable {
+		OTCP.Update_the_type(type);
+	}
+	
+	@And("Update the Quantity{string}")
+	public void Update_the_Quantity(String qty) throws Throwable {
+		OTCP.Update_the_Quantity(qty);
+	}
+	
+	@Given("the user is on the grid data page")
+	public void the_user_is_on_the_grid_data_page() throws Throwable {
+		OTCP.the_user_is_on_the_grid_data_page();
+	}
+	
+	@Then("the grid should display the correct data")
+	public void the_grid_should_display_the_correct_data() throws Throwable {
+		OTCP.the_grid_should_display_the_correct_data();
 	}
 }

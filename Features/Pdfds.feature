@@ -24,7 +24,8 @@ Feature: Login the application and Add Fabric quality in PDFDS
     Then Enter Finish value
     And Enter specific requirements
     And Enter Fabric Quantity
-    And Enter Full width
+    #And Enter Full width
+    And Select Fabric Type from dropdown
     And Select use
     #Then Click on Reset button
     Then Click on Save button

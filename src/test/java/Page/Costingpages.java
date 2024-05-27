@@ -1,5 +1,6 @@
 package Page;
 
+import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
@@ -56,11 +57,11 @@ public class Costingpages extends DriverFactory {
 	By AddSamCost = By.xpath("//input[@formcontrolname='additionalSamplingCost']");
 	By FrieghtCost = By.xpath("//input[@formcontrolname='freightCost']");
 	//Adding the Accessories1
-	By AddTrims = By.xpath("(//button[@class='btn btn-primary btn-sm shadow-sm float-right ng-star-inserted'])[3]");
+	By AddTrims = By.xpath("//button[text()=' Add Trims']");
 	By Acc1_Category1 = By.xpath("//select[@formcontrolname='descriptionTypeId']");
-	By Acc1_select_Cate1 = By.xpath("(//option[text()=\"Job Work \"])[1]");
+	By Acc1_select_Cate1 = By.xpath("//option[text()='Job Work ']");
 	By Acc1_Item1 = By.xpath("//select[@formcontrolname='itemId']");
-	By Acc1_select_Item1 = By.xpath("//option[text()=\" Audit manager\"]");
+	By Acc1_select_Item1 = By.xpath("//option[text()=' Tassel Making']");
 	By Acc1_Avg1 = By.xpath("//input[@placeholder='Enter Avg/Garment']");
 	By Acc1_Wastage1 = By.xpath("(//input[@formcontrolname='wastage'])[2]");
 	By Acc1_Rate1 = By.xpath("(//input[@formcontrolname='rate'])[2]");
@@ -108,7 +109,7 @@ public class Costingpages extends DriverFactory {
 	By FP_Process1 = By.xpath("(//select[@formcontrolname='processId'])[2]");
 	By FP_SelectProcess = By.xpath("//option[@value='244']");
 //	(//tr[@class='ng-pristine ng-valid ng-star-inserted ng-touched']//select[@formcontrolname='processId'])[1]
-	By FP_Cost1 = By.xpath("(//input[@formcontrolname='cost'])[6]");
+	By FP_Cost1 = By.xpath("(//input[@formcontrolname='cost'])[3]");
 	//p-table[@class='p-element ng-pristine ng-valid ng-touched']//input[@formcontrolname='cost']
 //	Washing / GArment process
 	By Wash_Yes_No = By.xpath("(//label[@class='custom-control-label font-weight-bold'])[4]");
@@ -136,6 +137,7 @@ public class Costingpages extends DriverFactory {
 	By TDE_Overhead = By.xpath("//input[@formcontrolname='overHeadPercentage']");
 	By TDE_Profit_Markup = By.xpath("//input[@formcontrolname='profitMarkUpPercentage']");
 	By TDE_Commission = By.xpath("//input[@formcontrolname='commissionPercentage']");
+	By Commission_Type= By.xpath("//select[@formcontrolname='commissionTypeId']/.//option[text()=' None']");
 	By Currency = By.xpath("//input[@placeholder='Conversion Rate']");
 	By PriceQuotedToBuyer = By.xpath("//input[@formcontrolname='buyerPrice']");
 	By Save = By.xpath("(//button[@class='btn btn-md btn-primary btn-active-light-primary mr-2 ng-star-inserted'])[1]");
@@ -146,8 +148,8 @@ public class Costingpages extends DriverFactory {
 	By Man_Valid_msg = By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
 	By Cancel = By.xpath("//button[@id='closepagebutton']");
 	By Import = By.xpath("//button[@class='btn btn-primary btn-md float-right ng-star-inserted']");
-	By Imp_popup = By.xpath("(//div[@class='modal-content'])[2]");
-	By Imp_ver = By.xpath("//select[@class='form-control ng-pristine ng-invalid ng-touched']");
+	By Imp_popup = By.xpath("//h5[text()='Import Version Details']");
+	By Imp_ver = By.xpath("//select[@formcontrolname='verstionId']");
 	By Imp_closeButton = By.xpath("//button[@class='btn btn-danger']");
 	By Imp_ImportButton = By.xpath("//button[@class='btn btn-primary']");
 	By Imp_Close1 = By.xpath("(//button[@data-dismiss='modal'])[1]");
@@ -196,7 +198,7 @@ public class Costingpages extends DriverFactory {
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, Search_By_Style);
-		driver.findElement(Search_By_Style).sendKeys("Style10203");
+		driver.findElement(Search_By_Style).sendKeys("Style755");
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, pdfds.Apply_Filter);
@@ -205,7 +207,7 @@ public class Costingpages extends DriverFactory {
 		
 	}
 
-	public void Select_an_IPO_in_the_Menu_List() throws Throwable {
+	public void Select_an_Style_in_the_Menu_List() throws Throwable {
 		utilities.webDriverWait(driver, Select_Stlye);
 		driver.findElement(Select_Stlye).click();
 		utilities.WaitUntilPageIsLoaded(driver);
@@ -213,7 +215,7 @@ public class Costingpages extends DriverFactory {
 	}
 	
 
-	public void Click_on_Style_Button() throws Throwable {
+	public void Click_on_Style_button() throws Throwable {
 		utilities.webDriverWait(driver, Sty2);
 		driver.findElement(Sty2).click();
 		utilities.WaitUntilPageIsLoaded(driver);
@@ -413,6 +415,8 @@ public class Costingpages extends DriverFactory {
 		driver.findElement(Acc1_Rate1).sendKeys("4");
 		utilities.MinimumWait(driver);
 		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,250)");
 	}
 
 	public void Click_on_the_Add_Accessories_button() throws Throwable {
@@ -468,7 +472,6 @@ public class Costingpages extends DriverFactory {
 
 	public void Enter_Overhead_Cost_value() throws Throwable {
 		utilities.webDriverWait(driver, Cut_Enter_Overheadcost);
-		@SuppressWarnings("unused")
 		WebElement pre_data = driver.findElement(Cut_Check_OverheadCost);
 		String data1 = pre_data.getAttribute("value");
 		System.out.println("Printing the Cutting Overhead Cost value = " + data1);
@@ -569,11 +572,22 @@ public class Costingpages extends DriverFactory {
 		driver.findElement(ManEmb_Overhead).sendKeys("4");
 		utilities.MinimumWait(driver);
 		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,250)");
 	}
 	
 	public void To_verify_on_clicking_the_Add_Process_button_under_Stitching() throws Throwable {
 		utilities.webDriverWait(driver,Sti_AddProcess);
-		driver.findElement(Sti_AddProcess).click();
+//		WebElement stitchingprocess = driver.findElement(Sti_AddProcess);
+		
+		if(Sti_AddProcess.equals(Sti_Describe1))
+			{ 
+			driver.findElement(Sti_AddProcess).click();
+			System.out.println("Stitching process add button is enabled");
+			}else {
+				driver.findElement(Sti_OB1).click();
+				System.out.println("Stitching process add button is not enabled");
+			}
 		utilities.MinimumWait(driver);
 	}
 	public void Enter_a_value_in_OB1() throws Throwable {
@@ -667,7 +681,7 @@ public class Costingpages extends DriverFactory {
 //		driver.findElement(FP_AddProcess).click();
 //		System.out.println("Button is Clicked");
 		WebElement buttonElement = driver.findElement(FP_AddProcess);
-		if (buttonElement.isEnabled()) {
+		if (buttonElement.isDisplayed()) {
 			System.out.println("Button is enabled.");
 			driver.findElement(FP_AddProcess).click();
 		} else {
@@ -680,7 +694,9 @@ public class Costingpages extends DriverFactory {
 		utilities.webDriverWait(driver,FP_Process1);
 		driver.findElement(FP_Process1).click();
 		utilities.MinimumWait(driver);
-		driver.findElement(FP_SelectProcess).click();
+		Robot selectprocess1 = new Robot();
+		selectprocess1.keyPress(KeyEvent.VK_DOWN);
+		selectprocess1.keyPress(KeyEvent.VK_ENTER);
 		utilities.MinimumWait(driver);
 //		utilities.MinimumWait(driver);
 //		Robot a = new Robot();
@@ -704,11 +720,6 @@ public class Costingpages extends DriverFactory {
 		utilities.webDriverWait(driver,Wash_Yes_No);
 		driver.findElement(Wash_Yes_No).click();
 		utilities.MinimumWait(driver);
-//		ToggleButton toggleButton = new ToggleButton(); // Instantiate your ToggleButton class
-//        boolean initialState = toggleButton.getStatus(); // Adjust this based on your code
-//
-//        // Assert that the initial state is false
-//        assertFalse("The toggle button should be initially false", initialState);
 		
 	}
 
@@ -833,6 +844,7 @@ public class Costingpages extends DriverFactory {
 		
 	}
 
+	
 	public void Enter_the_value_in_the_Additional_Buffer_field() throws Throwable {
 		utilities.webDriverWait(driver,FC_AdditionalBuffer);
 		driver.findElement(FC_AdditionalBuffer).clear();
@@ -863,9 +875,23 @@ public class Costingpages extends DriverFactory {
 
 	public void Enter_the_value_in_the_Commission_field() throws Throwable {
 		utilities.webDriverWait(driver,TDE_Commission);
-		driver.findElement(TDE_Commission).clear();
-		driver.findElement(TDE_Commission).sendKeys("3");
-		utilities.MinimumWait(driver);
+//		WebElement commission = driver.findElement(TDE_Commission);
+		if(TDE_Commission.equals(Commission_Type)) {
+			driver.findElement(TDE_Commission).click();
+			Thread.sleep(1000);
+			driver.findElement(TDE_Commission).clear();
+			Thread.sleep(1000);
+			driver.findElement(TDE_Commission).sendKeys("3");
+			Thread.sleep(1000);
+		}
+		else {
+			
+			System.out.println("Commission Percentage is disabled");
+			driver.findElement(Currency).click();
+			Thread.sleep(1000);
+			
+		}
+		
 		
 	}
 
@@ -962,27 +988,44 @@ public class Costingpages extends DriverFactory {
 	public void Click_Versions_dropdown_field() throws Throwable {
 		utilities.webDriverWait(driver, Imp_ver);
 		driver.findElement(Imp_ver).click();
+		utilities.MinimumWait(driver);
+	}
+
+	public void Select_a_value_from_the_dropdown() throws Throwable {
 		Robot V = new Robot();
-		V.keyPress(KeyEvent.VK_1);
+		V.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		V.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
+		
 	}
 
-	public void Select_a_value_from_the_dropdown() {
-		
-		
-	}
-
-	public void Click_on_the_Close_button() throws Throwable {
+	public void Click_on_the_Close_button_in_costing_import() throws Throwable {
 		utilities.webDriverWait(driver, Imp_closeButton);
 		driver.findElement(Imp_closeButton).click();
 	}
 
 	public void Click_on_the_Import_buttton() throws Throwable {
+		utilities.webDriverWait(driver, Import);
+		driver.findElement(Import).click();
+		Thread.sleep(1000);
+		driver.findElement(Imp_ver).click();
+		Thread.sleep(1000);
+		Robot V = new Robot();
+		V.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		V.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
 		utilities.webDriverWait(driver, Imp_ImportButton);
 		driver.findElement(Imp_ImportButton).click();
+		Thread.sleep(1000);
 	}
 
-	public void Click_on_Close_icon() throws Throwable {
-		utilities.webDriverWait(driver, Imp_closeButton);
+	public void Click_on_Close_icon_in_costing_import() throws Throwable {
+		utilities.webDriverWait(driver, Import);
+		driver.findElement(Import).click();
+		Thread.sleep(1000);
+		utilities.webDriverWait(driver, Imp_Close1);
 		driver.findElement(Imp_Close1);
 	}
 

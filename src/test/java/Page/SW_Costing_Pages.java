@@ -1,6 +1,9 @@
 package Page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import util.DriverFactory;
 import util.Utilities;
@@ -17,14 +20,25 @@ public class SW_Costing_Pages extends DriverFactory{
 	By Select_Style = By.xpath("//div[@class='card-body']/.//a[@id='v-pills-tabStyle3']");
 	By Add_Combo_Name = By.xpath("//button[text()=' Add a Combo']");
 	By Combo_Name = By.xpath("//input[@formcontrolname='comboName']");
+	By Card_Name = By.xpath("//h3[text()='Costing']");
 	By Combo_Qty = By.xpath("//input[@formcontrolname='comboQTY']");
 	By click_select_Combo = By.xpath("//div[text()='Select Combo']");
 	By select_Combo_name = By.xpath("//span[@class='ng-option-label ng-star-inserted']");
 	By Garment_Average = By.xpath("//input[@formcontrolname='garmentAvg']");
 	By Wastage = By.xpath("//input[@formcontrolname='wastage']");
-	By Yarn_Lining_Rate = By.xpath("(//input[@formcontrolname='rate'])[1]");
+	By Yarn_Lining_Rate = By.xpath("(//tbody/tr/td//input[@formcontrolname='rate'])[1]");
 	By Additional_sampling_cost = By.xpath("//input[@formcontrolname='additionalSamplingCost']");
 	By Freight_Cost = By.xpath("//input[@formcontrolname='freightCost']");
+	By Knitting_button = By.xpath("//button[text()=' Add Knitting']");
+	By Knitting_Structure = By.xpath("//select[@formcontrolname='knittingStructureId']");
+	By GG = By.xpath("//input[@formcontrolname='gg']");
+	By Number_of_Ends = By.xpath("//input[@formcontrolname='numberOfEnds']");
+	By Knitting_Time = By.xpath("//input[@formcontrolname='knittingTime']");
+	By Knitting_Buffer = By.xpath("//input[@formcontrolname='knittingBuffer']");
+	By Garment_Linking_Cost = By.xpath("//input[@formcontrolname='garmentCuttingCost']");
+	
+	
+	
 	
 	
 
@@ -86,6 +100,8 @@ public class SW_Costing_Pages extends DriverFactory{
 		driver.findElement(Combo_Qty).click();
 		Thread.sleep(1000);
 		driver.findElement(Combo_Qty).sendKeys(comboqty);
+		Thread.sleep(1000);
+		driver.findElement(Card_Name).click();
 		Thread.sleep(1000);
 		
 	}
@@ -153,22 +169,27 @@ public class SW_Costing_Pages extends DriverFactory{
 	}
 
 
-	public void click_on_Trims_and_Accessories(String trimAccessoriesAvggarment, String trimsWastage,String trimsRate) throws Throwable {
+	public void click_on_Trims_and_Accessories(String Trimcategory, String TrimItem, String trimAccessoriesAvggarment, String trimsWastage,String trimsRate) throws Throwable {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,750)", "");
+		
 		utilities.webDriverWait(driver, cps.AddTrims);
 		driver.findElement(cps.AddTrims).click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		
 		utilities.webDriverWait(driver, cps.Acc1_Category1);
 		driver.findElement(cps.Acc1_Category1).click();
 		Thread.sleep(1000);
-		driver.findElement(cps.Acc1_select_Cate1).click();
-		Thread.sleep(1000);
+		WebElement category = driver.findElement(cps.Acc1_Category1);
+		Select TrimCategory = new Select(category);
+		TrimCategory.selectByVisibleText(Trimcategory);
 		
 		utilities.webDriverWait(driver, cps.Acc1_Item1);
 		driver.findElement(cps.Acc1_Item1).click();
-		Thread.sleep(1000);
-		driver.findElement(cps.Acc1_select_Item1).click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
+		WebElement Item = driver.findElement(cps.Acc1_Item1);
+		Select Trimitem = new Select(Item);
+		Trimitem.selectByVisibleText(TrimItem);
 		
 		utilities.webDriverWait(driver, cps.Acc1_Avg1);
 		driver.findElement(cps.Acc1_Avg1).click();
@@ -178,7 +199,7 @@ public class SW_Costing_Pages extends DriverFactory{
 		
 		utilities.webDriverWait(driver, cps.Acc1_Wastage1);
 		driver.findElement(cps.Acc1_Wastage1).click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		driver.findElement(cps.Acc1_Wastage1).sendKeys(trimsWastage);
 		Thread.sleep(1000);
 		
@@ -191,6 +212,60 @@ public class SW_Costing_Pages extends DriverFactory{
 	}
 
 
+	public void Click_on_Add_Knitting_button_and_enter_data_for(String knittingstructure, String gG, String numberofends, String knittingTime, String knittingbuffer) throws Throwable {
+		utilities.webDriverWait(driver, Knitting_button);
+		driver.findElement(Knitting_button).click();
+		Thread.sleep(1000);
+		
+		utilities.webDriverWait(driver, Knitting_Structure);
+		driver.findElement(Knitting_Structure).click();
+		Thread.sleep(1000);
+		WebElement knittingStruc = driver.findElement(Knitting_Structure);
+		Select StruKnitting = new Select(knittingStruc);
+		StruKnitting.selectByVisibleText(knittingstructure);
+		Thread.sleep(1000);
+		
+		utilities.webDriverWait(driver, GG);
+		driver.findElement(GG).click();
+		Thread.sleep(1000);
+		driver.findElement(GG).sendKeys(gG);
+		Thread.sleep(1000);
+		
+		utilities.webDriverWait(driver, Number_of_Ends);
+		driver.findElement(Number_of_Ends).click();
+		Thread.sleep(1000);
+		driver.findElement(Number_of_Ends).sendKeys(numberofends);
+		Thread.sleep(1000);
+		
+		utilities.webDriverWait(driver, Knitting_Time);
+		driver.findElement(Knitting_Time).click();
+		Thread.sleep(1000);
+		driver.findElement(Knitting_Buffer).sendKeys(knittingTime);
+		Thread.sleep(1000);
+		
+		utilities.webDriverWait(driver, Knitting_Buffer);
+		driver.findElement(Knitting_Buffer).click();
+		Thread.sleep(1000);
+		driver.findElement(Knitting_Buffer).sendKeys(knittingbuffer);
+		Thread.sleep(1000);
+		
+		
+		
+	}
+
+
+	public void Enter_Garment_Linking_rate(String garmentLinking) throws Throwable {
+		utilities.webDriverWait(driver, Garment_Linking_Cost);
+		driver.findElement(Garment_Linking_Cost).click();
+		Thread.sleep(1000);
+		driver.findElement(Garment_Linking_Cost).clear();
+		Thread.sleep(1000);
+		driver.findElement(Garment_Linking_Cost).sendKeys(garmentLinking);
+		Thread.sleep(1000);
+		
+	}
+
+	
 	
 	
 }
