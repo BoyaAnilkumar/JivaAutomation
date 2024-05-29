@@ -105,7 +105,7 @@ public class Costingpages extends DriverFactory {
 	By Sti_Select1 = By.xpath("//option[text()=' Overhead']");
 	By Sti_Cost1 = By.xpath("(//input[@formcontrolname='cost'])[5]");
 //	Finishing and Packing
-	By FP_AddProcess = By.xpath("(//button[@class='btn btn-primary btn-sm shadow-sm float-right ng-star-inserted'])[6]");
+	By FP_AddProcess = By.xpath("//h3[text()='Finishing And Packing']/..//button[text()=' Add a Process']");
 	By FP_Process1 = By.xpath("(//select[@formcontrolname='processId'])[2]");
 	By FP_SelectProcess = By.xpath("//option[@value='244']");
 //	(//tr[@class='ng-pristine ng-valid ng-star-inserted ng-touched']//select[@formcontrolname='processId'])[1]
@@ -140,14 +140,14 @@ public class Costingpages extends DriverFactory {
 	By Commission_Type= By.xpath("//select[@formcontrolname='commissionTypeId']/.//option[text()=' None']");
 	By Currency = By.xpath("//input[@placeholder='Conversion Rate']");
 	By PriceQuotedToBuyer = By.xpath("//input[@formcontrolname='buyerPrice']");
-	By Save = By.xpath("(//button[@class='btn btn-md btn-primary btn-active-light-primary mr-2 ng-star-inserted'])[1]");
+	By Save = By.xpath("//button[@class='btn btn-md btn-primary btn-active-light-primary mr-2 ng-star-inserted']/..//i[@class='ti-save']");
 	By Submit = By.xpath("//button[text()=' Submit ']");
-	By ViewForPrint = By.xpath("(//button[@class='btn btn-md btn-primary btn-active-light-primary mr-2 ng-star-inserted'])[3]");
+	By ViewForPrint = By.xpath("//button[text()=' View for Print']");
 	By PrintStylename = By.xpath("(//h3[@class='mb-1 font-weight-bold header'])[2]");
-	By DownLoadAsExcel = By.xpath("//button[@class='btn btn-md btn-primary btn-active-light-primary']");
+	By DownLoadAsExcel = By.xpath("//button[text()=' Download As Excel']");
 	By Man_Valid_msg = By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
 	By Cancel = By.xpath("//button[@id='closepagebutton']");
-	By Import = By.xpath("//button[@class='btn btn-primary btn-md float-right ng-star-inserted']");
+	By Import = By.xpath("//button[@data-target='#importCostingDetails']");
 	By Imp_popup = By.xpath("//h5[text()='Import Version Details']");
 	By Imp_ver = By.xpath("//select[@formcontrolname='verstionId']");
 	By Imp_closeButton = By.xpath("//button[@class='btn btn-danger']");
@@ -719,13 +719,6 @@ public class Costingpages extends DriverFactory {
 	public void Check_the_Yes_or_No_toggle_button_status() throws Throwable {
 		utilities.webDriverWait(driver,Wash_Yes_No);
 		driver.findElement(Wash_Yes_No).click();
-		utilities.MinimumWait(driver);
-		
-	}
-
-	public void Click_on_the_Add_Process_button_when_the_toggle_button_is_in_enabled_state() throws Throwable {
-		utilities.webDriverWait(driver,Wash_AddProcessBut);
-		driver.findElement(Wash_AddProcessBut).click();
 		utilities.MinimumWait(driver);
 		
 	}

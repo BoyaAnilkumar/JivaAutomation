@@ -40,7 +40,7 @@ Feature: Add Costing details for Style
     Then Click on PD module in sw module
     And Click on Data Entry in PD Module
     Then click on Costing screen in sweater module
-    And Click on the style in costing expansion
+    And Click on style in costing expansion"<Style Name>"
     And Click on Add a Combo button
     Then User has entered "<Combo name>" and "<Combo quantity>"
     And Enter Garment average"<Garment Average>"
@@ -50,9 +50,10 @@ Feature: Add Costing details for Style
     Then click on Trims and Accessories"<Trim Category>" and "<Trim Item>" and "<Trim&Accessories Avg garment>" and "<Trims Wastage>" and "<Trims Rate>"
 		And Click on Add Knitting button and enter data for"<Knitting Structure>" and "<GG>" and "<NumberofEnds>" and "<Knitting Time>" and "<Knitting Buffer>"
 		And Enter Garment Linking rate"<Garment Linking>"
+		And Enter Additional Process cost in INR
 	#ComputerEmbroidery
 		Given Enter No of Stiches
-    Given Enter Rate
+    Given Enter Rate in Sweater costing"<ComputerEMB Rate>"
     Given Enter Overhead
     Given Enter Addl Charges
     #Adda Embriodiery
@@ -63,31 +64,16 @@ Feature: Add Costing details for Style
     Given Enter Manual Hours
     Given Enter Manual Rate
     Given Enter Manual Overhead
-    #Stitching
-    When To verify on clicking the Add Process button under Stitching
-    Given Enter a value in OB1
-    Given Enter a value in OB2
-    Given Enter a value in OB3
-    Given Enter a value in Cost1
-    Given Enter a value in Cost2
-    Given Enter a value in Cost3
-    Then Select an option in Booked field
-    Given Enter a value in Smocking
-    Given Enter a value in Rate
-    When To verify whether the user is able to click the Description dropdown field or not
-    Then Select a value from the dropdown field
-    Given Enter the Stitching Cost value 
     
     #Finishing and PAcking
     Then Click on the Add Process button under Finising and Packing grid
-    Then Select a Finishing and Packing process1
-    Given Enter the Finishing and Packing cost1
+    Then Click on Finishing process and select value from dropdown
+    Given Enter cost for the selected value
     
  		#Washing / GArment process
     Then Check the Yes or No toggle button status
-    Then Click on the Add Process button when the toggle button is in enabled state
-    Then Select a Washing Process1
-    Given Enter the Washing Cost1
+    Then Select a Washing Process1 in sw costing
+    Given Enter the Washing Cost1 in sw costing
 
     #testing and inspection
     Given Enter the value in the FPT GPT Total Cost field
@@ -114,9 +100,15 @@ Feature: Add Costing details for Style
     Given Enter the value in the Currency field
     Given Enter the value in the Price Quoted To Buyer field
     
+      #Submit Buttons
+    Then Click on the PSave button
+    Then Click on the Submit button
+    Then Click on the View For Print button
+    Then Click on the Cancel in the Print form
+    Then Click on the Download As Excel button
     
 		
     Examples: 
-      | Combo name | Combo quantity | Garment Average | Wastage | Rate | Addlitional Sampling cost | Per pc Freight cost | Trim&Accessories Avg garment | Trims Wastage | Trims Rate |Trim Category| Trim Item				| Knitting Structure | GG | NumberofEnds | Knitting Time | Knitting Buffer | Garment Linking | 
-      | name1      |              5 |               5 |       2 |   10 |                         2 |                   2 |                           10 |             5 |         12 |Job Work 		 | Tassel Making		| Intarsia 					 | 2.5| 15					 | 10						 | 6							 | 6.5						 |
-      | name2      |              7 |               6 |     3.5 |   15 |                       4.2 |                   3 |                           12 |             7 |         10 |Labels 			 | Barcode sticke		| Pointelle 				 | 3.8| 12					 | 15 					 | 7							 | 4.8						 |
+     | Style Name| Combo name | Combo quantity | Garment Average | Wastage | Rate | Addlitional Sampling cost | Per pc Freight cost | Trim&Accessories Avg garment | Trims Wastage | Trims Rate |Trim Category| Trim Item				| Knitting Structure | GG | NumberofEnds | Knitting Time | Knitting Buffer | Garment Linking | ComputerEMB Rate | 
+     | Style3 	 | name1      |              5 |               5 |       2 |   10 |                         2 |                   2 |                           10 |             5 |         12 |Job Work 		 | Tassel Making		| Intarsia 					 | 2.5| 15					 | 10						 | 6							 | 6.5						 | 5								|
+     | Style4    | name2      |          2500  |               6 |     3.5 |   15 |                       4.2 |                   3 |                           12 |             7 |         10 |Labels 			 | Barcode sticker		| Pointelle 				 | 3.8| 12					 | 15 					 | 7							 | 4.8						 | 12								|

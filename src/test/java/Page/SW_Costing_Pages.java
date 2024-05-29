@@ -1,5 +1,9 @@
 package Page;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -17,7 +21,7 @@ public class SW_Costing_Pages extends DriverFactory{
 	By Filter_icon = By.xpath("//div[@class='card-body']/..//button[@id='navbarDropdown3']");
 	By Search_By_Style = By.xpath("//input[@placeholder='Search By Style #']");
 	By Filter_Apply = By.xpath("//button[text()='Apply']");
-	By Select_Style = By.xpath("//div[@class='card-body']/.//a[@id='v-pills-tabStyle3']");
+	By Select_Style = By.xpath("//div[@class='card-body']/..//a[@role='tab']");
 	By Add_Combo_Name = By.xpath("//button[text()=' Add a Combo']");
 	By Combo_Name = By.xpath("//input[@formcontrolname='comboName']");
 	By Card_Name = By.xpath("//h3[text()='Costing']");
@@ -36,6 +40,28 @@ public class SW_Costing_Pages extends DriverFactory{
 	By Knitting_Time = By.xpath("//input[@formcontrolname='knittingTime']");
 	By Knitting_Buffer = By.xpath("//input[@formcontrolname='knittingBuffer']");
 	By Garment_Linking_Cost = By.xpath("//input[@formcontrolname='garmentCuttingCost']");
+	By Additional_Process_Cost1 = By.xpath("(//input[@placeholder='Enter Additional Cost'])[1]");
+	By Additional_Process_Cost2 = By.xpath("(//input[@placeholder='Enter Additional Cost'])[2]");
+	By Additional_Process_Cost3 = By.xpath("(//input[@placeholder='Enter Additional Cost'])[3]");
+	By Additional_Process_Cost4 = By.xpath("(//input[@placeholder='Enter Additional Cost'])[4]");
+	By Additional_Process_Cost5 = By.xpath("(//input[@placeholder='Enter Additional Cost'])[5]");
+	
+	By RemoveAdditional_Process = By.xpath("(//button[@title='Remove'])[4]");
+	By Delete_Yes = By.xpath("//button[text()='Yes']");
+	By Table = By.xpath("(//table)[10]");
+	By Finishing_Packing = By.xpath("(//select[@formcontrolname='processId'])[12]");
+	By Finishing_Packing_Cost1 = By.xpath("(//input[@placeholder='Enter Cost'])[5]");
+	By Finishing_Packing_Cost2 = By.xpath("(//input[@placeholder='Enter Cost'])[6]");
+	By Finishing_Packing_Cost3 = By.xpath("(//input[@placeholder='Enter Cost'])[7]");
+	By Finishing_Packing_Cost4 = By.xpath("(//input[@placeholder='Enter Cost'])[8]");
+	By Finishing_Packing_Cost5 = By.xpath("(//input[@placeholder='Enter Cost'])[9]");
+	By Finishing_Packing_Cost6 = By.xpath("(//input[@placeholder='Enter Cost'])[10]");
+	By Finishing_Packing_Cost7 = By.xpath("(//input[@placeholder='Enter Cost'])[11]");
+	By Washing_Garment_Process_Button = By.xpath("//h3[text()='Washing / Garment Processes']/..//button[text()=' Add a Process']");
+	By Washing_Garment_Process = By.xpath("(//select[@formcontrolname='processId'])[13]");
+	By Washing_Garment_Process_Cost = By.xpath("(//input[@placeholder='Enter Cost'])[12]");
+	
+	By Computer_Embroidery = By.xpath("(//input[@formcontrolname='rate'])[3]");
 	
 	
 	
@@ -50,7 +76,7 @@ public class SW_Costing_Pages extends DriverFactory{
 	}
 
 
-	public void Click_on_the_style_in_costing_expansion() throws Throwable {
+	public void Click_on_style_in_costing_expansion(String StyleName) throws Throwable {
 		utilities.webDriverWait(driver, cps.Sty1);
 		driver.findElement(cps.Sty1).click();
 		utilities.MinimumWait(driver);
@@ -62,7 +88,7 @@ public class SW_Costing_Pages extends DriverFactory{
 		utilities.webDriverWait(driver, Search_By_Style);
 		driver.findElement(Search_By_Style).click();
 		Thread.sleep(1000);
-		driver.findElement(Search_By_Style).sendKeys("Style3");
+		driver.findElement(Search_By_Style).sendKeys(StyleName);
 		Thread.sleep(1000);
 		
 		utilities.webDriverWait(driver, Filter_Apply);
@@ -98,6 +124,8 @@ public class SW_Costing_Pages extends DriverFactory{
 		driver.findElement(Combo_Name).sendKeys(comboname);
 		Thread.sleep(1000);
 		driver.findElement(Combo_Qty).click();
+		Thread.sleep(1000);
+		driver.findElement(Combo_Qty).clear();
 		Thread.sleep(1000);
 		driver.findElement(Combo_Qty).sendKeys(comboqty);
 		Thread.sleep(1000);
@@ -144,6 +172,15 @@ public class SW_Costing_Pages extends DriverFactory{
 		driver.findElement(Yarn_Lining_Rate).click();
 		Thread.sleep(1000);
 		driver.findElement(Yarn_Lining_Rate).sendKeys(rate);
+		Thread.sleep(1000);
+		
+	}
+
+	public void Enter_Rate_in_Sweater_costing(String computerEMBrate) throws Throwable {
+		utilities.webDriverWait(driver, Computer_Embroidery);
+		driver.findElement(Computer_Embroidery).click();
+		Thread.sleep(1000);
+		driver.findElement(Computer_Embroidery).sendKeys(computerEMBrate);
 		Thread.sleep(1000);
 		
 	}
@@ -208,6 +245,8 @@ public class SW_Costing_Pages extends DriverFactory{
 		Thread.sleep(1000);
 		driver.findElement(cps.Acc1_Rate1).sendKeys(trimsRate);
 		Thread.sleep(1000);
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+		js1.executeScript("window.scrollBy(0,750)", "");
 		
 	}
 
@@ -240,7 +279,7 @@ public class SW_Costing_Pages extends DriverFactory{
 		utilities.webDriverWait(driver, Knitting_Time);
 		driver.findElement(Knitting_Time).click();
 		Thread.sleep(1000);
-		driver.findElement(Knitting_Buffer).sendKeys(knittingTime);
+		driver.findElement(Knitting_Time).sendKeys(knittingTime);
 		Thread.sleep(1000);
 		
 		utilities.webDriverWait(driver, Knitting_Buffer);
@@ -249,7 +288,8 @@ public class SW_Costing_Pages extends DriverFactory{
 		driver.findElement(Knitting_Buffer).sendKeys(knittingbuffer);
 		Thread.sleep(1000);
 		
-		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,450)", "");
 		
 	}
 
@@ -262,8 +302,146 @@ public class SW_Costing_Pages extends DriverFactory{
 		Thread.sleep(1000);
 		driver.findElement(Garment_Linking_Cost).sendKeys(garmentLinking);
 		Thread.sleep(1000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,150)", "");
+	}
+
+
+	public void Enter_Additional_Process_cost_in_INR() throws Throwable {
+		WebElement Data = driver.findElement(Table);
+		  List<WebElement> rows1 = Data.findElements(By.tagName("tr"));
+	        int Irowcount = rows1.size();
+        int Idatarowcount = Irowcount-2;
+        System.out.println("No. of data Rows in the grid : " + Idatarowcount);
+		
+        //Deleting the rows in additional processes
+//        List<WebElement> additionalProcesses = driver.findElements(RemoveAdditional_Process);
+//        int actionsPerformed = 4;
+//        for (WebElement buttonElement : additionalProcesses) {
+//            if (actionsPerformed >= 4) {
+//                break; // Stop after 4 actions
+//            }
+//
+//            if (buttonElement.isEnabled()) {
+                // If the Partial Received button is enabled, click on it and perform actions
+//                System.out.println("Button is enabled.");
+//                buttonElement.click();
+//                Thread.sleep(1000);
+//                driver.findElement(Delete_Yes).click();
+//                utilities.MediumWait(driver);
+//                actionsPerformed++;
+                // Perform further actions specific to the current data entry
+//            }
+//        }
+//
+//        if (actionsPerformed < 4) {
+//            System.out.println("Less than 4 enabled buttons were found and processed.");
+//        }
+		
+        utilities.webDriverWait(driver, Additional_Process_Cost1);
+        driver.findElement(Additional_Process_Cost1).click();
+        driver.findElement(Additional_Process_Cost1).sendKeys("10");
+        Thread.sleep(1000);
+        utilities.webDriverWait(driver, Additional_Process_Cost2);
+        driver.findElement(Additional_Process_Cost2).click();
+        driver.findElement(Additional_Process_Cost2).sendKeys("20");
+        Thread.sleep(1000);
+        utilities.webDriverWait(driver, Additional_Process_Cost3);
+        driver.findElement(Additional_Process_Cost3).click();
+        driver.findElement(Additional_Process_Cost3).sendKeys("30");
+        Thread.sleep(1000);
+        utilities.webDriverWait(driver, Additional_Process_Cost4);
+        driver.findElement(Additional_Process_Cost4).click();
+        driver.findElement(Additional_Process_Cost4).sendKeys("40");
+        Thread.sleep(1000);
+        utilities.webDriverWait(driver, Additional_Process_Cost5);
+        driver.findElement(Additional_Process_Cost5).click();
+        driver.findElement(Additional_Process_Cost5).sendKeys("50");
+        Thread.sleep(1000);
+        
+	}
+
+
+	public void Click_on_Finishing_process_and_select_value_from_dropdown() throws Throwable {
+		utilities.webDriverWait(driver, Finishing_Packing);
+		driver.findElement(Finishing_Packing).click();
+		Robot R = new Robot();
+		R.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		R.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
+		
 		
 	}
+
+
+	public void Enter_cost_for_the_selected_value() throws Throwable {
+		utilities.webDriverWait(driver, Finishing_Packing_Cost1);
+		driver.findElement(Finishing_Packing_Cost1).click();
+		driver.findElement(Finishing_Packing_Cost1).clear();
+		Thread.sleep(1000);
+		driver.findElement(Finishing_Packing_Cost1).sendKeys("12");
+		
+		utilities.webDriverWait(driver, Finishing_Packing_Cost2);
+		driver.findElement(Finishing_Packing_Cost2).click();
+		driver.findElement(Finishing_Packing_Cost2).clear();
+		Thread.sleep(1000);
+		driver.findElement(Finishing_Packing_Cost2).sendKeys("13");
+		
+		utilities.webDriverWait(driver, Finishing_Packing_Cost3);
+		driver.findElement(Finishing_Packing_Cost3).click();
+		driver.findElement(Finishing_Packing_Cost3).clear();
+		Thread.sleep(1000);
+		driver.findElement(Finishing_Packing_Cost3).sendKeys("14");
+		
+		utilities.webDriverWait(driver, Finishing_Packing_Cost4);
+		driver.findElement(Finishing_Packing_Cost4).click();
+		driver.findElement(Finishing_Packing_Cost4).clear();
+		Thread.sleep(1000);
+		driver.findElement(Finishing_Packing_Cost4).sendKeys("15");
+		
+		utilities.webDriverWait(driver, Finishing_Packing_Cost5);
+		driver.findElement(Finishing_Packing_Cost5).click();
+		driver.findElement(Finishing_Packing_Cost5).clear();
+		Thread.sleep(1000);
+		driver.findElement(Finishing_Packing_Cost5).sendKeys("16");
+		
+		utilities.webDriverWait(driver, Finishing_Packing_Cost6);
+		driver.findElement(Finishing_Packing_Cost6).click();
+		driver.findElement(Finishing_Packing_Cost6).clear();
+		Thread.sleep(1000);
+		driver.findElement(Finishing_Packing_Cost6).sendKeys("17");
+		
+		utilities.webDriverWait(driver, Finishing_Packing_Cost7);
+		driver.findElement(Finishing_Packing_Cost7).click();
+		driver.findElement(Finishing_Packing_Cost7).clear();
+		Thread.sleep(1000);
+		driver.findElement(Finishing_Packing_Cost7).sendKeys("18");
+		
+	}
+
+	public void Select_a_Washing_Process1_in_sw_osting() throws Throwable {
+		utilities.webDriverWait(driver, Washing_Garment_Process);
+		driver.findElement(Washing_Garment_Process).click();
+		Thread.sleep(1000);
+		Robot R = new Robot();
+		R.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		R.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
+		
+	}
+
+
+	public void Enter_the_Washing_Cost1_in_sw_costing() throws Throwable {
+		utilities.webDriverWait(driver, Washing_Garment_Process_Cost);
+		driver.findElement(Washing_Garment_Process_Cost).click();
+		Thread.sleep(1000);
+		driver.findElement(Washing_Garment_Process_Cost).sendKeys("25");
+		Thread.sleep(1000);
+		
+	}
+
 
 	
 	

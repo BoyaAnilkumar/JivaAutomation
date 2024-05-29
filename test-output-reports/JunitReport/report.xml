@@ -1,53 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="199.797">
-    <testcase classname="Title of your features" name="Testing the Import functionality" time="199.309">
-        <failure message="element not interactable&#10;  (Session info: chrome=125.0.6422.78)&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.78, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52815}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9fd832948e435bdcbefb7898a675c3e8" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[When User navigates to Login page...........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="44.2">
+    <testcase classname="feature to test Jiva design login functionality" name="To Test the Jiva design Login page is opened" time="43.789">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
 Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
-Then Click on the Woven Modules.............................................passed
-Then Click on the PD Module.................................................passed
-Then Click on the Costing Module............................................passed
-Then Click on the Style button..............................................passed
-Then Select an Style in the Menu List.......................................passed
-Then Click on Style button..................................................passed
-Then Click on Import button.................................................passed
-When Check wether the Import Version Details Version popup window opened or not.passed
-Then Click Versions dropdown field..........................................passed
-Then Select a value from the dropdown.......................................passed
-Then Click on the Close button in costing import............................passed
-Then Click on the Import buttton............................................failed
-Then Click on Close icon in costing import..................................skipped
-
-StackTrace:
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=125.0.6422.78)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.78, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52815}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9fd832948e435bdcbefb7898a675c3e8
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Page.Costingpages.Click_on_the_Import_buttton(Costingpages.java:1010)
-	at Stepdefinition1.CostingSteps.Click_on_the_Import_buttton(CostingSteps.java:454)
-	at ✽.Click on the Import buttton(file:///E:/Maven/Features/Costing.feature:136)
-]]></failure>
-    </testcase>
-</testsuite>
-um.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.Costingpages.Click_on_the_Import_buttton(Costingpages.java:1010)
-	at Stepdefinition1.CostingSteps.Click_on_the_Import_buttton(CostingSteps.java:454)
-	at ✽.Click on the Import buttton(file:///E:/Maven/Features/Costing.feature:136)
-]]></failure>
+And User click on the user icon.............................................passed
+Then Click on Logout........................................................passed
+]]></system-out>
     </testcase>
 </testsuite>

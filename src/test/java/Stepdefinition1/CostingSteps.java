@@ -321,10 +321,7 @@ public class CostingSteps {
 	  public void Check_the_Yes_or_No_toggle_button_status() throws Throwable {
 		  cos.Check_the_Yes_or_No_toggle_button_status();
 	  }
-	  @Then ("^Click on the Add Process button when the toggle button is in enabled state$")
-	  public void Click_on_the_Add_Process_button_when_the_toggle_button_is_in_enabled_state() throws Throwable {
-		  cos.Click_on_the_Add_Process_button_when_the_toggle_button_is_in_enabled_state();
-	  }
+	  
 	  @Then ("^Select a Washing Process1$")
 	  public void Select_a_Washing_Process1() throws Throwable {
 		  cos.Select_a_Washing_Process1();

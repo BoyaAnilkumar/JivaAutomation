@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-				  tags ="@Costing2")
+				  tags ="@LoginsmokeTest1")
 
 
 public class TestRunner {

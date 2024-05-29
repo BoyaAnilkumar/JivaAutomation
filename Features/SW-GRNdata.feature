@@ -1,7 +1,7 @@
 @tag
 Feature: Verification of GRN Data after submitting the Daily In Input
 
-  @SWGRNSmoketest
+  @SWGRN
   Scenario: Navigate to GRN Data and Verify the data is displaying for IPO or not
     When User navigates to Login page
     Then User enters the username and password
