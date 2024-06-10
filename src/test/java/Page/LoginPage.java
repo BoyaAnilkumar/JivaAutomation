@@ -39,7 +39,7 @@ utilities.MinimumWait(driver);
 public void User_enters_the_username_and_password() throws Throwable {
 utilities.webDriverWait(driver, username);
 utilities.webDriverWait(driver, password);
-driver.findElement(username).sendKeys("Rajeswari");
+driver.findElement(username).sendKeys("Lavanya");
 utilities.MinimumWait(driver);
 driver.findElement(password).sendKeys("Abcd@123");
 utilities.MediumWait(driver);
