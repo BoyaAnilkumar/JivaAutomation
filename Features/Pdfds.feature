@@ -1,7 +1,7 @@
 @FeatureGroup_Requirement
-Feature: Login the application and Add New Fabric Sheet
+Feature: Login the application and Add Fabric quality in PDFDS
 
-  @SmokeTestPDFDS
+  @PDFDS
   Scenario: Add New Fabric to the Style
     Given Navigate to the Login Page
     When User Enter Valid username and password
@@ -24,7 +24,8 @@ Feature: Login the application and Add New Fabric Sheet
     Then Enter Finish value
     And Enter specific requirements
     And Enter Fabric Quantity
-    And Enter Full width
+    #And Enter Full width
+    And Select Fabric Type from dropdown
     And Select use
     #Then Click on Reset button
     Then Click on Save button
