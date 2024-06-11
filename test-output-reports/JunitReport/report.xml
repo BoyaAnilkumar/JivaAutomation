@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="118.426">
-    <testcase classname="Feature to test Jiva design Fabric T and A Data Entry screen functionality" name="To Test the Dyeing Process functionality" time="118.001">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="76.471">
+    <testcase classname="Feature to test Jiva design Bulk Checking" name="To Test the user clicked on po and submit the lot checking data" time="76.043">
         <system-out><![CDATA[Given User navigates to Login page..........................................passed
-Then User enters the username and password..................................passed
+Given User enters the username and password.................................passed
 And User click on the signIn................................................passed
 And Click on the Woven Module...............................................passed
-Then Click on Fabric sourcing module........................................passed
-And click on Data Entry in fabric sourcing module...........................passed
-And Click on the T and A Data Entry Screen..................................passed
-And Click on the Styles Expansion...........................................passed
-And Click on the Filter Icon................................................passed
-And Search and select the IPO...............................................passed
-And Click on the Apply button...............................................passed
-And Select the IPO and Style................................................passed
-Then Click on Add button for Dyeing process.................................passed
-And Enter the data for Dyeing process in add form...........................passed
+And click on Fabric Store module............................................passed
+And Click on Data Entry in Fabric Store.....................................passed
+Then click on Bulk checking screen name.....................................passed
+And Select the po number in filter expansion................................passed
+When clicked on Lot Checking data icon......................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
