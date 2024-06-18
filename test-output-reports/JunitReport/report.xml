@@ -1,70 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="76.471">
-    <testcase classname="Feature to test Jiva design Bulk Checking" name="To Test the user clicked on po and submit the lot checking data" time="76.043">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="145.984">
+    <testcase classname="feature to test Jiva design style initial details screen functionality" name="To test the submit order details" time="145.468">
         <system-out><![CDATA[Given User navigates to Login page..........................................passed
-Given User enters the username and password.................................passed
-=======
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="86.284">
-    <testcase classname="feature to test Jiva design style initial details screen functionality" name="To Test submit order details in Style Initial details screen" time="85.226">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[@class='btn btn-md btn-primary btn-active-light-primary ng-star-inserted'])[1]&quot;}&#10;  (Session info: chrome=125.0.6422.142)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fabf6c633ac9e376b29042f935eaed02&#10;*** Element info: {Using=xpath, value=(//button[@class='btn btn-md btn-primary btn-active-light-primary ng-star-inserted'])[1]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User navigates to Login page..........................................passed
 Then User enters the username and password..................................passed
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 And User click on the signIn................................................passed
-And Click on the Woven Module...............................................passed
-<<<<<<< HEAD
-And click on Fabric Store module............................................passed
-And Click on Data Entry in Fabric Store.....................................passed
-Then click on Bulk checking screen name.....................................passed
-And Select the po number in filter expansion................................passed
-When clicked on Lot Checking data icon......................................passed
-]]></system-out>
-=======
-Then click on the Merchandising Module......................................passed
-And click on Data Entry dropdown............................................passed
-And click on the Style Initail Details screen...............................passed
+Then click on the SW Merchandising Module...................................passed
+And click on SW Data Entry dropdown.........................................passed
+And click on SW Style Initial Details screen................................passed
 And Click on the Styles Expansion...........................................passed
-And Select IPO..............................................................failed
-And Verify IPO data.........................................................skipped
-And Verify Style............................................................skipped
-And Verify Buyer............................................................skipped
-And Verify Season...........................................................skipped
-And Select File handover date...............................................skipped
-And Click on the Add combo button...........................................skipped
-Given Enter the data in Combo1..............................................skipped
-And Enter the data in Combo2................................................skipped
-And Click on the Add Garment type button....................................skipped
-And Click on the Garment type field.........................................skipped
-And Click and Select the Garment type.......................................skipped
-And Click on the Submit Order details button................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[@class='btn btn-md btn-primary btn-active-light-primary ng-star-inserted'])[1]"}
-  (Session info: chrome=125.0.6422.142)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49543}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fabf6c633ac9e376b29042f935eaed02
-*** Element info: {Using=xpath, value=(//button[@class='btn btn-md btn-primary btn-active-light-primary ng-star-inserted'])[1]}
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at Page.StyleInitial_Page.Select_IPO(StyleInitial_Page.java:193)
-	at Stepdefinition1.StyleInitial_Steps.Select_IPO(StyleInitial_Steps.java:80)
-	at ✽.Select IPO(file:///E:/Maven/Features/StyleInitialdetails.feature:14)
-]]></failure>
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+Then Select the IPO from the list "IPO1706.2"...............................passed
+And Select file handover date"17062024".....................................passed
+Then click on Add combination button and enter combination names"Combo1" and "Combo2".passed
+And click on Submit order details button....................................passed
+And Verify whether the Garment Size type field data is displayed or not.....passed
+Given User enter the data in PO Qty field for combos........................passed
+And Enter the data in IPO% field in order details...........................passed
+And Click on the submit button..............................................passed
+]]></system-out>
     </testcase>
 </testsuite>

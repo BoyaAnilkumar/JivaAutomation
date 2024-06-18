@@ -67,11 +67,7 @@
 		<artifactId>extentreports-cucumber6-adapter</artifactId>
 		<version>1.0.0</version>
 	</dependency>
-    <dependency>
-    	<groupId>Features</groupId>
-    	<artifactId>Features</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-    </dependency>
+    
  </dependencies>
 
   <build>
