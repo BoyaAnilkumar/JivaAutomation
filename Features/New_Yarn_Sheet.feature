@@ -2,7 +2,7 @@
 Feature: feature to test Jiva design New Yarn Sheet screen functionality
 
 @New_Yarn_Sheet2
-Scenario Outline: Validate user click on the Confirm Orders screen in menu
+Scenario Outline: Validate user click on the New Yarn Sheet screen in menu
 Given User navigates to Login page
 Then the User enters "<username>", and "<password>"
 And User click on the signIn
@@ -79,7 +79,7 @@ Then Check the Avg Values are prepopulated or not
 And Verify the Based on the Garment Size type PO Qty is prepopulated in the PO Qty field or not
 And Verify the Based on the Garment Size type IPO Qty is prepopulated in the PO Qty field or not
 And The Knitting Avg field data is prepopulated or not
-When User enter the Linking Avg data"<LinkingAvg>"
+When User enter the Linking Avg data"<LinkingAvg>" 
 #sampling details
 And Enter the data in the Size set field"<Sizeset>"
 When User enter the data in the Testing field"<Testing>"
@@ -130,7 +130,7 @@ Then user enter the Username and password
 And User click on the signIn
 And Click on the Merchandising Module in the Sweater module
 And Click on the New Yarn Sheet Screen under the Generate Yarn Sheet dropdown
-And User click on the Style Expansion
+And User click on the Style Expansion   
 And Click on the Filter Icon in Style Expansion
 And Enter the Buyer "<StyleOrIPO>" in Search By Buyer Style Or IPO
 And click on the Apply button 
