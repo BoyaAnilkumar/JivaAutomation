@@ -1,45 +1,61 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
+
 @FeatureGroup
-Feature: To Test Style Po Details screen functionality
+Feature: feature to test Jiva design Sweater Style Po Details screen functionality
 
-  @SWStylePODetails
-  Scenario: To Test the Style PO Details screen
-    Given User navigates to Login page
-    Given User enters the username and password
-    When User click on the signIn
-    And Click on Sweater module
-    And Click on Merchandising Module
-    And Click on Merchandising Data Entry
-    And Click on Style PO Details
+@SWStylePODetails
+Scenario: Validate user click on the Style PO Details screen in menu
+Given User navigates to Login page
+Then user enter the Username and password
+And User click on the signIn
+And Click on Sweater module
+Then Click on the Merchandising Module
+And Click on Data Entry dropdown
+And Click on the Style PO Details
 
-  @AddStylePO
-  Scenario Outline: Add Style PO Details by clicking on Add button
-    Given User navigates to Login page
-    Given User enters the username and password
-    When User click on the signIn
-    And Click on Sweater module
-    And Click on Merchandising Module
-    And Click on Merchandising Data Entry
-    And Click on Style PO Details
+@SWStylePODetails
+Scenario Outline: Verify the Filter functionality in the Style expansion
+Given User navigates to Login page
+Then user enter the Username and password
+And User click on the signIn
+And Click on Sweater module
+Then Click on the Merchandising Module
+And Click on Data Entry dropdown
+And Click on the Style PO Details
+And User click on the Style Expansion
+And Validate whether the Selected IPO "<StyleIPO>" is displayed in the IPO list or not
+And Click on the Filter Icon in Style Expansion
+And Select the "<Buyer>" in Filter option page
+Then Select "<Season>" in the Filter option page
+And Enter the Buyer "<StyleOrIPO>" in Search By Buyer Style Or IPO
+And click on the Apply button 
+And Select the IPO in the Styles List
 
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+Examples:
+|Buyer       |     Season     |  StyleOrIPO      |StyleIPO         |
+|Test buyer  |     Fall       |   IPO1806        |IPO1806 / Style2 |
+ 
+@SWStylePODetails
+Scenario Outline: Verify the Add PO details functionality
+Given User navigates to Login page
+Then user enter the Username and password
+And User click on the signIn
+And Click on Sweater module
+Then Click on the Merchandising Module
+And Click on Data Entry dropdown
+And Click on the Style PO Details
+And User click on the Style Expansion
+And Click on the Filter Icon in Style Expansion
+And Enter the Buyer "<StyleOrIPO>" in Search By Buyer Style Or IPO
+And click on the Apply button 
+And Select the IPO in the Styles List
+And Click on the Add New PO button in the Style PO Details Screen
+When User enter the data in the "<PO>" field in the PO details section
+And Select the PO Details 
+And Enter the "<POQty>" in the PO Qty field
+When Enter the data in the "<Shortage>" Allowed field
+
+
+
+Examples:
+|  StyleOrIPO|
+|   IPO1806  |

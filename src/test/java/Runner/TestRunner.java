@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 				  features = "Features",
 				  monochrome = true,
 
-				  tags ="@New_Yarn_Sheet")
+				  tags ="@SWStylePODetails")
 
  
   

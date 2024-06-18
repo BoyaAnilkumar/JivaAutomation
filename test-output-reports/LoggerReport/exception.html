@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.ElementClickInterceptedException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchElementException</a>
 							<div class="item-except text-sm text-muted h-1x">
-								1 tests
+								2 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.ElementClickInterceptedException</h5>
+								<h5 class="mb-4">org.openqa.selenium.NoSuchElementException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="255" parent-id="1">
+<tr class="s-fail" test-id="534" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">And Select the yarn use "Main body" <br/><span class="text-muted text-sm">Verify the PD YDS Import Yarn details functionality</span></td>
-	<td>0h 0m 1s+123msc</td>
+	<td class="_600">And Select the Other_IPO in Import Yarn details popup <br/><span class="text-muted text-sm">Verify the Other IPO Import Yarn details functionality</span></td>
+	<td>0h 1m 41s+437msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,13 +137,15 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select _ngcontent-fet-c299="" data-toggle="select" formcontrolname="use" class="form-control ng-untouched ng-pristine ng-invalid">...</select> is not clickable at point (569, 530). Other element would receive the click: <div _ngcontent-fet-c299="" id="importFabricDetails" tabindex="-1" aria-labelledby="importFabricDetailsLabel" class="modal fade show" style="z-index: 1040; padding-right: 17px; display: block;" aria-modal="true" role="dialog">...</div>
-  (Session info: chrome=125.0.6422.142)
+		<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='isotherIPO']"}
+  (Session info: chrome=126.0.6478.61)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
 System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50649}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 598cfe6d1d9b71456288d502b931a65e
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49757}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d4bc056df06a31d5b7a0f31380e534fe
+*** Element info: {Using=xpath, value=//input[@id='isotherIPO']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -155,11 +157,56 @@ Session ID: 598cfe6d1d9b71456288d502b931a65e
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Page.New_Yarn_Sheet_Page.Select_the_yarn_use(New_Yarn_Sheet_Page.java:296)
-	at Stepdefinition1.New_Yarn_Sheet_Steps.Select_the_yarn_use(New_Yarn_Sheet_Steps.java:83)
-	at ✽.Select the yarn use "Main body"(file:///C:/Users/Calibrage24/git/JivaAutomation/Features/New_Yarn_Sheet.feature:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.New_Yarn_Sheet_Page.Select_the_Other_IPO_in_Import_Yarn_details_popup(New_Yarn_Sheet_Page.java:996)
+	at Stepdefinition1.New_Yarn_Sheet_Steps.Select_the_Other_IPO_in_Import_Yarn_details_popup(New_Yarn_Sheet_Steps.java:322)
+	at ✽.Select the Other_IPO in Import Yarn details popup(file:///C:/Users/Calibrage24/git/JivaAutomation/Features/SW_Revised_Yarn_Sheet.feature:295)
+</textarea>
+	</td>
+</tr>
+	
+<tr class="s-fail" test-id="618" parent-id="1">
+	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
+	<td class="_600">And Select the PD YDS Yarn in the Import yarn details Popup <br/><span class="text-muted text-sm">Verify the PD YDS Import Yarn details functionality</span></td>
+	<td>0h 1m 41s+602msc</td>
+	<td></td>
+	<td>
+	</td>
+	<td class="static"><i class="static fa fa-external-link"></i></td>
+</tr>
+<tr class="details">
+	<td colspan="5">
+		
+		<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//ng-select[@bindlabel='yarnName'])[3]"}
+  (Session info: chrome=126.0.6478.61)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.61, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c6287217c8d4174f4eb339e0154bd0c
+*** Element info: {Using=xpath, value=(//ng-select[@bindlabel='yarnName'])[3]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.New_Yarn_Sheet_Page.Select_the_PD_YDS_Yarn_in_the_Import_yarn_details_Popup(New_Yarn_Sheet_Page.java:1030)
+	at Stepdefinition1.New_Yarn_Sheet_Steps.Select_the_PD_YDS_Yarn_in_the_Import_yarn_details_Popup(New_Yarn_Sheet_Steps.java:339)
+	at ✽.Select the PD YDS Yarn in the Import yarn details Popup(file:///C:/Users/Calibrage24/git/JivaAutomation/Features/SW_Revised_Yarn_Sheet.feature:342)
 </textarea>
 	</td>
 </tr>
@@ -187,7 +234,7 @@ Session ID: 598cfe6d1d9b71456288d502b931a65e
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Jun 17, 2024 07:50:53 pm</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Jun 18, 2024 03:18:15 pm</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>
