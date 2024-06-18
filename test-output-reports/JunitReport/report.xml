@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="145.984">
     <testcase classname="feature to test Jiva design style initial details screen functionality" name="To test the submit order details" time="145.468">
+=======
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="1,009.138">
+    <testcase classname="feature to test Jiva design New Yarn Sheet screen functionality" name="Verify the Delete Yarn functionality" time="89.136">
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
         <system-out><![CDATA[Given User navigates to Login page..........................................passed
+<<<<<<< HEAD
 Then User enters the username and password..................................passed
+=======
+Then user enter the Username and password...................................passed
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 And User click on the signIn................................................passed
+<<<<<<< HEAD
 Then click on the SW Merchandising Module...................................passed
 And click on SW Data Entry dropdown.........................................passed
 And click on SW Style Initial Details screen................................passed
@@ -16,6 +26,212 @@ And Verify whether the Garment Size type field data is displayed or not.....pass
 Given User enter the data in PO Qty field for combos........................passed
 And Enter the data in IPO% field in order details...........................passed
 And Click on the submit button..............................................passed
+=======
+And Click on the Merchandising Module in the Sweater module.................passed
+And Click on the New Yarn Sheet Screen under the Generate Yarn Sheet dropdown.passed
+And User click on the Style Expansion.......................................passed
+And Click on the Filter Icon in Style Expansion.............................passed
+And Enter the Buyer "IPO1206" in Search By Buyer Style Or IPO...............passed
+And click on the Apply button...............................................passed
+And Select the IPO in the Styles List.......................................passed
+And Click on the Delete Icon in Yarn details Column.........................passed
+And Click on the Save button in the New Yarn Sheet..........................passed
+When The User click on the Save button the validation message is displayed or not.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Jiva design New Yarn Sheet screen functionality" name="Check whether the Information bar Selected IPO details" time="105.285">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Then user enter the Username and password...................................passed
+And User click on the signIn................................................passed
+And Click on the Merchandising Module in the Sweater module.................passed
+And Click on the New Yarn Sheet Screen under the Generate Yarn Sheet dropdown.passed
+And User click on the Style Expansion.......................................passed
+And Click on the Filter Icon in Style Expansion.............................passed
+And Enter the Buyer "IPO1206" in Search By Buyer Style Or IPO...............passed
+And click on the Apply button...............................................passed
+And Select the IPO in the Styles List.......................................passed
+Then the selected style should be displayed.................................passed
+And the selected IPO name should be displayed...............................passed
+And the buyer style should be displayed correctly...........................passed
+And the PO quantity should be displayed.....................................passed
+And the IPO quantity should be displayed....................................passed
+And the date submitted data should be displayed.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Jiva design New Yarn Sheet screen functionality" name="Verify the WithIn IPO Import Yarn details functionality" time="222.724">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Then user enter the Username and password...................................passed
+And User click on the signIn................................................passed
+And Click on the Merchandising Module in the Sweater module.................passed
+And Click on the New Yarn Sheet Screen under the Generate Yarn Sheet dropdown.passed
+And User click on the Style Expansion.......................................passed
+And Click on the Filter Icon in Style Expansion.............................passed
+And Enter the Buyer "IPO1206" in Search By Buyer Style Or IPO...............passed
+And click on the Apply button...............................................passed
+And Select the IPO in the Styles List.......................................passed
+And Click on the Add New Yarn Sheet button..................................passed
+Then Verify whether the Import popup window is opened when clicked on the Import Yarn Details button.passed
+And Select the WithIn_IPO in Import Yarn details popup......................passed
+And Verify without Select the Yarn and click on the Import button the validation msg is displayed.passed
+And Select the Yarn in the Import yarn details Popup........................passed
+And Click on the Import button in the yarn details Popup....................passed
+And Select the yarn use "Main body".........................................passed
+Then Select the Colour"Blue"................................................passed
+And Select the Combos in the Applicable Combos field........................passed
+And Select the PO Type......................................................passed
+Given User enter the "8" Average............................................passed
+And Enter the data in "5" field.............................................passed
+And Enter the Missy Garment size PO Qty.....................................passed
+And Enter the Pettite garment size PO Qty...................................passed
+And Enter the Tall Garment size PO Qty......................................passed
+And Enter the Women Garment size PO Qty.....................................passed
+When User enter the Linking Avg data"4".....................................passed
+And Enter the data in the Size set field"7".................................passed
+When User enter the data in the Testing field"2"............................passed
+And User enter the data in the Sealer field"4"..............................passed
+And User enter the data in the TOP field"5".................................passed
+Given User enter the data in the ShipmentPlatform Sample"2".................passed
+Given User enter the data in the Photoshoot Meeting Sample"6"...............passed
+And The User Click on the Submit button.....................................passed
+And Click on the Save button in the New Yarn Sheet..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Jiva design New Yarn Sheet screen functionality" name="Verify the Other IPO Import Yarn details functionality" time="232.464">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Then user enter the Username and password...................................passed
+And User click on the signIn................................................passed
+And Click on the Merchandising Module in the Sweater module.................passed
+And Click on the New Yarn Sheet Screen under the Generate Yarn Sheet dropdown.passed
+And User click on the Style Expansion.......................................passed
+And Click on the Filter Icon in Style Expansion.............................passed
+And Enter the Buyer "IPO1206" in Search By Buyer Style Or IPO...............passed
+And click on the Apply button...............................................passed
+And Select the IPO in the Styles List.......................................passed
+And Click on the Add New Yarn Sheet button..................................passed
+Then Verify whether the Import popup window is opened when clicked on the Import Yarn Details button.passed
+And Select the Other_IPO in Import Yarn details popup.......................passed
+And Click on the Import button in the yarn details Popup....................passed
+Then Validation message should be displayed.................................passed
+And Select the IPO in the Import yarn details page..........................passed
+And Select the Other IPO Yarn in the Import yarn details Popup..............passed
+And Click on the Import button in the yarn details Popup....................passed
+And Select the yarn use "Main body".........................................passed
+Then Select the Colour"Blue"................................................passed
+And Select the Combos in the Applicable Combos field........................passed
+And Select the PO Type......................................................passed
+Given User enter the "8" Average............................................passed
+And Enter the data in "5" field.............................................passed
+And Enter the Missy Garment size PO Qty.....................................passed
+And Enter the Pettite garment size PO Qty...................................passed
+And Enter the Tall Garment size PO Qty......................................passed
+And Enter the Women Garment size PO Qty.....................................passed
+When User enter the Linking Avg data"4".....................................passed
+And Enter the data in the Size set field"7".................................passed
+When User enter the data in the Testing field"2"............................passed
+And User enter the data in the Sealer field"4"..............................passed
+And User enter the data in the TOP field"5".................................passed
+Given User enter the data in the ShipmentPlatform Sample"2".................passed
+Given User enter the data in the Photoshoot Meeting Sample"6"...............passed
+And The User Click on the Submit button.....................................passed
+And Click on the Save button in the New Yarn Sheet..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Jiva design New Yarn Sheet screen functionality" name="Verify the PD YDS Import Yarn details functionality" time="127.836">
+        <failure message="element click intercepted: Element &lt;select _ngcontent-fet-c299=&quot;&quot; data-toggle=&quot;select&quot; formcontrolname=&quot;use&quot; class=&quot;form-control ng-untouched ng-pristine ng-invalid&quot;&gt;...&lt;/select&gt; is not clickable at point (569, 530). Other element would receive the click: &lt;div _ngcontent-fet-c299=&quot;&quot; id=&quot;importFabricDetails&quot; tabindex=&quot;-1&quot; aria-labelledby=&quot;importFabricDetailsLabel&quot; class=&quot;modal fade show&quot; style=&quot;z-index: 1040; padding-right: 17px; display: block;&quot; aria-modal=&quot;true&quot; role=&quot;dialog&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=125.0.6422.142)&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50649}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 598cfe6d1d9b71456288d502b931a65e" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given User navigates to Login page..........................................passed
+Then user enter the Username and password...................................passed
+And User click on the signIn................................................passed
+And Click on the Merchandising Module in the Sweater module.................passed
+And Click on the New Yarn Sheet Screen under the Generate Yarn Sheet dropdown.passed
+And User click on the Style Expansion.......................................passed
+And Click on the Filter Icon in Style Expansion.............................passed
+And Enter the Buyer "IPO1206" in Search By Buyer Style Or IPO...............passed
+And click on the Apply button...............................................passed
+And Select the IPO in the Styles List.......................................passed
+And Click on the Add New Yarn Sheet button..................................passed
+Then Verify whether the Import popup window is opened when clicked on the Import Yarn Details button.passed
+And Select the PD YDS in Import Yarn details popup..........................passed
+And Verify without Select the Yarn and click on the Import button the validation msg is displayed.passed
+And Select the PD YDS Yarn in the Import yarn details Popup.................passed
+And Click on the Import button in the yarn details Popup....................passed
+And Select the yarn use "Main body".........................................failed
+Then Select the Colour"Blue"................................................skipped
+And Select the Combos in the Applicable Combos field........................skipped
+And Select the PO Type......................................................skipped
+Given User enter the "8" Average............................................skipped
+And Enter the data in "5" field.............................................skipped
+And Enter the Missy Garment size PO Qty.....................................skipped
+And Enter the Pettite garment size PO Qty...................................skipped
+And Enter the Tall Garment size PO Qty......................................skipped
+And Enter the Women Garment size PO Qty.....................................skipped
+When User enter the Linking Avg data"4".....................................skipped
+And Enter the data in the Size set field"7".................................skipped
+When User enter the data in the Testing field"2"............................skipped
+And User enter the data in the Sealer field"4"..............................skipped
+And User enter the data in the TOP field"5".................................skipped
+Given User enter the data in the ShipmentPlatform Sample"2".................skipped
+Given User enter the data in the Photoshoot Meeting Sample"6"...............skipped
+And The User Click on the Submit button.....................................skipped
+And Click on the Save button in the New Yarn Sheet..........................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <select _ngcontent-fet-c299="" data-toggle="select" formcontrolname="use" class="form-control ng-untouched ng-pristine ng-invalid">...</select> is not clickable at point (569, 530). Other element would receive the click: <div _ngcontent-fet-c299="" id="importFabricDetails" tabindex="-1" aria-labelledby="importFabricDetailsLabel" class="modal fade show" style="z-index: 1040; padding-right: 17px; display: block;" aria-modal="true" role="dialog">...</div>
+  (Session info: chrome=125.0.6422.142)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50649}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 598cfe6d1d9b71456288d502b931a65e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at Page.New_Yarn_Sheet_Page.Select_the_yarn_use(New_Yarn_Sheet_Page.java:296)
+	at Stepdefinition1.New_Yarn_Sheet_Steps.Select_the_yarn_use(New_Yarn_Sheet_Steps.java:83)
+	at ✽.Select the yarn use "Main body"(file:///C:/Users/Calibrage24/git/JivaAutomation/Features/New_Yarn_Sheet.feature:353)
+]]></failure>
+    </testcase>
+    <testcase classname="feature to test Jiva design New Yarn Sheet screen functionality" name="Verify the Added data is displayed in the Grid" time="109.304">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Then user enter the Username and password...................................passed
+And User click on the signIn................................................passed
+And Click on the Merchandising Module in the Sweater module.................passed
+And Click on the New Yarn Sheet Screen under the Generate Yarn Sheet dropdown.passed
+And User click on the Style Expansion.......................................passed
+And Click on the Filter Icon in Style Expansion.............................passed
+And Enter the Buyer "IPO1206" in Search By Buyer Style Or IPO...............passed
+And click on the Apply button...............................................passed
+And Select the IPO in the Styles List.......................................passed
+And Verify the Added Yarn details are displayed in the Yarn details grid....passed
+And Verify the Garment Average details are displayed in the Garment Average Grid.passed
+And Verify the Quantity details are displayed in the Quantity Requirements grid.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test Jiva design New Yarn Sheet screen functionality" name="Verify the View For Print functionality" time="121.636">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Then user enter the Username and password...................................passed
+And User click on the signIn................................................passed
+And Click on the Merchandising Module in the Sweater module.................passed
+And Click on the New Yarn Sheet Screen under the Generate Yarn Sheet dropdown.passed
+And User click on the Style Expansion.......................................passed
+And Click on the Filter Icon in Style Expansion.............................passed
+And Enter the Buyer "IPO1206" in Search By Buyer Style Or IPO...............passed
+And click on the Apply button...............................................passed
+And Select the IPO in the Styles List.......................................passed
+And Click on the View For Print Button......................................passed
+And Verify the IPO details are displayed or not.............................passed
+And Verify the Added Yarn details are displayed in the Yarn details grid....passed
+And Verify the Garment Average details are displayed in the Garment Average Grid.passed
+And Verify the Quantity details are displayed in the Quantity Requirements grid.passed
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 ]]></system-out>
     </testcase>
 </testsuite>
