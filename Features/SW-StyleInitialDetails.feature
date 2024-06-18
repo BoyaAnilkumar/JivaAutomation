@@ -2,30 +2,15 @@
 Feature: feature to test Jiva design style initial details screen functionality
 
   @SWStyleInitialDetails
-  Scenario: To Test submit order details in Style Initial details screen
+  Scenario: To Test that user navigates to Style Initial details screen
     Given User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
-    And Click on the Woven Module
-    Then click on the Merchandising Module
-    And click on Data Entry dropdown
-    And click on the Style Initail Details screen
+    Then click on the SW Merchandising Module
+    And click on SW Data Entry dropdown
+    And click on SW Style Initial Details screen
     And Click on the Styles Expansion
-    And Select IPO
-    And Verify IPO data
-    And Verify Style
-    And Verify Buyer
-    And Verify Season
-    And Select File handover date
-    And Click on the Add combo button
-    Given Enter the data in Combo1
-    And Enter the data in Combo2
-    And Click on the Add Garment type button
-    And Click on the Garment type field
-    And Click and Select the Garment type
-    And Click on the Submit Order details button
-  #And Verify the Alert msg
-  #And Verify the Saved msg
+    
   
   @SWStyleInitialDetailsorderdetails
   Scenario: To Test submit order details in Style Initial details screen
@@ -45,39 +30,56 @@ Feature: feature to test Jiva design style initial details screen functionality
     And Click on the submit button
     And Verify the validation msg is displaying or not
 
-  @SWStyleInitialDetails1
-  Scenario: To test the filter functionality of style initial details
-    Given User navigates to Login page
+  @SWStyleInitialDetails_Filters
+  Scenario Outline: To test the filter functionality of style initial details
+   Given User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
-    And Click on the Woven Module
-    Then click on the Merchandising Module
-    And click on Data Entry dropdown
-    And click on the Style Initail Details screen
+    Then click on the SW Merchandising Module
+    And click on SW Data Entry dropdown
+    And click on SW Style Initial Details screen
     And Click on the Styles Expansion
     And Click on the Filter Icon
     And Click on the Buyer Field
-    Then Select the Buyer
-    And Click on the Cancel Icon
-    And Click on the Season Field
-    And Select the Season
-    Then Click on the Status Field
-    And Select the status
-    When Search the IPO
-    And Click on the Apply button
-    And Click on the Reset button
+    Then Select the IPO from the list "<IPO>"
+    
+    
+    Examples:
+ |IPO       |
+ |IPO1706.2 |
 
   @SWStyleInitialDetails2
-  Scenario: To Test the delete functionality in style initial details
+  Scenario Outline: To test the submit order details
     Given User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
-    And Click on the Woven Module
-    Then click on the Merchandising Module
-    And click on Data Entry dropdown
-    And click on the Style Initail Details screen
+    Then click on the SW Merchandising Module
+    And click on SW Data Entry dropdown
+    And click on SW Style Initial Details screen
     And Click on the Styles Expansion
-    And Click on the Delete Icon1
-    And Click on the delete Icon2
-    And Click on the Delete Garment Icon1
-    And Click on the Delete garment Icon2
+    Then Select the IPO from the list "<IPO>"
+    And Select file handover date"<File Handover>"
+    Then click on Add combination button and enter combination names"<Combination Name1>" and "<Combination Name2>"
+    And click on Submit order details button
+    And Verify whether the Garment Size type field data is displayed or not
+    Given User enter the data in PO Qty field for combos
+    And Enter the data in IPO% field in order details
+    And Click on the submit button
+  
+  
+  
+  
+  
+  Examples:
+
+ |IPO       |File Handover |Combination Name1|Combination Name2|
+ |IPO1706.2 |17062024      |Combo1					 |Combo2					 |
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
