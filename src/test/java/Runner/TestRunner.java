@@ -12,12 +12,11 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-<<<<<<< HEAD
-				  tags ="@BulkChecking1")
-=======
-				  tags ="@StyleInitialDetails")
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
+				  tags ="@New_Yarn_Sheet")
+
+ 
+  
 
 public class TestRunner {
 

@@ -39,11 +39,11 @@ utilities.MinimumWait(driver);
 public void User_enters_the_username_and_password() throws Throwable {
 utilities.webDriverWait(driver, username);
 utilities.webDriverWait(driver, password);
-<<<<<<< HEAD
+
 driver.findElement(username).sendKeys("Admin");
-=======
+
 driver.findElement(username).sendKeys("Lavanya");
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 utilities.MinimumWait(driver);
 driver.findElement(password).sendKeys("Abcd@123");
 utilities.MediumWait(driver);
