@@ -25,6 +25,7 @@ import util.Utilities;
 
 			By Style_Ex = By.xpath("//a[@id='sidebarCollapse']");
 			//Filter
+
 			By Filterslash = By.xpath("//i[@class='pi pi-filter-slash']");
 		    By FilterIcon = By.xpath("//button[@class='btn btn-primary btn-sm mb-2 float-right']");
 		    By BuyerField = By.xpath("//div[text()='Select Buyer']");
@@ -106,8 +107,8 @@ import util.Utilities;
 
 				}
 	            public void Click_on_the_Filter_Icon() throws Throwable {
-//	            utilities.webDriverWait(driver, Filterslash);
-//				driver.findElement(Filterslash).click();
+	            utilities.webDriverWait(driver, Filterslash);
+				driver.findElement(Filterslash).click();
 				utilities.webDriverWait(driver, FilterIcon);
 				driver.findElement(FilterIcon).click();
 				}
@@ -117,16 +118,16 @@ import util.Utilities;
 //				driver.findElement(BuyerField).click();
 //				utilities.MediumWait(driver);
 //     			driver.findElement(EnterButer).sendKeys("Spin");
-					
+						
 						utilities.webDriverWait(driver, BuyerField1);
 						driver.findElement(BuyerField1).click();
 						System.out.println("Buyer field clicked");
 						utilities.MediumWait(driver);
-						driver.findElement(EnterBuyer).sendKeys("Spin");
+						driver.findElement(EnterBuyer).sendKeys("Test buyer");
 						utilities.MediumWait(driver);
 						driver.findElement(SelectBuyer).click();
 						utilities.MediumWait(driver);
-						driver.findElement(BuyerField1).click();
+//						driver.findElement(BuyerField1).click();
 
 
 				}
@@ -176,6 +177,7 @@ import util.Utilities;
 				public void Click_on_the_Apply_button() throws Throwable {
 					utilities.webDriverWait(driver, Apply);
 					driver.findElement(Apply).click();
+					utilities.MinimumWait(driver);
 
 				}
 				public void Click_on_the_Reset_button() throws Throwable {
@@ -406,8 +408,8 @@ import util.Utilities;
 					utilities.webDriverWait(driver, Submit);
 					driver.findElement(Submit).click();
 					utilities.MediumWait(driver);
-					driver.findElement(Yes_button).click();
-					utilities.MediumWait(driver);
+//					driver.findElement(Yes_button).click();
+//					utilities.MediumWait(driver);
 
 //					 WebElement DisplayValue = driver.findElement(Expected);
 //					 String AF = DisplayValue.getText();

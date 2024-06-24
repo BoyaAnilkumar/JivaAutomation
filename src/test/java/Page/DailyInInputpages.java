@@ -23,7 +23,7 @@ public class DailyInInputpages extends DriverFactory {
 	Utilities utilities = new Utilities();
 	
 	By Fabric_Store							=	By.xpath("//span[text()='Fabric Store ']");
-	By Data_Entry							= 	By.xpath("(//a[@aria-expanded='false']/.//span[text()='Data Entry'])[6]");
+	By Data_Entry							= 	By.xpath("(//span[text()='Data Entry'])[6]");
 	By Daily_IN_and_Out						=	By.xpath("(//a[@aria-expanded='false']/.//span[text()='Daily In & Out'])[2]");
 	By Daily_In_Data_Entry					=	By.xpath("//a[text()='Daily in Data Entry']");
 	By Screen_Name							=	By.xpath("//h3[text()='Daily In Data Entry']");
