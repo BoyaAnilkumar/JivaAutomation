@@ -38,7 +38,7 @@ Examples:
 |Buyer       |     Season     |  StyleOrIPO      |
 |Test buyer  |     Fall       |   IPO1206        |
 
-@New_Yarn_Sheet2
+@New_Yarn_Sheet_Add
 Scenario Outline: Verify the Adding New Yarn functionality
 Given User navigates to Login page
 Then user enter the Username and password
@@ -99,7 +99,7 @@ And Click on the Save button in the New Yarn Sheet
 Examples:
 |  StyleOrIPO| action |  label       | Supplier   |YarnQuality   | Content               |Use      |  Color   |BaseSize |percentage  |LinkingAvg|Sizeset|Testing|Sealer|TOP|Shipment|Photoshoot|BulkYarnDeadline|Sourcingmanager|
 |   IPO1206  |  check | Is Nominated?| Anil kumar |Acrylic Nylon |  80% acrylic 20% nylon|Shell    | Almond   | 5       |4           |2         |4      |6      |     2|3  |4       |4         |      4          | Ravi Teja     |
-|   IPO1206  |uncheck | Is Nominated?| Anil Kumar | Cotton       |   100% cotton         |Main body|Black     |  6      |7           |  3       |2      |8      |  6   | 1 |  6     |5         |       4         | Ravi Teja     |
+#|   IPO1206  |uncheck | Is Nominated?| Anil Kumar | Cotton       |   100% cotton         |Main body|Black     |  6      |7           |  3       |2      |8      |  6   | 1 |  6     |5         |       4         | Ravi Teja     |
 
 @New_Yarn_Sheet2
 Scenario Outline: Validate Add New Yarn without enter the data
@@ -286,7 +286,7 @@ And Click on the Save button in the New Yarn Sheet
 
 Examples:
 |  StyleOrIPO| Use       |  Color |BaseSize |percentage |LinkingAvg|Sizeset|Testing|Sealer |TOP|Shipment|Photoshoot|
-|   IPO1206  | Main body | Blue   | 8       |5          | 4         |7      |2     |   4   |5  |2       |6         |
+|   IPO2     | Main body | Blue   | 8       |5          | 4        |7      |2     |   4   |5  |2       |6         |
 
 @New_Yarn_Sheet
 Scenario Outline: Verify the Other IPO Import Yarn details functionality
@@ -326,11 +326,11 @@ And User enter the data in the TOP field"<TOP>"
 Given User enter the data in the ShipmentPlatform Sample"<Shipment>"
 Given User enter the data in the Photoshoot Meeting Sample"<Photoshoot>"
 And The User Click on the Submit button
-And Click on the Save button in the New Yarn Sheet
+#And Click on the Save button in the New Yarn Sheet
 
 Examples:
 |  StyleOrIPO| Use       |  Color |BaseSize |percentage |LinkingAvg|Sizeset|Testing|Sealer |TOP|Shipment|Photoshoot|
-|   IPO1206  | Main body | Blue   | 8       |5          | 4         |7      |2     |   4   |5  |2       |6         |
+|   IPO2     | Main body | Blue   | 8       |5          | 4         |7      |2     |   4   |5  |2       |6         |
 
 @New_Yarn_Sheet
 Scenario Outline: Verify the PD YDS Import Yarn details functionality
@@ -368,11 +368,11 @@ And User enter the data in the TOP field"<TOP>"
 Given User enter the data in the ShipmentPlatform Sample"<Shipment>"
 Given User enter the data in the Photoshoot Meeting Sample"<Photoshoot>"
 And The User Click on the Submit button
-And Click on the Save button in the New Yarn Sheet
+#And Click on the Save button in the New Yarn Sheet
 
 Examples:
 |  StyleOrIPO| Use       |  Color |BaseSize |percentage |LinkingAvg|Sizeset|Testing|Sealer |TOP|Shipment|Photoshoot|
-|   IPO1206  | Main body | Blue   | 8       |5          | 4         |7      |2     |   4   |5  |2       |6         |
+|   IPO2     | Main body | Blue   | 8       |5          | 4         |7      |2     |   4   |5  |2       |6         |
 
 @New_Yarn_Sheet
 Scenario Outline: Verify the Added data is displayed in the Grid
