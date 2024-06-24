@@ -14,8 +14,6 @@ import io.cucumber.junit.CucumberOptions;
 				  monochrome = true,
 				  tags ="@GarmentProcess")
 
-
- 
   
 
 public class TestRunner {
