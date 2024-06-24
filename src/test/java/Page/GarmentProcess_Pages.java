@@ -21,7 +21,22 @@ public class GarmentProcess_Pages extends DriverFactory{
 	By Search_IPO_Style = By.xpath("//input[@formcontrolname='searchText']");
 	By Select_IPO = By.xpath("//div[@id='pills-tab']");
 	By Apply = By.xpath("(//button[@type='submit'])[1]");
-	
+	By IPO_details = By.xpath("//ul[@class='row view-details mb-3']");
+	By Block_Cutting = By.xpath("//label[text()='Block cutting']");
+	By Half_Stitch = By.xpath("//label[text()='Half Stitch']");
+	By Smocking_Stitch = By.xpath("//label[text()='Smocking']");
+	By Pintuck_Stitch = By.xpath("//label[text()='Pintuck']");
+	By Washing = By.xpath("//label[text()='Washing ']");
+	By Washing_dropdown_field = By.xpath("//select[@formcontrolname='washingTypeId']");
+	By Select_Washing = By.xpath("//select[@formcontrolname='washingTypeId']/.//option[text()=' Cold pigment']");
+	By Embroidery = By.xpath("//input[@formcontrolname='isEmbroidery']");
+	By Running_Computer = By.xpath("//input[@id='embInGrmtStg+0']");
+	By Manual_Embd = By.xpath("//input[@id='embInGrmtStg+1']");
+	By Adda_Embd = By.xpath("//input[@id='embInGrmtStg+2']");
+	By Hand_Embd = By.xpath("//input[@id='embInGrmtStg+3']");
+	By Logo_Embd = By.xpath("//input[@id='embInGrmtStg+4']");      
+	By Printing = By.xpath("//input[@formcontrolname='isPrinting']");
+	By KajButton_Finishing = By.xpath("//input[@id='finshng+0']");
 	
 	
 	
