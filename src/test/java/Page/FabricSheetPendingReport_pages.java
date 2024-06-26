@@ -148,7 +148,7 @@ public class FabricSheetPendingReport_pages extends DriverFactory{
 		utilities.webDriverWait(driver, SortingByColumns);
 		WebElement table = driver.findElement(SortingByColumns);
 		
-		List<WebElement> columnheader = table.findElements(By.xpath("th//p-sorticon"));
+		List<WebElement> columnheader = table.findElements(By.xpath("p-sorticon"));
 
 		for (WebElement header : columnheader) {
 

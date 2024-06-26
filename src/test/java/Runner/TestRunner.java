@@ -11,16 +11,12 @@ import io.cucumber.junit.CucumberOptions;
 				               ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
 				  glue="Stepdefinition1",
 				  features = "Features",
-				  monochrome = true,
-				  tags ="@SWStyleInitialDetails2")
-
-<<<<<<< HEAD
-				  tags ="@SWStylePODetails")
-=======
->>>>>>> refs/remotes/origin/master
+				  monochrome = true,				 
+				  tags ="@SW_PD_Fabric_Pricing")
 
  
-  
+ 
+ 
 
 public class TestRunner {
 

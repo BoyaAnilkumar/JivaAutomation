@@ -44,6 +44,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -53,7 +54,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jun 18, 2024 04:52:13 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jun 20, 2024 08:13:42 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -69,6 +70,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -122,10 +124,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -136,10 +138,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>2</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>1</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -152,10 +154,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>44</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='99.057%'><span class='strong'>105</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0.943%'>1</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -175,11 +177,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>feature to test Jiva design Sweater Style Po Details screen functionality</span>
-						<span class='test-time'>Jun 18, 2024 04:52:19 pm</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Jun 20, 2024 08:13:49 pm</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -193,7 +195,7 @@
 		<span class='category label'>@FeatureGroup</span>
 		<span class='category label'>@SWStylePODetails</span>
 	</div>
-	<span class='duration right label'>0h 0m 36s+797ms</span>
+	<span class='duration right label'>0h 0m 41s+80ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Validate user click on the Style PO Details screen in menu</div>
 	</div>
@@ -281,7 +283,7 @@
 	<div class='category-list'>
 		<span class='category label'>@SWStylePODetails</span>
 	</div>
-	<span class='duration right label'>0h 1m 32s+179ms</span>
+	<span class='duration right label'>0h 1m 33s+123ms</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Verify the Filter functionality in the Style expansion</div>
 		<table class='runtime-table table-striped table'><tr><td>Buyer</td><td>Season</td><td>StyleOrIPO</td><td>StyleIPO</td></tr><tr><td>Test buyer</td><td>Fall</td><td>IPO1806</td><td>IPO1806 / Style2</td></tr></table>
@@ -459,6 +461,391 @@
 		</li>
 	</ul>
 </div>
+<div class='scenario outline node' test-id='53' status='fail'>
+	<div class='category-list'>
+		<span class='category label'>@SWStylePODetails</span>
+	</div>
+	<span class='duration right label'>0h 5m 53s+896ms</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario Outline: Verify the Add PO details functionality</div>
+		<table class='runtime-table table-striped table'><tr><td>StyleOrIPO</td><td>PO</td><td>POQty</td><td>Shortage</td><td>Addl_Shippment</td><td>Priority</td><td>Days</td><td>Factory</td><td>Mode</td><td>Comments</td></tr><tr><td>IPO1806</td><td>PO1</td><td>100</td><td>5</td><td>8</td><td>2</td><td>5</td><td>02032024</td><td>Sea</td><td>Style Po details</td></tr></table>
+	</div>
+	<ul class='steps'>
+		<li test-id='54' class='node scenario fail' status='fail'>
+			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Verify the Add PO details functionality</div>
+			<ul class='gc steps'>
+				<li test-id='56' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Login_steps.User_navigates_to_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User navigates to Login page</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='57' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded23.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='58' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.New_Yarn_Sheet_Steps.user_enter_the_Username_and_password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then user enter the Username and password</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='59' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded24.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='60' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Login_steps.User_click_on_the_signIn()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click on the signIn</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='61' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded25.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='62' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_PDFDS_Steps.Click_on_Sweater_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Sweater module</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='63' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded26.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='64' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.New_Yarn_Sheet_Steps.Click_on_the_Merchandising_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on the Merchandising Module</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='65' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded27.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='66' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.New_Yarn_Sheet_Steps.Click_on_Data_Entry_dropdown()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Data Entry dropdown</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='67' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded28.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='68' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Click_on_the_Style_PO_Details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Style PO Details</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='69' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded29.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='70' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.New_Yarn_Sheet_Steps.User_click_on_the_Style_Expansion()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click on the Style Expansion</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='71' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded30.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='72' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.New_Yarn_Sheet_Steps.Click_on_the_Filter_Icon_in_Style_Expansion()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Filter Icon in Style Expansion</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='73' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded31.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='74' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.New_Yarn_Sheet_Steps.Enter_the_Buyer_in_Search_By_Buyer_Style_Or_IPO(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the Buyer "IPO1806" in Search By Buyer Style Or IPO</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='75' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded32.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='76' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.New_Yarn_Sheet_Steps.click_on_the_Apply_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on the Apply button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='77' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded33.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='78' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.New_Yarn_Sheet_Steps.Select_the_IPO_in_the_Styles_List()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the IPO in the Styles List</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='79' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded34.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='80' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Click_on_the_Add_New_PO_button_in_the_Style_PO_Details_Screen()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Add New PO button in the Style PO Details Screen</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='81' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded35.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='82' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.User_enter_the_data_in_the_field_in_the_PO_details_section(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When User enter the data in the "PO1" field in the PO details section</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='83' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded36.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='84' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Select_the_PO_Details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the PO Details</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='85' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded37.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='86' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Enter_the_in_the_PO_Qty_field(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the "100" in the PO Qty field</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='87' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded38.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='88' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Enter_the_data_in_the_Allowed_field(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Enter the data in the "5" Allowed field</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='89' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded39.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='90' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Enter_the_data_in_the_field(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the data in the "8" field</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='91' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded40.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='92' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Enter_the_data_in_the_Shippment_Priority_field(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the data in the Shippment Priority "2" field</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='93' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded41.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='94' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Select_the_Combos_in_the_Applicable_Combos_field_in_the_Combos_Section()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the Combos in the Applicable Combos field in the Combos Section</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='95' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded42.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='96' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Select_the_Garments_in_the_Garment_Size_Type_Selection_field()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the Garments in the Garment Size Type Selection field</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='97' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded43.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='98' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.StylePODetails.Select_the_Ex_factory_date()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the Ex factory date</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='99' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded44.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='100' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Enter_the_data_Kept_In_Hand_field(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the data "5" Kept In Hand field</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='101' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded45.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='102' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Check_the_Ex_Factory_For_Production_field_data_is_preopulated_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Check the Ex Factory For Production field data is preopulated or not</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='103' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded46.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='104' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Select_the_Requested_Ex_field(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the Requested Ex "02032024" field</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='105' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded47.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='106' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Select_the_Handover_Date_in_handover_details_section()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Select the Handover Date in handover details section</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='107' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded48.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='108' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Select_the_in_Handover_details_section(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Select the "Sea" in Handover details section</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='109' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded49.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='110' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Enter_the_data_in_the_Comments_section(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Enter the data "Style Po details" in the Comments section</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='111' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded50.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='112' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Enter_the_PO_Size_wise_details()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the PO Size wise details</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='113' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded51.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='114' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.SW_StylePODetails_Steps.Check_the_Size_wise_Details_PO_Qty_fields_data_is_preppopulated_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Check the Size wise Details PO Qty fields data is preppopulated or not</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='115' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded52.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='116' class='gc and fail' status='fail'>
+					<h6 class="step-name" title="Stepdefinition1.New_Yarn_Sheet_Steps.The_User_Click_on_the_Submit_button()"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>And The User Click on the Submit button</h6>
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[contains(@class,'btn btn-primary')])[2]"}
+  (Session info: chrome=126.0.6478.114)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52614}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f42a57ebc7370fbe48729f51ff597c7
+*** Element info: {Using=xpath, value=(//button[contains(@class,'btn btn-primary')])[2]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.New_Yarn_Sheet_Page.The_User_Click_on_the_Submit_button(New_Yarn_Sheet_Page.java:740)
+	at Stepdefinition1.New_Yarn_Sheet_Steps.The_User_Click_on_the_Submit_button(New_Yarn_Sheet_Steps.java:218)
+	at ✽.The User Click on the Submit button(file:///C:/Users/Calibrage24/git/JivaAutomation/Features/SW-StylePODetails.feature:69)
+</textarea>
+				</li>
+				<li test-id='117' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded53.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
 					</div>
 				</li>
 			</ul>
@@ -504,12 +891,13 @@
 						<span class='category-name'>@FeatureGroup</span>
 						<span class='category-status right'>
 						<span class='label pass'>2</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
-							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -523,19 +911,24 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 18, 2024 04:52:19 pm</td>
+										<td>Jun 20, 2024 08:13:49 pm</td>
 										<td class='linked' test-id='1'>feature to test Jiva design Sweater Style Po Details screen functionality</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jun 18, 2024 04:52:19 pm</td>
+										<td>Jun 20, 2024 08:13:49 pm</td>
 										<td class='linked' test-id='2'>Validate user click on the Style PO Details screen in menu</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jun 18, 2024 04:53:01 pm</td>
+										<td>Jun 20, 2024 08:14:36 pm</td>
 										<td class='linked' test-id='20'>Verify the Filter functionality in the Style expansion</td>
 										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 20, 2024 08:16:15 pm</td>
+										<td class='linked' test-id='54'>Verify the Add PO details functionality</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -547,12 +940,13 @@
 						<span class='category-name'>@SWStylePODetails</span>
 						<span class='category-status right'>
 						<span class='label pass'>3</span>
+						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
-							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -566,19 +960,29 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 18, 2024 04:52:19 pm</td>
+										<td>Jun 20, 2024 08:13:49 pm</td>
 										<td class='linked' test-id='2'>Validate user click on the Style PO Details screen in menu</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jun 18, 2024 04:53:01 pm</td>
+										<td>Jun 20, 2024 08:14:36 pm</td>
 										<td class='linked' test-id='19'>Verify the Filter functionality in the Style expansion</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jun 18, 2024 04:53:01 pm</td>
+										<td>Jun 20, 2024 08:14:36 pm</td>
 										<td class='linked' test-id='20'>Verify the Filter functionality in the Style expansion</td>
 										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 20, 2024 08:16:15 pm</td>
+										<td class='linked' test-id='53'>Verify the Add PO details functionality</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jun 20, 2024 08:16:15 pm</td>
+										<td class='linked' test-id='54'>Verify the Add PO details functionality</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -594,7 +998,89 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 20, 2024 08:20:27 pm</td>
+										<td class='linked' test-id='116'>And The User Click on the Submit button</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[contains(@class,'btn btn-primary')])[2]"}
+  (Session info: chrome=126.0.6478.114)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-H2GTC4A', ip: '192.168.1.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52614}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5f42a57ebc7370fbe48729f51ff597c7
+*** Element info: {Using=xpath, value=(//button[contains(@class,'btn btn-primary')])[2]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Page.New_Yarn_Sheet_Page.The_User_Click_on_the_Submit_button(New_Yarn_Sheet_Page.java:740)
+	at Stepdefinition1.New_Yarn_Sheet_Steps.The_User_Click_on_the_Submit_button(New_Yarn_Sheet_Steps.java:218)
+	at ✽.The User Click on the Submit button(file:///C:/Users/Calibrage24/git/JivaAutomation/Features/SW-StylePODetails.feature:69)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -608,31 +1094,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>44</div>
+					<div class='panel-lead'>106</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 18, 2024 04:52:13 pm</div>
+					<div class='panel-lead'>Jun 20, 2024 08:13:42 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 18, 2024 04:54:34 pm</div>
+			 		<div class='panel-lead'>Jun 20, 2024 08:22:10 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 21s+217ms</div>
+					<div class='panel-lead'>0h 8m 28s+132ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -650,19 +1136,19 @@
 						<tr>
 							<td>@FeatureGroup</td>
 							<td>2</td>
-							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									66.667%
+									50%
 							</td>
 						</tr>
 						<tr>
 							<td>@SWStylePODetails</td>
 							<td>3</td>
-							<td>0</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									100%
+									60%
 							</td>
 						</tr>
 					</table>
@@ -677,38 +1163,38 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
-				childCount: 2,
+				exceptionsParent: 1,
+				childCount: 3,
 				passChild: 2,
-				failChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
-				grandChildCount: 44,
-				passGrandChild: 44,
-				failGrandChild: 0,
+				exceptionsChild: 1,
+				grandChildCount: 106,
+				passGrandChild: 105,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "feature to test Jiva design Sweater Style Po Details screen functionality":134.17
+			        "feature to test Jiva design Sweater Style Po Details screen functionality":499.804
 			};
 		</script>
 	

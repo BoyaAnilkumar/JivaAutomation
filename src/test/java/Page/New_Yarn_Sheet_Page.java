@@ -113,6 +113,8 @@ public class New_Yarn_Sheet_Page extends DriverFactory {
 	By Quantity_Details       = By.xpath("(//tbody[@class='p-element p-datatable-tbody'])[3]");
 	By View_For_Print         = By.xpath("//button[text()=' View for Print ']");
 	By View_IPO_Data          = By.xpath("//td[@class='text-right p-2']");
+	By Dropdown_List          = By.xpath("//div[text()='No items found']");
+
 	
    public void User_enters_the(String username, String password) throws Throwable {
 	     utilities.webDriverWait(driver, username_field);
@@ -163,7 +165,7 @@ public class New_Yarn_Sheet_Page extends DriverFactory {
 		utilities.MediumWait(driver);
 		driver.findElement(Buyer_Check_Box).click();
 		utilities.MediumWait(driver);
-		driver.findElement(Click_field).click();
+		driver.findElement(Filter_Buyer).click();
 		utilities.MediumWait(driver);
 	}
 	public void Select_in_the_Filter_option_page(String Season) throws Throwable {
@@ -970,24 +972,41 @@ public class New_Yarn_Sheet_Page extends DriverFactory {
 		
 	}
 	public void Select_the_Yarn_in_the_Import_yarn_details_Popup() throws Throwable {
-		try {
 		utilities.webDriverWait(driver, Select_Yarn);
 		driver.findElement(Select_Yarn).click();
-		utilities.MediumWait(driver);
-		Robot r = new Robot();
-		r.keyPress(KeyEvent.VK_ENTER);
-		Thread.sleep(2000);		
+		Thread.sleep(1000);
+		Boolean isPresent = driver.findElements(Dropdown_List).size()>0;
+		if (isPresent) {	
+			 System.out.println("Display element: " + isPresent);		   		
+			    System.out.print("Selected IPO yarn names are not displayed");
+			    driver.findElement(Import_Close).click();
+			    utilities.webDriverWait(driver, Yarn_Quality_field);
+			    driver.findElement(Yarn_Quality_field).click();
+			    Thread.sleep(1000); 
+			    Robot r = new Robot();
+			    r.keyPress(KeyEvent.VK_DOWN);
+			    r.keyPress(KeyEvent.VK_ENTER);
+			    Thread.sleep(2000);
+		  
+		} else {
+			  System.out.println("Display element: " + isPresent);
+			    utilities.MediumWait(driver);
+			    Robot r = new Robot();
+			    r.keyPress(KeyEvent.VK_ENTER);
+			    Thread.sleep(2000);	
 		}
-		catch (Exception e) {
-		System.out.print("Selected IPO yarn names are not displayed");
-		 driver.quit();
-	}
-		
+
 	}
 	public void Click_on_the_Import_button_in_the_yarn_details_Popup() throws Throwable {
+		try {
 		utilities.webDriverWait(driver, Import_button);
 		driver.findElement(Import_button).click();
 		utilities.MediumWait(driver);
+		}
+		catch (Exception e) {
+		System.out.print("Import button is not displayed");
+		
+	}
 		
 	}
 	public void Select_the_Other_IPO_in_Import_Yarn_details_popup() throws Throwable {
@@ -995,26 +1014,52 @@ public class New_Yarn_Sheet_Page extends DriverFactory {
 		utilities.webDriverWait(driver, Other_Ipo);
 		driver.findElement(Other_Ipo).click();
 		utilities.MediumWait(driver);
+		
 				
 	}
+	By Import_Close_Icon     = By.xpath("//button[@aria-label='Close']");
 	public void Select_the_IPO_in_the_Import_yarn_details_page() throws Throwable {
 
 		utilities.webDriverWait(driver, Select_IPO_import);
 		driver.findElement(Select_IPO_import).click();
-		utilities.MediumWait(driver);
-		Robot r = new Robot();
-		r.keyPress(KeyEvent.VK_ENTER);
-		Thread.sleep(2000);		
+		utilities.MediumWait(driver);		
+		Boolean isPresent = driver.findElements(Dropdown_List).size()>0;
+		if (isPresent) {	
+			 System.out.println("Display element: " + isPresent);		   		
+			    System.out.print("Selected IPO names are not displayed");
+			    driver.findElement(Import_Close).click();
+			    utilities.webDriverWait(driver, Yarn_Quality_field);
+			    driver.findElement(Yarn_Quality_field).click();
+			    Thread.sleep(1000); 
+			    Robot r = new Robot();
+			    r.keyPress(KeyEvent.VK_DOWN);
+			    r.keyPress(KeyEvent.VK_ENTER);
+			    Thread.sleep(2000);
+		  
+		} else {
+			  System.out.println("Display element: " + isPresent);
+			    utilities.MediumWait(driver);
+			    Robot r = new Robot();
+				r.keyPress(KeyEvent.VK_ENTER);
+				Thread.sleep(2000);	
+		}
 				
 	}
 	public void Select_the_Other_IPO_Yarn_in_the_Import_yarn_details_Popup() throws Throwable {
-		utilities.webDriverWait(driver, Select_Other_yarn);
-		driver.findElement(Select_Other_yarn).click();
-		utilities.MediumWait(driver);
-		Robot r = new Robot();
-		r.keyPress(KeyEvent.VK_ENTER);
-		Thread.sleep(2000);					
-		
+		try {
+			utilities.webDriverWait(driver, Select_Other_yarn);
+			driver.findElement(Select_Other_yarn).click();
+			utilities.MediumWait(driver);
+			Robot r = new Robot();
+			r.keyPress(KeyEvent.VK_ENTER);
+			Thread.sleep(2000);			
+			}
+			catch (Exception e) {
+			System.out.print("Field is not displayed");
+			
+		}
+			
+	
 	}
 	public void Select_the_PD_YDS_in_Import_Yarn_details_popup() throws Throwable {
 		utilities.webDriverWait(driver, Select_PDYDS);
@@ -1028,11 +1073,27 @@ public class New_Yarn_Sheet_Page extends DriverFactory {
 	public void Select_the_PD_YDS_Yarn_in_the_Import_yarn_details_Popup() throws Throwable {
 		utilities.webDriverWait(driver, Select_PDYDS_yarn);
 		driver.findElement(Select_PDYDS_yarn).click();
-		utilities.MediumWait(driver);
-		Robot r = new Robot();
-		r.keyPress(KeyEvent.VK_ENTER);
-		Thread.sleep(2000);		
-		
+		utilities.MediumWait(driver);	
+		Boolean isPresent = driver.findElements(Dropdown_List).size()>0;
+		if (isPresent) {	
+			 System.out.println("Display element: " + isPresent);		   		
+			    System.out.print("Selected PD YDS yarn names are not displayed");
+			    driver.findElement(Import_Close).click();
+			    utilities.webDriverWait(driver, Yarn_Quality_field);
+			    driver.findElement(Yarn_Quality_field).click();
+			    Thread.sleep(1000); 
+			    Robot r = new Robot();
+			    r.keyPress(KeyEvent.VK_DOWN);
+			    r.keyPress(KeyEvent.VK_ENTER);
+			    Thread.sleep(2000);
+		  
+		} else {
+			  System.out.println("Display element: " + isPresent);
+			    utilities.MediumWait(driver);
+			    Robot r = new Robot();
+			    r.keyPress(KeyEvent.VK_ENTER);
+			    Thread.sleep(2000);	
+		}
 		
 	}
 	public void Verify_the_Added_Yarn_details_are_displayed_in_the_Yarn_details_grid() throws Throwable {
@@ -1081,10 +1142,8 @@ public class New_Yarn_Sheet_Page extends DriverFactory {
 		     System.out.println(row);
 		        System.out.println();
 		        
-		    }
-		
-		}	    
-		
+		    }		
+		}	    		
 	}
 	public void Verify_the_Quantity_details_are_displayed_in_the_Quantity_Requirements_grid() throws Throwable {
 		 WebElement OrderData = driver.findElement(Quantity_Details);

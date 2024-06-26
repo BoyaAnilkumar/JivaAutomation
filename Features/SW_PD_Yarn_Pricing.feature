@@ -48,7 +48,7 @@ And User click on the Style Expansion
 And Click on the Filter Icon in Pricing Style Expansion
 And Enter the Buyer "<Style>" in Search By Style
 And click on the Apply button 
-And Select the IPO in the Styles List
+And Select the Style in the Styles List
 And Verify whether the Yarn Quality field data is prepopulated or not
 And Verify the Content field data is prepopulated or not
 And Verify the Spin Type field data is prepopulated or not
@@ -76,7 +76,7 @@ And User click on the Style Expansion
 And Click on the Filter Icon in Pricing Style Expansion
 And Enter the Buyer "<Style>" in Search By Style
 And click on the Apply button 
-And Select the IPO in the Styles List
+And Select the Style in the Styles List
 And Verify whether the Yarn Quality field data is prepopulated or not
 And Verify the Content field data is prepopulated or not
 And Verify the Spin Type field data is prepopulated or not
@@ -103,6 +103,7 @@ And Verify the On Save validation is displayed or not
 And Click on the Submit to Po Merchant team the validation msg is displayed or not
 
 
+
 Examples:
 | Style           | username   | password   |Process     |Price     |TotalPrice    |
 |  Style90        |ravi        | Abcd@123   | Dyeing     | 5        |10            |
@@ -120,7 +121,7 @@ And User click on the Style Expansion
 And Click on the Filter Icon in Pricing Style Expansion
 And Enter the Buyer "<Style>" in Search By Style
 And click on the Apply button 
-And Select the IPO in the Styles List
+And Select the Style in the Styles List
 And Click on the View for Print button
 And Verify the Select Style Details are displayed or not
 #And CLick on the Print button

@@ -1,5 +1,7 @@
 package Page;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -313,9 +315,11 @@ public class FabricPricing_Pages extends DriverFactory{
 		utilities.webDriverWait(driver, Fabric_supplier);
 		driver.findElement(Fabric_supplier).click();
 	    utilities.MediumWait(driver);
-		driver.findElement(Select_Supplier).click();
-		utilities.MinimumWait(driver);
-		
+
+		  Robot r = new Robot();
+		    r.keyPress(KeyEvent.VK_DOWN);
+		    r.keyPress(KeyEvent.VK_ENTER);
+		    Thread.sleep(2000);
 	}
 	public void Enter_the_Remarks_Field() throws Throwable {
 		utilities.webDriverWait(driver, Remarks);
