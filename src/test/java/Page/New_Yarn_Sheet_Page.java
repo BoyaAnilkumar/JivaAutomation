@@ -209,10 +209,19 @@ public class New_Yarn_Sheet_Page extends DriverFactory {
 		driver.findElement(Select_Style).click();
 		utilities.MinimumWait(driver);
 		
+<<<<<<< HEAD
 		utilities.webDriverWait(driver, Style_Expansion);
 		driver.findElement(Style_Expansion).click();
 		utilities.MinimumWait(driver);
 		
+=======
+
+		utilities.webDriverWait(driver, Style_Expansion);
+		driver.findElement(Style_Expansion).click();
+		utilities.MinimumWait(driver);
+		
+
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	}
 	public void user_enter_the_Username_and_password() throws Throwable {
 		utilities.webDriverWait(driver, username_field);

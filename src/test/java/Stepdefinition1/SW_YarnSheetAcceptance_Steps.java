@@ -46,9 +46,12 @@ public class SW_YarnSheetAcceptance_Steps {
 	public void click_on_cancel_button_in_print_view() throws Throwable {
 		SYSA.click_on_cancel_button_in_print_view();
 	}
+<<<<<<< HEAD
 	
 	@And("^click on Accept yarn sheet$")
 	public void click_on_Accept_yarn_sheet() throws Throwable {
 		SYSA.click_on_Accept_yarn_sheet();
 	}
+=======
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 }
