@@ -12,11 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-				  tags ="@SWStyleInitialDetails2")
-
-
- 
-  
+				  tags ="@NewYarnSheetWorking")
 
 public class TestRunner {
 

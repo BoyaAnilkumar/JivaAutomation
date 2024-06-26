@@ -20,7 +20,7 @@ public class ViewFabricSheetWorkingpage extends DriverFactory {
 	By Filter_Status						=	By.xpath("//select[@formcontrolname='statusId']");
 	By Select_Filter_Status					=	By.xpath("//option[text()=' Fabric Sheet Working Approved']");
 	By Select_IPO							=	By.xpath("//a[@id='v-pills-tabIPO0210']");
-	By IPO_Details							=	By.xpath("//ul[@class='row view-details']");
+	By IPO_Details							=	By.xpath("//ul[@class='row view-details m-auto']");
 	By Quantity_Requirements				=	By.xpath("//p-table[@class='p-element ng-star-inserted']");
 	By MU_Working							=	By.xpath("//table[@id='pr_id_6-table']");
 	By View_for_print						=	By.xpath("//i[@class='pi pi-eye']");
@@ -64,8 +64,9 @@ public class ViewFabricSheetWorkingpage extends DriverFactory {
 
 	public void Verify_the_IPO_details_displaying_on_the_screen() throws Throwable {
 		utilities.webDriverWait(driver, IPO_Details);
-		String IPODetails = driver.findElement(IPO_Details).getText();
-		System.out.println("Displaying IPO Detaisl: " + IPODetails);
+		WebElement IPODetails = driver.findElement(IPO_Details);
+		 String ipo =IPODetails.getText();
+		System.out.println("Displaying IPO Detaisl: " + ipo);
 		utilities.MinimumWait(driver);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,500)", "");

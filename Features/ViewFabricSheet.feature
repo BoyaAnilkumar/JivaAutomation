@@ -1,4 +1,4 @@
-@IPOadding
+@ViewFabricSheet
 Feature: Creating an IPO for a confirmed style
 
   @ViewFabricSheet
