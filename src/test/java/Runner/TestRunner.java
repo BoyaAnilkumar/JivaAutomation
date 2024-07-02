@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 				  features = "Features",
 				  monochrome = true,
 
-				  tags ="@NewYarnSheetWorking")
+				  tags ="@RevisedYarnSheetWorking")
 
 
 public class TestRunner {

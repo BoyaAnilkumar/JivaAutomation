@@ -32,6 +32,17 @@ public class SW_NewYarnSheetWorking_Pages extends DriverFactory{
 	By Dyeing_cost = By.xpath("(//input[@formcontrolname='dyingCostInINR'])[1]");
 	By Dyeing_Sourcing_Manager = By.xpath("(//select[@formcontrolname='dyingYarnManagerId'])[1]");
 	By Dyeing_Yarn_Executive = By.xpath("(//select[@formcontrolname='dyingYarnExecutiveId'])[1]");
+	By Submit_Working = By.xpath("//button[text()=' Submit']");
+	By MU_Working = By.xpath("(//tbody[@class='p-element p-datatable-tbody'])[2]");
+	By SaleQty = By.xpath("(//input[@formcontrolname='saleYarnQTY'])[1]");
+	By SaleMOQqty = By.xpath("(//input[@formcontrolname='greigeBaseSaleYarnMOQ'])[3]");
+	By SaleRate = By.xpath("(//input[@formcontrolname='saleYarnRate'])[1]");
+	By SaleCost = By.xpath("(//input[@formcontrolname='saleYarnCostInINR'])[1]");
+	By SaleSourcingManager = By.xpath("(//select[@formcontrolname='greigeBaseSaleYarnManagerId'])[2]");
+	By SaleExecutive = By.xpath("(//select[@formcontrolname='greigeBaseSaleYarnExecutiveId'])[2]");
+	By Submit_to_Audit_Team = By.xpath("//button[text()=' Submit to Audit Team']");
+	
+	
 	
 	
 	
@@ -143,6 +154,8 @@ public class SW_NewYarnSheetWorking_Pages extends DriverFactory{
 		Thread.sleep(1000);
 		
 		utilities.webDriverWait(driver, Greige_Cost);
+		driver.findElement(Greige_Cost).click();
+		Thread.sleep(1000);
 		WebElement greigecost = driver.findElement(Greige_Cost);
 		String G_Cost = greigecost.getAttribute("value");
 		System.out.println("Displaying the Greige Cost based on the rate entered " + G_Cost);
@@ -158,6 +171,14 @@ public class SW_NewYarnSheetWorking_Pages extends DriverFactory{
 		G_Sourcing.keyPress(KeyEvent.VK_ENTER);
 		Thread.sleep(1000);
 		
+		utilities.webDriverWait(driver, Greige_Yarn_Executive);
+		driver.findElement(Greige_Yarn_Executive).click();
+		Thread.sleep(1000);
+		Robot G_YarnExecutive = new Robot();
+		G_YarnExecutive.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		G_YarnExecutive.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
 
 		js.executeScript("window.scrollBy(0,250)");
 		
@@ -169,10 +190,127 @@ public class SW_NewYarnSheetWorking_Pages extends DriverFactory{
 		driver.findElement(Dyeing_Rate).sendKeys("8.25");
 		Thread.sleep(1000);
 		
+		utilities.webDriverWait(driver, Dyeing_cost);
+		driver.findElement(Dyeing_cost).click();
+		Thread.sleep(1000);
+		WebElement Dyeing = driver.findElement(Dyeing_cost);
+		String DyeCost = Dyeing.getAttribute("value");
+		System.out.println("Displaying Dyeing Cost " + DyeCost);
+		Thread.sleep(1000);
+		
+		utilities.webDriverWait(driver, Dyeing_Sourcing_Manager);
+		driver.findElement(Dyeing_Sourcing_Manager).click();
+		Thread.sleep(1000);
+		Robot Dye_Sourcing = new Robot();
+		Dye_Sourcing.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		Dye_Sourcing.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		Dye_Sourcing.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
+		
+		utilities.webDriverWait(driver, Dyeing_Yarn_Executive);
+		driver.findElement(Dyeing_Yarn_Executive).click();
+		Thread.sleep(1000);
+		Robot Dye_YarnExecutive = new Robot();
+		Dye_YarnExecutive.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		Dye_YarnExecutive.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
+		
+	}
+
+	public void click_on_submit_button_in_working_form() throws Throwable {
+		utilities.webDriverWait(driver, Submit_Working);
+		driver.findElement(Submit_Working).click();
+		utilities.MinimumWait(driver);
+		
+	}
+
+	public void Verify_the_Data_is_displaying_in_MU_Working_grid() throws Throwable {
+		utilities.webDriverWait(driver, MU_Working);
+		driver.findElement(MU_Working).click();
+		WebElement data = driver.findElement(MU_Working);
+		String MU_Data = data.getText();
+		System.out.println("Displaying the MU Working data in grid " + MU_Data);
+		utilities.MinimumWait(driver);
+		
+	}
+
+	public void Click_on_Edit_icon_and_submit_the_sale_process() throws Throwable {
+		utilities.webDriverWait(driver, Edit_Icon);
+		driver.findElement(Edit_Icon).click();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(Residual_Shrinkage).click();
+		driver.findElement(Residual_Shrinkage).clear();
+		driver.findElement(Residual_Shrinkage).sendKeys("5");
+		Thread.sleep(1000);
+		
+		utilities.webDriverWait(driver, Process);
+		driver.findElement(Process).click();
+		Robot process = new Robot();
+		process.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		process.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		process.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
+		
+		utilities.webDriverWait(driver, SaleQty);
+		WebElement Saleqty = driver.findElement(SaleQty);
+		String S_Qty = Saleqty.getText();
+		System.out.println("Displaying the Sale Qty " + S_Qty);
+		
+		utilities.webDriverWait(driver, SaleMOQqty);
+		driver.findElement(SaleMOQqty).click();
+		Thread.sleep(1000);
+		driver.findElement(SaleMOQqty).sendKeys("1520");
+		Thread.sleep(1000);
+		
+		driver.findElement(SaleRate).click();
+		Thread.sleep(1000);
+		driver.findElement(SaleRate).clear();
+		Thread.sleep(1000);
+		driver.findElement(SaleRate).sendKeys("5");
+		Thread.sleep(1000);
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,250)");
+		
+		driver.findElement(SaleSourcingManager).click();
+		Thread.sleep(1000);
+		Robot S_Manager = new Robot();
+		S_Manager.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		S_Manager.keyPress(KeyEvent.VK_DOWN);
+		S_Manager.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
+		
+		driver.findElement(SaleExecutive).click();
+		Robot Yarn_Executive = new Robot();
+		Yarn_Executive.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		Yarn_Executive.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
+		
+		driver.findElement(Submit_Working).click();
+		utilities.MinimumWait(driver);
+		System.out.println("Submitted Sale Process ");
+	
+	}
+
+	public void Click_on_Submit_to_Audit_Team_button() throws Throwable {
+		utilities.webDriverWait(driver, Submit_to_Audit_Team);
+		WebElement MUWorkinggrid = driver.findElement(MU_Working);
+		String grid_data = MUWorkinggrid.getText();
+		System.out.println("Displaying Grid Data " + grid_data);
+		driver.findElement(Submit_to_Audit_Team).click();
 		
 		
+		}
 		
 		
 	}
 
-}
+

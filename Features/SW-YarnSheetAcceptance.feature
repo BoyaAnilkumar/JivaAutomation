@@ -60,7 +60,7 @@ Then click on cancel button in print view
 Examples:
 | SearchByIPO| username   | password   |
 |IPO1806     | Ravi  	   | Abcd@123  	|
-<<<<<<< HEAD
+
 
 @Yarnsheetacceptance3
 Scenario Outline: Navigate to Yarn Sheet Print view on selecting the IPO
@@ -82,5 +82,4 @@ And click on Accept yarn sheet
 Examples:
 | SearchByIPO| username   | password   |
 |IPO1806     | Ravi  	   | Abcd@123  	|
-=======
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+

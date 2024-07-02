@@ -42,7 +42,7 @@ public class GarmentProcess_Steps {
 	public void Click_on_the_IPO_in_expansion() throws Throwable {
 		GP.Click_on_the_IPO_in_expansion();
 	}
-<<<<<<< HEAD
+
 	
 	@Then("^verify the IPO details after selecting the IPO$")
 	public void verify_the_IPO_details_after_selecting_the_IPO() throws Throwable {
@@ -73,6 +73,5 @@ public class GarmentProcess_Steps {
 	public void Click_on_Submit_button_to_save_the_Garment_Process() throws Throwable {
 		GP.Click_on_Submit_button_to_save_the_Garment_Process();
 	}
-=======
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 }

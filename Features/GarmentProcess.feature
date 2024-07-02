@@ -39,7 +39,7 @@ Feature: Test the Fabric Liability Info
     And Click on Style Expansion
 		When Clicked on Filter icon and apply filters
 		And Click on the IPO in expansion
-<<<<<<< HEAD
+
 		Then verify the IPO details after selecting the IPO
 		And click on Block department to enable the toggle button
 		And click on Half Stitch to enable the toggle button
@@ -52,9 +52,8 @@ Feature: Test the Fabric Liability Info
 		 
 		 
 		 
-		 
-=======
+
 		
 		
 		
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
