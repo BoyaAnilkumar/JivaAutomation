@@ -1,45 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="327.785">
-    <testcase classname="feature to test Jiva design Yarn Sheet Acceptance screen functionality" name="Navigate to Revised Yarn sheet working and submit mu working details" time="327.112">
-        <failure message="element not interactable&#10;  (Session info: chrome=126.0.6478.127)&#10;Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'&#10;System info: host: 'ANIL', ip: '192.168.0.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\banil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 551e9bce96f90a705bc9df88f5c37388" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given User navigates to Login page..........................................passed
-Then the User enters "Ravi", and "Abcd@123".................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="91.524">
+    <testcase classname="Create Styles in sweater style master" name="Sorting the Style Master grid data" time="91.014">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Then User enters the username and password..................................passed
 And User click on the signIn................................................passed
 And Click on Sweater module.................................................passed
-Then Click on the Yarn Sourcing Module......................................passed
-And Click on Data Entry in yarn sourcing....................................passed
-Then Click on the Revised yarn sheet working................................passed
-And Click on style expansion in Revised yarn sheet working..................passed
-And Click on the Filter Icon in Style Expansion.............................passed
-And Enter the IPO "IPO1806" in Search By IPO................................passed
-And click on the Apply button...............................................passed
-And Select the IPO in the Styles List.......................................passed
-Then Verify the IPO details.................................................passed
-And Click on Edit button in MU Working grid.................................passed
-And Add data for the IPO MU Working details.................................failed
-Then click on submit button in working form.................................skipped
-
-StackTrace:
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=126.0.6478.127)
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'ANIL', ip: '192.168.0.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\banil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 551e9bce96f90a705bc9df88f5c37388
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Page.SW_NewYarnSheetWorking_Pages.Add_data_for_the_IPO_MU_Working_details(SW_NewYarnSheetWorking_Pages.java:110)
-	at Stepdefinition1.SW_NewYarnSheetWorking_Steps.Add_data_for_the_IPO_MU_Working_details(SW_NewYarnSheetWorking_Steps.java:32)
-	at ✽.Add data for the IPO MU Working details(file:///C:/Users/banil/JivaDesigns/Features/SW_RevisedYarnSheetWorking.feature:20)
-]]></failure>
+Then Click on PD module in sw module........................................passed
+And Click on Data Entry in PD Module........................................passed
+Then click on Style master screen in sweater module.........................passed
+Given user clicked on Sorting icon in grid header...........................passed
+]]></system-out>
     </testcase>
 </testsuite>

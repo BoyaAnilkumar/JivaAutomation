@@ -2,8 +2,10 @@ package Page;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -31,7 +33,23 @@ public class SW_StyleMaster_page extends DriverFactory {
 	By Filter_Search = By.xpath("(//input[@formcontrolname='buyerStyleNumber'])[1]");
 	By Filter_Apply = By.xpath("//button[text()='Apply']");
 	By Style_Name = By.xpath("//span[text()='Buyer Style: ']/.//a[@href='javascript:void();']");
-	
+	By Alert_AlreadyExist = By.xpath("//h2[text()='Buyer Style already exist']");
+	By Alert_SavedSuccessfully = By.xpath("//h2[text()='Style Master Added Successfully']");
+	By Update_button = By.xpath("(//button[text()=' Updated'])[1]");
+	By Edit_Icon = By.xpath("//button[@title='Edit Style Master']");
+	By Edit_Buyer = By.xpath("(//select[@formcontrolname='buyerId'])[2]");
+	By Add_Tech_Pack				= By.xpath("//button[text()=' Add New Tech Pack ']");
+	By Tech_Pack_Name				= By.xpath("//input[@formcontrolname='techPackName']");
+	By Tech_Pack_File				= By.xpath("(//input[@class='custom-file-input'])[1]");
+	By Tech_Pack_Desc				= By.xpath("//textarea[@formcontrolname='description']");
+	By Tech_Pack_Received_Date		= By.xpath("//input[@formcontrolname='techPackSampleReceivedDate']");
+	By Tech_Pack_Save_button		= By.xpath("//button[text()=' Save']");
+	By Add_Sampling_details			= By.xpath("//button[text()=' Add Sampling Details']");
+	By Sample_Status				= By.xpath("(//select[@formcontrolname='sampleStatusId'])[1]");
+	By Sampling_Type				= By.xpath("(//select[@formcontrolname='sampleTypeId'])[1]");
+	By Sampling_submission_date		= By.xpath("(//input[@formcontrolname='sampleSubmissionDate'])[1]");
+	By Sampling_details_save		= By.xpath("(//button[text()=' Save'])[3]");
+	By SortingByColumns				= By.xpath("(//tr[@class='ng-star-inserted'])[1]");
 	
 	
 
@@ -146,8 +164,22 @@ public class SW_StyleMaster_page extends DriverFactory {
 	public void Click_on_Save_button_to_create_style() throws Throwable {
 		utilities.webDriverWait(driver, Save_Button);
 		driver.findElement(Save_Button).click();
-		utilities.MinimumWait(driver);
 		
+		try {
+			utilities.webDriverWait(driver, Alert_AlreadyExist);
+			driver.findElement(Alert_AlreadyExist).click();
+			WebElement Alert = driver.findElement(Alert_AlreadyExist);
+			String ExistAlert = Alert.getText();
+			System.out.println("Print the Alert " + ExistAlert);
+			utilities.MinimumWait(driver);
+			
+		}catch(Exception unsaved) {
+			utilities.webDriverWait(driver, Alert_SavedSuccessfully);
+			driver.findElement(Alert_SavedSuccessfully).click();
+			WebElement Alert = driver.findElement(Alert_SavedSuccessfully);
+			String SuccessAlert = Alert.getText();
+			System.out.println("Print the alert " + SuccessAlert);
+		}
 	}
 
 
@@ -177,6 +209,131 @@ public class SW_StyleMaster_page extends DriverFactory {
 		utilities.MinimumWait(driver);
 		
 	}
+
+
+	public void user_clicked_on_Edit_icon() throws Throwable {
+		utilities.webDriverWait(driver, Edit_Icon);
+		driver.findElement(Edit_Icon).click();
+		utilities.MinimumWait(driver);
+		
+	}
+
+	
+	public void update_the_style_master_data(String buyer2, String season2, String garmentType, String garmentprocess,
+			String garmentgauge) throws Throwable {
+		utilities.webDriverWait(driver, Edit_Buyer);
+		WebElement BuyerField = driver.findElement(Edit_Buyer);
+		Select BuyerDropdown = new Select(BuyerField);
+		BuyerDropdown.selectByVisibleText(buyer2);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Season);
+		WebElement season = driver.findElement(Season);
+		Select seasonDropdown = new Select(season);
+		seasonDropdown.selectByVisibleText(season2);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Garment_Type);
+		WebElement garment_type = driver.findElement(Garment_Type);
+		Select garmenttype_dropdown = new Select(garment_type);
+		garmenttype_dropdown.selectByVisibleText(garmentType);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Garment_Process);
+		WebElement garment_process = driver.findElement(Garment_Process);
+		Select process_dropdown = new Select(garment_process);
+		process_dropdown.selectByVisibleText(garmentprocess);
+		utilities.MinimumWait(driver);
+		
+		utilities.webDriverWait(driver, Garment_Gauge);
+		driver.findElement(Garment_Gauge).click();
+		Thread.sleep(1000);
+		driver.findElement(Garment_Gauge).clear();
+		Thread.sleep(1000);
+		driver.findElement(Garment_Gauge).sendKeys(garmentgauge);
+		Thread.sleep(1000);
+		
+	}
+
+
+	public void Click_on_update_button_to_save_the_data() throws Throwable {
+		utilities.webDriverWait(driver, Update_button);
+		driver.findElement(Update_button).click();
+		utilities.MinimumWait(driver);
+		
+	}
+
+
+	public void Click_on_the_Add_new_tech_pack_button(String techpackname, String techpackdesc, String receiveddate) throws Throwable {
+		utilities.webDriverWait(driver, Add_Tech_Pack);
+		driver.findElement(Add_Tech_Pack).click();
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(Tech_Pack_Name).click();
+		Thread.sleep(1000);
+		driver.findElement(Tech_Pack_Name).sendKeys(techpackname);
+		utilities.MinimumWait(driver);
+		
+		   By choose_file_upload = By.xpath("//input[@id='techPack']");
+		    utilities.webDriverWait(driver, choose_file_upload);
+		    WebElement fileInput = driver.findElement(choose_file_upload);
+		    ((JavascriptExecutor) driver).executeScript("arguments[0].style.display = 'block';", fileInput);
+		    fileInput.sendKeys("C:/Users/Calibrage26/Downloads/EAPL.pdf");
+		    utilities.MaximumWait(driver);
+		
+	}
+
+
+	public void Select_the_sampling_status(String samplingstatus) throws Throwable {
+		utilities.webDriverWait(driver, Sample_Status);
+		driver.findElement(Sample_Status).click();
+		Thread.sleep(1000);
+		WebElement samplestatus1 = driver.findElement(Sample_Status);
+		Select samplestatus_dropdown = new Select(samplestatus1);
+		samplestatus_dropdown.selectByVisibleText(samplingstatus);
+		utilities.MinimumWait(driver);
+		
+	}
+
+
+	public void User_Click_the_Sampling_type(String samplingtype) throws Throwable {
+		utilities.webDriverWait(driver, Sampling_Type);
+		WebElement samplingtype1 = driver.findElement(Sampling_Type);
+		Select samplingtype_dropdown = new Select(samplingtype1);
+		samplingtype_dropdown.selectByVisibleText(samplingtype);
+		utilities.MinimumWait(driver);
+		
+	}
+
+
+	public void Select_the_Submission_date(String submissiondate) throws Throwable {
+		utilities.webDriverWait(driver, Sampling_submission_date);
+		driver.findElement(Sampling_submission_date).click();
+		Thread.sleep(1000);
+		driver.findElement(Sampling_submission_date).sendKeys(submissiondate);
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void user_clicked_on_Sorting_icon_in_grid_header() throws Throwable {
+		utilities.webDriverWait(driver, SortingByColumns);
+		
+		
+		WebElement table = driver.findElement(SortingByColumns);
+		
+		List<WebElement> columnheader = table.findElements(By.xpath("th//p-sorticon"));
+
+		for (WebElement header : columnheader) {
+
+			header.click();
+			utilities.MinimumWait(driver);
+			header.click();
+			utilities.MinimumWait(driver);
+		}
+		
+		
+	}
+
 
 
 

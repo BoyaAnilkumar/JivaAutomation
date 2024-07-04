@@ -108,12 +108,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.ElementNotInteractableException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchElementException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.ElementNotInteractableException</h5>
+								<h5 class="mb-4">org.openqa.selenium.NoSuchElementException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -125,10 +125,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="33" parent-id="1">
+<tr class="s-fail" test-id="27" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">And Add data for the IPO MU Working details <br/><span class="text-muted text-sm">Navigate to Revised Yarn sheet working and submit mu working details</span></td>
-	<td>0h 3m 40s+476msc</td>
+	<td class="_600">And Select the sampling status"" <br/><span class="text-muted text-sm">update sampling details for style</span></td>
+	<td>0h 0m 4s+283msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -137,27 +137,15 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=126.0.6478.127)
+		<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'ANIL', ip: '192.168.0.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\banil\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 551e9bce96f90a705bc9df88f5c37388
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Page.SW_NewYarnSheetWorking_Pages.Add_data_for_the_IPO_MU_Working_details(SW_NewYarnSheetWorking_Pages.java:110)
-	at Stepdefinition1.SW_NewYarnSheetWorking_Steps.Add_data_for_the_IPO_MU_Working_details(SW_NewYarnSheetWorking_Steps.java:32)
-	at ✽.Add data for the IPO MU Working details(file:///C:/Users/banil/JivaDesigns/Features/SW_RevisedYarnSheetWorking.feature:20)
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at Page.SW_StyleMaster_page.Select_the_sampling_status(SW_StyleMaster_page.java:290)
+	at Stepdefinition1.SW_StyleMaster_Steps.Select_the_sampling_status(SW_StyleMaster_Steps.java:101)
+	at ✽.Select the sampling status""(file:///C:/Users/Calibrage26/Downloads/JivaDesigns.project/JivaDesigns/Features/SW-StyleMaster.feature:82)
 </textarea>
 	</td>
 </tr>
@@ -185,7 +173,7 @@ Session ID: 551e9bce96f90a705bc9df88f5c37388
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Jul 1, 2024 08:38:47 pm</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Jul 4, 2024 06:22:29 pm</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

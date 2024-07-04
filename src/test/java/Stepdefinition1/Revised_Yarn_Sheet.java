@@ -32,7 +32,15 @@ public class Revised_Yarn_Sheet {
 		RevisedYarnSheet.Click_on_the_Save_button_in_the_Revised_Yarn_Sheet();
 	}
 	
+	@And("Enter Reason for Revision {string}")
+	public void Enter_Reason_for_Revision_(String reasonforrevision) throws Throwable {
+		RevisedYarnSheet.Enter_Reason_for_Revision_(reasonforrevision);
+	}
 	
+	@And("^Enter Upcharge Amount info$")
+	public void Enter_Upcharge_Amount_info() throws Throwable {
+		RevisedYarnSheet.Enter_Upcharge_Amount_info();
+	}
 	
 	
 	

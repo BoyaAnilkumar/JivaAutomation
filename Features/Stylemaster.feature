@@ -84,16 +84,12 @@ And Click on the sampling Save button
 #And Click on the Cancel Icon in create style master
 And User Click on the Link to PD FDS button
 And Click on the Link button
-
-
 Then Click on the View Cancel Icon
 And Click on the View Close button
 And Click on the Manage Images Icon
 And Click on the Manage images Save button
 And Click on the Manage Close button
 And Click on the Manage Images cancel Icon
-
-
 And Click on the Edit Icon in style master grid
 And CLick on the Edit Close icon
 And Click on the Edit Close button

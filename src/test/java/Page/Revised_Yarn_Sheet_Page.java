@@ -20,6 +20,10 @@ public class Revised_Yarn_Sheet_Page extends DriverFactory{
 	By Filter_Slash               = By.xpath("(//button[@type='reset'])[1]");
 	By IPO_List                   = By.xpath("(//div[@class='card-body'])[1]");
 	By Save_Button                = By.xpath("//button[text()=' Save ']");
+	By Reason_for_Revision		  = By.xpath("//input[@formcontrolname='revisedReason']");
+	By Upcharge_Amount			  = By.xpath("//input[@formcontrolname='upchargeAmount']");
+	By Submit_Upcharge_Amount	  = By.xpath("//button[text()='Submit']");
+	
 
 	public void Click_on_the_Revised_Yarn_Sheet_Screen() throws Throwable {
 		utilities.webDriverWait(driver, Revised_Yarn_Sheet);
@@ -96,6 +100,33 @@ public class Revised_Yarn_Sheet_Page extends DriverFactory{
 				System.out.println("Save button is not displayed");
 			}
 		
+	}
+
+	public void Enter_Reason_for_Revision_(String reasonforrevision) throws Throwable {
+		try {
+			utilities.webDriverWait(driver, Reason_for_Revision);
+			driver.findElement(Reason_for_Revision).click();
+			Thread.sleep(1000);
+			driver.findElement(Reason_for_Revision).clear();
+			Thread.sleep(1000);
+			driver.findElement(Reason_for_Revision).sendKeys(reasonforrevision);
+			utilities.MinimumWait(driver);
+		}
+		catch(Exception a) {
+			System.out.println("Reason for Revison is not required");
+		}
+		
+	}
+
+	public void Enter_Upcharge_Amount_info() throws Throwable {
+		utilities.webDriverWait(driver, Upcharge_Amount);
+		driver.findElement(Upcharge_Amount).click();
+		Thread.sleep(1000);
+		driver.findElement(Upcharge_Amount).sendKeys("3560");
+		utilities.MinimumWait(driver);
+		
+		driver.findElement(Submit_Upcharge_Amount).click();
+		Thread.sleep(1000);
 	}
 
 }

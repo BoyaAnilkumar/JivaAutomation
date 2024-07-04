@@ -1,21 +1,4 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
+
 @Sweater_Costing
 Feature: Add Costing details for Style
   I want to use style to add the costing details and submit
@@ -110,5 +93,5 @@ Feature: Add Costing details for Style
 		
     Examples: 
      | Style Name| Combo name | Combo quantity | Garment Average | Wastage | Rate | Addlitional Sampling cost | Per pc Freight cost | Trim&Accessories Avg garment | Trims Wastage | Trims Rate |Trim Category| Trim Item				| Knitting Structure | GG | NumberofEnds | Knitting Time | Knitting Buffer | Garment Linking | ComputerEMB Rate | 
-     | Style3 	 | name1      |              5 |               5 |       2 |   10 |                         2 |                   2 |                           10 |             5 |         12 |Job Work 		 | Tassel Making		| Intarsia 					 | 2.5| 15					 | 10						 | 6							 | 6.5						 | 5								|
-     | Style4    | name2      |          2500  |               6 |     3.5 |   15 |                       4.2 |                   3 |                           12 |             7 |         10 |Labels 			 | Barcode sticker		| Pointelle 				 | 3.8| 12					 | 15 					 | 7							 | 4.8						 | 12								|
+     | Style5 	 | name1      |          2000  |               5 |       2 |   10 |                         2 |                   2 |                           10 |             5 |         12 |Job Work 		| Tassel Making		| Intarsia 					 | 2.5| 15					 | 10						 | 6							 | 6.5						 | 5								|
+     | Style6    | name2      |          2500  |               6 |     3.5 |   15 |                       4.2 |                   3 |                           12 |             7 |         10 |Labels 			| Barcode sticker	| Pointelle 				 | 3.8| 12					 | 15 					 | 7							 | 4.8						 | 12								|

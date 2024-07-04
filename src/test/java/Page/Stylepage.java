@@ -87,6 +87,7 @@ public class Stylepage extends DriverFactory{
 		By Can 							= By.xpath("//div[@class='ng-value-container']");
 		By Generate 					= By.xpath("//input[@id='new']");
 		By ReviseEstimates 				= By.xpath("//input[@id='revised']");	
+		By Alert_Toast_Message			= By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
 		//Add Tech pack details
 		By Addnewtechpack 				= By.xpath("//button[text()=' Add New Tech Pack ']");
 		By Techpacknamefield  			= By.xpath("//input[@formcontrolname='techPackName']");
@@ -527,7 +528,18 @@ public class Stylepage extends DriverFactory{
 				Robot r = new Robot();
 				r.keyPress(KeyEvent.VK_DOWN);
 				Thread.sleep(2000);
-				 driver.findElement(selectversion).click(); 
+				try {
+					driver.findElement(selectversion).click();
+					Thread.sleep(1000);
+				}
+				catch(Exception version){
+					driver.findElement(Savebutton).click();
+					Thread.sleep(1000);
+					driver.findElement(Alert_Toast_Message).click();
+					String Alert = driver.findElement(Alert_Toast_Message).getText();
+					System.out.println("displaying the alert as " + Alert);
+				}
+				 
 				}
 				
 				public void click_on_the_Save_button_in_create_style_master() throws Throwable{
