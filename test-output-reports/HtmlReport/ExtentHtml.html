@@ -44,6 +44,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -53,7 +54,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jul 4, 2024 06:35:05 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jul 5, 2024 07:37:59 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -69,6 +70,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -80,8 +83,8 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@SweaterStylemaster</a></li>
-					<li><a href='#'>@SWStyleMasterSorting</a></li>
+					<li><a href='#'>@DailyINInput</a></li>
+					<li><a href='#'>@DailyInInput3</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -122,10 +125,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -136,10 +139,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> scenario(s) failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
@@ -152,12 +155,12 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>16</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='93.548%'><span class='strong'>29</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='3.226%'>1</span> scenario(s) failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='3.226%'>1</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='3.226%'>0</span> others
                 </div>
             </div>
         </div>
@@ -175,11 +178,11 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Create Styles in sweater style master</span>
-						<span class='test-time'>Jul 4, 2024 06:35:12 pm</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Feature to test Jiva design Daily In Input Data Entry</span>
+						<span class='test-time'>Jul 5, 2024 07:38:06 pm</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -188,104 +191,210 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='test-desc'>I want to create style for the buyer by assigning the pd merchat to the style</div>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario outline node' test-id='2' status='fail'>
 	<div class='category-list'>
-		<span class='category label'>@SweaterStylemaster</span>
-		<span class='category label'>@SWStyleMasterSorting</span>
+		<span class='category label'>@DailyInInput3</span>
 	</div>
-	<span class='duration right label'>0h 1m 23s+504ms</span>
+	<span class='duration right label'>0h 1m 45s+843ms</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Sorting the Style Master grid data</div>
+		<div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario Outline: User wants to submit the cutting party</div>
+		<table class='runtime-table table-striped table'><tr><td>ToLocation</td><td>ApplicableIPO</td><td>PartyName</td></tr><tr><td>Jiva (46)</td><td>IPO2806</td><td>Cutting</td></tr></table>
 	</div>
 	<ul class='steps'>
-		<li test-id='4' class='node given pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.Login_steps.User_navigates_to_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User navigates to Login page</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='5' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded1.png"><i class='material-icons'>panorama</i></a></li>
+		<li test-id='3' class='node scenario fail' status='fail'>
+			<div class="step-name" title=""><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>User wants to submit the cutting party</div>
+			<ul class='gc steps'>
+				<li test-id='5' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Login_steps.User_navigates_to_Login_page()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User navigates to Login page</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='6' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded1.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='7' class='gc given pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Login_steps.User_enters_the_username_and_password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given User enters the username and password</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='8' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded2.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='9' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Login_steps.User_click_on_the_signIn()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click on the signIn</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='10' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded3.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='11' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.Newfabricsheet_Steps.Click_on_the_Woven_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on the Woven Module</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='12' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded4.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='13' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.click_on_Fabric_Store_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And click on Fabric Store module</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='14' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded5.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='15' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.Click_on_Data_Entry_in_Fabric_Store()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Data Entry in Fabric Store</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='16' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded6.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='17' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.click_on_Daily_In_and_Out_menu()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When click on Daily In and Out menu</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='18' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded7.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='19' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.Click_on_Daily_In_Data_Entry()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Daily In Data Entry</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='20' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded8.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='21' class='gc when pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.Verify_that_Daily_In_Data_Entry_screen_is_displaying_or_not()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Verify that Daily In Data Entry screen is displaying or not</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='22' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded9.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='23' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.Click_on_Add_Data_Entry_button()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Add Data Entry button</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='24' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded10.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='25' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.Enter_the_Challan_No()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the Challan No</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='26' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded11.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='27' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.Enter_the_Bill_No()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the Bill No</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='28' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded12.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='29' class='gc and pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.Enter_the_Gate_Entry_No()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Enter the Gate Entry No</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='30' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded13.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='31' class='gc then pass' status='pass'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.Click_on_Party_Name_dropdown_and_select_cutting(java.lang.String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on Party Name dropdown and select cutting"Cutting"</h6>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='32' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded14.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='33' class='gc when fail' status='fail'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.user_selects_the_ipo_from_dropdown(java.lang.String)"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>When user selects the ipo from dropdown"IPO2806"</h6>
+					<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50055}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc7445498681186dcfa25f775a4934c9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at Page.DailyInInputpages.user_selects_the_ipo_from_dropdown(DailyInInputpages.java:578)
+	at Stepdefinition1.DailyInInput_Steps.user_selects_the_ipo_from_dropdown(DailyInInput_Steps.java:144)
+	at ✽.user selects the ipo from dropdown"IPO2806"(file:///C:/Users/Calibrage26/Downloads/JivaDesigns.project/JivaDesigns/Features/DailyInInput.feature:55)
+</textarea>
+				</li>
+				<li test-id='34' class='gc * pass' status='pass'>
+					<h6 class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</h6>
+					<ul class='screenshots right'>
+						<li><a data-featherlight="image" href="../screenshots/embedded15.png"><i class='material-icons'>panorama</i></a></li>
+					</ul>
+					<div class="node-step"></div>
+				</li>
+				<li test-id='35' class='gc when skip' status='skip'>
+					<h6 class="step-name" title="Stepdefinition1.DailyInInput_Steps.user_wants_to_select_To_Location(java.lang.String)"><span class='status skip' title='skip'><i class='material-icons'>redo</i></span>When user wants to select To Location"Jiva (46)"</h6>
+					<div class="node-step">Step skipped</div>
+				</li>
 			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='6' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.Login_steps.User_enters_the_username_and_password()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then User enters the username and password</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='7' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded2.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='8' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.Login_steps.User_click_on_the_signIn()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And User click on the signIn</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='9' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded3.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='10' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.SW_PDFDS_Steps.Click_on_Sweater_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Sweater module</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='11' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded4.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='12' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.SW_PDFDS_Steps.Click_on_PD_module_in_sw_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Click on PD module in sw module</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='13' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded5.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='14' class='node and pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.Stylesteps.Click_on_Data_Entry_in_PD_Module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Click on Data Entry in PD Module</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='15' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded6.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='16' class='node then pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.SW_StyleMaster_Steps.click_on_Style_master_screen_in_sweater_module()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then click on Style master screen in sweater module</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='17' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded7.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='18' class='node given pass' status='pass'>
-			<div class="step-name" title="Stepdefinition1.SW_StyleMaster_Steps.user_clicked_on_Sorting_icon_in_grid_header()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given user clicked on Sorting icon in grid header</div>
-			<div class="node-step"></div>
-		</li>
-		<li test-id='19' class='node * pass' status='pass'>
-			<div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)</div>
-			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="../screenshots/embedded8.png"><i class='material-icons'>panorama</i></a></li>
-			</ul>
-			<div class="node-step"></div>
 		</li>
 	</ul>
 </div>
@@ -331,15 +440,15 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@SweaterStylemaster</span>
+						<span class='category-name'>@DailyINInput</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -353,14 +462,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 4, 2024 06:35:12 pm</td>
-										<td class='linked' test-id='1'>Create Styles in sweater style master</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jul 5, 2024 07:38:06 pm</td>
+										<td class='linked' test-id='1'>Feature to test Jiva design Daily In Input Data Entry</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 4, 2024 06:35:12 pm</td>
-										<td class='linked' test-id='2'>Sorting the Style Master grid data</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jul 5, 2024 07:38:06 pm</td>
+										<td class='linked' test-id='3'>User wants to submit the cutting party</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -369,15 +478,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@SWStyleMasterSorting</span>
+						<span class='category-name'>@DailyInInput3</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -391,9 +500,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 4, 2024 06:35:12 pm</td>
-										<td class='linked' test-id='2'>Sorting the Style Master grid data</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jul 5, 2024 07:38:06 pm</td>
+										<td class='linked' test-id='2'>User wants to submit the cutting party</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 5, 2024 07:38:06 pm</td>
+										<td class='linked' test-id='3'>User wants to submit the cutting party</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -409,7 +523,83 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 5, 2024 07:39:47 pm</td>
+										<td class='linked' test-id='33'>When user selects the ipo from dropdown"IPO2806"</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50055}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc7445498681186dcfa25f775a4934c9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at Page.DailyInInputpages.user_selects_the_ipo_from_dropdown(DailyInInputpages.java:578)
+	at Stepdefinition1.DailyInInput_Steps.user_selects_the_ipo_from_dropdown(DailyInInput_Steps.java:144)
+	at ✽.user selects the ipo from dropdown"IPO2806"(file:///C:/Users/Calibrage26/Downloads/JivaDesigns.project/JivaDesigns/Features/DailyInInput.feature:55)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -429,25 +619,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>16</div>
+					<div class='panel-lead'>31</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 4, 2024 06:35:05 pm</div>
+					<div class='panel-lead'>Jul 5, 2024 07:37:59 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 4, 2024 06:36:37 pm</div>
+			 		<div class='panel-lead'>Jul 5, 2024 07:39:54 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 31s+976ms</div>
+					<div class='panel-lead'>0h 1m 54s+836ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -463,21 +653,21 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@SweaterStylemaster</td>
+							<td>@DailyINInput</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									50%
+									0%
 							</td>
 						</tr>
 						<tr>
-							<td>@SWStyleMasterSorting</td>
-							<td>1</td>
+							<td>@DailyInInput3</td>
 							<td>0</td>
+							<td>2</td>
 							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -492,38 +682,38 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 1,
-				passChild: 1,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
-				grandChildCount: 16,
-				passGrandChild: 16,
-				failGrandChild: 0,
+				exceptionsChild: 1,
+				grandChildCount: 31,
+				passGrandChild: 29,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 1,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 2,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Create Styles in sweater style master":83.504
+			        "Feature to test Jiva design Daily In Input Data Entry":105.843
 			};
 		</script>
 	

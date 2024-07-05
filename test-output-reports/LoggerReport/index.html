@@ -51,6 +51,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -95,11 +103,11 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
-										
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="skip"><i class="fa fa-dot-circle-o text-blue"></i>Skip</span></a>
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 									</div>
@@ -112,8 +120,8 @@
 								        </span>
 							        </a>
 							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-						    	        <a class="dropdown-item" href="#"><span class="cf">@SweaterStylemaster</span></a>
-						    	        <a class="dropdown-item" href="#"><span class="cf">@SWStyleMasterSorting</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@DailyINInput</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@DailyInInput3</span></a>
 						    	        <div class="dropdown-divider"></div>
 						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 						    	      </div>
@@ -130,15 +138,15 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
-												tags="@SweaterStylemaster"
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
+												tags="@DailyINInput"
 												devices="">
-												<span class="tt">07.04.2024 18:35:12</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">[Create Styles in sweater style master] started</span>
+												<span class="tt">07.05.2024 19:38:06</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">[Feature to test Jiva design Daily In Input Data Entry] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @SweaterStylemaster</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @DailyINInput</span>
 												</span>
 												<span class="author-list">
 												</span>
@@ -146,15 +154,14 @@
 												</span>
 												
 											</div>
-											<div class="st pass test l1" 
-												tags="@SweaterStylemaster @SWStyleMasterSorting"
+											<div class="st fail test l1" 
+												tags="@DailyInInput3"
 												devices="">
-												<span class="tt">07.04.2024 18:35:12</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Sorting the Style Master grid data] started</span>
+												<span class="tt">07.05.2024 19:38:06</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[User wants to submit the cutting party] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @SweaterStylemaster</span>
-													<span class="category badge"><i class="fa fa-tag"></i> @SWStyleMasterSorting</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @DailyInInput3</span>
 												</span>
 												<span class="author-list">
 												</span>
@@ -162,244 +169,506 @@
 												</span>
 												
 											</div>
-											<div class="st pass test l2" 
+											<div class="st fail test l2" 
+												tags="@DailyINInput @DailyInInput3"
+												devices="">
+												<span class="tt">07.05.2024 19:38:06</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[User wants to submit the cutting party] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @DailyINInput</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @DailyInInput3</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:12</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:06</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User navigates to Login page] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User navigates to Login page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.04.2024 18:35:17</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:12</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User navigates to Login page]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User navigates to Login page]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:17</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:12</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.04.2024 18:35:17</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:12</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded1.png' src='../screenshots/embedded1.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:17</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:12</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User enters the username and password] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User enters the username and password] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.04.2024 18:35:30</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:26</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then User enters the username and password]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Given User enters the username and password]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:30</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:26</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.04.2024 18:35:30</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:26</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded2.png' src='../screenshots/embedded2.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:30</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:26</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on the signIn] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on the signIn] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.04.2024 18:35:37</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:33</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on the signIn]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And User click on the signIn]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:37</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:33</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.04.2024 18:35:37</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:33</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded3.png' src='../screenshots/embedded3.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:37</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:33</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Sweater module] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Woven Module] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.04.2024 18:35:40</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:38</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Sweater module]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on the Woven Module]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:40</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:38</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.04.2024 18:35:40</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:39</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded4.png' src='../screenshots/embedded4.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:40</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:39</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on PD module in sw module] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on Fabric Store module] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.04.2024 18:35:43</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:44</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on PD module in sw module]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And click on Fabric Store module]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:43</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:44</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.04.2024 18:35:43</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:44</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded5.png' src='../screenshots/embedded5.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:43</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:44</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Data Entry in PD Module] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Data Entry in Fabric Store] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.04.2024 18:35:49</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:49</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Data Entry in PD Module]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Data Entry in Fabric Store]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:49</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:49</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.04.2024 18:35:49</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:49</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded6.png' src='../screenshots/embedded6.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:49</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:49</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then click on Style master screen in sweater module] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When click on Daily In and Out menu] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.04.2024 18:35:59</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:55</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then click on Style master screen in sweater module]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When click on Daily In and Out menu]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:59</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:55</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.04.2024 18:35:59</span>&nbsp;
+													<span class="tt">07.05.2024 19:38:56</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded7.png' src='../screenshots/embedded7.png'></span>
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:35:59</span>&nbsp;
+												<span class="tt">07.05.2024 19:38:56</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user clicked on Sorting icon in grid header] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Daily In Data Entry] started</span>
 												
 												<div class="st pass">
-													<span class="tt">07.04.2024 18:36:35</span>&nbsp;
+													<span class="tt">07.05.2024 19:39:01</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user clicked on Sorting icon in grid header]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Daily In Data Entry]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st pass test l3" 
 												tags=""
 												devices="">
-												<span class="tt">07.04.2024 18:36:35</span>&nbsp;
+												<span class="tt">07.05.2024 19:39:01</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">07.04.2024 18:36:35</span>&nbsp;
+													<span class="tt">07.05.2024 19:39:01</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
 													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded8.png' src='../screenshots/embedded8.png'></span>
 													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:01</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Verify that Daily In Data Entry screen is displaying or not] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.05.2024 19:39:06</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When Verify that Daily In Data Entry screen is displaying or not]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:06</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.05.2024 19:39:06</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded9.png' src='../screenshots/embedded9.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:06</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Add Data Entry button] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.05.2024 19:39:14</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Click on Add Data Entry button]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:14</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.05.2024 19:39:14</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded10.png' src='../screenshots/embedded10.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:14</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Enter the Challan No] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.05.2024 19:39:21</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Enter the Challan No]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:21</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.05.2024 19:39:21</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded11.png' src='../screenshots/embedded11.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:21</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Enter the Bill No] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.05.2024 19:39:31</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Enter the Bill No]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:31</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.05.2024 19:39:32</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded12.png' src='../screenshots/embedded12.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:32</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Enter the Gate Entry No] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.05.2024 19:39:42</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[And Enter the Gate Entry No]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:42</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.05.2024 19:39:42</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded13.png' src='../screenshots/embedded13.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:42</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Party Name dropdown and select cutting"Cutting"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">07.05.2024 19:39:47</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Then Click on Party Name dropdown and select cutting"Cutting"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:47</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.05.2024 19:39:47</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded14.png' src='../screenshots/embedded14.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:47</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user selects the ipo from dropdown"IPO2806"] started</span>
+												
+												<div class="st fail">
+													<span class="tt">07.05.2024 19:39:52</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user selects the ipo from dropdown"IPO2806"]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=126.0.6478.127)
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'DESKTOP-58Q0BN1', ip: '192.168.1.113', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 125.0.6422.60 (3ac3319bff9f..., userDataDir: C:\Users\CALIBR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50055}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc7445498681186dcfa25f775a4934c9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at Page.DailyInInputpages.user_selects_the_ipo_from_dropdown(DailyInInputpages.java:578)
+	at Stepdefinition1.DailyInInput_Steps.user_selects_the_ipo_from_dropdown(DailyInInput_Steps.java:144)
+	at ✽.user selects the ipo from dropdown"IPO2806"(file:///C:/Users/Calibrage26/Downloads/JivaDesigns.project/JivaDesigns/Features/DailyInInput.feature:55)
+</textarea></span>
+												</div>
+											</div>
+											<div class="st pass test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:52</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">07.05.2024 19:39:52</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[Stepdefinition1.Hooks.captureScreenshot(io.cucumber.java.Scenario)]</span>
+													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../screenshots/embedded15.png' src='../screenshots/embedded15.png'></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st skip test l3" 
+												tags=""
+												devices="">
+												<span class="tt">07.05.2024 19:39:52</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user wants to select To Location"Jiva (46)"] started</span>
+												
+												<div class="st skip">
+													<span class="tt">07.05.2024 19:39:52</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---[When user wants to select To Location"Jiva (46)"]</span>
+													
+													<span class="td">Step skipped</span>
 												</div>
 											</div>
 											</div>

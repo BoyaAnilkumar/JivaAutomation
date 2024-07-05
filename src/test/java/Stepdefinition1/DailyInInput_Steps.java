@@ -134,4 +134,19 @@ public class DailyInInput_Steps {
 		DailyInInput_pages.click_on_add_button_to_add_thaan();
 	}
 	
+	@When("user wants to select To Location{string}")
+	public void user_wants_to_select_To_Location(String ToLocation) throws Throwable {
+		DailyInInput_pages.user_wants_to_select_To_Location(ToLocation);
+	}
+	
+	@When("user selects the ipo from dropdown{string}")
+	public void user_selects_the_ipo_from_dropdown(String ApplicableIPO) throws Throwable {
+		DailyInInput_pages.user_selects_the_ipo_from_dropdown(ApplicableIPO);
+	}
+	
+	@Then("Click on Party Name dropdown and select cutting{string}")
+	public void Click_on_Party_Name_dropdown_and_select_cutting(String partyname) throws Throwable {
+		DailyInInput_pages.Click_on_Party_Name_dropdown_and_select_cutting(partyname);
+	}
+	
 }
