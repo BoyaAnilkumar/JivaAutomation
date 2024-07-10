@@ -198,7 +198,7 @@ public class Costingpages extends DriverFactory {
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, Search_By_Style);
-		driver.findElement(Search_By_Style).sendKeys("Style755");
+		driver.findElement(Search_By_Style).sendKeys("Style516");
 		utilities.MinimumWait(driver);
 		
 		utilities.webDriverWait(driver, pdfds.Apply_Filter);

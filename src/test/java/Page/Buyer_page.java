@@ -21,7 +21,9 @@ public class Buyer_page extends DriverFactory {
 
 	By Master                   =  By.xpath("//span[text()='Masters ']");
 	By Buyer                    =  By.xpath("//a[text()='Buyer']");
-
+	By CreateBuyer_ScreenName	=  By.xpath("//h3[text()='Create Buyer ']");
+	By Buyer_ScreenName			=  By.xpath("//h3[text()='Buyer']");
+	
 	By Addbutton                =  By.xpath("//button[@class='btn btn-primary btn-sm shadow-sm float-right ng-star-inserted']");
 	By Savebutton               =  By.xpath("//button[text()=' Save']");
 	By Alertmsg                 =  By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
@@ -30,7 +32,7 @@ public class Buyer_page extends DriverFactory {
 
 	By Countryname              =  By.xpath("//select[@formcontrolname='countryid']");
 	By Countryvalidation        =  By.xpath("//div[@data-validate='Country Name is required']");
-	By Selectcountryname        =  By.xpath("//option[text()=' Bharat']");
+	By Selectcountryname        =  By.xpath("//select[@formcontrolname='countryid']//child::option[6]");
 	By SelectBuyinghousename    =  By.xpath("//select[@formcontrolname='buyingHouseId']");
 	By SelectCommissiontype     =  By.xpath("//select[@formcontrolname='commissionTypeId']");
 	By Commission               =  By.xpath("(//input[@type='text'])[2]");
@@ -75,10 +77,16 @@ public class Buyer_page extends DriverFactory {
 
 		utilities.webDriverWait(driver, Buyer);
 		driver.findElement(Buyer).click();
-		String ScreenName = driver.findElement(Buyer).getAttribute("value");
+		
+		try {
+		String ScreenName = driver.findElement(CreateBuyer_ScreenName).getText();
 		System.out.println("Navigated to the " + ScreenName  +  "Screen");
 		utilities.MinimumWait(driver);
-
+		}
+		catch(Exception buyer){
+			String Nameofscreen = driver.findElement(Buyer_ScreenName).getText();
+			System.out.println("Screen Name is displaying as: " + Nameofscreen);
+		}
 		
 	}
 
@@ -119,9 +127,7 @@ public class Buyer_page extends DriverFactory {
 		System.out.println("Placeholder value: " + placeholderv);
 		utilities.MinimumWait(driver);
 
-		utilities.webDriverWait(driver, Buyername);
-		driver.findElement(Buyername).sendKeys("Test04");
-		utilities.MinimumWait(driver);
+	
 
 	}
 
@@ -144,15 +150,30 @@ public class Buyer_page extends DriverFactory {
 		System.out.println("Placeholder value: " + placeholderv);
 		utilities.MinimumWait(driver);
 
+
+	}
+	
+	public void user_enters_buyer_name() throws Throwable {
+		utilities.webDriverWait(driver, Buyername);
+		driver.findElement(Buyername).click();
+		Thread.sleep(1000);
+		driver.findElement(Buyername).sendKeys("Test05");
+		utilities.MinimumWait(driver);
+		
+	}
+	
+	public void User_selects_the_country_name() throws Throwable {
 		utilities.webDriverWait(driver, Countryname);
 		driver.findElement(Countryname).click();
 		utilities.MinimumWait(driver);
-
-		utilities.webDriverWait(driver, Selectcountryname);
+		
 		driver.findElement(Selectcountryname).click();
 		utilities.MinimumWait(driver);
-
+		WebElement CountryName = driver.findElement(Selectcountryname);
+		String country = CountryName.getText();
+		System.out.println("Display the Country Name: " + country);
 	}
+
 
 	public void Select_the_Buying_house_name() throws Throwable {
 
@@ -180,16 +201,16 @@ public class Buyer_page extends DriverFactory {
 
 	public void Click_on_the_save() throws Throwable {
 
-//		utilities.webDriverWait(driver, Savebutton);
-//		driver.findElement(Savebutton).click();
-//		utilities.MaximumWait(driver);	
+		utilities.webDriverWait(driver, Savebutton);
+		driver.findElement(Savebutton).click();
+		utilities.MaximumWait(driver);	
 
-		utilities.webDriverWait(driver, Cancelbutton);
-		driver.findElement(Cancelbutton).click();
-		utilities.MaximumWait(driver);
-
-		System.out.println("After clicking the cancel button, you will be redirected to the buyer's home screen.");
-		utilities.MinimumWait(driver);
+//		utilities.webDriverWait(driver, Cancelbutton);
+//		driver.findElement(Cancelbutton).click();
+//		utilities.MaximumWait(driver);
+//
+//		System.out.println("After clicking the cancel button, you will be redirected to the buyer's home screen.");
+//		utilities.MinimumWait(driver);
 
 	}
 
@@ -325,11 +346,15 @@ public class Buyer_page extends DriverFactory {
 
 		utilities.webDriverWait(driver, Searchtextbox);
 		driver.findElement(Searchtextbox).sendKeys("Invalid data");
-
+		
 		utilities.webDriverWait(driver, applybutton);
 		driver.findElement(applybutton).click();
 		utilities.MinimumWait(driver);
 
+		String Emptygrid = driver.findElement(NoDataFound).getText();
+		System.out.println("When grid is empty: " + Emptygrid);
+		utilities.MinimumWait(driver);
+		
 		driver.navigate().refresh();
 
 	}
@@ -370,9 +395,13 @@ public class Buyer_page extends DriverFactory {
 
 		utilities.webDriverWait(driver, Searchtextbox);
 		driver.findElement(Searchtextbox).sendKeys("Invalid data");
-
+		
 		utilities.webDriverWait(driver, applybutton);
 		driver.findElement(applybutton).click();
+		utilities.MinimumWait(driver);
+
+		String Emptygrid = driver.findElement(NoDataFound).getText();
+		System.out.println("When grid is empty: " + Emptygrid);
 		utilities.MinimumWait(driver);
 
 		driver.navigate().refresh();
@@ -414,9 +443,13 @@ public class Buyer_page extends DriverFactory {
 
 		utilities.webDriverWait(driver, Searchtextbox);
 		driver.findElement(Searchtextbox).sendKeys("Invalid data");
-
+		
 		utilities.webDriverWait(driver, applybutton);
 		driver.findElement(applybutton).click();
+		utilities.MinimumWait(driver);
+
+		String Emptygrid = driver.findElement(NoDataFound).getText();
+		System.out.println("When grid is empty: " + Emptygrid);
 		utilities.MinimumWait(driver);
 
 		driver.navigate().refresh();
@@ -458,12 +491,21 @@ public class Buyer_page extends DriverFactory {
 
 		utilities.webDriverWait(driver, Searchtextbox);
 		driver.findElement(Searchtextbox).sendKeys("Invalid data");
-
+		
 		utilities.webDriverWait(driver, applybutton);
 		driver.findElement(applybutton).click();
+		utilities.MinimumWait(driver);
+
+		String Emptygrid = driver.findElement(NoDataFound).getText();
+		System.out.println("When grid is empty: " + Emptygrid);
 		utilities.MinimumWait(driver);
 
 		driver.navigate().refresh();
 	}
 
+
+	
+
+
+	
 }

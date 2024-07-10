@@ -84,7 +84,7 @@ public class DailyInInputpages extends DriverFactory {
 	By Save_Thaan_Details					=	By.xpath("(//button[text()='Save'])");
 	By PO_Number_grid						= 	By.xpath("//p[text()='PO Number : J-33']");
 	By applicable_IPO_cutting				=	By.xpath("//ng-select[@formcontrolname='applicableIpo']");
-	By Enter_IPO							=   By.xpath("(//div[@role='combobox'])[1]");
+	By Enter_IPO							=   By.xpath("(//div[@role='combobox'])[1]//child::input");
 	
 	
 	
@@ -572,48 +572,28 @@ public class DailyInInputpages extends DriverFactory {
 
 	public void user_selects_the_ipo_from_dropdown(String applicableIPO) throws Throwable {
 		// TODO Auto-generated method stub
+		Robot r = new Robot();
 		utilities.webDriverWait(driver, applicable_IPO_cutting);
 		driver.findElement(applicable_IPO_cutting).click();
 		Thread.sleep(1000);
 		driver.findElement(Enter_IPO).sendKeys("IPO2806");
 		Thread.sleep(1000);
-		driver.findElement(applicable_IPO_cutting).sendKeys(applicableIPO);
+		r.keyPress(KeyEvent.VK_DOWN);
 		Thread.sleep(1000);
-		
-		
-		Robot r = new Robot();
-		utilities.webDriverWait(driver, Process_Name);
-		driver.findElement(Process_Name).click();
-		
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
 		r.keyPress(KeyEvent.VK_ENTER);
-		Thread.sleep(2000);
-		WebElement ProcessName	=	driver.findElement(Process_Name);
-		String Process =	ProcessName.getAttribute("value");
-		if(ProcessName.isDisplayed()) {
-		System.out.println("Process name is displaying as: " + Process);
-		}else {
-			System.out.println("Process name is not displaying as: " +  Process);
-		}
 		utilities.MinimumWait(driver);
+		
 		
 		utilities.webDriverWait(driver, Fabric_Name);
 		driver.findElement(Fabric_Name).click();
 		
 		r.keyPress(KeyEvent.VK_DOWN);
 		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
 		r.keyPress(KeyEvent.VK_ENTER);
 		Thread.sleep(2000);
 		
-		WebElement FabricName =		driver.findElement(Fabric_Name);
-		String Fabric =		FabricName.getAttribute("value");
+		WebElement FabricName =	driver.findElement(Fabric_Name);
+		String Fabric =	FabricName.getAttribute("value");
 		if(FabricName.isDisplayed()) {
 		System.out.println("Fabric Name is displaying as: " + Fabric);
 		}else {
@@ -627,14 +607,12 @@ public class DailyInInputpages extends DriverFactory {
 		
 		r.keyPress(KeyEvent.VK_DOWN);
 		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
 		r.keyPress(KeyEvent.VK_ENTER);
 		Thread.sleep(2000);
 		
 		
-		WebElement color =		driver.findElement(Color);
-		String COLOR	=	color.getAttribute("value");
+		WebElement color =	driver.findElement(Color);
+		String COLOR = color.getAttribute("value");
 		if(color.isDisplayed()) {
 			System.out.println("Fabric color is displaying as: " + COLOR);
 		}else {
@@ -643,13 +621,27 @@ public class DailyInInputpages extends DriverFactory {
 		utilities.MinimumWait(driver);
 		
 		
-	
+		utilities.webDriverWait(driver, Process_Name);
+		driver.findElement(Process_Name).click();
+		
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		WebElement ProcessName	=	driver.findElement(Process_Name);
+		String Process =	ProcessName.getAttribute("value");
+		if(ProcessName.isDisplayed()) {
+		System.out.println("Process name is displaying as: " + Process);
+		}else {
+			System.out.println("Process name is not displaying as: " +  Process);
+		}
+		utilities.MinimumWait(driver);
 		
 		
 		utilities.webDriverWait(driver, Content);
 		driver.findElement(Content).click();
-		WebElement CONTENT =	driver.findElement(Content);
-		String Acontent	=		CONTENT.getText();
+		WebElement CONTENT = driver.findElement(Content);
+		String Acontent	= CONTENT.getText();
 		if(CONTENT.isDisplayed()) {
 			System.out.println("Content is displaying as: " + Acontent);
 		}else {

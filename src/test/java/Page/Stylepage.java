@@ -306,7 +306,7 @@ public class Stylepage extends DriverFactory{
 			    Random rand = new Random();
 			    int int1 = rand.nextInt(100);
 			    String RandomNumber= Integer.toString(int1);
-			    TaskName = "F1" + RandomNumber;
+			    TaskName = "Style" + RandomNumber;
 			    driver.findElement(Buyerstyle).sendKeys(TaskName);
 			    utilities.MediumWait(driver);
 			}

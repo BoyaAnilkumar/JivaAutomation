@@ -2,6 +2,7 @@ package Stepdefinition1;
 
 import Page.Buyer_page;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -41,6 +42,15 @@ public class Buyer_Steps {
 		Buyer.Check_validation_message_placeholder_and_select_the_country_name();
 	}
 	
+	@Given("^user enters buyer name$")
+	public void user_enters_buyer_name() throws Throwable {
+		Buyer.user_enters_buyer_name();
+	}
+	
+	@And("^User selects the country name$")
+	public void User_selects_the_country_name() throws Throwable {
+		Buyer.User_selects_the_country_name();
+	}
 	@And("^Select the Buying house name$")
 	public void Select_the_Buying_house_name() throws Throwable {
 		Buyer.Select_the_Buying_house_name();

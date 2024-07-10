@@ -580,7 +580,7 @@ public class POMasterSheetpage extends DriverFactory{
 
 	public void Search_with_IPO_in_search_keyword_textbox() throws Throwable {
 		utilities.webDriverWait(driver, Searchkeyword);
-		driver.findElement(Searchkeyword).sendKeys("Boult IPO 1");
+		driver.findElement(Searchkeyword).sendKeys("IPO2806");
 		
 		WebElement iponame = driver.findElement(Searchkeyword);
 		String ExpectedIPO = iponame.getAttribute("value");

@@ -12,11 +12,11 @@ import io.cucumber.junit.CucumberOptions;
 				  glue="Stepdefinition1",
 				  features = "Features",
 				  monochrome = true,
-				  tags ="@DailyInInput3")
+				  tags ="@PDFDS")
 
 
  
-public class TestRunner {
+public class TestRunner { 
 
 }
   
