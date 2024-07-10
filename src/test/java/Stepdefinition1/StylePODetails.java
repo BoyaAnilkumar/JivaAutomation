@@ -7,7 +7,11 @@ import io.cucumber.java.en.When;
 
 public class StylePODetails {
 
+<<<<<<< HEAD
 	Pages.StylePO_Pages StylePO_Pages = new Pages.StylePO_Pages();
+=======
+	Page.StylePO_Pages StylePO_Pages = new Page.StylePO_Pages();
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	
 	
 	   @And ("^Click on the Style Po Details Screen$")

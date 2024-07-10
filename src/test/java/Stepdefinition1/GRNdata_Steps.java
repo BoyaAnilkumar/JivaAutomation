@@ -1,6 +1,10 @@
 package Stepdefinition1;
 
+<<<<<<< HEAD
 import Pages.GRNdatapages;
+=======
+import Page.GRNdatapages;
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
