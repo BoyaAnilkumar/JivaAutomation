@@ -61,8 +61,8 @@ public class POMasterSheetpage extends DriverFactory{
 	By Suppliercode											= By.xpath("//input[@formcontrolname='supplierCode']");
 	By IPOdropdown											= By.xpath("//div[@class='p-datatable-wrapper']//table[1]");
 	By SupplierName											= By.xpath("//p-autocomplete[@field='supplierName']//span[1]");
-	
-	
+	By UOM													= By.xpath("//select[@formcontrolname='uomId']");
+	By ScreenName											= By.xpath("//h3[text()='PO Master Sheet']");
 	
 	
 	
@@ -580,7 +580,7 @@ public class POMasterSheetpage extends DriverFactory{
 
 	public void Search_with_IPO_in_search_keyword_textbox() throws Throwable {
 		utilities.webDriverWait(driver, Searchkeyword);
-		driver.findElement(Searchkeyword).sendKeys("Boult IPO 1");
+		driver.findElement(Searchkeyword).sendKeys("IPO2806");
 		
 		WebElement iponame = driver.findElement(Searchkeyword);
 		String ExpectedIPO = iponame.getAttribute("value");
@@ -728,12 +728,14 @@ public class POMasterSheetpage extends DriverFactory{
 		System.out.println("Displaying Residual Shrikange as:  " + residualshrinkage);
 		utilities.MinimumWait(driver);
 		
+		try {
 		utilities.webDriverWait(driver, ProcessLoss);
 		WebElement process = driver.findElement(ProcessLoss);
 		String processloss = process.getAttribute("value");
 		System.out.println("Displaying Process Loss:  " + processloss);
 		utilities.MinimumWait(driver);
-		
+		}
+		catch(Exception nosuchelement){
 		utilities.webDriverWait(driver, CPOI.QtyAllowed);
 		WebElement Qtyallowed = driver.findElement(CPOI.QtyAllowed);
 		String Qty = Qtyallowed.getAttribute("value");
@@ -747,7 +749,7 @@ public class POMasterSheetpage extends DriverFactory{
 		String QuantityAllowed = Quantity.getAttribute("value");
 		System.out.println("Displaying the Qty Allowed:  " + QuantityAllowed);
 		utilities.MinimumWait(driver);
-		
+		}
 		utilities.webDriverWait(driver,CPOI.Currency);
 		WebElement Curr = driver.findElement(CPOI.Currency);
 		String currency = Curr.getText();
@@ -764,15 +766,28 @@ public class POMasterSheetpage extends DriverFactory{
 		utilities.MinimumWait(driver);
 				
 		utilities.webDriverWait(driver, CPOI.Rate);
-		driver.findElement(CPOI.Rate).sendKeys("3.5");
+		driver.findElement(CPOI.Rate).click();
+		Thread.sleep(1000);
+		driver.findElement(CPOI.Rate).clear();
+		Thread.sleep(1000);
+		driver.findElement(CPOI.Rate).sendKeys("3");
 		utilities.MinimumWait(driver);
 		
+		Boolean ispresent = driver.findElements(CPOI.UOM).size()>0;
+		if(ispresent) {
 		utilities.webDriverWait(driver, CPOI.UOM);
 		WebElement UOM = driver.findElement(CPOI.UOM);
 		String AtUOM = UOM.getText();
 		System.out.println("displaying the uom default:  " + AtUOM);
 		utilities.MinimumWait(driver);
-		
+		}
+		else {
+			utilities.webDriverWait(driver, UOM);
+			WebElement SW_UOM = driver.findElement(UOM);
+			String AtUOM = SW_UOM.getAttribute("value");
+			System.out.println("displaying the uom default:  " + AtUOM);
+			utilities.MinimumWait(driver);
+		}
 		utilities.webDriverWait(driver, CPOI.LShortIfAny);
 		driver.findElement(CPOI.LShortIfAny).sendKeys("When verify the Quantity Details are displaying or not, And click on Add IPO button whether button is working or not");
 		utilities.MinimumWait(driver);
@@ -791,7 +806,7 @@ public class POMasterSheetpage extends DriverFactory{
 		
 		utilities.webDriverWait(driver, CPOI.IPOdropdown);
 		WebElement IPO = driver.findElement(CPOI.IPOdropdown);
-		String Iponame = IPO.getAttribute("value");
+		String Iponame = IPO.getText();
 		System.out.println("Print Displaying IPO:  " + Iponame);
 		utilities.MinimumWait(driver);
 		
@@ -804,13 +819,21 @@ public class POMasterSheetpage extends DriverFactory{
 
 	}
 
-	public void click_on_Add_IPO_button_whether_button_is_working_or_not() {
-		
+	public void click_on_Add_IPO_button_whether_button_is_working_or_not() throws Throwable {
+		utilities.webDriverWait(driver, CPOI.Addipobutton);
+		driver.findElement(CPOI.Addipobutton).click();
+		utilities.MinimumWait(driver);
+		System.out.println("Clicked on Add IPO button");
 		
 	}
 
-	public void Delete_the_record_in_IPO_table() {
-		
+	public void Delete_the_record_in_IPO_table() throws Throwable {
+		utilities.webDriverWait(driver, CPOI.Deletebutton);
+		driver.findElement(CPOI.Deletebutton).click();
+		utilities.MinimumWait(driver);
+		driver.findElement(CPOI.Delepopyes).click();
+		utilities.MinimumWait(driver);
+		System.out.println("Deleted the recently added");
 		
 	}
 
@@ -828,7 +851,7 @@ public class POMasterSheetpage extends DriverFactory{
 		driver.findElement(Printscreen).click();
 		WebElement icon = driver.findElement(Printscreen);
 		File image = icon.getScreenshotAs(OutputType.FILE);
-		
+		System.out.println("navigated to Print view form");
 		utilities.MinimumWait(driver);
 		
 	}
@@ -838,6 +861,7 @@ public class POMasterSheetpage extends DriverFactory{
 		js.executeScript("scrollBy(0, 700)");
 		utilities.webDriverWait(driver, cancelbutton);
 		driver.findElement(cancelbutton).click();
+		System.out.println("Clicked on Cancel button");
 		utilities.MinimumWait(driver);
 		
 	}

@@ -122,8 +122,8 @@ And User Select the Sourcing Manager "<Sourcingmanager>"
 And Click on the Submit to yarn team button
 Examples:
 |  StyleOrIPO| action |  label       | Supplier   |YarnQuality   | Content               |Use      |  Color   |BaseSize |percentage  |LinkingAvg|Sizeset|Testing|Sealer|TOP|Shipment|Photoshoot|BulkYarnDeadline|Sourcingmanager|
-|   IPO1806  |  check | Is Nominated?| Anil kumar |Acrylic Nylon |  80% acrylic 20% nylon|Shell    | Almond   | 5       |4           |2         |4      |6      |     2|3  |4       |4         |      4          | Ravi Teja     |
-#|   IPO1806  |uncheck | Is Nominated?| Anil Kumar | Cotton       |   100% cotton         |Main body|Black     |  6      |7           |  3       |2      |8      |  6   | 1 |  6     |5         |       4         | Ravi Teja     |
+#|   IPO1806  |  check | Is Nominated?| Anil kumar |Acrylic Nylon |  80% acrylic 20% nylon|Shell    | Almond   | 5       |4           |2         |4      |6      |     2|3  |4       |4         |      4          | Ravi Teja     |
+|   IPO1806  |uncheck | Is Nominated?| Anil Kumar | Cotton       |   100% cotton         |Main body|Black     |  6      |7           |  3       |2      |8      |  6   | 1 |  6     |5         |       4         | Ravi Teja     |
 
 @Revised_Yarn_Sheet
 Scenario Outline: Verify the Update Yarn details functionality
@@ -364,3 +364,72 @@ And Click on the Save button in the New Yarn Sheet
 Examples:
 |  StyleOrIPO| Use       |  Color |BaseSize |percentage |LinkingAvg|Sizeset|Testing|Sealer |TOP|Shipment|Photoshoot|
 |   IPO1806  | Main body | Blue   | 8       |6          | 3        |9      |2      |   2   |5  |4       |6         |
+
+
+
+
+@Revised_Yarn_Sheet1
+Scenario Outline: Verify the Adding New Yarn functionality in the Revised Yarn Sheet Screen
+Given User navigates to Login page
+Then user enter the Username and password
+And User click on the signIn
+And Click on Sweater module
+Then Click on the Merchandising Module
+And Click on Data Entry dropdown
+Then Click on the Generate Yarn Sheet dropdown 
+And Click on the Revised Yarn Sheet Screen
+And User click on the Style Expansion
+And Click on the Filter Slash
+And Click on the Filter Icon in Style Expansion
+And Enter the Buyer "<StyleOrIPO>" in Search By Buyer Style Or IPO
+And click on the Apply button 
+And Select the IPO in the Styles List
+And Click on the Add New Yarn Sheet button
+When I click "<action>" the Isnominated checkbox labeled "<label>"
+And Select the Supplier name "<Supplier>"
+And Select the "<YarnQuality>"
+And Select the content"<Content>"
+Then Select the Count"<count>"
+And Select the yarn use "<Use>"
+And Select the Supplier internal Code
+Given enter the data in Finish Special Requirements
+Then Select the Colour"<Color>"
+And Select the Combos in the Applicable Combos field
+When User enter the data in Additional information field
+And Enter the Additional percentage
+And Select the PO Type
+Given User enter the "<BaseSize>" Average
+And Enter the data in "<percentage>" field
+And Check the Size Breakups are prepopulated or not
+And Enter the Missy Garment size PO Qty
+And Enter the Pettite garment size PO Qty
+And Enter the Tall Garment size PO Qty
+And Enter the Women Garment size PO Qty
+And Check the IPO Qty is prepopulated or not
+Then Check the Avg Values are prepopulated or not
+And Verify the Based on the Garment Size type PO Qty is prepopulated in the PO Qty field or not
+And Verify the Based on the Garment Size type IPO Qty is prepopulated in the PO Qty field or not
+And The Knitting Avg field data is prepopulated or not
+When User enter the Linking Avg data"<LinkingAvg>" 
+#sampling details
+And Enter the data in the Size set field"<Sizeset>"
+When User enter the data in the Testing field"<Testing>"
+And User enter the data in the Sealer field"<Sealer>"
+And User enter the data in the TOP field"<TOP>"
+Given User enter the data in the ShipmentPlatform Sample"<Shipment>"
+Given User enter the data in the Photoshoot Meeting Sample"<Photoshoot>"
+And The User Select the Garment Average UOM 
+And User Select the Required UOM
+And Check the data is prepopulated in the Yarn Required For Production field or not
+And Check the data is prepopulated in the Yarn Required For Sampling field or not
+And Check the data is prepopulated in the Total Yarn Required field or not
+And The User Click on the Submit button
+Given Enter the data in the "<BulkYarnDeadline>"
+And User Select the Sourcing Manager "<Sourcingmanager>"
+And Enter Reason for Revision "<ReasonforRevision>"
+Then Click on the Submit to yarn team button
+And Enter Upcharge Amount info
+Examples:
+|  StyleOrIPO| action |  label       | Supplier   |YarnQuality   | Content               |Use      |  Color   |BaseSize |percentage  |LinkingAvg|Sizeset|Testing|Sealer|TOP|Shipment|Photoshoot|BulkYarnDeadline|Sourcingmanager|ReasonforRevision|
+|   IPO1806  |uncheck | Is Nominated?| Anil Kumar | Cotton       |   100% cotton         |Main body|Black     |  6      |7           |  3       |2      |8      |  6   | 1 |  6     |5         |       4         | Ravi Teja    | NA              |
+

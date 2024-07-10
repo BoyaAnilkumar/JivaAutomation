@@ -6,7 +6,7 @@ Feature: Verification of GRN Data after submitting the Daily In Input
     When User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
-    And Click on the Sweater Module
+    And Click on Sweater module
     Then Click on the Audit module
     Then Click on GRN data screen
     And Click on the Styles Expansion

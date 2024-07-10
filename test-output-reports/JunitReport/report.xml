@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="404.938">
     <testcase classname="feature to test Jiva design Bulk Checking screen functionality" name="Verify the Expansion grids and Update functionality" time="402.744">
         <system-out><![CDATA[Given User navigates to Login page..........................................passed
@@ -15,6 +16,11 @@ And Select the IPO in the Styles List.......................................pass
 When Click on the Expansion icon the Lot Checking Data, Quality Checking Data, and Bulk Checking Data grids are displayed or not.passed
 And Update the Lot Checking Data............................................passed
 And CLick on the Update button..............................................passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="38.249">
+    <testcase classname="Login the application and Add Fabric quality in PDFDS" name="Login the application" time="37.751">
+        <system-out><![CDATA[Given Login the application with valid credentials..........................passed
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 ]]></system-out>
     </testcase>
 </testsuite>

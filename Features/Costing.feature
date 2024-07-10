@@ -1,6 +1,6 @@
-@tag
-Feature: Title of your features
-  I want to use this template for my feature file
+@FabricCosting
+Feature: Creating a costing version for style to link the costing version to the order
+  I want to create a costing version for style and linking the costing version to the style order when qty is matched.
 
   @Costing1
   Scenario: Creating the Costing Version
@@ -85,7 +85,7 @@ Feature: Title of your features
     Given Enter the Finishing and Packing cost1
     #Washing / GArment process
     Then Check the Yes or No toggle button status
-    Then Click on the Add Process button when the toggle button is in enabled state
+    #Then user clicks on add button in washing
     Then Select a Washing Process1
     Given Enter the Washing Cost1
     #testing and inspection

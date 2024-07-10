@@ -2,7 +2,9 @@ package Stepdefinition1;
 
 import Page.SW_StyleMaster_page;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class SW_StyleMaster_Steps {
 	
@@ -73,4 +75,45 @@ public class SW_StyleMaster_Steps {
 	public void Click_on_style_name() throws Throwable {
 		SW_Style_Master.Click_on_style_name();
 	}
+	
+	@When("^user clicked on Edit icon$")
+	public void user_clicked_on_Edit_icon() throws Throwable {
+		SW_Style_Master.user_clicked_on_Edit_icon();
+	}
+	
+	@And("update the style master data{string},{string},{string},{string},{string}")
+	public void update_the_style_master_data(String buyer, String season, String garmentType, String Garmentprocess, String garmentgauge) throws Throwable {
+		SW_Style_Master.update_the_style_master_data(buyer, season, garmentType, Garmentprocess, garmentgauge);
+	}
+	
+	@Then("^Click on update button to save the data$")
+	public void Click_on_update_button_to_save_the_data() throws Throwable {
+		SW_Style_Master.Click_on_update_button_to_save_the_data();
+	}
+	
+	@And("Click on the Add new tech pack button{string},{string},{string}")
+	public void Click_on_the_Add_new_tech_pack_button(String techpackname,String techpackdesc,String receiveddate) throws Throwable {
+		SW_Style_Master.Click_on_the_Add_new_tech_pack_button(techpackname,techpackdesc,receiveddate);
+	}
+	
+	@And("Select the sampling status{string}")
+	public void Select_the_sampling_status(String samplingstatus) throws Throwable {
+		SW_Style_Master.Select_the_sampling_status(samplingstatus);
+	}
+	
+	@Given("User Click the Sampling type{string}")
+	public void User_Click_the_Sampling_type(String samplingtype) throws Throwable {
+		SW_Style_Master.User_Click_the_Sampling_type(samplingtype);
+	}
+	
+	@And("Select the Submission date{string}")
+	public void Select_the_Submission_date(String submissiondate) throws Throwable {
+		SW_Style_Master.Select_the_Submission_date(submissiondate);
+	}
+	
+	@Given("^user clicked on Sorting icon in grid header$")
+	public void user_clicked_on_Sorting_icon_in_grid_header() throws Throwable {
+		SW_Style_Master.user_clicked_on_Sorting_icon_in_grid_header();
+	}
+	
 }

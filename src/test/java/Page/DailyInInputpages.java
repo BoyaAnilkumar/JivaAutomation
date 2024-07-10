@@ -1,15 +1,19 @@
 package Page;
 
+import static org.junit.Assert.assertTrue;
+
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import util.DriverFactory;
 import util.Utilities;
@@ -18,13 +22,17 @@ public class DailyInInputpages extends DriverFactory {
 	Date currentDate = new Date();
 	SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 	String formattedDate = dateFormat.format(currentDate);
-	String TaskName;
+	String ChallanNumber;
+	String BillNumber;
 	String GRN_Quantity;
+	String GateEntryNo;
+	String PO = "J-33";
+	
 	Utilities utilities = new Utilities();
 	
 	By Fabric_Store							=	By.xpath("//span[text()='Fabric Store ']");
 	By Data_Entry							= 	By.xpath("(//span[text()='Data Entry'])[6]");
-	By Daily_IN_and_Out						=	By.xpath("(//a[@aria-expanded='false']/.//span[text()='Daily In & Out'])[2]");
+	By Daily_IN_and_Out						=	By.xpath("(//span[text()='Daily In & Out'])[3]");
 	By Daily_In_Data_Entry					=	By.xpath("//a[text()='Daily in Data Entry']");
 	By Screen_Name							=	By.xpath("//h3[text()='Daily In Data Entry']");
 	By Add_Data_Entry_Button				=	By.xpath("//button[text()=' Add Data Entry']");
@@ -74,8 +82,9 @@ public class DailyInInputpages extends DriverFactory {
 	By Thaan_Delete_No						=	By.xpath("(//button[text()='No'])[2]");
 	By Add_Thaan_Qty						=	By.xpath("(//button[@type='button'])[2]");
 	By Save_Thaan_Details					=	By.xpath("(//button[text()='Save'])");
-	
-	
+	By PO_Number_grid						= 	By.xpath("//p[text()='PO Number : J-33']");
+	By applicable_IPO_cutting				=	By.xpath("//ng-select[@formcontrolname='applicableIpo']");
+	By Enter_IPO							=   By.xpath("(//div[@role='combobox'])[1]//child::input");
 	
 	
 	
@@ -174,20 +183,34 @@ public class DailyInInputpages extends DriverFactory {
 
 
 	public void Enter_the_Challan_No() throws Throwable {
+		
+		for (int i = 0; i<=10; i++) {
+	    	Random rand = new Random();
+		    int int1 = rand.nextInt(100);
+		    String RandomNumber= Integer.toString(int1);
+		    ChallanNumber = "Challan " + RandomNumber;
+		}
 		utilities.webDriverWait(driver, Challan_No);
 		driver.findElement(Challan_No).click();
 		utilities.MinimumWait(driver);
-		driver.findElement(Challan_No).sendKeys("FA120");
+		driver.findElement(Challan_No).sendKeys(ChallanNumber);
 		utilities.MinimumWait(driver);
 		
 	}
 
 
 	public void Enter_the_Bill_No() throws Throwable {
+		
+		for(int i=0; i<=5; i++) {
+			Random rand = new Random();
+			int i1 = rand.nextInt(100);
+			String RandomBill = Integer.toString(i1);
+			BillNumber = "Bill " + RandomBill;
+		}
 		utilities.webDriverWait(driver, Bill_No);
 		driver.findElement(Bill_No).click();
 		Thread.sleep(5000);
-		driver.findElement(Bill_No).sendKeys("AS001");
+		driver.findElement(Bill_No).sendKeys(BillNumber);
 		utilities.MinimumWait(driver);
 		
 		
@@ -195,10 +218,17 @@ public class DailyInInputpages extends DriverFactory {
 
 
 	public void Enter_the_Gate_Entry_No() throws Throwable {
+		for(int i=0; i<=5; i++) {
+			Random rand = new Random();
+			int i1 = rand.nextInt(100);
+			String RandomBill = Integer.toString(i1);
+			GateEntryNo = "Gate " + RandomBill;
+		}
+		
 		utilities.webDriverWait(driver, Gate_Entry_No);
 		driver.findElement(Gate_Entry_No).click();
 		Thread.sleep(5000);
-		driver.findElement(Gate_Entry_No).sendKeys("Gate No 01");
+		driver.findElement(Gate_Entry_No).sendKeys(GateEntryNo);
 		utilities.MinimumWait(driver);
 		
 	}
@@ -216,18 +246,21 @@ public class DailyInInputpages extends DriverFactory {
 
 
 	public void Enter_PO_Number() throws Throwable {
+		
 		utilities.webDriverWait(driver, PO_Number);
 		driver.findElement(PO_Number).click();
-		Thread.sleep(5000);
-		driver.findElement(PO_Number).sendKeys("J-10");
-		utilities.MediumWait(driver);
+		Thread.sleep(1000);
+		driver.findElement(PO_Number).sendKeys("J-33");
+		utilities.MinimumWait(driver);
 		Robot R = new Robot();
-		R.keyPress(KeyEvent.VK_7);
-		Thread.sleep(2000);
 		R.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		R.keyPress(KeyEvent.VK_ENTER);
 		utilities.MinimumWait(driver);
+		
+
+		
+	
 	}
 
 
@@ -264,7 +297,12 @@ public class DailyInInputpages extends DriverFactory {
 		utilities.webDriverWait(driver, To_Location);
 		driver.findElement(To_Location).click();
 		Thread.sleep(2000);
-		driver.findElement(Select_To_Location).click();
+//		driver.findElement(Select_To_Location).click();
+//		utilities.MinimumWait(driver);
+		Robot To_Location = new Robot();
+		To_Location.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		To_Location.keyPress(KeyEvent.VK_ENTER);
 		utilities.MinimumWait(driver);
 		
 	}
@@ -281,170 +319,115 @@ public class DailyInInputpages extends DriverFactory {
 
 
 	public void click_on_save_button_to_create_the_Daily_In_Input() throws Throwable {
+		
+		
+		
 		utilities.webDriverWait(driver, Save_Daily_In_Input);
 		driver.findElement(Save_Daily_In_Input).click();
-		utilities.webDriverWait(driver, Toaster_Message);
-		Actions actions = new Actions(driver);
-		driver.findElement(Toaster_Message).click();
-		WebElement elementToHoverOver = driver.findElement(Toaster_Message);
-		actions.moveToElement(elementToHoverOver).perform();
-		String Toaster = driver.findElement(Toaster_Message).getText();
-		System.out.println("Displaying the Toaster Message as: " + Toaster);
 		utilities.MinimumWait(driver);
+		
+//		utilities.webDriverWait(driver, Toaster_Message);
+//		Actions actions = new Actions(driver);
+//		driver.findElement(Toaster_Message).click();
+//		WebElement elementToHoverOver = driver.findElement(Toaster_Message);
+//		actions.moveToElement(elementToHoverOver).perform();
+//		String Toaster = driver.findElement(Toaster_Message).getText();
+//		System.out.println("Displaying the Toaster Message as: " + Toaster);
+//		utilities.MinimumWait(driver);
+		
+		WebElement gridponumber = driver.findElement(PO_Number_grid); // Adjust the locator as needed
+		String gridText = gridponumber.getText();
+		
+		assertTrue(gridText.contains(PO));
 		
 	}
 
 
 	public void Verify_that_Supplier_FromLocation_ProcessName_FabricName_Color_ApplicableIPO_Content_Count_GSM_CuttableWidth_UOM_has_prepopulated_data_after_selecting_the_PO_number() throws Throwable {
+	
 		
-		utilities.webDriverWait(driver, From_Location);
-		driver.findElement(From_Location).click();
-		Robot r = new Robot();
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_ENTER);
-		Thread.sleep(2000);
-		WebElement FromLocation	=	driver.findElement(From_Location);
-		String Location	=	FromLocation.getAttribute("value");
-		if(FromLocation.isDisplayed()) {
-		System.out.println("Not Displaying the From Location" + Location);
-		}else {
-			System.out.println("Displaying the From Location Value");
+		WebElement dropdown = driver.findElement(Supplier_Name);
+	     Select select = new Select(dropdown);
+		List<WebElement> selectedOptions = select.getAllSelectedOptions();
+		if (selectedOptions.size() == 1) {
+		    String selectedText = selectedOptions.get(0).getText();
+		    String expectedData = selectedText; 
+	        if (expectedData.equals(selectedText.trim())) {
+		        System.out.println("Display the Supplier: " + selectedText);
+		    } 
 		}
-		utilities.MinimumWait(driver);
 		
 		
-		utilities.webDriverWait(driver, Process_Name);
-		driver.findElement(Process_Name).click();
-		
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_ENTER);
-		Thread.sleep(2000);
-		WebElement ProcessName	=	driver.findElement(Process_Name);
-		String Process =	ProcessName.getAttribute("value");
-		if(ProcessName.isDisplayed()) {
-		System.out.println("Process name is displaying as: " + Process);
-		}else {
-			System.out.println("Process name is not displaying as: " +  Process);
-		}
-		utilities.MinimumWait(driver);
-		
+
 		utilities.webDriverWait(driver, Fabric_Name);
-		driver.findElement(Fabric_Name).click();
-		
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_ENTER);
-		Thread.sleep(2000);
-		
-		WebElement FabricName =		driver.findElement(Fabric_Name);
-		String Fabric =		FabricName.getAttribute("value");
-		if(FabricName.isDisplayed()) {
-		System.out.println("Fabric Name is displaying as: " + Fabric);
-		}else {
-			System.out.println("Fabric Name is not displaying as: " + Fabric);
-		}
-		utilities.MinimumWait(driver);
-		
+		WebElement fabric = driver.findElement(Fabric_Name);
+		String fabricname = fabric.getText();
+		System.out.println("Displaying the fabric name: " + fabricname);
+
+	
 		
 		utilities.webDriverWait(driver, Color);
-		driver.findElement(Color).click();
+		WebElement color = driver.findElement(Color);
+		String Col = color.getText();
+		System.out.println("Displaying the Color name: " + Col);
+
 		
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_DOWN);
-		Thread.sleep(2000);
-		r.keyPress(KeyEvent.VK_ENTER);
-		Thread.sleep(2000);
-		
-		
-		WebElement color =		driver.findElement(Color);
-		String COLOR	=	color.getAttribute("value");
-		if(color.isDisplayed()) {
-			System.out.println("Fabric color is displaying as: " + COLOR);
-		}else {
-			System.out.println("Fabric color is not displaying as: " + COLOR);
+
+		utilities.webDriverWait(driver, Process_Name);
+		WebElement processname = driver.findElement(Process_Name);
+		Select select4 = new Select(processname);
+		List<WebElement> selectedprocess = select4.getAllSelectedOptions();
+		if(selectedprocess.size() == 1) {
+			String selectedprocessname = selectedprocess.get(0).getText();
+			String expectedprocessname = selectedprocessname;
+			if(expectedprocessname.equals(selectedprocessname.trim())) {
+				System.out.println("Displaying the Process Name: " + selectedprocessname);
+			}
 		}
-		utilities.MinimumWait(driver);
-		
-		
-		utilities.webDriverWait(driver, Applicable_IPO);
-		driver.findElement(Applicable_IPO).click();
-		WebElement IPO = 	driver.findElement(Applicable_IPO);
-		String ApplicableIPO =		IPO.getText();
-		if(IPO.isDisplayed()) {
-			System.out.println("Applicable IPO is displaying as: " + ApplicableIPO);
-		}else {
-			System.out.println("Applicable IPO is not displaying as: " + ApplicableIPO);
-		}
-		utilities.MinimumWait(driver);
-		
 		
 		utilities.webDriverWait(driver, Content);
-		driver.findElement(Content).click();
-		WebElement CONTENT =	driver.findElement(Content);
-		String Acontent	=		CONTENT.getText();
-		if(CONTENT.isDisplayed()) {
-			System.out.println("Content is displaying as: " + Acontent);
-		}else {
-			System.out.println("Content is not displaying as: " + Acontent);
-		}
-		utilities.MinimumWait(driver);
-		
+		WebElement content1 = driver.findElement(Content);
+		String content_C = content1.getAttribute("value");
+		System.out.println("Displaying the content: " + content_C);
+
 		
 		utilities.webDriverWait(driver, Count);
-		driver.findElement(Count).click();
-		WebElement COUNT =	driver.findElement(Count);
-		String ACOUNT	=		COUNT.getText();
-		if(COUNT.isDisplayed()) {
-			System.out.println("Count is displaying as: " + ACOUNT);
-		}else {
-			System.out.println("Count is not displaying as: " + ACOUNT);
-		}
-		utilities.MinimumWait(driver);
+		WebElement construction = driver.findElement(Count);
+		String Count_Construction = construction.getAttribute("value");
+		System.out.println("Display the Count/Construction " + Count_Construction);
 		
+
 		
 		utilities.webDriverWait(driver, GSM);
-		driver.findElement(GSM).click();
-		WebElement gsm 	=		driver.findElement(GSM);
-		String Gsm =	gsm.getText();
-		if(gsm.isDisplayed()) {
-			System.out.println("Gsm is displaying as: " + Gsm);
-		}else {
-			System.out.println("Gsm is not displaying as: " + Gsm);
-		}
-		utilities.MinimumWait(driver);
+		WebElement gsm = driver.findElement(GSM);
+		String gsm_gsm = gsm.getAttribute("value");
+		System.out.println("Displaying the GSM " + gsm_gsm);
 		
+
 		
 		utilities.webDriverWait(driver, Cuttable_Width);
-		driver.findElement(Cuttable_Width).click();
-		WebElement cuttable = 	driver.findElement(Cuttable_Width);
-		String width	=	cuttable.getText();
-		if(cuttable.isDisplayed()) {
-			System.out.println("cuttable width is displaying as: " + width);
-		}else {
-			System.out.println("cuttable width is not displaying as:  " + width);
-		}
-		utilities.MinimumWait(driver);
+		WebElement cuttablewidth = driver.findElement(Cuttable_Width);
+		String cuttable = cuttablewidth.getAttribute("value");
+		System.out.println("Displaying the cuttable width " + cuttable);
 		
 		
 		utilities.webDriverWait(driver, UOM);
-		driver.findElement(UOM).click();
-		WebElement uom  =  driver.findElement(UOM);
-		String Uom = uom.getText();
-		if(uom.isDisplayed()) {
-			System.out.println("UOM is displaying as: "+ Uom);
-		}else {
-			System.out.println("UOM is not displayed as: " + Uom);
-		}utilities.MinimumWait(driver);
-	}
+		WebElement uom = driver.findElement(UOM);
+		Select select5 = new Select(uom);
+		List<WebElement> selecteduom = select5.getAllSelectedOptions();
+		if(selecteduom.size() == 1) {
+			String selectuom = selecteduom.get(0).getText();
+			String expecteduom = selectuom;
+			if(expecteduom.equals(selectuom.trim())) {
+				System.out.println("Displaying the UOM: " + selectuom);
+			}
+		}
+		
+		}
+
+
+		
+	
 
 
 	public void Click_on_Add_thaan_button() throws Throwable {
@@ -564,6 +547,166 @@ public class DailyInInputpages extends DriverFactory {
 		 utilities.webDriverWait(driver, Save_Thaan_Details);
 		 driver.findElement(Save_Thaan_Details).click();
 		 utilities.MinimumWait(driver);
+	}
+
+
+	public void user_wants_to_select_To_Location(String toLocation) throws Throwable {
+		// TODO Auto-generated method stub
+		utilities.webDriverWait(driver, From_Location);
+		driver.findElement(From_Location).click();
+		Robot r = new Robot();
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		WebElement FromLocation	=	driver.findElement(From_Location);
+		String Location	=	FromLocation.getAttribute("value");
+		if(FromLocation.isDisplayed()) {
+		System.out.println("Not Displaying the From Location" + Location);
+		}else {
+			System.out.println("Displaying the From Location Value");
+		}
+		utilities.MinimumWait(driver);
+	}
+
+
+	public void user_selects_the_ipo_from_dropdown(String applicableIPO) throws Throwable {
+		// TODO Auto-generated method stub
+		Robot r = new Robot();
+		utilities.webDriverWait(driver, applicable_IPO_cutting);
+		driver.findElement(applicable_IPO_cutting).click();
+		Thread.sleep(1000);
+		driver.findElement(Enter_IPO).sendKeys("IPO2806");
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_ENTER);
+		utilities.MinimumWait(driver);
+		
+		
+		utilities.webDriverWait(driver, Fabric_Name);
+		driver.findElement(Fabric_Name).click();
+		
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		WebElement FabricName =	driver.findElement(Fabric_Name);
+		String Fabric =	FabricName.getAttribute("value");
+		if(FabricName.isDisplayed()) {
+		System.out.println("Fabric Name is displaying as: " + Fabric);
+		}else {
+			System.out.println("Fabric Name is not displaying as: " + Fabric);
+		}
+		utilities.MinimumWait(driver);
+		
+		
+		utilities.webDriverWait(driver, Color);
+		driver.findElement(Color).click();
+		
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		
+		
+		WebElement color =	driver.findElement(Color);
+		String COLOR = color.getAttribute("value");
+		if(color.isDisplayed()) {
+			System.out.println("Fabric color is displaying as: " + COLOR);
+		}else {
+			System.out.println("Fabric color is not displaying as: " + COLOR);
+		}
+		utilities.MinimumWait(driver);
+		
+		
+		utilities.webDriverWait(driver, Process_Name);
+		driver.findElement(Process_Name).click();
+		
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(2000);
+		r.keyPress(KeyEvent.VK_ENTER);
+		Thread.sleep(2000);
+		WebElement ProcessName	=	driver.findElement(Process_Name);
+		String Process =	ProcessName.getAttribute("value");
+		if(ProcessName.isDisplayed()) {
+		System.out.println("Process name is displaying as: " + Process);
+		}else {
+			System.out.println("Process name is not displaying as: " +  Process);
+		}
+		utilities.MinimumWait(driver);
+		
+		
+		utilities.webDriverWait(driver, Content);
+		driver.findElement(Content).click();
+		WebElement CONTENT = driver.findElement(Content);
+		String Acontent	= CONTENT.getText();
+		if(CONTENT.isDisplayed()) {
+			System.out.println("Content is displaying as: " + Acontent);
+		}else {
+			System.out.println("Content is not displaying as: " + Acontent);
+		}
+		utilities.MinimumWait(driver);
+		
+		
+		utilities.webDriverWait(driver, Count);
+		driver.findElement(Count).click();
+		WebElement COUNT =	driver.findElement(Count);
+		String ACOUNT	=		COUNT.getText();
+		if(COUNT.isDisplayed()) {
+			System.out.println("Count is displaying as: " + ACOUNT);
+		}else {
+			System.out.println("Count is not displaying as: " + ACOUNT);
+		}
+		utilities.MinimumWait(driver);
+		
+		
+		utilities.webDriverWait(driver, GSM);
+		driver.findElement(GSM).click();
+		WebElement gsm 	=		driver.findElement(GSM);
+		String Gsm =	gsm.getText();
+		if(gsm.isDisplayed()) {
+			System.out.println("Gsm is displaying as: " + Gsm);
+		}else {
+			System.out.println("Gsm is not displaying as: " + Gsm);
+		}
+		utilities.MinimumWait(driver);
+		
+		
+		utilities.webDriverWait(driver, Cuttable_Width);
+		driver.findElement(Cuttable_Width).click();
+		WebElement cuttable = 	driver.findElement(Cuttable_Width);
+		String width	=	cuttable.getText();
+		if(cuttable.isDisplayed()) {
+			System.out.println("cuttable width is displaying as: " + width);
+		}else {
+			System.out.println("cuttable width is not displaying as:  " + width);
+		}
+		utilities.MinimumWait(driver);
+		
+		
+		utilities.webDriverWait(driver, UOM);
+		driver.findElement(UOM).click();
+		WebElement uom  =  driver.findElement(UOM);
+		String Uom = uom.getText();
+		if(uom.isDisplayed()) {
+			System.out.println("UOM is displaying as: "+ Uom);
+		}else {
+			System.out.println("UOM is not displayed as: " + Uom);
+		}utilities.MinimumWait(driver);
+		
+	}
+
+
+	public void Click_on_Party_Name_dropdown_and_select_cutting(String partyname) throws Throwable {
+		utilities.webDriverWait(driver, Party_Name);
+		driver.findElement(Party_Name).click();
+		Thread.sleep(1000);
+		driver.findElement(Party_Name).sendKeys(partyname);
+		Thread.sleep(1000);
+		
+		
 	}
 
 

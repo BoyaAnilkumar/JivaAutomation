@@ -92,12 +92,12 @@ public class POMasterSheet_Steps {
 	}
 	
 	@And("^click on Add IPO button whether button is working or not$")
-	public void click_on_Add_IPO_button_whether_button_is_working_or_not() {
+	public void click_on_Add_IPO_button_whether_button_is_working_or_not() throws Throwable {
 		pomastersheetpage.click_on_Add_IPO_button_whether_button_is_working_or_not();
 	}
 	
 	@And("^Delete the record in IPO table$")
-	public void Delete_the_record_in_IPO_table() {
+	public void Delete_the_record_in_IPO_table() throws Throwable {
 		pomastersheetpage.Delete_the_record_in_IPO_table();
 	}
 	

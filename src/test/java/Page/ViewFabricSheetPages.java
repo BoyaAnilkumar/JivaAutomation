@@ -22,7 +22,10 @@ public class ViewFabricSheetPages extends DriverFactory{
 	By btnSignIn = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
 	By Woven = By.xpath("//span[text()='Woven / knit']");
 	By Merchandising = By.xpath("(//span[text()='Merchandising '])[1]");
-	By Reports	= By.xpath("(//span[text()='Reports'])[2]");
+
+	By Reports1	= By.xpath("(//span[text()='Reports'])[2]");
+
+	By Reports	= By.xpath("(//span[text()='Reports'])[1]");
 	By ViewFabricSheet = By.xpath("//a[text()='View Fabric Sheet']");
 	By ShowHide = By.xpath("//a[@id='sidebarCollapse']");
 	By buttFilter = By.xpath("//i[@class=\"pi pi-filter\"]");
@@ -128,7 +131,9 @@ public class ViewFabricSheetPages extends DriverFactory{
 	public void Click_on_Apply_button() throws Throwable {
 		utilities.webDriverWait(driver, f_Apply);
 		driver.findElement(f_Apply).click();
-		
+
+		driver.findElement(ShowHide).click();
+		Thread.sleep(1000);
 	}
 
 	public void Check_whether_the_respective_IPO_is_displayed_or_not_in_the_Menu_List() throws Throwable {

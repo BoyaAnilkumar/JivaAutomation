@@ -8,7 +8,9 @@ package Page;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.interactions.Actions;
 	import org.openqa.selenium.support.ui.WebDriverWait;
-	import util.DriverFactory;
+
+import Stepdefinition1.Hooks;
+import util.DriverFactory;
 	import util.Utilities;
 
 	public class Pdfds_page extends DriverFactory {
@@ -33,7 +35,7 @@ package Page;
 	 public By FilterIcon				= By.xpath("//i[@class='pi pi-filter']");
 	 public	By SearchByIPO				= By.xpath("//input[@placeholder='Search by style #']");
 	 public	By Apply_Filter				= By.xpath("//button[text()='Apply']");
-	 public By SelecttheStyle			= By.xpath("//a[@class='nav-link lite-yellow']");
+	 public By SelecttheStyle			= By.xpath("//div[@id='v-pills-tab']");
 			By ClickonStylesExpansion 	= By.xpath("//a[@id='sidebarCollapse']");
 			By AddNewFabric 			= By.xpath("//a[@Class='nav-link add-fabric']");
 			By ClickonFabricQuality 	= By.xpath("//ng-select[@formcontrolname='fabricQuantityName']");
@@ -59,7 +61,7 @@ package Page;
 			By ClickonResetbutton 		= By.xpath("//button[@class='btn btn-md btn-danger btn-active-light-primary mr-2 ng-star-inserted']");
 			By ClickonSavebutton 		= By.xpath("(//i[text()=' SAVE ']|//button[@type='submit'])[2]");
 			By Submit_ToFabric_Team		= By.xpath("//button[text()=' Submit to Fabric Team ']");
-			By ToasterMessage 			= By.xpath("//h2[@class='swal2-title']");
+			By ToasterMessage 			= By.xpath("//h2[text()='Mandatory Fields Are Required With  Valid Data.']");
 			By Fabric_Manager	 		= By.xpath("//select[@formcontrolname='fabricManagerId']");
 			By Select_Fabric_Manager	= By.xpath("//select[@formcontrolname='fabricManagerId']/..//option[text()=' Lokesh P']");
 			By Uaccount 				= By.xpath("//div[@class='profile_info dropdown']");
@@ -154,7 +156,7 @@ package Page;
 				
 				utilities.webDriverWait(driver, SearchByIPO);
 				driver.findElement(SearchByIPO).click();
-				driver.findElement(SearchByIPO).sendKeys("Style755");
+				driver.findElement(SearchByIPO).sendKeys("Style70");
 				utilities.MinimumWait(driver);
 				
 				utilities.webDriverWait(driver, Apply_Filter);
@@ -169,6 +171,10 @@ package Page;
 				
 				utilities.webDriverWait(driver, ClickonStylesExpansion);
 				driver.findElement(ClickonStylesExpansion).click();
+				utilities.MinimumWait(driver);
+				
+				utilities.webDriverWait(driver, AddNewFabric);
+				driver.findElement(AddNewFabric).click();
 				utilities.MinimumWait(driver);
 			}
 			
@@ -481,7 +487,7 @@ package Page;
 				
 				utilities.webDriverWait(driver, SearchByIPO);
 				driver.findElement(SearchByIPO).click();
-				driver.findElement(SearchByIPO).sendKeys("Style755");
+				driver.findElement(SearchByIPO).sendKeys("Style516");
 				utilities.MinimumWait(driver);
 				
 				utilities.webDriverWait(driver, Apply_Filter);
@@ -604,15 +610,13 @@ package Page;
 			}
 
 			
-
+			
 		
-			
-			
 
 
 			}
 
-			
+		
 
 			
 			

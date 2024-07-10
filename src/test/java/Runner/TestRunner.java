@@ -13,8 +13,11 @@ import io.cucumber.junit.CucumberOptions;
 				  monochrome = true,				 
 				  tags ="@Bulk_Checking1")
 
-public class TestRunner {
-	
+
+
+
+ 
+public class TestRunner { 
 
 	
 }

@@ -64,10 +64,10 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	public	By Addinfor2					= By.xpath("//textarea[@formcontrolname='addtionalInfo2']");
 	public	By Addipobutton					= By.xpath("//button[@class='btn btn-md btn-primary float-right ng-star-inserted']");
 			By Sno							= By.xpath("(//tr[@class='ng-untouched ng-pristine ng-invalid ng-star-inserted'])[2]/.//td[text()='2']");
-	public	By Deletebutton					= By.xpath("//button[@class='btn btn-outline-danger btn-sm']");
+	public	By Deletebutton					= By.xpath("(//button[@class='btn btn-outline-danger btn-sm'])[2]");
 			By Delepopyes					= By.xpath("//button[text()='Yes']");
 			By Delepopno					= By.xpath("//div[@class='swal2-actions']/.//button[text()='No'][2]");
-	public	By IPOdropdown					= By.xpath("(//ng-select[@formcontrolname='ipoId'])[1]");
+	public	By IPOdropdown					= By.xpath("//ng-select[@formcontrolname='ipoId']");
 			By insertIPO					= By.xpath("//input[@autocomplete='a58c532d4feb']");
 			By SelectIpo					= By.xpath("//span[text()='0809-MulDept (RS:4)']");
 	public	By duedate						= By.xpath("//input[@formcontrolname='dueDate']");
@@ -186,8 +186,13 @@ public class CreatePOforIPO_pages extends DriverFactory {
 	public void Enter_supplier_name_and_select_from_the_suggestions() throws Throwable {
 		utilities.webDriverWait(driver, Supplier);
 		driver.findElement(Supplier).sendKeys("Anil");
+		Thread.sleep(1000);
+		Robot Supplier = new Robot();
+		Supplier.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		Supplier.keyPress(KeyEvent.VK_ENTER);
 		utilities.MinimumWait(driver);
-		driver.findElement(Selectsupplier).click();		
+				
 	}
 
 	public void verify_the_supplier_address_after_selecting_the_supplier() throws Throwable {
