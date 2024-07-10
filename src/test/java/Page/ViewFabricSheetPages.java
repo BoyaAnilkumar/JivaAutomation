@@ -22,7 +22,7 @@ public class ViewFabricSheetPages extends DriverFactory{
 	By btnSignIn = By.xpath("//button[@class='btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn']");
 	By Woven = By.xpath("//span[text()='Woven / knit']");
 	By Merchandising = By.xpath("(//span[text()='Merchandising '])[1]");
-	By Reports	= By.xpath("(//ul/li/a/div/span[text()='Reports'])[1]");
+	By Reports	= By.xpath("(//span[text()='Reports'])[2]");
 	By ViewFabricSheet = By.xpath("//a[text()='View Fabric Sheet']");
 	By ShowHide = By.xpath("//a[@id='sidebarCollapse']");
 	By buttFilter = By.xpath("//i[@class=\"pi pi-filter\"]");

@@ -45,7 +45,7 @@ public class Revised_Yarn_Sheet_Page extends DriverFactory{
 	    if (statusExists) {
 	    	Status_fil.selectByVisibleText(Status);
 	    } else {
-	        System.out.println("Status Season is not displayed in the dropdown list");
+	        System.out.println("Status is not displayed in the dropdown list");
 	    }
 
 	    utilities.MediumWait(driver);

@@ -894,17 +894,18 @@ public class New_Yarn_Sheet_Page extends DriverFactory {
 		
 	}
 	public void the_selected_style_should_be_displayed() throws Throwable {
-		utilities.webDriverWait(driver, IPO_Data);
-		WebElement IPO = driver.findElement(IPO_Data);
-		String IPO_data = IPO.getText(); 
-		System.out.print("Display Selected IPO:" +IPO_data);	
-		utilities.MinimumWait(driver);
-	}
-	public void the_selected_IPO_name_should_be_displayed() throws Throwable {
 		utilities.webDriverWait(driver, Style);
 		WebElement style = driver.findElement(Style);
 		String Style_data = style.getText(); 
 		System.out.print("Display Selected Style:" +Style_data);	
+		utilities.MinimumWait(driver);
+	}
+	public void the_selected_IPO_name_should_be_displayed() throws Throwable {
+
+		utilities.webDriverWait(driver, IPO_Data);
+		WebElement IPO = driver.findElement(IPO_Data);
+		String IPO_data = IPO.getText(); 
+		System.out.print("Display Selected IPO:" +IPO_data);	
 		utilities.MinimumWait(driver);
 	}
 	public void the_buyer_style_should_be_displayed_correctly() throws Throwable {

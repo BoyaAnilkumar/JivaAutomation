@@ -1,122 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="527.253">
-    <testcase classname="feature to test Jiva design Sweater PD Fabric Pricing screen functionality" name="Validate user click on the Sweater PD Fabric Pricing screen in menu" time="50.652">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="404.938">
+    <testcase classname="feature to test Jiva design Bulk Checking screen functionality" name="Verify the Expansion grids and Update functionality" time="402.744">
         <system-out><![CDATA[Given User navigates to Login page..........................................passed
-Then the User enters "ravi", and "Abcd@123".................................passed
+Then the User enters "Admin", and "Abcd@123"................................passed
 And User click on the signIn................................................passed
-And Click on Sweater module.................................................passed
-Then Click on the Yarn Sourcing Module......................................passed
-And Click on the Sourcing Data Entry dropdown...............................passed
-And Click on the PD Fabric Pricing Screen...................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="feature to test Jiva design Sweater PD Fabric Pricing screen functionality" name="Verify the Filter functionality in the Style expansion" time="136.856">
-        <system-out><![CDATA[Given User navigates to Login page..........................................passed
-Then the User enters "ravi", and "Abcd@123".................................passed
-And User click on the signIn................................................passed
-And Click on Sweater module.................................................passed
-Then Click on the Yarn Sourcing Module......................................passed
-And Click on the Sourcing Data Entry dropdown...............................passed
-And Click on the PD Fabric Pricing Screen...................................passed
-And User click on the Style Expansion.......................................passed
-And Click on the Filter Icon in Pricing Style Expansion.....................passed
-And Select the "Amazon (Release)" in Filter option page.....................passed
-Then Select the season "Holiday" in the Filter option page..................passed
-And Select the Status "Expected" in filter Option page......................passed
-And Enter the Buyer "Style3" in Search By Style.............................passed
+Then Click on Woven Module..................................................passed
+Then Click on the Fabric Store Module.......................................passed
+And Click on the Fabric Bulk Checking under the Data Entry dropdown.........passed
+And User click on the filter Expansion......................................passed
+And Click on the Filter Icon in Style Expansion.............................passed
+And Select the "6529R" in the Search by IPO or PO field.....................passed
 And click on the Apply button...............................................passed
-And Select the Style in the Styles List.....................................passed
-And Verify the Selected Style Details are displayed or not..................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="feature to test Jiva design Sweater PD Fabric Pricing screen functionality" name="Verify the Nominated Fabric functionality" time="78.662">
-        <system-out><![CDATA[Given User navigates to Login page..........................................passed
-Then the User enters "ravi", and "Abcd@123".................................passed
-And User click on the signIn................................................passed
-And Click on Sweater module.................................................passed
-Then Click on the Yarn Sourcing Module......................................passed
-And Click on the Sourcing Data Entry dropdown...............................passed
-And Click on the PD Fabric Pricing Screen...................................passed
-And User click on the Style Expansion.......................................passed
-And Click on the Filter Icon in Pricing Style Expansion.....................passed
-And Enter the Buyer "Style3" in Search By Style.............................passed
-And click on the Apply button...............................................passed
-And Select the Style in the Styles List.....................................passed
-And Verify whether the Fabric Quality field data is prepopulated or not.....passed
-And Verify whether the Content field data is prepopulated or not............passed
-And Verify whether the color field data is prepopulated or not..............passed
-And Verify wether the Count Construction field data is prepopulated or not..passed
-And Verify whether the GSM field data is prepopulated or not................passed
-And Verify whether the Finish field data is prepopulated or not.............passed
-And Verify whether the Specific Requirements field data is prepopulated or not.passed
-And Verify whether the Fabric Quantity field data is prepopulated or not....passed
-And Verify whether the Full Width field data is prepopulated or not.........passed
-And Verify wether the Cuttable Width field data is prepopulated or not......passed
-And Verify whether the Use field data is prepopulated or not................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="feature to test Jiva design Sweater PD Fabric Pricing screen functionality" name="Verify the Add Pricing functionality" time="175.216">
-        <system-out><![CDATA[Given User navigates to Login page..........................................passed
-Then the User enters "ravi", and "Abcd@123".................................passed
-And User click on the signIn................................................passed
-And Click on Sweater module.................................................passed
-Then Click on the Yarn Sourcing Module......................................passed
-And Click on the Sourcing Data Entry dropdown...............................passed
-And Click on the PD Fabric Pricing Screen...................................passed
-And User click on the Style Expansion.......................................passed
-And Click on the Filter Icon in Pricing Style Expansion.....................passed
-And Enter the Buyer "Style3" in Search By Style.............................passed
-And click on the Apply button...............................................passed
-And Select the Style in the Styles List.....................................passed
-And Verify whether the Fabric Quality field data is prepopulated or not.....passed
-And Verify whether the Content field data is prepopulated or not............passed
-And Verify whether the color field data is prepopulated or not..............passed
-And Verify wether the Count Construction field data is prepopulated or not..passed
-And Verify whether the GSM field data is prepopulated or not................passed
-And Verify whether the Finish field data is prepopulated or not.............passed
-And Verify whether the Specific Requirements field data is prepopulated or not.passed
-And Verify whether the Fabric Quantity field data is prepopulated or not....passed
-And Verify whether the Full Width field data is prepopulated or not.........passed
-And Verify wether the Cuttable Width field data is prepopulated or not......passed
-And Verify whether the Use field data is prepopulated or not................passed
-And Verify the first Process is not selected and CLick on the Add Pricing button.passed
-Then Validation message should be displayed.................................passed
-And Verify the without adding the data click on the Delete icon the validation is displayed or not.passed
-And Select the "Dyeing" in the Pricing Grid.................................passed
-Given Enter data in the "5" field the Pricing Grid..........................passed
-And Select the Fabric Supplier..............................................passed
-When Enter the data in the Process Remarks field............................passed
-And Enter the data in the "10" total fabric Price field.....................passed
-And Enter the data in the Remarks field.....................................passed
-Given Enter the data in Total Fabric Lead Time..............................passed
-And Enter the data in the Price Valid For Days..............................passed
-Given Enter the data in Residual Shrinkage field............................passed
-And Enter the data in boing field...........................................passed
-And Enter the data in CS field..............................................passed
-And Enter the data in Color Fastness field..................................passed
-And Enter the data in GSM Variation.........................................passed
-And Enter the data in Crinkle Variation field...............................passed
-And Enter the data in Any Other Remarks field...............................passed
-And CLick on the Save Button................................................passed
-And Verify the On Saving validation is displayed or not.....................passed
-And Click on the Submit to Po Merchant Team button the validation msg is displayed or not.passed
-]]></system-out>
-    </testcase>
-    <testcase classname="feature to test Jiva design Sweater PD Fabric Pricing screen functionality" name="Verify the View for Print functionlity" time="85.193">
-        <system-out><![CDATA[Given User navigates to Login page..........................................passed
-Then the User enters "ravi", and "Abcd@123".................................passed
-And User click on the signIn................................................passed
-And Click on Sweater module.................................................passed
-Then Click on the Yarn Sourcing Module......................................passed
-And Click on the Sourcing Data Entry dropdown...............................passed
-And Click on the PD Fabric Pricing Screen...................................passed
-And User click on the Style Expansion.......................................passed
-And Click on the Filter Icon in Pricing Style Expansion.....................passed
-And Enter the Buyer "Style3" in Search By Style.............................passed
-And click on the Apply button...............................................passed
-And Select the Style in the Styles List.....................................passed
-And Click on the View for Print button......................................passed
-And Verify the Select Style Details are displayed or not....................passed
+And Select the IPO in the Styles List.......................................passed
+When Click on the Expansion icon the Lot Checking Data, Quality Checking Data, and Bulk Checking Data grids are displayed or not.passed
+And Update the Lot Checking Data............................................passed
+And CLick on the Update button..............................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

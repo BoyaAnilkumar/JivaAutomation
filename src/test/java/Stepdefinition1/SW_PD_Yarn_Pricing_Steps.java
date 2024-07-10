@@ -6,7 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class SW_PD_Yarn_Pricing {
+public class SW_PD_Yarn_Pricing_Steps {
 	SW_PD_Yarn_Pricing_Pages SwPD_Yarn_Pricing = new SW_PD_Yarn_Pricing_Pages();
 	
 	@Then ("^Click on the Yarn Sourcing Module$")

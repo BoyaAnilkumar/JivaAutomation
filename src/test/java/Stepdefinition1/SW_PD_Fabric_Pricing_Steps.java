@@ -3,7 +3,7 @@ package Stepdefinition1;
 import Page.SW_PD_Fabric_Pricing_Pages;
 import io.cucumber.java.en.And;
 
-public class SW_PD_Fabric_Pricing {
+public class SW_PD_Fabric_Pricing_Steps {
 	SW_PD_Fabric_Pricing_Pages SwPD_Fabric_Pricing = new SW_PD_Fabric_Pricing_Pages();
 
 	

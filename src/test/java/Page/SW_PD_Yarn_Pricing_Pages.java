@@ -62,8 +62,7 @@ public class SW_PD_Yarn_Pricing_Pages extends DriverFactory{
 	public void Click_on_the_Yarn_Sourcing_Module() throws Throwable {
 		utilities.webDriverWait(driver, Yarn_Sourcing);
 		driver.findElement(Yarn_Sourcing).click();
-		utilities.MinimumWait(driver);
-		
+		utilities.MinimumWait(driver);		
 		
 	}
 
@@ -192,7 +191,7 @@ public class SW_PD_Yarn_Pricing_Pages extends DriverFactory{
 
 	public void Verify_the_Content_field_data_is_prepopulated_or_not() throws Throwable {
 		WebElement dropdown = driver.findElement(Content_field);
-	     Select select = new Select(dropdown);
+	    Select select = new Select(dropdown);
 		List<WebElement> selectedOptions = select.getAllSelectedOptions();
 		if (selectedOptions.size() == 1) {
 		    String selectedText = selectedOptions.get(0).getText();
@@ -205,7 +204,7 @@ public class SW_PD_Yarn_Pricing_Pages extends DriverFactory{
 
 	public void Verify_the_Spin_Type_field_data_is_prepopulated_or_not() throws Throwable {
 		WebElement dropdown = driver.findElement(Spin_Type);
-	     Select select = new Select(dropdown);
+	    Select select = new Select(dropdown);
 		List<WebElement> selectedOptions = select.getAllSelectedOptions();
 		if (selectedOptions.size() == 1) {
 		    String selectedText = selectedOptions.get(0).getText();

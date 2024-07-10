@@ -124,7 +124,7 @@ And click on the Apply button
 And Select the Style in the Styles List
 And Click on the View for Print button
 And Verify the Select Style Details are displayed or not
-#And CLick on the Print button
+And CLick on the Print button
 
 Examples:
 | Style           | username   | password   |

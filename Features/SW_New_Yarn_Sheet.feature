@@ -411,7 +411,7 @@ And Verify the IPO details are displayed or not
 And Verify the Added Yarn details are displayed in the Yarn details grid
 And Verify the Garment Average details are displayed in the Garment Average Grid
 And Verify the Quantity details are displayed in the Quantity Requirements grid
-
+#And CLick on the Print button
 
 
 Examples:

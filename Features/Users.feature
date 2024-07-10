@@ -2,7 +2,7 @@
 Feature: feature to test Jiva design Users screen functionality
 
   @Users
-  Scenario: To Test the Style Master screen
+  Scenario: To Test the Users screen
     Given User navigates to Login page
     Then User enters the username and password
     And User click on the signIn
