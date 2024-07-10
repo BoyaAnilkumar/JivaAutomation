@@ -1,40 +1,5 @@
 package Stepdefinition1;
 
-<<<<<<< HEAD
-import Pages.ViewFabricSheetPages;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-
-public class ViewFabricSheetSteps {
-	ViewFabricSheetPages VFSP = new ViewFabricSheetPages();
-		
-	@Given ("^Navigate to the Login page$")
-	public void Navigate_to_the_Login_page() {
-		VFSP.Navigate_to_the_Login_page();
-	}
-	@Then ("^Enter valid Username and Password$")
-	public void Enter_valid_Username_and_Password() {
-		VFSP.Enter_valid_Username_and_Password();
-	}
-	@And ("^Click on SignIn in the login page$")
-	public void Click_on_SignIn_in_the_login_page() {
-		VFSP.Click_on_SignIn_in_the_login_page();
-	}
-	@Then ("^Click on Woven Module$")
-	public void Click_on_Woven_Module() throws Throwable {
-		VFSP.Click_on_Woven_Module();
-	}
-	@Then ("^Click on Merchandising module$")
-	public void Click_on_Merchandising_module() throws Throwable {
-		VFSP.Click_on_Merchandising_module();
-	}
-	@Then ("^Click on the Reports under Merchandising module$")
-	public void Click_on_the_Reports_under_Merchandising_module() throws Throwable {
-		VFSP.Click_on_the_Reports_under_Merchandising_module();
-	}
-=======
 import Page.ViewFabricSheetPages;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -58,7 +23,6 @@ public class ViewFabricSheetSteps {
 		VFSP.Click_on_Report_in_merchandising_module();
 	}
 	
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	@Then ("^Click on View Fabric Sheet module$")
 	public void Click_on_View_Fabric_Sheet_module() throws Throwable {
 		VFSP.Click_on_View_Fabric_Sheet_module();

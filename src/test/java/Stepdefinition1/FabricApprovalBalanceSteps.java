@@ -1,6 +1,6 @@
 package Stepdefinition1;
 
-import Pages.FabricApprovalBalancePages;
+import Page.FabricApprovalBalancePages;
 import io.cucumber.java.en.Then;
 
 public class FabricApprovalBalanceSteps {

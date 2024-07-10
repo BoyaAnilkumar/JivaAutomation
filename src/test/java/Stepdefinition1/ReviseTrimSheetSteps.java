@@ -1,6 +1,6 @@
 package Stepdefinition1;
 
-import Pages.ReviseTrimSheetPages;
+import Page.ReviseTrimSheetPages;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

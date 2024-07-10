@@ -1,8 +1,8 @@
-package Pages;
+package Page;
 
 import org.openqa.selenium.By;
 
-import Pages.sw_NewTrimSheet_pages;
+import Page.sw_NewTrimSheet_pages;
 import util.DriverFactory;
 import util.Utilities;
 

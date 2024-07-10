@@ -1,6 +1,6 @@
 package Stepdefinition1;
 
-import Pages.PotentialDebitNotePages;
+import Page.PotentialDebitNotePages;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

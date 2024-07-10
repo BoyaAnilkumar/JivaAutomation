@@ -1,7 +1,7 @@
 package Stepdefinition1;
 
 
-import Pages.Sw_OrderProjection_Pages;
+import Page.Sw_OrderProjection_Pages;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 

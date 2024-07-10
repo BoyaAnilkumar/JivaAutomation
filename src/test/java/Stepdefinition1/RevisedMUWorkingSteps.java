@@ -1,22 +1,5 @@
 package Stepdefinition1;
 
-
-<<<<<<< HEAD
-import Pages.RevisedMUWorkingPages;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-
-public class RevisedMUWorkingSteps {
-
-	RevisedMUWorkingPages RMUW = new RevisedMUWorkingPages();
-	
-//@Given ("^Login with the Fabric Manager$")
-//public void Login_with_the_Fabric_Manager() {
-//	RMUW.Login_with_the_Fabric_Manager();
-//}
-=======
 import Page.RevisedMUWorkingPages;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -31,7 +14,6 @@ public class RevisedMUWorkingSteps {
 public void Login_with_the_Production_Manager() {
 	RMUW.Login_with_the_Production_Manager();
 }
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 	
 @Then ("^Navigate to Revised Fabric Sheet Working screen$")
 public void Navigate_to_Revised_Fabric_Sheet_Working_screen() throws Throwable {

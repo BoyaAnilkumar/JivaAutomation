@@ -1,6 +1,6 @@
 package Stepdefinition1;
 
-import Pages.FabricPriceQuotationApproval_Pages;
+import Page.FabricPriceQuotationApproval_Pages;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 

@@ -1,6 +1,6 @@
 package Stepdefinition1;
 
-import Pages.TrimSheetWorking_Pages;
+import Page.TrimSheetWorking_Pages;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

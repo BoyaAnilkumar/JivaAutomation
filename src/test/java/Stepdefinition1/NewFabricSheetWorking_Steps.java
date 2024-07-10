@@ -1,10 +1,7 @@
 package Stepdefinition1;
 
-<<<<<<< HEAD
-import Pages.NewFabricSheetWorking_page;
-=======
 import Page.NewFabricSheetWorking_page;
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

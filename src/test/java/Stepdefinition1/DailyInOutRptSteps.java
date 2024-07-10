@@ -1,7 +1,7 @@
 package Stepdefinition1;
 
 
-import Pages.DailyInOutReportPages;
+import Page.DailyInOutReportPages;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 

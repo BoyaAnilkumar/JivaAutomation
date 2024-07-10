@@ -1,11 +1,11 @@
-package Pages;
+package Page;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.By;
 
-import Pages.RevisedMUWorkingPages;
+import Page.RevisedMUWorkingPages;
 import util.DriverFactory;
 import util.Utilities;
 

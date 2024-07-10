@@ -1,11 +1,11 @@
-package Pages;
+package Page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 
-import Pages.DailyInInputpages;
-import Pages.RevisedMUWorkingPages;
+import Page.DailyInInputpages;
+import Page.RevisedMUWorkingPages;
 import util.DriverFactory;
 import util.Utilities;
 

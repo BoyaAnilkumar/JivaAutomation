@@ -1,46 +1,5 @@
 package Stepdefinition1;
 
-<<<<<<< HEAD
-import Pages.StyleInitial_Page;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-
-
-	public class StyleInitial_Steps {
-
-		StyleInitial_Page StyleInitail_Page = new StyleInitial_Page();
-
-
-			 
-			  @And("^click on Data Entry dropdown$")
-			  public void click_on_Data_Entry_dropdown() throws Throwable {
-				  StyleInitail_Page.click_on_Data_Entry_dropdown();
-			  }
-			   @And ("^click on the Style Initail Details screen$")
-			   public void click_on_the_Style_Initail_Details_screen() throws Throwable{
-				   StyleInitail_Page.click_on_the_Style_Initail_Details_screen();
-			   }
-			   @And ("^Click on the Styles Expansion$")
-			   public void Click_on_the_Styles_Expansion() throws Throwable{
-				   StyleInitail_Page.Click_on_the_Styles_Expansion();
-			   }
-			   @And ("^Click on the Filter Icon$")
-			   public void Click_on_the_Filter_Icon() throws Throwable{
-				   StyleInitail_Page.Click_on_the_Filter_Icon();
-			   }
-
-			   @And ("^Click on the Buyer Field$")
-			   public void Click_on_the_Buyer_Field() throws Throwable{
-				   StyleInitail_Page.Click_on_the_Buyer_Field();
-			   }
-
-//			   @Then ("^Select the Buyer$")
-//			   public void Select_the_Buyer() throws Throwable{
-//				   StyleInitail_Page.Select_the_Buyer();
-//			   }
-=======
 import Page.StyleInitial_Page;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -80,7 +39,6 @@ import io.cucumber.java.en.When;
 			   public void Select_the_Buyer() throws Throwable{
 				   StyleInitail_Page.Select_the_Buyer();
 			   }
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
 
 			   @And ("^Click on the Season Field$")
 			   public void Click_on_the_Season_Field() throws Throwable{

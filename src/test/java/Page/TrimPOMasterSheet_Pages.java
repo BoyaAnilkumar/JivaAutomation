@@ -1,4 +1,4 @@
-package Pages;
+package Page;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;

@@ -1,6 +1,6 @@
 package Stepdefinition1;
 
-import Pages.StockRequestpage;
+import Page.StockRequestpage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

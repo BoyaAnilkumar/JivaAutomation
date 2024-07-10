@@ -1,6 +1,6 @@
 package Stepdefinition1;
 
-import Pages.ViewTrimSheetWorking_Pages;
+import Page.ViewTrimSheetWorking_Pages;
 import io.cucumber.java.en.Then;
 
 public class ViewTrimSheetWorking_Steps {

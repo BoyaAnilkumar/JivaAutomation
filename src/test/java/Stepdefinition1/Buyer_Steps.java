@@ -1,48 +1,6 @@
 package Stepdefinition1;
 
-<<<<<<< HEAD
-import Pages.Buyer_page;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 
-public class Buyer_Steps {
-
-	Pages.Buyer_page Buyer = new Pages.Buyer_page();
-
-	
-
-	@And("^Click on the master module$")
-	public void Click_on_the_master_module() throws Throwable {
-		Buyer.Click_on_the_master_module();
-	}
-
-	@And("^Click on the buyer screen$")
-	public void Click_on_the_buyer_screen() throws Throwable {
-		Buyer.Click_on_the_buyer_screen();
-	}
-
-	@Then("^Click on the Add button above the grid$")
-	public void Click_on_the_Add_button_above_the_grid() throws Throwable {
-		Buyer.Click_on_the_Add_button_above_the_grid();
-	}
-
-	@And("^Click on the save button$")
-	public void Click_on_the_save_button() throws Throwable {
-		Buyer.Click_on_the_save_button();
-	}
-
-	@And("^Check validation msg Placeholder and enter Buyer name$")
-	public void Check_validation_msg_Placeholder_and_enter_Buyer_name() throws Throwable {
-		Buyer.Check_validation_msg_Placeholder_and_enter_Buyer_name();
-	}
-	
-	@And("^Check validation message placeholder and select the country name$")
-	public void Check_validation_message_placeholder_and_select_the_country_name() throws Throwable {
-		Buyer.Check_validation_message_placeholder_and_select_the_country_name();
-	}
-	
-=======
 import Page.Buyer_page;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -94,7 +52,7 @@ public class Buyer_Steps {
 	public void User_selects_the_country_name() throws Throwable {
 		Buyer.User_selects_the_country_name();
 	}
->>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+
 	@And("^Select the Buying house name$")
 	public void Select_the_Buying_house_name() throws Throwable {
 		Buyer.Select_the_Buying_house_name();

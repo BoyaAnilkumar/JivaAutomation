@@ -1,6 +1,6 @@
 package Stepdefinition1;
 
-import Pages.POWiseInOutRptPages;
+import Page.POWiseInOutRptPages;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 

@@ -1,6 +1,6 @@
 package Stepdefinition1;
 
-import Pages.sw_TrimSheetWorking_Pages;
+import Page.sw_TrimSheetWorking_Pages;
 import io.cucumber.java.en.Then;
 
 public class sw_TrimSheetWorking_Steps {

@@ -1,4 +1,4 @@
-package Pages;
+package Page;
 
 
 
@@ -10,8 +10,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-import Pages.RevisedMUWorkingPages;
-import Pages.TrimSheetAcceptancePages;
+import Page.RevisedMUWorkingPages;
+import Page.TrimSheetAcceptancePages;
 import util.DriverFactory;
 import util.Utilities;
 
