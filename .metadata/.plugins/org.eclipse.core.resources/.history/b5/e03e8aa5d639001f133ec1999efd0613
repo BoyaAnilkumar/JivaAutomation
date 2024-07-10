@@ -1,0 +1,14 @@
+package Stepdefinition1;
+
+import Pages.ViewTrimSheetscreen_Pages;
+
+public class ViewTrimSheetscreen_Steps {
+	
+	ViewTrimSheetscreen_Pages VTSP = new ViewTrimSheetscreen_Pages(); 
+	
+	@Then ("^Navigate to View Trim Sheet screen$")
+	public void Navigate_to_View_Trim_Sheet_screen() {
+		VTSP.Navigate_to_View_Trim_Sheet_screen();
+	}
+
+}

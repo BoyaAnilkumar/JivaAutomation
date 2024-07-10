@@ -1,0 +1,36 @@
+package Pages;
+
+public class TrimPOforStock_Pages {
+
+	public void Navigate_to_Trim_PO_for_Stock_screen() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Filter_by_Search_By_Style_(String style) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Verify_whether_navigated_to_the_Create_PO_for_Stock_screen_for_Trims() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Select_Order_Type(String orderType) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Enter_Rate(String rate) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void Enter_Lshort(String lShort) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

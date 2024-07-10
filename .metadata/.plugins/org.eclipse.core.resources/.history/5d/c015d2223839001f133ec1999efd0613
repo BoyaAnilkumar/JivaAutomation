@@ -1,0 +1,15 @@
+package Pages;
+
+public class sw_RevisedTrimSheetWorking_Pages {
+	
+	
+
+	public void Navigate_to_sw_Revised_Trim_Sheet_Working_screen() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+
+}

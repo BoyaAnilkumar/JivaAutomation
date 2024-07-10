@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="74.391">
+    <testcase classname="Verifying the Trim PO master Sheet screen functioanlity" name="Sorting the grid data" time="73.679">
+        <system-out><![CDATA[When user navigates to Login page...........................................passed
+Given Login with the Trim Manager...........................................passed
+And Click on the SignIn button..............................................passed
+Then Navigate to Trim PO Master Sheet screen................................passed
+When Verifying the Sorting functionality of grid headers....................passed
+]]></system-out>
+    </testcase>
+</testsuite>

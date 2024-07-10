@@ -1,0 +1,35 @@
+package Pages;
+
+import org.openqa.selenium.By;
+
+import util.DriverFactory;
+import util.Utilities;
+
+public class sw_NewTrimSheet_pages extends DriverFactory {
+	
+	Utilities utilities 		= new Utilities();
+	RevisedMUWorkingPages RMUW 	= new RevisedMUWorkingPages();
+	
+	By modSweater 				= By.xpath("//span[text()='Sweater ']");
+	By modMerchandising			= By.xpath("//span[text()='Merchandising ']");
+	By MerDataEntry				= By.xpath("");
+	By swGenerateTrimSheet		= By.xpath("");
+	By scrNewTrimSheet			= By.xpath("");
+
+	public void Login_with_the_SW_Production_Manager() {
+		driver.findElement(RMUW.txtUN).clear();
+		driver.findElement(RMUW.txtUN).sendKeys("Rajeswari");
+		driver.findElement(RMUW.txtPwd).clear();
+		driver.findElement(RMUW.txtPwd).sendKeys("Abcd@123");
+	}
+
+	public void Navigate_to_sw_New_Trim_Sheet_screen() throws Throwable {
+		utilities.webDriverWait(driver, modSweater);
+		driver.findElement(modSweater).click();
+		utilities.webDriverWait(driver, modMerchandising);
+		
+	}
+	
+	
+
+}

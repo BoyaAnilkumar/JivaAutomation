@@ -1,0 +1,16 @@
+package Stepdefinition1;
+
+import Pages.ViewTrimSheetWorking_Pages;
+import io.cucumber.java.en.Then;
+
+public class ViewTrimSheetWorking_Steps {
+	
+	ViewTrimSheetWorking_Pages VTSW = new ViewTrimSheetWorking_Pages();
+	
+	
+	@Then ("^Navigate to View Trim Sheet Working screen$")
+	public void Navigate_to_View_Trim_Sheet_Working_screen() {
+		VTSW.Navigate_to_View_Trim_Sheet_Working_screen();
+	}
+
+}

@@ -1,0 +1,29 @@
+package Pages;
+
+import org.openqa.selenium.By;
+
+import util.DriverFactory;
+import util.Utilities;
+
+public class ViewTrimSheetWorking_Pages extends DriverFactory {
+	
+	Utilities utilities = new Utilities();
+	RevisedMUWorkingPages RMUW 		= new RevisedMUWorkingPages();
+	TrimSheetAcceptancePages TSA 	= new TrimSheetAcceptancePages();
+	
+	By trimReport					= By.xpath("");
+	By scrViewTrimSheetWorking		= By.xpath("");
+	
+
+	public void Navigate_to_View_Trim_Sheet_Working_screen() throws Throwable {
+		utilities.webDriverWait(driver, RMUW.modWoven);
+		driver.findElement(RMUW.modWoven).click();
+		utilities.webDriverWait(driver, TSA.modTrims);
+		driver.findElement(TSA.modTrims).click();
+		utilities.webDriverWait(driver, trimReport);
+		driver.findElement(trimReport).click();
+		utilities.webDriverWait(driver, scrViewTrimSheetWorking);
+		driver.findElement(scrViewTrimSheetWorking).click();
+	}
+
+}

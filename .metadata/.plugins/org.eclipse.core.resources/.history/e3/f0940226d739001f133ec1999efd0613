@@ -1,0 +1,15 @@
+package Pages;
+
+import util.Utilities;
+
+public class ViewTrimSheetscreen_Pages {
+
+	Utilities utilities = new Utilities();
+	
+	
+	public void Navigate_to_View_Trim_Sheet_screen() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
