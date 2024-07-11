@@ -1,0 +1,19 @@
+package Pages;
+
+import util.DriverFactory;
+import util.Utilities;
+
+public class ViewTrimSheetscreen_Pages extends DriverFactory {
+
+	Utilities utilities 		= new Utilities();
+	RevisedMUWorkingPages RMUW 	= new RevisedMUWorkingPages();
+	ViewFabricSheetPages VFS	= new ViewFabricSheetPages();
+	
+	public void Navigate_to_View_Trim_Sheet_screen() throws Throwable {
+		utilities.webDriverWait(driver, RMUW.modWoven);
+		driver.findElement(RMUW.modWoven).click();
+		utilities.webDriverWait(driver, VFS.Merchandising);
+		driver.findElement(VFS.Merchandising).click();
+	}
+
+}

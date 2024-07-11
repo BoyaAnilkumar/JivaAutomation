@@ -1,3 +1,4 @@
+
 @BuyerMasterscreen
 Feature: feature to test Jiva design Buyer screen functionality
 
@@ -37,3 +38,4 @@ Feature: feature to test Jiva design Buyer screen functionality
     And Click on the save button
     And Check validation msg Placeholder and enter Buyer name
     And Check validation message placeholder and select the country name
+

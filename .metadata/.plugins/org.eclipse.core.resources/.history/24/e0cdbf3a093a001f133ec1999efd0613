@@ -1,0 +1,28 @@
+package Pages;
+
+import org.openqa.selenium.By;
+
+import util.Utilities;
+
+public class sw_ViewTrimSheet_Pages {
+	
+	Utilities utilities = new Utilities();
+	sw_NewTrimSheet_pages swNTS 	= new sw_NewTrimSheet_pages();
+	
+	By MerReport 			= By.xpath("");
+	By scrswViewTrimSheet	= By.xpath("");
+	
+	
+	public void Navigate_to_sw_View_Trim_Sheet_screen() {
+		utilities.webDriverWait(driver, swNTS.modSweater);
+		driver.findElement(swNTS.modSweater).click();
+		utilities.webDriverWait(driver, swNTS.modMerchandising);
+		driver.findElement(swNTS.modMerchandising).click();
+		utilities.webDriverWait(driver, MerReport);
+		driver.findElement(MerReport).click();
+		utilities.webDriverWait(driver, MerReport);
+		driver.findElement(MerReport).click();
+		
+	}
+
+}

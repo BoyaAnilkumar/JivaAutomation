@@ -148,5 +148,6 @@ public class DailyInInput_Steps {
 	public void Click_on_Party_Name_dropdown_and_select_cutting(String partyname) throws Throwable {
 		DailyInInput_pages.Click_on_Party_Name_dropdown_and_select_cutting(partyname);
 	}
+
 	
 }

@@ -1,0 +1,17 @@
+package Stepdefinition1;
+
+import Pages.TrimPOforStock_Pages;
+
+public class TrimPOforStock_Steps {
+	
+	TrimPOforStock_Pages TPOS		=	new TrimPOforStock_Pages();
+
+	
+	Then Navigate to Trim PO for Stock screen
+	Given Filter by Search By Style"<Style>"
+	Then Verify whether navigated to the Create PO for Stock screen for Trims
+	And Select Order Type"<OrderType>"
+	Given Enter Rate "<Rate>"
+	Given Enter L-short"<LShort>"
+	  
+}

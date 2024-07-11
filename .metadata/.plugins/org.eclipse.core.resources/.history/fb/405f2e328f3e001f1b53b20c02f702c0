@@ -1,0 +1,11 @@
+package Pages;
+
+public class TrimPOforStock_Pages {
+
+	public void Navigate_to_Trim_PO_for_Stock_screen() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	dd
+}

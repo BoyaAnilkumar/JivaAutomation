@@ -1,0 +1,18 @@
+package Pages;
+
+import util.DriverFactory;
+
+public class sw_NewTrimSheet_pages extends DriverFactory {
+	
+	RevisedMUWorkingPages RMUW 	= new RevisedMUWorkingPages();
+
+	public void Login_with_the_SW_Production_Manager() {
+		driver.findElement(RMUW.txtUN).clear();
+		driver.findElement(RMUW.txtUN).sendKeys("Rajeswari");
+		driver.findElement(RMUW.txtPwd).clear();
+		driver.findElement(RMUW.txtPwd).sendKeys("Abcd@123");
+	}
+	
+	
+
+}

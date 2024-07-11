@@ -7,7 +7,9 @@ import io.cucumber.java.en.When;
 
 public class StylePODetails {
 
+
 	Page.StylePO_Pages StylePO_Pages = new Page.StylePO_Pages();
+
 	
 	
 	   @And ("^Click on the Style Po Details Screen$")

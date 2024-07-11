@@ -1,5 +1,6 @@
 package Stepdefinition1;
 
+
 import Page.Buyer_page;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -51,6 +52,7 @@ public class Buyer_Steps {
 	public void User_selects_the_country_name() throws Throwable {
 		Buyer.User_selects_the_country_name();
 	}
+
 	@And("^Select the Buying house name$")
 	public void Select_the_Buying_house_name() throws Throwable {
 		Buyer.Select_the_Buying_house_name();

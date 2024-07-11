@@ -4,6 +4,29 @@ Feature: Adding the processes for a fabric
   @RevisedMUWorking1
   Scenario: Submit the fabric sheet details in Revised fabric sheet
     When user navigates to Login page
+    Given Login with the Fabric Manager
+    And Click on the SignIn button
+    Then Navigate to Revised Fabric Sheet Working screen
+    And click on Styles expansion
+    And click on clear filter icon
+    Then click on filter icon
+    #And Click on buyer1 dropdown
+    #Given Enter Buyer in search box
+    Then Select a Buyer from dropdown list
+    Then Select a Season from dropdown list
+    #Then Select a Status from dropdown list
+    Then Enter an IPO name in the Search by IPO textbox field
+    And Click on the Filter_Apply button
+    #Then click on filter icon
+    #Then Verify whether data is cleared or not on OnClick the Reset button
+    And Select an IPO from the Menu list
+    Then Click_on_the_Styles_expansion
+    Then Verify the count of the Fabric records under the MU Working grid
+
+  @RevisedMUWorking
+  Scenario: Adding the Dyeing and Printing processes
+    When user navigates to Login page
+    Given Login with the Fabric Manager
     Given Login with the Production Manager
     And Click on the SignIn button
     Then Navigate to Revised Fabric Sheet Working screen

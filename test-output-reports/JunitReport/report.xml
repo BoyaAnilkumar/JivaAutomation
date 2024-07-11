@@ -1,2 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.584"/>
+=======
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="74.391">
+    <testcase classname="Verifying the Trim PO master Sheet screen functioanlity" name="Sorting the grid data" time="73.679">
+        <system-out><![CDATA[When user navigates to Login page...........................................passed
+Given Login with the Trim Manager...........................................passed
+And Click on the SignIn button..............................................passed
+Then Navigate to Trim PO Master Sheet screen................................passed
+When Verifying the Sorting functionality of grid headers....................passed
+=======
+<<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="404.938">
+    <testcase classname="feature to test Jiva design Bulk Checking screen functionality" name="Verify the Expansion grids and Update functionality" time="402.744">
+        <system-out><![CDATA[Given User navigates to Login page..........................................passed
+Then the User enters "Admin", and "Abcd@123"................................passed
+And User click on the signIn................................................passed
+Then Click on Woven Module..................................................passed
+Then Click on the Fabric Store Module.......................................passed
+And Click on the Fabric Bulk Checking under the Data Entry dropdown.........passed
+And User click on the filter Expansion......................................passed
+And Click on the Filter Icon in Style Expansion.............................passed
+And Select the "6529R" in the Search by IPO or PO field.....................passed
+And click on the Apply button...............................................passed
+And Select the IPO in the Styles List.......................................passed
+When Click on the Expansion icon the Lot Checking Data, Quality Checking Data, and Bulk Checking Data grids are displayed or not.passed
+And Update the Lot Checking Data............................................passed
+And CLick on the Update button..............................................passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="38.249">
+    <testcase classname="Login the application and Add Fabric quality in PDFDS" name="Login the application" time="37.751">
+        <system-out><![CDATA[Given Login the application with valid credentials..........................passed
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git
+]]></system-out>
+    </testcase>
+</testsuite>
+>>>>>>> branch 'master' of https://github.com/BoyaAnilkumar/JivaAutomation.git

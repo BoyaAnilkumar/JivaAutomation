@@ -14,12 +14,11 @@ import io.cucumber.junit.CucumberOptions;
 				  tags ="@Bulk_Checking1")
 
 
-
-
  
 public class TestRunner { 
 
 	
 }
   
+
 
